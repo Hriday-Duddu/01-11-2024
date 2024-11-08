@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en" class="deeppurple-theme"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><title>Login</title><link rel="shortcut icon" href="/static/images/shortcut.png"><link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"><link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="/static/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="/static/css/style.css"><link rel="stylesheet" href="/static/css/public.css"><link rel="stylesheet" href="/public/js/layer_mobile/need/layer.css?2.0" type="text/css"id="layermcss"><script src="/static/js/jquery-3.3.1.min.js"></script><link rel="stylesheet" href="/static/css/music.css"></head><body><div id="app"><div class="login"><div class="head"><div class="head-icon"><a href="https://cs.tkgmall.com/index/index/home?visiter_id=&visiter_name=&avatar=&business_id=5&groupid=3&special=5"><img src="/static/images/service.png" alt="service" style="width: 26px; height: 26px;"></div><div class="head-icon"><a href="/index/user/lang"><img src="/static/images/language.png" alt="language" style="width: 22px; height: 22px;"></a></div></div><div class="login-container"><div style="height: 30px;"></div><div class="logo"><img src="/static/images/logo.svg" alt="service" style="width: 200px;"></div><div style="height: 50px;"></div><div class="van-cell-group van-cell-group--inset"><div style="display: flex; justify-content: space-between; align-items: center;"><div style="font-size: 12px; text-align: left;"><div style="font-size: 16px;">Login</div><div>Please login to access more content</div></div><div><a href="/index/user/register" style="padding: 0px; margin: 0px; text-decoration: underline;">Registered account</a></div></div><div style="height: 12px; width: 100%; border-bottom: 1px solid rgb(235, 238, 245);"></div><form class="form-signin mt-3 "><div class="form-group input-group" style="border-bottom: 1px solid #BEC9CC;"><input type="text" name="tel" class="form-control form-control-lg" placeholder="Please fill in username" value="" required="" autofocus=""></div><div class="form-group input-group " style="border-bottom: 1px solid #BEC9CC;"><input type="password" id="inputPassword" name="pwd" class="form-control form-control-lg " placeholder="Your password" value="" required=""></div></form><button id="login" class="login van-button van-button--primary van-button--normal van-button--plain van-button--block"
+                    style="color: rgb(36, 73, 161); border-color: rgb(36, 73, 161);">Login<i class="van-badge__wrapper van-icon van-icon-arrow" style="font-size: 12px;"></i></button></div></div><div style="background-color: rgba(0, 0, 0, 0.5); padding: 10% 5%; text-align: center; color: rgb(255, 255, 255);">
+            Copyright © 2024 Playlist Push All rights reserved. </div></div></div><div class="notification shadow pt-0 pl-0 pr-0 border-0 bg-template-light"><div id="notification_countdown"></div><div class="row pt-2 pl-3 pr-3"><div class="col-auto align-self-center pr-0"><i class="material-icons text-template md-36">redeem</i></div><div class="col small notification-content">loading...</div><div class="col-auto align-self-center pl-0"><button class="btn btn-link closenotification"><i class="material-icons text-template md-18 ">close</i></button></div></div></div><script src="/static/js/popper.min.js"></script><script src="/static/bootstrap/js/bootstrap.min.js"></script><script src="/static/swiper/swiper-bundle.min.js"></script><script src="/static/js/jquery.cookie.js"></script><script charset="utf-8" src="/static/js/dialog.min.js"></script><link rel="stylesheet" href="/public/js/layer_mobile/need/layer.css"><script src="/public/js/layer_mobile/layer.js"></script><script charset="utf-8" src="/static/js/jquery.progressBarTimer.js"></script><script charset="utf-8" src="/static/js/common.js"></script><script src="/static/js/main.js?v=V1.24"></script><script type="application/javascript">sessionStorage.setItem('login_flag', '1');
+$(function() {
+
+    function check() {
+        if ($("input[name=tel]").val() == '' || $("input[name=pwd]").val() == '') {
+            $(document).dialog({
+                infoText: 'Please enter your account number and password' //Please enter account and password
+            });
+            return false;
+        }
+        return true;
+    }
+
+ 
+    $("input[name=tel]").bind("input propertychange",
+        function() {
+            if ($(this).val() !== '') {
+                $('.icon-delete').show();
+            } else {
+                $('.icon-delete').hide();
+            }
+        });
+
+
+    $(".icon-delete").on('click',
+        function() {
+            $("input[name=tel]").val('');
+            $('.icon-delete').hide();
+        })
+
+
+    $(".icon-eye").on('click',
+        function() {
+            var type = $("input[name=pwd]").attr("type");
+            if (type == 'pwd') {
+                $("input[name=pwd]").attr('type', 'text');
+                return;
+            }
+            $("input[name=pwd]").attr('type', 'pwd');
+        });
+
+    /*点击登录*/
+    $("#login").on('click',
+        function() {
+            if (check()) {
+                var host = window.location.host;
+                if (host.startsWith('localhost')) {
+                    form_submit('');
+                } else {
+                    /*                    grecaptcha.ready(function() {
+                                                  grecaptcha.execute('6LdC99EZAAAAABfzI41Q48ZSd2Pe2aHA_vJ61go4', {action: 'submit'}).then(function(token) {
+                                                      // Add your logic to submit to your backend server here.
+                                                      form_submit(token);
+                                                  });
+                                              });*/
+                    form_submit('');
+                }
+            }
+        });
+
+    function form_submit(reCAPTCHA) {
+        var loading = null;
+        var tel = $("input[name=tel]").val();
+        var pwd = $("input[name=pwd]").val();
+        var jizhu = $("input[name=jizhu]").val();
+        var _csrf_ = "csrf6724e27faedcf";
+        $.ajax({
+            url: "/index/user/do_login.html",
+            data: {
+                tel: tel,
+                pwd: pwd,
+                jizhu: jizhu,
+                '_csrf_': _csrf_,
+                'reCAPTCHA': reCAPTCHA
+            },
+            type: 'POST',
+            beforeSend: function(request) {
+                request.setRequestHeader('User-Token-Csrf', _csrf_);
+                loading = $(document).dialog({
+                    type: 'notice',
+                    infoIcon: '/static/img/loading.gif',
+                    infoText: 'loading...',
+                    autoClose: 0
+                });
+            },
+            success: function(data) {
+                loading.close();
+                if (data.code == 0) {
+                    $(document).dialog({
+                        infoText: data.info
+                    });
+                    setTimeout(function() {
+                            location.href = "/index/index/home.html"
+                        },
+                        2000);
+                } else {
+                    loading.close();
+                    if (data.info) {
+                        $(document).dialog({
+                            infoText: data.info
+                        });
+                    } else {
+                        $(document).dialog({
+                            infoText: "The network is unstable, please go to a place with better signal and try again!",//Network unstable, please try again at a place with better signal!
+                            autoClose: 2000
+                        });
+                    }
+                }
+            },
+            error: function(data) {
+                loading.close();
+            }
+        });
+    }
+})</script></body></html>

@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* utility classes */
+.container {
+    margin-left: 160px;
+    margin-right: 150px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.primary-button {
+    text-decoration: none;
+    color: white !important;
+    text-align: center;
+    background-color: #e50914;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-weight: 700;
+}
+
+.primary-button:hover{
+    background-color: #c11119;
+}
+
+.head-1 {
+    font-size: 3rem;
+    font-family: "Ubuntu", "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.small-text-1 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.small-text-2 {
+    font-size: 1.25rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+/* navigation-bar section */
+
+.outer-top {
+    height: 100vh;
+    background-image: linear-gradient(to top, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.7)), url(assets/asset-01.jpg);
+}
+
+.nav-logo img {
+    width: 200px;
+    align-items: flex-start;
+}
+
+.signin-btn {
+    font-family: "Roboto", "Ubuntu", sans-serif;
+    font-size: 0.9rem;
+
+}
+
+.nav-bar {
+    justify-content: space-between;
+}
+
+/* hero-section */
+.hero {
+    margin-top: 208px;
+    text-align: center;
+}
+
+#emailtext {
+    height: 52px;
+    background-color: #1a1919;
+}
+
+::placeholder {
+    padding: 10px;
+    text-size-adjust: 50px;
+}
+
+.getstarted {
+    padding: 12px 31px;
+    font-family: "Roboto", "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+}
+
+.hero-emailbtn {
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* feature-section */
+/* second-div */
+
+.second-sec {
+    background-color: #000000;
+}
+
+.secnd-text {
+    display: grid;
+    width: 50%;
+}
+
+.second-div {
+    padding: 10rem 0rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 45px;
+}
+
+/* third-section */
+.third-sec {
+    background-color: #000000;
+}
+
+.third-div {
+    padding-top: 72px;
+    padding-bottom: 76px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.third-img img {
+    align-items: flex-start;
+    width: 497px;
+}
+
+.third-text {
+    display: grid;
+    width: 50%;
+    align-items: flex-start;
+}
+
+/* fourth-section */
+
+.fourth-sec {
+    background-color: #000000;
+}
+
+.fourth-div {
+    padding-top: 72px;
+    padding-bottom: 96px;
+    padding-left: 86px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.fourth-text {
+    display: grid;
+    width: 40%;
+}
+
+/* fifth-section */
+
+.fifth-sec {
+    background-color: #000000;
+}
+
+.fifth-div {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.fifth-img img {
+    align-items: flex-start;
+    width: 497px;
+}
+
+.fifth-text {
+    display: grid;
+    width: 50%;
+    align-items: flex-start;
+}
+
+/* faqs-section */
+.faqs {
+    background-color: #000000;
+}
+
+.faqs-a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Roboto", "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.faqs-div {
+    padding: 72px 0px;
+    margin-left: 106px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-question {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #2d2d2d;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faq-question:hover {
+    cursor: pointer;
+    background-color: #414141;
+}
+
+/* footer-section */
+footer {
+    background-color: #000000;
+}
+
+.footer-a {
+    font-family: "Roboto", "Ubuntu", sans-serif;
+    color: #ffffff;
+    opacity: 70.0%;
+    font-size: 1rem;
+}
+
+.footer-sec {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    flex-direction: row;
+    justify-content: left;
+    gap: 104px;
+}
+
+.footer-links {
+    display: grid;
+    text-align: left;
+}
+
+.footer-btn {
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    background-color: #000000;
+}

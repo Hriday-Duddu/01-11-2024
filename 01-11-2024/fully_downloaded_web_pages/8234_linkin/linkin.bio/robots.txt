@@ -1,0 +1,5 @@
+# http://www.robotstxt.org
+User-agent: *
+Disallow:
+
+Sitemap: https://sitemaps-linkinbio.s3.amazonaws.com/sitemap.xml

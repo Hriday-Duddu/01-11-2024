@@ -1,0 +1,10 @@
+User-agent: *
+Crawl-delay: 1
+Allow: /$
+Allow: /?hl=
+Disallow: /?hl=*&
+Allow: /support/
+Allow: /a/
+Allow: /Doc
+Allow: /View
+Allow: /ViewD

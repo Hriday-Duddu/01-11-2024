@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  height: 90vh;
+  position: relative;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/b2c3e95b-b7b5-4bb7-a883-f4bfc7472fb7/05fcdc28-d228-4e08-b2ad-a75cadc13cb4/NP-en-20240805-POP_SIGNUP_TWO_WEEKS-perspective_WEB_a56c14f6-14ba-4536-838b-16457cd905b7_large.jpg);
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+}
+
+.main nav {
+  max-width: 70vw;
+  height: 90px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .box {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+  background-color: black;
+}
+
+nav > span > img {
+  width: 130px;
+
+  position: relative;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.subcr-text {
+  height: calc(100% - 90px);
+  margin: auto;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Martel Sans", sans-serif;
+  gap: 20px;
+}
+
+.subcr-text > :first-child {
+  font-family: "poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.subcr-text > :nth-child(2) {
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+
+  text-align: center;
+}
+
+.subcr-text > :nth-child(3) {
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+.separation {
+  height: 8px;
+  background-color: #232323;
+}
+
+.btn {
+  padding: 3px 8px;
+  background-color: #0f0f0f;
+  font-weight: 400;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-red {
+  transition: all 1s ease-out;
+  background-color: #e50914;
+  color: white;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 0.1px solid #e50914;
+}
+.btn-red:hover {
+  cursor: pointer;
+  background-color: #e50914ce;
+}
+.email-input {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.email-input input {
+  font-family: "poppins", sans-serif;
+  width: 48%;
+  background-color: rgba(23, 23, 23, 0.7);
+  padding: 18px 140px 18px 15px;
+  color: white;
+  /* border: 1px solid rgba(255, 255, 255, 0.7); */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.btn-red-lg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 8px 20px;
+  font-weight: 500;
+}
+
+.btn-red-lg svg {
+  color: white;
+}
+.btn-red-lg .btn-symbol {
+  margin-left: 10px;
+  width: 24px;
+  height: 30px;
+}
+.symbol {
+  /* margin: 2px 5px 0 5px; */
+  /* padding: 10px; */
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.first {
+  max-width: 70vw;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 80px auto;
+  position: relative;
+}
+
+.sec-text {
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+
+.sec-text :nth-child(1) {
+  font-size: 48px;
+  font-weight: 900;
+}
+.sec-text :nth-child(2) {
+  font-size: 20px;
+}
+
+.sec-img {
+  width: 555px;
+  position: relative;
+}
+
+.sec-img img {
+  width: 555px;
+  position: relative;
+  top: 0;
+}
+
+.sec-img video {
+  width: 80%;
+  position: absolute;
+  top: 65px;
+  left: 65px;
+  z-index: -1;
+}
+.stranger-box {
+  position: absolute;
+  top: 220px;
+  left: 80px;
+  padding: 10px 80px 10px 15px;
+  width: 100%;
+  max-width: 20vw;
+  display: flex;
+  border-radius: 10px;
+  justify-content: flex-start;
+  border: 1px solid #fff;
+  background-color: black;
+}
+
+.stranger-box img {
+  width: 4vw;
+}
+.stranger-box > div {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stranger-box :first-child {
+  color: #fff;
+  font-size: 15px;
+}
+
+.stranger-box :nth-child(2) {
+  color: #005cdc;
+}
+#freq {
+  margin: 80px auto;
+}
+#freq h2 {
+  margin: 20px;
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+.freqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  width: 75vw;
+  margin: 10px auto;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d2d;
+  color: white;
+}
+.freqbox:hover {
+  cursor: pointer;
+  background-color: #514e4e;
+}
+
+.freqbox svg {
+  color: white;
+}
+
+#freq .freqbox span {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#freq .freqlastbox {
+  background-color: black;
+}
+#freq .freqlastbox span {
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+#footer {
+  width: 75vw;
+  margin: 80px auto;
+  padding-bottom: 60px;
+}
+#footer div {
+  margin-bottom: 20px;
+}
+#footer > :nth-child(1) > a {
+  color: rgba(255, 255, 255, 0.7);
+}
+#footer > :nth-child(4) {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+}
+.footer-flex li {
+  list-style-type: none;
+}
+.footer-flex li a {
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#footer > :nth-child(3) {
+  background-color: black;
+}
+@media screen and (max-width: 1280px) {
+  nav {
+    width: calc(70vw + 2.5rem);
+    /* margin-left: -1.5rem; */
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .footer-flex {
+    grid-template-columns: 1fr 1fr;
+  }
+}

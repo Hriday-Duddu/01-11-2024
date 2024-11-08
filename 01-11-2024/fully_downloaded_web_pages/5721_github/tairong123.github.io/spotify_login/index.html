@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="local_resources/img/e54f198ae5d6ea727e90976cec9f2dae.ico" rel="icon"/>
+<title>登入-Spotify</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2a2a2a, #020202);
+        }
+        .container {
+            height: 100vh; /* 設置容器高度為視窗的高度 */
+            overflow-y: auto; /* 設置垂直方向的溢出為自動，使其可以滾動 */
+        }
+        .separator {
+            text-align: center;
+            margin-left: 120px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 400px; /* 寬度 */
+            height: 1px; /* 高度 */
+            background-color: #292929;
+        }
+        .top-section, .bottom-section {
+            position: relative;
+            background-color: #000;
+            height: 90px;
+        }
+        .top-section img {
+            margin-left: 20px;
+            width: auto;
+            height: 35px;
+            cursor: pointer;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+        }
+        /* 文字連結 */
+        .bottom-section {
+            margin-top: 20px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #121212;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-section a {
+            font-size: 12px;
+            color: #717171;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .login-container {
+            background-color: #121212;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 650px;
+            height: 750px;
+            margin: auto;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .login-container h1 {
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #fff;
+        }
+        .social-login-buttons {
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .social-login-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .social-login-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: #121212;
+            flex: 1;
+            padding: 8px;
+            width:350px;
+            border-radius: 30px;
+            cursor: pointer;
+            border: 2px solid #585858;
+        }
+        .social-login-button img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .social-login-button span {
+            font-weight: bold;
+            font-size: 16px; /* 放大文字大小 */
+            flex: 1;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display:flex;
+            margin-left: 170px;
+            margin-bottom: 5px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 300px;
+            height: 25px;
+            padding: 8px;
+            border: 1px solid #585858;
+            background-color: #000000;
+            border-radius: 3px;
+        }
+        .form-group input::placeholder {
+            font-size: 16px; /* 放大 placeholder 文字大小 */
+        }
+        .form-group button {
+            margin-top: 20px;
+            width: 300px;
+            height: 40px;
+            padding: 8px;
+            background-color: #1ed660;
+            color: #121212;
+            border: none;
+            font-weight: bold;
+            font-size:16px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .form-group a {
+            color: #fff; /* 設置文字顏色為白色 */
+            display: block; /* 使連結顯示為塊級元素，以在按鈕下方佔據整個寬度 */
+            text-align: center; /* 文字居中 */
+            margin-top: 25px; /* 與按鈕的間距 */
+        }
+        .form-group button:hover {
+            transform: scale(1.1);
+        }
+        .switch {
+            display: flex; /* 將開關設置為彈性盒子 */
+            align-items: center; /* 垂直置中 */
+            margin-top: 20px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+            margin-top: 10px;
+        }
+
+        .slider {
+            position: relative;
+            cursor: pointer;
+            width: 30px; /* 設置開關的寬度 */
+            height: 15px; /* 設置開關的高度 */
+            background-color: #717171;
+            border-radius: 34px;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 13px;
+            width: 13px;
+            left: 2px;
+            background-color: #121212;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #1ed660;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(13px);
+        }
+
+        .register-text {
+            margin-top: 30px; /* 設置與 .separator 的間距 */
+            color: #fff; /* 設置文字顏色 */
+        }
+        .register-text a {
+            color: #fff; /* 設置文字顏色為白色 */
+        }
+        .remember-text {
+            margin-left: 30px;
+            font-size:12px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="top-section">
+<!-- Spotify 圖示連結 -->
+<a href="https://www.spotify.com" target="_blank">
+<img alt="Spotify" src="local_resources/img/600cc36ae57bbff9dcf4f5685a5b8fa2.png"/>
+</a>
+</div>
+<div class="login-container">
+<h1>登入到Spotify</h1>
+<div class="social-login-buttons">
+<div class="social-login-row">
+<button class="social-login-button">
+<img alt="Google" src="local_resources/img/5639ea3b38768593eccca63f05d7d0e5.webp"/>
+<span>以 Google 帳戶繼續</span>
+</button>
+</div>
+<div class="social-login-row">
+<button class="social-login-button">
+<img alt="Facebook" src="local_resources/img/fb478c3d7b7341ab764aa47010601859.webp"/>
+<span>使用 Facebook 帳戶繼續</span>
+</button>
+</div>
+<div class="social-login-row">
+<button class="social-login-button">
+<img alt="Apple" src="local_resources/img/55fb41c8a10d0a58e6efdfa2ab15c2b6.png"/>
+<span>使用 Apple 帳戶繼續</span>
+</button>
+</div>
+</div>
+<div class="separator"></div>
+<form id="login-form">
+<div class="form-group">
+<label for="email">電子信箱或使用者名稱</label>
+<input id="email" name="email" placeholder="電子信箱或使用者名稱" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">密碼</label>
+<input id="password" name="password" placeholder="密碼" required="" type="password"/>
+<label class="switch">
+<input type="checkbox"/>
+<span class="slider"></span>
+<span class="remember-text">記住我</span>
+</label>
+</div>
+<div class="form-group">
+<button type="submit">登入</button>
+<a href="https://accounts.spotify.com/en/password-reset?flow_ctx=f0e48352-e749-4586-ae27-d1d744ae5546%3A1715102051" target="_blank">忘記密碼？</a>
+<div class="separator"></div>
+</div>
+</form>
+<div class="register-text">未註冊帳戶?<a href="https://www.spotify.com/tw/signup?flow_id=44b4e047-3b10-409f-b201-4b4ad74993b7%3A1715102152&amp;forward_url=https%3A%2F%2Fopen.spotify.com%2F%3Fflow_ctx%3D44b4e047-3b10-409f-b201-4b4ad74993b7%253A1715102152" target="_blank">註冊Spotify.</a></div>
+</div>
+<div class="bottom-section">
+<a>本網站採用 reCAPTCHA 防護機制，並遵守 Google 的<a href="https://www.google.com/policies/privacy/" target="_blank">《隱私權政策》</a><a>與</a><a href="https://www.google.com/intl/zh-TW/policies/terms/" target="_blank">《服務條款》</a><a>。</a></a>
+</div>
+</div>
+</body>
+</html>

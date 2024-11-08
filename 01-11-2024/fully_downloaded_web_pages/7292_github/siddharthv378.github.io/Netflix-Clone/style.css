@@ -1,0 +1,236 @@
+/* General styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #141414;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Main Section */
+main {
+    position: relative; /* Needed to position the pseudo-element */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('netflixbackground.jpg'); /* Example Background */
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Ensure main content is above the overlay */
+}
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: -1;
+}
+
+/* Sample text */
+h1 {
+    color: white;
+    font-size: 3rem;
+    z-index: 2;
+}
+
+.hero {
+    text-align: center;
+    color: white;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+@media (max-width: 768px) {
+    input {
+        width: 200px;
+    }
+    
+}body {
+        background-color: #141414;
+      }
+      
+      .scroll-menu {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .scrolling-wrapper {
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+      }
+      
+      .card {
+        background-color: #1c1c1c;
+        border: none;
+      }
+      
+      .card-img-top {
+        border-radius: 5px;
+      }
+      
+      .card-body {
+        padding: 10px;
+      }
+      
+      .card-title {
+        font-size: 1.2rem;
+        color: #fff;
+      }
+      
+      .card-text {
+        color: #bbb;
+      }
+      
+      /* Scroll buttons */
+      .scroll-left, .scroll-right {
+        position: relative;
+        z-index: 1;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .btn-dark {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+      }
+      
+      .btn-dark:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      body {
+        background-color: #141414;
+      }
+      
+      h2 {
+        color: #ffffff;
+      }
+      
+      .feature-card {
+       background: linear-gradient(20deg,  #3a3566, #000000);;
+        border-radius: 10px;
+        color: #ffffff;
+      }
+      
+      .feature-card h5 {
+        font-size: 1.2rem;
+      }
+      
+      .feature-card p {
+        font-size: 0.95rem;
+      }
+      
+      .feature-icon {
+        width: 50px;
+        margin-top: 20px;
+      } 
+      body {
+        background-color: #141414;
+        color: white;
+      }
+  
+      .accordion-button {
+        background-color: black;
+        color: white;
+        font-size: 1.2rem;
+        padding: 1rem;
+      }
+  
+      .accordion-button::after {
+        filter: invert(1); /* Make the plus icon white */
+      }
+  
+      .accordion-button:not(.collapsed) {
+        background-color: #444;
+      }
+  
+      .accordion-item {
+        background-color: #2c2c2c;
+        border: none;
+      }
+  
+      .accordion-header {
+        border-bottom: 1px solid #1a1a1a;
+      }
+  
+      .accordion-body {
+        background-color: #333;
+        color: white;
+      }
+  
+      .accordion-item + .accordion-item {
+        margin-top: 1rem;
+      }
+      footer-container {
+    background-color: #000;
+}
+
+.footer-container a {
+    color: #757575;
+}
+
+.footer-container a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.call-text {
+    font-size: 0.9rem;
+}
+
+.text-muted {
+    font-size: 0.85rem;
+}
+
+.input-group .form-control {
+    border-radius: 0;
+    margin-right: 10px;
+}
+
+.input-group .btn-danger {
+    border-radius: 0;
+}

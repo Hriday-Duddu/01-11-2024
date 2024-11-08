@@ -1,0 +1,419 @@
+@charset "utf-8";
+/* Police */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext');
+/* Icones */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../polices/glyphicons-halflings-regular.eot");
+  src: url("../polices/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../polices/glyphicons-halflings-regular.woff2") format("woff2"), url("../polices/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../polices/glyphicons-halflings-regular.ttf") format("truetype"), url("../polices/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'dgfipicons';
+  src: url("../polices/dgfip_dgfipicons.ttf") format("truetype"), url("../polices/dgfip_dgfipicons.woff") format("woff"), url("../polices/dgfip_dgfipicons.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.dgfipicon {
+  font-family: 'dgfipicons', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.dgfipicon + span {
+  margin-left: 10px;
+}
+/* L'icône pour les adresses validées */
+.dgfipicon-ok:before {
+  content: '\e93e';
+}
+/* L'icône pour les adresses en cours de validation et la rubrique d'aide globale */
+.dgfipicon-info:before {
+  content: '\e93a';
+}
+/*Général*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;/* Important pour le footer */
+  background:#e8e8e8;
+}
+header {
+  background:#fff;
+}
+footer {
+  position: absolute;
+  bottom:0px;
+  left:0;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  padding:1em 0;
+  border-top:25px solid #e8e8e8;
+  margin:0;
+}
+h2{
+  padding: 0;
+  margin: 0;
+}
+h2.text-left {
+  padding-left:1.4rem
+}
+.panel-heading {
+  border-bottom: 2px solid #0B6BA8 !important;
+}
+.panel-body.mp {
+  padding-bottom:8rem !important;
+}
+.panel-footer.noborder {
+  border:0;
+}
+label {
+  font-weight:normal;
+}
+/* pour Zoom iOS */
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+select:focus{
+  font-size: 16px;
+}
+
+
+/* iOS checkbox de type bouton glissoir*/
+input[type="checkbox"].switch {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="checkbox"].switch+label {
+  position: relative;
+  display: inline-block;
+  padding-left: 50px;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+input[type="checkbox"].switch+label:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+  width: 35px;
+  height: 21px;
+  border-radius: 14px;
+  margin-top: -10px;
+  background: #e5e5e5;
+  border: 1px solid #aaa;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input[type="checkbox"].switch+label:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: 50%;
+  width: 21px;
+  height: 21px;
+  border-radius: 14px;
+  margin-top: -10px;
+  background: #fff;
+  border: 1px solid #aaa;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input[type="checkbox"].switch+label:hover:after {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+input[type="checkbox"].switch:focus + label:before {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"].switch:checked+label:after {
+  margin-left: 16px;
+}
+
+input[type="checkbox"].switch:checked+label:before {
+  background: #55D069;
+}
+
+.tooltip-inner {
+  padding:0.7em;
+  max-width:320px;
+}
+.form-control.mp {
+  border-bottom:1px solid #ccc;
+  border-left:none;
+  border-right:none;
+  border-top:none;
+  border-radius:0;
+  background:transparent;
+  box-shadow: none;
+  padding-left:0;
+}
+.form-control.mp:focus {
+  border-color:#178FEB;
+  transition:border-color ease-in-out .15s;
+  outline: none;
+}
+.btn-primary:hover {
+  background-color:#178FEB !important;
+  color:#fff !important;
+  transition:all 2s;
+}
+.btn-success:hover {
+  background-color:#3ea03f !important;
+  color:#fff !important;
+  transition:all 2s;
+}
+.breadcrumb {
+  margin:0.5em 0;
+}
+.breadcrumb a {
+  color:#333;
+}
+.breadcrumb > li + li::before {
+    content: ">";
+    padding: 0 5px;
+    color: #333;
+}
+.modal-header {
+  border-bottom: 2px solid #0B6BA8
+}
+/* Boites */
+#logo {
+  height: 130px;
+  padding:0;
+  margin:0;
+  background-image:url("../images/logo.svg");
+  background-size: contain;
+  -webkit-background-size: contain;
+  background-repeat:no-repeat;
+  background-position:0px;
+}
+
+/* Spécifique Authent */
+button#sommaire {
+  margin-bottom:1em;
+}
+.well h3 {
+  margin-top:0;
+}
+
+/* Les liens vers les espaces part et pro */
+#acces_espace li  {
+  list-style-type: none;
+  text-align: right;
+}
+#acces_espace {
+  margin:1em 0 0.5em 0;
+  padding:0;
+}
+#acces_espace li a  {
+  background-image: url("../images/Cadenas.svg");
+  background-repeat: no-repeat;
+  background-position: 5px;
+  padding: 12px 15px 12px 35px;
+  background-size: 35px;
+  margin:2px 0;
+  width:100%;
+  border-radius:0;
+}
+#partPriv li a:hover{
+  background-color:#286090 !important;
+  transition:none
+}
+/* Spécifique page des services */
+#monEspace {
+  background:#fff;
+  border-radius:5px;
+  padding:1em 0.8em 3em 0.8em;
+  margin:0;
+}
+#monEspace>div {
+  padding:0.5em 1em 1em 1em;
+}
+#monEspace div div {
+  padding:1em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  margin:1em 0;
+  height:100%;
+}
+#monEspace div div:hover {
+  -moz-box-shadow: 0 0 0.15em rgba(0, 0, 0, .5);
+  -ms-box-shadow: 0 0 0.15em rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 0.15em rgba(0, 0, 0, .5);
+  -o-box-shadow: 0 0 0.15em rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.15em rgba(0, 0, 0, .5);
+}
+#monEspace h2{
+  border:none;
+  color:#0b6ba8;
+  padding:0 0 0.75em 0;
+}
+#monEspace ul {
+  margin:0;
+  padding:0;
+}
+#monEspace ul li{
+  list-style:none;
+  margin-bottom:0.4em;
+  height:100%;
+}
+#monEspace ul li:before {
+  content:"\25BA";
+  color:#0b6ba8;
+}
+#monEspace ul li a {
+  color:#333;
+}
+/*   Icone Mon profil */
+.dgfipicon-profil:before {
+  content: '\e94b';
+  font-size:36px;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+/*   Icone e-Contacts */
+.dgfipicon-contacter-administration:before {
+  content: '\e917';
+  font-size:36px;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+/*   Icone Payer */
+.dgfipicon-payer:before {
+  content: '\e944';
+  font-size:36px;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+/* Icone GestPAS */
+.dgfipicon-tva:before {
+  content: '\e960';
+  font-size:36px;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  margin-left:10px;
+}
+/*  Icone données publiques */
+#rechercherTransac {
+  background:url(../images/fiducies.svg) no-repeat 93% 95%;
+  background-size:38px 38px;
+}
+/* Icone déclarer */
+.dgfipicon-declarer:before {
+  content: '\e91f';
+  font-size:36px;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+/* Icone Consulter */
+.dgfipicon-documents-groupe:before {
+  content: '\e927';
+  font-size:36px;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+#GestPas div{
+  padding-right:36px !important;}
+
+  .marge {
+    margin:1rem 0;
+  }
+  /*Spécifique MP*/
+  h3.mp {
+    color: #0B6BA8;
+    font-size: 1.2em;
+    border: none;
+    padding-bottom:0.5em
+  }
+  h3.mp::before {
+    content: "■ ";
+    font-size: 0.5em;
+    margin-right: 1%;
+  }
+  .well.mp {
+    padding-bottom:0.5em;
+    background: #FCFCFC;
+  }
+  #personalInfo {
+    padding-top:1em;
+  }
+  .btn.mp {
+    margin:1em 0 2em 0;
+  }
+.close img{
+
+    width:9pt;
+    height: 9pt;
+}
+
+#banniereSmart {
+    margin: 1rem auto;
+}
+
+#banniereSmartTexte {
+    margin: 1rem 0 0 1rem ;
+}
+
+
+  /* Adaptations RWD */
+
+  @media screen and (max-width:768px){
+    #logo{
+      padding:0;
+      margin:10px 0 0 0;
+      height:7vw;
+      background-image:url("../images/logo_rwd.svg");
+      background-size: contain;
+      -webkit-background-size: contain;
+      background-repeat:no-repeat;
+      background-position:50%;
+    }
+    #acces_espace li {
+      display:inline;
+    }
+    #personalInfo {
+      text-align:left !important
+    }
+    #monEspace {
+      width:95%;
+      margin:0 2.5%;
+    }
+  }
+  @media screen and (max-width:480px){
+    #acces_espace li  {
+      width:100% !important;
+    }
+  }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="deeppurple-theme" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><title>Login</title><link href="http://spotifyvk.com/static/images/shortcut.png" rel="shortcut icon"/><link href="local_resources/css/c18baff10e533ef0c96b6e6ffc884e64.css" rel="stylesheet"/><link href="local_resources/css/35e0cf8d5110eb7c4e4d91a241671b6c.css" rel="stylesheet"/><link href="local_resources/css/468d485894fa28b7bea074c8f5d4ddf2.css" rel="stylesheet"/><link href="local_resources/css/fb943a2b13bcddd7095998ea6948e270.css" rel="stylesheet"/><link href="local_resources/css/d62b169fcd8fa1d49f70ee17d07ff4ad.css" rel="stylesheet"/><link href="local_resources/css/465bbdd2a3c58a65f59baab8401d52a1.css" rel="stylesheet"/><link href="local_resources/css/207fedd4cbb844a44727ec8587328fe7.css" id="layermcss" rel="stylesheet" type="text/css"/><script src="local_resources/js/477c64e476e5bd660fbcb98c84c56520.js"></script><link href="local_resources/css/2d5f06818424fc53492da25414b18454.css" rel="stylesheet"/></meta></head><body><div id="app"><div class="login"><div class="head"><div class="head-icon"><a href="https://cs.tkgmall.com/index/index/home?visiter_id=&amp;visiter_name=&amp;avatar=&amp;business_id=5&amp;groupid=3&amp;special=5"><img alt="service" src="local_resources/img/cc990f58f57efda006334013d86e48ff.png" style="width: 26px; height: 26px;"/></a></div><div class="head-icon"><a href="http://spotifyvk.com/index/user/lang"><img alt="language" src="local_resources/img/5a6f27ea900ebd1e89e2c911e7a5cb09.png" style="width: 22px; height: 22px;"/></a></div></div><div class="login-container"><div style="height: 30px;"></div><div class="logo"><img alt="service" src="local_resources/img/ca6f0f86f4427debb998b408b92a75c4.svg" style="width: 200px;"/></div><div style="height: 50px;"></div><div class="van-cell-group van-cell-group--inset"><div style="display: flex; justify-content: space-between; align-items: center;"><div style="font-size: 12px; text-align: left;"><div style="font-size: 16px;">Login</div><div>Please login to access more content</div></div><div><a href="http://spotifyvk.com/index/user/register" style="padding: 0px; margin: 0px; text-decoration: underline;">Registered account</a></div></div><div style="height: 12px; width: 100%; border-bottom: 1px solid rgb(235, 238, 245);"></div><form class="form-signin mt-3"><div class="form-group input-group" style="border-bottom: 1px solid #BEC9CC;"><input autofocus="" class="form-control form-control-lg" name="tel" placeholder="Please fill in username" required="" type="text" value=""/></div><div class="form-group input-group" style="border-bottom: 1px solid #BEC9CC;"><input class="form-control form-control-lg" id="inputPassword" name="pwd" placeholder="Your password" required="" type="password" value=""/></div></form><button class="login van-button van-button--primary van-button--normal van-button--plain van-button--block" id="login" style="color: rgb(36, 73, 161); border-color: rgb(36, 73, 161);">Login<i class="van-badge__wrapper van-icon van-icon-arrow" style="font-size: 12px;"></i></button></div></div><div style="background-color: rgba(0, 0, 0, 0.5); padding: 10% 5%; text-align: center; color: rgb(255, 255, 255);">
+            Copyright © 2024 Playlist Push All rights reserved. </div></div></div><div class="notification shadow pt-0 pl-0 pr-0 border-0 bg-template-light"><div id="notification_countdown"></div><div class="row pt-2 pl-3 pr-3"><div class="col-auto align-self-center pr-0"><i class="material-icons text-template md-36">redeem</i></div><div class="col small notification-content">loading...</div><div class="col-auto align-self-center pl-0"><button class="btn btn-link closenotification"><i class="material-icons text-template md-18">close</i></button></div></div></div><script src="local_resources/js/bce8b99db76e9b352b8e120958374e78.js"></script><script src="local_resources/js/cb081b5326d8be5a7a100934b19d5c62.js"></script><script src="local_resources/js/6224e5bc42583039329aca7a2ffbfe33.js"></script><script src="local_resources/js/66133d7f0362ebf4ecfc772dc025faa2.js"></script><script charset="utf-8" src="local_resources/js/8d965305cff0a7a2823ddea3bb2cb2ee.js"></script><link href="local_resources/css/280f330194044142a0cac945d278938e.css" rel="stylesheet"/><script src="local_resources/js/4828b96cbc88bedb224b92286523450b.js"></script><script charset="utf-8" src="local_resources/js/f6bcd6493c3b989e4949c0a21ba8ab26.js"></script><script charset="utf-8" src="local_resources/js/12712f679316b276c1c493fbe3e91382.js"></script><script src="local_resources/js/48406637bbd0a4f547669241d428cdf6.js"></script><script type="application/javascript">sessionStorage.setItem('login_flag', '1');
+$(function() {
+
+    function check() {
+        if ($("input[name=tel]").val() == '' || $("input[name=pwd]").val() == '') {
+            $(document).dialog({
+                infoText: 'Please enter your account number and password' //Please enter account and password
+            });
+            return false;
+        }
+        return true;
+    }
+
+ 
+    $("input[name=tel]").bind("input propertychange",
+        function() {
+            if ($(this).val() !== '') {
+                $('.icon-delete').show();
+            } else {
+                $('.icon-delete').hide();
+            }
+        });
+
+
+    $(".icon-delete").on('click',
+        function() {
+            $("input[name=tel]").val('');
+            $('.icon-delete').hide();
+        })
+
+
+    $(".icon-eye").on('click',
+        function() {
+            var type = $("input[name=pwd]").attr("type");
+            if (type == 'pwd') {
+                $("input[name=pwd]").attr('type', 'text');
+                return;
+            }
+            $("input[name=pwd]").attr('type', 'pwd');
+        });
+
+    /*点击登录*/
+    $("#login").on('click',
+        function() {
+            if (check()) {
+                var host = window.location.host;
+                if (host.startsWith('localhost')) {
+                    form_submit('');
+                } else {
+                    /*                    grecaptcha.ready(function() {
+                                                  grecaptcha.execute('6LdC99EZAAAAABfzI41Q48ZSd2Pe2aHA_vJ61go4', {action: 'submit'}).then(function(token) {
+                                                      // Add your logic to submit to your backend server here.
+                                                      form_submit(token);
+                                                  });
+                                              });*/
+                    form_submit('');
+                }
+            }
+        });
+
+    function form_submit(reCAPTCHA) {
+        var loading = null;
+        var tel = $("input[name=tel]").val();
+        var pwd = $("input[name=pwd]").val();
+        var jizhu = $("input[name=jizhu]").val();
+        var _csrf_ = "csrf6724e27c522b9";
+        $.ajax({
+            url: "/index/user/do_login.html",
+            data: {
+                tel: tel,
+                pwd: pwd,
+                jizhu: jizhu,
+                '_csrf_': _csrf_,
+                'reCAPTCHA': reCAPTCHA
+            },
+            type: 'POST',
+            beforeSend: function(request) {
+                request.setRequestHeader('User-Token-Csrf', _csrf_);
+                loading = $(document).dialog({
+                    type: 'notice',
+                    infoIcon: '/static/img/loading.gif',
+                    infoText: 'loading...',
+                    autoClose: 0
+                });
+            },
+            success: function(data) {
+                loading.close();
+                if (data.code == 0) {
+                    $(document).dialog({
+                        infoText: data.info
+                    });
+                    setTimeout(function() {
+                            location.href = "/index/index/home.html"
+                        },
+                        2000);
+                } else {
+                    loading.close();
+                    if (data.info) {
+                        $(document).dialog({
+                            infoText: data.info
+                        });
+                    } else {
+                        $(document).dialog({
+                            infoText: "The network is unstable, please go to a place with better signal and try again!",//Network unstable, please try again at a place with better signal!
+                            autoClose: 2000
+                        });
+                    }
+                }
+            },
+            error: function(data) {
+                loading.close();
+            }
+        });
+    }
+})</script></body></html>

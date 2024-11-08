@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1 {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./netflix\ image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    width: 100%;
+    height: 100vh;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.SignIn {
+
+    background-color: red;
+    border: 0;
+    border-radius: 12px;
+    font-size: 12px;
+    padding: 7px;
+    width: 80px;
+
+}
+
+.h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    width: 450px;
+    text-align: center;
+    border: solid 0;
+
+}
+
+.picture {
+    width: 100px;
+    height: 80px;
+}
+
+
+.Unlimited {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 100px;
+
+}
+
+.Unlimited h4 {
+    color: white;
+}
+
+.sub-div {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.EmailAddress {
+    color: aliceblue;
+    border-radius: 6px;
+    margin-top: 10px;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+
+}
+
+.EmailAddress input {
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 7px;
+    background-color: transparent;
+    color: aliceblue;
+
+
+}
+
+.EmailAddress button {
+    background: rgb(229, 9, 20);
+    border: 0;
+    outline: 0;
+    color: aliceblue;
+    font-size: 14px;
+    padding: 7px;
+
+
+
+}
+
+.overflow {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: visible;
+    display: flex;
+    gap: 10px;
+}
+
+::-webkit-scrollbar {
+    display: block;
+}
+
+.section2 {
+    background-color: rgb(9, 4, 3);
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: solid 0;
+    padding: 10px 8%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.Bend {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-top: 4px solid rgb(230, 5, 24);
+    display: flex;
+    position: absolute;
+    width: 80%;
+    top: 0;
+    padding: 5px;
+}
+
+.overflow img {
+    width: 200px;
+    height: 180px;
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: 70px;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.flow:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.plans {
+    background-color: rgb(57, 19, 41);
+    margin: 40px;
+    padding: 15px 4%;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border: 0px solid;
+
+}
+
+.Enjoy {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.plans:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.Optionvalue {
+    background-color: black;
+    color: #fff;
+}
+
+main {
+    width: 100%;
+    background-color: #0c0000;
+    padding: 15px;
+
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+    color: #fff;
+}
+
+main section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.main section div {
+    width: 23%;
+    height: 250px;
+    padding: 8px;
+    background-color: rgb(28, 26, 52);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+
+
+}
+
+.main section p {
+    text-align: end;
+}
+
+.main img {
+    width: 70px;
+    margin-right: 6px;
+}
+
+
+.faq {
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.faq h2 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.firstdropdown {
+    width: 800px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: inherit;
+    padding: 15px;
+    margin-top: 5px;
+
+}
+
+.firstdropdown-div {
+    width: 800px;
+    text-align: inherit;
+    background-color: rgb(45, 45, 45);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: inherit;
+    padding: 15px;
+    display: none;
+}
+
+#drop {
+    font-size: 35px;
+}
+
+.according:focus-within .firstdropdown-div {
+    display: block;
+}
+
+#delete {
+    display: none;
+}
+
+.firstdropdown:focus-within #delete {
+    display: block;
+}
+
+.firstdropdown:focus-within #drop {
+    display: none;
+}
+
+.firstdropdown-sub {
+    background-color: rgb(45, 45, 45);
+    width: 600px;
+    margin-top: 10px;
+    display: none;
+}
+
+.according:focus-within .firstdropdown-sub {
+    display: block;
+}
+
+.Ready2 {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 10px 8%;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.EmailAddress2 {
+    color: aliceblue;
+    /* border-radius: 6px; */
+    margin-top: 5px;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    /* margin-left: 20px; */
+
+}
+
+.EmailAddress2 input {
+    width: 600px;
+    border-radius: 5px;
+    outline: 0;
+    /* margin-left: 20px; */
+    font-size: 16px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(131, 128, 128);
+
+}
+
+.EmailAddress2 button {
+    width: 150px;
+    background: rgb(229, 9, 20);
+    border: 1px solid red;
+    outline: 0;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 9px;
+    border-radius: 5px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+
+}
+
+.overflow {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: visible;
+    display: flex;
+    gap: 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ......................footer......... */
+.footer {
+    color: #b9b4b4;
+    text-decoration: underline solid rgba(122, 121, 121, 0.7);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 10px 20px;
+}
+
+.footer h2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.line {
+    display: flex;
+    /* gap: 20px; */
+    /* padding: 10px; */
+    font-size: 12px;
+    font-family: sans-serif;
+    text-decoration: underline solid rgba(122, 121, 121, 0.7);
+    justify-content: space-evenly;
+    align-items: center;
+    /* vertical-align: baseline; */
+    line-height: 21px;
+    margin-left: -120px;
+}
+
+.select {
+    height: 170px;
+    /* background-color: red; */
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: #b9b4b4;
+}
+
+select {
+    margin-top: 30px;
+}
+
+/* .arrow {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+
+.Nig-div:hover {
+    background-color: blue;
+    color: white
+}
+
+.Nig-div:active {
+    background-color: red;
+}
+
+.div-dropdown {
+    color: #0c0000;
+    background-color: white;
+    position: absolute;
+    margin-top: 30px;
+    display: none;
+    width: 60px;
+    text-align: center;
+    top: 10px;
+
+}
+
+.dropdown3 {
+    position: relative;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    background-color: #0c0000; */
+
+
+/* } */
+
+/* .dropdown3:focus-within .div-dropdown {
+    display: block;
+}
+
+.dropdown3:focus-within {
+    border: 2px solid white;
+} */
+
+

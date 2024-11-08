@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0024)https://tiktok-app.shop/ -->
+<html lang="zxx">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="KreativDev" name="author"/>
+<meta content="TikTok Shop" name="description"/>
+<meta content="app landing, mobile landing, responsive, premium, retina, resume, jquery, css3, bootstrap" name="keywords"/>
+<title>TikTok Shop</title>
+<link href="https://tiktok-app.shop/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="local_resources/css/b797627c976b0840ff5cddb0ba631e54.css" rel="stylesheet"/>
+<link href="local_resources/css/135dee0306acfaeffcb0700ae579113a.css" rel="stylesheet"/>
+<link href="local_resources/css/21858a072a1467c5644fccb17dd53a9a.css" rel="stylesheet"/>
+<link href="local_resources/css/caa40eb186a37e68d5a9a915224bf85d.css" rel="stylesheet"/>
+<link href="local_resources/css/f5494f0425756b1941f41f9b6d0a5ddf.css" rel="stylesheet"/>
+<link href="local_resources/css/6b53c1e2329fc3b02eaa9201cec7a3e4.css" rel="stylesheet"/>
+<link href="local_resources/css/8ede3af2db81f5bebf7ee5fbf12a9baa.css" rel="stylesheet"/>
+<link href="local_resources/css/ea53dce6ee6e329cdb43639beeba4efb.css" rel="stylesheet"/>
+<link href="local_resources/css/26456d9b553eb30c64d0611371c91ac8.css" rel="stylesheet"/>
+<link href="local_resources/css/ba5d53eba2f72b4dd31c84405814c05e.css" rel="stylesheet"/>
+<style>
+        .langImg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        #langChange {
+            height: 0;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .langChange {
+                width: 120px;
+                position: fixed;
+                top: 60px;
+                right: 0px;
+                overflow-y: scroll;
+                background-color: black;
+                z-index: 999;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .langChange {
+                width: 120px;
+                position: fixed;
+                top: 100px;
+                right: 80px;
+                overflow-y: scroll;
+                background-color: black;
+                z-index: 999;
+
+            }
+        }
+
+        .ml10 {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body class="theme-color-1" data-aos-delay="0" data-aos-duration="1500" data-aos-easing="ease">
+<div id="app">
+<div id="preLoader" style="display: none;">
+<div class="loader"></div>
+</div>
+<header class="header-area aos-init aos-animate" data-aos="fade-down">
+<div class="mobile-menu" style="display: none;">
+<div class="container">
+<div class="mobile-menu-wrapper">
+<div class="more-option mobile-item">
+<div class="item">
+<div class="i18n" onclick="showLang()">
+<img src="local_resources/img/30b459745a4702250185529ca2b4772b.svg"/> <span>English</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="main-responsive-nav">
+<div class="container">
+<div class="logo"><a href="https://tiktok-app.shop/index.html" target="_self" title="TikTok">
+<path d="M87.822 17.389c.019.587.284 1.138.815 1.611.53.474 1.194.702 1.99.702 1.574 0 2.466-.834 2.636-1.915.094-1.29-.854-2.029-2.218-2.332l-1.688-.417c-2.123-.55-3.184-1.688-3.184-3.413 0-1.081.417-1.954 1.251-2.636.834-.702 1.82-1.042 2.977-1.042 1.214 0 2.218.36 3.014 1.061.797.702 1.195 1.612 1.195 2.768h-1.764c0-1.29-1.023-2.142-2.465-2.142-.663 0-1.232.19-1.725.55-.474.36-.721.833-.721 1.42 0 .91.626 1.518 1.858 1.821l1.706.418c2.483.626 3.735 2.047 3.489 4.095-.115.985-.57 1.801-1.346 2.445-.778.645-1.782.967-3.015.967-1.308 0-2.389-.398-3.261-1.176-.872-.796-1.308-1.725-1.308-2.786h1.764zM98.27 21.16h-1.725V7.493h1.726v6.143c.246-.493.644-.872 1.213-1.118.588-.266 1.157-.398 1.707-.398 2.217 0 3.602 1.441 3.583 3.925v5.119h-1.726v-5.005c0-1.441-.853-2.35-2.085-2.35-.701 0-1.327.208-1.877.644-.55.418-.815 1.062-.815 1.934v4.775zM107.376 13.388c.891-.854 1.991-1.27 3.299-1.27 1.309 0 2.408.417 3.299 1.27s1.346 1.953 1.346 3.317c0 1.366-.455 2.484-1.366 3.356-.89.854-1.99 1.29-3.28 1.29-1.289 0-2.389-.436-3.28-1.29-.891-.853-1.346-1.972-1.346-3.356.001-1.364.437-2.464 1.328-3.317zm5.367 1.214c-.551-.531-1.252-.797-2.067-.797-.815 0-1.517.266-2.085.797-.549.53-.834 1.232-.834 2.104 0 .891.285 1.612.834 2.161.569.55 1.27.815 2.085.815s1.517-.266 2.067-.815c.569-.55.853-1.27.853-2.16-.001-.873-.285-1.575-.853-2.105zM118.473 12.307v1.384c.588-.986 1.821-1.573 3.09-1.573 1.233 0 2.294.436 3.148 1.29.853.853 1.289 1.971 1.289 3.355 0 1.366-.436 2.465-1.289 3.318-.854.854-1.896 1.27-3.148 1.27-1.289 0-2.54-.53-3.09-1.517v5.63h-1.725V12.308h1.725zm.891 6.597a2.966 2.966 0 002.029.759c1.649 0 2.863-1.157 2.863-2.882 0-.872-.285-1.593-.834-2.142-.549-.55-1.214-.834-2.029-.834s-1.497.266-2.066.815c-.549.53-.834 1.252-.834 2.161-.001.892.284 1.612.871 2.123z" fill="currentColor"></path>
+<path d="M7.959 10.909v-.814a6.102 6.102 0 00-.818-.06A6.07 6.07 0 001.078 16.1a6.06 6.06 0 002.588 4.965 5.962 5.962 0 01-.084-.092c-.957-1.072-1.507-2.487-1.507-4.037a6.009 6.009 0 015.884-6.026z" fill="#25F4EE"></path>
+<path d="M8.102 19.728a2.811 2.811 0 002.788-2.689l.007-13.178 2.392.004-.005-.03A4.57 4.57 0 0113.206 3H9.911l-.006 13.203a2.77 2.77 0 01-2.764 2.666c-.463 0-.9-.116-1.285-.318.504.698 1.321 1.177 2.246 1.177zM17.79 8.37v-.786c-.92 0-1.777-.274-2.496-.743.639.735 1.509 1.318 2.496 1.53z" fill="#25F4EE"></path>
+<path d="M15.293 6.84a4.562 4.562 0 01-1.127-3.004h-.906c.233 1.255 1.001 2.332 2.033 3.005zM7.141 13.305a2.816 2.816 0 00-2.794 2.794c0 1.064.629 1.988 1.51 2.452a2.751 2.751 0 01-.525-1.615 2.773 2.773 0 012.77-2.77c.284 0 .558.048.816.129v-3.363a6.086 6.086 0 00-.817-.06c-.048 0-.095.003-.143.004l-.023.003-.002 2.54a2.554 2.554 0 00-.792-.114z" fill="#FE2C55"></path>
+<path d="M17.79 8.318l-.018-.004-.007 2.537a7.828 7.828 0 01-4.577-1.484l-.004 6.733a6.031 6.031 0 01-6.041 6.04 6.008 6.008 0 01-3.476-1.075A6.045 6.045 0 008.103 23a6.07 6.07 0 006.064-6.064V10.24a7.835 7.835 0 004.584 1.474V8.42c-.33 0-.652-.037-.961-.102z" fill="#FE2C55"></path>
+<path d="M13.206 16.1V9.403a7.834 7.834 0 004.584 1.474v-2.56a4.584 4.584 0 01-2.496-1.477 4.59 4.59 0 01-2.009-3.005h-2.413l-.006 13.203a2.77 2.77 0 01-2.764 2.666 2.765 2.765 0 01-2.245-1.155 2.77 2.77 0 011.285-5.221c.285 0 .56.047.818.128v-2.582a6.07 6.07 0 00-5.922 6.06c0 1.594.62 3.046 1.628 4.13a6.03 6.03 0 003.475 1.098 6.07 6.07 0 006.065-6.064zM21.84 8.05h9.757l-.896 2.792-2.531-.001v10.32h-3.155v-10.32l-3.173.006-.002-2.796zM47.58 8.05h9.984l-.897 2.792-2.751-.001v10.32h-3.159v-10.32l-3.173.006-.003-2.796zM32.192 12.22h3.129l-.004 8.942H32.21l-.019-8.941zM36.56 8.013h3.125v6.107l3.096-3.04h3.73l-3.918 3.802 4.388 6.279h-3.444l-2.928-4.355-.926.9v3.455h-3.124V8.013h.002zM69.671 8.013h3.124v6.107l3.097-3.04h3.73l-3.918 3.802 4.387 6.279h-3.443l-2.928-4.355-.927.9v3.455H69.67V8.013h.002zM33.755 11.199a1.574 1.574 0 100-3.148 1.574 1.574 0 000 3.148z" fill="currentColor"></path>
+<path d="M57.164 15.81a5.35 5.35 0 014.933-5.335 6.972 6.972 0 00-.47-.018 5.352 5.352 0 000 10.704c.142 0 .33-.007.47-.018a5.351 5.351 0 01-4.933-5.334z" fill="#25F4EE"></path>
+<path d="M63.312 10.457c-.142 0-.332.008-.473.018a5.351 5.351 0 010 10.668c.14.012.33.018.473.018a5.352 5.352 0 100-10.704z" fill="#FE2C55"></path>
+<path d="M62.467 10.457a5.352 5.352 0 100 10.704 5.352 5.352 0 000-10.704zm0 7.954a2.602 2.602 0 110-5.204 2.602 2.602 0 010 5.204z" fill="currentColor"></path>
+</a></div>
+<div class="i18n" onclick="showLang()"><img src="local_resources/img/30b459745a4702250185529ca2b4772b.svg"/> <span>English</span>
+</div>
+</div>
+</div>
+<div class="main-navbar">
+<div class="container">
+<nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="https://tiktok-app.shop/index.html" target="_self" title="TikTok">
+<path d="M87.822 17.389c.019.587.284 1.138.815 1.611.53.474 1.194.702 1.99.702 1.574 0 2.466-.834 2.636-1.915.094-1.29-.854-2.029-2.218-2.332l-1.688-.417c-2.123-.55-3.184-1.688-3.184-3.413 0-1.081.417-1.954 1.251-2.636.834-.702 1.82-1.042 2.977-1.042 1.214 0 2.218.36 3.014 1.061.797.702 1.195 1.612 1.195 2.768h-1.764c0-1.29-1.023-2.142-2.465-2.142-.663 0-1.232.19-1.725.55-.474.36-.721.833-.721 1.42 0 .91.626 1.518 1.858 1.821l1.706.418c2.483.626 3.735 2.047 3.489 4.095-.115.985-.57 1.801-1.346 2.445-.778.645-1.782.967-3.015.967-1.308 0-2.389-.398-3.261-1.176-.872-.796-1.308-1.725-1.308-2.786h1.764zM98.27 21.16h-1.725V7.493h1.726v6.143c.246-.493.644-.872 1.213-1.118.588-.266 1.157-.398 1.707-.398 2.217 0 3.602 1.441 3.583 3.925v5.119h-1.726v-5.005c0-1.441-.853-2.35-2.085-2.35-.701 0-1.327.208-1.877.644-.55.418-.815 1.062-.815 1.934v4.775zM107.376 13.388c.891-.854 1.991-1.27 3.299-1.27 1.309 0 2.408.417 3.299 1.27s1.346 1.953 1.346 3.317c0 1.366-.455 2.484-1.366 3.356-.89.854-1.99 1.29-3.28 1.29-1.289 0-2.389-.436-3.28-1.29-.891-.853-1.346-1.972-1.346-3.356.001-1.364.437-2.464 1.328-3.317zm5.367 1.214c-.551-.531-1.252-.797-2.067-.797-.815 0-1.517.266-2.085.797-.549.53-.834 1.232-.834 2.104 0 .891.285 1.612.834 2.161.569.55 1.27.815 2.085.815s1.517-.266 2.067-.815c.569-.55.853-1.27.853-2.16-.001-.873-.285-1.575-.853-2.105zM118.473 12.307v1.384c.588-.986 1.821-1.573 3.09-1.573 1.233 0 2.294.436 3.148 1.29.853.853 1.289 1.971 1.289 3.355 0 1.366-.436 2.465-1.289 3.318-.854.854-1.896 1.27-3.148 1.27-1.289 0-2.54-.53-3.09-1.517v5.63h-1.725V12.308h1.725zm.891 6.597a2.966 2.966 0 002.029.759c1.649 0 2.863-1.157 2.863-2.882 0-.872-.285-1.593-.834-2.142-.549-.55-1.214-.834-2.029-.834s-1.497.266-2.066.815c-.549.53-.834 1.252-.834 2.161-.001.892.284 1.612.871 2.123z" fill="currentColor"></path>
+<path d="M7.959 10.909v-.814a6.102 6.102 0 00-.818-.06A6.07 6.07 0 001.078 16.1a6.06 6.06 0 002.588 4.965 5.962 5.962 0 01-.084-.092c-.957-1.072-1.507-2.487-1.507-4.037a6.009 6.009 0 015.884-6.026z" fill="#25F4EE"></path>
+<path d="M8.102 19.728a2.811 2.811 0 002.788-2.689l.007-13.178 2.392.004-.005-.03A4.57 4.57 0 0113.206 3H9.911l-.006 13.203a2.77 2.77 0 01-2.764 2.666c-.463 0-.9-.116-1.285-.318.504.698 1.321 1.177 2.246 1.177zM17.79 8.37v-.786c-.92 0-1.777-.274-2.496-.743.639.735 1.509 1.318 2.496 1.53z" fill="#25F4EE"></path>
+<path d="M15.293 6.84a4.562 4.562 0 01-1.127-3.004h-.906c.233 1.255 1.001 2.332 2.033 3.005zM7.141 13.305a2.816 2.816 0 00-2.794 2.794c0 1.064.629 1.988 1.51 2.452a2.751 2.751 0 01-.525-1.615 2.773 2.773 0 012.77-2.77c.284 0 .558.048.816.129v-3.363a6.086 6.086 0 00-.817-.06c-.048 0-.095.003-.143.004l-.023.003-.002 2.54a2.554 2.554 0 00-.792-.114z" fill="#FE2C55"></path>
+<path d="M17.79 8.318l-.018-.004-.007 2.537a7.828 7.828 0 01-4.577-1.484l-.004 6.733a6.031 6.031 0 01-6.041 6.04 6.008 6.008 0 01-3.476-1.075A6.045 6.045 0 008.103 23a6.07 6.07 0 006.064-6.064V10.24a7.835 7.835 0 004.584 1.474V8.42c-.33 0-.652-.037-.961-.102z" fill="#FE2C55"></path>
+<path d="M13.206 16.1V9.403a7.834 7.834 0 004.584 1.474v-2.56a4.584 4.584 0 01-2.496-1.477 4.59 4.59 0 01-2.009-3.005h-2.413l-.006 13.203a2.77 2.77 0 01-2.764 2.666 2.765 2.765 0 01-2.245-1.155 2.77 2.77 0 011.285-5.221c.285 0 .56.047.818.128v-2.582a6.07 6.07 0 00-5.922 6.06c0 1.594.62 3.046 1.628 4.13a6.03 6.03 0 003.475 1.098 6.07 6.07 0 006.065-6.064zM21.84 8.05h9.757l-.896 2.792-2.531-.001v10.32h-3.155v-10.32l-3.173.006-.002-2.796zM47.58 8.05h9.984l-.897 2.792-2.751-.001v10.32h-3.159v-10.32l-3.173.006-.003-2.796zM32.192 12.22h3.129l-.004 8.942H32.21l-.019-8.941zM36.56 8.013h3.125v6.107l3.096-3.04h3.73l-3.918 3.802 4.388 6.279h-3.444l-2.928-4.355-.926.9v3.455h-3.124V8.013h.002zM69.671 8.013h3.124v6.107l3.097-3.04h3.73l-3.918 3.802 4.387 6.279h-3.443l-2.928-4.355-.927.9v3.455H69.67V8.013h.002zM33.755 11.199a1.574 1.574 0 100-3.148 1.574 1.574 0 000 3.148z" fill="currentColor"></path>
+<path d="M57.164 15.81a5.35 5.35 0 014.933-5.335 6.972 6.972 0 00-.47-.018 5.352 5.352 0 000 10.704c.142 0 .33-.007.47-.018a5.351 5.351 0 01-4.933-5.334z" fill="#25F4EE"></path>
+<path d="M63.312 10.457c-.142 0-.332.008-.473.018a5.351 5.351 0 010 10.668c.14.012.33.018.473.018a5.352 5.352 0 100-10.704z" fill="#FE2C55"></path>
+<path d="M62.467 10.457a5.352 5.352 0 100 10.704 5.352 5.352 0 000-10.704zm0 7.954a2.602 2.602 0 110-5.204 2.602 2.602 0 010 5.204z" fill="currentColor"></path>
+</a>
+<div class="more-option mobile-item">
+<div class="item">
+<div class="i18n" onclick="showLang()"><img src="local_resources/img/30b459745a4702250185529ca2b4772b.svg"/>
+<span>English</span>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</header>
+<section class="hero-banner hero-banner-1 bg-cover bg-img bg-primary-light" data-bg-image="static/image/hero-banner-bg-1.png" style='background-image: url("static/image/hero-banner-bg-1.png"); display: block;'>
+<div class="container">
+<div class="row align-items-center gx-xl-5">
+<div class="col-lg-6">
+<div class="banner-content mb-40">
+<h1 class="title mb-30 color-primary aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">TikTok Shop
+                            </h1>
+<h1 class="title mb-30 text-white aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">platform's fully managed operation
+                                model</h1>
+<p class="text aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">Providing
+                                quality goods and services to global consumers and comprehensive support for merchants
+                                to help them rapidly expand into the global market.
+                            </p>
+<div class="cta-btn mt-40 btn-groups aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-img radius-md download-btn" onclick="goApp()" target="_blank" title="App Store"><img alt="App Store" class="blur-up lazyloaded" data-src="assets/images/app-store.png" src="local_resources/img/820fa450f6efa3dd86c1ead66a212dd5.png"/></a> <a class="btn btn-img radius-md download-btn" onclick="goGo()" target="_blank" title="Play Store"><img alt="App Store" class="blur-up lazyloaded" data-src="assets/images/play-store.png" src="local_resources/img/233cc2efc85b5ca1c7a92dae38e1311a.png"/></a></div>
+<div class="clients-avatar mt-40 aos-init aos-animate" data-aos="fade-up" data-aos-delay="250">
+<div class="client-img"><img alt="Client Image" class="blur-up lazyloaded" data-src="assets/images/avatar-1.jpg" src="local_resources/img/2501341a43a8374467322a92b53e29d9.jpg"/> <img alt="Client Image" class="blur-up lazyloaded" data-src="assets/images/avatar-2.jpg" src="local_resources/img/17927b34ad6f61325055394faf2a7c47.jpg"/> <img alt="Client Image" class="blur-up lazyloaded" data-src="assets/images/avatar-3.jpg" src="local_resources/img/300aab227c73f8a5bc97b6bab8a96544.jpg"/> <img alt="Client Image" class="blur-up lazyloaded" data-src="assets/images/avatar-4.jpg" src="local_resources/img/54bf0817420e90355bb624de69f4cc82.jpg"/> <span>+999... </span></div> <span>50,000+ User
+                                    download our app</span>
+</div>
+</div>
+</div>
+<div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+<div class="banner-image">
+</div>
+<video autoplay="autoplay" loop="loop" muted="muted" poster="./static/poster.png" src="./static/tiktok.mp4" style="width: 100%;">
+</video>
+</div>
+</div>
+</div>
+</section>
+<section class="counter-area counter-1 pt-100">
+<div class="container">
+<div class="langChange" id="langChange">
+<a class="flex" href="index.html">
+<img alt="" class="langImg ml10" src="local_resources/img/f46bfad6ba0a9039a7deb301ff507075.svg"/><span class="ml10" style="color: white !important;">Chinese</span>
+</a>
+<a class="flex" href="">
+<img alt="" class="langImg ml10" src="local_resources/img/30b459745a4702250185529ca2b4772b.svg"/><span class="ml10" style="color: white !important;">English</span>
+</a>
+<a class="flex" href="fr.html">
+<img alt="" class="langImg ml10" src="local_resources/img/814b8156ffb6d1f99eeb3342dcbf553d.svg"/><span class="ml10" style="color: white !important;">French</span>
+</a>
+<a class="flex" href="de.html">
+<img alt="" class="langImg ml10" src="local_resources/img/ba330fbae16b95400cd12383e4a35543.svg"/><span class="ml10" style="color: white !important;">German</span>
+</a>
+<a class="flex" href="it.html">
+<img alt="" class="langImg ml10" src="local_resources/img/4fc11f8cd18e0c618cb48311b6f92083.svg"/> <span class="ml10" style="color: white !important;">Italian</span>
+</a>
+<a class="flex" href="es.html">
+<img alt="" class="langImg ml10" src="local_resources/img/bfc4addfb852f7af6027e0a9864b1cbe.svg"/><span class="ml10" style="color: white !important;">Spanish</span>
+</a>
+<a class="flex" href="ko.html">
+<img alt="" class="langImg ml10" src="local_resources/img/4561c5ba4d899daaf60bbcd3aff6b10a.svg"/><span class="ml10" style="color: white !important;">Korean</span>
+</a>
+<a class="flex" href="jp.html">
+<img alt="" class="langImg ml10" src="local_resources/img/774d616690034272cab49004088bd807.svg"/><span class="ml10" style="color: white !important;">Japanese</span>
+</a>
+<a class="flex" href="ms.html">
+<img alt="" class="langImg ml10" src="local_resources/img/2549c8c8c73a1ba1ca30fc996d4d5f4d.svg"/><span class="ml10" style="color: white !important;">Malay</span>
+</a>
+<a class="flex" href="th.html">
+<img alt="" class="langImg ml10" src="local_resources/img/0c2900ad3db548cb185fbec551d1aeec.svg"/><span class="ml10" style="color: white !important;">Thai</span>
+</a>
+<a class="flex" href="vi.html">
+<img alt="" class="langImg ml10" src="local_resources/img/57ca22bc733c222bf9530fb794b9325e.png"/><span class="ml10" style="color: white !important;">Vietnam</span>
+</a>
+</div>
+<div class="row">
+<div class="col-12">
+<div class="row">
+<div class="col-sm-6 col-lg-3 mb-40 border-sm-end aos-init aos-animate" data-aos="fade-up">
+<div class="card text-center">
+<div class="card-icon mx-auto color-primary mb-20"><img alt="" src="local_resources/img/bb4d32bac536e0615ef08363fc23560f.png"/></div>
+<div class="card-content"><span class="h3 font-medium mb-2">Discovery</span>
+<p class="card-text lh-1">Entertainment meets commerce through authentic and
+                                            relatable shopping content, that sparks inspiration leading to purchase.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-40 border-sm-end aos-init aos-animate" data-aos="fade-up">
+<div class="card text-center">
+<div class="card-icon mx-auto color-primary mb-20"><img alt="" src="local_resources/img/1a185468c6486b8597204c2b8797876a.png"/></div>
+<div class="card-content"><span class="h3 font-medium mb-2">Trusted Creators</span>
+<p class="card-text lh-1">Creators show up differently on TikTok, bringing a
+                                            fresh take on shopping by helping brands build trust and influence through
+                                            authentic content.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-40 border-sm-end aos-init aos-animate" data-aos="fade-up">
+<div class="card text-center">
+<div class="card-icon mx-auto color-primary mb-20"><img alt="" src="local_resources/img/37125365102b0fb56f0c815fd388f977.png"/></div>
+<div class="card-content"><span class="h3 font-medium mb-2">Engaging
+                                            Communities</span>
+<p class="card-text lh-1">TikTok communities drive discovery and influence
+                                            culture. Brands can build lasting relationships with users by tapping into
+                                            these existing communities.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-40 border-sm-end aos-init aos-animate" data-aos="fade-up">
+<div class="card text-center">
+<div class="card-icon mx-auto color-primary mb-20"><img alt="" src="local_resources/img/5009ea6f1ec7ca3900d93586d62b7865.png"/></div>
+<div class="card-content"><span class="h3 font-medium mb-2">Easy &amp; Safe
+                                            Shopping</span>
+<p class="card-text lh-1">Revolutionising the shopping journey, from the For You
+                                            Page to a safe and secure check-out, order management, and support all
+                                            within the app.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="choose-area choose-1 ptb-60 bg-black">
+<div class="container">
+<div class="row align-items-center gx-xl-5">
+<div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+<div class="image mb-40"><img alt="Image" class="blur-up js-tilt lazyloaded" data-src="assets/images/choose-1.png" src="local_resources/img/91fd8a20d56911a850b9ec1f3f5ab31c.png"/>
+</div>
+</div>
+<div class="col-lg-6 order-lg-first aos-init aos-animate" data-aos="fade-up">
+<div class="content-title mb-40">
+<h2 class="title mb-30 mt-0 text-white">
+                                Global Market
+                            </h2>
+<div class="content-text">
+<p>
+                                    Tik Tok shop platform covers many countries and regions around the world, providing
+                                    merchants with a platform for cross-border sales, helping them break through
+                                    geographical restrictions and easily expand the global market.
+                                </p>
+</div>
+<ul class="info-list list-unstyled mt-20">
+<li><i class="far fa-dot-circle"></i>
+                                    The platform provides comprehensive cross-border e-commerce services
+                                </li>
+<li><i class="far fa-dot-circle"></i>
+                                    Overseas Warehousing International Logistics Cross-border Payment
+                                </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="counter-area counter-1 pt-100">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-title title-center mb-50 aos-init aos-animate" data-aos="fade-up">
+<h2 class="title mt-0"> Full hosting operation mode</h2>
+</div>
+</div>
+<div class="col-12">
+<div class="row">
+<div class="col-sm-6 col-lg-3 mb-40 border-sm-end aos-init aos-animate" data-aos="fade-up">
+<div class="card text-center">
+<div class="card-icon mx-auto color-primary mb-20"><img alt="" src="local_resources/img/213f9c229fb1a706142d6bac29ab7cba.png"/></div>
+<div class="card-content"><span class="h3 font-medium mb-2"> One piece of hair
+                                            service</span>
+<p class="card-text lh-1"> One for sending service is the supplier directly from
+                                            the warehouse to the buyer's service, the seller does not need to prepare
+                                            and shipment. This service model can help sellers reduce warehousing costs
+                                            and improve efficiency. At the same time, attention should also be paid to
+                                            confirm the reliability of the supplier to ensure the quality of goods and
+                                            the timeliness of delivery.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-40 border-sm-end aos-init aos-animate" data-aos="fade-up">
+<div class="card text-center">
+<div class="card-icon mx-auto color-primary mb-20"><img alt="" src="local_resources/img/089ba8d621778a4745abd6e9f2df0139.png"/></div>
+<div class="card-content"><span class="h3 font-medium mb-2"> Rapid store
+                                            opening</span>
+<p class="card-text lh-1"> Rapid store opening is a way to quickly set up and
+                                            operate a store through a simplified process, which is suitable for startups
+                                            and small merchants.​​</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-40 border-sm-end aos-init aos-animate" data-aos="fade-up">
+<div class="card text-center">
+<div class="card-icon mx-auto color-primary mb-20"><img alt="" src="local_resources/img/34c5709f58ea5f763241ae62e52da390.png"/></div>
+<div class="card-content"><span class="h3 font-medium mb-2"> free stationing</span>
+<p class="card-text lh-1"> Free entry is a kind of free store opening or
+                                            registration service provided by the platform, which allows merchants or
+                                            individuals to display and sell their goods or services on the platform
+                                            without paying any fees.​​​</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-40 border-sm-end aos-init aos-animate" data-aos="fade-up">
+<div class="card text-center">
+<div class="card-icon mx-auto color-primary mb-20"><img alt="" src="local_resources/img/cd9141733ac86d938bd3d7e84c7d9c26.png"/></div>
+<div class="card-content"><span class="h3 font-medium mb-2"> One-click commodity
+                                            import​</span>
+<p class="card-text lh-1"> One-click commodity import is a function on the
+                                            e-commerce platform that allows sellers to quickly import commodity
+                                            information from other platforms or files into their own stores, improving
+                                            work efficiency and ensuring information accuracy.​​​​</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="screenshot-area pt-60 bg-black">
+<div class="container-fluid px-0">
+<div class="row">
+<div class="col-12">
+<div class="section-title title-center mb-50 aos-init aos-animate" data-aos="fade-up">
+<h2 class="title mt-0 text-white">Professional customer service team and after-sales
+                                service​</h2> <span class="subtitle color-primary mt-30 mb-30">After-sales service
+                                support​</span> <span class="subtitle title" style="display: block;">TikTok shop
+                                platform provides comprehensive after-sales service, including product returns, order
+                                inquiries, logistics tracking, etc., to provide consumers with a worry-free shopping
+                                experience.​</span>
+</div>
+</div>
+<div class="col-12">
+<div class="zone-swiper screenshot-slider-1 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden aos-init aos-animate" data-aos="fade-up">
+<div aria-live="off" class="swiper-wrapper" id="swiper-wrapper-e915155cd5702f0e" style="cursor: grab; transform: translate3d(-1915px, 0px, 0px); transition-duration: 0ms;">
+<div aria-label="1 / 2" class="swiper-slide swiper-slide-prev" role="group" style="width: 1915px;">
+<div class="lazy-container ratio ratio-16-11"><img alt="Image" class="lazyloaded" data-src="assets/images/screenshot-lg-1.png" src="local_resources/img/f2dda531964a6e4f09b09730bcdb8a43.png"/></div>
+</div>
+<div aria-label="2 / 2" class="swiper-slide swiper-slide-active" role="group" style="width: 1915px;">
+<div class="lazy-container ratio ratio-16-11"><img alt="Image" class="lazyloaded" data-src="assets/images/screenshot-lg-2.png" src="local_resources/img/f303365e0285a4d6e85bf4b4279a2cf3.png"/></div>
+</div>
+</div>
+<div class="swiper-scrollbar swiper-scrollbar-horizontal">
+<div class="swiper-scrollbar-drag" style="transform: translate3d(957.5px, 0px, 0px); width: 957.5px; transition-duration: 0ms;">
+</div>
+</div>
+<div class="swiper-pagination screenshot-slider-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+<span aria-label="Go to slide 1" class="swiper-pagination-bullet" role="button" tabindex="0"></span><span aria-current="true" aria-label="Go to slide 2" class="swiper-pagination-bullet swiper-pagination-bullet-active" role="button" tabindex="0"></span>
+</div> <span aria-atomic="true" aria-live="assertive" class="swiper-notification"></span><span aria-atomic="true" aria-live="assertive" class="swiper-notification"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="pricing-area pt-100 pb-70 bg-black">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-title title-center mb-50 aos-init aos-animate" data-aos="fade-up"><span class="subtitle color-primary">Professional Customer Service Team​</span>
+<p class="text">
+                                The customer service team of the TikTok shop platform consists of experienced customer
+                                service personnel who have received professional training and are able to provide
+                                efficient and professional services to merchants and consumers.​
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="faq-area pt-100 pb-60">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-title title-center mb-50 aos-init aos-animate" data-aos="fade-up"><span class="subtitle color-primary">FAQ's</span>
+<h2 class="title mt-0 mw-100"> Frequently Asked Questions​</h2>
+</div>
+</div>
+<div class="col-12">
+<div class="row">
+<div class="col-lg-12 aos-init aos-animate" data-aos="fade-up">
+<div class="accordion mb-10" id="faqAccordion">
+<div class="accordion-item mb-30">
+<h6 class="accordion-header" id="headingOne" style="position: relative;"><button aria-controls="collapseOne" aria-expanded="true" class="accordion-button" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
+                                                1. I don't have any followers, can I apply for a TikTok Shop?
+                                            </button>
+<div style="width: 20px;height: 20px; background-color: white;position: absolute;top: 0;right: 0;z-index: 999;">
+</div>
+</h6>
+<div aria-labelledby="headingOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" id="collapseOne">
+<div class="accordion-body">
+<p>
+                                                    No problem at all, contact tiktok mall customer service and they
+                                                    will provide you with detailed instructions.
+                                                </p>
+</div>
+</div>
+</div>
+<div class="accordion-item mb-30">
+<h6 class="accordion-header" id="headingTwo" style="position: relative;"><button aria-controls="collapseTwo" aria-expanded="true" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+                                                2. What do I need to open a TikTok Shop?
+                                            </button>
+<div style="width: 20px;height: 20px; background-color: white;position: absolute;top: 0;right: 0;z-index: 999;">
+</div>
+</h6>
+<div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseTwo">
+<div class="accordion-body">
+<p>You will need a TikTok account or phone/email Go to Registration to
+                                                    sign up Enter your personal/business information Select your
+                                                    business type and submit Wait for your application to be reviewed
+                                                    for approval</p>
+</div>
+</div>
+</div>
+<div class="accordion-item mb-30">
+<h6 class="accordion-header" id="headingThree" style="position: relative;">
+<button aria-controls="collapseThree" aria-expanded="true" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+                                                3. How do I add products to my TikTok Shop?
+                                            </button>
+<div style="width: 20px;height: 20px; background-color: white;position: absolute;top: 0;right: 0;z-index: 999;">
+</div>
+</h6>
+<div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseThree">
+<div class="accordion-body">
+<p>After successfully registering as a seller in TikTok Shop, you can
+                                                    upload or select product information in the Seller Center.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item mb-30">
+<h6 class="accordion-header" id="headingFour" style="position: relative;">
+<button aria-controls="collapseFour" aria-expanded="true" class="accordion-button collapsed" data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">
+                                                4. How do I sell on TikTokShop?
+                                            </button>
+<div style="width: 20px;height: 20px; background-color: white;position: absolute;top: 0;right: 0;z-index: 999;">
+</div>
+</h6>
+<div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseFour">
+<div class="accordion-body">
+<p>1、Discounts, vouchers, free shipping promotion/subsidies, incentive
+                                                    programmes</p>
+<p>2、Go LIVE, Create Shoppable Videos, Product showcase
+                                                </p>
+<p>3、Get insights on products and sales performance in seller centre:
+                                                    reviews, analytics dashboard
+                                                </p>
+</div>
+</div>
+</div>
+<div class="accordion-item mb-30">
+<h6 class="accordion-header" id="headingFive" style="position: relative;">
+<button aria-controls="collapseFive" aria-expanded="true" class="accordion-button collapsed" data-bs-target="#collapseFive" data-bs-toggle="collapse" type="button">
+                                                5. How can customers buy my products on TikTok Shop?
+                                            </button>
+<div style="width: 20px;height: 20px; background-color: white;position: absolute;top: 0;right: 0;z-index: 999;">
+</div>
+</h6>
+<div aria-labelledby="headingFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="collapseFive">
+<div class="accordion-body">
+<p>LIVE streams, short videos, showcase tab</p>
+<p>Click on product and add to basket</p>
+<p>Manage orders, order tracking, shipping, returns, and payment methods
+                                                    all within seller centre</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="blog-area blog-1 pb-75 bg-black">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="col-12">
+<div class="section-title title-inline mb-50 aos-init aos-animate" data-aos="fade-up">
+<div><span class="subtitle color-primary mt-30">TikTok Shop</span>
+<h3 class="subtitle mt-0 text-white" style="display: block;">In the future, users
+                                        around the world will be able to purchase goods directly through TikTok stores
+                                    </h3>
+<h3 class="subtitle mt-0 text-white">The user base is large, the products are rich,
+                                        the number of sellers is currently small, and the platform dividends are huge
+                                    </h3>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12">
+<div class="row">
+<div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up">
+<article class="card mb-25 radius-md">
+<div class="card-img">
+<div class="lazy-container ratio ratio-1-1 bg-black" href="blog-details.html" target="_self" title="Link"><video autoplay="autoplay" loop="loop" muted="muted" src="./static/1.mp4" style="width: 60%; height: 60%; left: 0px; right: 0px; margin: auto; top: 0px;"></video>
+</div>
+</div>
+<div class="card-content radius-md p-25 text-center bg-white">
+<h5 class="card-title lc-2 mb-15">
+<div title="Link">
+                                                3,000,000,000
+                                            </div>
+</h5>
+<div class="btn-text color-primary" title="Read More">Global downloads</div>
+</div>
+</article>
+</div>
+<div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up">
+<article class="card mb-25 radius-md">
+<div class="card-img">
+<div class="lazy-container ratio ratio-1-1 bg-black" href="blog-details.html" target="_self" title="Link"><video autoplay="autoplay" loop="loop" muted="muted" src="./static/2.mp4" style="width: 60%; height: 60%; left: 0px; right: 0px; margin: auto; top: 0px;"></video>
+</div>
+</div>
+<div class="card-content radius-md p-25 text-center bg-white">
+<h5 class="card-title lc-2 mb-15">
+<div title="Link">
+                                                1,000,000,000
+                                            </div>
+</h5>
+<div class="btn-text color-primary" title="Read More">Monthly active user</div>
+</div>
+</article>
+</div>
+<div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up">
+<article class="card mb-25 radius-md">
+<div class="card-img">
+<div class="lazy-container ratio ratio-1-1 bg-black" title="Link"><video autoplay="autoplay" loop="loop" muted="muted" src="./static/3.mp4" style="width: 60%; height: 60%; left: 0px; right: 0px; margin: auto; top: 0px;"></video>
+</div>
+</div>
+<div class="card-content radius-md p-25 text-center bg-white">
+<h5 class="card-title lc-2 mb-15">
+<div title="Link">
+                                                150
+                                            </div>
+</h5>
+<div class="btn-text color-primary" title="Read More">Global market coverage
+                                        </div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="newsletter-area newsletter-1 pb-100 pt-100">
+<div class="container">
+<div class="newsletter-inner position-relative z-1 px-60">
+<div class="overlay bg-primary opacity-1 radius-lg"></div>
+<div class="row align-items-center aos-init aos-animate" data-aos="fade-up">
+<div class="col-lg-12">
+<div class="content ptb-30">
+<h2 class="color-white mb-30">About TikTok Shop</h2>
+<div class="content-text w-75 w-sm-100">
+<p class="text color-white">TikTok Shop's fully managed operation model is an
+                                        innovative business model that provides comprehensive support services to both
+                                        merchants and consumers, helping merchants rapidly expand into the global
+                                        marketplace and achieve their sales goals, while at the same time providing
+                                        consumers with high-quality products and a good service experience, creating a
+                                        win-win situation for both parties. In short, it is a business model that allows
+                                        merchants to focus on order management and get rid of operational worries!</p>
+</div>
+<div class="btn-groups mt-30"><a class="btn btn-img radius-md download-btn" onclick="goApp()" target="_blank" title="App Store"><img alt="App Store" class="blur-up ls-is-cached lazyloaded" data-src="assets/images/app-store.png" src="local_resources/img/820fa450f6efa3dd86c1ead66a212dd5.png"/></a> <a class="btn btn-img radius-md download-btn" onclick="goGo()" target="_blank" title="Play Store"><img alt="App Store" class="blur-up ls-is-cached lazyloaded" data-src="assets/images/play-store.png" src="local_resources/img/233cc2efc85b5ca1c7a92dae38e1311a.png"/></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer-area bg-primary-light">
+<div class="footer-top pt-100 pb-70">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-lg-3 col-md-6 col-sm-12">
+<div class="footer-widget aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+<div class="navbar-brand"><a href="https://tiktok-app.shop/index.html" target="_self" title="Link">
+<path d="M87.822 17.389c.019.587.284 1.138.815 1.611.53.474 1.194.702 1.99.702 1.574 0 2.466-.834 2.636-1.915.094-1.29-.854-2.029-2.218-2.332l-1.688-.417c-2.123-.55-3.184-1.688-3.184-3.413 0-1.081.417-1.954 1.251-2.636.834-.702 1.82-1.042 2.977-1.042 1.214 0 2.218.36 3.014 1.061.797.702 1.195 1.612 1.195 2.768h-1.764c0-1.29-1.023-2.142-2.465-2.142-.663 0-1.232.19-1.725.55-.474.36-.721.833-.721 1.42 0 .91.626 1.518 1.858 1.821l1.706.418c2.483.626 3.735 2.047 3.489 4.095-.115.985-.57 1.801-1.346 2.445-.778.645-1.782.967-3.015.967-1.308 0-2.389-.398-3.261-1.176-.872-.796-1.308-1.725-1.308-2.786h1.764zM98.27 21.16h-1.725V7.493h1.726v6.143c.246-.493.644-.872 1.213-1.118.588-.266 1.157-.398 1.707-.398 2.217 0 3.602 1.441 3.583 3.925v5.119h-1.726v-5.005c0-1.441-.853-2.35-2.085-2.35-.701 0-1.327.208-1.877.644-.55.418-.815 1.062-.815 1.934v4.775zM107.376 13.388c.891-.854 1.991-1.27 3.299-1.27 1.309 0 2.408.417 3.299 1.27s1.346 1.953 1.346 3.317c0 1.366-.455 2.484-1.366 3.356-.89.854-1.99 1.29-3.28 1.29-1.289 0-2.389-.436-3.28-1.29-.891-.853-1.346-1.972-1.346-3.356.001-1.364.437-2.464 1.328-3.317zm5.367 1.214c-.551-.531-1.252-.797-2.067-.797-.815 0-1.517.266-2.085.797-.549.53-.834 1.232-.834 2.104 0 .891.285 1.612.834 2.161.569.55 1.27.815 2.085.815s1.517-.266 2.067-.815c.569-.55.853-1.27.853-2.16-.001-.873-.285-1.575-.853-2.105zM118.473 12.307v1.384c.588-.986 1.821-1.573 3.09-1.573 1.233 0 2.294.436 3.148 1.29.853.853 1.289 1.971 1.289 3.355 0 1.366-.436 2.465-1.289 3.318-.854.854-1.896 1.27-3.148 1.27-1.289 0-2.54-.53-3.09-1.517v5.63h-1.725V12.308h1.725zm.891 6.597a2.966 2.966 0 002.029.759c1.649 0 2.863-1.157 2.863-2.882 0-.872-.285-1.593-.834-2.142-.549-.55-1.214-.834-2.029-.834s-1.497.266-2.066.815c-.549.53-.834 1.252-.834 2.161-.001.892.284 1.612.871 2.123z" fill="currentColor"></path>
+<path d="M7.959 10.909v-.814a6.102 6.102 0 00-.818-.06A6.07 6.07 0 001.078 16.1a6.06 6.06 0 002.588 4.965 5.962 5.962 0 01-.084-.092c-.957-1.072-1.507-2.487-1.507-4.037a6.009 6.009 0 015.884-6.026z" fill="#25F4EE"></path>
+<path d="M8.102 19.728a2.811 2.811 0 002.788-2.689l.007-13.178 2.392.004-.005-.03A4.57 4.57 0 0113.206 3H9.911l-.006 13.203a2.77 2.77 0 01-2.764 2.666c-.463 0-.9-.116-1.285-.318.504.698 1.321 1.177 2.246 1.177zM17.79 8.37v-.786c-.92 0-1.777-.274-2.496-.743.639.735 1.509 1.318 2.496 1.53z" fill="#25F4EE"></path>
+<path d="M15.293 6.84a4.562 4.562 0 01-1.127-3.004h-.906c.233 1.255 1.001 2.332 2.033 3.005zM7.141 13.305a2.816 2.816 0 00-2.794 2.794c0 1.064.629 1.988 1.51 2.452a2.751 2.751 0 01-.525-1.615 2.773 2.773 0 012.77-2.77c.284 0 .558.048.816.129v-3.363a6.086 6.086 0 00-.817-.06c-.048 0-.095.003-.143.004l-.023.003-.002 2.54a2.554 2.554 0 00-.792-.114z" fill="#FE2C55"></path>
+<path d="M17.79 8.318l-.018-.004-.007 2.537a7.828 7.828 0 01-4.577-1.484l-.004 6.733a6.031 6.031 0 01-6.041 6.04 6.008 6.008 0 01-3.476-1.075A6.045 6.045 0 008.103 23a6.07 6.07 0 006.064-6.064V10.24a7.835 7.835 0 004.584 1.474V8.42c-.33 0-.652-.037-.961-.102z" fill="#FE2C55"></path>
+<path d="M13.206 16.1V9.403a7.834 7.834 0 004.584 1.474v-2.56a4.584 4.584 0 01-2.496-1.477 4.59 4.59 0 01-2.009-3.005h-2.413l-.006 13.203a2.77 2.77 0 01-2.764 2.666 2.765 2.765 0 01-2.245-1.155 2.77 2.77 0 011.285-5.221c.285 0 .56.047.818.128v-2.582a6.07 6.07 0 00-5.922 6.06c0 1.594.62 3.046 1.628 4.13a6.03 6.03 0 003.475 1.098 6.07 6.07 0 006.065-6.064zM21.84 8.05h9.757l-.896 2.792-2.531-.001v10.32h-3.155v-10.32l-3.173.006-.002-2.796zM47.58 8.05h9.984l-.897 2.792-2.751-.001v10.32h-3.159v-10.32l-3.173.006-.003-2.796zM32.192 12.22h3.129l-.004 8.942H32.21l-.019-8.941zM36.56 8.013h3.125v6.107l3.096-3.04h3.73l-3.918 3.802 4.388 6.279h-3.444l-2.928-4.355-.926.9v3.455h-3.124V8.013h.002zM69.671 8.013h3.124v6.107l3.097-3.04h3.73l-3.918 3.802 4.387 6.279h-3.443l-2.928-4.355-.927.9v3.455H69.67V8.013h.002zM33.755 11.199a1.574 1.574 0 100-3.148 1.574 1.574 0 000 3.148z" fill="currentColor"></path>
+<path d="M57.164 15.81a5.35 5.35 0 014.933-5.335 6.972 6.972 0 00-.47-.018 5.352 5.352 0 000 10.704c.142 0 .33-.007.47-.018a5.351 5.351 0 01-4.933-5.334z" fill="#25F4EE"></path>
+<path d="M63.312 10.457c-.142 0-.332.008-.473.018a5.351 5.351 0 010 10.668c.14.012.33.018.473.018a5.352 5.352 0 100-10.704z" fill="#FE2C55"></path>
+<path d="M62.467 10.457a5.352 5.352 0 100 10.704 5.352 5.352 0 000-10.704zm0 7.954a2.602 2.602 0 110-5.204 2.602 2.602 0 010 5.204z" fill="currentColor"></path>
+</a></div><a href="https://tiktok-app.shop/index.html" target="_self" title="Link">
+<p>Ready to start growing your business with TikTok?</p>
+</a>
+</div><a href="https://tiktok-app.shop/index.html" target="_self" title="Link"></a>
+</div><a href="https://tiktok-app.shop/index.html" target="_self" title="Link"></a>
+<div class="col-lg-2 col-md-6 col-sm-6"><a href="https://tiktok-app.shop/index.html" target="_self" title="Link"></a>
+<div class="footer-widget aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"><a href="https://tiktok-app.shop/index.html" target="_self" title="Link">
+<h5>Useful Links</h5>
+</a>
+<ul class="footer-links"><a href="https://tiktok-app.shop/index.html" target="_self" title="Link"></a>
+<li><a href="https://tiktok-app.shop/index.html" target="_self" title="Link"></a><a class="cursor-pointer" target="_blank" title="link">Download App</a></li>
+<li><a class="cursor-pointer" href="https://tiktokmalli.com/#/register" target="_blank" title="link">Registration</a></li>
+<li><a class="cursor-pointer" href="https://tiktokmalli.com/promote/#/" target="_blank" title="link">Business</a></li>
+<li><a class="cursor-pointer" href="https://tiktokmalli.com/promote/#/privacyPolicy" target="_blank" title="link">Privacy</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 col-sm-6">
+<div class="footer-widget aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+<h5>Features</h5>
+<ul class="footer-links">
+<li><a class="cursor-pointer" href="https://tiktokmalli.com/#/index" target="_blank" title="link">Paid Features</a></li>
+<li><a class="cursor-pointer" href="https://tiktokmalli.com/promote/#/shippingPolicy" target="_blank" title="link">Management</a></li>
+<li><a class="cursor-pointer" href="https://tiktokmalli.com/promote/#/returnPolicy" target="_blank" title="link">Tracking</a></li>
+<li><a class="cursor-pointer" href="https://tiktokmalli.com/promote/#/Delivery" target="_blank" title="link">Invoice</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 col-sm-6">
+<div class="footer-widget aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+<h5>Explore</h5>
+<ul class="footer-links">
+<li><a class="cursor-pointer" href="https://chat.ssrchat.com/service/ff52as" target="_blank" title="link">About Us</a></li>
+<li><a class="cursor-pointer" href="https://tiktokmalli.com/promote/#/" target="_blank" title="link">Our Mission</a></li>
+<li><a class="cursor-pointer" href="https://tiktokmalli.com/app.html" target="_blank" title="link">How It Work</a></li>
+<li><a class="cursor-pointer" href="https://tiktokmalli.com/#/credit" target="_blank" title="link">Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 col-sm-6">
+<div class="footer-widget aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+<h5>Download App</h5>
+<div class="btn-groups"><a class="btn btn-img radius-sm size-sm download-btn" onclick="goApp()" target="_blank" title="App Store"><img alt="App Store" class="blur-up ls-is-cached lazyloaded" data-src="assets/images/app-store.png" src="local_resources/img/820fa450f6efa3dd86c1ead66a212dd5.png"/></a> <a class="btn btn-img radius-sm size-sm download-btn" onclick="goGo()" target="_blank" title="Play Store"><img alt="App Store" class="blur-up ls-is-cached lazyloaded" data-src="assets/images/play-store.png" src="local_resources/img/233cc2efc85b5ca1c7a92dae38e1311a.png"/></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="copy-right-area border-top pt-30 pb-100">
+<div class="container">
+<div class="social-link"><a href="https://www.instagram.com/" title="Link">
+<img alt="" src="local_resources/img/29ba49de9c7e66c1b3535699325c4ef8.png"/>
+</a>
+<a href="https://www.instagram.com/" title="Link">
+<img alt="" src="local_resources/img/9ff58a4cc9a6d4dc9572092d4f54ee00.png"/>
+</a>
+<a href="https://www.instagram.com/" title="Link">
+<img alt="" src="local_resources/img/47553ba17795fc024a109cd00bf799d7.png"/>
+</a>
+<a href="https://www.instagram.com/" title="Link">
+<img alt="" src="local_resources/img/7db306290605b501685d98ce3d053fed.png"/>
+</a>
+</div>
+<div class="copy-right-content mt-20"><span>
+                            Copyright <i class="fal fa-copyright"></i><span>2022</span> <a class="color-primary" href="https://tiktok-app.shop/index.html" target="_self" title="TikTok">TikTok</a> . All rights reserved
+                        </span></div>
+</div>
+</div>
+</footer>
+<div class="cookie-bar show">
+<div class="container">
+<div class="cookie-bar-inner" style="justify-content: center;">
+<div class="cta-btn mb-20"><a class="btn btn-md radius-0 btn-primary download-btn" onclick="goTk()" style="width: 340px; border-radius: 100px !important; font-size: 20px;">Join the TikTok
+                            Shop</a></div>
+</div>
+</div>
+</div>
+<div class="go-top"><img alt="" src="local_resources/img/7c0e9f20e52c00b1bde5ea3d912c2600.png"/></div>
+</div>
+<script src="local_resources/js/b5e54f0d12600e59cef9c2f404587c49.js"></script>
+<script src="local_resources/js/ee7d6f91de924b5ad96754f6c06a3773.js"></script>
+<script src="local_resources/js/89691d39effa688539f5540bcf9a314a.js"></script>
+<script src="local_resources/js/9b49d302ff32ed86f4967123110c961c.js"></script>
+<script src="local_resources/js/7238fd761c635369ec8d5b7575100cbb.js"></script>
+<script src="local_resources/js/c6aaa8be47b37620f789ecc613950fc6.js"></script>
+<script src="local_resources/js/72f034100cb18855589fb1caee0fd759.js"></script>
+<script src="local_resources/js/996d26c03e6b5cba30378f7421c5fa46.js"></script>
+<script src="local_resources/js/c5172d3fe191aa23986e06e589f77898.js"></script>
+<script src="local_resources/js/b292e4d7b87f7c3fbe0654b61bb45e89.js"></script>
+<script src="local_resources/js/c127db8fea4188a19cf6dc22fa85d36a.js"></script>
+<script src="local_resources/js/5e2e7ff568348949f7259ff344c3b267.js"></script>
+<script src="local_resources/js/9ccd496e98b35b772c5d0b6d84034434.js"></script>
+<script src="local_resources/js/11990bfae760325676a3babda24101b7.js" type="module"></script>
+<script>
+        function showLang() {
+            var element = document.getElementById("langChange");
+            if (element.offsetHeight == 0) {
+                element.style.height = '200px'
+            } else {
+                element.style.height = '0'
+            }
+        }
+    </script>
+</body>
+</html>

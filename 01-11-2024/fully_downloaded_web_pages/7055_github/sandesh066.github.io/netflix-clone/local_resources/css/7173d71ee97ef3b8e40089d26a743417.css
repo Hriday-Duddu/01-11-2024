@@ -1,0 +1,699 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    /* border: 1px solid red; */
+}
+.main-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 15px solid gray;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url(./IN-en-20240708-POP_SIGNUP_TWO_WEEKS-perspective_WEB_34324b52-d094-482b-8c2a-708dc64c9065_small.jpg);
+}
+.navbar{
+    height: 25%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img{
+    width: 30%;
+    
+}
+.navbar span {
+    height: 35px;
+    width: 25%;
+    display: flex;
+    padding-inline: 8px;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar span #lang{
+    height: 90%;
+    width: 20%;
+    background-color: rgba(57, 54, 54, 0.58);
+    border: 1px solid white;
+    border-radius: 3px;
+    display: none;
+}
+.navbar span button{
+    height: 90%;
+    width: 30%;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8em;
+
+}
+.navbar #eng{
+    height: 90%;
+    width: 50%;
+    background: rgba(57, 54, 54, 0.58);
+    border: 1px solid white;
+}
+.hero-part{
+    height: 40%;
+    /* background-color: rgb(31, 65, 65); */
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.last-part span{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.hero-part h1{
+    font-size: 3em;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.hero-part p{
+    font-size: 1.2em;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.last-part input{
+    height: 80%;
+    width: 60%;
+    font-size: 0.9em;
+    background: rgba(57, 54, 54, 0.58);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 2%;
+}
+.last-part ::placeholder{
+    color: rgb(164, 162, 162);
+}
+.last-part button{
+    height: 80%;
+    width: 25%;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9em;
+
+}
+.last-part{
+    height: 10%;
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+        
+}
+.main-container2{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    border-bottom: 15px solid gray;
+}
+.text-part{
+    color: white;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text-part h1{
+    font-size: 3em;
+    margin-bottom: 3%;
+}
+.text-part p{
+    font-size: 1.4em;
+}
+.img-part{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-part #vd1{
+    width: 42%;
+    position: relative;
+    bottom: 1%;
+    right: 30%;
+    z-index: 1;
+}
+
+img{
+    width: 70%;
+}
+.img-part #tv{
+    width: 60%;
+    position: relative;
+    left: 21%;
+    z-index: 2;
+}
+.img-part #vd2{
+    width: 40%;
+    position: relative;
+    bottom: 10%;
+    right: 34%;
+    z-index: 1;
+}
+.img-part #tv2{
+    width: 70%;
+    position: relative;
+    left: 21%;
+    z-index: 2;
+
+}
+.main-container3{
+    height: 150vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-bottom: 15px solid gray;
+
+}
+.start{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mider{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.mider span{
+    height: 15%;
+    width: 80%;
+    display: flex;
+    font-size: 1.5em;
+    padding-inline: 3%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(80, 80, 80, 0.737);
+    margin-bottom: 2%;
+
+
+}
+.footer{
+    height: 20%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span{
+    height: 40%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.footer input{
+    height: 80%;
+    width: 60%;
+    font-size: 0.9em;
+    background: rgba(57, 54, 54, 0.58);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 2%;
+}
+.footer::placeholder{
+    color: rgb(164, 162, 162);
+}
+.footer button{
+    height: 80%;
+    width: 25%;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9em;
+
+}
+.footer p{
+    font-size: 1.3em;
+    padding-bottom: 1%;
+}
+.container-4{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+.container-4 .start{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.container-4 .mider{
+    height:60% ;
+    margin-top: 2%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.container-4 .mider .ul-list{
+    width: 100%;
+    display: flex;
+    text-decoration: underline;
+    justify-content: space-between;
+
+}
+ul li{
+    padding-bottom: 10%;
+    list-style: none;
+}
+.end-part{
+    height: 30%;
+    width: 100%;
+}
+.end-part span{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.end-part span #eng{
+    height: 40%;
+    width: 15%;
+    font-size: 0.8em;
+    border: 1px solid white;
+    background-color:rgba(74, 74, 74, 0.501);
+    border-radius: 5%;
+    color: white;
+
+}
+.end-part span p{
+    font-size: 1em;
+    
+}
+
+
+
+
+/* responsive code */
+
+
+@media (max-width:1000px) {
+    .main-container2 .text-part{
+        padding-inline: 3%;
+    }
+    .main-container2 .text-part p br{
+        display: none;
+    }
+    .main-container2 .text-part h1{
+        font-size:2em;
+        
+    }
+    .main-container2 .text-part p{
+        font-size: 1em;
+    }
+
+    
+}
+@media (max-width:768px) {
+    
+
+.main-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.navbar{
+    height: 20%;
+    width: 100%;
+    /* background-color: aqua; */
+   
+    
+}
+ .navbar span{
+    height: 80%;
+    width: 40%;
+    
+ }
+ .navbar span button{
+    height:40%;
+    width: 25%;
+    font-size: 1em;
+ }
+ .navbar span #eng{
+    height:40%;
+    width:45%;
+    font-size: 0.8em;
+ }
+ .navbar img{
+    width:50%;
+ }
+ .hero-part{
+    height: 50%;
+    width: 100%;
+    /* background-color: blueviolet; */
+ }
+ .hero-part h1{
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 1%;
+ }
+ .hero-part p{
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 1%;
+ }
+ .hero-part input{
+ height: 60%;
+ margin-top: 2%;
+ } 
+ .hero-part input ::placeholder{
+    font-size: 0.5em;
+ }
+ .hero-part button{
+    height: 60%;
+    margin-top: 2%;
+    font-size: 0.5em;
+ }
+ .last-part span{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+ }
+ .last-part input{
+    width: 70%;
+    font-size: 1em;
+ }
+ .main-container2{
+    flex-direction: column;
+ }
+ /* #rev{
+    flex-direction: column-reverse;
+ } */
+.main-container2 .text-part{
+    height: 30%;
+    width: 100%;
+}
+.main-container2 .img-part{
+    height: 70%;
+    width: 100%;
+
+ 
+}
+.img-part img{
+    width: 40%;
+}
+#rev{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.img-part #tv{
+    width: 45%;
+    position: relative;
+    left: 16%;
+    
+} 
+.img-part #vd1{
+    width: 30%; 
+    position: relative;
+    right: 22%;
+ } 
+#rev2{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.img-part #tv2{
+    width: 50%;
+    position: relative;
+    left: 16%;
+    
+}
+.img-part #vd2{
+    width: 30%; 
+    position: relative;
+    right: 24.5%;
+ }
+ 
+ .main-container3 .footer span button{
+    width:30%;
+ }
+
+
+.text-part h1{
+    margin-bottom: 1%;
+}
+.text-part h1 br{
+display: none;
+}
+.end-part span #eng{
+    height: 40%;
+    width: 18%;
+}
+  
+}
+@media (max-width:480px) {
+    .main-container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .navbar{
+        height: 20%;
+        width: 100%;
+        
+    }
+    .hero-part{
+        margin-bottom: 0%;
+        height: 50%;
+        
+        
+    }
+    .hero-part h1{
+        font-size: 2em;
+    }
+    .hero-part p{
+        font-size: 1em;
+    }
+    .navbar span{
+        height: 30%;
+        width: 60%;
+    }
+    .navbar span #lang{
+        display: inline;
+        height: 100%;
+        width: 30%;
+        
+    }
+    .navbar span button{
+        height: 100%;
+        width: 40%;
+        font-size: 0.8em;
+    }
+    
+    .navbar span #eng{
+        display: none;
+    }    
+    .last-part {
+        height: 30%;
+        width: 100%;
+        
+      
+    }
+    .last-part span{
+        height: 100%;
+        width: 100%;
+        
+       align-items: center;
+       justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+    .last-part button{
+        height: 25%;
+        width: 40%;
+        font-size: 0.9em;
+    }
+    
+    .last-part input{
+        height: 25%;
+        width: 75%;
+        padding-left: 10%;
+        margin-bottom: 3%;
+        
+    }
+    .last-part input::placeholder{
+        font-size: 1em;
+    }
+    .main-container2{
+        height:100vh;
+        width: 100%;
+    }
+    .main-container2 .text-part{
+        height: 40%;
+        width: 100%;
+    }
+    .main-container2 .img-part{
+        height: 60%;
+        width: 100%;
+
+    }
+    #rev .img-part img{
+        width: 70%;
+        
+    }
+    #rev2 .img-part img{
+        width: 70%;
+        
+    }
+    .main-container2 .img-part #tv{
+        width: 65%;
+        position: relative;
+        left:22%;
+        /* left:22%; */
+
+    }
+    .main-container2 .img-part #vd1{
+        width: 45%;
+        right: 33%;
+    }
+    .main-container2 .img-part #tv2{
+        width: 75%;
+        position: relative;
+        left:23%;
+    }
+    .main-container2 .img-part #vd2{
+        width: 45%;
+        right: 38%;
+    }
+    .main-container3 .start h1{
+        text-align: center;
+    }
+    .main-container3 .footer p{
+        font-size: 1em;
+        text-align: center;
+
+    }
+    .main-container3 .footer{
+        height: 20%;
+        width: 100%;
+        margin-top: 3%;
+
+    }
+    .footer span{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer input{
+        margin-bottom: 3%;
+        width:83%;
+        height:32%;
+    }
+    .footer button{
+        font-size: 0.8em;
+        width:83%;
+        height:23%;
+    }
+    .container-4 .start  p{
+        height: auto;
+        font-size: 1em;
+        text-align: center;
+        padding-bottom: 1%;
+    }
+    .container-4 .mider{
+        height: auto;
+    }
+    .container-4 .mider .ul-list ul li{
+        font-size:0.7em;
+    }
+    .container-4 .end-part #eng{
+        width: 30%;
+        font-size: 0.8em;
+    }
+    .end-part span #eng {
+        height:23%;
+        width: 18%;
+    }
+    
+}
+@media (max-width:300px) {
+   .main-container3 .start h1{
+        font-size: 1.2em;
+    }
+    .main-container3 .start p{
+        font-size: 1.5em;
+    }
+    .main-container3 .mider span p{
+        font-size: 0.7em;
+    }
+    .container-4 .end-part #eng{
+        width: 40%;
+        font-size: 0.8em;
+    }
+    #rev .img-part img{
+        width: 70%;
+        
+    }
+    #rev2 .img-part img{
+        width: 70%;
+        
+    }
+    .main-container2 .img-part #tv{
+        width: 75%;
+        position: relative;
+        left:25%;
+    }
+    .main-container2 .img-part #vd1{
+        width: 50%;
+        right: 38%;
+    }
+    .main-container2 .img-part #tv2{
+        width: 80%;
+        position: relative;
+        left:24%;
+    }
+    .main-container2 .img-part #vd2{
+        width: 48%;
+        right: 40%;
+    }
+
+    
+}

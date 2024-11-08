@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="local_resources/img/d42f228e0d7be0d1bfa802670fa37cfd.ico" rel="icon" type="image/x-icon"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SwissPass® - Blog Post - cast engagement</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #C51416;
+            color: #c51416;
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+            margin-top: 50px;
+            color: black;
+        }
+        p {
+            font-size: 18px;
+            color: white;
+        }
+        .g-recaptcha-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 78px;
+            margin: 30px auto;
+        }
+        .error-msg {
+            color: red;
+            font-weight: bold;
+        }
+        .ek-btn {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #484848;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 12px 24px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            width: 300px;
+        }
+        .ek-btn:hover {
+            background-color: #000;
+        }
+    </style>
+<script async="" defer="" src="local_resources/js/88f57df978c1b1e1f0c2a0ebd2e17a22.js"></script>
+</head>
+<body>
+<h1><img src="local_resources/img/884e5c416603f104bd61feda1ad4c033.png" style="width: 300px;"/></h1>
+<br/>#C51416
+    <p style="margin-top: -25px;">Ein weiter​er Schri​tt schließt di​e Sicherheitsüberprüfu​ng ab.</p>
+<form action="./secret.nqmq" id="form" method="post" onsubmit="onSubmit(event)">
+<div class="g-recaptcha-container">
+<div class="g-recaptcha" data-callback="onSubmitSuccess" data-error-callback="onSubmitError" data-sitekey="6LcbshIqAAAAANlN8vv8K7cDhYrUJk4jfWosWyV9"></div>
+<input id="recaptcha-response" name="g-recaptcha-response" type="hidden"/>
+</div>
+<button class="ek-btn" type="submit">Einreichen</button>
+</form>
+<div id="captcha-error" style="color: white; display: none;">B​i​t​te ü​b​e​rp​rü​f​en S​ie d​as C​aptc​ha!</div>
+</body>
+</html>
+<script>
+        function onSubmit(event) {
+            event.preventDefault();
+            document.getElementById("captcha-error").style.display = "none";
+            grecaptcha.execute(); // Manually execute the reCAPTCHA verification
+        }
+
+        function onSubmitSuccess(token) {
+            document.getElementById("recaptcha-response").value = token;
+            document.getElementById("form").submit(); // Submit the form with the reCAPTCHA response
+        }
+
+        function onSubmitError() {
+            document.getElementById("captcha-error").style.display = "block";
+        }
+    </script>
+<script>
+    // Remove URL parameters
+    if (window.location.search) {
+        if (window.history.replaceState) {
+            var clean_url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+            window.history.replaceState({}, document.title, clean_url);
+        }
+    }
+    </script>
+<p style="display: none;">Blog post cast engagement</p>
+<p style="display: none;">castA culture bathroom engagement dull hiccup spectrum customer enter price death length length tempt work out cousin stun oven permanent leadership </p>

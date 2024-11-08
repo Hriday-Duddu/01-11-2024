@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow: /temp
+
+Sitemap: http://w.maixpint.top/sitemap.xml

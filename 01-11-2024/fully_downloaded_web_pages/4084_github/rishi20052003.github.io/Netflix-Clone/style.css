@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", 'Roboto', 'Ubuntu', sans-serif; */
+    font-family: 'poppins', sans-serif;
+    background: #000;
+   
+}
+header{
+     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image/hero.jpg); 
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    /* width: 80%; */
+}
+.logo img{
+   width: 12rem;
+   color: #e50914;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.button{
+    display: flex;
+    gap: 14px;
+}
+.btn{
+    background-color: #000000ad;
+    border: .1px solid #cccccc75;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn i{
+    margin: 0 10px;
+    font-size: .8rem;
+}
+.btn1{
+    background-color: #e50914;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.hero {
+    padding: 3rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    line-height: 1.3;
+}
+.hero p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.hero .paragraph{
+    font-size: 1rem;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+form input{
+    background: #13131495;
+    padding: 19px 15px;
+    border: .1px solid #3c7356;
+    border-radius: 3px;
+    width: 35%;
+    font-size: 1rem;
+    color: #fff;
+  
+}
+
+form button{
+    background-color: #e50914;
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: background-color .2s;
+}
+form button:hover{
+    background-color: #c50712;
+}
+.panel{
+    color: #fff;
+   padding-top: 4rem;
+}
+
+.panel h2{
+    font-size: 1.7rem;
+}
+.buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 1.2rem;
+}
+.btn2{
+    background-color: #23232385;
+    border: .1px solid #cccccc75;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.btn2 i{
+    margin-left: 2.3rem;
+    font-size:.8rem;
+}
+
+.btn3{
+    background-color: #23232385;
+    border: .1px solid #cccccc75;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+}
+
+.btn3 i{
+   margin-left: 2.3rem;
+    font-size:.8rem;
+}
+.movies{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem 1rem; 
+}
+
+.movies img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform .4s;
+}
+.movies img:hover{
+    transform: scale(1.05);
+}
+section h1{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    padding-top: 3.5rem;
+}
+.card-section{
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem 0; 
+}
+.card{
+    background: linear-gradient(rgb(17, 17, 50),rgb(37, 11, 37));
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform .3s;
+}
+.card:hover{
+    background: linear-gradient(rgb(17, 17, 50),rgb(37, 11, 37),rgb(17, 17, 50));
+    transform: scale(1.05);
+}
+.card h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p{
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+.card img{
+    width: 35%;
+    height: auto;
+    margin-bottom: 1rem;
+    object-fit: cover;
+
+}
+.a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 2rem;
+  
+    
+} 
+.b{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 4rem;
+}
+.c{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 4.5rem;
+
+}
+nav{
+    /* background: linear-gradient(to bottom right, #e50914, #c50712); */
+    background: #232323;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+nav:hover{
+    background: #ffffff41;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+nav li{
+    list-style: none;
+}
+nav i{
+    font-size: 3rem;
+    color: #fff;
+}
+.box{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+   
+}
+section h4{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+   padding-top: 4rem;
+   text-align: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+ .input{
+    background: #1a1a2795;
+    padding: 19px 15px;
+    border: .1px solid #3c7356;
+    border-radius: 3px;
+    width: 60%;
+    font-size: 1rem;
+    color: #fff;
+
+}
+.btn6{
+    background-color: #e50914;
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: background-color .2s;
+
+}
+
+.btn6:hover{
+    background-color: #c50712;
+}
+section h5{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #f4f4f4ad;
+    padding-top: 4rem;
+    margin-bottom: 3.5rem;
+}
+.list{
+    display: flex;
+    gap: 130px;
+}
+.list ul li{
+    margin-bottom: 20px;
+   
+}
+
+.list li{
+    list-style: none;
+}
+.list a{
+    color: #f4f4f4ad;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+footer{
+    padding: 3rem 0;
+}
+footer p{
+    color: #f4f4f4ad;
+    font-size: 1.1rem;
+    padding: 3rem 0;
+}
+
+
+/* Media Queries */
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+    .logo img {
+        width: 10rem;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    form input {
+        width: 50%;
+    }
+    .movies {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .list {
+        gap: 50px;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    /* .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+    .logo img {
+        width: 8rem;
+    }
+    .button {
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    form input {
+        width: 100%;
+    }
+    .movies {
+       flex-direction: column;
+    }
+    .card-section {
+       flex-direction: column;
+    }
+    .list {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 580px) {
+    .logo img {
+        width: 7.5rem;
+    }
+    .hero{
+        padding: 7rem 0;
+    }
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight: 800;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero .paragraph{
+        font-size: 1.2rem;
+    }
+    .btn span{
+        display: none;
+    }
+    .btn{
+        font-size: 0.8rem;
+        padding: 5px 2px;
+        border-radius: 2px;
+    }
+    .btn i{
+        margin: 0 0.5rem;
+    }
+    .btn1 {
+        padding: 5px 10px;
+        font-size: 1rem;
+        border-radius: 2px;
+    }
+    form input {
+        padding: 15px 10px;
+        font-size: 1rem;
+    }
+    form button {
+        padding: 12px 20px;
+        font-size: 1.2rem;
+
+    }
+    .panel h2 {
+        font-size: 1.5rem;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn2{
+        font-size: 1rem;
+        text-align: start;
+        padding: 10px;
+        
+    }
+    .btn3 {
+        font-size: 1rem;
+        text-align: start;
+        padding: 10px;
+
+    }
+    .btn2 i {
+       margin-left: 17.8rem;
+    }
+    .btn3 i{
+        margin-left: 16.7rem;
+    }
+    .movies {
+        flex-direction: column;
+    }
+    .card-section {
+        flex-direction: column;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+    .card p {
+        font-size: 1rem;
+    }
+    nav li a{
+        font-size: 1.1rem;
+
+    }
+    nav  i{
+        font-size: 1.5rem;
+    }
+    .input{
+        width: 100%;
+        padding: 13px;
+    }
+    .btn6 {
+        font-size: 1rem;
+        padding: 13px 20px;
+    }
+    section h4{
+        font-size: .9rem;
+    }
+   
+    .list ul li {
+        margin-bottom: 10px;
+    }
+    .list a {
+        font-size: 0.9rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+}
+

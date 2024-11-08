@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(
+    to left top,
+    #075c45,
+    #075c45,
+    #075c45,
+    #075c45
+  );
+  background-attachment: fixed; 
+}
+
+.header {
+  height: 100px;
+  padding: 0 120px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cs-btn {
+  cursor : pointer;
+  background-image: linear-gradient(to bottom, #0be41d 0%, #265c29 51%  100%);
+  color: #ffe417;
+  width: 200px;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+border:none;
+}
+
+.cs-btn :hover {
+  background-position: right center;
+}  
+.header .left-wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+/*  align-items: center;
+  justify-content: center; */
+  margin-top: 50px;
+}
+
+.header .left-wrapper img {
+  border-radius: 15px;
+  /*width: 80px;
+  height: 80px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.header .left-wrapper .text-container {
+  margin-left: 20px;
+}
+
+.header .logo-text {
+  color: #240000;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.bg img:nth-child(1) {
+  position: absolute;
+  left: -20px;
+  bottom: -60px;
+  opacity: 80%;
+  transform: scale(1.25);
+}
+
+.bg img:nth-child(2) {
+  position: absolute;
+  right: -100px;
+  bottom: -40px;
+  opacity: 90%;
+  transform: scale(0.95);
+}
+
+.content {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notice {
+  background: #fff;
+  margin-right: 30px;
+  height: auto;
+  width: 600px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.notice .title {
+  font-weight: bold;
+}
+
+.notice .title:nth-child(1) {
+  margin-bottom: 10px;
+  color: #240000;
+  font-size: 20px;
+}
+
+.notice .title:nth-child(2) {
+  margin-bottom: 10px;
+  color: #e10404;
+  font-size: 24px;
+}
+
+.notice .text {
+  font-size: 20px;
+}
+
+button {
+  background-color: #efefef;
+}
+
+.notice .download {
+  cursor : pointer;
+  width: 100%;
+  padding: 15px 10px;
+  display: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+#.notice .download:hover {
+#  background: #888;
+#}
+
+.card {
+  background: #fff;
+  margin-right: 30px;
+  height: auto;
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card .logo img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ff9d8f;
+  border-radius: 15px;
+}
+
+.card p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.kefu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 0 15px 15px 0;
+}
+
+.kefu a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.kefu img {
+  margin-bottom: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.kefu p {
+  padding: 5px 25px;
+  font-weight: bold;
+  border-radius: 20px;
+  color: #fff;
+  background-image: linear-gradient(
+    to bottom,
+    #fe95e4,
+    #ee7fe7,
+    #d86cec,
+    #ba5cf4,
+    #9250fd
+  );
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0 15px;
+  }
+
+  .header .logo-text {
+    font-size: 24px;
+  }
+
+  .header .right-wrapper .logo-text {
+    display: none;
+  }
+
+  .bg img:nth-child(1) {
+    display: none;
+  }
+
+  .bg img:nth-child(2) {
+    display: none;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .notice {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .notice .download {
+    display: block;
+    margin-top: 0px;
+  } 
+
+
+  .card {
+    display: none;
+  }
+}

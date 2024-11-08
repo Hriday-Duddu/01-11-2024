@@ -1,0 +1,44 @@
+User-agent: *
+Allow: *
+
+Disallow: /_old/
+Disallow: /test/
+Disallow: /beta/
+Disallow: /vorlagen/
+Disallow: /banken/test/
+Disallow: /banken/admin/
+Disallow: /wp-content/themes/finanzierung-or-at/scripts/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /feed/
+Disallow: /fq-sofortkredit/
+Disallow: /fq-erste-bank/
+Disallow: /fq-minikredit/
+Disallow: /out.php
+Disallow: /out
+Disallow: /out-cons
+Disallow: /out-optifin
+Disallow: /out-fq
+Disallow: /out-fa
+Disallow: /out-ad
+Disallow: /flatex/
+Disallow: /finanzierungspartner/
+Disallow: /logs
+Disallow: /webconfig
+Disallow: /agb
+Disallow: /configurationbak
+
+User-agent: Googlebot-News
+Disallow: *
+Allow: /news/*
+
+User-agent: ChatGPT-User
+Disallow: *
+
+User-Agent: GPTBot
+Disallow: *
+
+Sitemap: https://www.finanz.at/sitemap.xml/
+Sitemap: https://www.finanz.at/sitemap-news.xml/
+Sitemap: https://www.finanz.at/sitemap-news-alle.xml/
+Sitemap: https://www.finanz.at/sitemap-immo.xml/

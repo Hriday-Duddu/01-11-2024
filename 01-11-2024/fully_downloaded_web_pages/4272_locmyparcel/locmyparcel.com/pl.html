@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script id="cookieyes" src="local_resources/js/2559aacf21df123c71cf082dc8a6307c.js" type="text/javascript"></script>
+
+<meta charset="utf-8"/>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+<meta content="Track your package" name="description"/>
+<!-- iOS meta tags & icons -->
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="LocMyParcel" name="apple-mobile-web-app-title"/>
+<link href="http://locmyparcel.com/pl/icons/Icon-192.png" rel="apple-touch-icon"/>
+<!-- Favicon -->
+<link href="local_resources/img/d7d9a551cffa8e79b38f0bf1f077ec2f.png" rel="icon" type="image/png">
+<title>LocMyParcel</title>
+<link href="local_resources/css/e70f06dccc97e021b55a0beffa32b414.css" rel="manifest"/>
+<script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "1197242875";
+  </script>
+<!-- This script adds the flutter initialization JS code -->
+<script defer="" src="local_resources/js/93b3fa9a4ea6c1dfc9f25b6837eede7a.js"></script>
+<style>
+    .loader-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .loader {
+      width: 150px;
+      aspect-ratio: 1;
+      display: grid;
+      border: 4px solid #0000;
+      border-radius: 50%;
+      border-right-color: rgb(55, 114, 280);
+      animation: l15 1s infinite linear;
+    }
+
+    .loader::before,
+    .loader::after {
+      content: "";
+      grid-area: 1/1;
+      margin: 2px;
+      border: inherit;
+      border-radius: 50%;
+      animation: l15 2s infinite;
+    }
+
+    .loader::after {
+      margin: 8px;
+      animation-duration: 3s;
+    }
+
+    @keyframes l15 {
+      100% {
+        transform: rotate(1turn)
+      }
+    }
+  </style>
+</link></head>
+<body>
+<script src="local_resources/js/5f4eda28c1830af52dc34d2a903dbeef.js"></script>
+<script src="local_resources/js/6f8bd9fb8fe489d207d9f446d5d0405d.js"></script>
+<div class="loader-container">
+<div class="loader"></div>
+</div>
+<script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+<script type="text/javascript">
+      var scriptElementTagManager = document.createElement("script");
+      scriptElementTagManager.src = "https://www.googletagmanager.com/gtag/js?id=G-WJB8830GWW";
+      scriptElementTagManager.async = true;
+
+      document.head.appendChild(scriptElementTagManager);
+
+      var scriptElement = document.createElement("script");
+      scriptElement.innerHTML = `
+        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WJB8830GWW'); gtag('config', 'AW-695388859');
+      `;
+
+      document.head.appendChild(scriptElement);
+    function insertPixel() {
+      var scriptElementTagManager = document.createElement("script");
+
+      document.head.appendChild(scriptElementTagManager);
+
+      var scriptElement = document.createElement("script");
+      scriptElement.innerHTML = `
+        gtag('event', 'conversion', {'send_to': 'AW-695388859/NFgdCLnApqIZELuVy8sC'});
+      `;
+
+      document.head.appendChild(scriptElement);
+    }
+  </script>
+</body>
+</html>

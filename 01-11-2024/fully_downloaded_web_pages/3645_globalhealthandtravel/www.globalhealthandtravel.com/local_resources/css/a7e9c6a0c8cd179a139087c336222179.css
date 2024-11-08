@@ -1,0 +1,447 @@
+body {
+    /* #E5E5E5 */
+    background-color: #fbfbfb;
+    font-family: var(--default-font);
+    height: 100%;
+    overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Roboto", "Open-sans", sans-serif, arial;
+}
+.text-shadow-1 {
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.font-weight-bolder {
+    font-family: Roboto-bold !important;
+    font-weight: bold !important;
+}
+.font-roboto {
+    font-family: "Roboto", "Open-sans", sans-serif, arial !important;
+}
+
+.roboto-font {
+    font-family: "Roboto", sans-serif, arial !important;
+}
+.btn {
+    border-radius: 50px !important;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.text-opensans-bold {
+    font-family: Open-sans-bold, Courier, monospace !important;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: white !important;
+}
+.btn-secondary:hover {
+    background-color: rgba(43, 186, 177, 0.7);
+    border-color: rgba(43, 186, 177, 0.7);
+}
+
+.btn-outline-secondary {
+    border-color: var(--secondary);
+    color: var(--secondary);
+    font-weight: bold;
+    border: 3px solid var(--secondary);
+}
+
+.btn-outline-secondary:hover {
+    background-color: rgba(43, 186, 177, 0.7);
+    border-color: rgba(43, 186, 177, 0.7);
+    color: white;
+}
+
+.login-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255);
+    color: white;
+    font-size: 16px;
+    width: 150px;
+}
+
+.login-btn:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.btn-thought {
+    background-color: #352835;
+    border-color: #352835;
+    color: white;
+}
+
+.btn-thought:hover {
+    background-color: #352835;
+    border-color: #352835;
+    color: white;
+}
+
+.btn-orange {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: white;
+}
+.btn-orange:hover {
+    background-color: rgba(255, 122, 0, 0.7);
+    border-color: rgba(255, 122, 0, 0.7);
+    color: white;
+}
+.btn-outline-primary {
+    border-color: var(--primary) !important;
+    background-color: white;
+    color: var(--primary) !important;
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white !important;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white !important;
+}
+
+.btn-outline-primary-2 {
+    border: 3px solid var(--primary) !important;
+    background-color: white;
+    color: var(--primary) !important;
+}
+.btn-outline-primary-2:hover {
+    background-color: var(--primary);
+    border: 3px solid var(--primary);
+    color: white !important;
+}
+.btn-outline-primary-2:not(:disabled):not(.disabled).active {
+    background-color: var(--primary);
+    border: 3px solid var(--primary);
+    color: white !important;
+}
+
+.btn-outline-primary-3 {
+    background-color: white;
+    color: var(--primary) !important;
+}
+.btn-outline-primary-3:hover {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+}
+.btn-outline-primary-3:not(:disabled):not(.disabled).active {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white !important;
+}
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-solid-primary {
+    background-color: var(--solid-primary) !important;
+}
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+.bg-orange {
+    background-color: var(--orange) !important;
+}
+.bg-purple {
+    background-color: var(--purple) !important;
+}
+.bg-red {
+    background-color: var(--red) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+.text-secondary {
+    color: var(--secondary) !important;
+}
+.text-green {
+    color: var(--green) !important;
+}
+.text-orange {
+    color: var(--orange) !important;
+}
+.text-red {
+    color: var(--red) !important;
+}
+.text-purple {
+    color: var(--purple) !important;
+}
+.text-black-2 {
+    color: #3d3d3d;
+}
+
+.text-grey {
+    color: var(--grey);
+}
+
+a,
+.btn {
+    transition: all 0.3s ease-out;
+}
+a.text-secondary:hover {
+    color: var(--orange) !important;
+    text-decoration: none;
+}
+a.text-primary:hover {
+    color: var(--orange) !important;
+    text-decoration: none;
+}
+
+.btn-profile {
+    border-radius: 0px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn-profile-active {
+    background-color: #e3e3e3;
+    border-right: 2px solid #c8c8c8;
+    color: var(--secondary);
+}
+
+.btn-profile:hover {
+    background-color: #e3e3e3;
+    border-right: 2px solid #c8c8c8;
+    color: var(--secondary);
+}
+
+.font-open-sans {
+    font-family: Open-sans;
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-h1 {
+    font-size: 44px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+.fs-11 {
+    font-size: 11px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-13 {
+    font-size: 13px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-17 {
+    font-size: 17px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.rounded {
+    border-radius: 10px !important;
+}
+.remove-hover:hover {
+    text-decoration: none;
+}
+
+.remove-hover-white:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.custom-input-1:focus {
+    outline: none !important;
+}
+.custom-input-1 {
+    border-radius: 50px;
+    padding: 6px;
+    /* font-style: italic; */
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+}
+.custom-input-1:focus {
+    border: none;
+}
+
+.custom-ol-1 {
+    padding-left: 15px;
+}
+.custom-ol-1 li {
+    padding: 0px;
+    margin-top: 20px;
+}
+
+ul.custom-ul-1 {
+    list-style: none;
+    padding: 0px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+/* ul.custom-ul-1 li::before {
+    content: "\f00c";
+    padding-left: 0px;
+    line-height: 0;
+    vertical-align: middle;
+    font-family: "Font Awesome 5 Free";
+    margin-right: 14px;
+    color: var(--tertiary) !important; 
+} */
+
+ul.custom-ul-2 {
+    list-style: none; /* Remove default bullets */
+}
+
+ul.custom-ul-2 li::before {
+    content: "\f054";
+    padding-left: 0px;
+    line-height: 0;
+    vertical-align: middle;
+    font-family: "Font Awesome 5 Free";
+    margin-right: 14px;
+    color: var(--tertiary); /* Change the color */
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.qty input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+}
+
+.custom-label-5 {
+    position: relative;
+
+    display: block;
+    width: 94%;
+    background-color: white;
+    height: 46px;
+    margin: 0px;
+}
+
+.custom-select-5 {
+    font-size: 12px;
+
+    line-height: 44px;
+    /* letter-spacing: -0.4px; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* color: rgba(0,0,0,.4); */
+    color: var(--grey);
+
+    /* font-style: italic; */
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border: none;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: transparent;
+    width: 97% !important;
+    box-sizing: content-box;
+    position: relative;
+    z-index: 1;
+    top: 0px;
+    padding-left: 45px;
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*to fixed at header dropdown:*/
+.dropdown-item {
+    white-space: inherit !important;
+}

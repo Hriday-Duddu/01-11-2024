@@ -1,0 +1,795 @@
+.tablet-only {
+    display: none;
+}
+.mobile-only {
+    display: none;
+}
+.c-pl-0 {
+    padding-left: 0px;
+}
+
+.c-p-0 {
+    padding: 0px;
+}
+.article-right-border {
+    -webkit-box-shadow: 13px 3px 8px -12px rgba(217, 206, 217, 1);
+    -moz-box-shadow: 13px 3px 8px -12px rgba(217, 206, 217, 1);
+    box-shadow: 13px 3px 8px -12px rgba(217, 206, 217, 1);
+}
+
+.body-width {
+    width: 1665px;
+    position: relative;
+}
+
+.h1-article-mt {
+    margin-top: 130px;
+}
+
+.event-footer-mt {
+    margin-top: -185px;
+}
+
+.event-award-mt {
+    margin-top: -165px;
+}
+
+.set-bottom {
+    position: absolute;
+    bottom: 5px;
+}
+
+.border-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.border-left-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.search-border-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.c-mt-footer-blue {
+    margin-top: -150px;
+    z-index: 11;
+    position: relative;
+}
+
+.home-content-margin-top {
+    margin-top: 88px;
+}
+
+.c-med-mt {
+    margin-top: -170px;
+}
+
+.event-pt-5 {
+    padding-top: 80px;
+}
+
+.movup-department {
+    margin-top: -425px;
+}
+
+.hospital-text-mquery {
+    font-size: 55px;
+}
+
+.event-header-a {
+    font-size: 60px;
+}
+.event-header-b {
+    font-size: 40px;
+}
+.event-header-c {
+    font-size: 32px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 442px) {
+    /* .event-card{
+        width: 269px !important;
+    } */
+}
+
+@media screen and (min-width: 443px) and (max-width: 370px) {
+}
+
+@media screen and (max-width: 600px) {
+
+    .event-header-a {
+        font-size: 40px;
+    }
+    .event-header-b {
+        font-size: 20px;
+    }
+    .event-header-c {
+        font-size: 18px;
+    }
+    
+   
+    .hospital-page-mobile-container{
+        margin-top: -350px !important;
+    }
+        
+    .c-h-0 {
+        height: 0px !important;
+    }
+    .movup-department {
+        margin-top: -315px;
+    }
+    .event-pt-5 {
+        padding-top: 10px;
+    }
+    /* .search-border-right{
+        border-right: none;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    } */
+    .c-mt-footer-blue {
+        margin-top: 10px;
+    }
+    .border-right {
+        border: none;
+    }
+    .border-left-right {
+        border: none;
+    }
+    .set-bottom {
+        position: relative;
+    }
+    .event-award-mt {
+        margin-top: 10px;
+    }
+    #homeSlider .carousel-indicators {
+        bottom: 122px !important;
+    }
+    /* for temp  */
+    img {
+        height: auto;
+    }
+    .m-h-auto {
+        height: auto !important;
+    }
+
+    /* for temp  */
+
+    .event-tag::after,
+    .about-tag::after {
+        display: none;
+    }
+    .m-back-to-normal {
+        width: auto !important;
+        height: auto !important;
+        margin: auto !important;
+    }
+
+    .event-footer-mt {
+        margin-top: 0px;
+    }
+    .m-mt-1 {
+        margin-top: 15px !important;
+    }
+    .m-event-slider {
+        width: 100% !important;
+        height: 400px !important;
+    }
+    .m-mb-3 {
+        margin-bottom: 15px;
+    }
+    .m-n-mt-50 {
+        margin-top: -50px;
+    }
+    .m-text-center {
+        text-align: center !important;
+    }
+    .m-overflow-auto {
+        overflow-x: auto !important;
+        overflow-y: auto !important;
+    }
+    .m-text-left {
+        text-align: left !important;
+    }
+    .m-col-3 {
+        flex: 0 0 25% !important;
+        max-width: 25% !important;
+    }
+
+    .m-rounded {
+        border-radius: 10px !important;
+    }
+    .c-m-p-1 {
+        padding-left: 15px !important;
+    }
+
+    .book-margin {
+        margin-top: -130px;
+    }
+    .fs-18 {
+        font-size: 15px !important;
+    }
+
+    .invi {
+        visibility: hidden;
+    }
+
+    /* #navbar-ght{
+        top: 0px !important;
+    } */
+    .h1-article-mt {
+        margin-top: 20px;
+    }
+    .booking-margin-top {
+        margin-top: 0px;
+    }
+
+    .article-right-border {
+        border-right: none;
+        border-bottom: 1px solid #c6c6c6;
+    }
+
+    .all-article-margin-btm {
+        margin-bottom: 3rem !important;
+    }
+    .bg-white-mobile {
+        background-color: white;
+        border-radius: 10px;
+    }
+    .flip-container:hover .flipper,
+    .flip-container.hover .flipper {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .sticky-width {
+        width: 100%;
+    }
+
+    .event-curve,
+    .award-curve {
+        margin-top: 0px;
+    }
+    .book-today-up-img {
+        margin-top: -36px;
+    }
+    .med-font-size,
+    .med-h1-font-size {
+        font-size: 24px;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .mobile-hidden {
+        display: none !important;
+    }
+
+    #recipeCarousel
+        > div.carousel-inner.w-100
+        > div.carousel-item.active
+        > div:nth-child(1)
+        > div
+        > a
+        > img {
+        height: auto;
+    }
+    .c-mb-1 {
+        margin-bottom: 20px;
+    }
+    .event-card {
+        width: 356px;
+    }
+    .c-pl-0 {
+        padding-left: 15px;
+    }
+    .c-p-0 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .img-bottom {
+        position: relative !important;
+    }
+    .desktop-only {
+        display: none;
+    }
+
+    .progran-banner-size {
+        height: auto !important;
+    }
+    .find-care-curve {
+        margin-top: -17px;
+    }
+    .m-w-100 {
+        width: 100% !important;
+    }
+    .art-footer-mt {
+        margin-top: -64px;
+    }
+    .move-up-find-care {
+        margin-top: -20px !important;
+    }
+    .move-up-all-article {
+        margin-top: -470px;
+    }
+
+    .art-footer-img {
+        margin-top: 1px !important;
+    }
+    .latest-move-up {
+        margin-top: -101px !important;
+    }
+    .program-move-up {
+        margin-top: 20px;
+    }
+    .mobile-center {
+        margin: auto !important;
+        text-align: center;
+    }
+
+    /* .custom-select-1 {
+        width: 70% !important;
+    } */
+
+    .banner {
+        background-size: cover !important;
+    }
+    .mobile-show {
+        display: none;
+    }
+    .nav-responsive {
+        width: 100%;
+    }
+    .text-h1 {
+        font-size: 30px;
+    }
+    .custom-right-border {
+        border-right: 0px !important;
+    }
+    .find-care-doc-box {
+        padding: 10px;
+    }
+    .medium-card-h,
+    .large-card,
+    .detailPageImg,
+    .artSmallImg,
+    .artLargeImg,
+    .art-large-img,
+    .art-large-img-2,
+    .related-package-img,
+    .all-article-banner,
+    .package-image,
+    .m-h-100,
+    .ar-large-card2,
+    .ar-large-card {
+        height: auto !important;
+    }
+    .art-res-img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .article-rectangle {
+        position: relative !important;
+    }
+
+    .m-fs-10 {
+        font-size: 10px;
+    }
+    .m-fs-11 {
+        font-size: 11px;
+    }
+    .m-fs-12 {
+        font-size: 12px;
+    }
+    .m-fs-13 {
+        font-size: 13px;
+    }
+    .m-fs-14 {
+        font-size: 14px;
+    }
+    .m-fs-15 {
+        font-size: 15px;
+    }
+    .m-fs-16 {
+        font-size: 16px;
+    }
+    .m-fs-17 {
+        font-size: 17px;
+    }
+    .m-fs-18 {
+        font-size: 18px;
+    }
+
+    .home-content-margin-top {
+        text-align: center;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+    }
+    .clinic-hospital-height-600 {
+        height: 600px !important;
+    }
+    .clinic-hospital-height-600-bg-img {
+        height: 600px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .home-content-margin-top {
+        margin-top: 10px;
+    }
+    #homeSlider {
+        height: 500px !important;
+    }
+    #homeSlider .carousel-indicators {
+        bottom: 0px !important;
+    }
+    .book-margin {
+        margin-top: unset !important;
+    }
+}
+@media screen and (max-width: 376px) {
+    .banner-content .col-11 {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .m-px-3 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .move-up-find-care {
+        margin-top: -20px !important;
+    }
+    .c-h-0 {
+        height: 0px !important;
+    }
+
+    /* #navbar-ght{
+        top: -170px !important;
+    } */
+
+    body
+        > div.wrap
+        > div.custom-nav-banner.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul {
+        width: 100%;
+    }
+
+    .sticky-width {
+        width: 100%;
+    }
+    .tablet-hidden {
+        display: none;
+    }
+
+    .artSmallImg {
+        height: auto !important;
+    }
+    .detailPageImg {
+        height: auto !important;
+    }
+    .tablet-only {
+        display: block;
+    }
+    .nav-responsive {
+        width: 100%;
+    }
+    .art-res-img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .find-care-curve {
+        margin-top: -17px;
+    }
+    .m-h-100 {
+        height: auto !important;
+    }
+    .art-footer-img {
+        margin-top: -45px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body
+        > div.wrap
+        > div.custom-nav-banner.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul {
+        width: 100%;
+    }
+
+    #homeSlider .carousel-indicators {
+        bottom: 67px !important;
+    }
+    .book-margin {
+        margin-top: -71px;
+    }
+    .sticky-width {
+        width: 100%;
+    }
+
+    .event-man-email {
+        z-index: -1;
+    }
+    .event-curve {
+        margin-top: -87px;
+    }
+    .event1-img {
+        margin-top: -69px;
+    }
+    .ar-large-card2 {
+        height: 390px;
+    }
+    .large-card {
+        height: 288px !important;
+    }
+    .m-h-100 {
+        height: auto !important;
+    }
+    .c-mb-1 {
+        margin-bottom: 20px;
+    }
+    .art-footer-img {
+        margin-top: 0px !important;
+    }
+    .art-footer-mt {
+        margin-top: -117px;
+    }
+    .tab-h1 {
+        font-size: 1.5rem !important;
+    }
+    .latest-move-up {
+        margin-top: -208px;
+    }
+    .move-up-find-care {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    .med-nav .med-col-nav {
+        font-size: 12px !important;
+        padding-left: 9px !important;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1041px) {
+    body
+        > div.wrap
+        > div.custom-nav-banner.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul,
+    body
+        > div.wrap
+        > div:nth-child(3)
+        > div.custom-nav-banner-final.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul {
+        width: 100%;
+    }
+
+    .second-menu li a {
+        font-size: 10px !important;
+    }
+
+    .latest-move-up {
+        margin-top: -238px;
+    }
+
+    .art-footer-mt {
+        margin-top: -129px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 749px) {
+    .art-footer-mt {
+        margin-top: -109px;
+    }
+    .latest-move-up {
+        margin-top: -228px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    .hide-601-991 {
+        display: none;
+    }
+    .show-601-991 {
+        display: block !important;
+    }
+    .tablet-w-100 {
+        width: 100% !important;
+    }
+    .t-clinic-responsive {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .art-footer-mt {
+        margin-top: -44px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1249px) {
+    .art-footer-img {
+        margin-top: -125px;
+    }
+    .move-up-find-care {
+        margin-top: -46px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .apac-hospital-awards-home-banner-height {
+        height: 650px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .h-500-1440 {
+        height: 500px !important;
+    }
+}
+
+@media (max-width: 1659px) {
+    .second-menu li {
+        font-size: 15px;
+    }
+    .m-w-100 {
+        width: 100% !important;
+    }
+    .sticky-width {
+        width: 100% !important;
+    }
+    .body-width {
+        width: 100% !important;
+    }
+    .banner-content {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1439px) {
+    .resize-view-package {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+    body
+        > div.wrap
+        > div.custom-nav-banner.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul,
+    body
+        > div.wrap
+        > div:nth-child(3)
+        > div.custom-nav-banner-final.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1259px) {
+    body
+        > div.wrap
+        > div.custom-nav-banner.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul,
+    body
+        > div.wrap
+        > div:nth-child(3)
+        > div.custom-nav-banner-final.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul {
+        width: 180px;
+    }
+}
+
+@media (min-width: 1260px) and (max-width: 1499px) {
+    body
+        > div.wrap
+        > div.custom-nav-banner.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul,
+    body
+        > div.wrap
+        > div:nth-child(3)
+        > div.custom-nav-banner-final.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul {
+        width: 225px;
+    }
+}
+
+@media (min-width: 1500px) {
+    body
+        > div.wrap
+        > div.custom-nav-banner.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul,
+    body
+        > div.wrap
+        > div:nth-child(3)
+        > div.custom-nav-banner-final.m-w-100
+        > nav
+        > div
+        > div
+        > ul
+        > li:nth-child(8)
+        > ul {
+        width: 280px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-hidden-cus,
+    .hidden-nav-990 {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1150px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1250px;
+    }
+}

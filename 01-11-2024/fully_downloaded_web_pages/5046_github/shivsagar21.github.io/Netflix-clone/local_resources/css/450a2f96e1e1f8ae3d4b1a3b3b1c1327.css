@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+.main{
+    /* padding-top: 1rem; */
+    color:white;
+    /* background-color: black; */
+    background-image: url("../assests/images/bg.jpg");
+    /* opacity: 0.3; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.head{
+    margin: 0.8rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    span{
+        color: red;
+        font-weight: 900;
+    }
+
+}
+.intro{
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    /* line-height: 3rem; */
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+}
+
+.btn-style{
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+}
+
+.btn1{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: 400;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 0.2rem;
+    border: 1px solid gray;
+}
+
+.btn2{
+    color: white;
+    background-color: red;
+    font-weight: 400;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+}
+
+.btn3{
+    height: 3.5rem;
+    width:25rem ;
+    /* opacity: 0.2; */
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid black;
+    
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 1rem;
+    border-radius: 0.3rem;
+    font-weight: 900;
+    z-index: 10;
+}
+
+.btn4{
+    /* font-size: 2rem; */
+    height: 3.5rem;
+    width: 12rem;
+    font-size: 1rem;
+    color: white;
+    background-color: red;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    /* padding: 1rem; */
+}
+
+.intro-btn{
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.line{
+    height: 0.4rem;
+    background-color: rgb(86, 83, 83);
+}
+
+.sect1{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 80vh;
+    align-items: center;
+    line-height: 4rem;
+    h1{
+        font-size: 3rem;
+        /* line-height: 3rem; */
+    }
+    h3{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+}
+.image{
+    img{
+        width: 100%;
+    }
+}
+
+.sect4{
+    width: 90vw;
+    
+    margin: 4rem auto 4rem;
+    /* margin-top: 10rem; */
+    color: #414141;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* line-height: 4rem; */
+    h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        /* line-height: 3rem; */
+    }
+    h3{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+.cont4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.faqs{
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    margin: 3rem auto;
+    /* align-items: center; */
+}
+.heading_faq{
+    text-align: center;
+    color: #414141;
+    h1{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}
+.ques{
+    background-color: #2d2d2d;
+    margin-top: 1rem;
+    padding: 1.4rem;
+    /* font: 3rem; */
+    
+}
+
+/* .ques :hover{
+    background-color: #414141;
+} */
+.ques h1{
+    font-size: 1.8rem;
+}
+
+.start{
+    /* margin-top: rem; */
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 3rem auto;
+    text-align: center;
+    
+}
+
+.start :nth-child(1){
+    color: #414141;
+}
+.start :nth-child(2){
+    /* margin-top: 1rem; */
+    input{
+        border: 1px solid #414141;
+    }
+}
+
+footer{
+    width: 80vw;
+    margin: 3rem 2rem 3rem; 
+    
+}
+footer :nth-child(1){
+    /* padding: 1rem; */
+    padding-bottom:0.6rem ;
+}
+footer :nth-child(2){
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    li{
+        list-style: none;
+        padding: 0.5rem;
+        word-wrap: normal;
+    }
+}
+
+a{
+    color: rgba(255,255,255,0.6);
+}
+a:visited, a:hover{
+    color: rgba(255,255,255,0.4); 
+}
+
+.btn5{
+    font-size: 1rem;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>im</title>
+</head>
+<body>
+<script type="text/javascript">
+        var userLang = navigator.language || navigator.userLanguage; 
+
+        if(userLang.startsWith("en")){
+           
+            window.location.href = "en.html";  
+        }
+        else if(userLang.startsWith("zh")){
+           
+            window.location.href = "zh.html";  
+        }
+        else{
+            
+            window.location.href = "en.html";  
+        }
+    </script>
+</body>
+</html>

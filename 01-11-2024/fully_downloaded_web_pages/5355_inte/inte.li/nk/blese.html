@@ -1,0 +1,110 @@
+ <style>ul#admin_menu li:not(.frontend_link) {display: none}</style><html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-patible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="" name="description"/>
+<link href="local_resources/img/33489ed41a1ce082fec7f6358f2eefe2.ico" rel="icon"/>
+<title>Link Shortener</title>
+<link href="local_resources/css/248738b04ea7e9270726cd0949b43032.css" rel="stylesheet"/>
+<style>
+                body {
+                    background-color: #1e2c3a;
+                }
+            </style>
+<style>
+            .btn-primary {
+                background-color: #1e2c3a;
+                border-color: #1e2c3a;
+            }
+
+            .btn-primary:hover,
+            .btn-primary:focus,
+            .btn-primary:active {
+                background-color: #0f1d2b;
+                border-color: #0f1d2b;
+            }
+        </style>
+</head><body>
+<div class="container-fluid h-100">
+<div class="row justify-content-center align-items-center h-100">
+<div class="col-12 col-lg-10 col-xl-8 col-xxl-5 mt-5">
+<div class="card border-0 mt-5">
+<div class="card-body px-5 pb-5">
+<br/>
+<h3>Notice</h3>
+<hr/>
+<p>Hi! The link you clicked may have been intended to scam you, please disregard. If you came here from an email - you should report that email as spam.</p>
+<p>Unfortunately, my website was recently used by scammers to share phishing and malware links without my knowledge.</p>
+<p>Thanks,</p>
+<p>Benjamin.</p>
+</div>
+</div>
+<div class="d-flex flex-column flex-md-row align-items-center my-3">
+<div class="ms-3">
+<a class="bold-link me-3 text-white text-decoration-none" href="https://benjaminnelan.com.au/contact"><span>GET IN TOUCH</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="particles-js"></div>
+<script src="local_resources/js/4686920455b370b5b1d87dc083721f0b.js"></script>
+<script src="local_resources/js/005de1f5c81bc5b0ee7f0b22c6dc96d4.js"></script>
+<script crossorigin="anonymous" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" src="local_resources/js/530bb3523062e57ffea1395e43802c5f.js"></script>
+<script>
+	// From https://stackoverflow.com/a/30810322
+	function fallbackCopyTextToClipboard(text) {
+		var textArea = document.createElement("textarea");
+		textArea.value = text;
+		
+		// Avoid scrolling to bottom
+		textArea.style.top = "0";
+		textArea.style.left = "0";
+		textArea.style.position = "fixed";
+
+		document.body.appendChild(textArea);
+		textArea.focus();
+		textArea.select();
+
+		try {
+			var successful = document.execCommand('copy');
+			var msg = successful ? 'successful' : 'unsuccessful';
+			console.log('Fallback: Copying text command was ' + msg);
+		} catch (err) {
+			console.error('Fallback: Oops, unable to copy', err);
+		}
+
+		document.body.removeChild(textArea);
+	}
+
+	function copyTextToClipboard(text) {
+		if (!navigator.clipboard) {
+			fallbackCopyTextToClipboard(text);
+			return;
+		}
+		navigator.clipboard.writeText(text).then(function() {
+			console.log('Async: Copying to clipboard was successful!');
+		}, function(err) {
+			console.error('Async: Could not copy text: ', err);
+		});
+	}
+
+	const copyBtn = document.querySelector('button#copy-button');
+
+	if (copyBtn) {
+		copyBtn.addEventListener('click', function(event) {
+			copyTextToClipboard(event.target.dataset.shorturl);
+		});
+	}
+
+	const closeShortenedLinkScreenButton = document.querySelector('button#close-shortened-screen');
+
+	if (closeShortenedLinkScreenButton) {
+		closeShortenedLinkScreenButton.addEventListener('click', function(event) {
+			window.location.href=window.location.href;
+		});
+	}
+</script>
+</body>
+</html>

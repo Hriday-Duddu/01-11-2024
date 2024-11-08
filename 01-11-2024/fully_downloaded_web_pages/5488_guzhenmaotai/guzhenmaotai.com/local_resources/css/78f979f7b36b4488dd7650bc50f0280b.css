@@ -1,0 +1,24 @@
+@charset "utf-8";.jz_nav_wrap{margin-top:0.0vw;}
+.jz_nav_wrap{margin-right:0.0%;}
+.jz_nav_wrap{margin-bottom:0.0vw;}
+.jz_nav_wrap{margin-left:0.0%;}
+.jz_web_header .jz_nav{}
+.jz_web_header .jz_nav_list{text-align:left;}
+.jz_web_header  .m_nav_logo_img{height:65px;}.jz_web_header .jz_nav_item{min-width:80px;height:65px; line-height:65px;border-width:0px;border-top-style:solid;border-bottom-style:solid;border-left-style:solid;border-right-style:solid;}
+.jz_web_header .jz_nav_item:not(.jz_nav_item_selected):not(.jz_nav_item_active){background-color: rgba(0, 0, 0, 0);}
+#gridHeader.jz_web_header  .jz_nav_item.jz_nav_item_selected, #gridHeader.jz_web_header  .jz_nav_item:hover{background-image:none;background-color:rgba(247, 247, 247, 1);background-repeat:repeat;background-position:top left;}
+.jz_web_header .jz_nav_item .nav_item_text .nav_main_name {font-size:14px;font-family:var(--global-font-family);}
+.jz_web_header .nav_item_septal{font-size:14px;}
+.jz_web_header .jz_nav_layout0 .sub_nav_list,.jz_web_header .jz_nav_layout0 .three_nav_list {}
+.jz_web_header .jz_nav_layout0 .sub_nav_item ,.jz_web_header .jz_nav_layout0 .three_nav_item {}
+}
+.jz_web_header  .sub_nav_list,.jz_web_header  .three_nav_list {}
+.jz_web_header  .sub_nav_list, .jz_web_header  .three_nav_list{ background-color: #fff; }.jz_web_header  .sub_nav_item ,.jz_web_header  .three_nav_item {text-decoration: none;font-weight: normal;font-style: normal;}
+.jz_mobi_header .jz_nav_item{}
+.jz_mobi_header .sub_nav_item{}
+.jz_mobi_header .sub_nav_item_text{}
+.jz_mobi_header .three_nav_item{}
+.jz_mobi_header .three_nav_item_text{}
+.jz_web_header li.jz_nav_item:not(.jz_nav_item_selected):not(.jz_nav_item_active){border-color:#000;}
+.jz_web_header li.jz_nav_item_selected, .jz_web_header  .jz_nav_list .jz_nav_item:hover{border-color:#212121;}
+.jz_web_header .jz_nav_item:not(.jz_nav_item_selected):not(.jz_nav_item_active) .nav_item_text_wrap .nav_main_name, .jz_web_header .jz_nav_item:not(.jz_nav_item_selected):not(.jz_nav_item_active) .nav_item_text_wrap .nav_item_text .nav_main_name{color:rgba(51, 51, 51, 1);}

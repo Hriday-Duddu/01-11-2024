@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html translate="no">
+<head>
+<meta content="" name="facebook-domain-verification"/>
+<meta content="notranslate" name="google"/>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport"/>
+<meta content="Z pomocą naszej technologii, każdy w Europie może zarobić od 5000 euro miesięcznie!" name="description"/>
+<meta content="Algorytmy Tesla analizują rynek online, a technologia sztucznej inteligencji pozwala na zawieranie
+    zyskownych transakcji w 99,9% przypadków." property="og:description"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+<title>Tesla Bot</title>
+<!-- favicon -->
+<link href="local_resources/img/647eec033859935ab835e39ecbe48925.ico" rel="icon"/>
+<!-- styles -->
+<link href="local_resources/css/e3161594c8c2476683a186390b284f15.css" rel="stylesheet"/>
+<link href="local_resources/css/745ba42d22e8abdd43163834ea8d2a0b.css" rel="stylesheet"/>
+<!-- toastr-lib -->
+<link href="local_resources/css/44837906e4dc944fd3c91584d483f55e.css" rel="stylesheet">
+<script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "1217359882914916");
+    fbq("track", "PageView");
+  </script>
+
+<img height="1" src="local_resources/img/98a01cd7d131acdc6963afbdbd224e34.png" style="display: none" width="1"/>
+
+</link></head>
+<body class="add-scroll expansion-alids-init" data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1111.0">
+<div class="loader">
+<div class="loader-element"></div>
+</div>
+<div class="body">
+<div class="content">
+<div class="chat">
+<div class="chat-wrap">
+<header class="header-mob">
+<div class="header-top">
+<div class="header__body">
+<div class="header__name">
+<div class="header__avatar">
+<img alt="logo" src="local_resources/img/fe8f256be8534c15fe19dfd7bbba0348.webp"/>
+</div>
+<div class="header__desc">
+<span class="header__desc-name">Tesla bot</span>
+<p>
+                      Z pomocą naszej technologii, każdy w Europie może zarobić od 5000 euro miesięcznie!
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="header-bottom">
+<div class="header-bottom__desc">
+<p>
+                  Algorytmy Tesla analizują rynek online, a technologia sztucznej inteligencji pozwala na zawieranie
+                  zyskownych transakcji w 99,9% przypadków.
+                </p>
+</div>
+</div>
+</header>
+<div class="chart-wrap">
+<canvas id="chart"></canvas>
+</div>
+<div class="info-user">
+<header class="header-desc">
+<div class="header-top">
+<div class="header__body">
+<div class="header__name">
+<div class="header__avatar">
+<img alt="logo" src="local_resources/img/fe8f256be8534c15fe19dfd7bbba0348.webp"/>
+</div>
+<div class="header__desc">
+<span class="header__desc-name">Tesla bot</span>
+<p>
+                        Z pomocą naszej technologii, każdy w Europie może zarobić od 5000 euro miesięcznie!
+                      </p>
+</div>
+</div>
+</div>
+</div>
+<div class="header-bottom">
+<div class="header-bottom__desc">
+<p>
+                    Algorytmy Tesla analizują rynek online, a technologia sztucznej inteligencji pozwala na zawieranie
+                    zyskownych transakcji w 99,9% przypadków.
+                  </p>
+</div>
+</div>
+</header>
+<div class="user-profit">
+<p style="text-align: center">Twój obecny dochód:</p>
+<p style="
+                    color: green;
+                    font-size: 24px;
+                    font-family: bold;
+                    text-align: center;
+                  ">
+<span id="profit">0 </span> Euro
+              </p>
+</div>
+<div class="toast-wrap">
+</div>
+<div id="lead">
+<button class="submit_btn" id="button_next" style="margin-top: 8px">
+                WYPRÓBUJ DEMO
+              </button>
+<p class="text" id="message-profit" style="visibility: hidden">
+                Twój dochód za <b>30 sekund korzystania z platformy </b>może wynieść <b><span id="profit2">0 </span>
+                  Euro </b>jeśli jesteś członkiem platformy Tesla Bot.
+              </p>
+<form class="register-form" id="reg_form" name="reg_form">
+<div class="form-input-main">
+<input class="form-input" name="first_name" placeholder="Imię" required="" type="text"/>
+</div>
+<div class="form-input-main">
+<input class="form-input" name="last_name" placeholder="Nazwisko" required="" type="text"/>
+</div>
+<div class="form-input-main">
+<input name="email" placeholder="E-mail" required="" type="email"/>
+</div>
+<div class="form-input-main">
+<input name="phonePrefix" type="hidden" value="44"/>
+<input class="form-input" name="phone" placeholder="Numer telefonu" required="" type="tel"/>
+</div>
+<button name="submitBtn" type="submit">zacząć</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="local_resources/js/91916b0780f0f71b8a2bbbffa73242fc.js"></script>
+<script src="local_resources/js/bd4dd5505826bd1dd76bea50f13d529d.js"></script>
+<script src="local_resources/js/fe347363e53727f9c8ae2b3924b29afd.js"></script>
+<script src="local_resources/js/a819e2f6bee23d9a477e266618e5dbaf.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.1.0/dist/chartjs-chart-financial.min.js"></script> -->
+<script src="local_resources/js/d90c11e8d0d0d87795b1c63bf882bc9a.js"></script>
+<script crossorigin="anonymous" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" referrerpolicy="no-referrer" src="local_resources/js/c7e97ddad269b00c94e98aeacfb2ae60.js"></script>
+<script src="local_resources/js/6a3b94e7cb4ca1ff5a027e50ff2296f6.js"></script>
+<script src="local_resources/js/8fb1bcb2dad16510b3b96e22b5bca95a.js"></script>
+<!-- intlTelInput -->
+<link href="local_resources/css/54ea22c433c0db61ac6a8c354cd024c5.css" rel="stylesheet">
+<script src="local_resources/js/88d801db00fcd4de246f4431f97dd2f2.js"></script>
+<div class="modal_phone fade_phone" id="modal_phone" tabindex="-1">
+<div class="modal-dialog_phone">
+<div class="modal-content_phone">
+<div class="modal-header_phone">
+<h5 class="modal-title_phone">
+            Teléfono no válido
+          </h5>
+<button class="close-button_phone" id="close-button_phone" type="button">×</button>
+</div>
+<div class="modal-body_phone">
+          ¡Perdona! El programa no es compatible con su región. Introduzca su número de socio europeo
+        </div>
+</div>
+</div>
+</div>
+<script>
+    const LANDING_LANG = 'PL';
+
+    const formJsonData = '';
+    const formHeaderData = '';
+    const formFooterData = '';
+
+    const formDiv = document.querySelectorAll('.register-form');
+
+    let errors = {
+      'RU': [
+        { errorPlaceholder: 'Введите Ваше Имя', },
+        { errorPlaceholder: 'Введите Вашу Фамилию', },
+        { errorPlaceholder: 'Введите Ваш Номер', },
+        { errorPlaceholder: 'Введите Ваш Email', },
+      ],
+      'EN': [
+        { errorPlaceholder: 'Enter Correct First Name', },
+        { errorPlaceholder: 'Enter Correct Last Name', },
+        { errorPlaceholder: 'Enter Correct Phone', },
+        { errorPlaceholder: 'Enter Correct Email', },
+      ],
+      'PL': [
+        { errorPlaceholder: 'Wprowadź poprawne imię', },
+        { errorPlaceholder: 'Wpisz poprawne nazwisko', },
+        { errorPlaceholder: 'Wprowadź prawidłowy numer telefonu', },
+        { errorPlaceholder: 'Wpisz poprawny adres e-mail', },
+      ],
+      'DE': [
+        { errorPlaceholder: 'Korrekten Vornamen eingeben', },
+        { errorPlaceholder: 'Korrekten Nachnamen eingeben', },
+        { errorPlaceholder: 'Geben Sie das richtige Telefon ein', },
+        { errorPlaceholder: 'Geben Sie die richtige E-Mail-Adresse ein', },
+      ],
+      'ES': [
+        { errorPlaceholder: 'Ingrese el nombre correcto', },
+        { errorPlaceholder: 'Ingrese el apellido correcto', },
+        { errorPlaceholder: 'Ingrese el teléfono correcto', },
+        { errorPlaceholder: 'Ingrese el correo electrónico correcto', },
+      ],
+      'CZ': [
+        { errorPlaceholder: 'Zadejte správné křestní jméno', },
+        { errorPlaceholder: 'Zadejte správné příjmení', },
+        { errorPlaceholder: 'Zadejte správný telefon', },
+        { errorPlaceholder: 'Zadejte správný e-mail', },
+      ],
+      'TR': [
+        { errorPlaceholder: "Doğru Adı Girin" },
+        { errorPlaceholder: "Doğru Soyadı Girin" },
+        { errorPlaceholder: "Doğru Telefonu Girin" },
+        { errorPlaceholder: "Doğru E-postayı Girin" }
+      ],
+      'IT': [
+        { errorPlaceholder: 'Inserisci il nome corretto', },
+        { errorPlaceholder: 'Inserisci il cognome corretto', },
+        { errorPlaceholder: 'Immettere il numero di telefono corretto', },
+        { errorPlaceholder: `Inserisci l'e-mail corretta`, },
+      ],
+    }
+
+    if (formJsonData.length > 0) {
+      const formJSON = JSON.parse(formJsonData);
+      errors = JSON.parse(formJsonData)
+
+      formDiv.forEach(form => form.innerHTML = '');
+
+      formJSON.forEach(input => {
+        switch (input.name) {
+          case ('first_name'):
+          case ('last_name'):
+            formDiv.forEach(form => {
+              form.insertAdjacentHTML('beforeend',
+                `<div class="form-input-main">
+                  <input class="form-input" name="${input.name}" placeholder="${input.placeholder}" type="${input.type}" ${input.isRequired && 'required'} />
+                </div>`
+              );
+            })
+            break;
+
+          case ('phone'):
+            formDiv.forEach(form => {
+              form.insertAdjacentHTML('beforeend',
+                `<div class="form-input-main">
+                  <input class="form-input" name="${input.name}" type="${input.type}"  ${input.isRequired && 'required'}  />
+                </div>`
+              );
+            })
+            break;
+
+          case ('email'):
+            formDiv.forEach(form => {
+              form.insertAdjacentHTML('beforeend',
+                `<div class="form-input-main">
+                  <input class="form-input ${input.name}" name="${input.name}" placeholder="${input.placeholder}" type="${input.type}" ${input.isRequired && 'required'} />
+                </div>`
+              );
+            })
+            break;
+
+          case ('submit'):
+            formDiv.forEach((form, index) => {
+              form.insertAdjacentHTML("beforeend", `<button name="submitBtn" id="submitBtn${index + 1}" type="submit">${input.placeholder}</button>`);
+            });
+            break;
+
+          case ('nationality'):
+            const countries = [{ value: "", label: input.placeholder }, { label: "Афганистан", value: "AF" }, { label: "Албания", value: "ALOB" }, { label: "Алжир", value: "DZ" }, { label: "Американское Самоа", value: "AS" }, { label: "Andorra", value: "AD" }, { label: "Angola", value: "AO" }, { label: "Anguilla", value: "AI" }, { label: "Antarctica", value: "AQ" }, { label: "Antigua and Barbuda", value: "AG" }, { label: "Argentina", value: "AR" }, { label: "Armenia", value: "AM" }, { label: "Aruba", value: "AW" }, { label: "Australia", value: "AU" }, { label: "Austria", value: "AT" }, { label: "Azerbaijan", value: "AZ" }, { label: "Bahamas", value: "BS" }, { label: "Bahrain", value: "BH" }, { label: "Bangladesh", value: "BD" }, { label: "Barbados", value: "BB" }, { label: "Belarus", value: "BY" }, { label: "Belgium", value: "BE" }, { label: "Belize", value: "BZ" }, { label: "Benin", value: "BJ" }, { label: "Bermuda", value: "BM" }, { label: "Bhutan", value: "BT" }, { label: "Bolivia, Plurinational State of", value: "BO" }, { label: "Bonaire, Sint Eustatius and Saba", value: "BQ" }, { label: "Bosnia and Herzegovina", value: "BA" }, { label: "Botswana", value: "BW" }, { label: "Bouvet Island", value: "BV" }, { label: "Brazil", value: "BR" }, { label: "British Indian Ocean Territory", value: "IO" }, { label: "Brunei Darussalam", value: "BN" }, { label: "Bulgaria", value: "BG" }, { label: "Burkina Faso", value: "BF" }, { label: "Burundi", value: "BI" }, { label: "Cambodia", value: "KH" }, { label: "Cameroon", value: "CM" }, { label: "Canada", value: "CA" }, { label: "Cape Verde", value: "CV" }, { label: "Cayman Islands", value: "KY" }, { label: "Central African Republic", value: "CF" }, { label: "Chad", value: "TD" }, { label: "Chile", value: "CL" }, { label: "China", value: "CN" }, { label: "Christmas Island", value: "CX" }, { label: "Cocos (Keeling) Islands", value: "CC" }, { label: "Colombia", value: "CO" }, { label: "Comoros", value: "KM" }, { label: "Congo", value: "CG" }, { label: "Congo, the Democratic Republic of the", value: "CD" }, { label: "Cook Islands", value: "CK" }, { label: "Costa Rica", value: "CR" }, { label: "Croatia", value: "HR" }, { label: "Cuba", value: "CU" }, { label: "Curaçao", value: "CW" }, { label: "Cyprus", value: "CY" }, { label: "Czech Republic", value: "CZ" }, { label: "Côte d'Ivoire", value: "CI" }, { label: "Denmark", value: "DK" }, { label: "Djibouti", value: "DJ" }, { label: "Dominica", value: "DM" }, { label: "Dominican Republic", value: "DO" }, { label: "Ecuador", value: "EC" }, { label: "Egypt", value: "EG" }, { label: "El Salvador", value: "SV" }, { label: "Equatorial Guinea", value: "GQ" }, { label: "Eritrea", value: "ER" }, { label: "Estonia", value: "EE" }, { label: "Ethiopia", value: "ET" }, { label: "Falkland Islands (Malvinas)", value: "FK" }, { label: "Faroe Islands", value: "FO" }, { label: "Fiji", value: "FJ" }, { label: "Finland", value: "FI" }, { label: "France", value: "FR" }, { label: "French Guiana", value: "GF" }, { label: "French Polynesia", value: "PF" }, { label: "French Southern Territories", value: "TF" }, { label: "Gabon", value: "GA" }, { label: "Gambia", value: "GM" }, { label: "Georgia", value: "GE" }, { label: "Germany", value: "DE" }, { label: "Ghana", value: "GH" }, { label: "Gibraltar", value: "GI" }, { label: "Greece", value: "GR" }, { label: "Greenland", value: "GL" }, { label: "Grenada", value: "GD" }, { label: "Guadeloupe", value: "GP" }, { label: "Guam", value: "GU" }, { label: "Guatemala", value: "GT" }, { label: "Guernsey", value: "GG" }, { label: "Guinea", value: "GN" }, { label: "Guinea-Bissau", value: "GW" }, { label: "Guyana", value: "GY" }, { label: "Haiti", value: "HT" }, { label: "Heard Island and McDonald Islands", value: "HM" }, { label: "Holy See (Vatican City State)", value: "VA" }, { label: "Honduras", value: "HN" }, { label: "Hong Kong", value: "HK" }, { label: "Hungary", value: "HU" }, { label: "Iceland", value: "IS" }, { label: "India", value: "IN" }, { label: "Indonesia", value: "ID" }, { label: "Iran, Islamic Republic of", value: "IR" }, { label: "Iraq", value: "IQ" }, { label: "Ireland", value: "IE" }, { label: "Isle of Man", value: "IM" }, { label: "Israel", value: "IL" }, { label: "Italy", value: "IT" }, { label: "Jamaica", value: "JM" }, { label: "Japan", value: "JP" }, { label: "Jersey", value: "JE" }, { label: "Jordan", value: "JO" }, { label: "Kazakhstan", value: "KZ" }, { label: "Kenya", value: "KE" }, { label: "Kiribati", value: "KI" }, { label: "Korea, Democratic People's Republic of", value: "KP" }, { label: "Korea, Republic of", value: "KR" }, { label: "Kuwait", value: "KW" }, { label: "Kyrgyzstan", value: "KG" }, { label: "Lao People's Democratic Republic", value: "LA" }, { label: "Latvia", value: "LV" }, { label: "Lebanon", value: "LB" }, { label: "Lesotho", value: "LS" }, { label: "Liberia", value: "LR" }, { label: "Libya", value: "LY" }, { label: "Liechtenstein", value: "LI" }, { label: "Lithuania", value: "LT" }, { label: "Luxembourg", value: "LU" }, { label: "Macao", value: "MO" }, { label: "Macedonia, the former Yugoslav Republic of", value: "MK" }, { label: "Madagascar", value: "MG" }, { label: "Malawi", value: "MW" }, { label: "Malaysia", value: "MY" }, { label: "Maldives", value: "MV" }, { label: "Mali", value: "ML" }, { label: "Malta", value: "MT" }, { label: "Marshall Islands", value: "MH" }, { label: "Martinique", value: "MQ" }, { label: "Mauritania", value: "MR" }, { label: "Mauritius", value: "MU" }, { label: "Mayotte", value: "YT" }, { label: "Mexico", value: "MX" }, { label: "Micronesia, Federated States of", value: "FM" }, { label: "Moldova, Republic of", value: "MD" }, { label: "Monaco", value: "MC" }, { label: "Mongolia", value: "MN" }, { label: "Montenegro", value: "ME" }, { label: "Montserrat", value: "MS" }, { label: "Morocco", value: "MA" }, { label: "Mozambique", value: "MZ" }, { label: "Myanmar", value: "MM" }, { label: "Namibia", value: "NA" }, { label: "Nauru", value: "NR" }, { label: "Nepal", value: "NP" }, { label: "Netherlands", value: "NL" }, { label: "New Caledonia", value: "NC" }, { label: "New Zealand", value: "NZ" }, { label: "Nicaragua", value: "NI" }, { label: "Niger", value: "NE" }, { label: "Nigeria", value: "NG" }, { label: "Niue", value: "NU" }, { label: "Norfolk Island", value: "NF" }, { label: "Northern Mariana Islands", value: "MP" }, { label: "Norway", value: "NO" }, { label: "Oman", value: "OM" }, { label: "Pakistan", value: "PK" }, { label: "Palau", value: "PW" }, { label: "Palestine, State of", value: "PS" }, { label: "Panama", value: "PA" }, { label: "Papua New Guinea", value: "PG" }, { label: "Paraguay", value: "PY" }, { label: "Peru", value: "PE" }, { label: "Philippines", value: "PH" }, { label: "Pitcairn", value: "PN" }, { label: "Poland", value: "PL" }, { label: "Portugal", value: "PT" }, { label: "Puerto Rico", value: "PR" }, { label: "Qatar", value: "QA" }, { label: "Romania", value: "RO" }, { label: "Russian Federation", value: "RU" }, { label: "Rwanda", value: "RW" }, { label: "Réunion", value: "RE" }, { label: "Saint Barthélemy", value: "BL" }, { label: "Saint Helena, Ascension and Tristan da Cunha", value: "SH" }, { label: "Saint Kitts and Nevis", value: "KN" }, { label: "Saint Lucia", value: "LC" }, { label: "Saint Martin (French part)", value: "MF" }, { label: "Saint Pierre and Miquelon", value: "PM" }, { label: "Saint Vincent and the Grenadines", value: "VC" }, { label: "Samoa", value: "WS" }, { label: "San Marino", value: "SM" }, { label: "Sao Tome and Principe", value: "ST" }, { label: "Saudi Arabia", value: "SA" }, { label: "Senegal", value: "SN" }, { label: "Serbia", value: "RS" }, { label: "Seychelles", value: "SC" }, { label: "Sierra Leone", value: "SL" }, { label: "Singapore", value: "SG" }, { label: "Sint Maarten (Dutch part)", value: "SX" }, { label: "Slovakia", value: "SK" }, { label: "Slovenia", value: "SI" }, { label: "Solomon Islands", value: "SB" }, { label: "Somalia", value: "SO" }, { label: "South Africa", value: "ZA" }, { label: "South Georgia and the South Sandwich Islands", value: "GS" }, { label: "South Sudan", value: "SS" }, { label: "Spain", value: "ES" }, { label: "Sri Lanka", value: "LK" }, { label: "Sudan", value: "SD" }, { label: "Suriname", value: "SR" }, { label: "Svalbard and Jan Mayen", value: "SJ" }, { label: "Swaziland", value: "SZ" }, { label: "Sweden", value: "SE" }, { label: "Switzerland", value: "CH" }, { label: "Syrian Arab Republic", value: "SY" }, { label: "Taiwan, Province of China", value: "TW" }, { label: "Tajikistan", value: "TJ" }, { label: "Tanzania, United Republic of", value: "TZ" }, { label: "Thailand", value: "TH" }, { label: "Timor-Leste", value: "TL" }, { label: "Togo", value: "TG" }, { label: "Tokelau", value: "TK" }, { label: "Tonga", value: "TO" }, { label: "Trinidad and Tobago", value: "TT" }, { label: "Tunisia", value: "TN" }, { label: "Turkey", value: "TR" }, { label: "Turkmenistan", value: "TM" }, { label: "Turks and Caicos Islands", value: "TC" }, { label: "Tuvalu", value: "TV" }, { label: "Uganda", value: "UG" }, { label: "Ukraine", value: "UA" }, { label: "United Arab Emirates", value: "AE" }, { label: "United Kingdom", value: "GB" }, { label: "United States", value: "US" }, { label: "United States Minor Outlying Islands", value: "UM" }, { label: "Uruguay", value: "UY" }, { label: "Uzbekistan", value: "UZ" }, { label: "Vanuatu", value: "VU" }, { label: "Venezuela, Bolivarian Republic of", value: "VE" }, { label: "Viet Nam", value: "VN" }, { label: "Virgin Islands, British", value: "VG" }, { label: "Virgin Islands, U.S.", value: "VI" }, { label: "Wallis and Futuna", value: "WF" }, { label: "Western Sahara", value: "EH" }, { label: "Yemen", value: "YE" }, { label: "Zambia", value: "ZM" }, { label: "Zimbabwe", value: "ZW" }, { label: "Åland Islands", value: "AX" }];
+
+            formDiv.forEach((form, index) => {
+              form.insertAdjacentHTML('beforeend',
+                `<div class="form-input-main">
+                  <label for="${input.name}${index + 1}">
+                    <select class="form-input" name="${input.name}" id="${input.name}${index + 1}" ${input.isRequired && 'required'}>
+                      ${countries.map(item => `<option value="${item.value}">${item.label}</option>`)}
+                    </select>
+                    ${input.placeholder}
+                  </label>
+                </div>`
+              );
+            })
+            break;
+
+          default:
+            formDiv.forEach((form, index) => {
+              form.insertAdjacentHTML('beforeend',
+                `<div class="form-input-main">
+                  <label class="${input.type === 'checkbox' ? 'checkbox--row' : ''}" for="${input.name}${index + 1}">
+                    <input class="${input.name} form-input" name="${input.name}${index + 1}" placeholder="${input.placeholder}" type="${input.type}" id="${input.name}${index + 1}" ${input.isRequired && 'required'} />
+                    <span class="${input.type === 'checkbox' ? 'checkbox--span' : ''}">${input.label}</span>
+                  </label>
+                </div>`
+              );
+            })
+            break;
+        }
+      })
+    }
+
+    if (formJsonData.length === '' || !formJsonData || !formJsonData.length) {
+      errors = errors[LANDING_LANG]
+    }
+
+    if (formHeaderData.length > 0) {
+      formDiv.forEach(form => {
+        form.insertAdjacentHTML('afterbegin', `<h3 class="form-header-text">${formHeaderData}</h3>`);
+      })
+    }
+
+    if (formFooterData.length > 0) {
+      formDiv.forEach(form => {
+        form.insertAdjacentHTML('beforeend', `<p class="form-footer-text">${formFooterData}</p>`);
+      })
+    }
+
+    const openModal = () => {
+      document.getElementById("modal_phone").classList.add("open_phone");
+      document.body.classList.add("modal-open_phone");
+    };
+
+    const closeModal = () => {
+      document.getElementById("modal_phone").classList.remove("open_phone");
+      document.body.classList.remove("modal-open_phone");
+    };
+
+    document.getElementById("close-button_phone").addEventListener("click", closeModal);
+
+    $(document).ready(function () {
+      let phonePrefix = "44";
+
+      $.ajax({
+        url: 'https://getyourapi.site/api/geolocation',
+        dataType: "json",
+        success: function (result) {
+          $('input[name="phone"]').each(function (input) {
+            let iti = intlTelInput(this, {
+              ...result.data,
+              autoHideDialCode: "true",
+              customContainer: "phoneWrapper",
+              autoPlaceholder: "aggressive",
+              separateDialCode: "false",
+              utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.0/js/utils.min.js",
+            });
+            phonePrefix = iti.getSelectedCountryData().dialCode;
+            $(this).on("countrychange", function () {
+              phonePrefix = iti.getSelectedCountryData().dialCode;
+            });
+            $("select[name = nationality]").val(result.data.initialCountry.toUpperCase());
+            return iti;
+          });
+        },
+      });
+
+      function validateEmail(email) {
+        return /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(String(email).toLowerCase());
+      }
+
+      function changInputHandler(e) {
+        if (e.target.value.length === 0) {
+          this.classList.remove("valid");
+          this.classList.add("error");
+          return;
+        }
+        this.classList.add("valid");
+        this.classList.remove("error");
+      }
+
+      function changEmailHandler(e) {
+        if (validateEmail(e.target.value) === false) {
+          this.classList.add("error");
+          this.classList.remove("valid");
+          return;
+        }
+        this.classList.add("valid");
+        this.classList.remove("error");
+      }
+
+      const { fbclid } = parseURLParams(location.href);
+
+      $(".form-input").keyup(changInputHandler);
+      $(".form-input").change(changInputHandler);
+      $("input[name = email]").keyup(changEmailHandler);
+      $("input[name = email]").change(changEmailHandler);
+
+      $("form.register-form").submit(function (e) {
+        e.preventDefault();
+
+        $(".loader").css("display", "block");
+        const form = $(this);
+        const first_name = form.find("input[name = first_name]");
+        const last_name = form.find("input[name = last_name]");
+        const nationality = form.find("select[name = nationality]")?.val();
+        const email = form.find("input[name = email]");
+        const phone = form.find("input[name = phone]");
+
+        let isError = false;
+        if (first_name.val() === "" || first_name.val().match(/[0-9]/) || first_name.val().trim() === "") {
+          first_name.addClass("error").removeClass('valid').val("").attr("placeholder", errors[0].errorPlaceholder);
+          isError = true;
+        }
+
+        if (last_name.val() === "" || last_name.val().match(/[0-9]/) || last_name.val().trim() === "") {
+          last_name.addClass("error").removeClass('valid').val("").attr("placeholder", errors[1].errorPlaceholder);
+          isError = true;
+        }
+
+        if (phone.val() === "" || phone.val().trim() === "" || isNaN(phone.val())) {
+          phone.addClass("error").removeClass('valid').val("").attr("placeholder", errors[2].errorPlaceholder);
+          isError = true;
+        }
+
+        if (validateEmail(email.val()) === false) {
+          email.addClass("error").val("").attr("placeholder", errors[3].errorPlaceholder);
+          isError = true;
+        }
+
+        if (isError === true) {
+          $(".loader").css("display", "none");
+          return;
+        }
+
+        const button = $("button[name=submitBtn]");
+        button.prop("disabled", true);
+
+        const checkNumber = new Promise((resolve, reject) => {
+          $.ajax({
+            url: `https://getyourapi.site/api/phone/validate`,
+            type: "post",
+            contentType: "application/json",
+            data: JSON.stringify({
+              phone: `${phonePrefix}${phone.val()}`,
+            }),
+            success: resolve,
+            error: reject,
+          });
+        });
+
+        const getBlacklist = new Promise((resolve, reject) => {
+          $.ajax({
+            url: "https://getyourapi.site/api/blacklist",
+            type: "get",
+            contentType: "application/json",
+            success: function (res) {
+              resolve(res);
+            },
+            error: function (error) {
+              reject(error);
+            },
+          });
+        });
+
+        Promise.all([checkNumber, getBlacklist])
+          .then(([checkNumber, blacklist]) => {
+            if (checkNumber.status === false) {
+              phone.addClass("error").removeClass("valid").val("").attr("placeholder", errors[2].errorPlaceholder);
+              $(".loader").css("display", "none");
+              throw new Error("check number error");
+            }
+
+            if (blacklist.status === false) {
+              $(".loader").css("display", "none");
+              throw new Error("get blacklist error");
+            }
+
+            if (blacklist.data.blacklist.includes(checkNumber.data.country_code.toLowerCase())) {
+              $(".loader").css("display", "none");
+              openModal();
+              setTimeout(closeModal, 5000);
+              throw new Error("forbidden country");
+            }
+            if (nationality && blacklist.data.blacklist.includes(nationality.toLowerCase())) {
+              window.location.href = "/success.html";
+              return;
+            }
+
+            $.ajax({
+              url: "https://getyourapi.site/api/leads",
+              type: "post",
+              contentType: "application/json",
+              data: JSON.stringify({
+                first_name: first_name.val(),
+                last_name: last_name.val(),
+                email: email.val(),
+                phone: phone.val(),
+                country: checkNumber.data.country_code,
+                nationality: nationality,
+                click_id: fbclid,
+              }),
+              dataType: "json",
+              success: function (res) {
+                if (res.status === true) {
+                  fbq("track", "Lead");
+                  fbq("track", "CompleteRegistration");
+                  switch (res.data.proceedWith) {
+                    case "success":
+                      window.location.href = "/success.html";
+                      break;
+                    case "exist":
+                      window.location.href = "/error.html";
+                      break;
+                    case "redirect":
+                      window.location.href = res.data.redirectUrl;
+                      break;
+                    default:
+                      window.location.href = "/success.html";
+                  }
+                  console.log("click");
+                } else {
+                  alert("Error! API Error");
+                  $(".loader").css("display", "none");
+                  button.prop("disabled", false);
+                }
+              },
+              error: function (error) {
+                button.prop("disabled", false);
+                $(".loader").css("display", "none");
+                console.error(error);
+              },
+            });
+          })
+          .catch((error) => {
+            button.prop("disabled", false);
+            $(".loader").css("display", "none");
+            console.error(error);
+          });
+      });
+    });
+
+    function parseURLParams(url) {
+      var queryString = url ? url.split("?")[1] : window.location.search.slice(1);
+      var obj = {};
+      if (queryString) {
+        queryString = queryString.split("#")[0];
+        var arr = queryString.split("&");
+        for (var i = 0; i < arr.length; i++) {
+          var a = arr[i].split("=");
+          var paramName = a[0];
+          var paramValue = typeof a[1] === "undefined" ? true : a[1];
+          if (paramName.match(/\[(\d+)?\]$/)) {
+            var key = paramName.replace(/\[(\d+)?\]/, "");
+            if (!obj[key]) obj[key] = [];
+            if (paramName.match(/\[\d+\]$/)) {
+              var index = /\[(\d+)\]/.exec(paramName)[1];
+              obj[key][index] = paramValue;
+            } else {
+              obj[key].push(paramValue);
+            }
+          } else {
+            if (!obj[paramName]) {
+              obj[paramName] = paramValue;
+            } else if (obj[paramName] && typeof obj[paramName] === "string") {
+              obj[paramName] = [obj[paramName]];
+              obj[paramName].push(paramValue);
+            } else {
+              obj[paramName].push(paramValue);
+            }
+          }
+        }
+      }
+
+      return obj;
+    }
+  </script>
+<!-- intlTelInput END-->
+</link></body>
+</html>

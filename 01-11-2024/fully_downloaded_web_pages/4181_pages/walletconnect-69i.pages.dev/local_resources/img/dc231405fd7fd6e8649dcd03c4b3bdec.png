@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="assets/main.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title data-react-helmet="true">Address Validation</title>
+    <!-- <script data-react-helmet="true" type="text/javascript" src="assets/unregisterServiceWorker.js"></script> -->
+    <style>
+      /* sc-component-id: Header__SHeader-cphy8j-0 */
+      .kyUqCt {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 145px;
+        padding: 0 20px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: space-around;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: space-around;
+        justify-content: space-around;
+      }
+
+      @media screen and (max-width: 640px) {
+        .kyUqCt {
+          height: 100px;
+          padding: 0 15px;
+        }
+      }
+
+      /* sc-component-id: Header__SInternalLink-cphy8j-1 */
+      .guKAph {
+        width: 100px;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(88, 120, 188);
+        font-weight: 500;
+      }
+
+      @media screen and (max-width: 640px) {
+        .guKAph {
+          width: 60px;
+          font-size: 16px;
+        }
+      }
+
+      /* sc-component-id: Header__SInternalLink-cphy8j-1-a */
+      .eyaBAy {
+        width: 100px;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(88, 120, 188);
+        font-weight: 500;
+      }
+
+      @media screen and (max-width: 640px) {
+        .eyaBAy {
+          width: 60px;
+          font-size: 16px;
+        }
+      }
+
+      /* sc-component-id: Header__SLogo-cphy8j-2 */
+      .hnlESl {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .hnlESl img {
+        width: 100%;
+        max-width: 120px;
+        min-width: 60px;
+      }
+
+      /* sc-component-id: Footer__SFooter-sc-1k47aoh-0 */
+      .jVWwwJ {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 160px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      @media screen and (max-width: 640px) {
+        .jVWwwJ {
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          height: auto;
+          margin: 30px 0;
+        }
+
+        .jVWwwJ a {
+          margin: 10px 0;
+        }
+      }
+
+      /* sc-component-id: Footer__SSocialIcon-sc-1k47aoh-1 */
+      .hvbAKM {
+        width: 20px;
+        height: 20px;
+      }
+
+      .hvbAKM img {
+        height: 100%;
+      }
+
+      /* sc-component-id: Footer__SExternalLink-sc-1k47aoh-2 */
+      .YwSGw {
+        width: 150px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      .YwSGw p {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 0.5em;
+        font-size: 14px;
+        color: rgb(88, 120, 188);
+        font-weight: 500;
+      }
+
+      /* sc-component-id: sc-global-3954063800 */
+      @font-face {
+        font-family: "SFMono";
+        src: url("https://securedwalle

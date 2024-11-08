@@ -1,0 +1,156 @@
+#banner{
+    display: none;
+}
+.head {
+    height: 100%;
+    min-height: 893px;
+    background: #007b5b url(/image/web/index/body_bg.png) repeat-x;
+}
+#index {
+    background: #007B5B;
+    font-size: 11px;
+    width: 1000px;
+    margin: 0 auto;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+.index-body-left {
+    float: left;
+    height: 518px;
+    width: 13%;
+    background: url(/image/web/index/index-left.png) repeat-x;
+}
+.index-body-left ul li a {
+    text-align: center;
+    padding: 6px;
+    color: #FFFFFF;
+    font-size: 12px;
+    display: block;
+}
+.index-body-left ul li:hover a{
+    color: #FFDF1B;
+    background-color: #333333;
+}
+.index-body-left ul li .hoverSelect {
+    color: #FFDF1B;
+    background-color: #333333;
+}
+.index-body-right {
+    float: left;
+    width: 87%;
+}
+.index-right-content {
+    border: solid 9px #333333;
+    background-color: #333333;
+}
+.sports-border-content {
+    border: solid 3px #636363;
+}
+.sports-border-content:hover{
+    border: solid 3px #FFDF1B;
+}
+.gallery-top {
+    height: 214px;
+}
+.sports-bg {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    float: left;
+    width: 412px;
+    text-align: left;
+}
+.sports-content-right {
+    float: left;
+    height: 200px;
+    width: 414px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
+}
+.sports-picture {
+    height: 204px;
+    width: 210px;
+    float: left;
+}
+.sports-content-href {
+    background: url(/image/web/index/index-sport-right.gif) repeat-x;
+    height: 204px;
+    width: 204px;
+    float: left;
+}
+.sports-content-href p {
+    display: block;
+    line-height: 1.4;
+    height: 102px;
+    width: 204px;
+    text-decoration: none;
+    margin: 0;
+}
+.sports-content-href img {
+    display: block;
+}
+.sports-content-href span {
+    display: block;
+    font-size: 12px;
+    padding: 0px 0px 1px 16px;
+}
+.sports-content-title, 
+.sports-content-btn {
+    color: #FFDF1B;
+}
+.sports-content-text {
+    color: #ffffff;
+}
+.index-content-list {
+    margin-top: 9px;
+}
+.content-01 {
+    border: solid 1px #202020;
+    width: 207px;
+    height: 238px;
+    float: left;
+    cursor: pointer;
+}
+.pokerStyle{
+    margin-left: 6px;
+}
+.casino {
+    border: solid 3px #636363;
+}
+.casino:hover {
+    border: solid 3px #FFDF1B;
+}
+.casino .casino-picture img {
+    width: 100%;
+}
+.casino-text {
+    width: 100%;
+    height: 152px;
+    background-image: url(/image/web/index/index-game.png);
+    background-position: top left;
+    cursor: pointer;
+}
+.casino-text span{
+    display: block;
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    height: 27px;
+    padding: 5px 0px 5px 6px;
+}
+.casino-text h4{
+    color: #FC0;
+    font-size: 11px;
+    font-weight: normal;
+    border-top: solid 1px #358469;
+    margin: 0px 6px;
+    padding: 4px 0px;
+}
+.casino-text p {
+    font-size: 12px;
+    border-top: solid 1px #358469;
+    color: #fff;
+    margin: 0px 7px;
+    padding: 5px 0px;
+}

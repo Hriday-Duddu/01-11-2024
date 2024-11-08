@@ -1,0 +1,23 @@
+.mobilepush-animation {
+    margin-top:-16px
+}
+
+@media only screen and (max-width: 666px) {
+    .mobilepush-animation {
+        width:42%
+    }
+}
+
+.appstore-visual {
+    margin-right:12px
+}
+
+.appstore-badge {
+    height: 38px;
+    width:auto
+}
+
+.recover-info-icon {
+    cursor: pointer;
+    font-size: 18px
+}

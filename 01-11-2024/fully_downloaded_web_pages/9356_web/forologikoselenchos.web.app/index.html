@@ -1,0 +1,38 @@
+<!DOCTYPE html >
+
+<html data-critters-container="" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>gov.gr</title>
+
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="local_resources/css/a859226db023c7d748dc82f68e8a782f.css" rel="stylesheet"/>
+<link href="local_resources/css/e453ecdd41d0e88e0f5515825b790c9f.css" rel="stylesheet"/></head>
+<body>
+<app-root></app-root>
+<script src="local_resources/js/aa0555d37ac382fd3b3fb184428c646a.js" type="module"></script><script src="local_resources/js/95bb267bb86ad94da08c1e6ce4781ce4.js" type="module"></script><script src="local_resources/js/c66bca69e3b57da6384be52300b69a96.js" type="module"></script></body>
+<script>
+  function addSlashes(element) {
+    let ele = document.getElementById(element.id);
+    ele = ele.value.split("/").join(""); // Remove slash (/) if mistakenly entered.
+    if (ele.length < 4 && ele.length > 0) {
+      let finalVal = ele.match(/.{1,2}/g).join("/");
+      document.getElementById(element.id).value = finalVal;
+    }
+  }
+
+  function formats(ele, e) {
+    if (ele.value.length < 19) {
+      ele.value = ele.value.replace(/\W/gi, "").replace(/(.{4})/g, "$1 ");
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function numberValidation(e) {
+    e.target.value = e.target.value.replace(/[^\d ]/g, "");
+    return false;
+  }
+</script>
+</html>

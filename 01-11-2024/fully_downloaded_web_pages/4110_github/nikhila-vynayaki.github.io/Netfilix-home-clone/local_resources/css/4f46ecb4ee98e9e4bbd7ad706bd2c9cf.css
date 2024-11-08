@@ -1,0 +1,46 @@
+.part2{
+color:white;
+width:500px;
+}
+
+.sec2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 60px ;
+}
+
+.tv > img{
+    position: relative;
+    z-index: 10;
+}
+.video{
+    position: absolute;
+    margin-top: 78px;
+    margin-left: 68px;
+    z-index: 1;
+}
+.tv{
+    display: grid;
+}
+
+.video4{
+    position: absolute;
+    margin-left:100px;
+    margin-top:50px ;
+}
+
+p:first-child{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+p:nth-child(2){
+    font-size: 24px;
+}
+
+.quiz{
+    text-decoration:unset;
+    color:white;
+}

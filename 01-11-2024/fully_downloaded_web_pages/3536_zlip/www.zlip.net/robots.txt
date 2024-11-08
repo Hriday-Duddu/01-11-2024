@@ -1,0 +1,16 @@
+User-agent: Googlebot
+Disallow: /
+User-agent: teoma
+Disallow: /
+User-agent: ia_archiver
+Disallow: /
+User-agent: twiceler
+Disallow: /
+User-agent: Robozilla
+Disallow: /
+User-agent: Gigabot
+Disallow: /
+User-agent: Mediapartners-Google
+Disallow: /
+User-agent: *
+Disallow:

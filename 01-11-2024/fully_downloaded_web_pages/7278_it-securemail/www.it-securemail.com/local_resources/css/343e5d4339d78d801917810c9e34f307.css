@@ -1,0 +1,20 @@
+﻿body {
+}
+
+.preloaderimg {
+    background-image: url(//cdn1.cyberriskaware.com/crawebstatix/production/8/contentcss/images/loading-79s.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+}
+
+.preloaderimgsmall {
+    background-image: url(//cdn1.cyberriskaware.com/crawebstatix/production/content/images/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*width: 10%;
+    height: 80%;*/
+    background-size: auto;
+}

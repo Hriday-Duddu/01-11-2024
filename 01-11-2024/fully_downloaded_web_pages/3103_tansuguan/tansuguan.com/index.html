@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>91dun Server</title>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        html, body {
+            font-family: '微软雅黑', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: -webkit-fill-available;
+            background-color: #f9f9f9;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: rotate(-5deg);
+            border: 2px solid #00aaff;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        .container h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #00aaff;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .bear-image {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 100px;
+            height: 100px;
+            transform: rotate(10deg);
+            z-index: 1;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00aaff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #008ecc;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: rotate(-5deg) translateY(0);
+            }
+            40% {
+                transform: rotate(-5deg) translateY(-30px);
+            }
+            60% {
+                transform: rotate(-5deg) translateY(-15px);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: rotate(10deg) translateY(0);
+            }
+            50% {
+                transform: rotate(10deg) translateY(-20px);
+            }
+            100% {
+                transform: rotate(10deg) translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h1>91dun Server</h1>
+<p>欢迎使用我们的CDN服务</p>
+<a class="back-button" href="#">返回首页</a>
+</div>
+</body>
+</html>

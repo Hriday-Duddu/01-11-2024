@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[560],{1912:function(n,t,l){"use strict";l.r(t);var e={auth:!1,layout:"publicUserPage"},c=l(10),component=Object(c.a)(e,(function(){return(0,this._self._c)("NuxtChild")}),[],!1,null,null,null);t.default=component.exports}}]);

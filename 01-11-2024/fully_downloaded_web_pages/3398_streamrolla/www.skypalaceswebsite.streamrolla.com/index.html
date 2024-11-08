@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Netflix</title>
+
+<link href="local_resources/img/35e04c462b2795f0061199a5594183b6.ico" rel="icon" type="image/x-icon"/>
+<link href="local_resources/css/d10f5ff33650e2a2339b9121ca4b5e5f.css" rel="stylesheet"/>
+<link href="local_resources/css/0ec8aaf646713159de2e479bee6f1255.css" rel="stylesheet"/>
+<meta content="#21242C" name="theme-color"/>
+<meta content="index, follow" name="robots"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="This is a meta description sample. We can add up to 160 characters." name="description"/>
+<meta content="article" property="og:type">
+<meta content="Netflix-Template" property="og:title">
+<meta content="DESCRIPTION OF PAGE CONTENT" property="og:description">
+<meta content="LINK TO THE IMAGE FILE" property="og:image">
+<meta content="PERMALINK" property="og:url">
+<meta content="SITE NAME" property="og:site_name"/>
+<meta content="Netflix-Template" name="twitter:title"/>
+<meta content="DESCRIPTION OF PAGE CONTENT" name="twitter:description"/>
+<meta content="LINK TO IMAGE" name="twitter:image"/>
+<meta content="@USERNAME" name="twitter:site"/>
+<meta content="@USERNAME" name="twitter:creator"/> <style>
+        main {
+            overflow-x: hidden;
+        }
+
+        section {
+            &.banner {
+                background-position: bottom;
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                padding-top: 4rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: #211D1932;
+                    height: 100%;
+                    width: 100vw;
+                }
+
+                &::after {
+                    content: '';
+                    width: 100vw;
+                    height: 2rem;
+                    position: absolute;
+                    background: linear-gradient(0deg, rgba(33, 37, 41, 1) 0%, rgba(33, 37, 41, 0.8) 50%, rgba(33, 37, 41, 0.01) 100%);
+                    bottom: 0;
+                    left: 0;
+                }
+
+                .container {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    justify-content: space-between;
+                }
+
+                .content {
+                    position: relative;
+                    z-index: 1;
+
+                    .title {
+                        margin-inline: unset;
+                        max-width: 40rem;
+                        text-align: left;
+
+                        sub {
+                            background: -webkit-linear-gradient(90deg, #b81d24 0%, #b81d2464 100%);
+                            background-clip: text;
+                            color: #b81d24;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            vertical-align: middle;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+
+                        h2 {
+                            font-size: 3.4rem;
+                            font-weight: 800;
+                        }
+
+                    }
+
+                    p.description {
+                        color: #bfbfbf;
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+
+                    .action {
+                        display: flex;
+                        gap: .6rem;
+
+                        button.btn-watch {
+                            display: flex;
+                            align-items: center;
+                            gap: .6rem;
+
+                            img.watch {
+                                height: 1rem;
+                                object-fit: contain;
+                                width: 1rem;
+                            }
+
+                        }
+
+                        button.btn-watch-later {}
+                    }
+                }
+
+                img.illustration {
+                    height: 25rem;
+                    object-fit: contain;
+                    width: 32rem;
+                }
+            }
+
+            &.slider-videos {
+                position: relative;
+
+                ul.list {
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: space-between;
+                    margin-bottom: 0 !important;
+                    padding-inline: 7rem;
+
+                    li {
+                        background-color: #141414;
+                        overflow: hidden;
+                        width: 16rem;
+
+                        border-radius: .4rem;
+                        box-shadow: 0 0.125rem 0.25rem #00000016;
+
+                        &:hover {
+                            text-decoration: none;
+
+                            img.thumbnail {
+                                transform: scale(1.1);
+                            }
+                        }
+
+                        a {
+                            text-decoration: none;
+                        }
+
+                        img.thumbnail {
+                            height: 8rem;
+                            object-fit: cover;
+                            width: 16rem;
+                            transition: all 1s ease;
+                        }
+                    }
+                }
+
+                .nav-btn {
+                    width: 100%;
+
+                    button {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+
+
+                        background-color: #22222264;
+                        border: none;
+                        color: #bfbfbfee;
+                        cursor: pointer;
+                        font-size: 1.5rem;
+                        height: 8rem;
+                        width: 4rem;
+                        transition: all .3s ease;
+
+                        &:hover {
+                            background-color: #222222cc;
+                            color: #fff;
+                        }
+
+                        &.prev {
+                            /* display: none; */
+                            left: 0;
+                            border-top-right-radius: .25rem;
+                            border-bottom-right-radius: .25rem;
+                        }
+
+                        &.next {
+                            right: 0;
+                            border-top-left-radius: .25rem;
+                            border-bottom-left-radius: .25rem;
+                        }
+                    }
+                }
+
+            }
+
+            &.videos {
+                .container {}
+
+                .title {
+                    margin-block: 2rem;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                ul.list {
+                    display: flex;
+                    gap: 2rem;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    justify-content: space-between;
+                    margin-bottom: 2rem;
+                    padding-left: 0;
+
+                    li {
+                        /* background-color: #141414; */
+                        overflow: hidden;
+                        width: 14.6rem;
+
+                        /* border-radius: .4rem;
+                        box-shadow: 0 0.125rem 0.25rem #00000016; */
+
+                        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+                        border-radius: 0.4rem;
+                        box-shadow: 0 0.125rem 0.25rem #00000016;
+
+                        &.placeholder {
+                            height: 0;
+                            box-shadow: unset;
+                            padding: unset;
+                            min-height: unset;
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+
+                            img.thumbnail {
+                                transform: scale(1.1);
+                            }
+
+                            h4.title {
+                                color: #b81d24;
+                            }
+                        }
+
+                        a {
+                            text-decoration: none;
+                        }
+
+                        img.thumbnail {
+                            height: 16rem;
+                            object-fit: cover;
+                            width: 14.6rem;
+                            transition: all 1s ease;
+                        }
+
+                        h4.title {
+                            width: 14.6rem;
+                            display: -webkit-box;
+                            font-size: 1rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+
+                            background-color: #141414;
+                            padding: 0.5rem;
+                            margin-bottom: 0;
+                            font-weight: 600;
+                            font-size: .92rem;
+                            height: 1.6rem;
+
+                            z-index: 1;
+                            position: relative;
+                        }
+
+                        ul.tags {
+                            display: flex;
+                            gap: .5rem;
+                            padding: 0 .5em .5rem;
+
+                            li {
+                                font-size: .82rem;
+                                color: #bfbfbf !important;
+                                width: max-content;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.slider-videos {
+
+                .title {
+                    margin-block: 2rem;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                ul.list {
+                    gap: .5rem;
+                    justify-content: space-between;
+                    margin-bottom: 2rem;
+
+                    width: max-content;
+                    overflow-x: auto;
+
+                    li {
+                        width: 16rem;
+
+                        img.thumbnail {
+                            height: 8rem;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            &.top-10-videos {
+                ul.list {
+                    gap: 0;
+                    justify-content: space-between;
+                    margin-bottom: 0;
+
+                    padding-inline: 13rem;
+                    width: max-content;
+                    overflow-x: auto;
+
+                    li {
+                        box-shadow: unset;
+                        border: unset;
+                        background: unset;
+                        overflow: initial;
+                        position: relative;
+
+                        &:hover {
+                            h4.title {
+                                color: #d7d7d7;
+                            }
+
+                            img.thumbnail {
+                                transform: scale(1);
+                            }
+                        }
+
+                        h4.title {
+
+                            background: linear-gradient(0deg, rgb(99 99 99 / 92%) 0%, rgba(255, 255, 255, 1) 50%, rgb(99 99 99 / 92%) 100%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+
+                            position: absolute;
+                            font-size: 12rem;
+                            height: auto;
+                            width: auto;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            line-height: .74;
+                            padding: 0;
+                            margin: 0;
+                            left: -6rem;
+                            font-size: 13.4rem;
+                            color: #d7d7d7;
+                            transition: all .3s ease;
+                        }
+
+                        img.thumbnail {
+                            border-radius: .25rem;
+                            height: 10rem;
+                            width: 8rem;
+
+                            z-index: 1;
+                            position: relative;
+                        }
+                    }
+                }
+
+                .nav-btn {
+                    width: 100%;
+
+                    button {
+                        position: absolute;
+
+                        transform: translateY(calc(-50% - 5rem));
+                        z-index: 1;
+
+
+                        background-color: #22222264;
+                        border: none;
+                        color: #bfbfbfee;
+                        cursor: pointer;
+                        font-size: 1.5rem;
+                        height: 10rem;
+                        width: 4rem;
+                        transition: all .3s ease;
+
+                        &:hover {
+                            background-color: #222222cc;
+                            color: #fff;
+                        }
+
+                        &.prev {
+                            display: none;
+                            left: 0;
+                            border-top-right-radius: .25rem;
+                            border-bottom-right-radius: .25rem;
+                        }
+
+                        &.next {
+                            right: 0;
+                            border-top-left-radius: .25rem;
+                            border-bottom-left-radius: .25rem;
+                        }
+                    }
+                }
+            }
+
+            &.featured {
+
+                .featured-banner {
+                    display: flex;
+                    align-items: center;
+                    gap: 4rem;
+                    justify-content: space-between;
+                    padding: 2rem;
+                    /* background-color: #141414;
+                    border-radius: 0.4rem;
+                    box-shadow: 0 0.125rem 0.25rem #00000016; */
+
+                    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+                    border-radius: 0.4rem;
+                    box-shadow: 0 0.125rem 0.25rem #00000016;
+                }
+
+                img.thumbnail {
+                    height: 16rem;
+                    object-fit: contain;
+                    width: 28rem;
+                    border-radius: 0.4rem;
+                    box-shadow: 0 0.125rem 0.25rem #00000016;
+                }
+
+                .content {
+
+
+                    p.description {
+                        color: #bfbfbf;
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+
+                    ul.tags {
+                        display: flex;
+                        gap: .5rem;
+                        padding: 0 .5em .5rem 0;
+                        margin-bottom: 0;
+                        list-style: none;
+
+                        li {
+                            font-size: .82rem;
+                            color: #bfbfbf !important;
+                            width: max-content;
+                        }
+                    }
+
+                    .action {
+                        display: flex;
+                        gap: .6rem;
+
+                        button.btn-watch,
+                        button.btn-watch-later {
+                            display: flex;
+                            align-items: center;
+                            gap: .6rem;
+
+                            img.watch {
+                                height: 1rem;
+                                object-fit: contain;
+                                width: 1rem;
+                                filter: grayscale(100%) invert(100%) brightness(200%);
+                            }
+
+                            span {
+                                text-transform: capitalize;
+
+                            }
+
+                        }
+
+                        button.btn-watch-later {
+                            img.watch {
+                                filter: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</meta></meta></meta></meta></meta></head>
+<body>
+<header>
+<div class="container">
+<a class="brand" href="" role="button">
+<img alt="netflix" src="local_resources/img/b17862c1e07893ec53a31fdb3fecdae7.png"/>
+</a>
+<nav>
+<ul class="menu">
+<li>
+<a href="">
+<span>browse</span>
+</a>
+</li>
+<li>
+<a href="">
+<span>Manga</span>
+</a>
+</li>
+<li>
+<a href="">
+<span>Games</span>
+</a>
+</li>
+<li>
+<a href="">
+<span>Store</span>
+</a>
+</li>
+<li>
+<a href="">
+<span>News</span>
+</a>
+</li>
+</ul>
+</nav>
+<div class="action">
+<img alt="search" class="search" role="button" src="local_resources/img/0e29cdeabb7d07ece1ffff56e5b9df47.png"/>
+<button class="btn btn-danger btn-sm px-4" onclick="window.location.href = './auth/login.php'">Login</button>
+</div>
+</div>
+
+</header>
+<main>
+<section class="banner" style="background-image: url(../src/assets/images/utilities/banner-bg.jpg);">
+<div class="container">
+<div class="content">
+<div class="title">
+<sub>manga series</sub>
+<h2>One Piece</h2>
+</div>
+<p class="description">
+                        One Piece is a Japanese manga series written and illustrated by Eiichiro Oda. It has been
+                        serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997, with its
+                        individual chapters compiled into 105 tankōbon volumes as of March 2023.
+                    </p>
+<div class="action">
+<button class="btn btn-success btn-watch rounded-pill px-4">
+<img alt="watch" class="watch" src="local_resources/img/30b1eae90a828cb52cf363bb1137de79.png"/>
+<span>Watch Now</span>
+</button>
+<a class="btn btn-link text-white" href="#">
+                            Add to watch list
+                        </a>
+</div>
+</div>
+<img alt="One Piece" class="illustration" src="local_resources/img/68e28ab9e9bcd822d2d418548e6108a3.png"/>
+</div>
+</section>
+<section class="slider-videos">
+<div class="horizontal-scroll">
+<ul class="list">
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/346fea12559b6a14864141b015497fa2.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/0c640f18ba4074a7759665627194505e.png"/>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/323e60f171e7c5866b3abb773c63000f.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/e74b3672b5775edaee88b4a744213cfb.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/b06c107020efabbb3a8522f466954adc.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/97ecd33fb5114f693adeb6cc8bcc7f8c.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/1321a87fc8feb6a764271933b44090e5.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/3018864db812587bf4ebff60898e0103.jpg"/>
+</a>
+</li>
+</ul>
+<div class="nav-btn">
+<button class="prev" id="prev" onclick="prev()">❮</button>
+<button class="next" id="next" onclick="next()">❯</button>
+</div>
+</div>
+</section>
+<section class="top-10-videos videos">
+<div class="container">
+<div class="title">
+<h4 class="text-capitalize">top 10 videos</h4>
+<a class="btn btn-link btn-sm text-muted" href="">view more</a>
+</div>
+</div>
+<div class="horizontal-scroll">
+<ul class="list">
+<li>
+<a href="">
+<h4 class="title">1</h4>
+<img alt="" class="thumbnail" src="local_resources/img/346fea12559b6a14864141b015497fa2.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<h4 class="title">2</h4>
+<img alt="" class="thumbnail" src="local_resources/img/0c640f18ba4074a7759665627194505e.png"/>
+</a>
+</li>
+<li>
+<a href="">
+<h4 class="title">3</h4>
+<img alt="" class="thumbnail" src="local_resources/img/323e60f171e7c5866b3abb773c63000f.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<h4 class="title">4</h4>
+<img alt="" class="thumbnail" src="local_resources/img/e74b3672b5775edaee88b4a744213cfb.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<h4 class="title">5</h4>
+<img alt="" class="thumbnail" src="local_resources/img/b06c107020efabbb3a8522f466954adc.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<h4 class="title">6</h4>
+<img alt="" class="thumbnail" src="local_resources/img/97ecd33fb5114f693adeb6cc8bcc7f8c.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<h4 class="title">7</h4>
+<img alt="" class="thumbnail" src="local_resources/img/1321a87fc8feb6a764271933b44090e5.jpg"/>
+</a>
+</li>
+<li>
+<a href="">
+<h4 class="title">8</h4>
+<img alt="" class="thumbnail" src="local_resources/img/3018864db812587bf4ebff60898e0103.jpg"/>
+</a>
+</li>
+</ul>
+<div class="nav-btn">
+<button class="prev" id="prev" onclick="prev()">❮</button>
+<button class="next" id="next" onclick="next()">❯</button>
+</div>
+</div>
+</section>
+<section class="trending-videos videos">
+<div class="container">
+<div class="title">
+<h4 class="text-capitalize">trending videos</h4>
+<a class="btn btn-link btn-sm text-muted" href="">view more</a>
+</div>
+<ul class="list">
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/346fea12559b6a14864141b015497fa2.jpg"/>
+<h4 class="title">A Will Eternal</h4>
+<ul class="tags">
+<li>TV</li>
+<li>23min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/0c640f18ba4074a7759665627194505e.png"/>
+<h4 class="title">Battle Through The Heavens 5th Season</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>120min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/323e60f171e7c5866b3abb773c63000f.jpg"/>
+<h4 class="title">The Aristocrat's Otherworldly Adventure: Serving Gods Who Go Too
+                                Far</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>108min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/e74b3672b5775edaee88b4a744213cfb.jpg"/>
+<h4 class="title">Uma Musume: Pretty Derby - Road to the Top</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>168min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/b06c107020efabbb3a8522f466954adc.jpg"/>
+<h4 class="title">My Home Hero</h4>
+<ul class="tags">
+<li>TV</li>
+<li>21min</li>
+</ul>
+</a>
+</li>
+</ul>
+</div>
+</section>
+<section class="latest-videos videos">
+<div class="container">
+<div class="title">
+<h4 class="text-capitalize">latest videos</h4>
+<a class="btn btn-link btn-sm text-muted" href="">view more</a>
+</div>
+<ul class="list">
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/346fea12559b6a14864141b015497fa2.jpg"/>
+<h4 class="title">A Will Eternal</h4>
+<ul class="tags">
+<li>TV</li>
+<li>23min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/0c640f18ba4074a7759665627194505e.png"/>
+<h4 class="title">Battle Through The Heavens 5th Season</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>120min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/323e60f171e7c5866b3abb773c63000f.jpg"/>
+<h4 class="title">The Aristocrat's Otherworldly Adventure: Serving Gods Who Go Too
+                                Far</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>108min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/e74b3672b5775edaee88b4a744213cfb.jpg"/>
+<h4 class="title">Uma Musume: Pretty Derby - Road to the Top</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>168min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/b06c107020efabbb3a8522f466954adc.jpg"/>
+<h4 class="title">My Home Hero</h4>
+<ul class="tags">
+<li>TV</li>
+<li>21min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/97ecd33fb5114f693adeb6cc8bcc7f8c.jpg"/>
+<h4 class="title">The Blue Orchestra</h4>
+<ul class="tags">
+<li>TV</li>
+<li>23min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/1321a87fc8feb6a764271933b44090e5.jpg"/>
+<h4 class="title">Monster But Wild</h4>
+<ul class="tags">
+<li>ONA</li>
+<li>19min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/3018864db812587bf4ebff60898e0103.jpg"/>
+<h4 class="title">Yakitori: Soldiers of Misfortune</h4>
+<ul class="tags">
+<li>ONA</li>
+<li>21min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/344be330375eda647312a5f9d04dc446.png"/>
+<h4 class="title">Wulin Buer Zhoukan</h4>
+<ul class="tags">
+<li>ONA</li>
+<li>18min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/346fea12559b6a14864141b015497fa2.jpg"/>
+<h4 class="title">A Will Eternal</h4>
+<ul class="tags">
+<li>TV</li>
+<li>23min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/0c640f18ba4074a7759665627194505e.png"/>
+<h4 class="title">Battle Through The Heavens 5th Season</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>120min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/323e60f171e7c5866b3abb773c63000f.jpg"/>
+<h4 class="title">The Aristocrat's Otherworldly Adventure: Serving Gods Who Go Too
+                                Far</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>108min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/e74b3672b5775edaee88b4a744213cfb.jpg"/>
+<h4 class="title">Uma Musume: Pretty Derby - Road to the Top</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>168min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/b06c107020efabbb3a8522f466954adc.jpg"/>
+<h4 class="title">My Home Hero</h4>
+<ul class="tags">
+<li>TV</li>
+<li>21min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/0c640f18ba4074a7759665627194505e.png"/>
+<h4 class="title">Battle Through The Heavens 5th Season</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>120min</li>
+</ul>
+</a>
+</li>
+<li class="placeholder"></li>
+<li class="placeholder"></li>
+<li class="placeholder"></li>
+<li class="placeholder"></li>
+</ul>
+</div>
+</section>
+<section class="featured">
+<div class="container">
+<div class="featured-banner">
+<img alt="featured illustration" class="thumbnail" src="local_resources/img/c24c0ae69bfdde6b551030b3e03792ad.jpe"/>
+<div class="content">
+<div class="title">
+<h4 class="text-capitalize">VINLAND SAGA</h4>
+<ul class="tags">
+<li>TV</li>
+<li>23min</li>
+</ul>
+</div>
+<p class="description">
+                            Around the end of the millennium, Viking, the mightiest but atrocious tribe, had been out
+                            breaking everywhere. Thorfinn, the son of the greatest warrior, lived his childhood in the
+                            battlefield. He was seeking the land of reverie called Vinland. This is the story of a true
+                            warrior in an age of turmoil.
+                        </p>
+<div class="action">
+<button class="btn btn-danger btn-watch rounded-pill px-4">
+<img alt="watch" class="watch" src="local_resources/img/30b1eae90a828cb52cf363bb1137de79.png"/>
+<span>start watching now</span>
+</button>
+<button class="btn btn-outline-danger btn-watch-later rounded-pill px-4">
+<img alt="watch" class="watch" src="local_resources/img/a905e1e8514b516e15f212e278144e2a.png"/>
+<span>add to watch list</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="top-videos videos">
+<div class="container">
+<div class="title">
+<h4 class="text-capitalize">top videos</h4>
+<a class="btn btn-link btn-sm text-muted" href="">view more</a>
+</div>
+<ul class="list">
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/346fea12559b6a14864141b015497fa2.jpg"/>
+<h4 class="title">A Will Eternal</h4>
+<ul class="tags">
+<li>TV</li>
+<li>23min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/0c640f18ba4074a7759665627194505e.png"/>
+<h4 class="title">Battle Through The Heavens 5th Season</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>120min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/323e60f171e7c5866b3abb773c63000f.jpg"/>
+<h4 class="title">The Aristocrat's Otherworldly Adventure: Serving Gods Who Go Too
+                                Far</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>108min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/e74b3672b5775edaee88b4a744213cfb.jpg"/>
+<h4 class="title">Uma Musume: Pretty Derby - Road to the Top</h4>
+<ul class="tags">
+<li>Movie</li>
+<li>168min</li>
+</ul>
+</a>
+</li>
+<li>
+<a href="">
+<img alt="" class="thumbnail" src="local_resources/img/b06c107020efabbb3a8522f466954adc.jpg"/>
+<h4 class="title">My Home Hero</h4>
+<ul class="tags">
+<li>TV</li>
+<li>21min</li>
+</ul>
+</a>
+</li>
+</ul>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<section class="about">
+<a class="brand" href="">
+<img alt="brand" src="local_resources/img/b17862c1e07893ec53a31fdb3fecdae7.png"/>
+</a>
+<p class="description">
+                Netflix, Inc. is an American media company based in Los Gatos, California. Netflix is a member of
+                the Motion Picture Association—having become the first streaming company to
+                become a member.
+            </p>
+</section>
+<section class="links">
+<div class="title">links</div>
+<ul class="menu">
+<li><a href="">About</a></li>
+<li><a href="">Careers</a></li>
+<li><a href="">Support</a></li>
+<li><a href="">Media kit</a></li>
+<li><a href="">Testimonials</a></li>
+</ul>
+</section>
+<section class="affiliated">
+<div class="title">affiliated</div>
+<ul class="menu">
+<li><a href="">Disney Plus</a></li>
+<li><a href="">HBO Max</a></li>
+<li><a href="">Crunchyroll</a></li>
+</ul>
+</section>
+<section class="connect">
+<div class="title">connect</div>
+<ul class="menu">
+<li><a href="">Hiring</a></li>
+<li><a href="">Portfolio</a></li>
+<li><a href="">Industry Trends</a></li>
+<li><a href="">Creative Process</a></li>
+<li><a href="">Freelancing</a></li>
+</ul>
+</section>
+</div>
+<div class="copyrights">
+<div class="container">
+            Copyright © <span>2023</span> All Rights Reserved by Netlfix. Powered by <a href="">Stream Rolla (Pvt.)
+                Ltd.</a>
+</div>
+</div>
+</footer>
+<script defer="" src="local_resources/js/3dd701c5d130012e1e35372f3ce87be5.js"></script>
+<script defer="">
+        const slider = document.querySelector('.horizontal-scroll');
+        const next = () => slider.scrollBy({
+            top: 0,
+            left: 900,
+            behavior: 'smooth'
+        });
+        const prev = () => slider.scrollBy({
+            top: 0,
+            left: -900,
+            behavior: 'smooth'
+        });
+
+        slider.addEventListener('scroll', () => {
+            const {
+                scrollLeft,
+                scrollWidth,
+                clientWidth
+            } = slider;
+            const isEnd = scrollLeft + clientWidth >= scrollWidth;
+            const isStart = scrollLeft === 0;
+            document.getElementById('prev').style.display = isStart ? 'none' : 'block';
+            document.getElementById('next').style.display = isEnd ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

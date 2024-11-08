@@ -1,0 +1,660 @@
+@font-face {
+    font-family: 'Deutsche Bank Text';
+    src: url("/font/DeutscheBankText_W_Rg.eot?#iefix");
+    src: url("/font/DeutscheBankText_W_Rg.eot?#iefix") format("eot"), url("/font/DeutscheBankText_W_Rg.woff") format("woff"), url("/font/DeutscheBankText_W_Rg.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Deutsche Bank Display';
+    src: url("/font/DeutscheBankDisplay_W_Rg.eot?#iefix");
+    src: url("/font/DeutscheBankDisplay_W_Rg.eot?#iefix") format("eot"), url("/font/DeutscheBankDisplay_W_Rg.woff") format("woff"), url("/font/DeutscheBankDisplay_W_Rg.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'Deutsche Bank Text';
+    src: url("/font/DeutscheBankText_W_It.eot?#iefix");
+    src: url("/font/DeutscheBankText_W_It.eot?#iefix") format("eot"), url("/font/DeutscheBankText_W_It.woff") format("woff"), url("/font/DeutscheBankText_W_It.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'Deutsche Bank Display';
+    src: url("/font/DeutscheBankDisplay_W_It.eot?#iefix");
+    src: url("/font/DeutscheBankDisplay_W_It.eot?#iefix") format("eot"), url("/font/DeutscheBankDisplay_W_It.woff") format("woff"), url("/font/DeutscheBankDisplay_W_It.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}*/
+
+@font-face {
+    font-family: "pfbicons";
+    src: url("/font/pfbicons.ttf");
+}
+
+body {
+    color: #666666;
+    font-family: "Deutsche Bank Text", Arial, sans-serif;
+}
+
+
+.db-form .caption {
+    font-family: "Deutsche Bank Text", Arial, sans-serif;
+    line-height: 20px;
+}
+
+.headline {
+    font-family: "Deutsche Bank Display", Arial, sans-serif; !important;
+    font-size: 16px;
+
+}
+
+.db-switch {
+
+}
+
+.db-form {
+    max-width: 50em;
+}
+
+.db-form input, .db-form label {
+    font-family: Verdana;
+}
+
+
+
+@media (min-width: 48em) {
+
+
+    .db-container {
+        max-width: 76.875em;
+        margin-left: 0.75em;
+        margin-right: 0.75em;
+    }
+
+}
+
+@media (min-width: 76.875em) {
+    .db-container {
+        margin-left: 1.5625em;
+        margin-right: 1.5625em;
+    }
+}
+
+@media (min-width: 80em) {
+    .db-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.db-container {
+    max-width: 76.875em;
+}
+
+.row {
+    margin: 0;
+}
+
+.db-switch .switcher {
+    display: inline-block;
+    overflow: hidden;
+    width: 3.75em;
+    height: 26px;
+    /*margin-left: -3.75em;*/
+    padding: 1px;
+    border-radius: 14px;
+    background-color: #eceae7;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.db-switch .knob {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 9px solid #2282C1;
+    border-radius: 50%;
+    left: 0;
+    background-color: #FFFFFF;
+    z-index: 9;
+    transition: left 200ms ease-in-out;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.35), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.db-switch .knob.neutral {
+    left: 1.125em;
+}
+
+.db-switch .knob.right {
+    left: 2.25em;
+}
+
+.db-switch .switch-option {
+    cursor: pointer;
+}
+
+.db-switch .switch-option.left {
+    padding-right: 20px;
+}
+
+.db-switch .switch-option.right {
+    padding-left: 20px;
+}
+
+.db-switch .switch-option.active {
+    color: #133C7F;
+}
+
+.db-form input[type=text], .db-form input[type=number] {
+    background: #eceae7;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    min-height: 3.125em;
+    padding: 1.2em 0.625em 0.625em 0.825em;
+    border-radius: 0;
+    font-size: 0.9em;
+}
+
+.db-form .form-group.floaty {
+    position: relative;
+}
+
+.db-form .form-group.floaty label {
+    position: absolute;
+    z-index: 9;
+    top: 20px;
+    transition: all 100ms ease-out;
+    margin-left: 12px;
+    color: #888888;
+    font-size: 0.8em;
+}
+
+.db-form .form-group.floaty label.float-up {
+    color: #0098db;
+    top: 3px;
+    font-size: 0.7em;
+}
+
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding: 0;
+}
+
+.form-group {
+    margin-bottom: 2px;
+}
+.form-control {
+    border: 0;
+}
+
+.space-down {
+    margin-bottom: 16px;
+}
+.pfb-checkbox {
+    margin: 20px 0;
+}
+pfb-checkbox-field, .pfb-radio .pfb-checkbox-field {
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pfb-checkbox .pfb-checkbox-field, .pfb-checkbox .pfb-radio-field, .pfb-radio .pfb-checkbox-field, .pfb-radio .pfb-radio-field {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    float: left;
+    text-align: center;
+    margin-right: 1.25em;
+    display: block;
+    background-color: #eceae7;
+    color: #133C7F;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+}
+
+.pfb-checkbox .pfb-checkbox-field input, .pfb-checkbox .pfb-radio-field input, .pfb-radio .pfb-checkbox-field input, .pfb-radio .pfb-radio-field input {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    border-radius: inherit;
+    background-color: transparent;
+    cursor: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.pfb-checkbox .caption p {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.pfb-checkbox.checked, .pfb-radio.checked {
+}
+.pfb-checkbox.checked .pfb-checkbox-field, .pfb-radio.checked .pfb-checkbox-field {
+    border: 1px solid #133C7F;
+    outline: 0;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-timing-function: none;
+    -moz-transition-timing-function: none;
+    -o-transition-timing-function: none;
+    transition-timing-function: none;
+}
+
+.pfb-checkbox.checked .pfb-checkbox-field:before, .pfb-radio.checked .pfb-checkbox-field:before {
+    font-family: 'pfbicons';
+    content: '\e645';
+}
+
+.pfb-checkbox-wrapper .caption, .pfb-radio-wrapper .caption {
+    padding-left: 45px;
+    line-height: 20px;
+    font-size: 13px;
+    margin-bottom: 1em;
+    padding-top: 2px;
+}
+
+.caption {
+    margin-left: 50px;
+
+}
+
+.small-label {
+    font-size: 0.8em;
+}
+
+pfb-button:hover {
+    background-color: #0098DB;
+}
+.pfb-button {
+    display: inline-block;
+    border: 0;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0 1px 2px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.35) 0 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 1px 2px;
+    color: #FFFFFF;
+    background-color: #2282C1;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+}
+
+.pfb-button.pfb-button-medium {
+    font-size: 0.875em;
+    line-height: 1.1875em;
+    padding: 0.85938em 1.25em;
+    margin-bottom: 3px;
+}
+
+.push {
+    height: 40px;
+}
+
+.headline {
+    color: #133C7F;
+    font-size: 1.375em;
+    line-height: 1.25em;
+    min-height: 1.22727em;
+    margin: 35px 0 0 0;
+    padding-left: 15px;
+}
+
+.title-content {
+    font-size: 0.9375em;
+    line-height: 1.46667em;
+}
+
+p, .switch-option {
+    font-size: 13px;
+}
+
+.title-content p {
+    display: inline-block;
+    margin-bottom: 0.86667em;
+    color: #666666;
+}
+
+.pfb-generic-tile {
+    max-width: 50em;
+}
+
+.tile-content {
+    font-size: 0.9375em;
+    line-height: 1.46667em;
+    padding: 15px;
+}
+
+.tile-content p {
+    display: inline-block;
+    margin-bottom: 0.86667em;
+}
+
+.tile-content img {
+    padding-right: 20px;
+    float: left;
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    padding: 26px 0 41px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    margin-bottom: 20px;
+
+}
+
+.header-content {
+    display: table;
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 22px;
+    margin: 0 auto;
+}
+
+.header-content .left, .header-content .right {
+    display: table-cell;
+}
+
+.header-content .right {
+    width: 1px;
+}
+
+.header-content .right img {
+    width: 48px !important;
+}
+
+.cookie-disclaimer {
+    width: 100%;
+    min-height: 80px;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background-color: #fff;
+    border-top: 1px solid #c2c2c2;
+    box-shadow: 10px -2px 10px #c2c2c2;
+}
+
+.cookie-confirm {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+@media (min-width: 60em) {
+    .cookie-confirm {
+        width: 970px;
+    }
+}
+
+.cookie-button-close {
+    color: #2282C1;
+    float: right;
+    position: relative;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.cookie-button-close:before {
+    font-family: 'pfbicons';
+    color: #0098db;
+    content: '\e64a';
+}
+
+.layer-text {
+    color: #666;
+    font-size: 0.813em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer {
+    font-family: "Deutsche Bank Text", Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(195, 195, 195);
+    max-width: none;
+    overflow: hidden;
+    margin: 0 auto;
+    vertical-align: baseline;
+    padding-bottom: 3.5rem;
+}
+
+.footer .page-content-wrapper {
+    padding: 1.375rem;
+    position: relative;
+    max-width: 76.875rem;
+    margin: 0 auto;
+}
+
+ul#nav-footer {
+    margin: 0 0 .625rem -1.125rem;
+    margin-right: 20px;
+    list-style: none;
+    float: left;
+    padding: 0;
+
+}
+
+ul#nav-footer li {
+    display: inline-block;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0 1.625rem .6em 0;
+    transition: all .3s;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+ul#nav-footer li a {
+    color: #999;
+    font-size: .875rem;
+    padding-left: 2.5rem;
+    position: relative;
+    text-decoration: none;
+}
+
+ul#nav-footer li a::before {
+    -webkit-font-smoothing: antialiased;
+    transform: translateY(-50%);
+    content: "\e642";
+    font-family: pfbicons;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    left: 0;
+    line-height: 1;
+    padding-left: 1.25em;
+    position: absolute;
+    speak: none;
+    text-transform: none;
+    top: 50%;
+    width: 1.25em;
+}
+
+.pfb-legal-disclaimer {
+    clear: left;
+}
+.pfb-legal-disclaimer p {
+    color: #999;
+    font-size: .6875rem;
+    line-height: 1.5em;
+    max-width: 49.25rem;
+}
+
+.validation-error {
+
+}
+
+.validation-error input {
+    border-bottom: 2px #d05542 solid !important;
+}
+
+.validation-error label:not(.float-up) {
+    color: #d05542 !important;
+}
+
+.validation-error .switcher {
+    border: 2px solid #d05542;
+}
+
+.error-message {
+    display: none;
+}
+
+.validation-error .error-message {
+    padding-top: 3px;
+    padding-bottom: 16px;
+    color: #d05542;
+    vertical-align: baseline;
+    font-size: 13px;
+    font-family: Verdana;
+    display: block;
+}
+
+.thank-you {
+    padding-left: 15px;
+    padding-bottom: 350px;
+}
+
+.thank-you .headline {
+    font-size: 0.96rem;
+    padding-left: 0;
+}
+
+.thank-you h4 {
+    padding-top: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+a {
+    color: #2282C1;
+}
+
+.db-form {
+    margin-left:0.75em;
+    margin-right:0.75em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#variableImage {
+    background-image: url(/img/infografik-beratung-altersvorsorge-db-desktop.png);
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    #variableImage {
+        background-image: url(/img/infografik-beratung-altersvorsorge-db-mobile.png);
+        background-repeat: no-repeat;
+        height: 180px;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 400px) {
+    #variableImage {
+        display:none
+    }
+}
+
+#mailText {
+    display: flex;
+}
+
+#mailText:before {
+    background-image: url("/img/email_icon.png");
+    padding-right: 64px;
+    background-size: 45px, 45px, contain;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    content: "";
+}
+
+#phoneText {
+    display: flex;
+}
+
+#phoneText:before {
+    background-image: url("/img/Telefon.png");
+    padding-right: 64px;
+    background-size: 45px, 45px, contain;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    content: "";
+}

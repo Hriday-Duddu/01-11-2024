@@ -1,0 +1,1 @@
+!function(){if((!window.Amigo||!window.Amigo.AF)&&(window.amigoConfig=window.amigoConfig||{},"undefined"!=typeof CSS&&CSS.supports&&CSS.supports("display","grid")&&CSS.supports("selector(:has(a, b))"))){var o=document;return void(o&&o.location&&o.location.search&&o.location.search.indexOf("amigo-override-shutdown=1"))}}();

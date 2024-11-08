@@ -1,0 +1,55 @@
+--2024-11-02 00:50:36--  https://docs.google.com/presentation/d/e/2PACX-1vRn03YCAbWPsMg0TIMxCNc0IRtZjD_CypqFh1nPO24NuD_Ot4uZ2sjpGK2BajGjIA4W3y-qE9y_Y-zV/pub
+Resolving docs.google.com (docs.google.com)... 142.250.69.206, 2607:f8b0:400a:803::200e
+Connecting to docs.google.com (docs.google.com)|142.250.69.206|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘01-11-2024/fully_downloaded_web_pages/10000_google/docs.google.com/presentation/d/e/2PACX-1vRn03YCAbWPsMg0TIMxCNc0IRtZjD_CypqFh1nPO24NuD_Ot4uZ2sjpGK2BajGjIA4W3y-qE9y_Y-zV/pub.html’
+
+     0K .......... .......... .......... .......... .......... 29.9K
+    50K .......... .......... .......... ...                   27.5K=2.9s
+
+Last-modified header missing -- time-stamps turned off.
+2024-11-02 00:50:42 (28.9 KB/s) - ‘01-11-2024/fully_downloaded_web_pages/10000_google/docs.google.com/presentation/d/e/2PACX-1vRn03YCAbWPsMg0TIMxCNc0IRtZjD_CypqFh1nPO24NuD_Ot4uZ2sjpGK2BajGjIA4W3y-qE9y_Y-zV/pub.html’ saved [85534]
+
+Loading robots.txt; please ignore errors.
+--2024-11-02 00:50:42--  https://docs.google.com/robots.txt
+Reusing existing connection to docs.google.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: ‘01-11-2024/fully_downloaded_web_pages/10000_google/docs.google.com/robots.txt’
+
+     0K                                                        9.18M=0s
+
+2024-11-02 00:50:42 (9.18 MB/s) - ‘01-11-2024/fully_downloaded_web_pages/10000_google/docs.google.com/robots.txt’ saved [567]
+
+--2024-11-02 00:50:42--  https://docs.google.com/static/presentation/client/css/539466208-viewer_css_ltr.css
+Reusing existing connection to docs.google.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 612565 (598K) [text/css]
+Saving to: ‘01-11-2024/fully_downloaded_web_pages/10000_google/docs.google.com/static/presentation/client/css/539466208-viewer_css_ltr.css’
+
+     0K .......... .......... .......... .......... ..........  8%  160K 3s
+    50K .......... .......... .......... .......... .......... 16%  158K 3s
+   100K .......... .......... .......... .......... .......... 25%  240K 3s
+   150K .......... .......... .......... .......... .......... 33%  436K 2s
+   200K .......... .......... .......... .......... .......... 41%  385K 2s
+   250K .......... .......... .......... .......... .......... 50%  116K 2s
+   300K .......... .......... .......... .......... .......... 58%  214K 1s
+   350K .......... .......... .......... .......... .......... 66% 34.3K 2s
+   400K .......... .......... ................ .......... 75%  758K 1s
+   450K .......... .......... .......... .......... .......... 83%  940K 0s
+   500K .......... .......... .......... .......... .......... 91%  890K 0s
+   550K .......... .......... .......... .......... ........  100%  954K=2.5s
+
+2024-11-02 00:50:43 (238 KB/s) - ‘01-11-2024/fully_downloaded_web_pages/9999_google/docs.google.com/static/presentation/client/css/539466208-viewer_css_ltr.css’ saved [612565/612565]
+
+--2024-11-02 00:50:43--  https://docs.google.com/static/presentation/client/js/1806480798-viewer_core.js
+Reusing existing connection to docs.google.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1188837 (1.1M) [text/javascript]
+Saving to: ‘01-11-2024/fully_downloaded_web_pages/9999_google/docs.google.com/static/presentation/client/js/1806480798-viewer_core.js’
+
+     0K .......... .......... .......... .......... ..........  4% 39.7K 28s
+    50K .......... .......... .......... .......... ..........  8%  118K 18s
+   100K .......... .......... .......... .......... .......... 12%  225K 13s
+   150K .......... .......... ..

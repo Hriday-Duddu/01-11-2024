@@ -1,0 +1,205 @@
+<script>
+    setTimeout(function() {
+        window.location.href= "/";
+    }, 36000);
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Страница не найдена, возможно вы ошиблись в написании адреса</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 45vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 46px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 23px;
+                text-align: center;
+                font-weight: 600;
+                text-shadow: 0px 1px 0px #333;
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!-- Yandex.RTB R-A-1677322-5 -->
+<div id="yandex_rtb_R-A-1677322-5"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-1677322-5",
+                renderTo: "yandex_rtb_R-A-1677322-5",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+
+        </div>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                404            </div>
+
+            <div class="message" style="padding: 10px;">
+                Извините, страница, которую вы ищете, не найдена.            </div>
+        </div>
+        <div>
+            <!-- Yandex.RTB R-A-1677322-6 -->
+<div id="yandex_rtb_R-A-1677322-6"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-1677322-6",
+                renderTo: "yandex_rtb_R-A-1677322-6",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+
+        </div>
+                    <div id="counters">
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144661405-1"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'UA-144661405-1');
+                </script>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+                <div class="text-center">
+                    <!--LiveInternet counter--><script type="text/javascript">
+                        document.write('<a href="//www.liveinternet.ru/click" '+
+                            'target="_blank"><img src="//counter.yadro.ru/hit?t44.11;r'+
+                            escape(document.referrer)+((typeof(screen)=='undefined')?'':
+                                ';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+                                screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+                            ';h'+escape(document.title.substring(0,150))+';'+Math.random()+
+                            '" alt="" title="LiveInternet" '+
+                            'border="0" width="31" height="31"><\/a>')
+                    </script><!--/LiveInternet-->
+                    <!-- Top100 (Kraken) Widget -->
+                    <span id="top100_widget"></span>
+                    <!-- END Top100 (Kraken) Widget -->
+                    <!-- Top100 (Kraken) Counter -->
+                    <script>
+                        (function (w, d, c) {
+                            (w[c] = w[c] || []).push(function() {
+                                var options = {
+                                    project: 6673155,
+                                    element: 'top100_widget',
+                                    trackHashes: true,
+                                };
+                                try {
+                                    w.top100Counter = new top100(options);
+                                } catch(e) { }
+                            });
+                            var n = d.getElementsByTagName("script")[0],
+                                s = d.createElement("script"),
+                                f = function () { n.parentNode.insertBefore(s, n); };
+                            s.type = "text/javascript";
+                            s.async = true;
+                            s.src =
+                                (d.location.protocol == "https:" ? "https:" : "http:") +
+                                "//st.top100.ru/top100/top100.js";
+
+                            if (w.opera == "[object Opera]") {
+                                d.addEventListener("DOMContentLoaded", f, false);
+                            } else { f(); }
+                        })(window, document, "_top100q");
+                    </script>
+                    <noscript>
+                        <img src="//counter.rambler.ru/top100.cnt?pid=6673155" alt="Топ-100" />
+                    </noscript>
+                    <!-- END Top100 (Kraken) Counter -->
+
+                    <!-- Yandex.Metrika counter -->
+                    <script type="text/javascript" >
+                        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                        ym(54140170, "init", {
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true,
+                            webvisor:true
+                        });
+                    </script>
+                    <noscript><div><img src="https://mc.yandex.ru/watch/54140170" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+                    <!-- /Yandex.Metrika counter -->
+
+                    <!-- Rating@Mail.ru counter -->
+                    <script type="text/javascript">
+                        var _tmr = window._tmr || (window._tmr = []);
+                        _tmr.push({id: "3128781", type: "pageView", start: (new Date()).getTime()});
+                        (function (d, w, id) {
+                            if (d.getElementById(id)) return;
+                            var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+                            ts.src = "https://top-fwz1.mail.ru/js/code.js";
+                            var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+                            if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+                        })(document, window, "topmailru-code");
+                    </script><noscript><div>
+                            <img src="https://top-fwz1.mail.ru/counter?id=3128781;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+                        </div></noscript>
+                    <!-- //Rating@Mail.ru counter -->
+                </div>
+            </div>
+            </body>
+</html>

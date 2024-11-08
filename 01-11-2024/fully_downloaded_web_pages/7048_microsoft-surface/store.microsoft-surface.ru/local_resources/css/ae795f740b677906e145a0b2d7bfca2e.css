@@ -1,0 +1,874 @@
+@charset "UTF-8";
+/*----global menu styles----*/
+.stickUpTop {
+  z-index: 1000;
+}
+
+.top_menu {
+  margin-top: 10px;
+}
+.top_menu .isStuck {
+  top: 0;
+}
+
+.mega-wrapper {
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.mega-wrapper .mega-menu {
+  background: #fff;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.mega-wrapper .mega-menu > li {
+  float: left;
+  margin-right: 0;
+  border: none;
+}
+.mega-wrapper .mega-menu > li > a {
+  color: #262626;
+  outline: 0;
+  position: relative;
+  padding: 25px;
+  text-decoration: none;
+  display: block;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.mega-wrapper .mega-menu > li > a:hover span {
+  border-bottom: 2px solid #262626;
+  padding-bottom: 2px;
+}
+
+.mega-wrapper .mega-menu .quicklinks-li,
+.mega-wrapper .mega-menu .manufacturers-li,
+.mega-wrapper .mega-menu .information-li,
+.mega-wrapper .mega-menu .customer_service {
+  position: relative;
+}
+.mega-wrapper .mega-menu .label {
+  background: #ff5c58;
+  padding: 2px 4px;
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-radius: 0;
+}
+.mega-wrapper .mega-menu .dropdown,
+.mega-wrapper .mega-menu .dropdown_customer_service,
+.mega-wrapper .mega-menu .dropdown_aboutus,
+.mega-wrapper .mega-menu .dropdown_info,
+.mega-wrapper .mega-menu .dropdown_fullwidth {
+  margin: 0 auto;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  visibility: hidden;
+  -moz-transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  opacity: 0;
+}
+.mega-wrapper .mega-menu .dropdown {
+  background: #f2f2f2;
+  padding: 25px 30px 30px;
+  z-index: 1;
+}
+
+#navCatTabs ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+#navCatTabs ul li {
+  float: left;
+  margin-right: 0;
+  border: none;
+  border-right: 1px solid #5a5a5a;
+}
+#navCatTabs ul li a {
+  color: #ffffff;
+  outline: 0;
+  position: relative;
+  padding: 10px 5px;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* drop down width */
+.mega-menu .col-full {
+  width: 100%;
+}
+.mega-menu .col-2,
+.mega-menu .levels .col-2 {
+  width: 230px;
+  float: left;
+}
+.mega-menu .col-3 {
+  width: 270px;
+  float: left;
+}
+.mega-menu .col-4 {
+  width: 370px;
+  float: left;
+}
+.mega-menu .col-5 {
+  width: 395px;
+  float: left;
+}
+.mega-menu .col-6 {
+  width: 760px;
+  float: left;
+}
+.mega-menu .col-7 {
+  width: 870px;
+  float: left;
+}
+.mega-menu .col-8 {
+  width: 980px;
+  float: left;
+}
+.mega-menu .col-9 {
+  width: 1170px;
+  float: left;
+}
+
+/*-- level2 --*/
+.mega-menu .dropdown .level2 > li > a {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+  color: #262626;
+}
+.mega-menu .dropdown .level2 > li > a:hover {
+  text-decoration: underline;
+}
+.mega-menu .dropdown .col-4 .level2 > li > a {
+  font-size: 13px;
+}
+
+/*-- level3 --*/
+.mega-menu li.categories-li .dropdown ul.level3 {
+  left: 0;
+  top: 0;
+  position: static;
+  margin: 0;
+  padding: 13px 0 0 0;
+}
+.mega-menu li.categories-li .dropdown ul.level3 > li {
+  margin-bottom: 7px;
+  width: 100%;
+  padding: 0;
+}
+.mega-menu li.categories-li .dropdown ul.level3 > li a {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 21px;
+  color: #262626;
+}
+.mega-menu li.categories-li .dropdown ul.level3 > li a:hover {
+  text-decoration: underline;
+}
+
+/*-- level4 --*/
+.mega-menu .levels li ul ul.level4 {
+  display: block;
+  top: 0;
+  left: 0;
+  position: static;
+  margin: 7px 0 0 10px;
+}
+.mega-menu .levels li ul ul.level4 li {
+  margin-bottom: 7px;
+  width: 100%;
+  padding: 0;
+}
+.mega-menu .levels li ul ul.level4 li a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #777777;
+}
+.mega-menu .levels li ul ul.level4 li a:hover {
+  color: #000;
+}
+
+/*-- level5 --*/
+.mega-menu li.categories-li .dropdown ul.level3 {
+  min-height: 115px;
+}
+
+.mega-menu .levels li ul ul.level5 {
+  display: block;
+  top: 0;
+  left: 0;
+  position: static;
+  margin: 7px 0 0 20px;
+}
+
+.mega-menu .levels li ul.level5 li {
+  margin-bottom: 7px;
+  width: 100%;
+  padding: 0;
+}
+
+.mega-menu .levels li ul.level5 li a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #777777;
+}
+
+.mega-menu .levels li ul.level5 li a:hover {
+  color: #000;
+}
+
+/*-- categories-banners --*/
+.categories-banners {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 19px;
+}
+.categories-banners div {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  width: 32.66%;
+  float: left;
+  margin-left: 1%;
+}
+.categories-banners div a {
+  padding: 0;
+}
+.categories-banners div .title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  padding: 10px 0;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+.categories-banners div .title span {
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+.categories-banners div .title:hover {
+  background: rgba(99, 210, 251, 0.7);
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+
+.dropdown.col-4 .categories-banners div {
+  width: 49%;
+  margin-bottom: 1%;
+}
+.dropdown.col-4 .categories-banners div .title {
+  padding: 2px 0;
+}
+.dropdown.col-4 .categories-banners div:hover > .title {
+  background: rgba(0, 0, 0, 0.6);
+}
+.dropdown.col-4 .categories-banners div.item_3 {
+  margin-left: 0;
+}
+
+.dropdown.col-3 .categories-banners div {
+  width: 49%;
+  margin-bottom: 1%;
+}
+
+.dropdown.col-2 .categories-banners div {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 3%;
+}
+
+.dropdown.col-3 .categories-banners div .title,
+.dropdown.col-2 .categories-banners div .title {
+  display: none;
+}
+
+.categories-banners div.item_1 {
+  margin: 0;
+}
+
+.mega-menu li.categories-li .dropdown.col-9 ul.level2 > .col-inner {
+  width: 20%;
+  float: left;
+  margin-bottom: 1%;
+}
+.mega-menu li.categories-li .dropdown.col-9 ul.level2 > .col-inner .last {
+  margin-right: 0;
+}
+.mega-menu li.categories-li .dropdown.col-8 ul.level2 > .col-inner,
+.mega-menu li.categories-li .dropdown.col-7 ul.level2 > .col-inner {
+  width: 24%;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+.mega-menu li.categories-li .dropdown.col-6 ul.level2 > .col-inner {
+  width: 32%;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+.mega-menu li.categories-li .dropdown.col-5 ul.level2 > .col-inner,
+.mega-menu li.categories-li .dropdown.col-4 ul.level2 > .col-inner {
+  width: 49%;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+.mega-menu li.categories-li .dropdown.col-3 ul.level2 > .col-inner,
+.mega-menu li.categories-li .dropdown.col-2 ul.level2 > .col-inner {
+  width: 100%;
+  float: left;
+  margin-right: 0;
+  margin-bottom: 1%;
+}
+.mega-menu li.categories-li .dropdown.col-3 .levels {
+  width: 100%;
+  overflow: hidden;
+}
+.mega-menu li.categories-li .dropdown.col-2 .levels ul.level3 {
+  display: none;
+  top: 0;
+  left: 0;
+  position: static;
+}
+
+/* specials */
+.specials_p .list_carousel {
+  overflow: hidden;
+  position: relative;
+}
+.specials_p .list_carousel .caroufredsel_wrapper {
+  height: 335px !important;
+}
+
+#fcarousel .img > a {
+  padding: 20px 0 0;
+  background: #f9f9f9;
+  width: 180px;
+  max-width: 270180px;
+  height: 180px;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+#fcarousel .img > a img {
+  padding-top: 0;
+}
+#fcarousel .img > a:hover {
+  background: #005da6;
+}
+
+#fcarousel li .product-col {
+  margin: 0 20px 0 0;
+  position: relative;
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+#fcarousel li .product-col:hover {
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+#fcarousel li .product-col .productPriceDiscount {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.swiper-slide .sale-label,
+#fcarousel li .product-col .sale-label {
+  background: #005da6;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 28px;
+  height: 30px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 30px;
+}
+#fcarousel li .product-col .product-desc {
+  color: #777777;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+#fcarousel li .product-col h5 {
+  min-height: 36px;
+}
+#fcarousel li .product-col .text {
+  display: none;
+}
+#fcarousel li .product-col .productPriceDiscount {
+  left: 0;
+  top: 5px;
+}
+#fcarousel li .product-col .normalprice {
+  color: #444;
+  padding: 0 0 0 10px;
+}
+#fcarousel li .product-col .productSpecialPrice {
+  color: #aaa;
+}
+.specials_p .swiper-pagination-bullet {
+  background: #fff;
+}
+.specials_p .swiper-pagination {
+  bottom: -4px;
+}
+.specials_p .slide .product-container {
+  padding: 10px;
+  background: #fff;
+  margin-left: 10px;
+}
+.specials_p .slide:first-child .product-container {
+  margin: 0;
+}
+.specials_p #prev2,
+.specials_p #next2 {
+  position: absolute;
+  bottom: 0;
+  background: #005da6;
+  width: 30px;
+  height: 30px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
+  text-indent: -10000px;
+}
+.specials_p #prev2:hover,
+.specials_p #next2:hover {
+  background: #ff5c58;
+}
+
+.specials_p #prev2:before,
+.specials_p #next2:before {
+  /*noinspection CssNoGenericFontName*/
+  font-family: 'FontAwesome';
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-indent: 0;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+.specials_p #prev2 {
+  left: 0;
+}
+.specials_p #prev2:before {
+  content: '';
+}
+.specials_p #next2 {
+  left: 35px;
+}
+.specials_p #next2:before {
+  content: '';
+}
+
+/* quick links & brands style & manufacturers & categories*/
+.mega-menu li.quicklinks-li .dropdown li,
+.mega-menu li.manufacturers-li .dropdown li,
+.mega-menu li.categories-li .dropdown.col-2 .levels ul.level2 li,
+.mega-menu li.information-li .dropdown ul li {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #1f2023;
+  padding: 5px 0;
+}
+
+.mega-menu li.quicklinks-li .dropdown li:first-child,
+.mega-menu li.manufacturers-li .dropdown li:first-child,
+.mega-menu li.categories-li .dropdown.col-2 .levels ul.level2 li:first-child,
+.mega-menu li.information-li .dropdown ul li:first-child {
+  border: none;
+}
+
+.mega-menu li.quicklinks-li .dropdown li a:hover,
+.mega-menu li.manufacturers-li .dropdown li a:hover,
+.mega-menu li.categories-li .dropdown.col-2 .levels ul.level2 li a:hover,
+.mega-menu li.information-li .dropdown li a:hover {
+  color: #0067B8;
+}
+
+.mega-menu li.manufacturers-li .dropdown li a img {
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+
+.mega-menu li.manufacturers-li .dropdown li a:hover img {
+  opacity: 0.7;
+}
+
+/* categories style */
+/* bof drop down on mouse hover left aligned */
+.mega-menu li.customer_service:hover .dropdown {
+  right: 0 !important;
+  display: block;
+  top: 54px;
+  left: auto;
+}
+
+/* bof drop down on mouse hover right aligned */
+.mega-menu li:hover .align_right {
+  left: auto;
+  right: 0;
+  top: 36px;
+}
+
+/* bof column sizes */
+.mega-menu .col_1,
+.mega-menu .col_2 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+}
+
+/* Use the firstcolumn class for the items that stick to the left edge of the dropdown */
+.mega-menu .firstcolumn {
+  margin-left: 0;
+  /* Clearing margin & left */
+  clear: left;
+}
+
+.mega-menu .firstcolumn ul li img {
+  width: 100%;
+  height: auto;
+}
+
+/*bof content*/
+.mega-menu p,
+.mega-menu ul,
+.mega-menu li,
+.mega-menu h2,
+.mega-menu h3 {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: #262626;
+}
+
+.mega-menu p {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 0 10px;
+  color: #777;
+}
+
+.mega-menu h2,
+.mega-menu h3 {
+  margin-top: 0;
+  color: #dbdbdb;
+}
+
+.mega-menu h3.second {
+  margin-top: 28px;
+}
+
+.mega-menu h2,
+.mega-menu h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.mega-menu h2 {
+  margin-bottom: 18px;
+}
+
+.mega-menu h3 {
+  margin-bottom: 8px;
+}
+
+/* bof images */
+.mega-menu .imgshadow_light {
+  padding: 4px;
+  border: 0 solid #000;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+/* bof standard lists styles */
+.mega-menu li ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mega-menu li ul li {
+  font-size: 12px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+
+.mega-menu li ul li a,
+.mega-menu li.categories-li .dropdown.col-2 .levels ul.level2 li a {
+  padding: 0;
+  text-transform: none;
+  color: #777;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.dropdown.col-2 ul.level2 li.submenu {
+  position: relative;
+}
+
+.dropdown.col-2 .level2 .submenu:hover .level3 {
+  display: block;
+  position: absolute;
+  left: 170px;
+  top: -9px;
+  background: none repeat scroll 0 0 #fff;
+  width: 180px;
+  padding: 10px;
+}
+
+.dropdown.col-2 ul.level2 li.submenu:hover .level3 li {
+  margin-bottom: 1px;
+}
+
+/* bof 2 levels drop down */
+.mega-menu .levels,
+.mega-menu .levels ul {
+  /* all lists */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mega-menu .levels a.parent,
+.mega-menu .levels a.parent:hover {
+  text-decoration: underline;
+}
+
+.mega-menu .levels li {
+  float: left;
+}
+
+.mega-menu .levels li ul {
+  /* second-level lists*/
+  margin: 5px 0 0 5px;
+  position: absolute;
+}
+
+.mega-menu .levels li ul li {
+  width: 100%;
+}
+
+/*bof menu colors*/
+.contactus-li #contact_form .form-control {
+  margin-bottom: 10px;
+  resize: none;
+}
+
+/*bof customer service*/
+.mega-payments {
+  float: left;
+}
+
+.mega-confidence {
+  float: right;
+  width: 60%;
+}
+
+.mega-about {
+  float: left;
+  width: 70%;
+}
+
+.mega-right {
+  float: right;
+  position: relative;
+  margin-left: 10px;
+  width: 145px;
+}
+
+.h-sm {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mega-wrapper .mega-menu > li:hover .dropdown,
+  .mega-wrapper .mega-menu > li:hover .dropdown_aboutus,
+  .mega-wrapper .mega-menu > li:hover .dropdown_info {
+    top: 55px !important;
+    visibility: visible;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .mega-menu li {
+    margin: 0;
+  }
+
+  .mega-menu .col-9 {
+    width: 751px;
+  }
+}
+@media (min-width: 768px) {
+  .mega-wrapper .mega-menu > li:hover .dropdown,
+  .mega-wrapper .mega-menu > li:hover .dropdown_aboutus,
+  .mega-wrapper .mega-menu > li:hover .dropdown_info {
+    top: 80px;
+    visibility: visible;
+    -moz-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    opacity: 1;
+  }
+  .mega-wrapper .mega-menu > li:hover > a {
+    background: #f2f2f2;
+    color: #262626;
+  }
+
+  .mega-wrapper .mega-menu > li > a.drop:after {
+    /*noinspection CssNoGenericFontName*/
+    font-family: "FontAwesome";
+    content: "\f107"; /* angle-down */
+    padding-left: 4px;
+  }
+
+  .mega-wrapper .mega-menu > li > a.drop:hover:after {
+    content: "\f106"; /* angle-up */
+  }
+}
+@media (max-width: 767px) {
+  div.stickUpTop {
+    position: static !important;
+  }
+
+  .mega-wrapper {
+    overflow: visible;
+  }
+  .mega-wrapper .mega-menu > li .dropdown,
+  .mega-wrapper .mega-menu > li .dropdown_aboutus,
+  .mega-wrapper .mega-menu > li .dropdown_info {
+    top: 1px;
+    visibility: visible;
+    overflow: visible;
+    opacity: 1;
+    clear: both;
+    z-index: 100;
+    margin-bottom: 2px;
+    width: 100% !important;
+  }
+
+  .mega-menu .firstcolumn ul li img {
+    width: 22%;
+  }
+
+  .mega-wrapper .mega-menu > li {
+    clear: both;
+    width: 100%;
+  }
+
+  .specials_p .list_carousel .caroufredsel_wrapper {
+    height: 305px !important;
+  }
+
+  .mega-menu p {
+    text-align: justify;
+  }
+
+  .mega-wrapper .mega-menu .dropdown,
+  .mega-wrapper .mega-menu .dropdown_customer_service,
+  .mega-wrapper .mega-menu .dropdown_aboutus,
+  .mega-wrapper .mega-menu .dropdown_info,
+  .mega-wrapper .mega-menu .dropdown_fullwidth {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    position: relative;
+  }
+
+  .mega-wrapper .mega-menu .dropdown {
+    padding: 10px 20px 0;
+  }
+
+  .mega-menu h3.second {
+    margin-top: 16px;
+  }
+
+  .mega-menu h3.second + ul {
+    padding-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+@media (max-width: 480px) {
+  #fcarousel .img > a {
+    border-radius: 0;
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 320px) {
+  .specials_p .list_carousel .caroufredsel_wrapper {
+    height: 345px !important;
+  }
+
+  #fcarousel .img > a {
+    height: 250px !important;
+    width: 250px !important;
+    border-radius: 500px;
+    padding-top: 35px;
+  }
+
+  #fcarousel li .product-col {
+    margin: 0;
+  }
+}

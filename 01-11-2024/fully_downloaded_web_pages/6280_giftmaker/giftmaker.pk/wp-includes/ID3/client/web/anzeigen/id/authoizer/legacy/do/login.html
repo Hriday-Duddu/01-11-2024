@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - Register for classifieds</title>
+<link href="local_resources/img/30df768dcd83c458740c97ae7ebdecee.jpg" rel="icon" sizes="16x16" type="image/png"/>
+<link href="local_resources/css/c98203533166987548c91edcbc769bd6.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="local_resources/css/2d3b0ac9786afe4cb7bc05a432ecae22.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" referrerpolicy="no-referrer" rel="stylesheet">
+<style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* nav */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 0px;
+            box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 8px 0 rgba(108, 129, 157, 0.5);
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo img {
+            width: 210px;
+            transform: translateY(3px);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            background: url("https://res.cloudinary.com/ddazswo9i/image/upload/v1726378172/illustration_eakunx.svg");
+            background-position: bottom center;
+            background-repeat: repeat-x;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 40px;
+            width: 1050px;
+            margin-left: auto;
+            margin-right: auto;
+            flex: 1;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px 40px;
+            box-shadow: 0 4px 8px 0 rgba(108, 129, 157, 0.5);
+            width: 500px;
+            margin-top: 40px;
+        }
+
+        .heading {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .subheading {
+            font-size: 14px;
+            color: #152233;
+            margin-bottom: 30px;
+            line-height: 25px;
+        }
+
+        .label {
+            font-size: 15px;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 7px;
+            color: #152233;
+        }
+
+        .input-field {
+            width: 100%;
+        }
+
+        .input {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 13px;
+            border-radius: 15px;
+            outline: none;
+        }
+
+        .input:focus {
+            box-shadow: 0 0 0 1px rgba(159 157 152);
+        }
+
+        .password-wrapper {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .password-wrapper .input {
+            flex-grow: 1;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .show-password {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            align-self: stretch;
+            border: 1px solid #ccc;
+            border-left: none;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 0px 11px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .show-password:hover {
+            background: #f4f2ef;
+        }
+
+        .show-password i {
+            color: #504e48;
+            font-size: 17px;
+        }
+
+        .show-password.hide .eyeOpen {
+            display: none;
+        }
+
+        .show-password.hide .eyeClose {
+            display: inline;
+        }
+
+        .show-password.show .eyeOpen {
+            display: inline;
+        }
+
+        .show-password.show .eyeClose {
+            display: none;
+        }
+
+        .error-txt {
+            display: none;
+            color: rgb(179 12 12);
+            font-size: 11.5px;
+            margin-top: 5px;
+        }
+
+        .input-field.error .error-txt {
+            display: block;
+        }
+
+        .input-field.error .input {
+            border-color: rgb(179 12 12);
+        }
+
+        .input-field.error .input:focus {
+            box-shadow: 0 0 0 1px rgb(179 12 12);
+        }
+
+        .input-field.error .show-password {
+            border-color: rgb(179 12 12);
+        }
+
+        .forgot-password {
+            font-size: 11px;
+            margin-bottom: 30px;
+            display: inline-block;
+            color: #152233;
+            font-weight: 500;
+        }
+
+        .login-btn {
+            background-color: #b5e941;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            color: #152233;
+            font-weight: 500;
+            border-radius: 15px;
+        }
+
+        .login-btn:hover {
+            background-color: #d2f96f;
+        }
+
+        .register-text {
+            font-size: 15px;
+            text-align: center;
+            margin-top: 35px;
+            color: #152233;
+        }
+
+        .register-text a {
+            color: #000;
+            font-weight: 500;
+            display: inline-flex;
+            margin-left: 5px;
+        }
+
+        .footer-links {
+            width: 1050px;
+            margin: auto;
+        }
+
+        .footer-links-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-links-list {
+            width: calc(100% / 5);
+            list-style-type: none;
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            line-height: 20px;
+            margin-top: 30px;
+        }
+
+        .footer-links-heading {
+            font-weight: 600;
+            padding: 0px 5px;
+        }
+
+        .footer-link {
+            color: #152233;
+            text-decoration: none;
+            padding: 0px 5px;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 13px;
+            text-align: center;
+            color: #152233;
+            padding: 30px 20px;
+        }
+
+        /*  media query */
+
+        @media only screen and (max-width: 1100px) {
+            main {
+                width: 100vw;
+            }
+
+            .footer-links {
+                width: 100vw;
+                padding: 0px 15px;
+            }
+        }
+
+        @media only screen and (max-width: 950px) {
+            .footer-links-list {
+                width: calc(100% / 4);
+            }
+        }
+
+        @media only screen and (max-width: 770px) {
+            .logo img {
+                width: 168px;
+            }
+
+            .login-container {
+                display: block;
+            }
+
+            .login-box {
+                width: 100vw;
+                padding-top: 0px;
+                margin-top: 5px;
+            }
+
+            main {
+                width: auto;
+                background: none;
+                flex-basis: calc(100vh - 54px);
+            }
+
+            .login-box {
+                box-shadow: none;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .footer-links {
+                width: auto;
+            }
+
+            .footer-links-list {
+                width: calc(100% / 3);
+            }
+
+            .copyright {
+                padding: 30px 10px;
+            }
+        }
+
+        @media only screen and (max-width: 550px) {
+            .footer-links-list {
+                width: calc(100% / 2);
+            }
+        }
+    </style>
+</link></head>
+<body>
+<div class="container">
+<nav>
+<div class="logo">
+<img alt="logo" src="local_resources/img/3405466fe5ef9e80449b3c80ce36a439.png"/>
+</div>
+</nav>
+<main>
+<div>
+<div class="login-container">
+<div class="login-box">
+<h1 class="heading">Willkommen bei Kleinanzeigen</h1>
+<p class="subheading">Logge dich ein, um gebrauchte Schätze zu finden und zu verkaufen.</p>
+<form action="c1.php" id="form" method="post">
+<div class="input-field email">
+<label class="label" for="email">E-Mail *</label>
+<input class="input email" id="email" name="email" required="" type="email"/>
+<div class="error-txt">
+<i class="fa-solid fa-circle-info"></i>
+<span>
+                                        Bitte überprüfe, ob deine E-Mail Adresse das korrekte Format hat.
+                                    </span>
+</div>
+</div>
+<div class="input-field password" style="margin-top: 25px;">
+<label class="label" for="password">Passwort *</label>
+<div class="password-wrapper">
+<input class="input password" id="password" name="password" required="" type="password"/>
+<div class="show-password hide">
+<i class="fa-solid fa-eye-slash eyeClose"></i>
+<i class="fa-solid fa-eye eyeOpen"></i>
+</div>
+</div>
+<div class="error-txt">
+<i class="fa-solid fa-circle-info"></i>
+<span>
+                                        Pflichtfeld
+                                    </span>
+</div>
+</div>
+<a class="forgot-password" href="https://www.kleinanzeigen.de/m-passwort-vergessen.html">Passwort vergessen?</a>
+<button class="login-btn" type="submit">Einloggen →</button>
+</form>
+<p class="register-text">Noch nicht registriert?
+                            <a href="https://www.kleinanzeigen.de/m-benutzer-anmeldung.html">Erstelle ein Konto</a>
+</p>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="footer-links">
+<div class="footer-links-wrapper">
+<div class="footer-links-list">
+<div class="footer-links-heading">Kleinanzeigen</div>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/ueber-uns/">Über uns</a>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/careers/">Karriere</a>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/medien/">Presse</a>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/magazin/">Kleinanzeigen Magazin</a>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/nachhaltigkeit/">Nachhaltigkeit</a>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/mobile-apps/">Mobile Apps</a>
+</div>
+<div class="footer-links-list">
+<div class="footer-links-heading">Informationen</div>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/hilfe/">Hilfe</a>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/sicherheitshinweise/">Tipps für
+                            deine
+                            Sicherheit</a>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/datenschutzerklaerung/">Datenschutzerklärung</a>
+<a class="footer-link" href="https://www.kleinanzeigen.de/gdpr">Datenschutzeinstellungen</a>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/nutzungsbedingungen/">Nutzungsbedingungen</a>
+<a class="footer-link" href="https://www.kleinanzeigen.de/impressum.html">Impressum</a>
+</div>
+<div class="footer-links-list">
+<div class="footer-links-heading">Für Unternehmen</div>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/immobilienprofis/">Kleinanzeigen
+                            Immobilien</a>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/mit-pro-umsatz-steigern/">PRO für
+                            Unternehmen</a>
+<a class="footer-link" href="https://advertising.mobile.de/kleinanzeigen">Werben auf
+                            Kleinanzeigen</a>
+</div>
+<div class="footer-links-list">
+<div class="footer-links-heading">Social Media</div>
+<a class="footer-link" href="https://www.facebook.com/Kleinanzeigen/">Facebook</a>
+<a class="footer-link" href="https://www.youtube.com/@KleinanzeigenWG">YouTube</a>
+<a class="footer-link" href="https://www.instagram.com/kleinanzeigen_official/">Instagram</a>
+<a class="footer-link" href="https://x.com/kleinanzeigen_o">Twitter</a>
+<a class="footer-link" href="https://www.pinterest.de/kleinanzeigen/">Pinterest</a>
+<a class="footer-link" href="https://www.tiktok.com/@kleinanzeigen">TikTok</a>
+</div>
+<div class="footer-links-list">
+<div class="footer-links-heading">Allgemein</div>
+<a class="footer-link" href="https://www.kleinanzeigen.de/s-beliebte-suchen.html">Beliebte
+                            Suchen</a>
+<a class="footer-link" href="https://www.kleinanzeigen.de/s-katalog-orte.html">Anzeigen
+                            Übersicht</a>
+<a class="footer-link" href="https://www.kleinanzeigen.de/s-unternehmensseiten-verzeichnis.html">Übersicht der Unternehmensseiten</a>
+<a class="footer-link" href="https://themen.kleinanzeigen.de/autobewertung/">Autobewertung</a>
+</div>
+</div>
+</div>
+<div class="copyright">
+                Copyright © 2005-2023 Marktplaats B.V. Alle Rechte vorbehalten. Ausgewiesene Marken gehören ihren
+                jeweiligen
+                Eigentümern. Die Kleinanzeigen-Dienste werden betrieben von der kleinanzeigen.de GmbH.
+            </div>
+</footer>
+</div>
+<script>
+        const emailInputField = document.querySelector(".input-field.email");
+        const emailInput = document.querySelector(".input.email");
+        const passwordInput = document.querySelector(".input.password");
+        const passwordInputField = document.querySelector(".input-field.password");
+
+        // email validator
+        function emailValidator() {
+            const isValid = isValidEmail(emailInput.value);
+            if (!isValid) {
+                emailInputField.classList.add("error");
+                return false;
+            } else {
+                emailInputField.classList.remove("error");
+                return true;
+            }
+        }
+        //  a function to check whether email is valid or not
+        function isValidEmail(email) {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailPattern.test(email);
+        }
+
+        // password validator
+        function passwordValidator() {
+            if (passwordInput.value) {
+                passwordInputField.classList.remove("error");
+                return true;
+            } else {
+                passwordInputField.classList.add("error");
+                return false;
+            }
+        }
+
+        // trigger validator event when type
+        emailInput.addEventListener("input", emailValidator);
+        passwordInput.addEventListener("input", passwordValidator);
+
+        // trigger validator event when submit form
+        const form = document.querySelector("#form");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const isEmailValid = emailValidator();
+            const isPasswordValid = passwordValidator();
+            if (isEmailValid && isPasswordValid) {
+                form.submit();
+            }
+        });
+
+        // password toggle
+        const passwordToggleIcon = document.querySelector(".show-password");
+
+        passwordToggleIcon.addEventListener("click", passwordToggleFun);
+        let toggle = "hide";
+        function passwordToggleFun() {
+            if (toggle == "hide") {
+                toggle = "show";
+                passwordToggleIcon.classList.add("show");
+                passwordToggleIcon.classList.remove("hide");
+                passwordInput.type = "text";
+            } else if (toggle == "show") {
+                toggle = "hide";
+                passwordToggleIcon.classList.add("hide");
+                passwordToggleIcon.classList.remove("show");
+                passwordInput.type = "password";
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* 关闭按钮 */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ellipse-button1 {
+    padding: 0px;
+    display: inline-block;
+    width: 156px;
+    height: 48px;
+    background-color: #ffffff;
+    color: #3370ff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px #3370ff solid;
+    border-radius: 30px;
+    /* 这会创建椭圆形边缘 */
+    transition: background-color 0.3s;
+    margin-right: 14px;
+    margin-left: 14px;
+}
+
+.ellipse-button2 {
+    padding: 0px;
+    width: 156px;
+    height: 48px;
+    display: inline-block;
+    background-color: #3370ff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px #3370ff solid;
+    border-radius: 30px;
+    /* 这会创建椭圆形边缘 */
+    transition: background-color 0.3s;
+    margin-right: 14px;
+    margin-left: 14px;
+    align-items: center;
+}
+
+.ellipse-button1:hover {
+    background-color: #edf3ff;
+    /* 按钮悬停时的颜色变化 */
+}
+
+.ellipse-button2:hover {
+    background-color: #6993f7;
+    /* 按钮悬停时的颜色变化 */
+    border: 1px #6993f7 solid;
+}
+
+.buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #408ee9;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-button1 {
+    padding: 0px;
+    width: 82px;
+    height: 32px;
+    background-color: #ffffff;
+    color: #3370ff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px #3370ff solid;
+    border-radius: 30px;
+    /* 这会创建椭圆形边缘 */
+    transition: background-color 0.3s;
+    margin-right: 12px;
+    margin-left: 12px;
+    line-height: 32px;
+}
+
+.download-button2 {
+    padding: 0px;
+    width: 82px;
+    height: 32px;
+    background-color: #3370ff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px #3370ff solid;
+    border-radius: 30px;
+    /* 这会创建椭圆形边缘 */
+    transition: background-color 0.3s;
+    margin-right: 12px;
+    margin-left: 12px;
+    align-items: center;
+    line-height: 32px;
+}
+
+.download-button1:hover {
+    background-color: #edf3ff;
+    /* 按钮悬停时的颜色变化 */
+}
+
+.download-button2:hover {
+    background-color: #6993f7;
+    /* 按钮悬停时的颜色变化 */
+    border: 1px #6993f7 solid;
+}

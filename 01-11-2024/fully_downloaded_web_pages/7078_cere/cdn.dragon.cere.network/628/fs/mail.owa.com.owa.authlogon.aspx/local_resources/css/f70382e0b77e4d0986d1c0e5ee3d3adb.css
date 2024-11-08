@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "wf_segoe-ui_normal";
+    src: url("https://mail1.boutiqueapartments.com/owa/auth/15.1.2242/themes/resources/segoeui-regular.eot?#iefix") format("embedded-opentype"),
+            url() format("truetype");
+}
+
+@font-face {
+    font-family: "wf_segoe-ui_semilight";
+    src: url("https://mail1.boutiqueapartments.com/owa/auth/15.1.2242/themes/resources/segoeui-semilight.eot?#iefix") format("embedded-opentype"),
+        url("https://mail1.boutiqueapartments.com/owa/auth/15.1.2242/themes/resources/segoeui-semilight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "wf_segoe-ui_semibold";
+    src: url("https://mail1.boutiqueapartments.com/owa/auth/15.1.2242/themes/resources/segoeui-semibold.eot?#iefix") format("embedded-opentype"),
+        url("https://mail1.boutiqueapartments.com/owa/auth/15.1.2242/themes/resources/segoeui-semibold.ttf") format("truetype");
+}

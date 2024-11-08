@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Instagram</title>
+<link href="local_resources/img/70aed58f1af96b794a92031a0ae09ddf.png" rel="icon" type="image/png"/>
+<link href="local_resources/css/826b502d245d2272d44fc25f128247d7.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="dropdown">
+<select id="dropdown" name="dropdown">
+<option value="en">English</option>
+<option value="es">Spanish</option>
+<option value="fr">French</option>
+<option value="de">German</option>
+<option value="it">Italian</option>
+<option value="pt">Portuguese</option>
+<option value="ru">Russian</option>
+<option value="zh">Chinese</option>
+<option value="ja">Japanese</option>
+<option value="ko">Korean</option>
+<option value="ar">Arabic</option>
+<option value="hi">Hindi</option>
+<option value="bn">Bengali</option>
+<option value="ms">Malay</option>
+<option value="tr">Turkish</option>
+<option value="vi">Vietnamese</option>
+</select>
+</div>
+<div class="insta">
+<h1>Instagram</h1>
+</div>
+<div class="login-fb">
+
+<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+
+<button>Continue with Facebook</button>
+</div>
+<div class="or">
+<div class="or-dash"></div>
+<div class="or-text">
+<p>OR</p>
+</div>
+</div>
+<form action="home.html" class="input">
+<input placeholder="Phone number, username, or email" type="text"/>
+<div class="password">
+<input id="pass" placeholder="Password" type="password"/>
+<p onclick="showpass()">Show</p>
+</div>
+<p class="forgot-pass">Forgot password?</p>
+<input class="login" placeholder="Log in" type="submit" value="Log in"/>
+</form>
+<div class="signup">
+<p>Don't have an account?</p>
+<h4>Sign up</h4>
+</div>
+<div class="footer">
+<p>from</p>
+<div class="meta">
+<div class="meta-img">
+<img src="local_resources/img/73035584874cde611607c55631055dd8.svg"/>
+</div>
+<p>Meta</p>
+</div>
+</div>
+<script>
+        function showpass(){
+            var pass=  document.getElementById("pass");
+            if(pass.type === "password"){
+                pass.type = "text";
+            }
+            else{
+                pass.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

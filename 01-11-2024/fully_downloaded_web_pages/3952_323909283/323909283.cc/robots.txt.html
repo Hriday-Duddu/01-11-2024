@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>eBay</title><link rel="stylesheet" href="/new_html/init.css"></head><body><div class="home"><div class="home-head"><div class="logo"><ul><li class="flow">eBay</li><!--<li class="red">Mer</li>--><!--<li class="blue">cad</li>--><!--<li class="yellow">oLi</li>--><!--<li class="green">bre</li>--></ul></div><div class="nav"><a href="/index/index/home.html"><img src="/new_html/img/user.png" alt=""></a><a href="/index/index/home.html"><img src="/new_html/img/card.png" alt=""></a><a href="/index/index/home.html"><img src="/new_html/img/add.png" alt=""></a></div></div><div class="search"><input type="text" placeholder="Search for anything"><span class="search-btn"><a href="/index/index/home.html"><img src="/new_html/img/seach.png" alt=""></a></span></div><div class="location"><img src="/new_html/img/localtion.png" alt="">
+        Ship to
+    </div><div class="locationList"><ul><li><a href="/index/index/home.html">Watching</a></li><li><a href="/index/index/home.html">Purchases</a></li><li><a href="/index/index/home.html">Selling</a></li><li><a href="/index/index/home.html">Bids &amp; Offers</a></li><li><a href="/index/index/home.html">Messages</a></li></ul></div><div class="shop-list"><div class="tit">
+            Trending on eBay</div><ul><li><a href="/index/index/home.html"><div class="shop-bg"><img src="https://823293823.cc/upload/f374f016a1096392/2eb19466b8965c1b.jpg" alt=""></div><div class="shop-name">Watches</div></a></li><li><a href="/index/index/home.html"><div class="shop-bg"><img src="https://823293823.cc/upload/b05fd3b3fe1b67b5/95a01d3d9c6c2927.jpg" alt=""></div><div class="shop-name">Suitcase</div></a></li><li><a href="/index/index/home.html"><div class="shop-bg"><img src="https://823293823.cc/upload/f41bb943fa059c67/8a4f954ed1abe820.jpg" alt=""></div><div class="shop-name">Toy</div></a></li><li><a href="/index/index/home.html"><div class="shop-bg"><img src="https://823293823.cc/upload/d0cac7f47ccb8e7d/e0c81652c24958b2.jpg" alt=""></div><div class="shop-name">FFootwear</div></a></li><li><a href="/index/index/home.html"><div class="shop-bg"><img src="https://823293823.cc/upload/60859dfe5030d9dd/c4a5ebd0b4cd4193.jpg" alt=""></div><div class="shop-name">Clothing</div></a></li><li><a href="/index/index/home.html"><div class="shop-bg"><img src="https://823293823.cc/upload/8dcfdd07550314d4/1f18c016969815e0.jpg" alt=""></div><div class="shop-name">Cosmetics</div></a></li></ul></div></div></body></html><style>.flow {
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue,  purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:  hue 2s linear infinite;
+    font-size: 18px;
+    font-weight: bolder;
+    height: 30px;
+    /*width: 100px;*/
+}
+    .home {
+        padding: 10px;
+    }
+
+    .home-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .logo>ul>li {
+        font-size: 26px;
+    ;
+    }
+
+    .logo>ul,
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav  img{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav a:nth-child(2) {
+        margin: 0 10px;
+    }
+
+    .search,
+    .location {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+
+    }
+
+    .search input {
+        border: 2px solid #c5c5c3;
+        flex: 1;
+        height: 40px;
+        box-sizing: border-box;
+        padding-left: 10px;
+
+    }
+
+    .search-btn {
+        width: 40px;
+        height: 40px;
+        background: #146df6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .search-btn img {
+        width: 20px;
+        height: 20px;
+    }
+    .location{
+        color:#cad0e2;
+        margin-top: 20px;
+    }
+    .location img {
+        width: 20px;
+        height: 20px;
+        margin-right: 3px;
+    }
+    .locationList{
+        margin-top: 10px;
+    }
+    .locationList ul{
+        display: flex;
+        overflow-x: scroll;
+        align-items: center;
+
+    }
+    .locationList ul li{
+padding: 0 20px;
+    border: 2px solid #a7a7a7;
+    border-radius: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4f4f51;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+    height: 53px;
+    /*width: 100px;*/
+    /* line-height: 53px; */
+    display: flex;
+    align-items: center;
+
+    }
+    .shop-list{
+        margin-top: 40px;
+    }
+    .shop-list .tit{
+        font-weight: bold;
+        font-size: 18px;
+        color:#252927;
+    }
+    .shop-list  ul{
+        display: grid;
+        grid-template-columns: 120px 120px 120px ;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    
+    .locationList  ul::-webkit-scrollbar {
+            display: none;
+        }
+    .shop-list  ul li{
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        color:#252927;
+    }
+    .shop-list  ul li .shop-bg{
+        background: #efefef;
+        width: 120px;
+        height: 120px;
+        padding:10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+
+    }
+    .shop-list  ul li .shop-bg img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        /*background: red;*/
+    }
+    .shop-list  ul li .shop-name{
+        margin-top: 10px;
+    }
+    .red {
+        color: #dd414e;
+    }
+
+    .blue {
+        color: #086db4;
+    }
+
+    .yellow {
+        color: #e1b51b;
+    }
+
+    .green {
+        color: #93af41;
+    }
+</style>

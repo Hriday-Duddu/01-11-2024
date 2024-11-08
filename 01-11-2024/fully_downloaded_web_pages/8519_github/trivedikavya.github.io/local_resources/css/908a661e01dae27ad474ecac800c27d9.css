@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* . class mein # id mein simple official tag mein and * universal mein */
+/* code is writen by KAVYA TRIVEDI */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("nassets/bgofnetflix.jpg"); 
+    height: 90vh;
+    position: relative;
+    background-size: max(1200px , 100vw);  /* zoom wala func jobada vo karega */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* code is writen by KAVYA TRIVEDI */
+.boxonbg{
+    height: 90vh ;
+    width: 100%;
+    opacity: 0.64;
+    position:absolute;
+    top:0%;
+    background-color: black;
+}
+/* code is writen by KAVYA TRIVEDI */
+nav{
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+/* code is writen by KAVYA TRIVEDI */
+nav img{
+    color: rgb(243, 7, 7);
+    width: 145px;
+   position: relative;   /* pop out hoke bahar */
+    z-index: 10;
+}
+nav button{
+    position: relative;   /* pop out hoke bahar */
+    z-index: 10;
+}
+.ctext{
+    font-family: "Martel Sans", sans-serif;
+    
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    position: relative;
+ gap: 23px;
+ padding: 0 29px;
+}
+/* code is writen by KAVYA TRIVEDI */
+/* har ek first child pe apply hoga is u add > then on this */
+.ctext> :first-child{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+}
+
+.ctext> :nth-child(2){
+    font-weight:400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.ctext :nth-child(3){
+    font-weight:400;
+    font-size: 20px;
+    text-align: center;
+}
+/* code is writen by KAVYA TRIVEDI */
+.sep{
+ z-index: 20; 
+    height: 7px;
+    background-color:rgb(83, 83, 83);
+    position: relative;
+    
+}
+/* code is writen by KAVYA TRIVEDI */
+.main input{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    /* font-weight: 900; */
+    border-radius: 4px;
+    background-color: rgb(23,23,23,0.7);
+    border: 1px solid rgb(247, 242, 242,0.5);
+}
+
+.btn{
+    font-family: "Poppins", sans-serif;
+    padding: 3px 8px ;
+    font-weight: 400;
+    background-color: white;
+    cursor: pointer;
+    /* border: 1px solid rgb(228, 225, 225); */
+}
+
+.btn-tr{
+    padding: 3px 8px ;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(228, 225, 225);
+}
+/* code is writen by KAVYA TRIVEDI */
+.centerofbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-red-s{
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid rgb(247, 1, 1);
+
+}
+/* code is writen by KAVYA TRIVEDI */
+.btn-red-big{
+    background-color: red;
+    color: white;
+    padding: 5px 30px;
+    font-size: 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(247, 1, 1);
+}
+/* code is writen by KAVYA TRIVEDI */
+.firstcontent{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+}
+
+.secimg{
+    position: relative;
+}
+
+.secimg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+   
+}
+
+.secimg video{
+ position: absolute;
+ top: 112px;
+ right: 57px;
+ height: 237px;  
+}
+
+section.firstcontent> div{
+display: flex;
+flex-direction: column;
+padding: 34px 0;
+}
+
+section.firstcontent> div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.firstcontent> div :nth-child(2){
+    font-size: 24px;
+}
+
+.feq{
+color: white;
+background-color: black;
+padding: 34px;
+}
+
+.feq h2{
+text-align: center;
+font-size: 48px;
+}
+
+.fbox{   
+    
+font-size: 24px;
+display: flex;
+cursor: pointer;
+justify-content: space-between;
+background-color: rgba(51, 47, 47, 0.644);
+padding: 24px;
+max-width: 70vw;
+margin: 10px auto;
+}
+
+.fbox:hover{
+    
+    background-color: rgba(78, 73, 73, 0.644);
+  
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    
+   
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding: 14px;
+}
+
+@media screen and (max-width:1300px){
+   .footer{
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+   }
+}
+
+.footer a{
+    font-size: 14px;
+    color: white;
+}
+
+.footer-iteam{
+   gap:23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.que{
+    padding: 34px 0;
+}
+@media screen and (max-width:1300px){
+    .firstcontent{
+        flex-wrap: wrap;
+    }
+    
+.secimg img{
+       width: 471px;
+
+
+       
+        z-index: 10;
+    }
+    
+.secimg video{
+        width: 390px;
+       right: 23px;
+
+    }
+    
+ nav{
+        max-width: 90vw;
+    }
+    
+.ctext> :first-child{
+        
+        font-size: 32px;
+    }
+    
+ .ctext> :nth-child(2){
+       
+        font-size: 18px;
+        
+    }
+    
+.ctext :nth-child(3){
+        
+        font-size: 20px;
+       
+    }
+    
+.centerofbtn{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    } 
+    
+ .sep{
+        margin-top: 24px;
+    } 
+    
+ .feq{
+        text-align: center;
+        font-size: 32px;
+
+    }
+    
+ footer{
+ max-width: 90vw;
+    }
+    
+ .footer-iteam{
+        align-items: center;
+
+    }
+}

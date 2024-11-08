@@ -1,0 +1,132 @@
+body > div.main-container{
+	background: #f7f9fa;
+	margin: auto;
+	width: 480px;
+	margin-top: 50px;
+	border-radius: 5px 5px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+body > div.main-container > img.logo{
+	margin: auto;
+	display: block;
+	margin-bottom: 30px;
+}
+
+body > div.main-container > input{
+	display: block;
+	width: 330px;
+	margin: auto;
+	border-radius: 5px;
+	border: 1px solid #bbbbbb;
+	padding: 8px 10px 8px 10px;
+	font-size: 16px;
+	transition: all 0.2s ease;
+	color: #555555;
+}
+
+body > div.main-container > input#email{
+	margin-bottom: 10px;
+}
+
+body > div.main-container > input:focus{
+	border-color: #4477aa;
+}
+
+body > div.main-container > div.button > div > a{
+	display: block;
+	margin: auto;
+	background: #0070ba;
+	border-radius: 5px 5px;
+	color: #ffffff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	width: 330px;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+body > div.main-container > div.button > div > a:hover, body > div.main-container > div.button > div > a:focus{
+	background: #336699;
+}
+
+body > div.main-container > a.who-am-i{
+	display: block;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #336699;
+	font-size: 14px;
+}
+
+body > div.main-container > a.who-am-i:hover, body > div.main-container > a.who-am-i:focus{
+	text-decoration: underline;
+}
+
+body > div.main-container > div.the-line{
+	height: 0px;
+	border-top: 1px solid #cccccc;
+	width: 330px;
+	margin: auto;
+}
+
+body > div.main-container > a.signup{
+	background: #e1e7eb;
+	color: #2c2e2f;
+	display: block;
+	margin: auto;
+	border-radius: 5px 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	width: 330px;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+body > div.main-container > a.signup:hover, body > div.main-container > a.signup:focus{
+	background: #e0e0e0;
+}
+
+body > div.links{
+	text-align: center;
+	margin-top: 20px;
+}
+
+body > div.links > a{
+	color: #666666;
+	font-size: 11px;
+	display: inline-block;
+}
+
+body > div.links > a.a1{
+	margin-right: 10px;
+}
+
+body > div.copyright-notice, body > div.multi-lines{
+	text-align: center;
+	font-size: 11px;
+	color: #999999;
+	margin-top: 15px;
+}
+
+body > div.multi-lines{
+	margin-top: 20px;
+}
+
+body > div.multi-lines > div > a{
+	color: #666666;
+}
+
+body > div.multi-lines > div > a:hover, body > div.multi-lines > div > a:focus{
+	text-decoration: underline;
+}

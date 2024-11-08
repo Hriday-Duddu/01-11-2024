@@ -1,0 +1,201 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f6f7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.main {
+
+    width: 1000px;
+
+}
+
+.mainTop {
+    height: 40px;
+}
+
+.mainHead {
+    background-color: #f5f6f7;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 5px 0;
+
+}
+
+.mainHead1 {
+    background-color: #f5f6f7;
+    width: 160px;
+    display: flex;
+    align-items: center;
+
+}
+
+.mainHead2 {
+    background-color: #f5f6f7;
+    width: 200px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.mainHead3 {
+    background-color: #f5f6f7;
+    width: 600px;
+    font-size: 14px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* text-align: left; */
+}
+
+.mainHead4 {
+    background-color: #f5f6f7;
+    width: 180px;
+    font-size: 12px;
+    color: #9095a2;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: flex-end;
+}
+
+.mainBody {
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 3px;
+    margin: 1px;
+    border: 1px #e0e0e0 solid;
+}
+
+.orangeBody {
+    background-color: #fff5e6;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px 3px 0 0;
+}
+
+.mainFoot {
+    background-color: #f5f6f7;
+    text-align: center;
+    color: #9095a2;
+    flex-direction: column;
+    font-size: 12px;
+    margin: 24px;
+}
+
+.downloadBody {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.downloadBar {
+    display: flex;
+    justify-content: center;
+}
+
+.downloadName {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.downloadMB {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #999999;
+    margin: 0px;
+    padding: 0px;
+
+    word-break: break-all;
+}
+
+.downloadTime {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #ff6702;
+    margin-bottom: 36px;
+
+}
+
+.file-icon {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+}
+
+.file-info {
+    margin-bottom: 20px;
+}
+
+.file-name {
+    font-size: 20px;
+    color: #333;
+}
+
+.file-size {
+    color: #666;
+}
+
+.visible-div {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 981px;
+    background-color: #fff5e6;
+    border-radius: 3px 3px 0 0;
+    height: 40px;
+    font-size: 14px;
+    color: #8a4a12;
+
+}
+
+
+
+.countdown-message {
+    color: #999999;
+    /* 或者您喜欢的任何颜色 */
+}
+
+/* 模态窗口的背景 */
+
+
+ul {
+    list-style-type: none;
+    /* 移除列表前的點 */
+    padding: 0;
+    /* 移除預設的內邊距 */
+    margin: 0;
+}
+
+
+.user-display {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+.login-form {
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}

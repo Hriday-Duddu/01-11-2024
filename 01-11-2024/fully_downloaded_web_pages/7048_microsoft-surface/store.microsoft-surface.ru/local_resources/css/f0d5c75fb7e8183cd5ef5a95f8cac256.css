@@ -1,0 +1,65 @@
+/**
+ * Products Tags CSS Stylesheet
+ *
+ * @package templateSystem
+ * @copyright Copyright 2004-2017 Andrew Berezin eCommerce-Service.com
+ * @copyright Copyright 2003-2017 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: stylesheet_products_tags.css 2.1.1 08.10.2017 12:37:16 AndrewBerezin $
+ */
+
+#productsTags {
+  height: auto;
+  overflow: hidden;
+  padding-right: 10px;
+  margin: 9px 0 6px;
+}
+#productsTags a, #productsTags span {
+  color: #919191;
+  text-decoration: none;
+  text-transform: lowercase;
+  line-height: 20px;
+  margin-right: 15px;
+  border-bottom: 1px solid #919191;
+  white-space: nowrap;
+  font-size: 14px;
+}
+#productsTags a:hover {
+	border-bottom: 0px;
+}
+#productsTags span.active {
+  font-weight: bold;
+  color: #000000;
+  border-bottom: 0;
+/*  border-bottom: 2px solid #919191; */
+}
+
+#productsTagsMore {
+  text-align: center;
+  font-size:11px;
+  color:#000000;
+  text-decoration:underline;
+  cursor:pointer;
+  display:block;
+  width:100%;
+}
+#productsHideMore {
+  text-align: center;
+  font-size:11px;
+  color:#000000;
+  text-decoration:underline;
+  cursor:pointer;
+  display:block;
+  width:100%;
+}
+#productsTagsFade {
+  position: absolute;
+  z-index: 95;
+  margin-top: -20px;
+  height: 20px;
+  background: url(../images/products_tags.png);
+  display:block;
+/*  width:100%; */
+  width:732px;
+}

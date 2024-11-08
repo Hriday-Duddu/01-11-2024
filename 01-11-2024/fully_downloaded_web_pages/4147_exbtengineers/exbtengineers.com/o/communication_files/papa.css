@@ -1,0 +1,36 @@
+header li:nth-child(2) div div {border:1px solid black; display:block; margin-top:3px; width:18px; height:1px; background-color:black;   }
+.hero{display:inline-block; font-family:arial; padding-right:7px; cursor:pointer}
+.her li:hover a{color:red}
+.her li:nth-child(1){padding-right:10px;}
+label,li a{font-weight:bold; font-family:arial; font-size:16px; text-decoration:none; color:black;}
+.her li	a{font-family:arial; font-weight:bold; font-size:16px; color:black;  text-decoration:none;}
+header li:nth-child(3) div{ border:1px solid black; width:0.4px; display:inline-block; height:13px; background-color:black;}
+header ol li{display:inline-block; padding:7px;}
+header ol li:nth-child(1) img{width:90%; height:60%; }
+header ol li:first-child {width:40px; padding:0px;    }
+header{border:1px solid gray; width:100%; height:10%; padding-bottom:15px; position:relative; top:-09px; clear: both;}
+nav,section{  width:49.5%;float:left; position:relative; margin-top:30px; }
+section div{position:absolute; right:30px;}
+.heroo img{width:100%; height:50%;}
+.nav_3 ol{padding:0px; list-style:none;}
+.nav_00{position:relative; left:35px;}
+input[type="submit"]{width:20%; min-width:100px; padding:10px; color:white; font-family:arial; font-weight:bold; font-size:18px; text-align:center;
+		background-color:black; margin-top:10px; display:inline-block; text-decoration:none; border:1px solid black;} 
+input[type="submit"]:hover{ background-color:white; color:black; cursor:pointer; }						
+
+input[type="email"],input[type="password"]{width:60%; padding:10px; min-width:200px; margin-top:07px; margin-bottom:07px;}
+nav h1{font-size:40px; padding:0px;margin:0px; margin-bottom:12px; font-family:arial;}
+
+footer div{background-color:#dcdcdd; max-height:17% ; position:fixed; bottom:0px; width:100%; height:14%;}
+body, html {
+    height: 100%;
+max-height: 100%;}
+
+
+
+body {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    
+}

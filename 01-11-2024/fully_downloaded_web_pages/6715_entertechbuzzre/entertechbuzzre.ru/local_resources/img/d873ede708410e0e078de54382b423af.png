@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive, nosnippet, noindex, nofollow">
+    <title>Exclusive Exotic Enthusiasts - entertechbuzzre.ru</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="https://entertechbuzzre.ru//">
+            <i class="fas fa-car"></i> Exclusive Exotic Enthusiasts - AutoShowroom
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://entertechbuzzre.ru//#inventory"><i class="fas fa-car-side"></i> Inventory</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://entertechbuzzre.ru//#services"><i class="fas fa-tools"></i> Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://entertechbuzzre.ru//#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="bg-dark text-white text-center py-5" style="background: url('') no-repeat center; background-size: cover;">
+    <div class="container py-5">
+        <h1 class="display-4 fw-bold">Discover Your Next Car</h1>
+        <p class="lead">Racing is life. Everything else is just waiting. - Steve McQueen</p>
+        <a href="https://entertechbuzzre.ru//#inventory" class="btn btn-primary btn-lg mt-3"><i class="fas fa-search"></i> Browse Inventory</a>
+    </div>
+</header>
+
+<div id="inventory" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center display-6 fw-bold mb-5">Our Inventory</h2>
+        <div class="row g-4">
+            
+                <div class='col-md-6 col-lg-3'>
+                    <div class='card shadow-sm'>
+                        <img src='' class='card-img-top'>
+                        <div class='card-body text-center'>
+                            <a href='https://entertechbuzzre.ru//#inventory' class='btn btn-primary btn-sm'><i class='fas fa-info-circle'></i> View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-6 col-lg-3'>
+                    <div class='card shadow-sm'>
+                        <img src='' class='card-img-top'>
+                        <div class='card-body text-center'>
+                            <a href='https://entertechbuzzre.ru//#inventory' class='btn btn-primary btn-sm'><i class='fas fa-info-circle'></i> View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-6 col-lg-3'>
+                    <div class='card shadow-sm'>
+                        <img src='' class='card-img-top'>
+                        <div class='card-body text-center'>
+                            <a href='https://entertechbuzzre.ru//#inventory' class='btn btn-primary btn-sm'><i class='fas fa-info-circle'></i> View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-6 col-lg-3'>
+                    <div class='card shadow-sm'>
+                        <img src='' class='card-img-top'>
+                        <div class='card-body text-center'>
+                            <a href='https://entertechbuzzre.ru//#inventory' class='btn btn-primary btn-sm'><i class='fas fa-info-circle'></i> View Details</a>
+                        </div>
+                    </div>
+                </div>        </div>
+    </div>
+</div>
+<div id="services" class="py-5 text-white" style="background-color: #333;">
+    <div class="container">
+        <h2 class="text-center display-6 fw-bold mb-4">Our Services</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-tools display-6"></i>
+                <h4 class="fw-bold mt-3">Quality Maintenance</h4>
+                <p>Top-notch maintenance to keep your car in the best shape.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-hand-holding-usd display-6"></i>
+                <h4 class="fw-bold mt-3">Financing Options</h4>
+                <p>Flexible financing options to make owning a car easier.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-headset display-6"></i>
+                <h4 class="fw-bold mt-3">Premium Support</h4>
+                <p>Customer support that puts you first every step of the way.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center display-6 fw-bold mb-4">Get in Touch</h2>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-12">
+                <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="bg-dark text-center text-white py-3">
+    <p>&copy; 1960 Exclusive Exotic Enthusiasts. All Rights Reserved. <i class="fas fa-copyright"></i></p>
+	<div class="social-links">
+        <a href="https://facebook.com/entertechbuzzre.ru" class="text-light mx-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/entertechbuzzre.ru" class="text-light mx-2" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://instagram.com/entertechbuzzre.ru" class="text-light mx-2" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/entertechbuzzre.ru" class="text-light mx-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+		<a href="/cdn-cgi/l/email-protection#d3b0bcbda7b2b0a793b6bda7b6a1a7b6b0bbb1a6a9a9a1b6fda1a6" class="text-light mx-2"><i class="fas fa-envelope"></i></a>
+	</div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

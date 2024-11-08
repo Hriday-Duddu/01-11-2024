@@ -1,0 +1,102 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(240, 242, 245);
+}
+
+img {
+    max-width: 300px;
+    float: top center;
+    text-align: center;
+    height: 99px;
+    margin-left: 39%;
+}
+
+form {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    background-color: white;
+    margin-left: 34%;
+    margin-right: 33%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    border: none;
+}
+
+.input1 {
+    margin-top: 2%;
+    width: 47%;
+    height: 30PX;
+    border-color: rgba(173, 170, 170, 0.541);
+    border-radius: 6px;
+    border-style: solid;
+}
+
+.input2 {
+    width: 97%;
+    height: 30PX;
+    border-color: rgba(173, 170, 170, 0.541);
+    border-radius: 6px;
+    border-style: solid;
+}
+
+.dob {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 32%;
+    font-size: 16px;
+    border-radius: 6px;
+    border-color: rgba(173, 170, 170, 0.541);
+}
+
+.input4 {
+    font-size: 13px;
+    color: #606770;
+
+}
+
+.input3 {
+
+    width: 32%;
+    font-size: 16px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-color: #606770;
+
+    border: 1px solid #606770;
+    ;
+    display: inline-block;
+    border-radius: 6px;
+}
+.input5 {
+        
+    font-size: 11px;
+    color: #606770;
+}
+.button{
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.button1 { 
+    font-size: 20px;
+    margin-top: 5px;
+    width: 40%;
+    height: 36px;
+    background-color: rgb(17, 159, 22);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.link{
+    padding-top: 10px;
+    text-align: center;
+}
+

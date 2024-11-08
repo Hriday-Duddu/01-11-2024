@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script>var V_PATH="/";window.onerror=function(){ return true; };</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>9570金沙(官方认证)登录入口-Global Champion</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #666;
+        }
+
+        #app {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 320px;
+        }
+
+        #captchaContent {
+            padding: 20px;
+            text-align: center;
+            color: #666;
+        }
+
+        #captchaContent h3 {
+            margin-top: 0;
+            color: #666;
+        }
+
+        #captchaContent p {
+            margin: 20px 0;
+            color: #666;
+        }
+
+        #captchaContent form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #666;
+        }
+
+        #options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            color: #666;
+        }
+
+        #captchaContent label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 45%;
+            font-size: 1em; /* Smaller font size */
+            color: #666;
+        }
+
+        #captchaContent label input {
+            margin-right: 10px;
+            transform: scale(1.5);
+        }
+
+        #captchaContent button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        #captchaContent button:hover {
+            background-color: #0056b3;
+        }
+
+        .loader {
+            border: 4px solid #f3f3f3; /* Light grey */
+            border-top: 4px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            animation: spin 2s linear infinite;
+            position: absolute;
+            left: -70px; /* 20px margin + 20px width of loader */
+            bottom: 1%;
+            transform: translateY(70%); /* 移动到按钮的下边缘平行，再下移20像素 */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 300px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .modal button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+<link href="http://nnage.com" media="only screen and(max-width: 640px)" rel="alternate"/><script rel="nofollow" src="local_resources/js/25dc746e499527a4d9c867a902ac74ad.js" type="text/javascript"></script></head>
+<body>
+<div id="app">
+<div id="captchaContent">
+<h3>确认您是真人</h3>
+<div id="captchaForm">
+<p id="question"></p>
+<form id="verificationForm">
+<input id="qidInput" name="qid" type="hidden" value=""/>
+<div id="options"></div>
+<button type="submit">
+                        验证
+                        <div class="loader" id="loadingSpinner" style="display: none;"></div>
+</button>
+</form>
+</div>
+</div>
+</div>
+<!-- The Modal -->
+<div class="modal" id="myModal">
+<div class="modal-content">
+<span class="close">×</span>
+<p id="modalMessage"></p>
+<button id="modalButton">确定</button>
+</div>
+</div>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var captchaContent = document.getElementById('captchaContent');
+            var question = document.getElementById('question');
+            var qidElement = document.getElementById('qidInput');
+            var options = document.getElementById('options');
+            var verificationForm = document.getElementById('verificationForm');
+            var loadingSpinner = document.getElementById('loadingSpinner');
+
+            var modal = document.getElementById("myModal");
+            var modalMessage = document.getElementById("modalMessage");
+            var modalButton = document.getElementById("modalButton");
+            var closeSpan = document.getElementsByClassName("close")[0];
+
+            generateQuestion();
+
+            verificationForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                var formData = new FormData(verificationForm);
+                var params = new URLSearchParams();
+                for (var pair of formData.entries()) {
+                    params.append(pair[0], pair[1]);
+                }
+
+                var selectedOptionId = verificationForm.querySelector('input[name="option"]:checked');
+                if (selectedOptionId) {
+                    params.append('sn', selectedOptionId.getAttribute('data-sn'));
+                }
+
+                var urlParamObj = getSearch();
+                params.append("token", urlParamObj.token);
+                params.append("mmtype", urlParamObj.mmtype);
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', '/manmachine/verifyremote430question?' + params.toString(), true);
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            var response = JSON.parse(xhr.responseText);
+                            if (response.code == 0) {
+                                if(response.data == "true"){
+                                    loadingSpinner.style.display = 'block'; // 显示加载动画
+                                    setTimeout(function() {
+                                        loadingSpinner.style.display = 'none'; // 隐藏加载动画
+                                        if(urlParamObj.backurl){
+                                            location.href = urlParamObj.backurl;
+                                        }
+                                    }, 3000);
+                                }else{
+                                    showModal('你不是人类');
+                                }
+                            } else {
+                                showModal('验证失败: ' + response.msg);
+                                generateQuestion();
+                            }
+                        } else {
+                            showModal('网络错误，请重试');
+                        }
+                    }
+                };
+                xhr.send();
+            });
+
+            function generateQuestion() {
+                var params = new URLSearchParams();
+                var urlParamObj = getSearch();
+                params.append("token", urlParamObj.token);
+
+                let xhr = new XMLHttpRequest();
+                xhr.open('GET', '/manmachine/getremote430question?' + params.toString(), true)
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        let result = JSON.parse(xhr.responseText)
+                        
+                        if(result.code != 0){
+                            showModal(result.msg);
+                            return;
+                        }
+                        let questionData = result.data;
+
+                        question.textContent = questionData.question;
+                        qidElement.value = questionData.qid;
+                        options.innerHTML = '';
+                        questionData.options.forEach(function(option) {
+                            var label = document.createElement('label');
+                            label.setAttribute('for', 'option' + option.id);
+                            label.textContent = option.text;
+                            var radio = document.createElement('input');
+                            radio.setAttribute('type', 'radio');
+                            radio.setAttribute('id', 'option' + option.id);
+                            radio.setAttribute('name', 'option');
+                            radio.setAttribute('value', option.id);
+                            radio.setAttribute('data-sn', option.sn);
+
+                            label.prepend(radio);
+                            options.appendChild(label);
+                        });
+                    }
+                };
+                xhr.send();
+            }
+
+            function getSearch() {
+                let theRequest = new Object();
+                let wholeUrl = decodeURIComponent(location.href)
+                let cArr = wholeUrl.match(/c-.*?\.html/)
+                if (cArr) {
+                    let cc = cArr[0].substr(2)
+                    cc = cc.substring(0, cc.length - 5)
+                    let ccs = cc.split("&")
+                    for (let i = 0; i < ccs.length; i++) {
+                        theRequest[ccs[i].split("=")[0]] = unescape(ccs[i].split("=")[1]);
+                    }
+                }
+                let url = decodeURI(location.search);
+                if (url.indexOf("?") != -1) {
+                    let str = url.substr(1);
+                    let strs = str.split("&");
+                    for (let i = 0; i < strs.length; i++) {
+                        theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                    }
+                }
+                return theRequest
+            }
+
+            function showModal(message) {
+                modal.style.display = "block";
+                modalMessage.textContent = message;
+
+                // 当用户点击模态框上的 x 按钮时，关闭模态框
+                closeSpan.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                // 当用户点击模态框外部区域时，关闭模态框
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+
+                // 当用户点击确定按钮时，关闭模态框
+                modalButton.onclick = function() {
+                    modal.style.display = "none";
+                }
+            }
+
+        });
+    </script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }     
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();     
+</script></body>
+</html>

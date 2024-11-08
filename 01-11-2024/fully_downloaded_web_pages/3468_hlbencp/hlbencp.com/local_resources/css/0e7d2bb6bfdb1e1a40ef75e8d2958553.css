@@ -1,0 +1,167 @@
+﻿#FocusBG{
+	width:100%;
+	height:500px;
+}
+.fullSlide {
+	width:100%;
+	position:relative;
+	height:500px;
+	background:#000;
+}
+.fullSlide .bd {
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+}
+.fullSlide .bd ul {
+	width:100% !important;
+}
+.fullSlide .bd li {
+	width:100% !important;
+	height:500px;
+	overflow:hidden;
+	text-align:center;
+}
+.fullSlide .bd li a {
+	display:block;
+	height:500px;
+}
+.fullSlide .hd {
+	width:100%;
+	position:absolute;
+	z-index:1;
+	bottom:0;
+	left:0;
+	height:30px;
+	line-height:30px;
+}
+.fullSlide .hd ul {
+	text-align:center;
+}
+.fullSlide .hd ul li {
+	cursor:pointer;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	width:20px;
+	height:5px;
+	margin:5px;
+	overflow:hidden;
+	background:#FFF;
+	line-height:999px;
+}
+.fullSlide .hd ul .on {
+	background:#0b7a3f;
+}
+.fullSlide .prev,.fullSlide .next {
+	display:block;
+	position:absolute;
+	z-index:1;
+	top:50%;
+	margin-top:-30px;
+	left:0%;
+	z-index:1;
+	width:40px;
+	height:60px;
+/*	background:url(/images/slider-arrow.png) -126px -137px #000 no-repeat; */
+	cursor:pointer;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+	display:none;
+}
+.fullSlide .next {
+	left:auto;
+	right:0%;
+	background-position:-6px -137px;
+}
+
+
+
+ #LinksBG{
+	background:#F5F5F5;
+	border-top:1px solid #E5E5E5;
+	}
+ #Links {
+	padding:10px 0px;
+	line-height:25px;
+	width:1080px;
+	margin:auto;
+	font-size:12px;
+	}
+ #Links span{
+	font-weight:bold;
+	color:#0b7a3f;
+	font-size:14px;}
+
+ #Links a{
+	padding:0px 10px;}
+
+/**首页新闻栏目*/
+.S_news{ width:1200px; height:500px; margin:0 auto; }
+.N_Menu{ height:170px; font-size:14px;}
+.N_Menu h2{ font-size:30px; text-align:center; color:#000000; font-weight:normal; float:left; height:80px; width:1200px; line-height:80px; margin-top:20px;}
+.N_Menu ul{ height:30px; padding:45px 0; margin:0 auto; width:330px;}
+.N_Menu ul li{ float:left; margin-left:10px;}
+.N_Menu ul li a{text-align:center; width:100px; display:block; height:30px; line-height:30px;}
+.N_Menu ul li a:hover,.N_Menu ul li a.on {text-align:center; width:100px; display:block; height:30px;background:#66a00d; line-height:30px; color:#fff;}
+
+
+
+.N_content{ height:440px; display:none; overflow:hidden; width:1200px;}
+.N_content_l{ width:610px; height:440px; float:left; margin-left:-610px; overflow:hidden;}
+.N_content_l dl{ width:300px; margin-right:10px; float:left;}
+.N_content_l dl dt img{ width:300px; height:200px;}
+.N_content_l dl dd h2{ width:300px; font-size:16px; color:#000; line-height:28px; margin:10px 0; height:56px; overflow:hidden; font-weight:normal;}
+.N_content_l dl dd p{ width:300px; color:#666666; height:105px; overflow:hidden;}
+.N_content_l dl dd span{ width:300px; color:#666666;}
+.N_content_l dl dd span a{ width:68px; float:right;}
+
+.N_content_r{ width:570px; height:440px; float:right; margin-right:-570px;overflow:hidden;}
+.N_content_r ul{}
+.N_content_r ul li{ height:105px; margin-bottom:5px;}
+.N_content_r ul li dl{ width:90px; height:90px; margin-right:15px; border:1px solid #c1c1c1; float:left;}
+.N_content_r ul li dl dt{ font-size:30px; font-weight:bold; line-height:50px; text-align:center;}
+.N_content_r ul li dl dd{  text-align:center;}
+.N_content_r ul li h2{ font-size:16px; line-height:30px; width:460px; float:left; font-weight:normal;}
+.N_content_r ul li p{ font-size:12px; color:#666666; width:450px; float:left;}
+
+.N_content_r ul li:hover{ height:105px; margin-bottom:5px; background:#66a00d; color:#fff}
+.N_content_r ul li:hover dl{ width:90px; height:90px; margin-right:15px;float:left; border:1px solid #66a00d}
+.N_content_r ul li:hover dl dt{ font-size:30px; font-weight:bold; line-height:50px; text-align:center;}
+.N_content_r ul li:hover dl dd{  text-align:center;}
+.N_content_r ul li:hover h2{ font-size:16px; line-height:30px; width:460px; float:left;}
+.N_content_r ul li:hover h2 a{display:block; color:#fff;}
+.N_content_r ul li:hover p{font-size:12px; color:#fff;width:450px;}
+.N_content_r ul li:hover p a{display:block;font-size:12px; color:#fff;width:450px;text-decoration:none;}
+/**首页新闻栏目*/
+
+
+
+/*案例展示*/
+.S_case{ width:100%; height:660px; background:#F7f7f7; margin-top:15px; }
+.S_case_n{ width:1200px; margin:0 auto; position:relative;}
+.S_case_menu{ height:100px;}
+.S_case_menu span{ font-size:30px; font-weight:normal;  text-align:center; color:#000000; float:left; width:1200px; margin:35px 0 20px 0; line-height:30px;}
+.S_case_u{ width:422px; margin:0 auto;}
+.S_case_u li{ float:left; margin-left:15px; }
+.S_case_u li a{ width:120px; text-align:center; color:#ffffff; border:1px solid #0068b7; display:block;height:30px; line-height:30px; }
+.S_case_u li a:hover,.S_case_u li a.on{ border:1px solid #ffffff; width:120px; text-align:center; color:#ffffff; height:30px; line-height:30px;}
+.s_case_m{ border:1px solid #c1c1c1; background:#ffffff; float:right; height:15px; margin-top:8px; line-height:15px;  padding:0 3px; }
+
+.S_case_c{ width:1200px; display:none; height:656px;   overflow:hidden;}
+.S_case_c ul{width:1200px;}
+.S_case_c ul li{ width:370px; margin-right:30px; float:left; height:284px; margin-bottom:30px;overflow:hidden;}
+.S_case_c ul li a{ width:380px; position:relative;}
+.S_case_c ul li a img{ width:380px; height:284px; }
+.S_case_c ul li a span{ padding:10px 18px; width:343px; display:none; position:absolute; left:0; bottom:4px; height:42px;filter:alpha(opacity=80);-moz-opacity:0.8;-khtml-opacity: 0.8;opacity: 0.8; background:#000000;}
+.S_case_c ul li a:hover span{ display:block; color:#fff; font-size:12px; z-index:1;}
+.S_case_c li:hover img {opacity: 1;	-webkit-transform: scale(1.2,1.2);-webkit-transition-timing-function: ease-out;	-webkit-transition-duration: 500ms;	-moz-transform: scale(1.2,1.2);	-moz-transition-timing-function: ease-out;	-moz-transition-duration: 500ms; }
+
+.s_case{ width:100%; height:30px; margin:10px auto; text-align:center; cursor:pointer; float:left;color: #000000;font-size: 40px;}
+.s_case a{color: #000000}
+.s_case a:hover{color: #000000}
+
+.casepic{margin-top:10px; }
+.casepic p{margin-top: 15px;}
+/*案例展示*/

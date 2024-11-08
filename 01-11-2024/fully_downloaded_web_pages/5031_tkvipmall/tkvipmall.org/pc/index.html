@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html data-version="Wed Oct 23 2024 16:08:48 GMT+0800 (马来西亚时间)" lang="en"><head><meta charset="utf-8"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="no-referrer" name="referrer"/><title>EShop</title><style>/* html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background: rgba(0,0,0,0.9);
+} */
+*{
+  margin: 0;
+  padding: 0;
+}
+.body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0,0,0,0.9);
+}
+.loader,
+.loader span,
+.spinner {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+}
+.loader span {
+  line-height: 200px;
+  padding-left: 60px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0);
+  text-shadow: 0 0 0 rgba(255,255,255,0.75), 0 0 2px #1e90ff, 0 0 4px #1e90ff, 0 0 6px #1e90ff, 0 0 8px #1e90ff, 0 0 10px #1e90ff;
+}
+.spinner {
+  border-radius: 50%;
+  box-shadow: 3px 0 1px -1px #fff, 5px 0 5px rgba(30,144,255,0.5), inset -10px 0 10px -5px rgba(30,144,255,0.5);
+  -webkit-animation: loading 1s linear infinite;
+          animation: loading 1s linear infinite;
+}
+.spinner:before {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  margin: 10% 0 0 10%;
+  border-radius: 50%;
+  content: " ";
+  box-shadow: 2px 0 1px -1px #fff, 10px 0 5px -5px rgba(30,144,255,0.5), inset -3px 0 3px rgba(30,144,255,0.5);
+}
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}</style><link href="https://tkvipmall.org/pc//./css/chunk-00a17b20.85ee17e2.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-0660bbc1.76c2e63a.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-07e994fc.6fdbb534.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-13504703.74a37e9c.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-137768ec.054674a3.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-23ec2e1c.b30d78dd.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-24424c76.9e47b284.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-29caa736.c2dcd608.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-2cbb6715.d40cf9e6.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-3aef57cd.461cae5d.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-3fe1efab.53c871e2.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-406d875e.3ecf88fe.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-46f30f6c.b2e5197a.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-4800854e.6015aaea.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-4de73f70.143b8377.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-501a28b2.7da50378.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-56bffb70.f2bd8913.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-57796eef.c70dd4a7.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-5daf7376.cd704402.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-606524e4.45f75ffc.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-630c37b6.1a94a034.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-69b1507a.badabe5f.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-6a82b99e.8745a17d.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-70683ad6.27a370f9.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-7583de08.190a6d02.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-76c08da7.9d4508d1.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-8086d990.10f19374.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-8106b252.148f433f.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-84ed8e78.8fe95911.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-a7e8cec2.0daa9b11.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-ab1540ba.1f2ab8f5.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-b0550030.615f6bf6.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-dc75a1da.68f1ff08.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-e78dfc3c.bbf1f88d.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-ebbe1d7c.92319b2b.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-eea86ba4.f9bcf067.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./css/chunk-fdcd1b2a.1c551398.css" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-00a17b20.b525a03e.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-0660bbc1.05406ea2.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-07e994fc.9336a9f6.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-13504703.8dfe713c.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-137768ec.2fe29db3.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-23ec2e1c.5b1fadfa.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-24424c76.3280973d.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-29caa736.c37c701f.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-2cbb6715.2426089b.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-2d0daea6.ab412400.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-2d216070.b1ff14e5.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-2d216994.9b9ef740.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-3aef57cd.6284c4f4.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-3fe1efab.e3113a41.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-406d875e.bbecf131.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-46f30f6c.970e6cb1.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-4800854e.874e9404.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-4de73f70.f797bf1d.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-501a28b2.bc5a66a5.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-56bffb70.2aaef33f.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-57796eef.5e12cc9a.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-5daf7376.03c24d8c.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-606524e4.3f3a9f67.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-630c37b6.e9c34f27.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-69b1507a.bd815c43.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-6a82b99e.9ea425c1.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-6dbd6b68.c5c9c96a.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-70683ad6.a1043bc7.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-7583de08.50108ba3.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-76c08da7.3e1018d6.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-7e8a3b0e.cd2b249f.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-8086d990.7d936beb.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-8106b252.425c8268.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-84ed8e78.4d301b79.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-a7e8cec2.ad2184e4.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-ab1540ba.5c2b56c9.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-b0550030.11e552e8.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-dc75a1da.0377a0d9.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-e78dfc3c.b05772c2.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-ebbe1d7c.95bccc1b.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-eea86ba4.57c693dd.js" rel="prefetch"/><link href="https://tkvipmall.org/pc//./js/chunk-fdcd1b2a.12c58439.js" rel="prefetch"/><link as="style" href="local_resources/css/cbd014b16281a51a8804d539e29a8ff5.css" rel="preload"/><link as="style" href="local_resources/css/c21f561153dd297551ab91efdd659a20.css" rel="preload"/><link as="script" href="local_resources/js/e692717da00c1450d6f268434578578b.js" rel="preload"/><link as="script" href="local_resources/js/e9129b2cc1c7216b110a9a95b387e2fa.js" rel="preload"/><link href="local_resources/css/c21f561153dd297551ab91efdd659a20.css" rel="stylesheet"/><link href="local_resources/css/cbd014b16281a51a8804d539e29a8ff5.css" rel="stylesheet"/></head><body><strong>We're sorry but EShop doesn't work properly without JavaScript enabled. Please enable it to continue.</strong><div id="app"></div><script src="local_resources/js/e9129b2cc1c7216b110a9a95b387e2fa.js"></script><script src="local_resources/js/e692717da00c1450d6f268434578578b.js"></script></body></html>

@@ -1,0 +1,2 @@
+User-Agent: *
+Sitemap: https://gzseoseorb.netlify.com/sitemap.xml

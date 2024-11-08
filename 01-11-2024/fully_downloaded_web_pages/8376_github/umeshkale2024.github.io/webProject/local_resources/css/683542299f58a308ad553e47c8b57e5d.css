@@ -1,0 +1,613 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+   background-color: #313131;
+}
+.container{
+    height: 680px;
+    background-image:url("../images/bannerimg.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-bottom: 8px;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 680px;
+    background:rgba(0, 0, 0, 0.65);
+}
+.container *{
+    z-index: 999;
+}
+
+.header{
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.navbar{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+.navbar ul{
+    display: flex;
+
+}
+ul li {
+    list-style-type: none;
+    margin-right: 15px;
+}
+a.btn{
+    text-decoration: none;
+    background-color: #e50914;
+    padding: 5px 16px 7px 16px;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 6px;
+    
+    
+}
+select{
+
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+.drop select{
+    background-color:rgba(0, 0, 0, 0.65);
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+a.btn:hover{
+    background-color: rgb(165, 21, 21);
+    color: rgb(255, 255, 255);
+}
+.logo img{
+    padding: 2rem;
+    height : 2.5rem;
+    width: 8.5rem;
+}
+
+.content-wrapper{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 38%;
+    left: 21%;
+    max-width: calc(100%-3rem);
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 0px;
+}
+
+
+.content-wrapper h1{
+    font-size: 2.8rem;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+    
+
+.content-wrapper p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.content-wrapper-inside .content-m{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-m h3{
+    font-size: 1.3rem;
+    font-weight: 380;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    
+}
+.content-m button span{
+    color: white;
+
+}
+
+form{
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 600px;
+    margin-left: 23px;
+    margin-top: 10px;
+}
+    
+    
+
+form input{
+    width: 65%;
+    gap: 5px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    margin-right: 6px;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    z-index: 999;
+
+}
+
+form button{
+    width: 40%;
+    padding: 13px 20px;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: white;
+    
+}
+form button:hover{
+    background-color: rgb(165, 21, 21);
+    color: white;
+}
+
+button span{
+    font-family: roboto;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+
+
+
+
+/* <!--Middle section --!> */
+
+.middle{
+    background-color: black;
+    height: 580px;
+    margin: auto;
+    color: white;
+    padding: 0px 25px;
+    margin-bottom: 8px;
+}
+    
+    
+.m-content p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.m-img img{
+    width: 530px;
+    z-index: -999;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 5px;
+    position: relative;
+}
+.wrapper h1{
+    font-size: 2.8rem;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+    
+
+.wrapper p{
+    font-size: 1.45rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.vid{
+    position: absolute;
+    left: 682px;
+    top: 142px;
+    width: 385px;
+    mix-blend-mode: exclusion;
+}
+
+.down{
+    background-color: black;
+    height: 550px;
+    width: 100%;
+    margin-left: auto;
+    color: white;
+    padding: 0px 25px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.d-wrapper{
+    width: 1170px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+.d-wrapper h1{
+    font-size: 2.8rem;
+    font-weight: 1000;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.d-wrapper p{
+    font-size: 1.45rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.d-img img{
+    transform: translateY(52px);
+    width: 550px;
+    height: 380px;
+}
+
+.d-bcontent{
+    position: absolute;
+    top: 321px;
+    left: 291px;
+    width: 280px;
+    height: 88px;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid rgb(108, 107, 107);
+}
+.innerContent{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.innerContent h3{
+    font-size: 15px;
+}
+.innerContent span{
+    font-weight: 300;
+}
+.d-1 img{
+    width: 50px;
+    height: 100%;
+    padding-top: 5px;
+}
+.d-2 img{
+    background-color: transparent transparent;
+    height: 50px;
+    width: 50px;
+}
+span{
+    color: blue;
+}
+
+/* footer */
+.footer{
+    background-color: black;
+    height: 560px;
+    width: 100%;
+    margin: auto;
+    color: white;
+    margin-bottom: 8px;
+}
+    
+    
+
+.wrapper-f{
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.f-content p{
+    font-size: 1.45rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.f-content h1{
+    font-size: 2.9rem;
+    font-weight: 1000;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.f-img img{
+    transform: translateY(52px);
+    width: 500px;
+    height: 380px;
+}
+
+.f-img video{
+   position: absolute; 
+   width: 169px;
+   height: 173px;
+   top: 146px;
+   left: 741px;
+   width: 350px;
+   mix-blend-mode: exclusion;
+}
+
+/* footer-1 */
+.footer-1{
+    background-color: black;
+    height: 580px;
+    width: 100%;
+    margin: auto;
+    color: white;
+    padding: 0px 25px;
+    margin-bottom: 8px;
+    
+}
+.f1-wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.f1-content h1{
+    font-size: 2.8rem;
+    font-weight: 1000;
+    margin-bottom: 8px;
+}
+    
+
+.f1-content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.f1-img img{
+    width: 550px;
+    height: 430px;
+    margin-top: 50px;
+}
+
+.accordion{
+    background-color: black;
+    color: white;
+}
+
+.accordion h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 1000;
+    line-height: 1.2;
+    padding-top: 75px;
+    padding-bottom: 20px;
+   
+}
+.accordion-item p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1px;
+}
+.accordion-content p{
+    padding-bottom: 20px;
+}
+.accordion-container{
+    width: 1100px;
+    margin: auto;
+}
+    
+
+
+.accordion-item{
+    margin: 0.5rem 1rem;
+    background-color: #2d2d2d;
+}
+    
+   
+   
+
+.accordion-title{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 1rem 1rem 1rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: ;
+}
+
+.accordion-title:hover{
+    background-color: rgb(62, 61, 61);
+}
+
+.accordion-title::after{
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    font-size: 3.5rem;
+}
+    
+
+.accordion-title.active::after{
+    transform: rotate(-45deg);
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
+}
+    
+    
+
+.accordion-content{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    line-height: 1.5rem;
+    border-top: 2px solid black;
+}
+.accordion-button{
+    width: 1100px;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 9px;
+}
+   
+   
+.accordion-mail{
+    width: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 65px;
+}
+    
+    
+.accordion-mail h3{
+    font-size: 1.3rem;
+    font-weight: 380;
+    line-height: 1.6;
+}
+
+.accordion-mail form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    transform: translateX(-10px);
+    
+}
+.accordion-mail button span{
+    color: white;
+}
+.accordion-mail button:hover{
+    background-color: rgb(165, 21, 21);
+    color: white;
+}
+.d-num a{
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    left: 130px;
+    margin-left: 220px;
+    transform: translateY(100px);
+    color: rgb(157, 156, 156);
+}
+    
+    
+.d-num span{
+  position: absolute;
+  top: 50px;
+  left: 235px;
+  color: rgb(157, 156, 156);
+}
+  
+.contact{
+    background-color: black;
+    color: white;
+    position: relative;
+}
+    
+    
+
+.contact-details{
+    margin-top: 10px;
+    width: 1100px;
+    height: 340px;
+    margin: auto;
+    padding-left: 55px;
+    padding-top: 100px;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+
+    
+    
+}
+.contact-details .col-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 145px;
+}
+.contact-details .col-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 145px;
+}
+.contact-details .col-3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 145px;
+}
+.contact-details .col-4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 145px;
+}
+
+.contacts a{
+    color: rgb(157, 156, 156); 
+}
+.contact-details a{
+    color: rgb(157, 156, 156);
+    padding-bottom: 20px;
+}
+.f-drop1{
+    position: absolute;
+    top: 280px;
+    left: 239px;
+}
+.f-drop1 ul{
+    padding-bottom: 10px;
+}
+.f-drop1 select{
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.f-drop1 span{
+    color: rgb(157, 156, 156);
+}

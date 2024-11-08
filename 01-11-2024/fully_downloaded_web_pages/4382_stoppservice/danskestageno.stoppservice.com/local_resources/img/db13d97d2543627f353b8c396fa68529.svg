@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons-navigation/Next-small/Darkblue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.6666,13.3242667 C0.5046,13.3242667 0.341933333,13.2656 0.213933333,13.1462667 C-0.0560666667,12.8962667 -0.0727333333,12.4749333 0.177266667,12.2042667 L5.31526667,6.65426667 L0.177933333,1.12026667 C-0.0720666667,0.850933333 -0.0567333333,0.428933333 0.213266667,0.178266667 C0.4826,-0.0724 0.903266667,-0.0570666667 1.15526667,0.2136 L6.7126,6.20026667 C6.94993333,6.4556 6.94993333,6.85093333 6.71326667,7.10626667 L1.15593333,13.1109333 C1.0246,13.2529333 0.845933333,13.3242667 0.6666,13.3242667" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-navigation/Next-small/Darkblue">
+            <g id="Icon" transform="translate(8.000000, 5.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#003755" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

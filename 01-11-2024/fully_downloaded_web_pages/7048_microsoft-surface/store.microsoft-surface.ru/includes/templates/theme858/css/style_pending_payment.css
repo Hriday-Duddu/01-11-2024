@@ -1,0 +1,22 @@
+#pendingPayment {
+  font-size: 12px;
+  margin: 8px 0;
+}
+#pendingPayment button {
+  background: #ff0000 none repeat scroll 0 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px;
+  margin: 8px 0 8px 0;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.pending_payment_selected {
+  font-size: 12px;
+}
+.pending_payment_selected_head {
+  font-size: 14px;
+  font-weight: bold;
+}
+

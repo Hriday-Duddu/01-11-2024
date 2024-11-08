@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title> Netflix</title>
+<link href="local_resources/img/e027297ca49f6dd9c81a8f622530941c.png" rel="icon"/>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        
+        body{
+            background-color: black;
+            color: #ffffff;
+            overflow-x: hidden;
+
+        }
+        .bgimage{
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+                url(netflixbg.jpg);
+            
+        }
+        .netflix_universe{
+            background-color: rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: rgb(167, 167, 167);
+            
+        }
+        .netflix_container {
+            margin-top: 10px;
+            margin-bottom: 17%;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+            color: rgb(167, 167, 167);
+            text-align: center;
+
+        }
+        .netflix_inner{
+            margin: 50px;
+        }
+        .netflix_form input {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-color: white;
+            color: rgb(167, 167, 167);
+            padding: 20px;
+            width: 86%;
+            font-size: large;
+            box-shadow: #ffffff;
+            margin-right: 50px;
+        }
+        .netflix_form a:hover{
+            text-decoration: underline;
+        }
+        h1{
+            text-align: left;
+        }
+        button{
+            background-color: red;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            color: white;
+            border: none;
+        }
+        button:hover{
+            background-color: darkred;
+        }
+        .signin button:hover{
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .rem{
+            float: left;
+            text-align: left;
+        }
+        .rem input{
+            display: inline;
+            justify-content: space-between;
+        }
+        .langauge{
+            background-color: rgba(0, 0, 0, 0.1);
+            color: white;
+            padding: 2px;
+            width: 150px;
+        }
+        .end{
+            text-decoration: underline;
+            margin-left: 90px;
+            width: 100%;
+        }
+        table, tr td{
+            margin-left: -100px;
+            border-spacing: 100px 30px;
+            border-collapse: separate;
+        }
+        @media only screen and (max-width:450px){
+            .netflix_universe{
+                width: 400px;
+            }
+            .netflix_container{
+                width: 400px;
+            }
+            .netflix_form :double-button{
+                width: 400px;
+            }
+            
+        }
+        @media(max-width:600px){
+            .end{
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="bgimage">
+<a href="https://www.netflix.com/ng/">
+<img alt="image" height="200px" src="local_resources/img/b2faf4c2af929e39b5edc1eebbf597af.png" width="250px"/>
+</a>
+<div class="netflix_universe">
+<div class="netflix_container">
+<div class="netflix_inner">
+<big> <h1>Sign In</h1></big>
+<br/>
+<div class="netflix_form">
+<form>
+<label for="email or mobile number"></label>
+<input id="Email" placeholder="Email or mobile number" type="text"/>
+<br/> <br/>
+<label for="password"></label>
+<input id="password" placeholder="Password" type="password"/>
+<br/><br/>
+<button type="submit">
+<h3>Sign In</h3>
+</button>
+<br/> <br/>
+<p>OR</p>
+<br/>
+<div class="signin">
+<button style="background-color: rgb(63, 62, 62);" type="submit">
+<h3>Use a Sign-In code</h3>
+</button>
+</div>
+<br/> <br/>
+<a href="#">Forgot password?</a>
+<br/> <br/>
+<div class="rem">
+<input checked="checked" id="remember" name="remember" style="margin-left: -100px;" type="checkbox"/>
+<p>
+                            Remember me
+                          </p>
+<br/> <br/>
+<p>New to Netflix?<a href="https://www.netflix.com/ng/"> Sign Up now.</a></p>
+<br/>
+<h6>This page is protected by Google reCAPTCHA to
+                                <p>ensure you're not a bot. <a style="color: blue;">Learn more</a></p>
+</h6>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div class="end">
+<a href="#">Questions? Contact us.</a>
+<br/> <br/>
+<table>
+<tr>
+<td>FAQ</td>
+<td>Help Center</td>
+<td>Terms of Use</td>
+<td>Privacy</td>
+</tr>
+<tr>
+<td>Cookie Preferences</td>
+<td>Coporate Information</td>
+</tr>
+</table>
+<br/>
+<div class="langauge">
+<select class="langauge">
+<option><h2>English</h2></option>
+<option value="1">French</option>
+<option value="2">Spanish</option>
+<option value="3">Portuguese</option>
+</select>
+</div>
+</div>
+<br/> <br/>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@import url(CSS/header.css);
+@import url(CSS/section.css);
+@import url(CSS/slideshow.css);
+@import url(CSS/footer.css);
+
+:root
+{
+    --Background-color-body: #262626;
+    --Main-font-color: #ffffff;
+    --bt-login: red;
+}
+
+body
+{
+    background-image: url('Recursos/netflix.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    height: 100vh; /* Altura da tela cheia */
+
+}
+
+a
+{
+    text-decoration: none;
+}

@@ -1,0 +1,292 @@
+{
+  "short_name": "Adobe Express",
+  "name": "Adobe Express",
+  "icons": [
+    {
+      "src": "pwaIcons/16x16_v2.ed767bc7e2.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "pwaIcons/20x20_v2.8336b91bcf.png",
+      "type": "image/png",
+      "sizes": "20x20"
+    },
+    {
+      "src": "pwaIcons/24x24_v2.c0df759837.png",
+      "type": "image/png",
+      "sizes": "24x24"
+    },
+    {
+      "src": "pwaIcons/30x30_v2.3e7c053b7e.png",
+      "type": "image/png",
+      "sizes": "30x30"
+    },
+    {
+      "src": "pwaIcons/32x32_v2.5138955908.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "pwaIcons/36x36_v2.877c5f903a.png",
+      "type": "image/png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "pwaIcons/40x40_v2.d4c0363230.png",
+      "type": "image/png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "pwaIcons/44x44_v2.8f66ccda68.png",
+      "type": "image/png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "pwaIcons/48x48_v2.d3570c9bdd.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "pwaIcons/50x50_v2.bbe15aecce.png",
+      "type": "image/png",
+      "sizes": "50x50"
+    },
+    {
+      "src": "pwaIcons/55x55_v2.524a87a351.png",
+      "type": "image/png",
+      "sizes": "55x55"
+    },
+    {
+      "src": "pwaIcons/60x60_v2.806db2b704.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "pwaIcons/63x63_v2.d08fe1bc1a.png",
+      "type": "image/png",
+      "sizes": "63x63"
+    },
+    {
+      "src": "pwaIcons/64x64_v2.5d55196aa1.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "pwaIcons/66x66_v2.23b2085e8e.png",
+      "type": "image/png",
+      "sizes": "66x66"
+    },
+    {
+      "src": "pwaIcons/71x71_v2.9a61c59122.png",
+      "type": "image/png",
+      "sizes": "71x71"
+    },
+    {
+      "src": "pwaIcons/72x72_v2.aa9950d8a8.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "pwaIcons/75x75_v2.02aa59f449.png",
+      "type": "image/png",
+      "sizes": "75x75"
+    },
+    {
+      "src": "pwaIcons/80x80_v2.c53fba12ae.png",
+      "type": "image/png",
+      "sizes": "80x80"
+    },
+    {
+      "src": "pwaIcons/88x88_v2.087f2b6d7b.png",
+      "type": "image/png",
+      "sizes": "88x88"
+    },
+    {
+      "src": "pwaIcons/89x89_v2.85d4b53d26.png",
+      "type": "image/png",
+      "sizes": "89x89"
+    },
+    {
+      "src": "pwaIcons/96x96_v2.d7c1f6dc5b.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "pwaIcons/100x100_v2.ff1c787d9a.png",
+      "type": "image/png",
+      "sizes": "100x100"
+    },
+    {
+      "src": "pwaIcons/107x107_v2.803a0ef3d4.png",
+      "type": "image/png",
+      "sizes": "107x107"
+    },
+    {
+      "src": "pwaIcons/120x120_v2.9f54f157f1.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "pwaIcons/128x128_v2.803c97d7ba.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "pwaIcons/142x142_v2.58620994ed.png",
+      "type": "image/png",
+      "sizes": "142x142"
+    },
+    {
+      "src": "pwaIcons/150x150_v2.6460d2fc3d.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "pwaIcons/152x152_v2.32b9dee4a7.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "pwaIcons/167x167_v2.cbd2ed186b.png",
+      "type": "image/png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "pwaIcons/176x176_v2.0139b888fe.png",
+      "type": "image/png",
+      "sizes": "176x176"
+    },
+    {
+      "src": "pwaIcons/180x180_v2.f59ffa65bf.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "pwaIcons/188x188_v2.baa409bc18.png",
+      "type": "image/png",
+      "sizes": "188x188"
+    },
+    {
+      "src": "pwaIcons/192x192_v2.80dd97d711.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "pwaIcons/200x200_v2.8749edd4fa.png",
+      "type": "image/png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "pwaIcons/225x225_v2.ccecfa80a1.png",
+      "type": "image/png",
+      "sizes": "225x225"
+    },
+    {
+      "src": "pwaIcons/256x256_v2.3cbdfc570b.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "pwaIcons/284x284_v2.1f1c5202eb.png",
+      "type": "image/png",
+      "sizes": "284x284"
+    },
+    {
+      "src": "pwaIcons/300x300_v2.3daf041a4e.png",
+      "type": "image/png",
+      "sizes": "300x300"
+    },
+    {
+      "src": "pwaIcons/310x150_v2.43fd92a710.png",
+      "type": "image/png",
+      "sizes": "310x150"
+    },
+    {
+      "src": "pwaIcons/310x310_v2.bf2aaf27a4.png",
+      "type": "image/png",
+      "sizes": "310x310"
+    },
+    {
+      "src": "pwaIcons/388x188_v2.087e37aec7.png",
+      "type": "image/png",
+      "sizes": "388x188"
+    },
+    {
+      "src": "pwaIcons/388x388_v2.84ae00de1f.png",
+      "type": "image/png",
+      "sizes": "388x388"
+    },
+    {
+      "src": "pwaIcons/465x225_v2.dc1a4832c7.png",
+      "type": "image/png",
+      "sizes": "465x225"
+    },
+    {
+      "src": "pwaIcons/465x465_v2.10f94cef22.png",
+      "type": "image/png",
+      "sizes": "465x465"
+    },
+    {
+      "src": "pwaIcons/512x512_v2.59097b58d9.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "pwaIcons/600x600_v2.6a7e8c71c5.png",
+      "type": "image/png",
+      "sizes": "600x600"
+    },
+    {
+      "src": "pwaIcons/620x300_v2.07df250a40.png",
+      "type": "image/png",
+      "sizes": "620x300"
+    },
+    {
+      "src": "pwaIcons/620x620_v2.1caca5aa8a.png",
+      "type": "image/png",
+      "sizes": "620x620"
+    },
+    {
+      "src": "pwaIcons/775x375_v2.41f9ee3684.png",
+      "type": "image/png",
+      "sizes": "775x375"
+    },
+    {
+      "src": "pwaIcons/930x450_v2.3ef22881bc.png",
+      "type": "image/png",
+      "sizes": "930x450"
+    },
+    {
+      "src": "pwaIcons/1024x1024_v2.4ba146af42.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "pwaIcons/1240x600_v2.c4ce93bbaf.png",
+      "type": "image/png",
+      "sizes": "1240x600"
+    },
+    {
+      "src": "pwaIcons/1240x1240_v2.958e0888c0.png",
+      "type": "image/png",
+      "sizes": "1240x1240"
+    },
+    {
+      "src": "pwaIcons/2480x1200_v2.c7dc9ece59.png",
+      "type": "image/png",
+      "sizes": "2480x1200"
+    }
+  ],
+  "start_url": "/",
+  "id": "/",
+  "background_color": "#ededed",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#5c5ce0",
+  "permissions": [
+    "gcm",
+    "storage"
+  ],
+  "gcm_sender_id": "52216615694"
+}

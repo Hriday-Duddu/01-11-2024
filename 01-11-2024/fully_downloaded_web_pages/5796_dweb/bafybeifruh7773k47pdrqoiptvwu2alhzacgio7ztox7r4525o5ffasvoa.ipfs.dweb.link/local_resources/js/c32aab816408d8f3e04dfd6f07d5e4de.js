@@ -1,0 +1,1 @@
+failed to resolve /ipfs/bafybeifruh7773k47pdrqoiptvwu2alhzacgio7ztox7r4525o5ffasvoa/ipfs/bafybeifruh7773k47pdrqoiptvwu2alhzacgio7ztox7r4525o5ffasvoa/runtime.7c1307fb75f028e9.js: no link named "ipfs" under bafybeifruh7773k47pdrqoiptvwu2alhzacgio7ztox7r4525o5ffasvoa

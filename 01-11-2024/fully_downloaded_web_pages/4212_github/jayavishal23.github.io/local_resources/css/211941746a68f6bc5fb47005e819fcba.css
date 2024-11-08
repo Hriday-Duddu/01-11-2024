@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.features {
+  padding: 10px 10%;
+  margin-top: 30px;
+}
+.cont-main {
+  padding: 10px 10%;
+  margin-top: 30px;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.71)),
+    url(./images/header-image.png);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  width: 95%;
+}
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+nav button {
+  border: 0;
+  outline: 0;
+  background-color: #db0001;
+  color: white;
+  padding: 7px 20px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.language-btn {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 0.5px solid white;
+  padding: 7px 13px;
+}
+
+.arrow-down {
+  width: 10px;
+  margin-left: 10px;
+}
+.header-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 50px;
+  width: 50%;
+}
+.header-content h1 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  max-width: 650px;
+  margin-bottom: 20px;
+}
+.header-content h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.email-signup {
+  background: black;
+  border-radius: 4px;
+  display: flex;
+  align-items: stretch;
+  margin-top: 30px;
+  overflow: hidden;
+  gap: 10px;
+  border-radius: 5px;
+  max-width: 800px;
+}
+.email-signup input {
+  outline: 0;
+  margin-left: 20px;
+  font-size: 18px;
+  flex: 1;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.email-signup button {
+  background-color: #db0001;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.features h2 {
+}
+.feature-buttons-list {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.features-button {
+  background: black;
+  color: white;
+  padding: 10px 10px;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+}
+.feature-images {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  max-width: 1200px;
+  gap: 10px;
+}
+.feature-images::-webkit-scrollbar {
+  display: none;
+}
+.feature-images {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.features-img {
+  height: 250px;
+  flex: 0 0 200px;
+
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.features-img:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.img-1 {
+  background-image: url(./images/1.png);
+}
+.img-2 {
+  background-image: url(./images/2.png);
+}
+.img-3 {
+  background-image: url(./images/3.png);
+}
+.img-4 {
+  background-image: url(./images/4.png);
+}
+.img-5 {
+  background-image: url(./images/5.png);
+}
+.img-6 {
+  background-image: url(./images/6.png);
+}
+.img-7 {
+  background-image: url(./images/7.png);
+}
+.img-8 {
+  background-image: url(./images/8.png);
+}
+.img-9 {
+  background-image: url(./images/9.png);
+}
+
+.reasons-join {
+  margin-top: 50px;
+}
+.reasons-join-sub {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.reason {
+  width: 30%;
+  height: 90%;
+  /* background-image: linear-gradient(
+    rgba(78, 16, 233, 0.302),
+    rgba(82, 2, 59, 0.532)
+  ); */
+  background-image: linear-gradient(
+    rgba(78, 16, 233, 0.302),
+    rgba(217, 48, 169, 0.185)
+  );
+  height: 330px;
+  border-radius: 20px;
+  padding: 30px 20px;
+  margin-bottom: 70px;
+  position: relative;
+}
+.reason h3 {
+  line-height: 30px;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.reason p {
+  color: rgba(255, 255, 255, 0.696);
+}
+.reasons-img {
+  height: 60px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.plus-icon {
+  size: 10px;
+}
+.freq-questions h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.freq-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.que {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(59, 57, 57);
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  max-width: 1200px;
+}
+.que:hover {
+  background-color: rgb(82, 80, 80);
+  transition: all 0.2s ease-in-out;
+}
+.que h4 {
+  font-size: 22px;
+  margin-left: 20px;
+  font-weight: 300;
+}
+.q6-ans {
+}
+.ans {
+  background-color: rgb(59, 57, 57);
+  border-top: 2px solid black;
+  padding: 30px 0px;
+}
+.ans p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+.email-submit {
+  max-width: 1000px;
+}
+.ready-start {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+footer {
+  border-top: 2px solid #5d5a5a;
+  padding-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: rgba(255, 255, 255, 0.497);
+}
+.foot-base {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.foot1 {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+  gap: 20px;
+}
+a {
+  text-decoration: underline;
+}
+.foot-botton {
+  width: 100px;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+  }
+  .logo {
+    width: 100px;
+  }
+  .btns-head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header-content h1 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    font-weight: 800;
+  }
+  .sign1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .header-content h3 {
+    font-size: 16px;
+  }
+  .header-content {
+    width: 70%;
+    margin-top: 0;
+  }
+
+  .email-signup {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .email-signup input {
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+  }
+  .email-signup button {
+    font-size: 18px;
+    padding: 10px 5px;
+    font-weight: 600;
+  }
+  .feature-buttons-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .features-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .reasons-join-sub {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .reason {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .ready-start p {
+    margin-left: 10%;
+    text-align: center;
+    margin-right: 10%;
+  }
+  footer {
+    align-items: center;
+    padding: 0;
+  }
+  .foot1 {
+    align-items: center;
+  }
+  .foot-base {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1030px) {
+  .header-content h1 {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+  .header-content {
+    width: 70%;
+    margin-top: 0;
+  }
+
+  .email-signup {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1.5fr 1fr;
+    margin: 20px 20px;
+  }
+  .email-signup input {
+    padding: 0;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .email-signup button {
+    font-size: 20px;
+    padding: 10px 5px;
+    font-weight: 600;
+  }
+  .reasons-join-sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .reason {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .foot-base {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+  }
+  footer {
+    align-items: center;
+  }
+}

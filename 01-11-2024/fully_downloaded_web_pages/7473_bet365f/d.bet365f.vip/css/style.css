@@ -1,0 +1,477 @@
+﻿@charset "gb2312";
+/* CSS Document */
+body{position:relative;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,font{padding:0; margin: 0; font-family: "Microsoft Yahei", "Microsoft YaHei", Arial, Helvetica, sans-serif;}
+table{border-collapse:collapse; border-spacing:0; width:100%;}
+body{overflow-x: hidden;}
+fieldset,img{border:0; vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-weight:normal; font-size:100%;}
+ol,ul,li,dl,dt,dd{list-style:none;}
+input,button,textarea,checkbox,select,radio,form{vertical-align: top;}
+input{border:0; background:none}
+a{color:#313030; text-decoration:none;}
+a:link,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+.hh {
+ color:#ffffff;
+ 
+}
+.hh:hover {
+ color:#fdef2f;
+}
+.lk {
+ color:#ffffff;font-size : 10px
+}
+.lk:hover {
+ color:#fdef2f;
+}
+.hezuo{
+	color:#efd45e;font-size :10px; 
+}
+.hezuo:hover{
+	color:#FFF;
+}
+.zaixian{
+	color:#00ffc0;font-size : 10px; 
+}
+.zaixian:hover{
+	color:#FFF;
+}
+.guanggao:hover{
+	color:#FFF;}
+
+.red,.red a{color:#e70000;}
+.left,.float_left{float:left;}
+.ht20{height:20px;}
+.ht14{height:14px;}
+.right,.float_right{float:right;}
+.autohei{overflow:hidden; zoom:1;}
+.clear{font-size:0; line-height:0; clear:both; overflow:hidden; zoom:1;margin-top: 0!important;margin-bottom: 0!important;}
+.blank{height:10px; font-size:0; line-height:0; clear:both; overflow:hidden;}
+.blank15{height:15px; font-size:0; line-height:0; clear:both; overflow:hidden;}
+.auto{width:1000px;margin:0 auto;overflow:hidden;}
+em,i{font-style: normal}
+font{font-size:16px;}
+.br{border:1px solid #ccc;}
+.abc{padding:0 10px}
+img{max-width: 100%;}
+.relative{position:relative}
+.absolute{position:absolute}
+.clearfix{zoom: 1;}
+.huang{color: #ff8c40;}
+.wrapper{
+width:100%;
+height:1106px;
+background:#000F2D url(../images/bg.jpg)
+}
+.header{width:1000px;margin:0 auto;height:32px;color:#fff;font-size:13px;line-height:32px;}
+.header_l{float:left;}
+.header_r{float:right;}
+.header_r ul{display: -webkit-flex;
+    -webkit-justify-content: space-around;height: 32px;
+    align-items: center;}
+.header_r ul li{border-right: 1px solid #2a7460;
+    text-align: center;
+    
+    height: 20px;
+    line-height: 20px;}
+	.header_r ul a:nth-child(1) li{width:124px;color:#ffdc7e;}
+		.header_r ul a:nth-child(2) li{width:84px;color:#fff;}
+			.header_r ul a:nth-child(3) li{width:214px;color:#fbec00;}
+				.header_r ul a:nth-child(4) li{width:84px;color:#00ffc0;border-right:0;}
+				
+.bet {
+    width: 1000px;
+    margin: 0 auto;
+    height: 128px;
+	margin-bottom: 28px;
+}
+
+.bet_l {
+    float: left;
+	width: 300px;
+}
+
+.bet_r {
+	float: right;
+	margin-right:-65px;
+}
+.bet img{margin-top: 15px;}
+.bet img+img{float: right;margin-top:0px;}
+.bet_r img{margin-top: 35px;margin-left:15px;}
+.dh {
+    width: 1000px;
+    margin: 0 auto;
+    height: 381px;
+    background: url(../images/nav.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.xinxi{ width: 970px;height:53px;
+    margin: 0 auto;font-size:16px;line-height:70px;color:#fff;}
+	.xinxi span {
+    color: #fff100;
+    float: left;
+    margin-left: 18px;
+}
+	
+	
+	.content{width:1000px;margin:0 auto;}
+	.content_l{float:left;width:600px;}
+	.content_l ul li {width:600px;height:100px;line-height:100px;font-size:18px;}
+	.content_l ul li div{width:419px;height:100px;line-height:93px;font-size:18px;color:#fff;    float: left;}
+	
+	.content_l ul li span{   
+    width: 71px;
+    margin-left: 52px;
+    display: inline-block;}
+	.content_l ul li  p{float: right;
+    margin-right: 16px;}
+	.content_l ul li div+div {
+    width: 96px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 83px;
+    /* margin-bottom: 51px; */
+    margin-top: 22px;
+}
+.content_l ul li div+div img{margin-left: 49px;
+    margin-top: 15px;}
+	
+	.bocai{width:1000px;margin:0 auto;}
+	.bocai img:nth-child(1){margin-left:116px;margin-top: 20px;}
+	.bocai img:nth-child(2){    margin-top: 10px;
+    margin-left: 80px;}
+	
+	.bocai a img:nth-child(1){
+	margin-left: 185px;
+    margin-top: -90px;}
+.dbbg {
+	width: 70%;
+    min-width: 1000px;
+    margin: 0 auto;
+    background: url(../images/dbbg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+	
+	
+.footer {
+    width:1060px;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 11rem;
+    color: #fff;
+    text-align: center;
+	
+}
+	.footer ul{
+width: 1000px;
+    margin-left: 290px;
+    margin-top: 18px;}
+
+ 	.footer ul li {
+    float: left;
+    /* width: 78px; */
+    height: 18px;
+    border-right: 1px solid #fff;
+    margin-bottom:38px;
+    padding: 0px 4px;
+    color: #fff;
+}
+		.footer ul a:nth-child(6) li {border-right:0px;}
+		
+		
+/*切换效果*/
+.zhongjiang{margin-top: -16px;
+    margin-left: 1px;}
+.zhongjiang li {
+
+    line-height: 40px;
+    margin-bottom: 10px!important;
+}
+
+.roll-wrap{height:186px;overflow:hidden;}
+
+.remen{margin-top:-3px;margin-left: 10px;}
+.content_r{float:left;}
+.case_box {
+	
+	height: 300px;
+	width:345px;
+	overflow:hidden;
+	margin-left: 32px;
+	
+}
+
+.case_box h3 {
+	color: #081232;
+	font-weight: normal;
+	font-size: 42px;
+	padding-top: 80px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.case_box .category ul{
+display: flex;
+align-items: flex-end;}
+
+.case_box .category ul li {
+	float: left;
+	
+	text-align: center;
+	width: 118px;
+	height: 45px;
+	line-height: 64px;
+	color: #fff;
+    font-size:18px;
+	
+	margin-right:3px;
+}
+
+.case_box .category ul li.active {
+    color: #fdef2f;
+}
+.case_box .category ul li.active:hover {
+	cursor:pointer
+}
+
+
+.case_box .content {
+	padding-left: 50px;
+}
+.content111 ul{padding-top: 39px;}
+.content111 ul:hover{cursor:pointer;
+}
+.case_box .content111 .cont {
+	height: 650px;
+	display: none;
+	margin-top: -23px;
+	
+}
+
+.case_box .content111 .cont.active {
+	display: block;
+}
+
+.case_box .content111 .cont img.bg {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.case_box .content111 .cont .info {
+	position: absolute;
+	width: 520px;
+	height: 340px;
+	background: #fff;
+	box-shadow: 0px 0px 70px rgba(157, 179, 208, 0.4);
+	left: 0;
+	top: 120px;
+	padding: 50px 40px 0;
+	border-radius: 10px;
+}
+.content111 ul li {
+    color: #fff000;
+    line-height: 44px;
+    border-bottom: 1px solid #097958;
+    width: 90%;
+    margin: 0 auto;
+    height: 44px;
+}
+
+.case_box .content111 .cont .info .title .logo {
+	float: left;
+	padding-right: 25px;
+}
+
+.case_box .content111 .cont .info .title:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+
+.case_box .content111 .cont .info .title h4 {
+	float: left;
+	padding-top: 30px;
+	font-size: 24px;
+	color: #081232;
+}
+
+.case_box .content111 .cont .info p {
+	font-size: 16px;
+	line-height: 32px;
+	padding-top: 30px;
+	color: #828b9f;
+}
+
+.zuoce{left:0px;}
+.youce{right:0px;}
+.dingwei{position:fixed;top:150px;}
+
+.money {
+    width: 25%;
+    float: left;
+    margin-left: 1%;
+}
+	
+.name {
+    width: 35%;
+    float: left;
+    margin-left: 2%;
+}
+
+.id {
+    width: 33%;
+    float: left;
+    margin: 0 1%;
+}
+
+
+        .infoBox{ width:100%; height: 2350px; overflow: hidden;}
+        .list-group{ margin-bottom: 0; border-radius:0;}
+        .list-group li{  border-radius:0 !important; }
+        .list-group li:last-child{  border-bottom:0 !important; }
+
+		
+.list {
+	margin-bottom: 16px;
+	margin-top: 30px;
+	height:70px;
+	line-height: 36px;
+	overflow: hidden;
+	zoom: 1;
+	clear: both;
+	    margin-left: 45px;
+}
+.input1 {
+	float: left;
+	width: 110px;
+	height: 40px;
+	font-size: 12px;
+	font-family: "Arial";
+	line-height: 33px;
+	text-align: center;
+	margin-right: 12px;
+	color: #fff;
+	background: #055c43;
+	border: 1px solid #21c999;
+	outline: none;
+}
+.input2 {
+	display: block;
+	float: left;
+	padding-left: 20px;
+	margin-right: 10px;
+	width:240px;
+	height:40px;
+	line-height: 33px;
+  	font-size: 14px;
+ 	 font-family: "Arial";
+	text-align: left;
+	color: #fff;
+	background: #055c43;
+	border: 1px solid #21c999;
+	outline: none;
+}
+.list .img {
+	float: left;
+	line-height: 33px;
+	vertical-align: top;
+	margin: 12px 8px 0 0;
+}
+.list .img img {
+	display: block
+}
+.open {
+	display: block;
+	float: left;
+	width: 110px;
+	height:40px;
+	line-height: 41px;
+  	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background: #056b4e;
+	border: 1px solid #21c999;
+	text-decoration: none;
+	outline: none;
+	
+}
+.open:hover {
+	color: #272201;
+	background-color:#FFE74F;
+	border: 1px solid #FFE74F;
+}
+
+
+        #mooc {
+            width: 399px;
+            border: 5px solid #ababab;
+            -moz-border-radius: 15px;      /* Gecko browsers */
+            -webkit-border-radius: 15px;   /* Webkit browsers */
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px #ababab;
+            margin: 50px auto 0;
+            text-align: left;               /* 让新闻内容靠左 */
+        }
+        /*  头部样式 */
+        #moocTitle {
+            height: 62px;
+            overflow: hidden;  /* 这个一定要加上，内容超出的部分要隐藏，免得撑高头部 */
+            font-size: 26px;
+            line-height: 62px;
+            padding-left: 30px;
+            background-image: -moz-linear-gradient(top, #f05e6f, #c9394a); /* Firefox */
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f05e6f), color-stop(1, #c9394a)); /* Saf4+, Chrome */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8fa1ff', endColorstr='#f05e6f', GradientType='0'); /* IE*/
+            border: 1px solid #f05e6f;
+            -moz-border-radius: 8px 8px 0 0;      /* Gecko browsers */
+            -webkit-border-radius: 8px 8px 0 0;   /* Webkit browsers */
+            border-radius: 8px 8px 0 0;
+            color: #fff;
+            position: relative;
+        }
+        #moocTitle a {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            display: inline;
+            color: #fff;
+            font-size: 12px;
+            line-height: 24px;
+        }
+        /*  底部样式 */
+        #moocBot {
+            width: 399px;
+            height: 10px;
+            overflow: hidden;     /* 这个一定要加上，内容超出的部分要隐藏，免得撑高底部结构 */
+        }
+        /*  中间样式 */
+        #moocBox {
+            height: 200px;
+            width: 335px;
+            overflow: hidden;    /*  这个一定要加，超出的内容部分要隐藏，免得撑高中间部分 */
+        }
+        #mooc ul li {
+            height: 24px;
+        }
+        #mooc ul li a {
+            width: 180px;
+            float: left;
+            display: block;
+            overflow: hidden;
+            text-indent: 15px;
+            height: 24px;
+        }
+        #mooc ul li span {
+            float: right;
+            color: #999;
+        }

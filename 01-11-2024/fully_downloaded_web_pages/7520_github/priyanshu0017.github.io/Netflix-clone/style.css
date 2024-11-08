@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.maincontainer {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(./IN-en-20240715-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c6d6616f-4478-4ac2-bdac-f54b444771dd_small.jpg);
+    padding-inline: 170px;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 8px solid rgb(50, 47, 47);
+}
+
+.navbar {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.nav1 {
+    height: auto;
+    width: 50%;
+}
+
+.nav2 {
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.nav1 img {
+    width: 27%;
+}
+
+.nav2 button {
+    height: 32px;
+    width: 120px;
+    border-radius: 5px;
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+    border: 2px solid gray;
+}
+
+.nav2 #b2 {
+    width: 90px;
+    background-color: red;
+    border: none;
+}
+
+.mainblock {
+    width: 100%;
+    height: 620px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.mainblock h1 {
+    font-size: 50px;
+    font-weight: 1000px;
+}
+
+.mainblock p {
+    font-size: 25px;
+}
+
+.mainblock p2 {
+    font-size: 20px;
+}
+
+.sign {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign input {
+    height: 58px;
+    width: 350px;
+    background: rgba(18, 18, 18, 0.8);
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: grey;
+}
+
+.sign button {
+    height: 58px;
+    width: 220px;
+    font-size: 25px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+input::placeholder {
+    color: rgb(194, 192, 192);
+}
+
+.mainblock p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mainblock p2 {
+    margin-bottom: 20px;
+}
+
+.tvsection {
+    width: 100%;
+    height: 585px;
+    background-color: black;
+    border-bottom: 8px solid rgb(50, 47, 47);
+    display: flex;
+}
+
+.textsection {
+    width: 50%;
+    height: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-inline: 20px;
+}
+
+.text h1 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.text p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.imgsection {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.imgsection video {
+    width: 54%;
+    position: relative;
+    right: 487px;
+    bottom: 8px;
+    z-index: 2;
+}
+
+.imgsection img {
+    width: 75%;
+    z-index: 3;
+}
+
+.tvsection2 {
+    width: 100%;
+    height: 585px;
+    background-color: black;
+    border-bottom: 8px solid rgb(50, 47, 47);
+    display: flex;
+}
+
+.textsection2 {
+    width: 50%;
+    height: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.imgsection2 {
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.imgsection2 img {
+    width: 75%;
+}
+
+.imgbox {
+    height: auto;
+    width: 40%;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    bottom: 130px;
+    right: 130px;
+}
+
+.imgbox img {
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.imgbox p {
+    color: blue;
+    font-size: 0.8em;
+    margin-right: 45px;
+    margin-left: 15px;
+}
+
+.imgbox h3 {
+    font-size: 0.8em;
+    margin-right: 45px;
+    margin-left: 15px;
+}
+
+.tvsection3 {
+    width: 100%;
+    height: 585px;
+    background-color: black;
+    border-bottom: 8px solid rgb(50, 47, 47);
+    display: flex;
+}
+
+.textsection3 {
+    height: auto;
+    width: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-inline: 70px;
+}
+
+.imgsection3 {
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.imgsection3 img {
+    width: 75%;
+    position: relative;
+    z-index: 3;
+}
+
+.imgsection3 video {
+    width: 47%;
+    position: relative;
+    bottom: 68px;
+    right: 465px;
+    z-index: 2;
+}
+
+.tvsection4 {
+    width: 100%;
+    height: 585px;
+    background-color: black;
+    border-bottom: 8px solid rgb(50, 47, 47);
+    display: flex;
+}
+
+.imgsection4 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.textsection4 {
+    width: 50%;
+    height: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.faqsection{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border-bottom: 8px solid rgb(50, 47, 47);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 80px;
+}
+
+#h1{
+    font-size: 3em;
+    
+}
+
+.faqbox{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 60px;
+}
+
+.box{
+    height: 90px;
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(37, 36, 36);
+    margin-top: 10px;
+    padding-inline: 25px;
+}
+
+.box i{
+    font-size: 4em;
+    font-weight: 200;
+}
+
+.box p{
+    font-size: 25px;
+}
+
+#p1{
+    font-size: 1.2em;
+}
+
+.btnsec {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.btnsec input {
+    height: 58px;
+    width: 350px;
+    background: rgba(18, 18, 18, 0.8);
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: gray;
+}
+
+.btnsec button {
+    height: 58px;
+    width: 220px;
+    font-size: 25px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+input::placeholder {
+    color: rgb(194, 192, 192);
+}
+
+.finalpart{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-block: 80px;
+    color: gray;
+    font-size: 0.9em;
+}
+
+#p55{
+    margin-left: 173px;
+}
+
+.list{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    padding-inline: 80px;
+    padding-right: 200px;
+}
+
+.list1{
+    display: flex;
+    flex-direction: column;
+}
+
+.list1 a{
+    color: gray;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+.list1 button{
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(38, 36, 36, 0.815);
+    border: 1px solid gray;
+    height: 28px;
+    border-radius: 5%;
+}
+
+.list1 p{
+    margin-top: 20px;
+    color: gray;
+    font-size: 0.9em;
+}
+
+.list2{
+    display: flex;
+    flex-direction: column;
+}
+
+.list2 a{
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: gray;
+}
+
+.list3{
+    display: flex;
+    flex-direction: column;
+}
+.list3 a{
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: gray;
+}
+
+
+.list4{
+    display: flex;
+    flex-direction: column;
+}
+
+.list4 a{
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: gray;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .maincontainer {
+        height: 100vh;
+        width: 100%;
+        padding-inline: 50px;
+    }
+
+    .mainblock h1 {
+        font-size: 29px;
+    }
+
+    .mainblock p {
+        font-size: 20px;
+    }
+
+    .mainblock #p22 {
+        font-size: 15px;
+    }
+
+    .sign input {
+        width: 220px;
+    }
+
+    .sign button {
+        font-size: 15px;
+        width: 150px;
+    }
+}
+
+@media (max-width:480px) {
+    .maincontainer {
+        width: 100%;
+        height: 100vh;
+        padding-inline: 30px;
+    }
+
+    .nav1 img {
+        width: 55%;
+    }
+
+    .mainblock {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .mainblock h1 {
+        font-size: 2em;
+        width: 100%;
+    }
+
+    .mainblock p {
+        font-size: 1.4em;
+    }
+
+    .mainblock #p22 {
+        font-size: 1.2em;
+    }
+
+    .sign {
+        flex-direction: column;
+    }
+
+    .sign input {
+        width: 300px;
+    }
+
+    .sign button {
+        font-size: 1em;
+        width: 180px;
+    }
+}

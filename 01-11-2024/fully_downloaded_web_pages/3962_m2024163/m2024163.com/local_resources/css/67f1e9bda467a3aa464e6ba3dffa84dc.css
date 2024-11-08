@@ -1,0 +1,44 @@
+.progress-module_progress__xI1pF {
+    background: #ebebeb;
+    border-radius: 4px;
+    height: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.progresstip-module_progressTip__eNJVs {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: space-between;
+    line-height: 22px;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.progresstip-module_sizeTip__XoZrA {
+    color: #9095a2;
+}
+
+.progresstip-module_received__DB-Hu {
+    color: #595959;
+}
+
+.progresstip-module_errorTip__sWmmI {
+    color: #ec4444;
+}
+
+.progresstip-module_successTip__t8dQP {
+    align-items: center;
+    color: #14b360;
+    display: flex;
+}
+
+.progresstip-module_successTip__t8dQP svg {
+    margin-right: 6px;
+}
+
+.progresstip-module_isPayTip__BnuSz {
+    color: #b88550;
+}

@@ -1,0 +1,9 @@
+<?php
+    require_once "binom.php";
+?>
+
+<?php
+header('Content-Type: image/svg+xml');
+?>
+<svg xmlns="http://www.w3.org/2000/svg"></svg>
+

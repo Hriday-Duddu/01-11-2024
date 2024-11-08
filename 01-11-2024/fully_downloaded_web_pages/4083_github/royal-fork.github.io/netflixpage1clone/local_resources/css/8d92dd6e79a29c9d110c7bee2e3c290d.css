@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    height: 100vh; /* Change height to fill the viewport height */
+    width: 100vw;  /* Change width to fill the viewport width */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./netflix-img/images/header-image.png);
+    background-size: cover;  /* Ensures the image covers the entire header */
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor:pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+
+}
+.language-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+.header-c{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-c h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-size: 60px;
+}
+.header-c h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.email-signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    overflow: hidden;
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-signup button {
+    background: #db0001; /* Red background */
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px; /* Increase font size for better visibility */
+    cursor: pointer;
+    padding: 15px 40px; /* Increased padding for height and width */
+    border-radius: 4px; /* Rounded corners */
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+.email-signup button:hover {
+    background: #b20001; /* Darker shade on hover */
+}

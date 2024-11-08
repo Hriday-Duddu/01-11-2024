@@ -1,0 +1,34 @@
+/** @generated -- This file is automatically synced from @dropbox/dig-illustrations@3.5.3. DO NOT MODIFY! **/
+
+/**
+  This file should not be imported into your CSS or SASS files - the CSS variables will be available on the page for you to use.
+  DO NOT USE THIS FILE OR THE CSS VARIABLE TOKENS WITHOUT FIRST TALKING TO THE DESIGN SYSTEMS ON-CALL (SEE #design-systems ON SLACK)
+**/
+
+/* vanilla-extract-css-ns:src/index.css.ts.vanilla.css?source=OnJvb3QsIC5kaWctVGhlbWUtLWJyaWdodCB7CiAgLS1jb2xvcl9faWxsdXN0cmF0aW9uX19pbnZlcnNlX19keW5hbWljbGluZTogdmFyKC0tZGlnLWNvbG9yX19pbGx1c3RyYXRpb25fX2R5bmFtaWMtbGluZSk7CiAgLS1jb2xvcl9faWxsdXN0cmF0aW9uX19saWdodGxpbmU6ICNmN2Y1ZjI7Cn0KLmRpZy1UaGVtZS0tZGFyayB7CiAgLS1jb2xvcl9faWxsdXN0cmF0aW9uX19pbnZlcnNlX19keW5hbWljbGluZTogIzFlMTkxOTsKfQouZGlnLTEzb3I0bXIwXzMtNS0zIHsKICBjb2xvcjogdmFyKC0tZGlnLWNvbG9yX19pbGx1c3RyYXRpb25fX2R5bmFtaWMtbGluZSk7CiAgaGVpZ2h0OiAxMDAlOwogIHdpZHRoOiAxMDAlOwogIG1pbi1oZWlnaHQ6IDY0cHg7Cn0KLmRpZy0xM29yNG1yMV8zLTUtMyB7CiAgY29sb3I6IHZhcigtLWRpZy1jb2xvcl9faWxsdXN0cmF0aW9uX19keW5hbWljLWxpbmUpOwogIGhlaWdodDogMTAwJTsKICB3aWR0aDogMTAwJTsKICBtaW4taGVpZ2h0OiAyMDBweDsKfQouZGlnLTEzb3I0bXIyXzMtNS0zIHsKICBjb2xvcjogdmFyKC0tZGlnLWNvbG9yX19pbGx1c3RyYXRpb25fX2R5bmFtaWMtbGluZSk7CiAgaGVpZ2h0OiAxMDAlOwogIHdpZHRoOiAxMDAlOwogIG1pbi1oZWlnaHQ6IDMzOHB4Owp9 */
+:root,
+.dig-Theme--bright {
+  --color__illustration__inverse__dynamicline: var(--dig-color__illustration__dynamic-line);
+  --color__illustration__lightline: #f7f5f2;
+}
+.dig-Theme--dark {
+  --color__illustration__inverse__dynamicline: #1e1919;
+}
+.dig-13or4mr0_3-5-3 {
+  color: var(--dig-color__illustration__dynamic-line);
+  height: 100%;
+  width: 100%;
+  min-height: 64px;
+}
+.dig-13or4mr1_3-5-3 {
+  color: var(--dig-color__illustration__dynamic-line);
+  height: 100%;
+  width: 100%;
+  min-height: 200px;
+}
+.dig-13or4mr2_3-5-3 {
+  color: var(--dig-color__illustration__dynamic-line);
+  height: 100%;
+  width: 100%;
+  min-height: 338px;
+}

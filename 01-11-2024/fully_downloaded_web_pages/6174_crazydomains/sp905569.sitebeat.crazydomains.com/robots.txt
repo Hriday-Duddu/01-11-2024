@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:  
+Sitemap: http://sp905569.sitebeat.crazydomains.com/sitemap.xml

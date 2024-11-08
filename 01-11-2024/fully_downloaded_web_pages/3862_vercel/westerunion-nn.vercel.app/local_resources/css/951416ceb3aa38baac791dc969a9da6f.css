@@ -1,0 +1,59 @@
+*{
+    font-family: RobotoRegular;
+}
+.yellow{
+    color:#ffc300
+}
+.bg-yellow{
+    background: #FFDD00;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+input::placeholder {
+    color: rgba(49, 49, 49, 0.763);
+  }
+input{
+    background: rgba(242, 241, 241, 0.097);
+   
+}
+
+input:focus{
+    border-bottom: 1px solid rgba(107 114 128  0.866)
+
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.footer-border{
+    border-bottom: 0.1px solid #666666;
+}
+
+
+.menu-item:hover{
+    border-bottom: #d0b400 solid 3px;
+}
+.ulmenu:hover li {
+    background-color: white !important;
+  }
+
+  #langbutton:hover .path{
+    color: white !important;
+    
+  }
+
+  .model{
+    background-color: rgba(0, 0, 0, 0.497);
+    width: 100%;
+    height: 120vh;
+     justify-content: center;
+     align-items: center;
+  }
+  .text-sm2 {
+    font-size: 0.975rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+}

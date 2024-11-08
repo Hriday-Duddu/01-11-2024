@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+body {
+  height: 100vh;
+ 
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+
+.navbar .nav-link:hover {
+    color: red;
+  }
+.fa-bars {
+  color: #007bff;
+  font-size: 30px;
+}
+
+.bg-dark{
+    background: linear-gradient(
+        90deg, #fc0, rgb(255, 218, 71) 48%, #f7e8ac 70%, #fff0b2);
+}
+
+
+#mysection{
+  background-image: url("./files/img/backk.jpg");
+  
+  background:#ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  background-size: cover;
+}
+.section {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .carousel-item {
+    max-height: 80vh;
+   
+  }
+   .carousel-item.active {
+    min-height: 200px;
+   }
+  .carousel-item img {
+      
+      min-height: 250px;
+     
+  }
+  .row{
+      text-align: center;
+  }
+.card-title {
+    justify-content: end;
+    
+}
+
+div.alert {
+    margin-top: 15px;
+    text-align: left;
+    background: #ffbd0a;
+  
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-family: roboto_condensedregular, Helvetica, Arial, sans-serif;
+}
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}/*
+.alert-dismissable, .alert-dismissible {
+    padding-right: 30px;
+    
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+*/
+.alert p{
+  
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+-------------------------------------------------- */
+/*indicator arrow background*/
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  } 
+ 
+}
+@media (max-width: 400px) {
+ 
+}
+.bg-lon{
+  background-color: #ffcc00;
+}
+.dolard{
+  color: #ff0000;
+  font-weight: bolder;
+}

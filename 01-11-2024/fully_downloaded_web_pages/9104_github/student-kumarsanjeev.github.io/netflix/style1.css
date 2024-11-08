@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("home.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.60;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 80px;
+}
+
+nav img {
+    width: 130px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.cont {
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.cont> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.cont> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.cont> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.seprate {
+    height: 7px;
+    background-color: rgb(48, 45, 45);
+}
+
+.btn {
+    padding: 7px 12px;
+    font-weight: bold;
+    background-color: rgba(235, 219, 219, 0.178);
+}
+
+.btn-red-s {
+    background-color: red;
+    color: white;
+}
+.btn-red-s:hover{
+    background-color: rgb(197, 46, 46);
+    color: white;
+    transition: 0.5s ease-in;
+}
+.btn-red-g {
+    background-color: rgb(180, 25, 25);
+    color: white;
+    border-radius: 7px;
+    padding: 17px 55px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-red-g:hover{
+    background-color: rgb(145, 21, 21);
+    color: white;
+    transition: 0.5s ease-in;
+}
+
+.btn-black {
+    border: 1px solid white;
+    background-color: rgba(23, 23, 23, 0.596);
+    color: white;
+    width: 120px;
+}
+
+.form-in {
+    padding: 19px 55px;
+    align-items: left;
+    font-size: 15px;
+    background-color: rgba(23, 23, 23, 0.596);
+    border: 1px solid rgba(209, 203, 203, 0.596);
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.cont-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    max-height: 80vh;
+    margin: auto;
+    color: white;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.frimg {
+    position: relative;
+}
+
+.frimg img {
+    width: 50vw;
+    position: absolute;
+    z-index: 10;
+}
+
+.frimg video {
+    top: 50px;
+    left: 0;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.first div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first div :nth-child(1) {
+    top: 20px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.first div :nth-child(2) {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'T';
+    margin-top: 10px;
+}
+
+.second {
+    margin-top: 250px;
+}
+
+.sec1 {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.third {
+    margin-top: 250px;
+}
+
+.third1 {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.fquestion {
+    color: white;
+    margin-top: 180px;
+    text-align: center;
+    padding: 34px;
+
+}
+
+.fbox {
+    display: flex;
+    background-color: rgba(116, 105, 105, 0.411);
+    padding: 12px;
+    max-width: 70vw;
+    margin: 34px auto;
+    justify-content: space-between;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;  
+    border:1ps solid rgba(177, 165, 165, 0.411);
+    border-radius: 4px;
+}
+.fbox:hover{
+   background-color: rgba(212, 200, 200, 0.404);
+   transition: 0.5s ease-in-out;
+}
+.bot-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.bot-in {
+    padding: 12px 49px;
+    align-items: left;
+    font-size: 15px;
+    background-color: rgba(23, 23, 23, 0.596);
+    border: 1px solid rgba(209, 203, 203, 0.596);
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+.bot-red-g{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 11px 49px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.bot-red-g:hover{
+    background-color: rgb(99, 10, 10);
+    color: white;
+    transition: 0.5s ease-in;
+}
+.bot-btn :first-child{
+    color: white;
+    display: block;
+}
+.h{
+    color: white;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+footer{
+   
+    color: white;
+    margin: 15px 14vw;
+    align-items: center;
+}
+.gap{
+    margin-top: 100px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 70vw;
+    margin: auto;
+}
+.footer a{
+    color: white;
+    text-decoration: underline;
+    margin: 4px;
+    font-size: 12px;
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}

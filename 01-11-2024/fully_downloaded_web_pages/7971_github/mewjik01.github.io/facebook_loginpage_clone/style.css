@@ -1,0 +1,48 @@
+body{
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;}
+.box2{
+    border: 2px solid black ;
+    border-radius: 20px;
+    height: 600px;
+    width: 600px;}
+.box1{
+height: 600px;
+width: 600px;}
+.heading1{
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 80px;
+    margin-top: 50px;}
+img{
+    width: 30px;
+}
+input{
+    width: 400px ;
+    margin-left: 80px ;
+    border: 1px solid black ;
+    border-radius: 20px;
+    height: 40px;}
+a{
+    margin-left: 190px ;
+    text-decoration: none;
+    color: blue;}
+.login{
+    background-color: blue;
+    color: white;}
+.newaccount{
+    background-color: green ;
+    color: white;}
+.heading2{
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 200px;
+    font-size:90px;
+    font-weight: 500;}
+.smaller{
+    font-size: 40px;
+    margin-left: 30px;
+    padding-top: 0px;
+}

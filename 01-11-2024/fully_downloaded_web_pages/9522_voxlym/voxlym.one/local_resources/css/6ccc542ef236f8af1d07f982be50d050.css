@@ -1,0 +1,215 @@
+
+.wrap-center-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap column;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .modal-window {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%) scale(0.9);
+    width: 520px;
+    max-width: 95%;
+    min-height: 200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 4px;
+    transition: all 0.18s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .modal-window.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal-window__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 100%;
+    min-height: inherit;
+  }
+  .modal-window__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+
+.phone-eror-mess {
+    display: block;
+    line-height: 2em;
+    background-color: red;
+    text-align: center;
+    color: #fff
+}
+
+.form-input-main {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-input-main input,
+.form-input-main select {
+    font-family: 'Inter', sans-serif;
+    height: 42px;
+    width: 100%;
+    padding-left: 10px;
+    border: 1px solid #000;
+    background: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+}
+
+.form-input-main select {
+    margin: 0;
+    width: 100%;
+}
+
+.form-input-main input::placeholder,
+.form-input-main select::placeholder {
+    color: #000;
+}
+
+.form-header-text,
+.form-footer-text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-header-text {
+    margin-bottom: 20px;
+}
+
+.form-footer-text {
+    margin-top: 20px;
+}
+
+.form-input-main label[for="nationality"] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-input-main label[for="policy"] {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-input-main label[for="age"] {
+    font-size: 14px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.form-input-main input[name="policy"] {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.submit_btn {
+    border-radius: 21px;
+    -moz-border-radius: 21px;
+    -ms-border-radius: 21px;
+    -o-border-radius: 21px;
+    border-radius: 21px;
+    text-align: center;
+    text-transform: none;
+    background: #51a351;
+    color: #fff;
+    transition: opacity .2s ease-out;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    height: 53px;
+    width: 304px;
+    color: #FFFFFF;
+    border: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type=tel],
+.iti--allow-dropdown input[type=text],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type=tel],
+.iti--separate-dial-code input[type=text] {
+    width: 100%;
+
+}
+
+.user--name.show,
+.user--email.show,
+.user--phone.show {
+    display: block;
+    margin-left: auto;
+    margin: 20px 40px;
+    max-width: 400px;
+    margin-left: auto;
+    background-color: #e5e5e5;
+    padding: 20px;
+    border-radius: 20px 0px 20px 20px;
+    filter: drop-shadow(2px 3px 1px rgba(0, 0, 0, 0.2));
+}
+
+.button--user {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #51a351;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: auto;
+    border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .chat {
+        margin: 15px;
+    }
+    .user--name.show,
+    .user--email.show,
+    .user--phone.show {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    .chat-content-list {
+        margin: 0;
+    }
+}

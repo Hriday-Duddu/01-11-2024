@@ -1,0 +1,319 @@
+/* --- 模态窗口基本样式 --- */
+
+/* 背景模糊效果 */
+.modal-backdrop.show {
+    opacity: 0.6;
+    backdrop-filter: blur(3px);
+}
+
+/* 模态框主体样式 */
+.modal-content {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif; /* 添加Roboto字体 */
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 模态窗口渐隐效果 */
+.modal.fade {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+/* 模态窗口显示时的样式 */
+.modal.show {
+    opacity: 1;
+}
+
+/* 动画：显示模态窗口 */
+.modal.show .modal-dialog {
+    transform: translateY(0);
+}
+
+/* 动画：隐藏模态窗口 */
+.fade .modal-dialog {
+    transition: transform 0.2s ease-out;
+    transform: translateY(-50%);
+}
+
+/* 模态窗口内容区域 */
+.modal-body {
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 16px; /* 设置段落文字大小 */
+    color: #555; /* 设置段落文字颜色 */
+}
+
+/* 内容区域自定义滚动条样式 */
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* --- 按钮样式 --- */
+.btn-info, .btn-success {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;  /* 增大字体以更好地填充按钮 */
+    padding: 12px 24px;  /* 增大按钮大小 */
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;  /* 减少圆角以提供更专业的外观 */
+    transition: all 0.3s ease;  /* 平滑的过渡效果 */
+    border: 1px solid transparent;  /* 添加一个微妙的边界 */
+}
+
+.btn-info {
+    margin-right: 50px;  /* 减少右边距 */
+    background-color: #2770ae;  /* 深蓝色，更沉稳 */
+}
+
+.btn-success {
+    background-color: #27ae60;  /* 深绿色 */
+}
+
+.btn-info:hover, .btn-success:hover {
+    transform: translateY(-1px);  /* 微妙的上移效果 */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);  /* 增加阴影深度 */
+    border-color: rgba(255, 255, 255, 0.1);  /* 悬停时显示微妙的边界 */
+}
+
+
+/* --- 模态窗口标题区域 --- */
+.modal-header {
+    background: #2d5381; /* 深蓝色背景 */
+    padding: 15px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-title {
+    text-align: center;
+    font-size: 22px;
+    color: #fff; /* 浅色字体以保证在深背景上的可读性 */
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+/* 关闭按钮样式 */
+.close {
+    color: #fff;
+    font-size: 22px;
+}
+
+.close.custom-close {
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    background-color: #ffffff;  /* 使用纯白背景 */
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;  /* 移除默认轮廓 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* 添加阴影过渡效果 */
+}
+
+.close.custom-close:hover,
+.close.custom-close:focus {  /* 为聚焦效果添加样式 */
+    transform: scale(1.05);  /* 添加微妙的放大效果 */
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);  /* 添加一个微妙的外阴影作为焦点效果 */
+}
+
+
+/* --- 各个平台的背景样式 --- */
+.yonglibg .modal-body,
+.mgmbg .modal-body,
+.wnsrbg .modal-body,
+.yinhebg .modal-body,
+.xingjibg .modal-body,
+.xinpujingbg .modal-body,
+.tycbg .modal-body,
+.bet365bg .modal-body,
+.kaiyunbg .modal-body,
+.huangguanbg .modal-body,
+.wlxebg .modal-body,
+.weidebg .modal-body,
+.bwinbg .modal-body,
+.jinshabg .modal-body,
+.pinbobg .modal-body,
+.jinbaobobg .modal-body,
+.betwaybg .modal-body,
+.baoweibg .modal-body,
+.yierbobg .modal-body,
+.sansanqiqibg .modal-body{
+    background-size: contain; 
+    filter: brightness(0.95) contrast(1.1); 
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.12);
+    transition: background-color 0.3s ease;
+}
+
+.yonglibg .modal-body:hover,
+.mgmbg .modal-body:hover,
+.wnsrbg .modal-body:hover,
+.yinhebg .modal-body:hover,
+.xingjibg .modal-body:hover,
+.xinpujingbg .modal-body:hover,
+.tycbg .modal-body:hover,
+.bet365bg .modal-body:hover,
+.kaiyunbg .modal-body:hover,
+.huangguanbg .modal-body:hover,
+.wlxebg .modal-body:hover,
+.weidebg .modal-body:hover,
+.bwinbg .modal-body:hover,
+.jinshabg .modal-body:hover,
+.pinbobg .modal-body:hover,
+.jinbaobobg .modal-body:hover,
+.betwaybg .modal-body:hover,
+.baoweibg .modal-body:hover,
+.yierbobg .modal-body:hover,
+.sansanqiqibg .modal-body:hover{
+    filter: brightness(1) contrast(1);
+}
+
+.yonglibg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/yonglibg.png');
+}
+
+.mgmbg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/mgmbg.png');
+}
+
+.wnsrbg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/wnsrbg.png');
+}
+
+.yinhebg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/yinhebg.png');
+}
+
+.xingjibg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/xingjibg.png');
+}
+
+.xinpujingbg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/xinpujingbg.png');
+}
+
+.tycbg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/tycbg.png');
+}
+
+.bet365bg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/bet365bg.png');
+}
+
+.kaiyunbg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/kaiyunbg.png');
+}
+
+.huangguanbg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/huangguanbg.png');
+}
+
+.wlxebg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/wlxebg.png');
+}
+
+.weidebg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/weidebg.png');
+}
+
+.bwinbg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/bwinbg.png');
+}
+.jinshabg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/jinshabg.png');
+}
+.pinbobg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/pinbobg.png');
+}
+.jinbaobobg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/188jinbaobobg.png');
+}
+.betwaybg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/betwaybg.png');
+}
+.baoweibg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/baoweibg.png');
+}
+.yierbobg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/12betbg.png');
+}
+.sansanqiqibg .modal-body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/imgs/sansanqiqibg.png');
+}
+
+
+@media only screen and (max-width: 767px) {
+    .yonglibg .modal-body,
+    .mgmbg .modal-body,
+    .wnsrbg .modal-body,
+    .yinhebg .modal-body,
+    .xingjibg .modal-body,
+    .xinpujingbg .modal-body,
+    .tycbg .modal-body,
+    .bet365bg .modal-body,
+    .kaiyunbg .modal-body,
+    .huangguanbg .modal-body,
+    .wlxebg .modal-body,
+    .weidebg .modal-body,
+    .bwinbg .modal-body,
+    .jinshabg .modal-body,
+    .pinbobg .modal-body,
+    .jinbaobobg .modal-body,
+    .betwaybg .modal-body,
+    .baoweibg .modal-body,
+    .yierbobg .modal-body,
+    .sansanqiqibg .modal-body{
+        background-size: contain;
+    }
+}
+
+
+/* 强调内容 */
+.modal-body strong {
+    color: #333;
+    font-weight: 500;
+}
+
+/* 其他的段落间隔 */
+.modal-body p {
+    margin-bottom: 1em;
+}
+
+.download-button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #09b6f2; /* Light blue color */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 1px solid transparent;
+}
+
+.download-button:hover {
+    background-color: #85b9cd; /* Slightly darker shade of light blue on hover */
+    transform: translateY(-1px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+

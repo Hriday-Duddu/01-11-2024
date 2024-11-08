@@ -1,0 +1,103 @@
+header {
+	background-color: #eef4fa;
+	margin-top: 20px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    weight:400;
+	font-size: 17px;
+	line-height: 16px;   
+	color: rgb(29, 33, 41);
+} 
+
+body {
+	background-color: #eef4fa;
+}
+
+.backbtn {
+	height: 50px;
+	width: 50px
+}
+
+.language {
+	text-align: center;
+}
+
+ .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			margin-bottom: 100px;
+ }
+ 
+.logo{
+	/*height: 100px;*/
+	width: 100px;
+	 max-width: 100%; /* Optional: To make the image responsive */
+     height: auto;
+	 margin-top: 70px;
+}
+
+   .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 85%;
+            max-width: 400px;
+			position: relative;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            text-align: center; /* Ensures everything inside the container is centered */
+		    
+        }
+
+        .facebook-input {
+            width: 90%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+            background-color: #f5f6f7;
+        }
+
+        .facebook-input:focus {
+            border-color: #1877f2; /* Facebook blue on focus */
+            box-shadow: 0 0 5px rgba(24, 119, 242, 0.5);
+            background-color: white;
+        }
+
+        .login-btn {
+            width: 75%;
+            padding: 14px;
+            background-color: #1877f2; /* Facebook blue */
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+			display: block;
+			margin: 0 auto;
+			margin-top: 20px;
+			margin-bottom: 30px;
+        }
+
+        .login-btn:hover {
+            background-color: #165dd6;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #1877f2;
+            font-size: 14px;
+            text-decoration: none;
+			font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }

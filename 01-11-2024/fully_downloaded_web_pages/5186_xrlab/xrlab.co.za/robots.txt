@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://xrlab.co.za/sitemap.xml
+Sitemap: https://xrlab.co.za/sitemap.rss

@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mylinks.ai
+
+# Sitemaps
+Sitemap: https://mylinks.ai/sitemap.xml
+Sitemap: https://mylinks.ai/server-sitemap.xml

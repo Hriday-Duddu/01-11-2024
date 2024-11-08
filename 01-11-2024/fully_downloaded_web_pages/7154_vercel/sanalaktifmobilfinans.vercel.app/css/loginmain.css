@@ -1,0 +1,187 @@
+/*------------------RESET CSS***********/
+
+* {
+  outline: 0 none;
+  border-radius: 0;
+}
+
+caption, div {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+a:visited {color:#116fc4;}  /* visited link */
+
+abbr, acronym {
+  border: 0 none !important;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, hr, a {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, p, th, td, form, fieldset, input, textarea {
+  zoom: 1;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+q:before, q:after {
+  content: '';
+}
+button {
+    outline: none;
+    border: none;
+    border-radius: 0;
+}
+button:hover {
+    color: inherit;
+}
+
+button:active, button:focus {
+    color: inherit;
+    box-shadow: 0 0 0;
+    outline: none;
+}
+
+/*------------------GLOBAL CSS***********/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  transition: color 0.2s ease-in-out 0s, background-color 0.3s ease 0s;
+  -ms-transition: color 0.2s ease-in-out 0s, background-color 0.3s ease 0s;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #000f33;
+  background: #fff;
+}
+
+
+.clr {
+  clear: both;
+  height: 0px;
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+}
+
+.input {
+  outline: 0;
+  background: none;
+  border: 0 none;
+}
+
+.fl {
+  float: left !important;
+}
+
+.fr {
+  float: right !important;
+}
+
+.mRn {
+  margin-right: 0 !important;
+}
+
+.mLn {
+  margin-left: 0 !important;
+}
+.mBn{margin-bottom: 0 !important;}
+.mTn{margin-top:  0 !important;}
+.pRn {
+  padding-right: 0 !important;
+}
+
+.pLn {
+  padding-left: 0 !important;
+}
+
+.bLn {
+  border-left: 0 none !important;
+}
+
+.bRn {
+  border-right: 0 none !important;
+}
+
+.bn {
+  border: 0 none !important;
+}
+
+.bgN {
+  background: none !important;
+}
+.taL{text-align: left;}
+.taR{text-align: right;}
+
+.container {
+  margin: 0 auto;
+  width: 983px;
+  position: relative;
+}
+
+#wrapper {
+  width: 100%;
+  min-width: 983px;
+  position: relative;
+  z-index: 10;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  overflow: hidden
+}
+
+#wrapper a {
+  color:#800d52;text-decoration: underline;
+}
+#wrapper a:hover {
+text-decoration: none;
+}
+
+#wrapper img {
+  display: block;
+}
+
+.layout{width: 983px;}
+section{padding:15px;}
+.process-box{border:2px solid #d7d7d7;border-radius:10px;padding: 30px;float: left;width: 65%;min-height: 380px;}
+.process-box h3{color:#800d52;font-weight: bold;font-size:13px;margin-bottom: 10px;}
+.process-left{width: 50%;float: left;margin-bottom: 0px;}
+.process-right{width: 50%;float:right;}
+.info-box{float: left;width: 35%;padding:0px 0px 0px 0px;}
+.info-box h3{font-size: 13px;font-weight: bold;margin-bottom: 10px;}
+.info-box p{line-height: 140%;padding: 0 0 5px 15px;background: url(../../../Content/Images/arrow.png?uid=-1947646546) no-repeat left 4px;}
+.info-box-dk{float: right;width: 35%;padding:0px 0px 0px 0px; margin-top:-25px;}
+.info-

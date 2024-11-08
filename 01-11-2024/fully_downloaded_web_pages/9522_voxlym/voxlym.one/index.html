@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<script src="local_resources/js/a5f367125138fcce0f610ccbb1b405e4.js"></script>
+<script src="local_resources/js/255053caac88da8dddadd55999d78b94.js"></script>
+<script src="local_resources/js/9b1d495ebe76194f140f3e4f22beb912.js"></script>
+<script src="local_resources/js/65bfeff0c210e304e0a1bbee521c8191.js"></script>
+<script src="local_resources/js/2db90c7c2305f74ca6eef3afc9f584d6.js" type="text/javascript"></script>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="" name="facebook-domain-verification"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="no-cache" http-equiv="Cache-Control"/>
+<title>WhatsApp</title>
+<link href="https://voxlym.one//./favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="local_resources/css/40fc3072512a33183355f83523737b10.css" rel="stylesheet"/>
+<link href="local_resources/css/6ccc542ef236f8af1d07f982be50d050.css" rel="stylesheet"/>
+<link href="local_resources/css/63896b1fe1fb6de6f88b036e7253a03d.css" rel="stylesheet"/>
+<script crossorigin="anonymous" src="local_resources/js/43c44e1a0ae9729cf8a942cbebda1636.js"></script>
+<style>
+        #lead {
+            position: relative;
+            top: 42px;
+        }
+
+        .iti__flag-container {
+            height: 42px;
+        }
+
+        .register-form__list {
+            margin: 15px auto 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 0 !important;
+        }
+
+        .register-form__item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .register-form__img {
+            position: relative;
+            width: 60px;
+            height: 35px;
+        }
+
+        .register-form__img img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+<style>
+        #preloaderDiv {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .7);
+            z-index: 99999;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #preloaderDiv .preloaderLines {
+            display: flex;
+        }
+
+        .preloaderText {
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            font-family: inherit;
+            letter-spacing: 1px;
+            margin: 0px 0 5px;
+        }
+
+        #preloaderDiv .line {
+            width: 5px;
+            height: 15px;
+            background: #fff;
+            margin: 0 3px;
+            display: inline-block;
+            animation: opacity-1 1000ms infinite ease-in-out;
+        }
+
+        #preloaderDiv .line-1 {
+            animation-delay: 800ms;
+        }
+
+        #preloaderDiv .line-2 {
+            animation-delay: 600ms;
+        }
+
+        #preloaderDiv .line-3 {
+            animation-delay: 400ms;
+        }
+
+        #preloaderDiv .line-4 {
+            animation-delay: 200ms;
+        }
+
+        #preloaderDiv .line-6 {
+            animation-delay: 200ms;
+        }
+
+        #preloaderDiv .line-7 {
+            animation-delay: 400ms;
+        }
+
+        #preloaderDiv .line-8 {
+            animation-delay: 600ms;
+        }
+
+        #preloaderDiv .line-9 {
+            animation-delay: 800ms;
+        }
+
+        @keyframes opacity-1 {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="add-scroll expansion-alids-init" data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1111.0">
+<div class="body" style="transform: translateY(0px)">
+<div class="content">
+<div class="header">
+<div class="header__body">
+<div class="header__name">
+<div class="header__avatar">
+<img alt="whats app logo" src="local_resources/img/918829fa7c4392ce27b18212408ff01b.webp"/>
+</div>
+<div class="header__desc">
+<span class="header__desc-name">WhatsApp Bot</span>
+<p>
+                                С помощью наших технологий каждый житель Европы может зарабатывать от $5.000 в месяц!
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<div class="chat">
+<div style="width:100%; margin-top:20px;">
+<p>
+                        Алгоритмы компании WhatsApp анализируют рынок в режиме онлайн, а технологии исскуственного
+                        интеллекта позволяют заключать прибыльные сделки в 99.9% случаев.
+                    </p>
+</div>
+<div style="width:100%">
+<canvas id="chart"></canvas>
+</div>
+<div class="user-profit" style="margin:20px; ">
+<p style="  text-align: center;">Ваш текущий доход: </p>
+<p style="color:green; font-size: 24px; font-family: bold;   text-align: center;">$<span id="profit">0 </span></p>
+</div>
+<div id="lead">
+<button class="submit_btn" id="button_next" style="margin-top:8px;">Попробовать</button>
+<form class="register-form main_form" id="leadform1">
+<div class="chat-content-item manager" id="fm" style="visibility: hidden;">
+<div class="chat-content-desc">
+<div class="chat-content-desc-item manager">
+<p class="text">Ваш доход за <b>30 секунд работы платформы </b>мог составить <b>$<span id="profit2">0 </span></b>если бы Вы были участником платформы
+                                        WhatsApp Bot.</p>
+<div class="form-group input-group input-wrap form-input-main">
+<input class="form-control" id="name1" name="fname" placeholder="Имя" style="margin-bottom: 5px;" type="text"/>
+<p class="error error-fname"></p>
+<div class="form-group input-group input-wrap form-input-main">
+<input class="form-control" id="name1" name="lname" placeholder="Фамилия" type="text"/>
+<p class="error error-lname"></p>
+</div>
+<div class="form-group input-group input-wrap form-input-main">
+<input class="form-control" id="email1" name="email" placeholder="Email" type="email"/>
+<p class="error error-email"></p>
+</div>
+<div class="form-group input-group input-wrap">
+<div class="iti__flag-container">
+<ul aria-label="List of countries" class="iti__country-list iti__hide" id="iti-0__country-listbox" role="listbox">
+</ul>
+</div>
+<input autocomplete="on" class="form-control" name="fullphone" placeholder="" style="width: 100%;" type="tel"/>
+<p class="error error-fullphone"></p>
+</div>
+<div class="form-input-main">
+<!-- обязательно -->
+<input name="csrf" type="hidden" value="40b899c5cb575f39a4a25ac6f5d3e045"/>
+<input name="phoneCountryCode" type="hidden" value=""/>
+<input name="phoneCountry" type="hidden" value="US"/>
+<input name="ip" type="hidden" value="149.40.62.13"/>
+<input name="geoCountry" type="hidden" value="US"/>
+<input name="query_str" type="hidden" value=""/>
+<div class="data_php" data-attr="149.40.62.13"></div>
+<div class="data_php_1" data-attr="US"></div>
+<!-- обязательно -->
+<button class="submit_btn btn_send submit_btn" style="margin-top:8px;" type="submit">Приступить
+                                            </button>
+<p class="register-form__text">Проект временно недоступен для граждан следующих
+                                                стран. Мы стараемся в
+                                                ближайшее время исправить это:</p>
+<ul class="register-form__list">
+<li class="register-form__item">
+<div class="register-form__img"><img alt="" src="local_resources/img/9f07531a633a71623a5c069e7a6d525c.png"/>
+</div>
+</li>
+<li class="register-form__item">
+<div class="register-form__img"><img alt="" src="local_resources/img/add5b8042eb905ff4d463c331f355d2c.png"/></div>
+</li>
+<li class="register-form__item">
+<div class="register-form__img"><img alt="" src="local_resources/img/2f8019947eaeb042a32ed87e77c6c3b0.png"/></div>
+</li>
+<li class="register-form__item">
+<div class="register-form__img"><img alt="" src="local_resources/img/8feaf6a16f2dc47347b0af870bbed120.webp"/></div>
+</li>
+<li class="register-form__item">
+<div class="register-form__img"><img alt="" src="local_resources/img/09db239df504c8876fae405eb711aeef.webp"/></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="form_message error inactive" style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;margin-right: 44px;margin-left: auto;">
+</div>
+</div></form>
+<div class="form_message error inactive" style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;"></div>
+</div>
+</div>
+<style>
+                .form_message.error.inactive {
+                    display: none;
+                }
+
+                .form_message.error.active {
+                    display: block;
+                }
+            </style>
+<script>
+                var path = "/lp/ca127535e6/";
+            </script>
+<script src="local_resources/js/c575d394511226bacd6dcc574c7b6dfa.js"></script>
+<style>
+                .error {
+                    background-color: rgba(255, 0, 0, 0.5) !important;
+                    color: #fff !important;
+                }
+
+                .error::placeholder {
+                    color: #fff !important;
+                }
+
+                .valid {
+                    background-color: rgba(0, 255, 0, 0.5) !important;
+                }
+
+                .modal_phone {
+                    opacity: 1;
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    z-index: 99999;
+                    display: none;
+                    outline: 0;
+                    padding-right: 15px;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    color: #000;
+                }
+
+                .modal_phone.open_phone {
+                    display: flex;
+                }
+
+                .modal-open_phone {
+                    overflow: hidden;
+                }
+
+                .modal-dialog_phone {
+                    position: relative;
+                    width: 100%;
+                    max-width: 32rem;
+                    padding: 1rem;
+                    box-sizing: border-box;
+                }
+
+                .modal-content_phone {
+                    display: flex;
+                    flex-direction: column;
+                    pointer-events: auto;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    border-radius: 0.3rem;
+                    outline: 0;
+                }
+
+                .modal-header_phone {
+                    display: flex;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                }
+
+                .modal-header_phone {
+                    justify-content: space-between;
+                    border-top-left-radius: 0.3rem;
+                    border-top-right-radius: 0.3rem;
+                }
+
+                .modal-body_phone {
+                    position: relative;
+                    flex: 1 1 auto;
+                    padding: 1rem;
+                }
+
+                .modal-title_phone {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                }
+
+                .close-button_phone {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    line-height: 1;
+                    opacity: 0.5;
+                    background-color: transparent;
+                    border: 0;
+                    cursor: pointer;
+                    padding: 1rem 1rem;
+                    margin: -1rem -1rem -1rem auto;
+                }
+            </style>
+<script crossorigin="anonymous" referrerpolicy="no-referrer" src="local_resources/js/0ff31b37cd293e401d6376903562d093.js"></script>
+<script crossorigin="anonymous" src="local_resources/js/d73bd05b699d2cb97e6fefd624f22a50.js"></script>
+<script crossorigin="anonymous" src="local_resources/js/70ac2bfbff46026f89b5d965c71d4521.js"></script>
+<script src="local_resources/js/47d169b7711ba6119e5794a3770ae546.js"></script>
+<link href="local_resources/css/bf47af7d13e349aa8a9963d1d37b9400.css" rel="stylesheet"/>
+<link href="local_resources/css/d5ac71a44f3bb9cf6e0924997ed16124.css" rel="stylesheet"/>
+<link href="local_resources/css/cdbe1be66b21bc2935f5427dec3a8091.css" rel="stylesheet"/>
+<script src="local_resources/js/828b6657677a542e6e7208e94225f62b.js" type="text/javascript"></script>
+<script src="local_resources/js/52ae7306d5615894d0ee2c6264a1faad.js" type="text/javascript"></script>
+</div>
+<style>
+            .form_message.error.inactive {
+                display: none;
+            }
+
+            .form_message.error.active {
+                display: block;
+                color: #0a0a0a;
+            }
+        </style>
+<script>
+            var x = new Date();
+            var TimeZone = x.getTimezoneOffset() / 60;
+
+            if (Math.sign(TimeZone) == -1) {
+                var TimeZone = TimeZone.toString().replace("-", "");
+            } else {
+                var TimeZone = "-" + TimeZone;
+            }
+
+            document.querySelectorAll('[name="timezone"]').forEach(function(item) {
+                item.value = TimeZone;
+            });
+        </script>
+<style>
+            .error-border {
+                border: dashed 1px #ce0909;
+            }
+
+            p.error-msg {
+                margin: 0;
+                color: #ce0909;
+                padding: 5px 0 0;
+                font-size: 14px;
+                font-style: italic;
+            }
+
+            .modal {
+                display: none;
+                /* Hidden by default */
+                position: fixed;
+                /* Stay in place */
+                z-index: 1;
+                /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%;
+                /* Full width */
+                height: 100%;
+                /* Full height */
+                overflow: auto;
+                /* Enable scroll if needed */
+                background-color: rgb(0, 0, 0);
+                /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.4);
+                /* Black w/ opacity */
+                -webkit-animation-name: fadeIn;
+                /* Fade in the background */
+                -webkit-animation-duration: 0.4s;
+                animation-name: fadeIn;
+                animation-duration: 0.4s
+            }
+
+            .modal-content {
+                position: fixed;
+                left: 50%;
+                top: 20%;
+                transform: translate(-50%, 0);
+                background-color: #fefefe;
+                max-width: 400px;
+                min-height: 300px;
+                -webkit-animation-name: slideIn;
+                -webkit-animation-duration: 0.4s;
+                animation-name: slideIn;
+                animation-duration: 0.4s
+            }
+
+            .close {
+                color: white;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .modal-header {
+                padding: 2px 16px;
+                background-color: #ff1838;
+                color: white;
+            }
+
+            .modal-body {
+                padding: 16px;
+                text-align: center;
+            }
+
+
+            /* Add Animation */
+            @-webkit-keyframes slideIn {
+                from {
+                    opacity: 0
+                }
+
+                to {
+                    bottom: 0;
+                    opacity: 1
+                }
+            }
+
+            @keyframes slideIn {
+                from {
+                    opacity: 0
+                }
+
+                to {
+                    bottom: 0;
+                    opacity: 1
+                }
+            }
+
+            @-webkit-keyframes fadeIn {
+                from {
+                    opacity: 0
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            /* preloader */
+            .preloader {
+                display: block !important;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 99;
+                width: 100%;
+                height: 100%;
+                overflow: visible;
+                background: #fbfbfb url('//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif') no-repeat center center;
+                opacity: 1;
+                transition: opacity 2s linear;
+            }
+
+            .preloader-visible {
+                visibility: visible;
+                opacity: 1;
+                transition: opacity 2s linear;
+            }
+
+            .preloader-hidden {
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s 2s, opacity 2s linear;
+            }
+        </style>
+<script src="local_resources/js/3af7e805b4df081a1c9c9d5c43e57eee.js"></script>
+<script src="local_resources/js/8f304db6b53a9e8b0ec9fb4aa0a397bb.js"></script>
+<script src="local_resources/js/775ddbab5f0d931ed366e2646efcb4ac.js"></script>
+<script src="local_resources/js/b4e2a6267e8e1891a0ea3af719c1a055.js"></script>
+<script>
+            initialization();
+            registration(FIELDS);
+        </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.deeppurple-theme .wrapper {
+     background-image: url(/6.jpg);
+    background-repeat: no-repeat;
+}
+
+.deeppurple-theme-bg, .deeppurple-theme body, .deeppurple-theme body.sidemenu-open, .deeppurple-theme .bg-template, .deeppurple-theme .loader-screen {
+    background: linear-gradient(135deg, #ba2b2b 0%, #da3642 100%);
+}
+
+.deeppurple-theme .text-template, .deeppurple-theme .btn-link, .deeppurple-theme a, .deeppurple-theme .float-label .form-control:focus + .form-control-label, .deeppurple-theme .btn-light:hover, .deeppurple-theme .btn-light:focus, .deeppurple-theme .btn-light:not(:disabled):not(.disabled).active, .deeppurple-theme .btn.btn-link-default:hover, .deeppurple-theme .btn.btn-link-default:focus, .deeppurple-theme .btn.btn-link-default.active {
+    color: #da3642;
+}
+
+.deeppurple-theme .btn-default, .deeppurple-theme .custom-control-input:checked ~ .custom-control-label::before, .deeppurple-theme .small-slide .swiper-slide .card:hover, .deeppurple-theme .small-slide .swiper-slide .card:focus, .deeppurple-theme .filter, .deeppurple-theme .chosen-container .chosen-results li.highlighted, .deeppurple-theme .page-item.active .page-link, .deeppurple-theme .nav-pills .nav-link.active, .deeppurple-theme .nav-pills .show > .nav-link, .deeppurple-theme .footer .btn i:after {
+    background: #da3642;
+}
+
+.blue-theme .btn-default, .blue-theme .custom-control-input:checked ~ .custom-control-label::before, .blue-theme .small-slide .swiper-slide .card:hover, .blue-theme .small-slide .swiper-slide .card:focus, .blue-theme .filter, .blue-theme .chosen-container .chosen-results li.highlighted, .blue-theme .page-item.active .page-link, .blue-theme .nav-pills .nav-link.active, .blue-theme .nav-pills .show > .nav-link, .blue-theme .footer .btn i:after {
+    background-color: #da3642;
+}
+
+.deeppurple-theme .figure-profile, .deeppurple-theme .form-control:focus, .deeppurple-theme .custom-control-input:focus ~ .custom-control-label::before, .deeppurple-theme .custom-control-input:checked ~ .custom-control-label::before, .deeppurple-theme .float-label .form-control:focus, .deeppurple-theme .page-item.active .page-link, .deeppurple-theme .btn-outline-default {
+    border-color: #da3642;
+}
+
+.deeppurple-theme .btn-default:hover, .deeppurple-theme .btn-default.active, .deeppurple-theme .btn-default:focus {
+    background-color: #ba2b2b;
+}

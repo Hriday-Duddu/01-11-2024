@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="local_resources/css/be60195519244b8f8a07270e6d8279b2.css" rel="stylesheet"/>
+<title>Netflix Header</title>
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="container">
+<a class="logo" href="#">
+<img alt="Netflix Logo" src="local_resources/img/74bae9b6e3827d3bfc2431f76f43ee5f.png"/>
+<button class="cta-button">Masuk</button>
+</a>
+</div>
+</nav>
+<div class="header-content">
+<h1>Tawa. Tangis. Keseruan. Temukan semuanya di Netflix.</h1>
+<p>Hiburan tanpa henti mulai dari hanya Rp54.000. Batalkan kapan pun.</p>
+<p>Siap menonton? Masukkan email untuk membuat atau memulai lagi keanggotaanmu.</p>
+</div>
+<div class="email-input-container">
+<input class="email-input" id="email" placeholder="Email" type="email"/>
+<button class="submit-button">Mulai ➡</button>
+</div>
+</header>
+<div class="container">
+<div class="text">
+<h2>Nikmati di Tvmu.</h2>
+<p>Tonton di Smart TV, Playstation, Xbox, Chromecast, Apple TV, pemutar Blu-ray, dan banyak lagi.</p>
+</div>
+<div class="image">
+<img alt="Gambar di Kanan" id="tv-image" src="local_resources/img/c87f3a2109a9e05fedc02e4d52610e57.png"/>
+</div>
+</div>
+<script>
+        
+        const tvImage = document.getElementById('tv-image');
+
+       
+        tvImage.addEventListener('mouseover', () => {
+            tvImage.style.transform = 'scale(1.1)';
+        });
+
+        
+        tvImage.addEventListener('mouseout', () => {
+            tvImage.style.transform = 'scale(1)';
+        });
+
+        
+        tvImage.addEventListener('mouseover', () => {
+            tvImage.src = 'tv2.png'; 
+        });
+
+        
+        tvImage.addEventListener('mouseout', () => {
+            tvImage.src = 'tv.png'; 
+        });
+    </script>
+<footer>
+<div class="footer-content">
+<div class="footer-logo">
+<img alt="Netflix Footer Logo" src="local_resources/img/74bae9b6e3827d3bfc2431f76f43ee5f.png"/>
+</div>
+<ul class="footer-links">
+<li><a href="#">Tentang Kami</a></li>
+<li><a href="#">Pusat Bantuan</a></li>
+<li><a href="#">Karir</a></li>
+<li><a href="#">Persyaratan Layanan</a></li>
+<li><a href="#">Kebijakan Privasi</a></li>
+<li><a href="#">Hubungi Kami</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

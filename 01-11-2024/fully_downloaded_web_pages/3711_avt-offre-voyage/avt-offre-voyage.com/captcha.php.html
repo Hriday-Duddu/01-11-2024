@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CAPTCHA</title>
+<script async="" defer="" src="local_resources/js/dc765decb0cf744337d28e395c6cf59a.js"></script>
+<style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0c131f;
+        }
+        .captcha-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: none; /* Suppression de l'ombre pour enlever le contour */
+        }
+        .captcha-text {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 20px;
+            max-width: 500px;
+        }
+        .h-captcha {
+            border: none; /* Enlever la bordure autour du CAPTCHA */
+            background-color: transparent; /* Rendre le fond du CAPTCHA transparent */
+        }
+        .form-control {
+            display: none; /* Cacher le champ honeypot */
+        }
+    </style>
+</head>
+<body>
+<div class="captcha-container">
+<!-- Nouveau texte ici -->
+<p class="captcha-text">
+            Nous souhaitons nous assurer qu'il s'agit bien de vous avec qui nous interagissons, et non d'un robot.
+        </p>
+<!-- CAPTCHA -->
+<form action="verify.php" id="captcha-form" method="POST">
+<div class="h-captcha" data-callback="onCaptchaSuccess" data-sitekey="d7566fa6-4f56-40d8-9724-453c3a90f138"></div>
+<input class="form-control" name="contact_class" type="text"/>
+</form>
+</div>
+<script>
+        function onCaptchaSuccess(token) {
+            document.cookie = 'js_challenge=passed; path=/';
+            document.getElementById('captcha-form').submit();
+        }
+        function checkJavaScript() {
+            document.cookie = 'js_challenge=passed; path=/';
+        }
+        window.onload = checkJavaScript;
+    </script>
+</body>
+</html>

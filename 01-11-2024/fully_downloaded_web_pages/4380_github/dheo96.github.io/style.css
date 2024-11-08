@@ -1,0 +1,181 @@
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex; 
+    align-items: center; 
+}
+
+.container .text h2 {
+    color: #fff; 
+}
+
+.container .text p {
+    color: #fff; 
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+}
+
+
+.header-content {
+    text-align: center;
+    color: #fff;
+    padding: 150px 0;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.cta-button {
+    background-color: #e50914;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+}
+
+.submit-button {
+    background-color: #e50914;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 10px;
+}
+.cta-button:hover {
+    background-color: #b9070a;
+}
+
+
+.container .text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.container .image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.email-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.email-input-container {
+    position: absolute;
+    top: 60%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%; 
+    max-width: 400px; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .navbar {
+        position: static; 
+    }
+
+    .logo img {
+        margin-top: 0; 
+    }
+}
+
+#tv-image {
+    max-width: 100%;
+}
+
+
+footer {
+    background-color: #111;
+    color: #757575;
+    padding: 40px 0;
+}
+
+.footer-content {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #757575;
+    font-size: 14px;
+}
+
+
+

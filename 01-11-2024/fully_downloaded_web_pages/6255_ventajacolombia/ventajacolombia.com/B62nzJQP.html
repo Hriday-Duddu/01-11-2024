@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="local_resources/img/7cb978a60b5658806c6b839a8c2abf91.png" rel="icon" type="image/png"/>
+<title>🇨🇴Santiago Ruiz</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="local_resources/css/87a4e6c4a3964fccd2333ccaeffa7a65.css" rel="stylesheet"/>
+<link href="local_resources/css/a57e35b54cb5f90062643474582d30b4.css" rel="stylesheet"/>
+<link href="local_resources/css/e9ba52f2f949fc62569a9121c70d1eb4.css" rel="stylesheet"/>
+<script>function fbq() {};</script></head>
+<body>
+<header>
+<div class="container">
+<img alt="" class="logo" src="local_resources/img/e8619f050372d13f1270ddfc53de9bbf.svg"/>
+<button onclick="location.href='https://telegram.org';">Download</button>
+</div>
+</header>
+<style>
+
+
+        main > .banner{
+            background: #ffffff;
+        }
+
+
+        main > .banner > .buttons > .blue-bordered {
+            border: 2px solid #2381cc;
+            color: #2381cc;
+        }
+        header > .container > button{
+            background: #2381cc;
+        }
+        main > .banner > .buttons > .blue {
+            background-image: unset;
+            animation: unset;
+            background-color: #2381cc;
+        }
+
+
+        body{
+            background: #7eae8b;
+        }
+
+        body{
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.00) 3.74%), radial-gradient(126.14% 31.7% at 50% 0%, #C1CAA9 0%, rgba(193, 202, 169, 0.00) 100%), radial-gradient(96.8% 44.87% at 50% 90.79%, #C5D08B 0%, rgba(197, 208, 139, 0.00) 100%), #7EAE8B;
+        }
+
+
+    </style>
+<main>
+<div class="banner">
+<div class="text">
+<input id="fbc" name="fb_bc" type="hidden"/><br/>
+<input id="fbp" name="fb_bp" type="hidden"/><br/>
+<a class="redir" onclick="submitForm();"><img alt="" src="local_resources/img/bf1a4ec68852b0e2155a45ebdd309ba2.jpg"/></a>
+<a class="title">🇨🇴Santiago Ruiz</a>
+<div class="members">
+                    41226 members
+                </div>
+<div class="description">👋Hola, mi nombre es Santiago y todos los días gano más de $50.000.000 gracias a mis seguidores.💰
+
+🇨🇴Cualquier persona puede ganar dinero conmigo!
+
+✏️Quieres empezar a ganar? Escríbeme cuanto antes - @Santiago_Ganancias</div>
+</div>
+<div class="buttons">
+<a class="blue redir" onclick="submitForm();">View in Telegram</a>
+</div>
+</div>
+</main>
+<script src="local_resources/js/3a66d0e5895233ddf660a3450c590f2e.js"></script>
+<script>
+        let linkTG = '';
+        $(document).ready(function() {
+            let fbcValue = "";
+            let fbpValue = "";
+            const startTime = Date.now();
+            const maxWaitTime = 1500;
+
+            function checkCookiesAndSetValues() {
+                let cookies = document.cookie;
+                let cookiesArray = cookies.split(";");
+
+                cookiesArray.forEach(cookie => {
+                    cookie = cookie.trim();
+                    if (cookie.startsWith("_fbc")) {
+                        let parts = cookie.split("=");
+                        fbcValue = parts[1];
+                    } else if (cookie.startsWith("_fbp")) {
+                        let parts = cookie.split("=");
+                        fbpValue = parts[1];
+                    }
+                });
+
+                console.log("_fbc:", fbcValue);
+                console.log("_fbp:", fbpValue);
+
+
+                if ((fbcValue !== "" && fbpValue !== "") || (Date.now() - startTime >= maxWaitTime)) {
+                    clearInterval(intervalId);
+                    sendAjaxRequest();
+                }
+            }
+
+            const intervalId = setInterval(checkCookiesAndSetValues, 50);
+
+            function sendAjaxRequest() {
+                console.log("Отправка AJAX-запроса с fb_bc:", fbcValue, "и fb_bp:", fbpValue);
+
+                const urlParams = new URLSearchParams(window.location.search);
+                let utmParams = {};
+                urlParams.forEach((value, key) => {
+                    if (key.startsWith('')) {
+                        utmParams[key] = value;
+                    }
+                });
+
+
+                const data = {
+                    sub1: '3p50qh83u7u',
+                    fb_clid: '',
+                    fb_bc: fbcValue,
+                    fb_bp: fbpValue,
+                    user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
+                    ip_user: '149.40.62.13',
+                    domain: 'ventajacolombia.com',
+                    zip_code: '98160',
+                    city: 'seattle',
+                    region: 'wa',
+                    country: 'us',
+                    offer_url: '',
+                    url_link: 'https://ventajacolombia.com/B62nzJQP',
+                    referrer: '',
+                    ...utmParams
+                };
+
+
+                $.ajax({
+                    url: 'send_req.php',
+                    method: 'POST',
+                    dataType: 'json',
+                    data: data,
+                    success: function(response) {
+                        if (response.invite_link) {
+                            // $linkTG = response.invite_link;
+                            linkTG = response.invite_link; // Теперь linkTG глобальная переменная
+                            document.cookie = 'sub_id_30=' + linkTG + ';path=/';
+                            redirectToTelegram(linkTG); // Передаем ссылку в функцию редиректа
+                            // Передаем актуальную ссылку в submitForm
+                            // submitForm(linkTG);
+                        }
+                    },
+                    error: function(error) {
+                        console.log("Ошибка при получении ссылки: ", error);
+                    }
+                });
+            }
+        });
+
+        function redirectToTelegram(inviteLink) {
+            (function() {
+                let isRedirected = false;
+
+                function redirect() {
+                    if (!isRedirected) {
+                        isRedirected = true;
+                        window.location.href = 'tg://join?invite=' + inviteLink; // используем inviteLink
+                    }
+                }
+
+                setTimeout(redirect, 100);
+
+                document.querySelectorAll("[id^='redirect']").forEach(function(element) {
+                    element.addEventListener("click", function(event) {
+                        event.preventDefault();
+                        redirect();
+                    });
+                });
+
+                redirect(); // Автоматический редирект через короткий интервал
+            })();
+        }
+
+        function submitForm() {
+            window.location.href = 'tg://join?invite=' + linkTG;
+        }
+    </script>
+</body>
+</html>

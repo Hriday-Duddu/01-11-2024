@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+sitemap:http://atvcms.com.br/sitemap.xml
+sitemap:http://atvcms.com.br/sitemap-1.xml
+sitemap:http://atvcms.com.br/sitemap-2.xml
+sitemap:http://atvcms.com.br/sitemap-3.xml
+sitemap:http://atvcms.com.br/sitemap-4.xml
+sitemap:http://atvcms.com.br/sitemap-5.xml
+sitemap:http://atvcms.com.br/sitemap-6.xml
+sitemap:http://atvcms.com.br/sitemap-7.xml
+sitemap:http://atvcms.com.br/sitemap-8.xml
+sitemap:http://atvcms.com.br/sitemap-9.xml
+sitemap:http://atvcms.com.br/sitemap-10.xml
+sitemap:http://atvcms.com.br/sitemap-11.xml
+sitemap:http://atvcms.com.br/sitemap-12.xml
+sitemap:http://atvcms.com.br/sitemap-13.xml
+sitemap:http://atvcms.com.br/sitemap-14.xml
+sitemap:http://atvcms.com.br/sitemap-15.xml
+sitemap:http://atvcms.com.br/sitemap-16.xml
+sitemap:http://atvcms.com.br/sitemap-17.xml
+sitemap:http://atvcms.com.br/sitemap-18.xml
+sitemap:http://atvcms.com.br/sitemap-19.xml
+sitemap:http://atvcms.com.br/sitemap-20.xml
+sitemap:http://atvcms.com.br/sitemap-21.xml

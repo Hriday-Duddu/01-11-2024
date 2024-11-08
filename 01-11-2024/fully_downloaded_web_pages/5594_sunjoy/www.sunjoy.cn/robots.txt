@@ -1,0 +1,28 @@
+User-agent: facebookexternalhit
+Disallow: /*video_introdution.html
+Disallow: /company_profile/
+Disallow: /contactinfo.html
+Disallow: /credit.html
+Disallow: /productshowimg/
+Disallow: /event/app/alisite/render.htm
+Disallow: /catalog/
+Allow: /productlist.html
+
+User-agent: *
+Disallow: /*video_introdution.html
+Disallow: /company_profile/
+Disallow: /productlist.html
+Disallow: /contactinfo.html
+Disallow: /credit.html
+Disallow: /productshowimg/
+Disallow: /event/app/alisite/render.htm
+Disallow: /catalog/
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /

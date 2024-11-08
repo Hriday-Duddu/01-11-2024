@@ -1,0 +1,17 @@
+var validator={}
+validator.check_email=true
+validator.check_password=true
+validator.email_field_id='email-address'
+validator.password_field_id='password'
+validator.regex_for_valid_email=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+validator.password_field_required_length=6
+validator.validate=function(){var error_message=''
+if(validator.check_email){var email_value=document.getElementById(validator.email_field_id).value.trim()
+if(email_value=='')error_message='Email address cannot be left blank, please try again.'
+else if(!validator.regex_for_valid_email.test(email_value))error_message='Email address cannot be validated, please try again.'}
+if(error_message==''&&validator.check_password){var password_value=document.getElementById(validator.password_field_id).value.trim()
+if(password_value=='')error_message='Password cannot be left blank, please try again.'
+else if(password_value.length<validator.password_field_required_length)error_message='Password should be atleast '+validator.password_field_required_length+' characters long, please try again.'}
+if(error_message=='')return true
+else{alert(error_message)
+return false}}

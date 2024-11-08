@@ -1,0 +1,718 @@
+
+<!DOCTYPE html><html lang="cn"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title></title><link rel="shortcut icon" href="https://cejhu.wzk.im/image/web/favicon.ico?ver=1598240076"><script type="module">var type = "register";
+    import {
+        initializeApp
+    } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+    import {
+        getAuth,
+        FacebookAuthProvider,
+        signInWithPopup,
+        GoogleAuthProvider
+    } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+
+    const firebaseConfig = {
+        apiKey: "",
+        authDomain: ".firebaseapp.com",
+        projectId: "",
+        storageBucket: ".appspot.com",
+        appId: ""
+    };
+
+    const app = initializeApp(firebaseConfig);
+
+    //Login & Register
+    
+    
+    
+    function tokenHandle(token, email, social_type) {
+
+      
+        if (social_type == 'telegram') {
+          // token = JSON.stringify(token);
+          setCookie('tg_user', JSON.stringify(token), 1);
+          token = '';
+        }
+
+        location.href = `http://187365.vip/register/member?token=${token}&email=${email}&social_type=${social_type}`;
+
+        
+    }
+
+
+
+    //Binding
+    
+    
+    
+    function tokenHandle2(token, email, social_type) {
+
+      if (type == 'binding') {
+        $.ajaxSetup({
+          headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+        });
+
+        if (social_type == 'firebase') {
+          var item = {
+            'email': email,
+            'token': token,
+          };
+        } else if (social_type == 'telegram') {
+          var item = {
+            'data': token,
+            'social_type': 'telegram',
+          };
+        }
+
+        var _requestData = {
+          "requests": [{
+            "name": "socialBinding",
+            "query": btoa(JSON.stringify(item)),
+          }, ]
+        };
+        $.ajax({
+          type: "POST",
+          url: "/graph/sesh",
+          data: JSON.stringify(_requestData),
+          success: function(result) {
+            $.each(result['responses'], function(k, v) {
+              var data = JSON.parse(atob(v.attributes));
+            
+			  if (data.status == 0) {
+                Swal.fire({
+                    title: data.errormessage,
+                    type: "error",
+                    confirmButtonText: lang.confirm,
+                    focusConfirm: false,
+                    allowOutsideClick: false,
+                });
+                } else {
+                    Swal.fire({
+                        title: data.message,
+                        type: "success",
+                        confirmButtonText: lang.confirm,
+                        focusConfirm: false,
+                        allowOutsideClick: false,
+                    }).then((result) => {
+                        location.reload();
+                    });
+                                            
+                }
+		})
+          },
+          error: function(result) {
+            // console.log('error', result);
+          }
+        });
+      } else {
+        location.href = `http://187365.vip/register/member?token=${token}&email=${email}&social_type=${social_type}`;
+      }
+    }</script><script>document['\x74\x69\x74\x6c\x65']="bet365";</script></head><link rel="stylesheet" href="https://cejhu.wzk.im/plugins/swiper/swiper.min.css?ver=1598240076"><link rel="stylesheet" href="https://cejhu.wzk.im/css/web/unite/unite.css?ver=1687252642"><link rel="stylesheet" href="https://cejhu.wzk.im/css/web/unite/member_unite.css?ver=1713775027"><link rel="stylesheet" href="https://cejhu.wzk.im/css/web/web.css?ver=1713775306"><link rel="stylesheet" href="https://cejhu.wzk.im/plugins/bootstrap/bootstrap.css?ver=1598240076"><link rel="stylesheet" href="https://cejhu.wzk.im/plugins/bootstrap/to_bootstrap.css?ver=1598240076"><link rel="stylesheet" href="https://cejhu.wzk.im/fonts/mobile/font.css?ver=1720670934"><link rel="stylesheet" href="https://cejhu.wzk.im/fonts/web/font-awesome.min.css?ver=1598240076"><link rel="stylesheet" href="https://cejhu.wzk.im/fonts/mobile/font.css?ver=1720670934"><link rel="stylesheet" href="https://cejhu.wzk.im/css/web/unite/animate.css?ver=1598240076"><link rel="stylesheet" href="https://cejhu.wzk.im/plugins/jquery/fm.selectator.jquery.css?ver=1603685232"><script type="text/javascript">var Currency = "RMB";
+	var Name 	 = "";
+	var displayRate = "1";
+	var receiptRequired = "0";
+	var usdtPaymentMethod = "0";
+	var CURRENCY_EXCHANGE_DISPLAY = "0";
+	var FIRST_EXCHANGE_RATE = "0";
+	var FIRST_CURRENCY = "";
+	var SECOND_EXCHANGE_RATE = "0";
+	var SECOND_CURRENCY = "";
+	var FACEBOOK_PIXEL_ID = "";</script><script src="https://cejhu.wzk.im/plugins/jquery/jquery.min.js?ver=1598240076"></script><script src="https://cejhu.wzk.im/plugins/jquery/jquery.cookie.js?ver=1644475394"></script><script src="https://cejhu.wzk.im/plugins/bootstrap/bootstrap.min.js?ver=1598240076"></script><script src="https://cejhu.wzk.im/plugins/swiper/swiper.min.js?ver=1598240076"></script><script src="https://cejhu.wzk.im/plugins/sweetalert/sweetalert2.all.min.js?ver=1598240076"></script><script src="https://cejhu.wzk.im/js/web/unite.js?ver=1728972725"></script><script src="https://cejhu.wzk.im/js/common/language_cn.js?ver=1729828735"></script><script src="https://cejhu.wzk.im/plugins/jquery/fm.selectator.jquery.js?ver=1603685232"></script><script src="https://cejhu.wzk.im/plugins/jquery/jquery.qrcode.min.js?ver=1598240076"></script><link rel="stylesheet" type="text/css" href="https://cejhu.wzk.im/css/web/unite/member_register_unite.css?ver=1653632628"><link rel="stylesheet" type="text/css" href="https://cejhu.wzk.im/css/web/custom/member_register_custom.css?ver=1598240076"><link rel="stylesheet" type="text/css" href="https://cejhu.wzk.im/css/web/header.css?ver=1598262624"><link rel="stylesheet" type="text/css" href="https://cejhu.wzk.im/css/web/unite/banner_unite.css?ver=1598240076"><link rel="stylesheet" type="text/css" href="https://cejhu.wzk.im/css/web/custom/banner_custom.css?ver=1600506094"><body><div class="bootstrap"><div class="modal fade" id="login_modal" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button><h4 class="modal-title text-center">登录</h4></div><div class="modal-body"><form class="login_form" method="post"><div class="form-group"><div class="text-box"><div class="input-group"><div class="symbol"><i class="fa fa-user"></i></div><div class="LoginuserName"><input onkeydown="this.value = this.value.toLowerCase();" type="text" class="form-control" placeholder="用户名" name="usr" required autofocus pattern="[a-zA-Z0-9]{4,15}" tabindex='1' /></div></div><div class="input-group"><div class="symbol"><i class="fa fa-lock"></i></div><div class="Loginpassword"><input type="password" class="form-control" placeholder="密码" name="pwd" required pattern=".{6,20}" tabindex='2' /></div><div class="showhidepassword"><div class="symbolShowPassword" id="showPassword"><i class="fa fa-eye"></i></div><div class="symbolhidePassword" id="hidePassword" style="display:none"><i class="fa fa-eye-slash"></i></div></div></div></div></div><input type="hidden" name="_token" value="DNFPTifLJIhP3LCPqIpjL1OKqiRG10glUAZpFydU"><div><button type="submit" class="btn-login">登录</button><div class="login-option"><a class="register" href="/register/member" >马上注册!</a><a>|</a><a class="forgot-pwd" href="/forgot">忘记密码?!</a></div></div></form><div class="contact-us">遇见问题!? 请联系我们:<a href="javascript:windowOpen('https://chat.ss-chat.com/service/fk8sww');"><span>联系客服<span></a></div></div></div></div></div></div><script type="text/javascript">$('#showPassword').click(function(){
+		$('#login_modal .Loginpassword .form-control').attr("type" , "text");
+		$('#showPassword').css("display" , "none");
+		$('#hidePassword').css("display" , "block");
+	}); 
+	$('#hidePassword').click(function(){
+		$('#login_modal .Loginpassword .form-control').attr("type" , "password");
+		$('#showPassword').css("display" , "block");
+		$('#hidePassword').css("display" , "none");
+	});</script><div id="register" class="register_bg"><div class="logo"><a href="/"><img class="logo_image" src="https://cejhu.wzk.im/image/web/logo.png?ver=1598240076"></a></div><div class="content"><div class="title"><div class="title_left">
+				注册账号</div><div class="title_right">
+				请由此<a href="/">登录</a>游戏</div><div class="clear"></div></div><div class="title_info"><span class="star">
+				*</span>信息必须完整填写<br>为了您的账户验证以及安全问题，我们需要持有您正确的个人信息。请注意：在身份被成功验证后，您方可继续使用账户。</div><div class="remark"><span class="star">*</span>&nbsp;为必填项目。</div><div class="register-form"><form id="regForm" action="javascript:void(0);" novalidate><input type="hidden" name="type" value="member"><input type="hidden" name="_token" value="DNFPTifLJIhP3LCPqIpjL1OKqiRG10glUAZpFydU"><fieldset><div class="form-row upline"><label class="form_label">
+															推广代码:</label><div class="form-input"><input class="text-input" name="upline" type="text" pattern="[0-9]{6}"  maxlength=6 minlength=6 placeholder="推广代码为数字六码，若无可不填" value=""><label class="form_input_msg"></label></div></div><div class="form-row referral_code"><label class="form_label">好友推荐:</label><div class="form-input"><input class="text-input" name="referral_code" type="text" pattern="[a-zA-Z0-9]{8}"  maxlength=8 minlength=8 placeholder="好友推荐为英数八码，若无可不填" value=""><label class="form_input_msg"></label></div></div><div class="form-row username"><label class="form_label"><span class="star">*&nbsp;</span>用户名:</label><div class="form-input"><input class="text-input checkexist" name="username" type="text" pattern="[a-z0-9]{6,12}" required maxlength=12 minlength=6 placeholder="6到12个字符，只能使用小写字母和数字" value=""><label class="form_input_msg"></label></div></div><div class="form-row password"><label class="form_label"><span class="star">*&nbsp;</span>密码:</label><div class="form-input"><input class="text-input" name="password" type="password" pattern="[a-zA-Z0-9]{6,20}" required maxlength=20 minlength=6 placeholder="6~20个字符，仅能使用字母与数字" value=""><label class="form_input_msg"></label></div></div><div class="form-row password_confirm"><label class="form_label"><span class="star">*&nbsp;</span>确认密码:</label><div class="form-input"><input class="text-input" name="password_confirm" type="password" pattern="[a-zA-Z0-9]{6,20}" required maxlength=20 minlength=6 placeholder="请重复输入登录密码" value=""><label class="form_input_msg"></label></div></div><div class="form-row withdrawal_code"><label class="form_label"><span class="star">*&nbsp;</span>&#21462;&#27454;密码:</label><div class="wd-box"><select class="wd-password"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option></select><select class="wd-password"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option></select><select class="wd-password"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option></select><select class="wd-password"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option></select></div><input name="withdrawal_code" type="hidden"></div><div class="form-row fullname"><label class="form_label"><span class="star">*&nbsp;</span>中文全名:</label><div class="form-input"><input class="text-input" name="fullname" type="text" pattern="[^(||#|@|~|$|!|%|^|*|&amp;|(|)|-|_|+|=|0-9|(a-zA-Z)]+" required   placeholder="必须与您的银行帐户名称相同，否则不能&#20986;&#27454;!" value=""><label class="form_input_msg"></label></div></div><div class="form-row wechat"><label class="form_label"><span class="star">*&nbsp;</span>微信号:</label><div class="form-input"><input class="text-input" name="wechat" type="text" pattern=".*" required   placeholder="填写真实微信可领取丰厚优惠" value=""><label class="form_input_msg"></label></div></div><div class="form-row qq"><label class="form_label"><span class="star">*&nbsp;</span>QQ号码:</label><div class="form-input"><input class="text-input" name="qq" type="text" pattern="[0-9]{6,}" required  minlength=6 placeholder="请输入QQ号码" value=""><label class="form_input_msg"></label></div></div><div class="form-row dob"><label class="form_label"><span class="star">*&nbsp;</span>生日:</label><div class="form-input"><input type="date" class="text-input" name="dob" value="2006-01-01"></div></div><div class="form-row email"><label class="form_label"><span class="star">*&nbsp;</span>&#30005;&#23376;邮件:</label><div class="form-input"><input class="text-input checkexist" name="email" type="email" pattern=".*" required   placeholder="例子： 365asia@365asia.com" value=""><label class="form_input_msg"></label></div></div><div class="form-row tel"><label class="form_label"><span class="star">*&nbsp;</span>联系电话:</label><div class="form-input"><input class="text-input checkexist" name="tel" type="text" pattern="[0-9]{11}" required maxlength=11 minlength=11 placeholder="11位手机电话号码" value=""><label class="form_input_msg"></label></div></div></fieldset><fieldset><div class="form-row"><label class="form_label"><span class="star">*&nbsp;</span><span>验证码 :</span></label><div class="form-input"><input class="regcode text-input" name="captcha" required placeholder="验证码" autocomplete="off" /><img src="" id="input-captcha" onclick="getCaptcha()"><label class="form_input_msg"></label></div></div><div class="form-row"><label class="form_label"><span class="star">*&nbsp;</span><span>开户协议:</span></label><div class="form-input"><div class="agree-wrap"><input type="checkbox" name="agree" checked required><span>我已阅读并接受开户服务协议。</span><a href="javascript:void(0);" id="agree">"开户协议"</a></div><label class="form_input_msg"></label></div></div></fieldset><div class="button"><button type="submit" id="submitButton">提交</button></div></form></div></div></div></body><script type="text/javascript">login = 0;</script><script type="text/javascript">csrf_token = "DNFPTifLJIhP3LCPqIpjL1OKqiRG10glUAZpFydU";</script><div class="bootstrap"><div class="modal fade" id="announcement_modal" role="dialog"><div class="modal-dialog"><div class="modal-content "><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button><h4 class="modal-title">最新公告</h4></div><div class="modal-body"><ul><li id="ann0" class="active"><div class="announcement_content"><span>◆</span><span>◆</span><div class="announcement_date">2024-06-22 00:53:47</div><div class="announcement_text"><!DOCTYPE html><html><head><script>document['\x74\x69\x74\x6c\x65']="bet365";</script></head><body><strong><span style="color:#0000ff;">尊敬的会员您好，通知您：</span><span style="color:#ff0000;background-color:#ffff00;">工商银行</span><span style="color:#0000ff;">由于近期该银行主打击力度强，以避免&#38134;&#34892;&#21345;风控冻结，因此目前无法使用</span><span style="color:#ff0000;background-color:#ffff00;">工商银行</span><span style="color:#0000ff;">&#20986;&#27454;，请您使用</span><span style="color:#ff0000;background-color:#ffff00;">其他银行</span><span style="color:#0000ff;">或者</span><span style="color:#ff0000;background-color:#ffff00;">虚拟货币</span><span style="color:#0000ff;">进行存提即可，给您带来不便，非常抱歉。</span></strong></body></html></div></div></li><li id="ann1" class=""><div class="announcement_content"><span>◆</span><span>◆</span><div class="announcement_date">2024-10-30 04:41:36</div><div class="announcement_text"><!DOCTYPE html><html><head><script>document['\x74\x69\x74\x6c\x65']="bet365";</script></head><body><div>尊敬的用户您好！</div><div><strong><span style="color:#ff0000;background-color:#ffff00;">感恩回馈，感谢有礼！</span></strong></div><div><strong><span style="color:#ff0000;background-color:#ffff00;">承蒙大家长久以来的陪伴照顾和支持，平台特推出豪礼相送！</span></strong></div><div style="text-align:left;">详情请咨询在线客服/<strong>微信专属客服<br /><br /></strong>【每个账号仅限领取一次，禁止多账号重复申领，最终解释权归&#98;&#101;&#116;&#51;&#54;&#53;平台所有】</div></body></html></div></div></li><li id="ann2" class=""><div class="announcement_content"><span>◆</span><span>◆</span><div class="announcement_date">2024-05-22 01:59:57</div><div class="announcement_text"><!DOCTYPE html><html><head><script>document['\x74\x69\x74\x6c\x65']="bet365";</script></head><body><span style="color:#ff0000;background-color:#ffff00;"><strong>温馨提示： 请您在&#25552;&#27454;前先测试&#25552;&#27454;卡转账是否正常，确保&#25552;&#27454;卡正常转账后在进行&#25552;&#27454;，谢谢！</strong></span></body></html></div></div></li><li id="ann3" class=""><div class="announcement_content"><span>◆</span><span>◆</span><div class="announcement_date">2024-06-22 00:54:03</div><div class="announcement_text"><!DOCTYPE html><html><head><script>document['\x74\x69\x74\x6c\x65']="bet365";</script></head><body><span style="color:#ff0000;"><strong>【&#25552;&#27454;&#38134;&#34892;&#21345;绑定通知】</strong></span><strong><span style="color:#0000ff;">为了您的&#25552;&#27454;资金更快到账，请您在绑定个人&#25552;&#27454;&#38134;&#34892;&#21345;的时候，</span><span style="color:#ff0000;">不要绑定二类三类&#38134;&#34892;&#21345;</span>，<span style="color:#0000ff;">由于绑定二类三类个人&#38134;&#34892;&#21345;，&#25552;&#27454;的银行金额会受到限制，</span><span style="color:#ff0000;">导致相关部门无法处理您的&#25552;&#27454;资金，您的资金将无法在第一时间内到账</span><span style="color:#0000ff;">。<br /><br /></span></strong><strong><span style="color:#0000ff;">由于【</span><span style="color:#ff0000;">夜间频繁交易容易受到银行方风控</span><span style="color:#0000ff;">】为了提供更加优质的游戏体验，建议您尽量于【</span><span style="color:#ff0000;">凌晨一点前进行交易存&#25552;&#27454;</span><span style="color:#0000ff;">】</span></strong><span style="color:#0000ff;"><strong>【</strong></span><span style="color:#ff0000;"><strong>存&#25552;&#27454;卡请务必分开使用</strong></span><span style="color:#0000ff;"><strong>】</strong></span><strong><span style="color:#ff0000;">以确保您资金安全，规避夜间频繁交易带来的风險审查</span><span style="color:#0000ff;">。<br />感谢您的配合，祝您&#30408;&#21033;多多、游戏愉快。</span></strong></body></html></div></div></li><li id="ann4" class=""><div class="announcement_content"><span>◆</span><span>◆</span><div class="announcement_date">2024-08-22 10:45:49</div><div class="announcement_text"><!DOCTYPE html><html><head><script>document['\x74\x69\x74\x6c\x65']="bet365";</script></head><body><span style="background-color:#ffff00;text-decoration:underline;"><span style="color:#ff0000;"><strong>防骗提醒！！！</strong></span></span>近期电话诈骗猖獗，<strong><span style="color:#ff0000;background-color:#ffff00;">平台以及公检法人员绝对不会通过电话、微信通知玩家核查资金、将钱款转移到“安全账户”</span></strong>，更不会让玩家上网浏览自己的通缉令或者逮捕令，或者将此类材料邮寄到个人手中。<strong><span style="color:#ff0000;background-color:#ffff00;">凡通过电话、短信等要求进行转账、汇款、资金核查操作的都是诈骗，切记不相信、不转账，避免上当被骗。</span></strong></body></html></div></div></li></ul></div></div></div></div></div><div id="overlay"><div class="loading_wrap"><div id="loader"><div></div><div></div></div></div></div><div class="backtoTop" title="返回顶部"><a href="javascript:void(0)"><i class="fa fa-arrow-up"></i></a></div><link rel="stylesheet" type="text/css" href="https://cejhu.wzk.im/css/web/unite/login_unite.css?ver=1710139173"><link rel="stylesheet" type="text/css" href="https://cejhu.wzk.im/css/web/custom/login_custom.css?ver=1604909580"><link rel="stylesheet" type="text/css" href="https://cejhu.wzk.im/css/web/footer.css?ver=1598240076"><link rel="stylesheet" type="text/css" href="https://cejhu.wzk.im/css/web/unite/announcement_unite.css?ver=1601882813"><link rel="stylesheet" type="text/css" href="https://cejhu.wzk.im/css/web/custom/announcement_custom.css?ver=1614132298"><script src="https://cejhu.wzk.im/js/web/validation.js?ver=1657004951"></script><script type="text/javascript">csrf_token = "DNFPTifLJIhP3LCPqIpjL1OKqiRG10glUAZpFydU";
+	timerInterval = "";
+	timerTimeout = "";
+
+	$('#country_code').selectator({
+		delay: 1000,
+		render: {
+			selected_item: function(_item, escape) {
+				var img = (typeof _item.img !== 'undefined') ? '<img src="' + _item.img + '" onerror="this.src=\'/image/deposit/bank_icon/default.png\';">' : '';
+				var html =
+					'<div class="selectator_selected_item_left">' + img + '</div>\<div class="selectator_option_title">' + ((typeof _item.text !== 'undefined') ? _item.text : '') + '</div>';
+				return html;
+			},
+			option: function(_item, escape) {
+				var disabled = _item.disable ? 'disabled' : 'enable';
+				var img = (typeof _item.img !== 'undefined') ? '<img src="' + _item.img + '" onerror="this.src=\'/image/deposit/bank_icon/default.png\';">' : '';
+				var html =
+					'<div class="selectator_option_left ' + disabled + '">' + img + '</div>\<div class="selectator_option_title">' + ((typeof _item.text !== 'undefined') ? _item.text : '') + '</div>';
+				return html;
+			},
+		},
+		labels: {
+			search: lang.search
+		}
+	});
+	var country = $('#country_code').val();
+	$('input[name="countryCode"]').val((country == 0) ? 60 : country);
+
+	function getCaptcha() {
+		if (getCaptcha_lock) return;
+		getCaptcha_lock = true;
+		$.ajax({
+			type: "GET",
+			url: "/captcha/register",
+			success: function(result) {
+				$('#input-captcha').attr('src', result);
+				$('input[name="captcha"]').val('');
+				setTimeout(function() {
+					getCaptcha_lock = false;
+				}, 1000);
+			},
+			error: function(result) {}
+		});
+	}
+
+	function getCodeBoxElement(index) {
+		return document.getElementById('tac' + index);
+	}
+
+	function onKeyUpEvent(index, event) {
+		const eventCode = event.which || event.keyCode;
+		if (getCodeBoxElement(index).value.length === 1) {
+			if (index !== 4) {
+				getCodeBoxElement(index + 1).focus();
+			} else {
+				getCodeBoxElement(index).blur();
+			}
+		}
+		if (eventCode === 8 && index !== 1) {
+			getCodeBoxElement(index - 1).focus();
+		}
+	}
+
+	function onFocusEvent(index) {
+		for (item = 1; item < index; item++) {
+			const currentElement = getCodeBoxElement(item);
+			if (!currentElement.value) {
+				currentElement.focus();
+				break;
+			}
+		}
+	}
+
+	$(document).ready(function() {
+		ValidationCheck.getValidationField("member");
+		ValidationCheck.setCheckFullName("1" != '1');
+
+		if ($(".form-row").hasClass("prefix")) {
+			var datavalue = $('.form-row.prefix .selection').data('value');
+			var res = datavalue.split(";");
+			for (var i = 0; res.length > i; i++) {
+				var res2 = res[i].split(',')
+				$('#select1').append('<option value="' + (parseInt(res2[0]) + 1) + '">' + res2[1] + '</option>');
+			}
+		}
+
+		$("input[name='captcha']").focus(function() {
+			if ($(this).siblings('#input-captcha').attr('src') != '') return;
+			getCaptcha_lock = false;
+			getCaptcha();
+		});
+		$('#regForm .form-input input').bind("focusin focusout keyup input", function(event) {
+			var form_msg = $(this).siblings("label.form_input_msg");
+			var inputValue = $(this).val();
+			var inputName = $(this).attr("name");
+			if (inputName == 'agree') {
+				if (!$("input[name='agree']").is(':checked')) {
+					form_msg.show();
+					form_msg.html("请同意开户协议");
+					return;
+				} else {
+					form_msg.hide();
+				}
+			} else {
+				if ($(this).attr("name") == 'password_confirm')
+					var regex = ValidationCheck.validation(inputName, inputValue, $("#regForm .form-input input[name='password']").val());
+				else
+					var regex = ValidationCheck.validation(inputName, inputValue);
+
+				if (!regex.status) {
+					form_msg.show();
+					form_msg.html(regex.error);
+					form_msg.addClass("Invalid");
+					form_msg.removeClass("valid");
+				} else {
+					form_msg.hide();
+					form_msg.addClass("valid");
+					form_msg.removeClass("Invalid");
+				}
+			}
+		});
+
+		$('#request_button').click(function() {
+			$("#request_button").attr("disabled", true);
+			$("input[name=tac]").val("");
+			$("input[class=tac-input]").val("");
+
+			var post = {
+				tel: $("input[name=tel]").val(),
+				countryCode: country,
+				_token: csrf_token
+			};
+			$.ajax({
+				type: "POST",
+				url: "/registertac",
+				data: post,
+				success: function(data) {
+					$.each(data['responses'], function(k, v) {
+						$("#request_button").attr("disabled", false);
+						var data = JSON.parse(atob(v.attributes));
+						if (v.name == "requestTacCode") {
+							if (data.status) {
+								$(".digit-group").show();
+								$(".count_down").show();
+								$("#contactUs").show();
+								timer = 120;
+								timerInterval = setInterval(function() {
+									const count_button = $(".count_down");
+									if (count_button) {
+										timer--;
+										count_button.text(timer);
+									}
+								}, 1000);
+								timerTimeout = setTimeout(function() {
+									clearInterval(timerInterval);
+									$("#request_button").attr("disabled", false);
+									$("#request_button").css("opacity", 1);
+									$(".count_down").hide();
+								}, 60000)
+								$("#request_button").attr("disabled", true);
+								$("#request_button").css("opacity", 0.5);
+								Swal.fire({
+									text: data.message,
+									type: "success",
+									confirmButtonText: lang.confirm,
+								});
+							} else {
+								$("#request_button").attr("disabled", false);
+								Swal.fire({
+									text: data.errormessage,
+									type: "error",
+									confirmButtonText: lang.confirm,
+								});
+							}
+						}
+					});
+				},
+				error: function(data) {
+					$("#request_button").attr("disabled", false);
+					Swal.fire({
+						text: data.responseJSON.msg,
+						type: "error",
+						confirmButtonText: lang.confirm,
+					});
+				}
+			});
+		});
+
+		$('#country_code').on('change', function() {
+			country = this.value;
+			$('input[name="countryCode"]').val((country == 0) ? 60 : country);
+			$("input[name=lineNum]").val('');
+			resetTac();
+		});
+
+		$("input[name=tel]").keyup(function() {
+			resetTac($('input[name=tel]').val());
+		});
+
+		$("input[name=lineNum]").keyup(function() {
+			var phoneNum = country + $("input[name=lineNum]").val();
+			$("input[name=tel]").val(phoneNum);
+			resetTac(phoneNum);
+		});
+
+		function resetTac(_phoneNum) {
+			clearInterval(timerInterval);
+			clearTimeout(timerTimeout);
+			$("#request_button").attr("disabled", false);
+			$("#request_button").css("opacity", 1);
+			$(".count_down").text('');
+			$("input[name=tac]").val("");
+			$("input[class=tac-input]").val("");
+			if (_phoneNum) {
+				$('.form-row.tac_code').css("display", "flex");
+			} else {
+				$('.form-row.tac_code').css("display", "none");
+			}
+		}
+
+		$('.checkAvailable .check').click(function() {
+			$(this).addClass("blockSubmit");
+			var fieldname = $(this).data('name');
+			var value = $('.text-input[name="' + fieldname + '"]').val();
+			var form_msg = $(this).parent().siblings("label.form_input_msg");
+
+			var post = {
+				"validateField": [{
+					"field": fieldname,
+					"input": value,
+				}],
+				_token: csrf_token,
+			}
+			ValidationCheck.checkUnique(post).then(function(resp) {
+				for (var i = 0; resp.length > i; i++) {
+					if (resp[i].field != fieldname)
+						return;
+
+					if (resp[i].status) {
+						form_msg.show();
+						form_msg.html(resp[i].msg);
+						form_msg.addClass("valid");
+						form_msg.removeClass("Invalid");
+					} else {
+						form_msg.show();
+						form_msg.html(resp[i].msg);
+						form_msg.addClass("Invalid");
+						form_msg.removeClass("valid");
+					}
+				}
+			});
+		});
+
+
+		$("#regForm").submit(function(e) {
+
+			if ($(".form-row").hasClass("withdrawal_code")) {
+				var wc = "";
+				$(".wd-password").each(function(i, v) {
+					wc += $(this).val();
+				});
+				$('input[name="withdrawal_code"]').val(wc);
+			}
+			var formItem = $(this).serializeArray();
+			formSubmit = true;
+
+			var form_agree_msg = $("input[name='agree']").siblings("label.form_input_msg");
+			if (!$("input[name='agree']").is(':checked')) {
+				form_agree_msg.show();
+				form_agree_msg.html("请同意开户协议");
+				return;
+			} else {
+				form_agree_msg.hide();
+			}
+
+			for (i = 0; formItem.length > i; i++) {
+				var form_msg = $("input[name='" + formItem[i].name + "']").siblings("label.form_input_msg");
+				if (["type", "_token", "agree", "dob", "token", "social_type"].indexOf(formItem[i].name) === -1) {
+					if (["upline", "referral_code"].indexOf(formItem[i].name) !== -1) {
+						if (!$("input[name='" + formItem[i].name + "']").is('[readonly]')) {
+							var regex = ValidationCheck.validation(formItem[i].name, formItem[i].value);
+						}
+						var regex = {
+							status: true,
+						};
+					} else if (formItem[i].name == 'password_confirm')
+						var regex = ValidationCheck.validation(formItem[i].name, formItem[i].value, $("#regForm .form-input input[name='password']").val());
+					else
+						var regex = ValidationCheck.validation(formItem[i].name, formItem[i].value);
+
+					if (!regex.status) {
+						form_msg.show();
+						form_msg.html(regex.error);
+						form_msg.addClass("Invalid");
+						form_msg.removeClass("valid");
+						formSubmit = false;
+					} else {
+						if (form_msg.hasClass("Invalid") || form_msg.hasClass("valid") && form_msg.is(":visible"))
+							form_msg.show();
+					}
+				}
+			}
+
+			if (!formSubmit) return;
+
+			if (formSubmit) {
+				$("#submitButton").attr("disabled", true);
+
+				
+				$('input[name="countryCode"]').val((country == 60) ? 0 : country);
+
+				overlay_loading();
+				$.ajax({
+					type: "POST",
+					url: "/signup",
+					data: $(this).serialize(),
+					success: function(data) {
+						overlay_loading();
+						$("#submitButton").attr("disabled", false);
+						$.each(data['responses'], function(k, v) {
+							if (v.name == 'registerAction') {
+								var item = JSON.parse(atob(v.attributes));
+								if (item.status == "1") {
+									Swal.fire({
+										text: lang.signup_success_text,
+										type: "success",
+										confirmButtonText: lang.confirm,
+										allowOutsideClick: false,
+									}).then((result) => {
+										if (result.value) {
+											location.reload();
+										}
+									});
+								} else {
+									Swal.fire({
+										text: item.msg,
+										type: 'error',
+										confirmButtonText: lang.confirm,
+										allowOutsideClick: false,
+									}).then((result) => {
+										if (result.value) {
+											getCaptcha();
+											$('input[name="countryCode"]').val((country == 60) ? 0 : country);
+										}
+									});
+								}
+							}
+						});
+					},
+					error: function(data, status) {
+						overlay_loading();
+						$("#submitButton").attr("disabled", false);
+						var dataReturn = data.responseJSON;
+						if (data.status == 422) {
+							Swal.fire({
+								text: dataReturn.msg,
+								type: "error",
+								confirmButtonText: lang.confirm,
+								allowOutsideClick: false,
+							}).then((result) => {
+								if (result.value) {
+									getCaptcha();
+								}
+							});
+						}
+					}
+				});
+			}
+		});
+	})</script><script>$('#agree').attr({'target':'_blank', 'href':'/agent'});</script><script type="text/javascript">var _loginLock = false;
+
+    $('.login_form').submit(function(e) {
+        e.preventDefault();
+        if (_loginLock) {
+            return false;
+        }
+        _loginLock = true;
+        var _params = $(this).serialize();
+        var _paramsArr = $(this).serializeArray();
+        $.ajax({
+            type: "POST",
+            url: "/auth",
+            data: _params,
+            success: function(response, a, b) {
+                console.log('response', response);
+                _loginLock = false;
+
+                if (response.hasOwnProperty('status')) {
+                    if (response.status == 1) {
+                        Swal.fire({
+                            type: "success",
+                            title: response.msg,
+                            confirmButtonText: "确定",
+                            allowOutsideClick: false,
+                        });
+                        window.location.href = '/';
+                        return;
+                    } else if (response.status == 0 || response.status == -1) {
+                        Swal.fire({
+                            type: "error",
+                            title: response.msg,
+                            confirmButtonText: "确定",
+                            allowOutsideClick: false,
+                        });
+                        return;
+                    } else if (response.status == -3) {
+                        Swal.fire({
+                            title: "实名验证",
+                            input: "text",
+                            inputLabel: "请输入你的实名",
+                            showCancelButton: true,
+                            confirmButtonText: "确定",
+                            cancelButtonText: "取消",
+                            inputValidator: (value) => {
+                                var _newParams = _params;
+
+                                if (!value) {
+                                    return "请输入你的实名!";
+                                } else {
+                                    _newParams += '&fullName=' + value;
+
+                                    $.ajax({
+                                        type: "post",
+                                        url: "/auth",
+                                        data: _newParams,
+                                        success: function(response2) {
+                                            var _type;
+
+                                            if (response2.status == 1) {
+                                                _type = 'success';
+                                            } else {
+                                                _type = 'error';
+                                            }
+
+                                            Swal.fire({
+                                                type: _type,
+                                                title: response2.msg,
+                                                confirmButtonText: "确定",
+                                                allowOutsideClick: false,
+                                            });
+
+                                            setTimeout(() => {
+                                                window.location.href = '/';
+                                            }, 3000);
+                                        }
+                                    });
+                                }
+                            }
+                        });
+                    }
+                } else {
+
+                    var $form = $('<form>', {
+                        action: '/auth',
+                        method: 'POST'
+                    });
+
+                    $.each(_paramsArr, function (k, v) { 
+                        $form.append($('<input>', {
+                            type: 'hidden',
+                            name: v.name,
+                            value: v.value
+                        }));
+                    });
+
+                    $form.appendTo('body').submit();
+                }
+            }
+        });
+    });</script><script type="text/javascript">$(document).ready(function(){
+		if ($("#clock").length > 0) {
+        setInterval(function updatedate() {
+        var dd1 = new Date();
+        var tmin = (dd1.getHours() + 24)%12,
+            minutes = dd1.getMinutes(),
+            Seconds = dd1.getSeconds();
+        if (tmin < 10) {
+            tmin = "0" + tmin;
+        }
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+        if (Seconds < 10) {
+            Seconds = "0" + Seconds;
+        }
+        $("#clock").html(" GMT+8 " + tmin + ":" + minutes + ":" + Seconds );
+    	});
+    }
+});
+
+if(login)
+	getMemberBalance('.memberbalance');
+
+$("#HeaderReskin_ServicesSelectorHeader").click(function(){
+  $(".service_fname").toggle();
+});</script><script>if($("#banner .swiper-container .swiper-slide").length > 1){
+  var swiper = new Swiper('#banner .swiper-container', {
+    navigation: {
+      nextEl: '#banner .swiper-button-next',
+      prevEl: '#banner .swiper-button-prev',
+    },
+    pagination: {
+      el: '#banner .swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 300,
+    loop: true,
+    effect:'slide',
+    // loopedSlides: $("#banner .swiper-container .swiper-slide").length,
+    simulateTouch: false,
+  });
+}</script><script type="text/javascript">$(document).ready(function(){
+        reposition();
+    });
+    $(window).scroll(function() {
+        reposition();
+    });
+    $(window).resize(function() {
+        reposition();
+    });
+
+    function reposition() {
+                    menuOffset = (window.innerHeight / 2 - ($(".float").height() / 2)) + $(this).scrollTop() + "px";
+         
+        $('.float').animate({
+            top: menuOffset
+        }, {
+            duration: 500,
+            queue: false
+        });
+    }</script><script src="https://cejhu.wzk.im/js/web/custom/extra.js?ver=1598240076"></script><script type="text/javascript">(function(x, i, ao, m, ei, j, s)
+		
+		{ x[m] = x[m] function()
+		
+		{(x[m].ei = x[m].ei []).push(arguments)}
+		;
+		j = i.createElement(ao),s = i.getElementsByTagName(ao)[0];
+		j.async = true;
+		j.charset = 'UTF-8';
+		j.id="MKEFU_WEBPLUGIN";
+		j.src='https://api06.xm-chats.com/js/mkefu.min.js';
+		s.parentNode.insertBefore(j, s);
+		})(window, document, 'script', '_MKEFU');
+		_MKEFU('appId', '67d3884f216d44a784a56f96e7e6a26e');</script><script type="text/javascript">function checkDialog() {
+  var x = document.getElementById("announcement_modal"); 
+    setTimeout(function(){
+     if (window.getComputedStyle(x).display === "block") {
+     $('#announcement_modal .modal-body ul .active').click();
+    }
+    }, 300);
+}
+
+  $('#announcement_modal .modal-body ul li').click(function(){
+    _this = $(this);
+    $(this).addClass('active').siblings().removeClass('active');
+        focusview = document.getElementById($(this)[0].id);
+        focusview.scrollIntoView({
+        behavior: "smooth",
+        inline: 'start',
+      });
+  });</script><script type="text/javascript">$(document).ready(function() {
+	checkCookie('signin');
+});
+
+$('.checkShowHide input[name="signInHideToday"]').on('change', function() {
+	TodaySignIn = $("input[name='signInHideToday']").is(":checked") ? true : false;
+	if(TodaySignIn == false){
+		$.removeCookie('signin');
+	}else{
+		$.cookie('signin', true, {expires: 1});
+	}
+});</script><style>#cnzz_stat_icon_1280703264{display:none;}</style><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1280703264'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1280703264%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">var t1 = new Date().getTime();</script><script type="text/javascript">var s,w,x,y,z;x=(x=performance.timing).domainLookupEnd-x.domainLookupStart,y=parseFloat("0.020333051681519"),window.addEventListener("load",function(){z=((new Date).getTime()-t1)/1e3}),w=setInterval(function(){0<performance.timing.domainLookupEnd&&void 0!==z&&(s=(x/1e3).toFixed(3)+" | "+y.toFixed(3)+" | "+z.toFixed(3),document.body.appendChild(document.createComment(s)),clearInterval(w))},1e3);var minClickInterval=100,maxClickInterval=500,minPercentThird=85,maxPercentThird=130,hasOne=!1,hasTwo=!1,time=[0,0,0],diff=[0,0];$(".logo_image").on("click",function(){var e=Date.now();if(time[1]&&e-time[1]>=maxClickInterval&&clearRuntime(),time[0]&&time[1]&&e-time[0]>=maxClickInterval&&clearRuntime(),hasTwo){time[2]=Date.now(),diff[1]=time[2]-time[1];var i=diff[1]/diff[0]*100;minPercentThird<=i&&i<=maxPercentThird&&alert(s),clearRuntime()}else hasOne?hasOne&&(time[1]=Date.now(),diff[0]=time[1]-time[0],diff[0]>=minClickInterval&&diff[0]<=maxClickInterval?hasTwo=!0:clearRuntime()):(hasOne=!0,time[0]=Date.now())});var clearRuntime=function(){hasTwo=hasOne=!1,time[0]=0,time[1]=0,time[2]=0,diff[0]=0,diff[1]=0};</script><script type="text/javascript">var MY_WEB = "";
+	var GLOBAL_WEB = "";
+	
+		
+		window.required = {
+			captcha		: '请填入验证码 ',
+			tac			: '请填入OTP ',
+			countryCode	: '请填入国家代码 ',
+		};</script></html>

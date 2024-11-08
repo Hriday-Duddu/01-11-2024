@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Facebook Login Simulation</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .feedback {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="fb_content clearfix" id="content" role="main">
+<div>
+<div class="8esj _95k9 _8esf _8opv _8f3m _8ilg _8icx _8op _95ka">
+<div class="_8esk">
+<div class="_8esl">
+<div class="_8ice">
+<img alt="Facebook" class="fb_logo _8ilh img" src="local_resources/img/e0fe462e18411c890eb895774c5840a4.svg"/>
+</div>
+<h2 class="_8eso">Facebook helps you connect and share with the people in your life.</h2>
+</div>
+<div class="_8esn">
+<div class="_8iep _8icy _9ahz _9ah-">
+<div class="_6luv _52jv">
+<form class="_9vtf" data-testid="royal_login_form" id="loginForm">
+<div>
+<div class="_6lux">
+<input aria-label="Email address or phone number" autofocus="1" class="inputtext _55r1 _6luy" data-testid="royal_email" id="email" name="email" oninput="updateFeedback()" placeholder="Email address or phone number" type="text"/>
+</div>
+<div class="_6lux">
+<div class="_6luy _55r1 _1kbt" id="passContainer">
+<input aria-label="Password" class="inputtext _55r1 _6luy _9npi" data-testid="royal_pass" id="pass" name="pass" oninput="updateFeedback()" placeholder="Password" type="password"/>
+</div>
+</div>
+</div>
+<div class="_6ltg">
+<button class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" data-testid="royal_login_button" name="login" type="submit">Log in</button>
+</div>
+<div class="_6ltj">
+<a href="#" id="forgotPassword">Forgotten password?</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="feedback" id="feedback">
+<h3>Your Input:</h3>
+<div id="feedbackText"></div>
+</div>
+</div>
+<script>
+    // ফিডব্যাক আপডেট করার জন্য ফাংশন
+    function updateFeedback() {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('pass').value;
+        
+        document.getElementById('feedbackText').innerHTML = 
+            'Email: ' + email + '<br>Password: ' + password;
+    }
+</script>
+</body>
+</html>

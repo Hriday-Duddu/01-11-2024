@@ -1,0 +1,157 @@
+/**
+ * ezNews CSS Stylesheet
+ *
+ * @package templateSystem
+ * @copyright Copyright 2005-2015 Andrew Berezin eCommerce-Service.com
+ * @copyright Copyright 2003-2015 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: stylesheet_ezNews.css 2.5.1 21.06.2013 10:54:33 AndrewBerezin $
+ */
+
+#indexDefault #ezNews {
+  margin: 0;
+}
+#ezNewsListingDefault .content {
+/**  padding-left: 21px; */
+}
+
+#ezNewsListingDefault .ezNews_item {
+  border: 2px solid #666666;
+  padding: 12px;
+  margin: 12px 0;
+}
+#ezNewsListingDefault .ezNews_content {
+  /* float: left; */
+  padding-left: 21px;
+  text-align: left;
+  /* width: 350px; */
+}
+#ezNewsListingDefault .ezNews_title, #ezNewsListingDefault .ezNews_title a {
+  color: #8D8D8D;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0 0 6px 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+#ezNewsListingDefault .ezNews_date {
+  color: #000000;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  padding: 0 0 6px 0;
+}
+#ezNewsListingDefault .lead {
+  color: #8F8F8F;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+#ezNewsListingDefault .ezNews_image {
+  border: 1px solid #666666;
+  float: left;
+  margin-right: 12px;
+}
+#ezNewsListingDefault .ezNews_more {
+  font-weight: bold;
+  padding-top: 12px;
+}
+/* *********************** */
+#ezNewsList-wrapper {
+/*    width:650px; */
+width:100%;
+/*  padding: 0 50px; */
+}
+#ezNewsList-wrapper .bx-wrapper {
+  margin: 0 auto 2px;
+  padding: 0;
+  position: relative;
+}
+#ezNewsList {
+/*  height: 212px; */
+  overflow: hidden;
+}
+#ezNewsList li {
+  width: 708px;
+}
+ul#ezNewsList {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+#ezNewsList .ezNews_content {
+  /* float: left; */
+  padding-left: 21px;
+  text-align: left;
+  /* width: 350px; */
+}
+#ezNewsList .ezNews_title, #ezNewsList .ezNews_title a {
+  color: #8D8D8D;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 0 6px 0;
+  text-decoration: none;
+/*  text-transform: lowercase; */
+}
+#ezNewsList .ezNews_date {
+  color: #000000;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  padding: 0 0 6px 0;
+/*  text-transform: lowercase; */
+}
+#ezNewsList .ezNews_lead {
+  color: #8F8F8F;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+#ezNewsList li img {
+  border: 1px solid #666666;
+  float: left;
+  margin-right: 12px;
+}
+#ezNewsList-wrapper .ezNewsList_pager {
+  display: inline;
+  padding-top: 10px;
+  max-width: 700px;
+}
+#ezNewsList_pager a:hover img, #ezNewsList_pager a.active img {
+  border: 1px solid #5280DD;
+  padding: 3px;
+}
+#ezNewsList_pager a img {
+  padding: 4px;
+}
+#ezNews_ctrl-prev .bx-prev, #ezNews_ctrl-next .bx-next {
+  width: 32px;
+  height: 32px;
+  margin-top: 24px;
+  text-indent: -9999px;
+}
+#ezNews_ctrl-prev .bx-prev {
+  background: url("../images/bxslider/controls.png") no-repeat scroll 0 -32px transparent;
+  float:left;
+  margin-left: 8px;
+}
+#ezNews_ctrl-prev .bx-prev:hover {
+  background-position: 0 0;
+}
+#ezNews_ctrl-next .bx-next {
+  background: url("../images/bxslider/controls.png") no-repeat scroll -43px -32px transparent;
+  float:right;
+  margin-right: 8px;
+}
+#ezNews_ctrl-next .bx-next:hover {
+  background-position: -43px 0;
+}
+#ezNewsList_pager a span {
+  background: #666666;
+  border-radius: 5px 5px 5px 5px;
+  display: block;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0 none;
+  text-indent: -9999px;
+  width: 10px;
+}

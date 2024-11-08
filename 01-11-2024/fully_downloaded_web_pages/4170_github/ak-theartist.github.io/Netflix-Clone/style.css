@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    background-image: url("assets/images/bg4.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+body {
+    background-color: black;
+}
+
+.text> :first-child {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: center;
+}
+
+.text> :nth-child(2) {
+    font-weight: 400px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text> :nth-child(3) {
+    font-weight: 400px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid rgb(130, 129, 129);
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 6px 19px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    border-style: none;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border-style: none;
+}
+
+.main input {
+    padding: 12px 127px 8px 11px;
+    ;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+text-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.first {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    max-width: 85vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1-img img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+    right: 0;
+}
+
+.sec1-img {
+    position: relative;
+}
+
+.sec1-img video {
+    position: absolute;
+    right: 77px;
+    top: 105px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: 229px;
+}
+
+.first>div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px 0 0 70px; */
+    
+}
+
+.seperation2 {
+    margin-top: 70px;
+    height: 7px;
+    background-color: rgba(84, 84, 84, 0.863);
+}
+
+.sec3-img {
+    position: relative;
+}
+
+.sec3-img img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.sec3-img video {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 555px;
+    height: 200px;
+}
+
+.faq {
+    background-color: black;
+    padding: 1px;
+    color: white;
+    text-align: center;
+}
+
+.faqbox {
+    display: flex;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 70vw;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 1s ease-out;
+}
+
+.faqbox:hover {
+    background-color: #414141
+}
+
+.faq h2 {
+    margin-top: 40px;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
+.fourth-last {
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.fourth-last span {
+    font-size: 18px;
+}
+
+.text-buttons-last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.faq input {
+    padding: 14px 122px 10px 5px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.faq .btn-red {
+    background-color: red;
+    color: white;
+    padding: 6px 19px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    border-style: none;
+}
+
+.text-buttons-last {
+    margin-top: 15px;
+}
+
+footer {
+    color: rgb(235, 231, 231);
+    max-width: 70vw;
+    margin: auto;
+    padding: 40px;
+}
+
+footer .questions {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+footer a {
+    font-size: 14px;
+    color: rgb(235, 231, 231);
+    padding: 10px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.last {
+    margin-top: 24px;
+    padding: 2px 25px 4px 20px;
+    border: 1px solid gray;
+    border-radius: 1px;
+    width: 55px;
+}
+
+.last2 {
+    margin-top: 14px;
+    padding-left: 14px;
+    color: rgb(235, 231, 231);
+    font-size: 14px;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width:1200px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:730px) {
+    nav{
+        max-width: 90vw;
+    }
+    nav img{
+        width: 100px;
+    }
+    .text> :first-child {
+        font-size: 30px;
+    }
+    .text> :nth-child(2) {
+        font-size: 20px;
+    }
+    .text> :nth-child(3) {
+        font-size: 16px;
+    }
+    .main input {
+        padding: 12px 20px 8px 11px;
+    }
+    .btn-red {
+        padding: 11px 10px 7px 10px;
+        border-radius: 5px;
+        font-size: small;
+    }
+    .first>div :first-child {
+        font-size: 30px;
+    }
+    .first>div :nth-child(2) {
+        font-size: 17px;
+    }
+    .sec1-img img {
+        width: 380px;
+    }
+    .sec1-img video {
+        position: absolute;
+        right: 52px;
+        top: 80px;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        height: 155px;
+    }
+    .sec3-img img {
+        width: 350px;
+    }
+    .sec3-img video {
+        top: 46px;
+        width: 352px;
+        height: 125px;
+    }
+    .faq h2{
+        font-size: 28px;
+    }
+    .faqbox {
+        padding: 20px;
+        margin: 8px auto;
+        max-width: 50vw;
+        font-size: 15px;
+    }
+    .fourth-last span {
+        font-size: 15px;
+    }
+    .faq input {
+        padding: 5px 5px 5px 10px;
+    }
+    .faq .btn-red {
+        font-size: 12px;
+    }
+    .footer{
+        gap: 50px;
+    }
+}
+@media (max-width:610px) {
+    .footer{
+        gap: 20px;
+    }
+}
+@media (max-width:515px) {
+    .footer{
+        gap: 5px;
+    }
+}
+@media (max-width:480px) {
+    .footer{
+        display: contents;
+        text-align: center;
+    }
+    .last{
+        margin: 20px auto;
+    }
+    .last2{
+        display: none;
+    }
+}
+@media (max-width:400px) {
+    .sec1-img img {
+        width: 255px;
+    }
+    .sec1-img video {
+        position: absolute;
+        right: 35px;
+        top: 58px;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        height: 105px;
+    }
+    .first>div :first-child {
+        font-size: 20px;
+    }
+    .first>div :nth-child(2) {
+        font-size: 12px;
+    }
+    .sec3-img img {
+        width: 260px;
+    }
+    .sec3-img video {
+        top: 40px;
+        width: 260px;
+        height: 88px;
+    }
+    .faq h2 {
+        font-size: 20px;
+    }
+    nav img {
+        width: 60px;
+    }   
+    .text> :first-child {
+        font-size: 20px;
+    }
+    .text> :nth-child(2) {
+        font-size: 15px;
+    }
+    .text> :nth-child(3) {
+        font-size: 12px;
+    } 
+    .text-buttons{
+        display: grid;
+    }
+    .faqbox{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .text-buttons-last{
+        display: grid;
+    }
+}
+/* @media screen and (max-width: 835px) {
+    .first {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 180vw;
+        margin: auto;
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec1-img video {
+        top: 150px;
+    }
+    .sec3-img video {
+        top: 110px;
+    }
+
+    .seperation2 {
+        margin-top: 65px;
+        margin-bottom: 43px;
+    }
+    .main {
+        height: 644px;
+        width: 250vw;
+        background-size: max(2000px, 100vw);
+    }
+    nav{
+        max-width: 190vw;
+    }
+    .text{
+        padding: 0 130px;
+    }
+    body{
+        width: 250vw;
+    }
+    section.first>div {
+        padding: 70px 0 0 0px;
+    }
+    .faq h2{
+        font-size: 40px;
+    }
+    .first>div :first-child {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    footer {
+        padding: 0 100px 10px 100px ;
+        gap: 50px;
+    }
+    .faqbox{
+        max-width: 127vw;
+    }
+
+} */
+/* @media screen and (max-width: 300px) {
+    .main{
+        width: 400vw;
+    }
+    .text> :first-child {
+        font-size: 35px;
+    }
+    .text-buttons{
+        display: contents;
+    }
+    body{
+        width: 400vw;
+    }
+    .faqbox{
+        max-width: 260vw;
+    }
+    .first{
+        max-width: 270vw;
+    }
+    .footer{
+        gap: 10px;
+    }
+    .first>div :first-child {
+        font-size: 35px;
+        font-weight: bolder;
+    }
+} */

